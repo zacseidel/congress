@@ -34,7 +34,7 @@ report:
   leaderboard_size: 40          # members shown on the leaderboard
   top_stock_detail_count: 60    # stocks that get a full detail page
   description_max_chars: 600
-  whats_new_window_days: 14     # "What's new"/digest shows trades disclosed within this many days
+  whats_new_window_days: 20     # "What's new"/digest shows trades disclosed within this many days
   drivers_size: 40              # stocks shown in "drove out-performance" (View A)
   recent_buys_size: 40          # stocks shown in "buying now" (View B)
   view_b_window_days: 30        # a purchase counts as "now" if disclosed within this many days
