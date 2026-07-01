@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Congressional Trades Tracker{% endblock %}
+{% block content %}
+<h2>Who in Congress are the best stock pickers?</h2>
+<p>This site reconstructs every stock trade disclosed by members of the U.S. House and Senate under the
+   STOCK Act over the trailing two years, then asks a simple question: <strong>if you had copied each
+   member into their trades on the day the trade became public, whose trades would have made you the most
+   money?</strong> Members are ranked by the dollar-weighted return of that "follow the disclosure"
+   strategy, benchmarked against {{ benchmark }}. From the leaderboard you can see which stocks the
+   out-performing members are buying — especially the names bought by several of them in size — and drill
+   into any company.</p>
+
+{% if reports %}
+<p><a href="reports/{{ reports[0].date }}.html"><strong>→ View the latest leaderboard ({{ reports[0].date }})</strong></a></p>
+{% endif %}
+
+<div class="disclaimer">
+  <strong>Disclaimer.</strong> For informational and educational purposes only — not investment advice.
+  Trades are parsed from public House and Senate disclosures, which report dollar <em>ranges</em> rather
+  than exact share counts and may contain errors or omissions; some scanned/paper filings cannot be read.
+  Returns are a stylized backtest from public filing dates and do not reflect members' actual prices,
+  timing, or taxes. Past performance does not predict future results.
+</div>
+
+<h2>Report archive</h2>
+<table class="sortable">
+  <thead><tr>
+    <th>Report date</th><th class="num">New disclosures</th><th class="num">Ranked members</th>
+    <th class="num">Positions</th><th>Top member</th><th class="num">Top dollar-wtd return</th>
+  </tr></thead>
+  <tbody>
+  {% for r in reports %}
+    <tr>
+      <td><a href="reports/{{ r.date }}.html">{{ r.date }}</a></td>
+      <td class="num">{{ r.n_new if r.n_new is defined else '—' }}</td>
+      <td class="num">{{ r.n_rankable }}</td>
+      <td class="num">{{ r.n_positions }}</td>
+      <td>{{ r.top_member or '—' }}</td>
+      <td class="num {{ cls(r.top_return) }}" data-v="{{ r.top_return if r.top_return is not none else -9999 }}">{{ pct(r.top_return) }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<h2 id="about">About the method</h2>
+<ul class="muted small">
+  <li><strong>Data.</strong> House PTRs from the Clerk's annual disclosure index + PDFs; Senate PTRs from
+      the eFD electronic filings. Equity (stock) transactions only.</li>
+  <li><strong>Entry.</strong> Each purchase is priced at the closing price on/after its public disclosure
+      date — the first day you could have acted on it.</li>
+  <li><strong>Exit.</strong> A sale closes the member's entire open position in that ticker at the sale's
+      disclosure-date close; positions never sold are held to the present.</li>
+  <li><strong>Ranking.</strong> Dollar-weighted by the midpoint of each disclosed amount range, so larger
+      bets count more. Alpha is the return above {{ benchmark }} over the same window.</li>
+  <li><strong>Enrichment.</strong> Company description, 2-year price chart, recent news, and key financials
+      come from Polygon.io.</li>
+</ul>
+{% endblock %}

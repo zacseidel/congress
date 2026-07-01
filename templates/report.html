@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+{% block title %}Leaderboard — {{ report_date }} · Congressional Trades{% endblock %}
+{% block content %}
+<p class="small"><a href="{{ root }}index.html">← All reports</a></p>
+<h2>Congressional Trades Leaderboard</h2>
+<p class="muted">Trailing {{ lookback_years }}-year window · generated {{ report_date }} ·
+   ranked by {{ benchmark }} alpha — how much each member beat the market if you had copied
+   them into their trades on the disclosure date.
+   {% if benchmark_period and benchmark_period.return_pct is not none %}
+   For reference, the <strong>S&P 500 returned {{ pct(benchmark_period.return_pct) }}</strong> over this window.
+   {% endif %}</p>
+
+<div class="stat-row card">
+  <div class="stat"><div class="n">{{ n_rankable }}</div><div class="l">Ranked members</div></div>
+  <div class="stat"><div class="n">{{ n_positions }}</div><div class="l">Positions tracked</div></div>
+  <div class="stat"><div class="n">{{ n_stocks }}</div><div class="l">Stocks traded</div></div>
+  <div class="stat"><div class="n">{{ n_outperformers }}</div><div class="l">Out-performers</div></div>
+</div>
+
+{% include "_op_changes.html" %}
+
+<details class="fold" open>
+  <summary><h2>New buys by out-performers <span class="muted">(last {{ digest_window_days }} days · {{ op_buys|length }} member{{ '' if op_buys|length == 1 else 's' }})</span></h2></summary>
+  <p class="muted small">Recent <strong>purchases</strong> by members who beat the S&amp;P — one row per member.
+     ★ marks a stock in an industry that member's committee oversees. Dollar figures are
+     <em>bracket midpoints</em> (filings disclose ranges, e.g. $1,001–$15,000, not exact amounts).</p>
+  {% if op_buys %}
+  <table class="sortable">
+    <thead><tr><th>Member</th><th>Chamber</th><th class="num">Member 2yr</th><th>New buys (size)</th></tr></thead>
+    <tbody>
+    {% for e in op_buys %}
+      <tr>
+        <td><a href="{{ root }}members/{{ e.member_id }}.html">{{ e.member }}</a>
+            <span class="pill op">out-performer</span></td>
+        <td><span class="pill {{ e.chamber }}">{{ e.chamber }}</span></td>
+        <td class="num {{ cls(e.member_return) }}" data-v="{{ e.member_return if e.member_return is not none else -9999 }}">{{ pct(e.member_return) }}</td>
+        <td class="small">
+          {% for b in e.buys %}<a href="{{ root }}stocks/{{ b.ticker }}.html">{{ b.ticker }}</a>{{ mdots(b.ticker) }}{% if b.aligned %} <span class="star" title="{{ b.committees|join(', ') }}">★</span>{% endif %} <span class="muted">({{ money(b.amount) }})</span>{% if not loop.last %} · {% endif %}{% endfor %}
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="muted">No out-performer purchases disclosed in the last {{ digest_window_days }} days.</p>
+  {% endif %}
+</details>
+
+<details class="fold">
+  <summary><h2>Other recent disclosures <span class="muted">({{ digest_other|length }})</span></h2></summary>
+  <p class="muted small">Everything else disclosed in the last {{ digest_window_days }} days — out-performer
+     sells and all trades by other members. <a href="{{ root }}latest.html">Open the “What's new” page →</a></p>
+  {% if digest_other %}
+  <table class="sortable">
+    <thead><tr><th>Disclosed</th><th>Member</th><th>Ticker</th><th>Type</th><th class="num">Amount</th></tr></thead>
+    <tbody>
+    {% for d in digest_other %}
+      <tr>
+        <td>{{ d.disclosure_date }}</td>
+        <td><a href="{{ root }}members/{{ d.member_id }}.html">{{ d.member }}</a>
+            {% if d.member_id in outperformer_ids %}<span class="pill op">op</span>{% endif %}</td>
+        <td><a href="{{ root }}stocks/{{ d.ticker }}.html">{{ d.ticker }}</a></td>
+        <td class="{{ 'pos' if d.tx_type=='P' else ('neg' if d.tx_type=='S' else '') }}">{{ d.type_label }}</td>
+        <td class="num" data-v="{{ d.amount_mid or 0 }}">{{ money(d.amount_mid) }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="muted">Nothing else disclosed in this window.</p>
+  {% endif %}
+</details>
+
+<h2>Stocks that drove out-performance</h2>
+<p class="muted small">For each out-performer, every stock contributes
+   <em>(its share of their portfolio) × (its return above the S&P)</em> — so these contributions add up
+   to that member's total alpha. Summed across all out-performers (each weighted by their own percentage
+   performance, not dollar size), this shows which names actually produced the out-performance. A single
+   member's huge winner can top the list.</p>
+<table class="sortable">
+  <thead><tr>
+    <th>Ticker</th><th>Company</th><th>Industry</th><th>Cap</th>
+    <th class="num">Alpha contribution (pts)</th><th class="num">Out-performers</th><th>Top contributor</th>
+  </tr></thead>
+  <tbody>
+  {% for s in drivers %}
+    <tr>
+      <td><a href="{{ root }}stocks/{{ s.ticker }}.html">{{ s.ticker }}</a>{{ mdots(s.ticker) }}</td>
+      <td>{{ s.name or '—' }}</td>
+      <td>{% if s.industry %}<a href="{{ root }}industries/{{ slug(s.industry) }}.html">{{ s.industry }}</a>{% else %}—{% endif %}</td>
+      <td>{% if s.cap and s.cap != 'unknown' %}<span class="cap {{ s.cap }}">{{ s.cap }}</span>{% endif %}</td>
+      <td class="num sig {{ cls(s.score) }}" data-v="{{ s.score }}">{{ "%+.1f"|format(s.score) }}</td>
+      <td class="num" data-v="{{ s.n_outperformers }}">{{ s.n_outperformers }}</td>
+      <td class="small">{{ s.top_contributor or '—' }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<h2>What out-performers are buying now <span class="muted">(last {{ view_b_window_days }} days)</span></h2>
+<p class="muted small">Recent purchases by out-performers, ranked by the share of their proven portfolios
+   going into each name. Returns aren't meaningful yet — this is where the smart money is <em>going</em>,
+   to balance the backward-looking view above.</p>
+{% if recent_buys %}
+<table class="sortable">
+  <thead><tr>
+    <th>Ticker</th><th>Company</th><th>Industry</th><th>Cap</th>
+    <th class="num">Out-performer allocation</th><th class="num">Out-performers</th><th>Latest disclosure</th>
+  </tr></thead>
+  <tbody>
+  {% for s in recent_buys %}
+    <tr>
+      <td><a href="{{ root }}stocks/{{ s.ticker }}.html">{{ s.ticker }}</a>{{ mdots(s.ticker) }}</td>
+      <td>{{ s.name or '—' }}</td>
+      <td>{% if s.industry %}<a href="{{ root }}industries/{{ slug(s.industry) }}.html">{{ s.industry }}</a>{% else %}—{% endif %}</td>
+      <td>{% if s.cap and s.cap != 'unknown' %}<span class="cap {{ s.cap }}">{{ s.cap }}</span>{% endif %}</td>
+      <td class="num" data-v="{{ s.score_pct }}">{{ s.score_pct }}%</td>
+      <td class="num" data-v="{{ s.n_outperformers }}">{{ s.n_outperformers }}</td>
+      <td>{{ s.latest }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p class="muted">No out-performer purchases disclosed in the last {{ view_b_window_days }} days.</p>
+{% endif %}
+
+<h2>Member leaderboard</h2>
+<p class="muted small">Dollar-weighted return = each position weighted by the midpoint of its disclosed
+   amount range; the <strong>Disclosed $</strong> column (and all dollar figures site-wide) are
+   <em>bracket midpoints</em> — filings report ranges (e.g. $1,001–$15,000), not exact amounts. Members
+   with at least {{ min_positions }} priced positions are ranked.</p>
+<table class="sortable">
+  <thead><tr>
+    <th class="num">#</th><th>Member</th><th>Chamber</th>
+    <th class="num">Dollar-wtd return</th><th class="num">vs {{ benchmark }} (alpha)</th>
+    <th class="num">Equal-wtd</th><th class="num">Win rate</th>
+    <th class="num">Positions</th><th class="num">Disclosed $</th>
+  </tr></thead>
+  <tbody>
+  {% for m in leaderboard %}
+    <tr>
+      <td class="num">{{ loop.index }}</td>
+      <td><a href="{{ root }}members/{{ m.member_id }}.html">{{ m.member }}</a>
+          {% if m.member_id in outperformer_ids %}<span class="pill op">out-performer</span>{% endif %}</td>
+      <td><span class="pill {{ m.chamber }}">{{ m.chamber }}</span></td>
+      <td class="num {{ cls(m.dw_return_pct) }}" data-v="{{ m.dw_return_pct }}">{{ pct(m.dw_return_pct) }}</td>
+      <td class="num {{ cls(m.dw_alpha) }}" data-v="{{ m.dw_alpha if m.dw_alpha is not none else -9999 }}">{{ pct(m.dw_alpha) }}</td>
+      <td class="num {{ cls(m.ew_return_pct) }}" data-v="{{ m.ew_return_pct }}">{{ pct(m.ew_return_pct) }}</td>
+      <td class="num" data-v="{{ m.win_rate }}">{{ m.win_rate }}%</td>
+      <td class="num" data-v="{{ m.n_positions }}">{{ m.n_positions }}</td>
+      <td class="num" data-v="{{ m.total_dollars }}">{{ money(m.total_dollars) }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<h2>Filings to review with Claude <span class="muted">({{ unparsed_total }})</span></h2>
+<p class="muted small">These periodic transaction reports are scanned image PDFs (paper filings) that
+   can't be machine-read, so their trades are <strong>not</strong> reflected in the leaderboard above —
+   several of Congress's most active traders file this way. Each report can be transcribed from the linked
+   PDF, manually or with Claude.</p>
+{% if unparsed_members %}
+<table class="sortable">
+  <thead><tr>
+    <th>Member</th><th>Chamber</th><th class="num">Filings</th><th>Latest</th><th>Reports (disclosure date)</th>
+  </tr></thead>
+  <tbody>
+  {% for m in unparsed_members %}
+    <tr>
+      <td>{{ m.member }}{% if m.state %} <span class="muted small">({{ m.state }})</span>{% endif %}</td>
+      <td><span class="pill {{ m.chamber }}">{{ m.chamber }}</span></td>
+      <td class="num" data-v="{{ m.count }}">{{ m.count }}</td>
+      <td>{{ m.latest }}</td>
+      <td class="small">
+        {% for f in m.filings %}<a href="{{ f.source_url }}" target="_blank" rel="noopener">{{ f.disclosure_date }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p class="muted">No unreadable filings in this window.</p>
+{% endif %}
+
+<p class="small disclaimer" style="margin-top:24px">
+  Returns are a stylized "copy the disclosure" backtest using disclosed dollar <em>ranges</em> (not exact
+  share counts) and closing prices on/after each public filing date. They do not reflect the member's
+  actual entry prices, taxes, or position sizing, and are not investment advice.
+</p>
+{% endblock %}

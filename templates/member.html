@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}{{ m.member }} · Congressional Trades{% endblock %}
+{% block content %}
+<p class="small"><a href="{{ root }}reports/{{ latest_report }}.html">← Back to leaderboard</a></p>
+<h2>{{ m.member }} <span class="pill {{ m.chamber }}">{{ m.chamber }}</span>
+    {% if m.member_id in outperformer_ids %}<span class="pill op">out-performer</span>{% endif %}</h2>
+
+<div class="stat-row card">
+  <div class="stat"><div class="n {{ cls(m.dw_return_pct) }}">{{ pct(m.dw_return_pct) }}</div><div class="l">Dollar-wtd return</div></div>
+  <div class="stat"><div class="n {{ cls(m.dw_alpha) }}">{{ pct(m.dw_alpha) }}</div><div class="l">vs {{ benchmark }}</div></div>
+  <div class="stat"><div class="n">{{ m.win_rate }}%</div><div class="l">Win rate</div></div>
+  <div class="stat"><div class="n">{{ m.n_positions }}</div><div class="l">Positions</div></div>
+  <div class="stat"><div class="n">{{ money(m.total_dollars) }}</div><div class="l">Disclosed $</div></div>
+</div>
+
+{% if committees %}
+<h3>Committee assignments</h3>
+<p class="small muted">Industries under their jurisdiction:
+  {% for ind in member_industries %}<a href="{{ root }}industries/{{ slug(ind) }}.html">{{ ind }}</a>{% if not loop.last %} · {% endif %}{% else %}—{% endfor %}</p>
+<ul class="small">
+  {% for c in committees %}<li>{{ c.name }}{% if c.title %} <span class="pill">{{ c.title }}</span>{% endif %}</li>{% endfor %}
+</ul>
+{% endif %}
+
+{% if member_signals %}
+<h3>Notable bets <span class="muted small">(by interestingness signal; ★ = in their committee's jurisdiction)</span></h3>
+<table class="sortable">
+  <thead><tr><th class="num">Signal</th><th>Ticker</th><th>Industry</th><th>Cap</th>
+    <th class="num">Return</th><th class="num">$</th><th>Aligned</th></tr></thead>
+  <tbody>
+  {% for r in member_signals %}
+    <tr class="{{ 'aligned-row' if r.aligned else '' }}">
+      <td class="num sig" data-v="{{ r.signal }}">{{ r.signal }}</td>
+      <td><a href="{{ root }}stocks/{{ r.ticker }}.html">{{ r.ticker }}</a></td>
+      <td><a href="{{ root }}industries/{{ slug(r.industry) }}.html">{{ r.industry }}</a></td>
+      <td><span class="cap {{ r.cap }}">{{ r.cap }}</span></td>
+      <td class="num {{ cls(r.return_pct) }}" data-v="{{ r.return_pct }}">{{ pct(r.return_pct) }}</td>
+      <td class="num" data-v="{{ r.weight }}">{{ money(r.weight) }}</td>
+      <td>{% if r.aligned %}<span class="star">★</span> {{ r.committees|join(', ') }}{% else %}—{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+<h3>Positions</h3>
+<table class="sortable">
+  <thead><tr>
+    <th>Ticker</th><th>Status</th><th>Entry date</th><th>Exit date</th>
+    <th class="num">Entry</th><th class="num">Exit</th>
+    <th class="num">Return</th><th class="num">vs {{ benchmark }}</th><th class="num">Disclosed $</th>
+  </tr></thead>
+  <tbody>
+  {% for p in positions %}
+    <tr>
+      <td><a href="{{ root }}stocks/{{ p.ticker }}.html">{{ p.ticker }}</a></td>
+      <td>{{ p.status }}</td>
+      <td>{{ p.entry_date }}</td>
+      <td>{{ '—' if p.status == 'open' else p.exit_date }}</td>
+      <td class="num">{{ usd(p.entry_price) }}</td>
+      <td class="num">{{ usd(p.exit_price) }}</td>
+      <td class="num {{ cls(p.return_pct) }}" data-v="{{ p.return_pct }}">{{ pct(p.return_pct) }}</td>
+      <td class="num {{ cls(p.alpha) }}" data-v="{{ p.alpha if p.alpha is not none else -9999 }}">{{ pct(p.alpha) }}</td>
+      <td class="num" data-v="{{ p.weight }}">{{ money(p.weight) }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p class="muted small">Disclosed $ figures are <em>bracket midpoints</em> — filings report ranges
+   (e.g. $1,001–$15,000), not exact amounts.</p>
+{% endblock %}

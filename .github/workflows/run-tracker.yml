@@ -1,0 +1,101 @@
+name: Congressional Trades Tracker (standard)
+
+# Standard, frequently-run pipeline. Prices + performance are cheap (grouped-daily),
+# so the leaderboard always refreshes; the expensive Polygon profile/news work is
+# focused on OUT-PERFORMER companies only. Use the "full refresh" workflow to
+# (re)enrich every ticker.
+
+on:
+  schedule:
+    # Mondays and Wednesdays at 11:00 UTC (House index refreshes daily)
+    - cron: '0 11 * * 1,3'
+  workflow_dispatch:
+    inputs:
+      enrich_max:
+        description: "Max out-performer profiles to (re)enrich this run"
+        default: "60"
+        required: false
+
+jobs:
+  run-tracker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install system OCR deps
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr poppler-utils
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch House PTRs
+        run: python src/fetch_house.py
+        env:
+          HTTP_USER_AGENT: ${{ secrets.HTTP_USER_AGENT }}
+
+      - name: Fetch Senate PTRs
+        run: python src/fetch_senate.py
+        env:
+          HTTP_USER_AGENT: ${{ secrets.HTTP_USER_AGENT }}
+
+      - name: Fetch committee assignments
+        run: python src/fetch_committees.py
+        env:
+          HTTP_USER_AGENT: ${{ secrets.HTTP_USER_AGENT }}
+
+      - name: OCR scanned House PTRs (capped, resumable)
+        run: python src/ocr_scanned.py
+        env:
+          HTTP_USER_AGENT: ${{ secrets.HTTP_USER_AGENT }}
+
+      - name: Refresh prices (grouped-daily → per-ticker close bars)
+        run: python src/fetch_prices.py
+        env:
+          POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}
+
+      - name: Compute performance
+        run: python src/compute_performance.py
+        env:
+          POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}
+
+      - name: Rank (identifies out-performers)
+        run: python src/score_and_rank.py
+
+      - name: Enrich out-performer companies (Polygon)
+        run: python src/enrich.py --focus outperformers --max ${{ github.event.inputs.enrich_max || 60 }}
+        env:
+          POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}
+
+      - name: Refresh news (out-performer + recently disclosed)
+        run: python src/refresh_news.py
+        env:
+          POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}
+
+      - name: Generate charts
+        run: python src/fetch_charts.py
+
+      - name: Compute momentum signals
+        run: python src/compute_momentum.py
+
+      - name: Build graph
+        run: python src/build_graph.py
+
+      - name: Generate report
+        run: python src/generate_report.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/
+          git diff --staged --quiet || git commit -m "Update congressional trades report $(date +%Y-%m-%d)"
+          git push

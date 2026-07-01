@@ -1,0 +1,20 @@
+{% if op_added or op_removed %}
+<div class="card op-changes">
+  <strong>Out-performer list changes</strong>
+  <span class="muted small">since {{ op_changes_since }} — recomputed from new disclosures and updated prices</span>
+  <ul class="small" style="margin:8px 0 0; padding-left:18px">
+    {% for m in op_added %}
+    <li><span class="pos">▲ joined</span>
+        <a href="{{ root }}members/{{ m.member_id }}.html">{{ m.member }}</a>
+        <span class="pill {{ m.chamber }}">{{ m.chamber }}</span>
+        <span class="muted">({{ benchmark }} alpha {{ pct(m.dw_alpha) }}, return {{ pct(m.dw_return_pct) }})</span></li>
+    {% endfor %}
+    {% for m in op_removed %}
+    <li><span class="neg">▼ dropped</span>
+        <a href="{{ root }}members/{{ m.member_id }}.html">{{ m.member }}</a>
+        <span class="pill {{ m.chamber }}">{{ m.chamber }}</span>
+        <span class="muted">({{ benchmark }} alpha {{ pct(m.dw_alpha) }})</span></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

@@ -1,0 +1,61 @@
+# Congressional Trades Tracker configuration
+
+http:
+  # A descriptive User-Agent is required by the House Clerk and Senate eFD sites.
+  user_agent: "CongressTradesTracker/1.0 (contact: you@example.com)"
+  rate_limit_delay_ms: 400      # polite delay between House/Senate requests
+  max_retries: 3
+  timeout_seconds: 30
+
+polygon:
+  rate_limit_calls_per_min: 5   # free tier
+  details_ttl_days: 180         # company description/profile — rarely changes, recheck ~every 6 months
+  financials_ttl_days: 90       # annual financial statements — refresh more often than the description
+  aggregates_ttl_days: 7        # legacy per-ticker aggregates TTL (prices now come from grouped-daily via fetch_prices)
+  news_limit: 5
+  news_ttl_days: 14             # recent-news cache — headlines go stale after ~2 weeks
+  news_refresh_max: 40          # max stale-news refreshes per run (relevant tickers only)
+  chart_lookback_days: 730      # 2 years
+  max_enrichment_tickers: 60    # safety cap per run (free-tier budget)
+
+pipeline:
+  lookback_days: 730            # trailing 2-year window for filings + returns
+  benchmark_ticker: "SPY"
+
+scoring:
+  # A member must have at least this many resolved positions to appear ranked.
+  min_positions_to_rank: 3
+  # "Out-performer" = top `outperformer_top_quantile` of rankable members by dollar-weighted
+  # alpha, AND alpha must exceed `outperformer_min_alpha`. (Intersection, not union.)
+  outperformer_min_alpha: 0.0   # alpha must beat SPY by more than this (dollar-weighted)
+  outperformer_top_quantile: 0.25  # only the top quartile by alpha qualify
+
+report:
+  leaderboard_size: 40          # members shown on the leaderboard
+  top_stock_detail_count: 60    # stocks that get a full detail page
+  description_max_chars: 600
+  whats_new_window_days: 14     # "What's new"/digest shows trades disclosed within this many days
+  drivers_size: 40              # stocks shown in "drove out-performance" (View A)
+  recent_buys_size: 40          # stocks shown in "buying now" (View B)
+  view_b_window_days: 30        # a purchase counts as "now" if disclosed within this many days
+  news_relevant_days: 120       # a ticker is "relevant" for news refresh if disclosed within this window
+
+ocr:
+  max_filings_per_run: 20       # scanned House PTRs to OCR per run (slow — keep bounded)
+  dpi: 300                      # render resolution for OCR
+  # Match threshold lives in src/ocr_ptr.py (MATCH_CUTOFF = 0.86).
+
+graph:
+  feed_size: 150                # rows in the "regulated bets" signal feed
+  cap_buckets:                  # lower bound (USD) for each market-cap bucket
+    mega: 200000000000
+    large: 10000000000
+    mid: 2000000000
+    small: 300000000
+  signal:                       # "interestingness" composite weights
+    cap_multiplier: {micro: 3.0, small: 2.5, mid: 1.5, large: 1.1, mega: 1.0, unknown: 1.0}
+    committee_boost: 3.0        # multiplier when the industry is in the member's committee jurisdiction
+    consensus_step: 0.5         # +0.5 per additional member buying the same ticker
+  network:
+    max_members: 25             # members shown in the interactive network (people-first)
+    edges_per_member: 3         # each member links to their top-N industries by dollars

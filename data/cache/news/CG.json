@@ -1,0 +1,445 @@
+[
+  {
+    "id": "dc421b673549ea20d30182767cf89e4d0ceb79ef0de7355db97e3cb5bc7d842e",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "How GPUs Are Becoming the Hottest Asset Class",
+    "author": "Charles-Henry Monchau",
+    "published_utc": "2026-06-13T08:03:00Z",
+    "article_url": "https://www.investing.com/analysis/how-gpus-are-becoming-the-hottest-asset-class-200681864",
+    "tickers": [
+      "NVDA",
+      "CRWV",
+      "BLK",
+      "DIVB",
+      "BX",
+      "PMIFF",
+      "CG",
+      "AMJB",
+      "JPM",
+      "JPMpC",
+      "JPMpD",
+      "JPMpJ",
+      "JPMpK",
+      "JPMpL",
+      "JPMpM",
+      "VYLD",
+      "AMZN",
+      "META",
+      "MSFT",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "AMD",
+      "MQBKY"
+    ],
+    "amp_url": "https://m.investing.com/analysis/how-gpus-are-becoming-the-hottest-asset-class-200681864?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "GPUs have evolved from gaming chips into a distinct financial asset class, with standardized pricing, financing structures, and risk-transfer tools emerging. The GPU financing market reached $20-34 billion by early 2026, driven by massive AI infrastructure spending. However, the asset class faces challenges including uncertain depreciation rates, volatile rental prices, ecosystem concentration, and risks from custom silicon and export controls.",
+    "keywords": [
+      "GPU asset class",
+      "AI infrastructure",
+      "compute financing",
+      "GPU depreciation",
+      "hyperscaler investment",
+      "asset-backed securities",
+      "compute commoditization"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "NVIDIA is positioned as the primary GPU supplier to the growing AI infrastructure market, with massive hyperscaler commitments approaching trillion-dollar spending by 2027. The article highlights NVIDIA's dominance in the GPU market and the strong demand for its chips."
+      },
+      {
+        "ticker": "CRWV",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "CoreWeave is presented as both an opportunity and a cautionary tale\u2014demonstrating rapid growth in GPU financing but also highlighting fragility through customer concentration, leverage, negative operating cash flow periods, and refinancing pressure."
+      },
+      {
+        "ticker": "BLK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "BlackRock is identified as a top-tier lender active in the GPU financing market, indicating institutional confidence in GPU-collateralized debt and infrastructure investments."
+      },
+      {
+        "ticker": "DIVB",
+        "sentiment": "positive",
+        "sentiment_reasoning": "BlackRock is identified as a top-tier lender active in the GPU financing market, indicating institutional confidence in GPU-collateralized debt and infrastructure investments."
+      },
+      {
+        "ticker": "BX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Blackstone is listed among top-tier lenders active in GPU financing, demonstrating major institutional participation in the emerging GPU asset class."
+      },
+      {
+        "ticker": "PMIFF",
+        "sentiment": "positive",
+        "sentiment_reasoning": "PIMCO's involvement as a top-tier lender in GPU financing indicates institutional confidence and participation in the GPU infrastructure investment market."
+      },
+      {
+        "ticker": "CG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Carlyle's participation as a top-tier lender in GPU financing demonstrates major private equity and infrastructure investor confidence in the GPU asset class."
+      },
+      {
+        "ticker": "AMJB",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPMpC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPMpD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPMpJ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPMpK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPMpL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPMpM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "VYLD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Amazon is mentioned as a hyperscaler with massive AI commitments and as a buyer of GPU infrastructure. The article notes Amazon shortened server useful life from 6 to 5 years, reflecting uncertainty in GPU depreciation assumptions."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Meta is identified as a major hyperscaler with significant AI infrastructure spending, but also noted for disagreeing with other tech companies on GPU depreciation timelines (5.5 years vs. others' 6 years)."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Microsoft is mentioned as a hyperscaler with trillion-dollar AI commitments and uses a 6-year depreciation schedule for GPUs, contributing to the uncertainty in collateral valuation."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet is identified as a major hyperscaler with significant AI spending and custom silicon development (Google TPUs), which poses a threat to NVIDIA GPU resale value and pricing power."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet is identified as a major hyperscaler with significant AI spending and custom silicon development (Google TPUs), which poses a threat to NVIDIA GPU resale value and pricing power."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet is identified as a major hyperscaler with significant AI spending and custom silicon development (Google TPUs), which poses a threat to NVIDIA GPU resale value and pricing power."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet is identified as a major hyperscaler with significant AI spending and custom silicon development (Google TPUs), which poses a threat to NVIDIA GPU resale value and pricing power."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "AMD is mentioned as a competitor developing its own GPU roadmap, representing a potential threat to NVIDIA's market dominance and the value of existing GPU fleets."
+      },
+      {
+        "ticker": "MQBKY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Macquarie's participation as a top-tier lender in GPU financing demonstrates infrastructure investment expertise being applied to the emerging GPU asset class."
+      }
+    ]
+  },
+  {
+    "id": "47c43b6c671cff03aace0dd2b6c74c57c6b82011096b8b8e508682ec311007cf",
+    "publisher": {
+      "name": "Benzinga",
+      "homepage_url": "https://www.benzinga.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+    },
+    "title": "Deal Dispatch: Carlyle Buys Chung Ho Group, Second Nature Brands Acquires Tillamook Country Smoker, GoHealth Bankruptcy",
+    "author": "Caroline Ryan",
+    "published_utc": "2026-06-12T18:40:51Z",
+    "article_url": "https://www.benzinga.com/m-a/26/06/53176866/deal-dispatch-carlyle-buys-chung-ho-group-second-nature-brands-acquires-tillamook-country-smoker-gohealth-ban?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+    "tickers": [
+      "CG",
+      "GOCO",
+      "SNBR",
+      "SGMO",
+      "ZOOZ",
+      "ZOOZW"
+    ],
+    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/06/12/benzinga-deal-dispatch2.jpeg",
+    "description": "Multiple M&A transactions and bankruptcies reported: Carlyle Group acquired South Korean home appliance rental platform Chung Ho Group for $700 million; Second Nature Brands acquired Tillamook Country Smoker; GoHealth filed for Chapter 11 bankruptcy; Sleep Number agreed to merge with Sleep Country Canada after filing for bankruptcy; and several other companies announced strategic reviews or acquisitions.",
+    "keywords": [
+      "M&A",
+      "bankruptcy",
+      "Carlyle Group",
+      "acquisitions",
+      "strategic alternatives",
+      "Chapter 11"
+    ],
+    "insights": [
+      {
+        "ticker": "CG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Successfully completed a major $700 million acquisition of Chung Ho Group, demonstrating active deal-making and capital deployment capabilities."
+      },
+      {
+        "ticker": "GOCO",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Filed for Chapter 11 bankruptcy, indicating financial distress and operational challenges in the health insurance marketplace business."
+      },
+      {
+        "ticker": "SNBR",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Filed for Chapter 11 bankruptcy and agreed to merge with Sleep Country Canada, citing struggling demand and increased financial strain."
+      },
+      {
+        "ticker": "SGMO",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Retained financial advisor to evaluate strategic alternatives, suggesting financial or operational challenges requiring external evaluation."
+      },
+      {
+        "ticker": "ZOOZ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Exploring strategic alternatives to enhance shareholder value, which is a routine corporate action that could lead to positive or negative outcomes."
+      },
+      {
+        "ticker": "ZOOZW",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Exploring strategic alternatives to enhance shareholder value, which is a routine corporate action that could lead to positive or negative outcomes."
+      }
+    ]
+  },
+  {
+    "id": "080a9128e834bc91644e2fa28fe062c538923135ae552b8679e17a1906ab8937",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Carlyle Secured Lending, Inc. Announces Financial Results For First Quarter Ended March 31, 2026, Declares Second Quarter 2026 Dividend of $0.35 Per Common Share",
+    "author": "Na",
+    "published_utc": "2026-05-11T10:00:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/05/11/3291672/0/en/Carlyle-Secured-Lending-Inc-Announces-Financial-Results-For-First-Quarter-Ended-March-31-2026-Declares-Second-Quarter-2026-Dividend-of-0-35-Per-Common-Share.html",
+    "tickers": [
+      "CGBD",
+      "CG"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/cabc84a7-e6fa-4961-b840-fd4714bfb176",
+    "description": "Carlyle Secured Lending (CGBD) reported Q1 2026 earnings of $0.36 per share with stable performance despite macroeconomic uncertainty. The company declared a quarterly dividend of $0.35 per share, representing a reset from the prior $0.40 dividend. NAV per share declined 2.3% to $15.89, while total investment fair value stood at $2.3 billion. Management highlighted an increasingly attractive investment environment with expanding spreads on new originations.",
+    "keywords": [
+      "Q1 2026 earnings",
+      "net investment income",
+      "dividend reset",
+      "NAV decline",
+      "middle-market lending",
+      "business development company",
+      "credit performance"
+    ],
+    "insights": [
+      {
+        "ticker": "CGBD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "The company delivered stable earnings and consistent credit performance, but NAV declined 2.3% quarter-over-quarter and the dividend was reset lower from $0.40 to $0.35 per share. While management expressed optimism about improving market conditions and earnings power, the near-term metrics show modest headwinds. The neutral sentiment reflects mixed signals of operational stability offset by declining shareholder value and reduced distributions."
+      },
+      {
+        "ticker": "CG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "As the parent company and investment adviser to CGBD, Carlyle benefits from the subsidiary's stable performance and the expanding investment opportunities in the middle-market lending space. The company's $475 billion in AUM and management's confidence in leveraging the OneCarlyle platform to enhance originations and scale joint ventures suggest positive momentum for the broader organization."
+      }
+    ]
+  },
+  {
+    "id": "fdf715e8b63941bf8d5f5b2d18dbfdae80fbb89a44635741b16be839c0678098",
+    "publisher": {
+      "name": "Benzinga",
+      "homepage_url": "https://www.benzinga.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+    },
+    "title": "Diversified and Carlyle Partner to Acquire Assets from Camino Natural Resources",
+    "author": "Not Specified",
+    "published_utc": "2026-05-06T20:15:00Z",
+    "article_url": "https://www.benzinga.com/pressreleases/26/05/g52344074/diversified-and-carlyle-partner-to-acquire-assets-from-camino-natural-resources?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+    "tickers": [
+      "DEC",
+      "CG"
+    ],
+    "image_url": "https://cdn.benzinga.com/files/imagecache/bz2_opengraph_meta_image_400x300/sites/all/themes/bz2/images/bz-icon.png",
+    "description": "Diversified Energy Company and Carlyle Group announced a partnership to acquire oil and natural gas properties from Camino Natural Resources in Oklahoma's Anadarko Basin for $1.175 billion. The acquisition will be financed through an innovative asset-backed securitization (ABS) structured by Carlyle, adding approximately 300 MMcfepd of production and 1,478 Bcfe of reserves. The deal is expected to close in Q3 2026 and includes over 100 drill-ready inventory locations, providing significant synergies and growth opportunities without requiring equity issuance from Diversified.",
+    "keywords": [
+      "asset acquisition",
+      "oil and gas",
+      "asset-backed securitization",
+      "Anadarko Basin",
+      "strategic partnership",
+      "energy assets",
+      "production growth",
+      "financing structure"
+    ],
+    "insights": [
+      {
+        "ticker": "DEC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The company is acquiring high-quality, contiguous assets that complement its existing Oklahoma operations, providing meaningful synergies, 450+ development locations, and long-term growth opportunities without equity dilution. The innovative financing structure enables scaled investment and off-balance sheet financing."
+      },
+      {
+        "ticker": "CG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Carlyle demonstrates its asset-backed finance capabilities by structuring an innovative securitization solution, expanding its ABF portfolio with a $1.175 billion transaction. This showcases the firm's expertise in tailored financing solutions and validates its asset-backed investing model."
+      }
+    ]
+  },
+  {
+    "id": "124fe11a0a4c77349ecf961ab67ce0b770ff69c4101951f52186236ec71fd61a",
+    "publisher": {
+      "name": "Benzinga",
+      "homepage_url": "https://www.benzinga.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+    },
+    "title": "Deal Dispatch: McCormick, Unilever Merge, Sysco Acquires Jetro Restaurant Depot For $29 Billion, QVC Considers Bankruptcy",
+    "author": "Caroline Ryan",
+    "published_utc": "2026-04-03T14:35:37Z",
+    "article_url": "https://www.benzinga.com/m-a/26/04/51645515/deal-dispatch-mccormick-unilever-merge-sysco-acquires-jetro-restaurant-depot-for-29-billion-qvc-considers-ban?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+    "tickers": [
+      "MKC",
+      "MKC.V",
+      "UL",
+      "SYY",
+      "LLY",
+      "BIIB",
+      "CNTA",
+      "APLS",
+      "QVCGB",
+      "IOBT",
+      "CG",
+      "AMZN",
+      "GSAT",
+      "QXO",
+      "QXOpB"
+    ],
+    "image_url": "https://cdn.benzinga.com/files/images/story/2026/04/03/benzinga-deal-dispatch2.jpeg?width=1200&height=800&fit=crop",
+    "description": "Major M&A activity dominates the market with McCormick merging with Unilever's Foods business in a $29.1 billion deal, Sysco acquiring Jetro Restaurant Depot for $29 billion, and Eli Lilly acquiring Centessa Pharmaceuticals for $7.8 billion. Meanwhile, QVC faces financial distress and is considering Chapter 11 bankruptcy, while several other companies including IO Biotech and Lipella Pharmaceuticals have filed for bankruptcy.",
+    "keywords": [
+      "mergers and acquisitions",
+      "bankruptcy",
+      "McCormick",
+      "Unilever",
+      "Sysco",
+      "Eli Lilly",
+      "QVC",
+      "strategic alternatives",
+      "food distribution"
+    ],
+    "insights": [
+      {
+        "ticker": "MKC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Merging with Unilever's Foods business in a major $29.1 billion deal, providing significant growth and market expansion opportunities"
+      },
+      {
+        "ticker": "MKC.V",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Merging with Unilever's Foods business in a major $29.1 billion deal, providing significant growth and market expansion opportunities"
+      },
+      {
+        "ticker": "UL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Merging Foods business with McCormick while retaining 65% ownership of combined entity and receiving $15.7 billion in cash, demonstrating strategic value creation"
+      },
+      {
+        "ticker": "SYY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Acquiring Jetro Restaurant Depot for $29 billion to expand market presence and customer base in food distribution"
+      },
+      {
+        "ticker": "LLY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Acquiring Centessa Pharmaceuticals for $7.8 billion to enhance revenue growth and expand immunology and rare disease portfolio"
+      },
+      {
+        "ticker": "BIIB",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Acquiring Apellis Pharmaceuticals for $5.6 billion to add immunology and rare disease medicines to growth portfolio"
+      },
+      {
+        "ticker": "CNTA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Being acquired by Eli Lilly for $7.8 billion, providing shareholders with significant value realization"
+      },
+      {
+        "ticker": "APLS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Being acquired by Biogen for $5.6 billion, providing exit opportunity and value to shareholders"
+      },
+      {
+        "ticker": "QVCGB",
+        "sentiment": "negative",
+        "sentiment_reasoning": "In negotiations with creditors and considering Chapter 11 bankruptcy filing due to substantial doubt about ability to continue as a going concern"
+      },
+      {
+        "ticker": "IOBT",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Filed for Chapter 7 bankruptcy and ceasing operations, with stock falling approximately 75% following announcement"
+      },
+      {
+        "ticker": "CG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Acquiring majority stake in MAI Capital Management for $2.8 billion, expanding wealth management capabilities"
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "In early-stage conversations to potentially acquire Globalstar for ~$9 billion; no definitive agreement yet"
+      },
+      {
+        "ticker": "GSAT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Potential acquisition target by Amazon valued at ~$9 billion; discussions are preliminary with no certainty of transaction"
+      },
+      {
+        "ticker": "QXO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Completed $2.25 billion acquisition of Kodiak Building Partners, expanding market reach to $200+ billion and adding new customer segments"
+      },
+      {
+        "ticker": "QXOpB",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Completed $2.25 billion acquisition of Kodiak Building Partners, expanding market reach to $200+ billion and adding new customer segments"
+      }
+    ]
+  }
+]

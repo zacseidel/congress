@@ -1,0 +1,516 @@
+[
+  {
+    "id": "dc421b673549ea20d30182767cf89e4d0ceb79ef0de7355db97e3cb5bc7d842e",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "How GPUs Are Becoming the Hottest Asset Class",
+    "author": "Charles-Henry Monchau",
+    "published_utc": "2026-06-13T08:03:00Z",
+    "article_url": "https://www.investing.com/analysis/how-gpus-are-becoming-the-hottest-asset-class-200681864",
+    "tickers": [
+      "NVDA",
+      "CRWV",
+      "BLK",
+      "DIVB",
+      "BX",
+      "PMIFF",
+      "CG",
+      "AMJB",
+      "JPM",
+      "JPMpC",
+      "JPMpD",
+      "JPMpJ",
+      "JPMpK",
+      "JPMpL",
+      "JPMpM",
+      "VYLD",
+      "AMZN",
+      "META",
+      "MSFT",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "AMD",
+      "MQBKY"
+    ],
+    "amp_url": "https://m.investing.com/analysis/how-gpus-are-becoming-the-hottest-asset-class-200681864?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "GPUs have evolved from gaming chips into a distinct financial asset class, with standardized pricing, financing structures, and risk-transfer tools emerging. The GPU financing market reached $20-34 billion by early 2026, driven by massive AI infrastructure spending. However, the asset class faces challenges including uncertain depreciation rates, volatile rental prices, ecosystem concentration, and risks from custom silicon and export controls.",
+    "keywords": [
+      "GPU asset class",
+      "AI infrastructure",
+      "compute financing",
+      "GPU depreciation",
+      "hyperscaler investment",
+      "asset-backed securities",
+      "compute commoditization"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "NVIDIA is positioned as the primary GPU supplier to the growing AI infrastructure market, with massive hyperscaler commitments approaching trillion-dollar spending by 2027. The article highlights NVIDIA's dominance in the GPU market and the strong demand for its chips."
+      },
+      {
+        "ticker": "CRWV",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "CoreWeave is presented as both an opportunity and a cautionary tale\u2014demonstrating rapid growth in GPU financing but also highlighting fragility through customer concentration, leverage, negative operating cash flow periods, and refinancing pressure."
+      },
+      {
+        "ticker": "BLK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "BlackRock is identified as a top-tier lender active in the GPU financing market, indicating institutional confidence in GPU-collateralized debt and infrastructure investments."
+      },
+      {
+        "ticker": "DIVB",
+        "sentiment": "positive",
+        "sentiment_reasoning": "BlackRock is identified as a top-tier lender active in the GPU financing market, indicating institutional confidence in GPU-collateralized debt and infrastructure investments."
+      },
+      {
+        "ticker": "BX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Blackstone is listed among top-tier lenders active in GPU financing, demonstrating major institutional participation in the emerging GPU asset class."
+      },
+      {
+        "ticker": "PMIFF",
+        "sentiment": "positive",
+        "sentiment_reasoning": "PIMCO's involvement as a top-tier lender in GPU financing indicates institutional confidence and participation in the GPU infrastructure investment market."
+      },
+      {
+        "ticker": "CG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Carlyle's participation as a top-tier lender in GPU financing demonstrates major private equity and infrastructure investor confidence in the GPU asset class."
+      },
+      {
+        "ticker": "AMJB",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPMpC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPMpD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPMpJ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPMpK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPMpL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "JPMpM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "VYLD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "JP Morgan's involvement as a top-tier lender in GPU financing indicates major banking sector participation and confidence in GPU-backed lending structures."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Amazon is mentioned as a hyperscaler with massive AI commitments and as a buyer of GPU infrastructure. The article notes Amazon shortened server useful life from 6 to 5 years, reflecting uncertainty in GPU depreciation assumptions."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Meta is identified as a major hyperscaler with significant AI infrastructure spending, but also noted for disagreeing with other tech companies on GPU depreciation timelines (5.5 years vs. others' 6 years)."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Microsoft is mentioned as a hyperscaler with trillion-dollar AI commitments and uses a 6-year depreciation schedule for GPUs, contributing to the uncertainty in collateral valuation."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet is identified as a major hyperscaler with significant AI spending and custom silicon development (Google TPUs), which poses a threat to NVIDIA GPU resale value and pricing power."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet is identified as a major hyperscaler with significant AI spending and custom silicon development (Google TPUs), which poses a threat to NVIDIA GPU resale value and pricing power."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet is identified as a major hyperscaler with significant AI spending and custom silicon development (Google TPUs), which poses a threat to NVIDIA GPU resale value and pricing power."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet is identified as a major hyperscaler with significant AI spending and custom silicon development (Google TPUs), which poses a threat to NVIDIA GPU resale value and pricing power."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "AMD is mentioned as a competitor developing its own GPU roadmap, representing a potential threat to NVIDIA's market dominance and the value of existing GPU fleets."
+      },
+      {
+        "ticker": "MQBKY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Macquarie's participation as a top-tier lender in GPU financing demonstrates infrastructure investment expertise being applied to the emerging GPU asset class."
+      }
+    ]
+  },
+  {
+    "id": "39ea043130969856ffb19d81d9df43c78757bad51a97bcda80ded06db7de7be3",
+    "publisher": {
+      "name": "Benzinga",
+      "homepage_url": "https://www.benzinga.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+    },
+    "title": "Why Is Broadcom Stock Falling Tuesday?",
+    "author": "Lekha Gupta",
+    "published_utc": "2026-06-09T18:30:08Z",
+    "article_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53099514/why-is-broadcom-stock-falling-tuesday?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+    "tickers": [
+      "AVGO",
+      "APO",
+      "APOS",
+      "APOpA",
+      "BX"
+    ],
+    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/06/09/Broadcom-Sign-And-Logo-In-Green-Landscap.jpeg",
+    "description": "Broadcom stock fell 3.17% on Tuesday as investors rotated away from growth-oriented technology stocks amid a broader market sell-off. The decline was triggered by Broadcom's unchanged AI revenue outlook for fiscal 2027 despite strong Q2 results, disappointing investors seeking accelerated growth signals. The broader Nasdaq declined 2.06% as market sentiment shifted toward defensive sectors like real estate and healthcare.",
+    "keywords": [
+      "Broadcom",
+      "AI semiconductors",
+      "stock decline",
+      "profit-taking",
+      "defensive rotation",
+      "Nasdaq sell-off",
+      "AI infrastructure"
+    ],
+    "insights": [
+      {
+        "ticker": "AVGO",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock fell 3.17% due to unchanged AI revenue outlook despite strong Q2 results, triggering profit-taking among investors who expected accelerated growth guidance. Technical indicators show weakened momentum."
+      },
+      {
+        "ticker": "APO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Announced partnership with Broadcom and Blackstone to launch AI XPV Platform with $35 billion funding tranche, positioning the company in the growing AI infrastructure space."
+      },
+      {
+        "ticker": "APOS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Announced partnership with Broadcom and Blackstone to launch AI XPV Platform with $35 billion funding tranche, positioning the company in the growing AI infrastructure space."
+      },
+      {
+        "ticker": "APOpA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Announced partnership with Broadcom and Blackstone to launch AI XPV Platform with $35 billion funding tranche, positioning the company in the growing AI infrastructure space."
+      },
+      {
+        "ticker": "BX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Co-launched AI XPV Platform with Broadcom and Apollo, backing a major AI infrastructure initiative designed to support over 20 gigawatts of compute capacity through 2028."
+      }
+    ]
+  },
+  {
+    "id": "ffdc83a3fa6d4058adc8d00f537ff248c149b821ed22122ac9ff215317566c4b",
+    "publisher": {
+      "name": "Benzinga",
+      "homepage_url": "https://www.benzinga.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+    },
+    "title": "GNI Group to Acquire Ayumi Pharmaceutical Holdings, Expanding Its Position as a Global Biopharmaceutical Company",
+    "author": "Globe Newswire",
+    "published_utc": "2026-06-07T23:41:36Z",
+    "article_url": "https://www.benzinga.com/pressreleases/26/06/g53049557/gni-group-to-acquire-ayumi-pharmaceutical-holdings-expanding-its-position-as-a-global-biopharmaceu?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+    "tickers": [
+      "BX"
+    ],
+    "image_url": "https://cdn.benzinga.com/files/imagecache/bz2_opengraph_meta_image_400x300/sites/all/themes/bz2/images/bz-icon.png",
+    "description": "GNI Group announced its acquisition of Ayumi Pharmaceutical Holdings for approximately \u00a544.8 billion from shareholders led by Blackstone. The transaction establishes a large-scale pharmaceutical platform in Japan, with combined fiscal 2026 revenue expected to reach \u00a565.2 billion. Ayumi Pharmaceutical, a specialty pharmaceutical company with leading positions in pain management and rheumatology, will become a wholly owned subsidiary of GNI Group.",
+    "keywords": [
+      "acquisition",
+      "pharmaceutical",
+      "Japan",
+      "pain management",
+      "rheumatology",
+      "biopharmaceutical",
+      "commercial expansion",
+      "biosimilars"
+    ],
+    "insights": [
+      {
+        "ticker": "BX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Blackstone successfully exits its first control private equity investment in Japan at a favorable valuation, demonstrating successful value creation and business strengthening during its ownership period."
+      }
+    ]
+  },
+  {
+    "id": "57e43b7a6a1bd623db42b652113db6b8f88e5edc9dcbda1f53db8e65e33bce4d",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "GNI Group to Acquire Ayumi Pharmaceutical Holdings, Expanding Its Position as a Global Biopharmaceutical Company",
+    "author": "Na",
+    "published_utc": "2026-06-07T23:41:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/06/07/3307757/0/en/GNI-Group-to-Acquire-Ayumi-Pharmaceutical-Holdings-Expanding-Its-Position-as-a-Global-Biopharmaceutical-Company.html",
+    "tickers": [
+      "BX"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/4ee4f505-3642-4e22-811e-b6ab7a1a0286",
+    "description": "GNI Group announced the acquisition of Ayumi Pharmaceutical Holdings for approximately \u00a544.8 billion, making it a wholly owned subsidiary. The transaction establishes a large-scale pharmaceutical platform in Japan with leading positions in pain management and rheumatology, expected to increase combined fiscal 2026 revenue to approximately \u00a565.2 billion. The acquisition strengthens GNI Group's commercial capabilities and geographic diversification across Japan, China, and the United States.",
+    "keywords": [
+      "acquisition",
+      "biopharmaceutical",
+      "Japan",
+      "pain management",
+      "rheumatology",
+      "commercial expansion",
+      "pharmaceutical platform",
+      "revenue growth"
+    ],
+    "insights": [
+      {
+        "ticker": "BX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Blackstone successfully exits its investment in Ayumi Pharmaceutical as a lead shareholder, achieving a liquidity event on its first control private equity investment in Japan. The company's statement indicates satisfaction with the business development and continued support for future growth."
+      }
+    ]
+  },
+  {
+    "id": "55cefe828a9462536dafbcd9fd1d1502d94591271be29e7242542774de4b9e26",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Alterra IOS Secures $244M Financing to Fuel Growth of National Industrial Outdoor Storage Platform",
+    "author": "Na",
+    "published_utc": "2026-06-05T16:59:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/06/05/3307544/0/en/Alterra-IOS-Secures-244M-Financing-to-Fuel-Growth-of-National-Industrial-Outdoor-Storage-Platform.html",
+    "tickers": [
+      "BX",
+      "PFH",
+      "PRH",
+      "PRS",
+      "PRU",
+      "BERZ",
+      "BMO",
+      "BNKD",
+      "BNKU",
+      "BULZ",
+      "CARD",
+      "CARU",
+      "DULL",
+      "FLYD",
+      "FLYU",
+      "FNGD",
+      "FNGO",
+      "FNGS",
+      "FNGU",
+      "GDXD",
+      "GDXU",
+      "JETD",
+      "JETU",
+      "NRGD",
+      "NRGU",
+      "OILD",
+      "OILU",
+      "SHNY",
+      "WTID",
+      "WTIU"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/021e716f-df1f-486d-8635-ab699dafba87",
+    "description": "Alterra IOS closed a $244 million loan from Blackstone Real Estate Debt Strategies to support its industrial outdoor storage platform expansion. The financing, secured by 37 properties across 27 markets, brings Alterra's total institutional debt to over $1.8 billion. This marks Blackstone's sixth IOS sector loan, with total exposure exceeding $1.1 billion. Alterra has acquired over 470 properties across 39 states using an innovative equity pledge framework instead of traditional mortgage structures.",
+    "keywords": [
+      "industrial outdoor storage",
+      "real estate financing",
+      "debt capital",
+      "institutional investment",
+      "portfolio expansion",
+      "non-recourse financing"
+    ],
+    "insights": [
+      {
+        "ticker": "BX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "BREDS closed its sixth IOS sector loan with total exposure exceeding $1.1 billion, indicating strong commitment and confidence in the industrial outdoor storage asset class. The transaction demonstrates active capital deployment and sector expertise."
+      },
+      {
+        "ticker": "PFH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "PGIM (Prudential's asset management division) provided $103 million in acquisition financing to Alterra, showing participation in the IOS sector but representing a smaller capital commitment compared to other institutional partners."
+      },
+      {
+        "ticker": "PRH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "PGIM (Prudential's asset management division) provided $103 million in acquisition financing to Alterra, showing participation in the IOS sector but representing a smaller capital commitment compared to other institutional partners."
+      },
+      {
+        "ticker": "PRS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "PGIM (Prudential's asset management division) provided $103 million in acquisition financing to Alterra, showing participation in the IOS sector but representing a smaller capital commitment compared to other institutional partners."
+      },
+      {
+        "ticker": "PRU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "PGIM (Prudential's asset management division) provided $103 million in acquisition financing to Alterra, showing participation in the IOS sector but representing a smaller capital commitment compared to other institutional partners."
+      },
+      {
+        "ticker": "BERZ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "BMO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "BNKD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "BNKU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "BULZ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "CARD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "CARU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "DULL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "FLYD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "FLYU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "FNGD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "FNGO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "FNGS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "FNGU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "GDXD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "GDXU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "JETD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "JETU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "NRGD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "NRGU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "OILD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "OILU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "SHNY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "WTID",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      },
+      {
+        "ticker": "WTIU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "BMO provided a $100 million revolving credit facility to Alterra, demonstrating banking sector support for the IOS platform but representing routine commercial lending activity."
+      }
+    ]
+  }
+]

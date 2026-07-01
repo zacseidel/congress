@@ -1,0 +1,181 @@
+{
+  "start_date": "2025-01-01",
+  "end_date": "2025-12-31",
+  "filing_date": "2026-03-02",
+  "acceptance_datetime": "2026-03-02T22:28:31Z",
+  "timeframe": "annual",
+  "fiscal_period": "FY",
+  "fiscal_year": "2025",
+  "cik": "0001460235",
+  "sic": "6221",
+  "tickers": [
+    "PPLT"
+  ],
+  "company_name": "abrdn Platinum ETF Trust",
+  "source_filing_url": "https://api.polygon.io/v1/reference/sec/filings/0001999371-26-004880",
+  "source_filing_file_url": "http://api.polygon.io/v1/reference/sec/filings/0001999371-26-004880/files/pplt-10k_123125_htm.xml",
+  "financials": {
+    "balance_sheet": {
+      "equity_attributable_to_parent": {
+        "value": 2862968000.0,
+        "unit": "USD",
+        "label": "Equity Attributable To Parent",
+        "order": 1600
+      },
+      "current_liabilities": {
+        "value": 1384000.0,
+        "unit": "USD",
+        "label": "Current Liabilities",
+        "order": 700
+      },
+      "liabilities": {
+        "value": 1384000.0,
+        "unit": "USD",
+        "label": "Liabilities",
+        "order": 600
+      },
+      "liabilities_and_equity": {
+        "value": 2864352000.0,
+        "unit": "USD",
+        "label": "Liabilities And Equity",
+        "order": 1900
+      },
+      "noncurrent_assets": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Noncurrent Assets",
+        "order": 300
+      },
+      "accounts_payable": {
+        "value": 1384000.0,
+        "unit": "USD",
+        "label": "Accounts Payable",
+        "order": 710
+      },
+      "equity": {
+        "value": 2862968000.0,
+        "unit": "USD",
+        "label": "Equity",
+        "order": 1400
+      },
+      "noncurrent_liabilities": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Noncurrent Liabilities",
+        "order": 800
+      },
+      "assets": {
+        "value": 2864352000.0,
+        "unit": "USD",
+        "label": "Assets",
+        "order": 100
+      },
+      "current_assets": {
+        "value": 2864352000.0,
+        "unit": "USD",
+        "label": "Current Assets",
+        "order": 200
+      },
+      "equity_attributable_to_noncontrolling_interest": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Equity Attributable To Noncontrolling Interest",
+        "order": 1500
+      }
+    },
+    "income_statement": {
+      "basic_earnings_per_share": {
+        "value": 105.31,
+        "unit": "USD / shares",
+        "label": "Basic Earnings Per Share",
+        "order": 4200
+      },
+      "preferred_stock_dividends_and_other_adjustments": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Preferred Stock Dividends And Other Adjustments",
+        "order": 3900
+      },
+      "net_income_loss_attributable_to_noncontrolling_interest": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Net Income/Loss Attributable To Noncontrolling Interest",
+        "order": 3300
+      },
+      "net_income_loss_available_to_common_stockholders_basic": {
+        "value": 1341630000.0,
+        "unit": "USD",
+        "label": "Net Income/Loss Available To Common Stockholders, Basic",
+        "order": 3700
+      },
+      "net_income_loss_attributable_to_parent": {
+        "value": 1341630000.0,
+        "unit": "USD",
+        "label": "Net Income/Loss Attributable To Parent",
+        "order": 3500
+      },
+      "net_income_loss": {
+        "value": 1341630000.0,
+        "unit": "USD",
+        "label": "Net Income/Loss",
+        "order": 3200
+      },
+      "participating_securities_distributed_and_undistributed_earnings_loss_basic": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Participating Securities, Distributed And Undistributed Earnings/Loss, Basic",
+        "order": 3800
+      },
+      "income_loss_from_continuing_operations_after_tax": {
+        "value": 1341630000.0,
+        "unit": "USD",
+        "label": "Income/Loss From Continuing Operations After Tax",
+        "order": 1400
+      },
+      "operating_expenses": {
+        "value": 9189000.0,
+        "unit": "USD",
+        "label": "Operating Expenses",
+        "order": 1000
+      },
+      "basic_average_shares": {
+        "value": 12740274.0,
+        "unit": "shares",
+        "label": "Basic Average Shares",
+        "order": 4400
+      },
+      "income_loss_from_continuing_operations_before_tax": {
+        "value": 1341630000.0,
+        "unit": "USD",
+        "label": "Income/Loss From Continuing Operations Before Tax",
+        "order": 1500
+      }
+    },
+    "comprehensive_income": {
+      "other_comprehensive_income_loss": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Other Comprehensive Income/Loss",
+        "order": 400
+      },
+      "comprehensive_income_loss_attributable_to_noncontrolling_interest": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Comprehensive Income/Loss Attributable To Noncontrolling Interest",
+        "order": 200
+      },
+      "comprehensive_income_loss_attributable_to_parent": {
+        "value": 1341630000.0,
+        "unit": "USD",
+        "label": "Comprehensive Income/Loss Attributable To Parent",
+        "order": 300
+      },
+      "comprehensive_income_loss": {
+        "value": 1341630000.0,
+        "unit": "USD",
+        "label": "Comprehensive Income/Loss",
+        "order": 100
+      }
+    }
+  }
+}

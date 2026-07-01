@@ -1,0 +1,127 @@
+{
+  "start_date": "2025-01-01",
+  "end_date": "2025-12-31",
+  "filing_date": "2026-02-27",
+  "acceptance_datetime": "2026-02-27T18:44:38Z",
+  "timeframe": "annual",
+  "fiscal_period": "FY",
+  "fiscal_year": "2025",
+  "cik": "0001330568",
+  "sic": "6221",
+  "tickers": [
+    "SLV"
+  ],
+  "company_name": "iShares Silver Trust",
+  "source_filing_url": "https://api.polygon.io/v1/reference/sec/filings/0001437749-26-006059",
+  "source_filing_file_url": "http://api.polygon.io/v1/reference/sec/filings/0001437749-26-006059/files/slv20251231_10k_htm.xml",
+  "financials": {
+    "comprehensive_income": {
+      "comprehensive_income_loss_attributable_to_noncontrolling_interest": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Comprehensive Income/Loss Attributable To Noncontrolling Interest",
+        "order": 200
+      },
+      "comprehensive_income_loss": {
+        "value": 21306921615.0,
+        "unit": "USD",
+        "label": "Comprehensive Income/Loss",
+        "order": 100
+      },
+      "other_comprehensive_income_loss": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Other Comprehensive Income/Loss",
+        "order": 400
+      },
+      "comprehensive_income_loss_attributable_to_parent": {
+        "value": 21306921615.0,
+        "unit": "USD",
+        "label": "Comprehensive Income/Loss Attributable To Parent",
+        "order": 300
+      }
+    },
+    "income_statement": {
+      "income_loss_from_continuing_operations_before_tax": {
+        "value": 21306921615.0,
+        "unit": "USD",
+        "label": "Income/Loss From Continuing Operations Before Tax",
+        "order": 1500
+      },
+      "net_income_loss_available_to_common_stockholders_basic": {
+        "value": 21306921615.0,
+        "unit": "USD",
+        "label": "Net Income/Loss Available To Common Stockholders, Basic",
+        "order": 3700
+      },
+      "net_income_loss_attributable_to_noncontrolling_interest": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Net Income/Loss Attributable To Noncontrolling Interest",
+        "order": 3300
+      },
+      "operating_income_loss": {
+        "value": -95546277.0,
+        "unit": "USD",
+        "label": "Operating Income/Loss",
+        "order": 1100
+      },
+      "net_income_loss_attributable_to_parent": {
+        "value": 21306921615.0,
+        "unit": "USD",
+        "label": "Net Income/Loss Attributable To Parent",
+        "order": 3500
+      },
+      "revenues": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Revenues",
+        "order": 100
+      },
+      "preferred_stock_dividends_and_other_adjustments": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Preferred Stock Dividends And Other Adjustments",
+        "order": 3900
+      },
+      "participating_securities_distributed_and_undistributed_earnings_loss_basic": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Participating Securities, Distributed And Undistributed Earnings/Loss, Basic",
+        "order": 3800
+      },
+      "basic_earnings_per_share": {
+        "value": 40.9,
+        "unit": "USD / shares",
+        "label": "Basic Earnings Per Share",
+        "order": 4200
+      },
+      "operating_expenses": {
+        "value": 95546277.0,
+        "unit": "USD",
+        "label": "Operating Expenses",
+        "order": 1000
+      },
+      "income_loss_from_continuing_operations_after_tax": {
+        "value": 21306921615.0,
+        "unit": "USD",
+        "label": "Income/Loss From Continuing Operations After Tax",
+        "order": 1400
+      },
+      "net_income_loss": {
+        "value": 21306921615.0,
+        "unit": "USD",
+        "label": "Net Income/Loss",
+        "order": 3200
+      }
+    },
+    "cash_flow_statement": {
+      "net_cash_flow_from_operating_activities": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Net Cash Flow From Operating Activities",
+        "order": 100
+      }
+    }
+  }
+}

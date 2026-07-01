@@ -1,0 +1,387 @@
+{
+  "start_date": "2023-12-31",
+  "end_date": "2024-12-28",
+  "filing_date": "2025-02-25",
+  "acceptance_datetime": "2025-02-25T20:08:48Z",
+  "timeframe": "annual",
+  "fiscal_period": "FY",
+  "fiscal_year": "2024",
+  "cik": "0001000228",
+  "sic": "5047",
+  "tickers": [
+    "HSIC"
+  ],
+  "company_name": "HENRY SCHEIN INC",
+  "source_filing_url": "https://api.polygon.io/v1/reference/sec/filings/0001000228-25-000014",
+  "source_filing_file_url": "http://api.polygon.io/v1/reference/sec/filings/0001000228-25-000014/files/hsic-20241228_htm.xml",
+  "financials": {
+    "comprehensive_income": {
+      "comprehensive_income_loss": {
+        "value": 201000000.0,
+        "unit": "USD",
+        "label": "Comprehensive Income/Loss",
+        "order": 100
+      },
+      "comprehensive_income_loss_attributable_to_noncontrolling_interest": {
+        "value": -16000000.0,
+        "unit": "USD",
+        "label": "Comprehensive Income/Loss Attributable To Noncontrolling Interest",
+        "order": 200
+      },
+      "comprehensive_income_loss_attributable_to_parent": {
+        "value": 217000000.0,
+        "unit": "USD",
+        "label": "Comprehensive Income/Loss Attributable To Parent",
+        "order": 300
+      },
+      "other_comprehensive_income_loss": {
+        "value": -197000000.0,
+        "unit": "USD",
+        "label": "Other Comprehensive Income/Loss",
+        "order": 400
+      }
+    },
+    "cash_flow_statement": {
+      "net_cash_flow_continuing": {
+        "value": -92000000.0,
+        "unit": "USD",
+        "label": "Net Cash Flow, Continuing",
+        "order": 1200
+      },
+      "net_cash_flow_from_financing_activities_continuing": {
+        "value": -510000000.0,
+        "unit": "USD",
+        "label": "Net Cash Flow From Financing Activities, Continuing",
+        "order": 800
+      },
+      "net_cash_flow_from_operating_activities_continuing": {
+        "value": 848000000.0,
+        "unit": "USD",
+        "label": "Net Cash Flow From Operating Activities, Continuing",
+        "order": 200
+      },
+      "net_cash_flow_from_investing_activities": {
+        "value": -430000000.0,
+        "unit": "USD",
+        "label": "Net Cash Flow From Investing Activities",
+        "order": 400
+      },
+      "net_cash_flow": {
+        "value": -92000000.0,
+        "unit": "USD",
+        "label": "Net Cash Flow",
+        "order": 1100
+      },
+      "net_cash_flow_from_investing_activities_continuing": {
+        "value": -430000000.0,
+        "unit": "USD",
+        "label": "Net Cash Flow From Investing Activities, Continuing",
+        "order": 500
+      },
+      "net_cash_flow_from_financing_activities": {
+        "value": -510000000.0,
+        "unit": "USD",
+        "label": "Net Cash Flow From Financing Activities",
+        "order": 700
+      },
+      "net_cash_flow_from_operating_activities": {
+        "value": 848000000.0,
+        "unit": "USD",
+        "label": "Net Cash Flow From Operating Activities",
+        "order": 100
+      }
+    },
+    "balance_sheet": {
+      "accounts_payable": {
+        "value": 962000000.0,
+        "unit": "USD",
+        "label": "Accounts Payable",
+        "order": 710
+      },
+      "noncurrent_liabilities": {
+        "value": 2578000000.0,
+        "unit": "USD",
+        "label": "Noncurrent Liabilities",
+        "order": 800
+      },
+      "equity_attributable_to_noncontrolling_interest": {
+        "value": 638000000.0,
+        "unit": "USD",
+        "label": "Equity Attributable To Noncontrolling Interest",
+        "order": 1500
+      },
+      "cash": {
+        "value": 122000000.0,
+        "unit": "USD",
+        "label": "Cash",
+        "order": 210
+      },
+      "wages": {
+        "value": 303000000.0,
+        "unit": "USD",
+        "label": "Wages",
+        "order": 730
+      },
+      "current_assets": {
+        "value": 3983000000.0,
+        "unit": "USD",
+        "label": "Current Assets",
+        "order": 200
+      },
+      "inventory": {
+        "value": 1810000000.0,
+        "unit": "USD",
+        "label": "Inventory",
+        "order": 230
+      },
+      "other_current_liabilities": {
+        "value": 1538000000.0,
+        "unit": "USD",
+        "label": "Other Current Liabilities",
+        "order": 740
+      },
+      "noncurrent_assets": {
+        "value": 6235000000.0,
+        "unit": "USD",
+        "label": "Noncurrent Assets",
+        "order": 300
+      },
+      "liabilities_and_equity": {
+        "value": 10218000000.0,
+        "unit": "USD",
+        "label": "Liabilities And Equity",
+        "order": 1900
+      },
+      "intangible_assets": {
+        "value": 1023000000.0,
+        "unit": "USD",
+        "label": "Intangible Assets",
+        "order": 330
+      },
+      "equity_attributable_to_parent": {
+        "value": 3393000000.0,
+        "unit": "USD",
+        "label": "Equity Attributable To Parent",
+        "order": 1600
+      },
+      "equity": {
+        "value": 4031000000.0,
+        "unit": "USD",
+        "label": "Equity",
+        "order": 1400
+      },
+      "liabilities": {
+        "value": 5381000000.0,
+        "unit": "USD",
+        "label": "Liabilities",
+        "order": 600
+      },
+      "other_noncurrent_assets": {
+        "value": 5212000000.0,
+        "unit": "USD",
+        "label": "Other Non-current Assets",
+        "order": 350
+      },
+      "current_liabilities": {
+        "value": 2803000000.0,
+        "unit": "USD",
+        "label": "Current Liabilities",
+        "order": 700
+      },
+      "other_current_assets": {
+        "value": 2051000000.0,
+        "unit": "USD",
+        "label": "Other Current Assets",
+        "order": 250
+      },
+      "temporary_equity": {
+        "value": 806000000.0,
+        "unit": "USD",
+        "label": "Temporary Equity",
+        "order": 1700
+      },
+      "assets": {
+        "value": 10218000000.0,
+        "unit": "USD",
+        "label": "Assets",
+        "order": 100
+      }
+    },
+    "income_statement": {
+      "operating_income_loss": {
+        "value": 621000000.0,
+        "unit": "USD",
+        "label": "Operating Income/Loss",
+        "order": 1100
+      },
+      "revenues": {
+        "value": 12673000000.0,
+        "unit": "USD",
+        "label": "Revenues",
+        "order": 100
+      },
+      "net_income_loss_attributable_to_parent": {
+        "value": 390000000.0,
+        "unit": "USD",
+        "label": "Net Income/Loss Attributable To Parent",
+        "order": 3500
+      },
+      "costs_and_expenses": {
+        "value": 12160000000.0,
+        "unit": "USD",
+        "label": "Costs And Expenses",
+        "order": 600
+      },
+      "net_income_loss_attributable_to_redeemable_noncontrolling_interest": {
+        "value": -1000000.0,
+        "unit": "USD",
+        "label": "Net Income/Loss Attributable To Redeemable Noncontrolling Interest",
+        "order": 3600
+      },
+      "interest_expense_operating": {
+        "value": 131000000.0,
+        "unit": "USD",
+        "label": "Interest Expense, Operating",
+        "order": 2700
+      },
+      "gross_profit": {
+        "value": 4016000000.0,
+        "unit": "USD",
+        "label": "Gross Profit",
+        "order": 800
+      },
+      "operating_expenses": {
+        "value": 3395000000.0,
+        "unit": "USD",
+        "label": "Operating Expenses",
+        "order": 1000
+      },
+      "basic_earnings_per_share": {
+        "value": 3.07,
+        "unit": "USD / shares",
+        "label": "Basic Earnings Per Share",
+        "order": 4200
+      },
+      "income_tax_expense_benefit_current": {
+        "value": 189000000.0,
+        "unit": "USD",
+        "label": "Income Tax Expense/Benefit, Current",
+        "order": 2300
+      },
+      "selling_general_and_administrative_expenses": {
+        "value": 3034000000.0,
+        "unit": "USD",
+        "label": "Selling, General, and Administrative Expenses",
+        "order": 1010
+      },
+      "participating_securities_distributed_and_undistributed_earnings_loss_basic": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Participating Securities, Distributed And Undistributed Earnings/Loss, Basic",
+        "order": 3800
+      },
+      "income_tax_expense_benefit_deferred": {
+        "value": -61000000.0,
+        "unit": "USD",
+        "label": "Income Tax Expense/Benefit, Deferred",
+        "order": 2400
+      },
+      "diluted_average_shares": {
+        "value": 127779228.0,
+        "unit": "shares",
+        "label": "Diluted Average Shares",
+        "order": 4500
+      },
+      "income_loss_from_continuing_operations_before_tax": {
+        "value": 513000000.0,
+        "unit": "USD",
+        "label": "Income/Loss From Continuing Operations Before Tax",
+        "order": 1500
+      },
+      "income_loss_from_equity_method_investments": {
+        "value": 13000000.0,
+        "unit": "USD",
+        "label": "Income/Loss From Equity Method Investments",
+        "order": 2100
+      },
+      "cost_of_revenue": {
+        "value": 8657000000.0,
+        "unit": "USD",
+        "label": "Cost Of Revenue",
+        "order": 300
+      },
+      "benefits_costs_expenses": {
+        "value": 12160000000.0,
+        "unit": "USD",
+        "label": "Benefits Costs and Expenses",
+        "order": 200
+      },
+      "income_tax_expense_benefit": {
+        "value": 128000000.0,
+        "unit": "USD",
+        "label": "Income Tax Expense/Benefit",
+        "order": 2200
+      },
+      "basic_average_shares": {
+        "value": 126788997.0,
+        "unit": "shares",
+        "label": "Basic Average Shares",
+        "order": 4400
+      },
+      "depreciation_and_amortization": {
+        "value": 251000000.0,
+        "unit": "USD",
+        "label": "Depreciation and Amortization",
+        "order": 1020
+      },
+      "income_loss_before_equity_method_investments": {
+        "value": 513000000.0,
+        "unit": "USD",
+        "label": "Income/Loss Before Equity Method Investments",
+        "order": 1300
+      },
+      "diluted_earnings_per_share": {
+        "value": 3.05,
+        "unit": "USD / shares",
+        "label": "Diluted Earnings Per Share",
+        "order": 4300
+      },
+      "preferred_stock_dividends_and_other_adjustments": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Preferred Stock Dividends And Other Adjustments",
+        "order": 3900
+      },
+      "net_income_loss_available_to_common_stockholders_basic": {
+        "value": 390000000.0,
+        "unit": "USD",
+        "label": "Net Income/Loss Available To Common Stockholders, Basic",
+        "order": 3700
+      },
+      "net_income_loss_attributable_to_noncontrolling_interest": {
+        "value": 8000000.0,
+        "unit": "USD",
+        "label": "Net Income/Loss Attributable To Noncontrolling Interest",
+        "order": 3300
+      },
+      "other_operating_expenses": {
+        "value": 110000000.0,
+        "unit": "USD",
+        "label": "Other Operating Expenses",
+        "order": 1040
+      },
+      "income_loss_from_continuing_operations_after_tax": {
+        "value": 385000000.0,
+        "unit": "USD",
+        "label": "Income/Loss From Continuing Operations After Tax",
+        "order": 1400
+      },
+      "net_income_loss": {
+        "value": 398000000.0,
+        "unit": "USD",
+        "label": "Net Income/Loss",
+        "order": 3200
+      }
+    }
+  }
+}

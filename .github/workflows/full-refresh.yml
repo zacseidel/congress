@@ -1,0 +1,53 @@
+name: Congressional Trades Tracker (full refresh)
+
+# Full rebuild via backfill.py: enriches EVERY traded ticker (descriptions,
+# financials, news) rather than only out-performer companies. Slow on the Polygon
+# free tier and resumable, so it runs monthly / on demand rather than every push.
+# The standard run-tracker workflow handles the frequent, out-performer-focused
+# refreshes in between.
+
+on:
+  schedule:
+    # 1st of each month at 09:00 UTC
+    - cron: '0 9 1 * *'
+  workflow_dispatch:
+    inputs:
+      enrich_max:
+        description: "Max NEW tickers to enrich this run (free-tier budget; default all)"
+        default: "10000"
+        required: false
+
+jobs:
+  full-refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330        # free-tier Polygon pacing can be slow on a cold cache
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install system OCR deps
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr poppler-utils
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Backfill (full pipeline, all tickers)
+        run: python src/backfill.py --enrich-max ${{ github.event.inputs.enrich_max || 10000 }}
+        env:
+          HTTP_USER_AGENT: ${{ secrets.HTTP_USER_AGENT }}
+          POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/
+          git diff --staged --quiet || git commit -m "Full refresh: congressional trades report $(date +%Y-%m-%d)"
+          git push

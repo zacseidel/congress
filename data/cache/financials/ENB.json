@@ -1,0 +1,363 @@
+{
+  "start_date": "2025-01-01",
+  "end_date": "2025-12-31",
+  "filing_date": "2026-02-13",
+  "acceptance_datetime": "2026-02-13T12:05:44Z",
+  "timeframe": "annual",
+  "fiscal_period": "FY",
+  "fiscal_year": "2025",
+  "cik": "0000895728",
+  "sic": "4610",
+  "tickers": [
+    "ENB"
+  ],
+  "company_name": "ENBRIDGE INC",
+  "source_filing_url": "https://api.polygon.io/v1/reference/sec/filings/0001193125-26-049810",
+  "source_filing_file_url": "http://api.polygon.io/v1/reference/sec/filings/0001193125-26-049810/files/enb-20251231_htm.xml",
+  "financials": {
+    "balance_sheet": {
+      "noncurrent_assets": {
+        "value": 205280000000.0,
+        "unit": "CAD",
+        "label": "Noncurrent Assets",
+        "order": 300
+      },
+      "other_noncurrent_assets": {
+        "value": 73682000000.0,
+        "unit": "CAD",
+        "label": "Other Non-current Assets",
+        "order": 350
+      },
+      "assets": {
+        "value": 218475000000.0,
+        "unit": "CAD",
+        "label": "Assets",
+        "order": 100
+      },
+      "equity": {
+        "value": 65188000000.0,
+        "unit": "CAD",
+        "label": "Equity",
+        "order": 1400
+      },
+      "temporary_equity": {
+        "value": 736000000.0,
+        "unit": "CAD",
+        "label": "Temporary Equity",
+        "order": 1700
+      },
+      "other_current_assets": {
+        "value": 11574000000.0,
+        "unit": "CAD",
+        "label": "Other Current Assets",
+        "order": 250
+      },
+      "current_liabilities": {
+        "value": 21004000000.0,
+        "unit": "CAD",
+        "label": "Current Liabilities",
+        "order": 700
+      },
+      "fixed_assets": {
+        "value": 131598000000.0,
+        "unit": "CAD",
+        "label": "Fixed Assets",
+        "order": 320
+      },
+      "current_assets": {
+        "value": 13195000000.0,
+        "unit": "CAD",
+        "label": "Current Assets",
+        "order": 200
+      },
+      "other_noncurrent_liabilities": {
+        "value": 27137000000.0,
+        "unit": "CAD",
+        "label": "Other Non-current Liabilities",
+        "order": 820
+      },
+      "liabilities_and_equity": {
+        "value": 218475000000.0,
+        "unit": "CAD",
+        "label": "Liabilities And Equity",
+        "order": 1900
+      },
+      "equity_attributable_to_parent": {
+        "value": 62333000000.0,
+        "unit": "CAD",
+        "label": "Equity Attributable To Parent",
+        "order": 1600
+      },
+      "inventory": {
+        "value": 1621000000.0,
+        "unit": "CAD",
+        "label": "Inventory",
+        "order": 230
+      },
+      "liabilities": {
+        "value": 152551000000.0,
+        "unit": "CAD",
+        "label": "Liabilities",
+        "order": 600
+      },
+      "long_term_debt": {
+        "value": 104410000000.0,
+        "unit": "CAD",
+        "label": "Long-term Debt",
+        "order": 810
+      },
+      "noncurrent_liabilities": {
+        "value": 131547000000.0,
+        "unit": "CAD",
+        "label": "Noncurrent Liabilities",
+        "order": 800
+      },
+      "equity_attributable_to_noncontrolling_interest": {
+        "value": 2855000000.0,
+        "unit": "CAD",
+        "label": "Equity Attributable To Noncontrolling Interest",
+        "order": 1500
+      },
+      "redeemable_noncontrolling_interest": {
+        "value": 736000000.0,
+        "unit": "CAD",
+        "label": "Redeemable Noncontrolling Interest",
+        "order": 1000
+      }
+    },
+    "income_statement": {
+      "net_income_loss_attributable_to_parent": {
+        "value": 7491000000.0,
+        "unit": "CAD",
+        "label": "Net Income/Loss Attributable To Parent",
+        "order": 3500
+      },
+      "preferred_stock_dividends_and_other_adjustments": {
+        "value": 419000000.0,
+        "unit": "CAD",
+        "label": "Preferred Stock Dividends And Other Adjustments",
+        "order": 3900
+      },
+      "basic_average_shares": {
+        "value": 2180000000.0,
+        "unit": "shares",
+        "label": "Basic Average Shares",
+        "order": 4400
+      },
+      "operating_income_loss": {
+        "value": 10958000000.0,
+        "unit": "CAD",
+        "label": "Operating Income/Loss",
+        "order": 1100
+      },
+      "net_income_loss_attributable_to_redeemable_noncontrolling_interest": {
+        "value": 28000000.0,
+        "unit": "CAD",
+        "label": "Net Income/Loss Attributable To Redeemable Noncontrolling Interest",
+        "order": 3600
+      },
+      "income_tax_expense_benefit": {
+        "value": 2004000000.0,
+        "unit": "CAD",
+        "label": "Income Tax Expense/Benefit",
+        "order": 2200
+      },
+      "benefits_costs_expenses": {
+        "value": 55401000000.0,
+        "unit": "CAD",
+        "label": "Benefits Costs and Expenses",
+        "order": 200
+      },
+      "income_loss_before_equity_method_investments": {
+        "value": 7569000000.0,
+        "unit": "CAD",
+        "label": "Income/Loss Before Equity Method Investments",
+        "order": 1300
+      },
+      "income_tax_expense_benefit_current": {
+        "value": 979000000.0,
+        "unit": "CAD",
+        "label": "Income Tax Expense/Benefit, Current",
+        "order": 2300
+      },
+      "interest_expense_operating": {
+        "value": 5023000000.0,
+        "unit": "CAD",
+        "label": "Interest Expense, Operating",
+        "order": 2700
+      },
+      "net_income_loss_attributable_to_noncontrolling_interest": {
+        "value": 298000000.0,
+        "unit": "CAD",
+        "label": "Net Income/Loss Attributable To Noncontrolling Interest",
+        "order": 3300
+      },
+      "basic_earnings_per_share": {
+        "value": 3.23,
+        "unit": "CAD / shares",
+        "label": "Basic Earnings Per Share",
+        "order": 4200
+      },
+      "common_stock_dividends": {
+        "value": 3.77,
+        "unit": "CAD / shares",
+        "label": "Common Stock Dividends",
+        "order": 4600
+      },
+      "income_tax_expense_benefit_deferred": {
+        "value": 1025000000.0,
+        "unit": "CAD",
+        "label": "Income Tax Expense/Benefit, Deferred",
+        "order": 2400
+      },
+      "costs_and_expenses": {
+        "value": 54236000000.0,
+        "unit": "CAD",
+        "label": "Costs And Expenses",
+        "order": 600
+      },
+      "diluted_earnings_per_share": {
+        "value": 3.22,
+        "unit": "CAD / shares",
+        "label": "Diluted Earnings Per Share",
+        "order": 4300
+      },
+      "diluted_average_shares": {
+        "value": 2186000000.0,
+        "unit": "shares",
+        "label": "Diluted Average Shares",
+        "order": 4500
+      },
+      "net_income_loss_available_to_common_stockholders_basic": {
+        "value": 7072000000.0,
+        "unit": "CAD",
+        "label": "Net Income/Loss Available To Common Stockholders, Basic",
+        "order": 3700
+      },
+      "income_loss_from_continuing_operations_after_tax": {
+        "value": 7789000000.0,
+        "unit": "CAD",
+        "label": "Income/Loss From Continuing Operations After Tax",
+        "order": 1400
+      },
+      "net_income_loss": {
+        "value": 7789000000.0,
+        "unit": "CAD",
+        "label": "Net Income/Loss",
+        "order": 3200
+      },
+      "income_loss_from_equity_method_investments": {
+        "value": 2224000000.0,
+        "unit": "CAD",
+        "label": "Income/Loss From Equity Method Investments",
+        "order": 2100
+      },
+      "revenues": {
+        "value": 65194000000.0,
+        "unit": "CAD",
+        "label": "Revenues",
+        "order": 100
+      },
+      "participating_securities_distributed_and_undistributed_earnings_loss_basic": {
+        "value": 419000000.0,
+        "unit": "CAD",
+        "label": "Participating Securities, Distributed And Undistributed Earnings/Loss, Basic",
+        "order": 3800
+      },
+      "income_loss_from_continuing_operations_before_tax": {
+        "value": 9793000000.0,
+        "unit": "CAD",
+        "label": "Income/Loss From Continuing Operations Before Tax",
+        "order": 1500
+      },
+      "operating_expenses": {
+        "value": 54236000000.0,
+        "unit": "CAD",
+        "label": "Operating Expenses",
+        "order": 1000
+      }
+    },
+    "cash_flow_statement": {
+      "net_cash_flow_from_investing_activities_continuing": {
+        "value": -10503000000.0,
+        "unit": "CAD",
+        "label": "Net Cash Flow From Investing Activities, Continuing",
+        "order": 500
+      },
+      "exchange_gains_losses": {
+        "value": -47000000.0,
+        "unit": "CAD",
+        "label": "Exchange Gains/Losses",
+        "order": 1000
+      },
+      "net_cash_flow_from_investing_activities": {
+        "value": -10503000000.0,
+        "unit": "CAD",
+        "label": "Net Cash Flow From Investing Activities",
+        "order": 400
+      },
+      "net_cash_flow": {
+        "value": -680000000.0,
+        "unit": "CAD",
+        "label": "Net Cash Flow",
+        "order": 1100
+      },
+      "net_cash_flow_from_operating_activities": {
+        "value": 12270000000.0,
+        "unit": "CAD",
+        "label": "Net Cash Flow From Operating Activities",
+        "order": 100
+      },
+      "net_cash_flow_from_financing_activities_continuing": {
+        "value": -2400000000.0,
+        "unit": "CAD",
+        "label": "Net Cash Flow From Financing Activities, Continuing",
+        "order": 800
+      },
+      "net_cash_flow_continuing": {
+        "value": -633000000.0,
+        "unit": "CAD",
+        "label": "Net Cash Flow, Continuing",
+        "order": 1200
+      },
+      "net_cash_flow_from_financing_activities": {
+        "value": -2400000000.0,
+        "unit": "CAD",
+        "label": "Net Cash Flow From Financing Activities",
+        "order": 700
+      },
+      "net_cash_flow_from_operating_activities_continuing": {
+        "value": 12270000000.0,
+        "unit": "CAD",
+        "label": "Net Cash Flow From Operating Activities, Continuing",
+        "order": 200
+      }
+    },
+    "comprehensive_income": {
+      "comprehensive_income_loss": {
+        "value": 5057000000.0,
+        "unit": "CAD",
+        "label": "Comprehensive Income/Loss",
+        "order": 100
+      },
+      "other_comprehensive_income_loss": {
+        "value": -2488000000.0,
+        "unit": "CAD",
+        "label": "Other Comprehensive Income/Loss",
+        "order": 400
+      },
+      "comprehensive_income_loss_attributable_to_parent": {
+        "value": 5057000000.0,
+        "unit": "CAD",
+        "label": "Comprehensive Income/Loss Attributable To Parent",
+        "order": 300
+      },
+      "comprehensive_income_loss_attributable_to_noncontrolling_interest": {
+        "value": 0,
+        "unit": "CAD",
+        "label": "Comprehensive Income/Loss Attributable To Noncontrolling Interest",
+        "order": 200
+      }
+    }
+  }
+}

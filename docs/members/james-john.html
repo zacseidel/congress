@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>John James · Congressional Trades</title>
+<style>
+  :root {
+    --bg:#f6f8fa; --card:#ffffff; --ink:#1f2328; --muted:#57606a; --line:#d0d7de;
+    --green:#1a7f37; --red:#cf222e; --blue:#0969da; --accent:#0a3069;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  a { color:var(--blue); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { max-width:1080px; margin:0 auto; padding:24px 20px 60px; }
+  header.site { border-bottom:1px solid var(--line); background:var(--card); }
+  header.site .wrap { padding:16px 20px; display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; }
+  header.site h1 { font-size:18px; margin:0; }
+  header.site nav a { color:var(--muted); font-size:14px; margin-right:14px; }
+  h2 { font-size:20px; margin:34px 0 12px; }
+  h3 { font-size:16px; margin:22px 0 8px; }
+  .muted { color:var(--muted); }
+  .small { font-size:13px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:18px 20px; margin:14px 0; }
+  .stat-row { display:flex; gap:26px; flex-wrap:wrap; margin:8px 0 4px; }
+  .stat { }
+  .stat .n { font-size:22px; font-weight:600; }
+  .stat .l { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+  table { width:100%; border-collapse:collapse; font-size:14px; background:var(--card);
+          border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+  th, td { padding:8px 11px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap; }
+  th { background:#f0f3f6; font-size:12px; text-transform:uppercase; letter-spacing:.03em;
+       color:var(--muted); cursor:pointer; user-select:none; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+  tr:last-child td { border-bottom:none; }
+  tbody tr:hover { background:#f6f8fa; }
+  .pos { color:var(--green); } .neg { color:var(--red); }
+  .pill { display:inline-block; font-size:11px; padding:1px 7px; border-radius:10px;
+          background:#eef2f6; color:var(--muted); }
+  .pill.op { background:#dafbe1; color:var(--green); }
+  .pill.house { background:#ddf4ff; color:#0969da; } .pill.senate { background:#fbefff; color:#8250df; }
+  .chart img { width:100%; height:auto; border:1px solid var(--line); border-radius:6px; }
+  .news li { margin:4px 0; }
+  .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
+                padding:12px 16px; font-size:13px; color:#54470f; }
+  footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
+  /* heatmap */
+  .heat { font-size:12px; }
+  .heat th.rot { white-space:nowrap; }
+  .heat td.cell { text-align:center; min-width:62px; font-variant-numeric:tabular-nums; position:relative; }
+  .heat td.cell a { color:inherit; display:block; padding:2px 0; }
+  .heat td.member { text-align:left; white-space:nowrap; position:sticky; left:0; background:var(--card); }
+  .heat .star { color:#9a6700; }
+  .scroll { overflow-x:auto; border:1px solid var(--line); border-radius:8px; }
+  .scroll table { border:none; border-radius:0; }
+  /* cap + signal pills */
+  .cap { font-size:11px; padding:1px 6px; border-radius:10px; background:#eef2f6; color:var(--muted); }
+  .cap.small,.cap.micro { background:#fff1e5; color:#bc4c00; font-weight:600; }
+  .cap.mega,.cap.large { background:#eef2f6; color:var(--muted); }
+  .sig { font-weight:700; font-variant-numeric:tabular-nums; }
+  .aligned-row { background:#fffbe6; }
+  /* collapsible report sections */
+  details.fold { margin:30px 0 0; }
+  details.fold > summary { cursor:pointer; list-style:none; outline:none; }
+  details.fold > summary::-webkit-details-marker { display:none; }
+  details.fold > summary h2 { display:inline-block; margin:0; }
+  details.fold > summary::before { content:"\25B8"; color:var(--muted); margin-right:9px; font-size:13px; }
+  details.fold[open] > summary::before { content:"\25BE"; }
+  details.fold > summary:hover h2 { color:var(--accent); }
+  .legend { font-size:12px; color:var(--muted); display:flex; gap:16px; flex-wrap:wrap; margin:6px 0 14px; }
+  .swatch { display:inline-block; width:12px; height:12px; border-radius:2px; vertical-align:middle; margin-right:4px; }
+  #net { height:640px; border:1px solid var(--line); border-radius:8px; background:#fbfcfd; }
+  .ndot { display:inline-block; border-radius:50%; vertical-align:middle; margin-right:5px; }
+  .chip { display:inline-block; font-size:12px; padding:2px 9px; margin:2px 3px 2px 0; border-radius:12px;
+          background:#eef2f6; color:var(--accent); border:1px solid var(--line); }
+  .chip:hover { background:#dbe6f2; text-decoration:none; }
+  .controls { margin:10px 0; font-size:14px; }
+  /* momentum dots */
+  .mdots { white-space:nowrap; margin-left:6px; }
+  .mdot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-left:2px;
+          vertical-align:middle; border:1px solid rgba(0,0,0,.08); }
+  .mdot.bull { background:#1a7f37; } .mdot.bear { background:#cf222e; } .mdot.na { background:#d0d7de; }
+  .graph-wrap { display:flex; gap:16px; align-items:flex-start; }
+  .graph-wrap #net { flex:1 1 auto; }
+  .sidebar { flex:0 0 360px; max-height:640px; overflow-y:auto; border:1px solid var(--line);
+             border-radius:8px; background:var(--card); padding:14px 16px; }
+  .sidebar h3 { margin-top:0; }
+  .sidebar .hint { color:var(--muted); font-size:13px; }
+  .sidebar table { font-size:13px; }
+  .sidebar td, .sidebar th { padding:5px 7px; }
+  @media (max-width:820px){ .graph-wrap{ flex-direction:column; } .sidebar{ flex-basis:auto; width:100%; } }
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <h1><a href="../index.html" style="color:inherit">🏛️ Congressional Trades Tracker</a></h1>
+  <nav>
+    <a href="../index.html">Reports</a>
+    <a href="../latest.html">What's new</a>
+    <a href="../reports/2026-07-01.html">Leaderboard</a>
+    <a href="../map.html">Skill map</a>
+    <a href="../graph.html">Network</a>
+    <a href="../index.html#about">About</a>
+  </nav>
+</div></header>
+<div class="wrap">
+
+<p class="small"><a href="../reports/2026-07-01.html">← Back to leaderboard</a></p>
+<h2>John James <span class="pill house">house</span>
+    </h2>
+
+<div class="stat-row card">
+  <div class="stat"><div class="n pos">+0.9%</div><div class="l">Dollar-wtd return</div></div>
+  <div class="stat"><div class="n pos">+0.7%</div><div class="l">vs SPY</div></div>
+  <div class="stat"><div class="n">23.0%</div><div class="l">Win rate</div></div>
+  <div class="stat"><div class="n">122</div><div class="l">Positions</div></div>
+  <div class="stat"><div class="n">$1.0M</div><div class="l">Disclosed $</div></div>
+</div>
+
+
+<h3>Committee assignments</h3>
+<p class="small muted">Industries under their jurisdiction:
+  <a href="../industries/energy.html">Energy</a> · <a href="../industries/health-care-equipment-services.html">Health Care Equipment &amp; Services</a> · <a href="../industries/media-entertainment.html">Media &amp; Entertainment</a> · <a href="../industries/pharmaceuticals-biotech.html">Pharmaceuticals &amp; Biotech</a> · <a href="../industries/telecommunication-services.html">Telecommunication Services</a> · <a href="../industries/utilities.html">Utilities</a></p>
+<ul class="small">
+  <li>House Committee on Energy and Commerce</li><li>House Committee on Energy and Commerce: Energy</li><li>House Committee on Energy and Commerce: Commerce, Manufacturing, and Trade</li><li>House Committee on Energy and Commerce: Health</li>
+</ul>
+
+
+
+<h3>Notable bets <span class="muted small">(by interestingness signal; ★ = in their committee's jurisdiction)</span></h3>
+<table class="sortable">
+  <thead><tr><th class="num">Signal</th><th>Ticker</th><th>Industry</th><th>Cap</th>
+    <th class="num">Return</th><th class="num">$</th><th>Aligned</th></tr></thead>
+  <tbody>
+  
+    <tr class="">
+      <td class="num sig" data-v="1512.01">1512.01</td>
+      <td><a href="../stocks/CAT.html">CAT</a></td>
+      <td><a href="../industries/capital-goods.html">Capital Goods</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num pos" data-v="199.05">+199.1%</td>
+      <td class="num" data-v="8000">$8K</td>
+      <td>—</td>
+    </tr>
+  
+  </tbody>
+</table>
+
+
+<h3>Positions</h3>
+<table class="sortable">
+  <thead><tr>
+    <th>Ticker</th><th>Status</th><th>Entry date</th><th>Exit date</th>
+    <th class="num">Entry</th><th class="num">Exit</th>
+    <th class="num">Return</th><th class="num">vs SPY</th><th class="num">Disclosed $</th>
+  </tr></thead>
+  <tbody>
+  
+    <tr>
+      <td><a href="../stocks/TJX.html">TJX</a></td>
+      <td>open</td>
+      <td>2024-09-06</td>
+      <td>—</td>
+      <td class="num">$115.62</td>
+      <td class="num">$151.50</td>
+      <td class="num pos" data-v="31.03">+31.0%</td>
+      <td class="num neg" data-v="-7.17">-7.2%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/UBER.html">UBER</a></td>
+      <td>open</td>
+      <td>2024-09-06</td>
+      <td>—</td>
+      <td class="num">$69.58</td>
+      <td class="num">$72.16</td>
+      <td class="num pos" data-v="3.71">+3.7%</td>
+      <td class="num neg" data-v="-34.49">-34.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/MSFT.html">MSFT</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$417.14</td>
+      <td class="num">$401.70</td>
+      <td class="num neg" data-v="-3.7">-3.7%</td>
+      <td class="num pos" data-v="0.44">+0.4%</td>
+      <td class="num" data-v="32500.5">$33K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ABT.html">ABT</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$113.27</td>
+      <td class="num">$113.86</td>
+      <td class="num pos" data-v="0.52">+0.5%</td>
+      <td class="num pos" data-v="4.66">+4.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ABBV.html">ABBV</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$196.31</td>
+      <td class="num">$193.40</td>
+      <td class="num neg" data-v="-1.48">-1.5%</td>
+      <td class="num pos" data-v="2.65">+2.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ACN.html">ACN</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$341.95</td>
+      <td class="num">$339.84</td>
+      <td class="num neg" data-v="-0.62">-0.6%</td>
+      <td class="num pos" data-v="3.52">+3.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/AMD.html">AMD</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$148.56</td>
+      <td class="num">$134.35</td>
+      <td class="num neg" data-v="-9.57">-9.6%</td>
+      <td class="num neg" data-v="-5.43">-5.4%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/APD.html">APD</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$278.85</td>
+      <td class="num">$268.71</td>
+      <td class="num neg" data-v="-3.64">-3.6%</td>
+      <td class="num pos" data-v="0.5">+0.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/APD.html">APD</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$278.85</td>
+      <td class="num">$268.71</td>
+      <td class="num neg" data-v="-3.64">-3.6%</td>
+      <td class="num pos" data-v="0.5">+0.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ALLE.html">ALLE</a></td>
+      <td>open</td>
+      <td>2024-09-02</td>
+      <td>—</td>
+      <td class="num">$138.84</td>
+      <td class="num">$140.49</td>
+      <td class="num pos" data-v="1.19">+1.2%</td>
+      <td class="num neg" data-v="-31.29">-31.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/GOOGL.html">GOOGL</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$163.38</td>
+      <td class="num">$150.92</td>
+      <td class="num neg" data-v="-7.63">-7.6%</td>
+      <td class="num neg" data-v="-3.49">-3.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/GOOG.html">GOOG</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$165.11</td>
+      <td class="num">$152.13</td>
+      <td class="num neg" data-v="-7.86">-7.9%</td>
+      <td class="num neg" data-v="-3.72">-3.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/AMZN.html">AMZN</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$178.50</td>
+      <td class="num">$171.39</td>
+      <td class="num neg" data-v="-3.98">-4.0%</td>
+      <td class="num pos" data-v="0.15">+0.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/AEP.html">AEP</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$100.28</td>
+      <td class="num">$102.05</td>
+      <td class="num pos" data-v="1.77">+1.8%</td>
+      <td class="num pos" data-v="5.9">+5.9%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/AXP.html">AXP</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$258.65</td>
+      <td class="num">$258.65</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ADI.html">ADI</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$234.84</td>
+      <td class="num">$213.64</td>
+      <td class="num neg" data-v="-9.03">-9.0%</td>
+      <td class="num neg" data-v="-4.89">-4.9%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/AAPL.html">AAPL</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$229.00</td>
+      <td class="num">$220.82</td>
+      <td class="num neg" data-v="-3.57">-3.6%</td>
+      <td class="num pos" data-v="0.57">+0.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/AMAT.html">AMAT</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$197.26</td>
+      <td class="num">$174.75</td>
+      <td class="num neg" data-v="-11.41">-11.4%</td>
+      <td class="num neg" data-v="-7.27">-7.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/APTV.html">APTV</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$71.53</td>
+      <td class="num">$68.49</td>
+      <td class="num neg" data-v="-4.25">-4.2%</td>
+      <td class="num neg" data-v="-0.11">-0.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/T.html">T</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$19.90</td>
+      <td class="num">$20.97</td>
+      <td class="num pos" data-v="5.38">+5.4%</td>
+      <td class="num pos" data-v="9.51">+9.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ADP.html">ADP</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$275.91</td>
+      <td class="num">$269.56</td>
+      <td class="num neg" data-v="-2.3">-2.3%</td>
+      <td class="num pos" data-v="1.84">+1.8%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/AVTR.html">AVTR</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$25.84</td>
+      <td class="num">$25.54</td>
+      <td class="num neg" data-v="-1.16">-1.2%</td>
+      <td class="num pos" data-v="2.98">+3.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/AXTA.html">AXTA</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$36.50</td>
+      <td class="num">$36.50</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/BAC.html">BAC</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$40.75</td>
+      <td class="num">$38.76</td>
+      <td class="num neg" data-v="-4.88">-4.9%</td>
+      <td class="num neg" data-v="-0.75">-0.8%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/BDX.html">BDX</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$242.41</td>
+      <td class="num">$232.67</td>
+      <td class="num neg" data-v="-4.02">-4.0%</td>
+      <td class="num pos" data-v="0.12">+0.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/BRKB.html">BRKB</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$468.37</td>
+      <td class="num">$468.37</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num pos" data-v="4.14">+4.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/BLK.html">BLK</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$901.81</td>
+      <td class="num">$866.92</td>
+      <td class="num neg" data-v="-3.87">-3.9%</td>
+      <td class="num pos" data-v="0.27">+0.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/BP.html">BP</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$33.96</td>
+      <td class="num">$31.90</td>
+      <td class="num neg" data-v="-6.07">-6.1%</td>
+      <td class="num neg" data-v="-1.93">-1.9%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/BMY.html">BMY</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$49.95</td>
+      <td class="num">$49.95</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/AVGO.html">AVGO</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$162.82</td>
+      <td class="num">$137.00</td>
+      <td class="num neg" data-v="-15.86">-15.9%</td>
+      <td class="num neg" data-v="-11.72">-11.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CAH.html">CAH</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$112.72</td>
+      <td class="num">$111.77</td>
+      <td class="num neg" data-v="-0.84">-0.8%</td>
+      <td class="num pos" data-v="3.29">+3.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CAH.html">CAH</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$112.72</td>
+      <td class="num">$111.77</td>
+      <td class="num neg" data-v="-0.84">-0.8%</td>
+      <td class="num pos" data-v="3.29">+3.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CAT.html">CAT</a></td>
+      <td>open</td>
+      <td>2024-09-02</td>
+      <td>—</td>
+      <td class="num">$356.10</td>
+      <td class="num">$1,064.90</td>
+      <td class="num pos" data-v="199.05">+199.1%</td>
+      <td class="num pos" data-v="166.56">+166.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CVX.html">CVX</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$147.95</td>
+      <td class="num">$138.56</td>
+      <td class="num neg" data-v="-6.35">-6.3%</td>
+      <td class="num neg" data-v="-2.21">-2.2%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CB.html">CB</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$284.18</td>
+      <td class="num">$287.50</td>
+      <td class="num pos" data-v="1.17">+1.2%</td>
+      <td class="num pos" data-v="5.31">+5.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CIEN.html">CIEN</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$57.65</td>
+      <td class="num">$51.16</td>
+      <td class="num neg" data-v="-11.26">-11.3%</td>
+      <td class="num neg" data-v="-7.12">-7.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CSCO.html">CSCO</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$50.54</td>
+      <td class="num">$48.50</td>
+      <td class="num neg" data-v="-4.04">-4.0%</td>
+      <td class="num pos" data-v="0.1">+0.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CME.html">CME</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$215.74</td>
+      <td class="num">$220.50</td>
+      <td class="num pos" data-v="2.21">+2.2%</td>
+      <td class="num pos" data-v="6.34">+6.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/KO.html">KO</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$72.47</td>
+      <td class="num">$71.14</td>
+      <td class="num neg" data-v="-1.84">-1.8%</td>
+      <td class="num pos" data-v="2.3">+2.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CTSH.html">CTSH</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$77.77</td>
+      <td class="num">$75.84</td>
+      <td class="num neg" data-v="-2.48">-2.5%</td>
+      <td class="num pos" data-v="1.66">+1.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/COP.html">COP</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$113.79</td>
+      <td class="num">$106.02</td>
+      <td class="num neg" data-v="-6.83">-6.8%</td>
+      <td class="num neg" data-v="-2.69">-2.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CTVA.html">CTVA</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$57.30</td>
+      <td class="num">$55.33</td>
+      <td class="num neg" data-v="-3.44">-3.4%</td>
+      <td class="num pos" data-v="0.7">+0.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CCI.html">CCI</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$112.02</td>
+      <td class="num">$116.12</td>
+      <td class="num pos" data-v="3.66">+3.7%</td>
+      <td class="num pos" data-v="7.8">+7.8%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CCI.html">CCI</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$112.02</td>
+      <td class="num">$116.12</td>
+      <td class="num pos" data-v="3.66">+3.7%</td>
+      <td class="num pos" data-v="7.8">+7.8%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CMI.html">CMI</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$312.85</td>
+      <td class="num">$293.21</td>
+      <td class="num neg" data-v="-6.28">-6.3%</td>
+      <td class="num neg" data-v="-2.14">-2.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/DEO.html">DEO</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$130.76</td>
+      <td class="num">$126.43</td>
+      <td class="num neg" data-v="-3.31">-3.3%</td>
+      <td class="num pos" data-v="0.83">+0.8%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/DFS.html">DFS</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$138.71</td>
+      <td class="num">$128.68</td>
+      <td class="num neg" data-v="-7.23">-7.2%</td>
+      <td class="num neg" data-v="-3.09">-3.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/DG.html">DG</a></td>
+      <td>open</td>
+      <td>2024-09-02</td>
+      <td>—</td>
+      <td class="num">$82.97</td>
+      <td class="num">$115.11</td>
+      <td class="num pos" data-v="38.74">+38.7%</td>
+      <td class="num pos" data-v="6.26">+6.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/DLTR.html">DLTR</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$84.49</td>
+      <td class="num">$66.50</td>
+      <td class="num neg" data-v="-21.29">-21.3%</td>
+      <td class="num neg" data-v="-17.16">-17.2%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ETN.html">ETN</a></td>
+      <td>open</td>
+      <td>2024-09-02</td>
+      <td>—</td>
+      <td class="num">$306.93</td>
+      <td class="num">$426.12</td>
+      <td class="num pos" data-v="38.83">+38.8%</td>
+      <td class="num pos" data-v="6.35">+6.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/EA.html">EA</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$151.82</td>
+      <td class="num">$144.01</td>
+      <td class="num neg" data-v="-5.14">-5.1%</td>
+      <td class="num neg" data-v="-1.01">-1.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/EA.html">EA</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$151.82</td>
+      <td class="num">$144.01</td>
+      <td class="num neg" data-v="-5.14">-5.1%</td>
+      <td class="num neg" data-v="-1.01">-1.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ELV.html">ELV</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$556.89</td>
+      <td class="num">$541.91</td>
+      <td class="num neg" data-v="-2.69">-2.7%</td>
+      <td class="num pos" data-v="1.45">+1.4%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ELV.html">ELV</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$556.89</td>
+      <td class="num">$541.91</td>
+      <td class="num neg" data-v="-2.69">-2.7%</td>
+      <td class="num pos" data-v="1.45">+1.4%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ETR.html">ETR</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$60.34</td>
+      <td class="num">$60.95</td>
+      <td class="num pos" data-v="1.0">+1.0%</td>
+      <td class="num pos" data-v="5.14">+5.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/EOG.html">EOG</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$128.82</td>
+      <td class="num">$120.35</td>
+      <td class="num neg" data-v="-6.58">-6.6%</td>
+      <td class="num neg" data-v="-2.44">-2.4%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/XOM.html">XOM</a></td>
+      <td>open</td>
+      <td>2024-09-02</td>
+      <td>—</td>
+      <td class="num">$117.94</td>
+      <td class="num">$136.72</td>
+      <td class="num pos" data-v="15.92">+15.9%</td>
+      <td class="num neg" data-v="-16.56">-16.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/FTV.html">FTV</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$56.07</td>
+      <td class="num">$53.26</td>
+      <td class="num neg" data-v="-5.01">-5.0%</td>
+      <td class="num neg" data-v="-0.88">-0.9%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/FOXA.html">FOXA</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$41.37</td>
+      <td class="num">$41.37</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/HD.html">HD</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$368.50</td>
+      <td class="num">$360.05</td>
+      <td class="num neg" data-v="-2.29">-2.3%</td>
+      <td class="num pos" data-v="1.84">+1.8%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/HON.html">HON</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$195.96</td>
+      <td class="num">$186.74</td>
+      <td class="num neg" data-v="-4.7">-4.7%</td>
+      <td class="num neg" data-v="-0.57">-0.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/HUM.html">HUM</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$354.47</td>
+      <td class="num">$357.86</td>
+      <td class="num pos" data-v="0.96">+1.0%</td>
+      <td class="num pos" data-v="5.09">+5.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ICLR.html">ICLR</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$322.06</td>
+      <td class="num">$302.52</td>
+      <td class="num neg" data-v="-6.07">-6.1%</td>
+      <td class="num neg" data-v="-1.93">-1.9%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ITW.html">ITW</a></td>
+      <td>open</td>
+      <td>2024-09-02</td>
+      <td>—</td>
+      <td class="num">$253.18</td>
+      <td class="num">$270.47</td>
+      <td class="num pos" data-v="6.83">+6.8%</td>
+      <td class="num neg" data-v="-25.65">-25.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ICE.html">ICE</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$161.55</td>
+      <td class="num">$160.49</td>
+      <td class="num neg" data-v="-0.66">-0.7%</td>
+      <td class="num pos" data-v="3.48">+3.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/IBM.html">IBM</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$202.13</td>
+      <td class="num">$200.74</td>
+      <td class="num neg" data-v="-0.69">-0.7%</td>
+      <td class="num pos" data-v="3.45">+3.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/JNJ.html">JNJ</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$165.86</td>
+      <td class="num">$164.38</td>
+      <td class="num neg" data-v="-0.89">-0.9%</td>
+      <td class="num pos" data-v="3.24">+3.2%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/JPM.html">JPM</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$224.80</td>
+      <td class="num">$212.46</td>
+      <td class="num neg" data-v="-5.49">-5.5%</td>
+      <td class="num neg" data-v="-1.35">-1.4%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/KLAC.html">KLAC</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$81.94</td>
+      <td class="num">$81.94</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/LH.html">LH</a></td>
+      <td>open</td>
+      <td>2024-09-02</td>
+      <td>—</td>
+      <td class="num">$229.89</td>
+      <td class="num">$280.00</td>
+      <td class="num pos" data-v="21.8">+21.8%</td>
+      <td class="num neg" data-v="-10.68">-10.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/LVS.html">LVS</a></td>
+      <td>open</td>
+      <td>2024-09-02</td>
+      <td>—</td>
+      <td class="num">$38.99</td>
+      <td class="num">$46.19</td>
+      <td class="num pos" data-v="18.47">+18.5%</td>
+      <td class="num neg" data-v="-14.01">-14.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/LIN.html">LIN</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$478.25</td>
+      <td class="num">$456.85</td>
+      <td class="num neg" data-v="-4.47">-4.5%</td>
+      <td class="num neg" data-v="-0.34">-0.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/LMT.html">LMT</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$568.10</td>
+      <td class="num">$566.63</td>
+      <td class="num neg" data-v="-0.26">-0.3%</td>
+      <td class="num pos" data-v="3.88">+3.9%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/LPLA.html">LPLA</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$224.34</td>
+      <td class="num">$224.34</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/MMC.html">MMC</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$227.51</td>
+      <td class="num">$227.85</td>
+      <td class="num pos" data-v="0.15">+0.1%</td>
+      <td class="num pos" data-v="4.29">+4.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/MRVL.html">MRVL</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$76.24</td>
+      <td class="num">$66.20</td>
+      <td class="num neg" data-v="-13.17">-13.2%</td>
+      <td class="num neg" data-v="-9.03">-9.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/MDT.html">MDT</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$88.58</td>
+      <td class="num">$88.58</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/MDT.html">MDT</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$88.58</td>
+      <td class="num">$88.58</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/MRK.html">MRK</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$118.45</td>
+      <td class="num">$117.84</td>
+      <td class="num neg" data-v="-0.51">-0.5%</td>
+      <td class="num pos" data-v="3.62">+3.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/META.html">META</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$521.31</td>
+      <td class="num">$500.27</td>
+      <td class="num neg" data-v="-4.04">-4.0%</td>
+      <td class="num pos" data-v="0.1">+0.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/MCHP.html">MCHP</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$82.16</td>
+      <td class="num">$74.09</td>
+      <td class="num neg" data-v="-9.82">-9.8%</td>
+      <td class="num neg" data-v="-5.69">-5.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/MU.html">MU</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$96.24</td>
+      <td class="num">$86.38</td>
+      <td class="num neg" data-v="-10.25">-10.2%</td>
+      <td class="num neg" data-v="-6.11">-6.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/MNST.html">MNST</a></td>
+      <td>open</td>
+      <td>2024-09-02</td>
+      <td>—</td>
+      <td class="num">$47.13</td>
+      <td class="num">$96.12</td>
+      <td class="num pos" data-v="103.95">+104.0%</td>
+      <td class="num pos" data-v="71.47">+71.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/MS.html">MS</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$103.61</td>
+      <td class="num">$96.59</td>
+      <td class="num neg" data-v="-6.78">-6.8%</td>
+      <td class="num neg" data-v="-2.64">-2.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/NOC.html">NOC</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$523.21</td>
+      <td class="num">$515.00</td>
+      <td class="num neg" data-v="-1.57">-1.6%</td>
+      <td class="num pos" data-v="2.57">+2.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/NVO.html">NVO</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$139.16</td>
+      <td class="num">$131.14</td>
+      <td class="num neg" data-v="-5.76">-5.8%</td>
+      <td class="num neg" data-v="-1.63">-1.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/NVDA.html">NVDA</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$119.37</td>
+      <td class="num">$102.83</td>
+      <td class="num neg" data-v="-13.86">-13.9%</td>
+      <td class="num neg" data-v="-9.72">-9.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/NVDA.html">NVDA</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$119.37</td>
+      <td class="num">$102.83</td>
+      <td class="num neg" data-v="-13.86">-13.9%</td>
+      <td class="num neg" data-v="-9.72">-9.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/OTIS.html">OTIS</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$94.69</td>
+      <td class="num">$91.43</td>
+      <td class="num neg" data-v="-3.44">-3.4%</td>
+      <td class="num pos" data-v="0.69">+0.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/PH.html">PH</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$600.20</td>
+      <td class="num">$571.31</td>
+      <td class="num neg" data-v="-4.81">-4.8%</td>
+      <td class="num neg" data-v="-0.68">-0.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/PEP.html">PEP</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$172.88</td>
+      <td class="num">$177.34</td>
+      <td class="num pos" data-v="2.58">+2.6%</td>
+      <td class="num pos" data-v="6.72">+6.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/PM.html">PM</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$123.29</td>
+      <td class="num">$123.29</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/PNC.html">PNC</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$185.09</td>
+      <td class="num">$176.70</td>
+      <td class="num neg" data-v="-4.53">-4.5%</td>
+      <td class="num neg" data-v="-0.4">-0.4%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/PPG.html">PPG</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$129.73</td>
+      <td class="num">$124.78</td>
+      <td class="num neg" data-v="-3.82">-3.8%</td>
+      <td class="num pos" data-v="0.32">+0.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/PG.html">PG</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$171.54</td>
+      <td class="num">$175.59</td>
+      <td class="num pos" data-v="2.36">+2.4%</td>
+      <td class="num pos" data-v="6.5">+6.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/PGR.html">PGR</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$252.20</td>
+      <td class="num">$252.20</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/RGA.html">RGA</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$220.76</td>
+      <td class="num">$212.24</td>
+      <td class="num neg" data-v="-3.86">-3.9%</td>
+      <td class="num pos" data-v="0.28">+0.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ROST.html">ROST</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$150.61</td>
+      <td class="num">$150.61</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/SNY.html">SNY</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$56.26</td>
+      <td class="num">$57.73</td>
+      <td class="num pos" data-v="2.61">+2.6%</td>
+      <td class="num pos" data-v="6.75">+6.8%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/SHEL.html">SHEL</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$71.66</td>
+      <td class="num">$66.91</td>
+      <td class="num neg" data-v="-6.63">-6.6%</td>
+      <td class="num neg" data-v="-2.49">-2.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/SKX.html">SKX</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$68.48</td>
+      <td class="num">$66.08</td>
+      <td class="num neg" data-v="-3.5">-3.5%</td>
+      <td class="num pos" data-v="0.63">+0.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/SONY.html">SONY</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$19.51</td>
+      <td class="num">$18.01</td>
+      <td class="num neg" data-v="-7.7">-7.7%</td>
+      <td class="num neg" data-v="-3.56">-3.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/SO.html">SO</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$86.40</td>
+      <td class="num">$88.41</td>
+      <td class="num pos" data-v="2.33">+2.3%</td>
+      <td class="num pos" data-v="6.46">+6.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/THC.html">THC</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$165.84</td>
+      <td class="num">$153.40</td>
+      <td class="num neg" data-v="-7.5">-7.5%</td>
+      <td class="num neg" data-v="-3.36">-3.4%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/TXN.html">TXN</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$214.34</td>
+      <td class="num">$197.45</td>
+      <td class="num neg" data-v="-7.88">-7.9%</td>
+      <td class="num neg" data-v="-3.74">-3.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/TMO.html">TMO</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$615.07</td>
+      <td class="num">$611.33</td>
+      <td class="num neg" data-v="-0.61">-0.6%</td>
+      <td class="num pos" data-v="3.53">+3.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/TKO.html">TKO</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$118.23</td>
+      <td class="num">$115.44</td>
+      <td class="num neg" data-v="-2.36">-2.4%</td>
+      <td class="num pos" data-v="1.78">+1.8%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/TT.html">TT</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$361.66</td>
+      <td class="num">$342.07</td>
+      <td class="num neg" data-v="-5.42">-5.4%</td>
+      <td class="num neg" data-v="-1.28">-1.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/UL.html">UL</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$72.89</td>
+      <td class="num">$72.89</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/UNP.html">UNP</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$256.09</td>
+      <td class="num">$249.63</td>
+      <td class="num neg" data-v="-2.52">-2.5%</td>
+      <td class="num pos" data-v="1.61">+1.6%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/UPS.html">UPS</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$128.55</td>
+      <td class="num">$127.54</td>
+      <td class="num neg" data-v="-0.79">-0.8%</td>
+      <td class="num pos" data-v="3.35">+3.4%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/UNH.html">UNH</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$590.20</td>
+      <td class="num">$596.88</td>
+      <td class="num pos" data-v="1.13">+1.1%</td>
+      <td class="num pos" data-v="5.27">+5.3%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/VLO.html">VLO</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$146.73</td>
+      <td class="num">$134.19</td>
+      <td class="num neg" data-v="-8.55">-8.6%</td>
+      <td class="num neg" data-v="-4.41">-4.4%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/VEEV.html">VEEV</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$216.44</td>
+      <td class="num">$216.44</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/VZ.html">VZ</a></td>
+      <td>open</td>
+      <td>2024-09-02</td>
+      <td>—</td>
+      <td class="num">$41.78</td>
+      <td class="num">$42.34</td>
+      <td class="num pos" data-v="1.34">+1.3%</td>
+      <td class="num neg" data-v="-31.14">-31.1%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/V.html">V</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-02</td>
+      <td class="num">$276.37</td>
+      <td class="num">$276.37</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num " data-v="0.0">+0.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/VOYA.html">VOYA</a></td>
+      <td>open</td>
+      <td>2024-09-02</td>
+      <td>—</td>
+      <td class="num">$70.83</td>
+      <td class="num">$90.53</td>
+      <td class="num pos" data-v="27.81">+27.8%</td>
+      <td class="num neg" data-v="-4.67">-4.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/WMT.html">WMT</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$77.23</td>
+      <td class="num">$76.64</td>
+      <td class="num neg" data-v="-0.76">-0.8%</td>
+      <td class="num pos" data-v="3.37">+3.4%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/WM.html">WM</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$212.04</td>
+      <td class="num">$204.73</td>
+      <td class="num neg" data-v="-3.45">-3.5%</td>
+      <td class="num pos" data-v="0.69">+0.7%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/WFC.html">WFC</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$58.47</td>
+      <td class="num">$54.00</td>
+      <td class="num neg" data-v="-7.64">-7.6%</td>
+      <td class="num neg" data-v="-3.51">-3.5%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/WAB.html">WAB</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$169.57</td>
+      <td class="num">$160.87</td>
+      <td class="num neg" data-v="-5.13">-5.1%</td>
+      <td class="num neg" data-v="-0.99">-1.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ZBRA.html">ZBRA</a></td>
+      <td>closed</td>
+      <td>2024-09-02</td>
+      <td>2024-09-06</td>
+      <td class="num">$345.38</td>
+      <td class="num">$320.77</td>
+      <td class="num neg" data-v="-7.13">-7.1%</td>
+      <td class="num neg" data-v="-2.99">-3.0%</td>
+      <td class="num" data-v="8000.5">$8K</td>
+    </tr>
+  
+  </tbody>
+</table>
+<p class="muted small">Disclosed $ figures are <em>bracket midpoints</em> — filings report ranges
+   (e.g. $1,001–$15,000), not exact amounts.</p>
+
+<script>
+// Click a header to sort its table. data-sort="num" cells sort numerically.
+document.querySelectorAll('table.sortable').forEach(function(tbl){
+  tbl.querySelectorAll('th').forEach(function(th, idx){
+    th.addEventListener('click', function(){
+      var body = tbl.tBodies[0], rows = Array.prototype.slice.call(body.rows);
+      var asc = th.dataset.asc !== 'true'; th.dataset.asc = asc;
+      rows.sort(function(a,b){
+        var x=a.cells[idx], y=b.cells[idx];
+        var nx=parseFloat((x.dataset.v||x.textContent).replace(/[^0-9.\-]/g,''));
+        var ny=parseFloat((y.dataset.v||y.textContent).replace(/[^0-9.\-]/g,''));
+        if(!isNaN(nx)&&!isNaN(ny)) return asc?nx-ny:ny-nx;
+        return asc ? x.textContent.localeCompare(y.textContent)
+                   : y.textContent.localeCompare(x.textContent);
+      });
+      rows.forEach(function(r){ body.appendChild(r); });
+    });
+  });
+});
+</script>
+<footer>
+  Trades: U.S. House Clerk &amp; Senate eFD disclosures · Market data: Polygon.io ·
+  Returns assume buying at the close on/after each disclosure date, benchmarked vs SPY.
+  Educational use only — not investment advice.
+</footer>
+</div>
+</body>
+</html>

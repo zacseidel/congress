@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{% block title %}Network — Congressional Trades{% endblock %}
+{% block content %}
+<h2>Who invests in what</h2>
+<p class="muted">Each <strong>member</strong> is linked to the industries they put the most money into.
+   <strong>Node size</strong> = total dollars disclosed (big = large trader), <strong>fill</strong> =
+   return (red → green), and a <strong>gold ring</strong> marks an out-performer (top-quartile alpha).
+   <strong>Click a member</strong> for their stocks, returns vs the S&P, and committees — then click a
+   committee to see who else sits on it.</p>
+<div class="legend">
+  <span><span class="ndot" style="width:10px;height:10px;background:#1a7f37"></span> gains</span>
+  <span><span class="ndot" style="width:10px;height:10px;background:#cf222e"></span> losses</span>
+  <span><span class="ndot" style="width:16px;height:16px;background:#8a93a0"></span> bigger = more $ traded</span>
+  <span><span class="ndot" style="width:12px;height:12px;background:#d0d7de;box-shadow:0 0 0 3px #bf8700"></span> out-performer</span>
+  <span><span class="swatch" style="background:#9aa6b2"></span> industry</span>
+</div>
+{% if benchmark_period and benchmark_period.return_pct is not none %}
+<p class="small muted">Reference: the S&P 500 (SPY) returned
+   <strong class="{{ cls(benchmark_period.return_pct) }}">{{ pct(benchmark_period.return_pct) }}</strong>
+   over this window.</p>
+{% endif %}
+<div class="controls">
+  <label><input type="checkbox" id="alignedOnly"> Show only committee-aligned investments</label>
+</div>
+
+<div class="graph-wrap">
+  <div id="net"></div>
+  <aside class="sidebar" id="sidebar">
+    <p class="hint">Click a member to see their stocks, returns, and committees.</p>
+  </aside>
+</div>
+
+<script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+<script>
+const GRAPH = {{ network_json|safe }};
+const DETAIL = {{ node_detail_json|safe }};
+const COMMITTEES = {{ committee_detail_json|safe }};
+const ROOT = "{{ root }}";
+
+function fmtMoney(v){
+  if (v == null) return "—";
+  const a = Math.abs(v);
+  if (a >= 1e9) return "$"+(v/1e9).toFixed(1)+"B";
+  if (a >= 1e6) return "$"+(v/1e6).toFixed(1)+"M";
+  if (a >= 1e3) return "$"+(v/1e3).toFixed(0)+"K";
+  return "$"+Math.round(v);
+}
+function pct(v){ return v == null ? "—" : (v>=0?"+":"")+v.toFixed(1)+"%"; }
+function cls(v){ return v == null ? "" : (v>0?"pos":(v<0?"neg":"")); }
+function esc(s){ const d=document.createElement("div"); d.textContent=s==null?"":s; return d.innerHTML; }
+
+// Return -> diverging fill: red (loss) → grey (flat) → green (gain), saturating at ±40%.
+function retColor(ret){
+  if (ret == null) return "#c9d1d9";
+  const t = Math.max(-1, Math.min(1, ret/40));
+  const grey=[208,215,222], green=[26,127,55], red=[207,34,46];
+  const mix=(a,b,f)=>a.map((x,i)=>Math.round(x+(b[i]-x)*f));
+  const c = t>=0 ? mix(grey,green,t) : mix(grey,red,-t);
+  return `rgb(${c[0]},${c[1]},${c[2]})`;
+}
+
+function buildData(alignedOnly){
+  const nodes = GRAPH.nodes.map(n => {
+    if (n.group === "member"){
+      return {
+        id:n.id, label:n.label, group:"member", shape:"dot", value:Math.max(n.value||1,1),
+        color:{ background:retColor(n.ret),
+                border: n.outperformer ? "#bf8700" : "#9aa6b2",
+                highlight:{ background:retColor(n.ret), border:"#0a3069" } },
+        borderWidth: n.outperformer ? 4 : 1,
+        font:{size:13, color:"#24292f"}
+      };
+    }
+    return { id:n.id, label:n.label, group:"industry", shape:"box",
+             color:{background:"#eef2f6", border:"#9aa6b2"}, font:{size:13, color:"#57606a"} };
+  });
+  let edges = GRAPH.edges;
+  if (alignedOnly) edges = edges.filter(e => e.aligned);
+  edges = edges.map(e => ({from:e.from, to:e.to, value:e.value||1,
+    color:{ color: (e.ret==null?"#c0c7cf":(e.ret>=0?"#1a7f37":"#cf222e")), opacity:0.55 }}));
+  return {nodes:new vis.DataSet(nodes), edges:new vis.DataSet(edges)};
+}
+
+function memberSidebar(nodeId){
+  const d = DETAIL[nodeId];
+  const sb = document.getElementById("sidebar");
+  if (!d){ sb.innerHTML = '<p class="hint">No detail for this member.</p>'; return; }
+  let h = `<h3>${esc(d.label)}</h3>`;
+  h += `<p class="small muted">Member · ${d.n_stocks} stocks traded</p>`;
+  const sm = d.summary || {};
+  if (sm.dw_return != null){
+    h += `<p class="small"><strong>Picks ${pct(sm.dw_return)}</strong> vs S&amp;P ${pct(sm.dw_spy)} `
+       + `→ <span class="${cls(sm.alpha)}">${pct(sm.alpha)} alpha</span></p>`;
+  }
+  if (d.committees && d.committees.length){
+    h += `<p class="small muted" style="margin-bottom:4px">Committees (click to explore):</p><p>`;
+    for (const c of d.committees){
+      h += `<a class="chip" href="#" data-committee="${esc(c.id)}">${esc(c.name)}</a> `;
+    }
+    h += `</p>`;
+  }
+  h += stockTable(d.stocks);
+  sb.innerHTML = h;
+  sb.querySelectorAll("a.chip[data-committee]").forEach(a =>
+    a.addEventListener("click", ev => { ev.preventDefault(); committeeSidebar(a.dataset.committee); }));
+}
+
+function committeeSidebar(cid){
+  const c = COMMITTEES[cid];
+  const sb = document.getElementById("sidebar");
+  if (!c){ sb.innerHTML = '<p class="hint">No detail for this committee.</p>'; return; }
+  let h = `<h3>${esc(c.name)}</h3>`;
+  h += `<p class="small muted">Committee · regulates ${esc((c.industries||[]).join(", "))}</p>`;
+  h += `<p class="small muted" style="margin:10px 0 4px">Members (return; ★ = out-performer):</p>`;
+  h += '<table><tbody>';
+  for (const m of c.members){
+    const star = m.outperformer ? ' <span class="star">★</span>' : '';
+    const link = m.shown
+      ? `<a href="#" data-member="m:${esc(m.member_id)}">${esc(m.member)}</a>`
+      : `<a href="${ROOT}members/${esc(m.member_id)}.html">${esc(m.member)}</a>`;
+    h += `<tr><td>${link}${star}</td><td class="num ${cls(m.dw_return)}">${pct(m.dw_return)}</td>`
+       + `<td class="num">${fmtMoney(m.dollars)}</td></tr>`;
+  }
+  h += '</tbody></table>';
+  if (c.stocks && c.stocks.length){
+    h += `<p class="small muted" style="margin:12px 0 4px">Stocks bought in this committee's industries:</p>`;
+    h += stockTable(c.stocks);
+  }
+  sb.innerHTML = h;
+  sb.querySelectorAll("a[data-member]").forEach(a =>
+    a.addEventListener("click", ev => { ev.preventDefault();
+      const id=a.dataset.member; network.selectNodes([id]); memberSidebar(id); }));
+}
+
+function stockTable(stocks){
+  if (!stocks || !stocks.length) return '<p class="hint">No classified trades.</p>';
+  let h = '<table><thead><tr><th>Stock</th><th class="num">Return</th><th class="num">vs S&amp;P</th>'
+        + '<th class="num">$</th></tr></thead><tbody>';
+  for (const s of stocks){
+    h += `<tr><td><a href="${ROOT}stocks/${s.ticker}.html">${esc(s.ticker)}</a> `
+       + `<span class="cap ${s.cap}">${esc(s.cap)}</span></td>`
+       + `<td class="num ${cls(s.return_pct)}">${pct(s.return_pct)}</td>`
+       + `<td class="num ${cls(s.alpha)}" title="S&P ${pct(s.spy_return_pct)} same window">${pct(s.alpha)}</td>`
+       + `<td class="num">${fmtMoney(s.dollars)}</td></tr>`;
+  }
+  return h + '</tbody></table>';
+}
+
+const options = {
+  physics:{stabilization:true, barnesHut:{gravitationalConstant:-12000, springLength:160, avoidOverlap:0.2}},
+  interaction:{hover:true, tooltipDelay:150},
+  nodes:{scaling:{min:10, max:55, label:{enabled:false}}},
+  edges:{smooth:{type:"continuous"}}
+};
+let network = new vis.Network(document.getElementById("net"), buildData(false), options);
+network.on("selectNode", p => {
+  const id = p.nodes[0];
+  if (!id) return;
+  if (id.startsWith("m:")) memberSidebar(id);
+  else document.getElementById("sidebar").innerHTML =
+    `<h3>${esc(DETAIL[id]?DETAIL[id].label:id)}</h3>` +
+    `<p class="small muted">Industry · ${DETAIL[id]?DETAIL[id].n_members:0} members invested</p>` +
+    stockTable(DETAIL[id]?DETAIL[id].stocks:[]);
+});
+network.on("deselectNode", () => {
+  document.getElementById("sidebar").innerHTML =
+    '<p class="hint">Click a member to see their stocks, returns, and committees.</p>';
+});
+document.getElementById("alignedOnly").addEventListener("change", function(){
+  network.setData(buildData(this.checked));
+});
+</script>
+{% endblock %}

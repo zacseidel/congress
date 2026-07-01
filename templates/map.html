@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Skill map — Congressional Trades{% endblock %}
+{% block content %}
+<h2>Member × Industry skill map</h2>
+<p class="muted">Dollar-weighted return by member and industry over the trailing window.
+   Greener = better returns, redder = worse; a <span class="star">★</span> marks an industry that
+   falls under a committee the member sits on. Covers {{ coverage.n_tickers_classified }} of
+   {{ coverage.n_tickers }} traded tickers (the rest are still being enriched).</p>
+<div class="legend">
+  <span><span class="swatch" style="background:rgba(26,127,55,.7)"></span>positive return</span>
+  <span><span class="swatch" style="background:rgba(207,34,46,.7)"></span>negative return</span>
+  <span><span class="star">★</span> committee-aligned</span>
+</div>
+{% if benchmark_period and benchmark_period.return_pct is not none %}
+<p class="small muted">For reference, the S&P 500 (SPY) returned
+   <strong class="{{ cls(benchmark_period.return_pct) }}">{{ pct(benchmark_period.return_pct) }}</strong>
+   over this window ({{ benchmark_period.start_date }} → {{ benchmark_period.end_date }}).</p>
+{% endif %}
+
+<div class="scroll">
+<table class="heat">
+  <thead><tr>
+    <th class="member">Member</th>
+    {% for ind in industries %}<th class="rot num">{{ ind }}</th>{% endfor %}
+  </tr></thead>
+  <tbody>
+  {% for mid, m in rows %}
+    <tr>
+      <td class="member"><a href="{{ root }}members/{{ mid }}.html">{{ m.member }}</a>
+          <span class="pill {{ m.chamber }}">{{ m.chamber }}</span></td>
+      {% for ind in industries %}
+        {% set c = m.cells.get(ind) %}
+        {% if c %}
+          <td class="cell" style="background:{{ heatcolor(c.dw_return) }}"
+              title="{{ ind }}: {{ money(c.dollars) }} across {{ c.n }} positions, win rate {{ c.win_rate }}%">
+            <a href="{{ root }}industries/{{ slug(ind) }}.html">{{ c.dw_return }}%{% if c.aligned %} <span class="star">★</span>{% endif %}</a>
+          </td>
+        {% else %}<td class="cell"></td>{% endif %}
+      {% endfor %}
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+
+<h2>Regulated bets — the most interesting trades</h2>
+<p class="muted small">A composite signal that rewards beating the market, in <strong>small-caps</strong>,
+   in an industry the member's <strong>committee oversees</strong>, bought by <strong>multiple</strong>
+   members. Raw dimensions are shown so you can judge for yourself.</p>
+<table class="sortable">
+  <thead><tr>
+    <th class="num">Signal</th><th>Member</th><th>Ticker</th><th>Industry</th><th>Cap</th>
+    <th class="num">Return</th><th class="num">vs SPY</th><th class="num">$</th>
+    <th class="num">Buyers</th><th>Committee jurisdiction</th>
+  </tr></thead>
+  <tbody>
+  {% for r in feed %}
+    <tr class="{{ 'aligned-row' if r.aligned else '' }}">
+      <td class="num sig" data-v="{{ r.signal }}">{{ r.signal }}</td>
+      <td><a href="{{ root }}members/{{ r.member_id }}.html">{{ r.member }}</a></td>
+      <td><a href="{{ root }}stocks/{{ r.ticker }}.html">{{ r.ticker }}</a></td>
+      <td><a href="{{ root }}industries/{{ slug(r.industry) }}.html">{{ r.industry }}</a></td>
+      <td><span class="cap {{ r.cap }}">{{ r.cap }}</span></td>
+      <td class="num {{ cls(r.return_pct) }}" data-v="{{ r.return_pct }}">{{ pct(r.return_pct) }}</td>
+      <td class="num {{ cls(r.alpha) }}" data-v="{{ r.alpha if r.alpha is not none else -9999 }}">{{ pct(r.alpha) }}</td>
+      <td class="num" data-v="{{ r.weight }}">{{ money(r.weight) }}</td>
+      <td class="num" data-v="{{ r.n_consensus }}">{{ r.n_consensus }}</td>
+      <td class="small">{% if r.aligned %}<span class="star">★</span> {{ r.committees|join(', ') }}{% else %}—{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

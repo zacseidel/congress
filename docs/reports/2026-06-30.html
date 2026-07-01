@@ -1,0 +1,2426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leaderboard — 2026-06-30 · Congressional Trades</title>
+<style>
+  :root {
+    --bg:#f6f8fa; --card:#ffffff; --ink:#1f2328; --muted:#57606a; --line:#d0d7de;
+    --green:#1a7f37; --red:#cf222e; --blue:#0969da; --accent:#0a3069;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  a { color:var(--blue); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { max-width:1080px; margin:0 auto; padding:24px 20px 60px; }
+  header.site { border-bottom:1px solid var(--line); background:var(--card); }
+  header.site .wrap { padding:16px 20px; display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; }
+  header.site h1 { font-size:18px; margin:0; }
+  header.site nav a { color:var(--muted); font-size:14px; margin-right:14px; }
+  h2 { font-size:20px; margin:34px 0 12px; }
+  h3 { font-size:16px; margin:22px 0 8px; }
+  .muted { color:var(--muted); }
+  .small { font-size:13px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:18px 20px; margin:14px 0; }
+  .stat-row { display:flex; gap:26px; flex-wrap:wrap; margin:8px 0 4px; }
+  .stat { }
+  .stat .n { font-size:22px; font-weight:600; }
+  .stat .l { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+  table { width:100%; border-collapse:collapse; font-size:14px; background:var(--card);
+          border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+  th, td { padding:8px 11px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap; }
+  th { background:#f0f3f6; font-size:12px; text-transform:uppercase; letter-spacing:.03em;
+       color:var(--muted); cursor:pointer; user-select:none; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+  tr:last-child td { border-bottom:none; }
+  tbody tr:hover { background:#f6f8fa; }
+  .pos { color:var(--green); } .neg { color:var(--red); }
+  .pill { display:inline-block; font-size:11px; padding:1px 7px; border-radius:10px;
+          background:#eef2f6; color:var(--muted); }
+  .pill.op { background:#dafbe1; color:var(--green); }
+  .pill.house { background:#ddf4ff; color:#0969da; } .pill.senate { background:#fbefff; color:#8250df; }
+  .chart img { width:100%; height:auto; border:1px solid var(--line); border-radius:6px; }
+  .news li { margin:4px 0; }
+  .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
+                padding:12px 16px; font-size:13px; color:#54470f; }
+  footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
+  /* heatmap */
+  .heat { font-size:12px; }
+  .heat th.rot { white-space:nowrap; }
+  .heat td.cell { text-align:center; min-width:62px; font-variant-numeric:tabular-nums; position:relative; }
+  .heat td.cell a { color:inherit; display:block; padding:2px 0; }
+  .heat td.member { text-align:left; white-space:nowrap; position:sticky; left:0; background:var(--card); }
+  .heat .star { color:#9a6700; }
+  .scroll { overflow-x:auto; border:1px solid var(--line); border-radius:8px; }
+  .scroll table { border:none; border-radius:0; }
+  /* cap + signal pills */
+  .cap { font-size:11px; padding:1px 6px; border-radius:10px; background:#eef2f6; color:var(--muted); }
+  .cap.small,.cap.micro { background:#fff1e5; color:#bc4c00; font-weight:600; }
+  .cap.mega,.cap.large { background:#eef2f6; color:var(--muted); }
+  .sig { font-weight:700; font-variant-numeric:tabular-nums; }
+  .aligned-row { background:#fffbe6; }
+  /* collapsible report sections */
+  details.fold { margin:30px 0 0; }
+  details.fold > summary { cursor:pointer; list-style:none; outline:none; }
+  details.fold > summary::-webkit-details-marker { display:none; }
+  details.fold > summary h2 { display:inline-block; margin:0; }
+  details.fold > summary::before { content:"\25B8"; color:var(--muted); margin-right:9px; font-size:13px; }
+  details.fold[open] > summary::before { content:"\25BE"; }
+  details.fold > summary:hover h2 { color:var(--accent); }
+  .legend { font-size:12px; color:var(--muted); display:flex; gap:16px; flex-wrap:wrap; margin:6px 0 14px; }
+  .swatch { display:inline-block; width:12px; height:12px; border-radius:2px; vertical-align:middle; margin-right:4px; }
+  #net { height:640px; border:1px solid var(--line); border-radius:8px; background:#fbfcfd; }
+  .ndot { display:inline-block; border-radius:50%; vertical-align:middle; margin-right:5px; }
+  .chip { display:inline-block; font-size:12px; padding:2px 9px; margin:2px 3px 2px 0; border-radius:12px;
+          background:#eef2f6; color:var(--accent); border:1px solid var(--line); }
+  .chip:hover { background:#dbe6f2; text-decoration:none; }
+  .controls { margin:10px 0; font-size:14px; }
+  /* momentum dots */
+  .mdots { white-space:nowrap; margin-left:6px; }
+  .mdot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-left:2px;
+          vertical-align:middle; border:1px solid rgba(0,0,0,.08); }
+  .mdot.bull { background:#1a7f37; } .mdot.bear { background:#cf222e; } .mdot.na { background:#d0d7de; }
+  .graph-wrap { display:flex; gap:16px; align-items:flex-start; }
+  .graph-wrap #net { flex:1 1 auto; }
+  .sidebar { flex:0 0 360px; max-height:640px; overflow-y:auto; border:1px solid var(--line);
+             border-radius:8px; background:var(--card); padding:14px 16px; }
+  .sidebar h3 { margin-top:0; }
+  .sidebar .hint { color:var(--muted); font-size:13px; }
+  .sidebar table { font-size:13px; }
+  .sidebar td, .sidebar th { padding:5px 7px; }
+  @media (max-width:820px){ .graph-wrap{ flex-direction:column; } .sidebar{ flex-basis:auto; width:100%; } }
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <h1><a href="../index.html" style="color:inherit">🏛️ Congressional Trades Tracker</a></h1>
+  <nav>
+    <a href="../index.html">Reports</a>
+    <a href="../latest.html">What's new</a>
+    <a href="../reports/2026-06-30.html">Leaderboard</a>
+    <a href="../map.html">Skill map</a>
+    <a href="../graph.html">Network</a>
+    <a href="../index.html#about">About</a>
+  </nav>
+</div></header>
+<div class="wrap">
+
+<p class="small"><a href="../index.html">← All reports</a></p>
+<h2>Congressional Trades Leaderboard</h2>
+<p class="muted">Trailing 2-year window · generated 2026-06-30 ·
+   ranking by return if you had copied each member into their trades on the disclosure date.
+   
+   For reference, the <strong>S&P 500 returned +35.1%</strong> over this window.
+   </p>
+
+<div class="stat-row card">
+  <div class="stat"><div class="n">67</div><div class="l">Ranked members</div></div>
+  <div class="stat"><div class="n">5459</div><div class="l">Positions tracked</div></div>
+  <div class="stat"><div class="n">1084</div><div class="l">Stocks traded</div></div>
+  <div class="stat"><div class="n">17</div><div class="l">Out-performers</div></div>
+</div>
+
+
+<div class="card op-changes">
+  <strong>Out-performer list changes</strong>
+  <span class="muted small">since 2026-06-25 — recomputed from new disclosures and updated prices</span>
+  <ul class="small" style="margin:8px 0 0; padding-left:18px">
+    
+    <li><span class="pos">▲ joined</span>
+        <a href="../members/latta-robert-e.html">Robert E. Latta</a>
+        <span class="pill house">house</span>
+        <span class="muted">(SPY alpha +4.0%, return +19.5%)</span></li>
+    
+    <li><span class="pos">▲ joined</span>
+        <a href="../members/salazar-maria-elvira.html">Maria Elvira Salazar</a>
+        <span class="pill house">house</span>
+        <span class="muted">(SPY alpha +3.7%, return +7.7%)</span></li>
+    
+    <li><span class="pos">▲ joined</span>
+        <a href="../members/mullin-markwayne.html">Markwayne Mullin</a>
+        <span class="pill senate">senate</span>
+        <span class="muted">(SPY alpha +3.6%, return +15.8%)</span></li>
+    
+    
+    <li><span class="neg">▼ dropped</span>
+        <a href="../members/moore-tim.html">Tim Moore</a>
+        <span class="pill house">house</span>
+        <span class="muted">(SPY alpha +3.1%)</span></li>
+    
+    <li><span class="neg">▼ dropped</span>
+        <a href="../members/fields-cleo.html">Cleo Fields</a>
+        <span class="pill house">house</span>
+        <span class="muted">(SPY alpha +2.2%)</span></li>
+    
+    <li><span class="neg">▼ dropped</span>
+        <a href="../members/walberg-tim.html">Tim Walberg</a>
+        <span class="pill house">house</span>
+        <span class="muted">(SPY alpha +1.9%)</span></li>
+    
+  </ul>
+</div>
+
+
+<details class="fold" open>
+  <summary><h2>New buys by out-performers <span class="muted">(last 14 days · 0 members)</span></h2></summary>
+  <p class="muted small">Recent <strong>purchases</strong> by members who beat the S&amp;P — one row per member.
+     ★ marks a stock in an industry that member's committee oversees. Dollar figures are
+     <em>bracket midpoints</em> (filings disclose ranges, e.g. $1,001–$15,000, not exact amounts).</p>
+  
+  <p class="muted">No out-performer purchases disclosed in the last 14 days.</p>
+  
+</details>
+
+<details class="fold">
+  <summary><h2>Other recent disclosures <span class="muted">(82)</span></h2></summary>
+  <p class="muted small">Everything else disclosed in the last 14 days — out-performer
+     sells and all trades by other members. <a href="../latest.html">Open the “What's new” page →</a></p>
+  
+  <table class="sortable">
+    <thead><tr><th>Disclosed</th><th>Member</th><th>Ticker</th><th>Type</th><th class="num">Amount</th></tr></thead>
+    <tbody>
+    
+      <tr>
+        <td>2026-06-30</td>
+        <td><a href="../members/mcconnell-jr-a-mitchell.html">A. Mitchell McConnell, Jr.</a>
+            </td>
+        <td><a href="../stocks/WFC.html">WFC</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-26</td>
+        <td><a href="../members/stanton-greg.html">Greg Stanton</a>
+            </td>
+        <td><a href="../stocks/TCNNF.html">TCNNF</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="175000.5">$175K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-26</td>
+        <td><a href="../members/fields-cleo.html">Cleo Fields</a>
+            </td>
+        <td><a href="../stocks/GOOG.html">GOOG</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-26</td>
+        <td><a href="../members/fields-cleo.html">Cleo Fields</a>
+            </td>
+        <td><a href="../stocks/MSFT.html">MSFT</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-26</td>
+        <td><a href="../members/fields-cleo.html">Cleo Fields</a>
+            </td>
+        <td><a href="../stocks/MSFT.html">MSFT</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-26</td>
+        <td><a href="../members/fields-cleo.html">Cleo Fields</a>
+            </td>
+        <td><a href="../stocks/QNT.html">QNT</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-25</td>
+        <td><a href="../members/moran-jerry.html">Jerry Moran,</a>
+            <span class="pill op">op</span></td>
+        <td><a href="../stocks/GOOG.html">GOOG</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-24</td>
+        <td><a href="../members/evans-dwight.html">Dwight Evans</a>
+            <span class="pill op">op</span></td>
+        <td><a href="../stocks/GD.html">GD</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-24</td>
+        <td><a href="../members/evans-dwight.html">Dwight Evans</a>
+            <span class="pill op">op</span></td>
+        <td><a href="../stocks/INTC.html">INTC</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-19</td>
+        <td><a href="../members/moskowitz-jared.html">Jared Moskowitz</a>
+            </td>
+        <td><a href="../stocks/COR.html">COR</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-19</td>
+        <td><a href="../members/moskowitz-jared.html">Jared Moskowitz</a>
+            </td>
+        <td><a href="../stocks/COR.html">COR</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-19</td>
+        <td><a href="../members/moskowitz-jared.html">Jared Moskowitz</a>
+            </td>
+        <td><a href="../stocks/GILD.html">GILD</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-19</td>
+        <td><a href="../members/moskowitz-jared.html">Jared Moskowitz</a>
+            </td>
+        <td><a href="../stocks/GILD.html">GILD</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-18</td>
+        <td><a href="../members/kean-thomas-h.html">Thomas H. Kean</a>
+            </td>
+        <td><a href="../stocks/BDX.html">BDX</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-18</td>
+        <td><a href="../members/kean-thomas-h.html">Thomas H. Kean</a>
+            </td>
+        <td><a href="../stocks/EQT.html">EQT</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-18</td>
+        <td><a href="../members/kean-thomas-h.html">Thomas H. Kean</a>
+            </td>
+        <td><a href="../stocks/AMCR.html">AMCR</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-18</td>
+        <td><a href="../members/kean-thomas-h.html">Thomas H. Kean</a>
+            </td>
+        <td><a href="../stocks/CHKP.html">CHKP</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/GOOGL.html">GOOGL</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/AAPL.html">AAPL</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/GE.html">GE</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/GEV.html">GEV</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/INTC.html">INTC</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/META.html">META</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/MSFT.html">MSFT</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/NVDA.html">NVDA</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/LUV.html">LUV</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/TPR.html">TPR</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="32500.5">$33K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/AMZN.html">AMZN</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/XOM.html">XOM</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-17</td>
+        <td><a href="../members/green-mark-dr.html">Mark Dr Green</a>
+            </td>
+        <td><a href="../stocks/IBM.html">IBM</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/ALB.html">ALB</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/IEI.html">IEI</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="75000.5">$75K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/IEI.html">IEI</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="75000.5">$75K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/XFIV.html">XFIV</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="75000.5">$75K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/allen-richard-w.html">Richard W. Allen</a>
+            </td>
+        <td><a href="../stocks/ACN.html">ACN</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="32500.5">$33K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/jackson-jonathan.html">Jonathan Jackson</a>
+            </td>
+        <td><a href="../stocks/MSFT.html">MSFT</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="32500.5">$33K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/allen-richard-w.html">Richard W. Allen</a>
+            </td>
+        <td><a href="../stocks/AXP.html">AXP</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/allen-richard-w.html">Richard W. Allen</a>
+            </td>
+        <td><a href="../stocks/TSM.html">TSM</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/VEA.html">VEA</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/VNQI.html">VNQI</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/LITP.html">LITP</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/IVV.html">IVV</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/SCHP.html">SCHP</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/RNWGX.html">RNWGX</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/JMBS.html">JMBS</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/SPYM.html">SPYM</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/IWM.html">IWM</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/EFA.html">EFA</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/CMBS.html">CMBS</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/MBB.html">MBB</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/GEM.html">GEM</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/FTGC.html">FTGC</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/EIPI.html">EIPI</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/ECL.html">ECL</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/ACN.html">ACN</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/VEA.html">VEA</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/VNQI.html">VNQI</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/LITP.html">LITP</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/IVV.html">IVV</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/SCHP.html">SCHP</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/RNWGX.html">RNWGX</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/JMBS.html">JMBS</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/IWM.html">IWM</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/EFA.html">EFA</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/CMBS.html">CMBS</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/MBB.html">MBB</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/GEM.html">GEM</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/EIPI.html">EIPI</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/ECL.html">ECL</a></td>
+        <td class="neg">Sell</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/SCHP.html">SCHP</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/PLTR.html">PLTR</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/JMBS.html">JMBS</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/IEF.html">IEF</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/TLH.html">TLH</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/CMBS.html">CMBS</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/MBB.html">MBB</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/AGZ.html">AGZ</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/GBIL.html">GBIL</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/GIGB.html">GIGB</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/GIGB.html">GIGB</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/XFIV.html">XFIV</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+      <tr>
+        <td>2026-06-16</td>
+        <td><a href="../members/boozman-john.html">John Boozman</a>
+            </td>
+        <td><a href="../stocks/XTWO.html">XTWO</a></td>
+        <td class="pos">Buy</td>
+        <td class="num" data-v="8000.5">$8K</td>
+      </tr>
+    
+    </tbody>
+  </table>
+  
+</details>
+
+<h2>Stocks that drove out-performance</h2>
+<p class="muted small">For each out-performer, every stock contributes
+   <em>(its share of their portfolio) × (its return above the S&P)</em> — so these contributions add up
+   to that member's total alpha. Summed across all out-performers (each weighted by their own percentage
+   performance, not dollar size), this shows which names actually produced the out-performance. A single
+   member's huge winner can top the list.</p>
+<table class="sortable">
+  <thead><tr>
+    <th>Ticker</th><th>Company</th><th>Industry</th><th>Cap</th>
+    <th class="num">Alpha contribution (pts)</th><th class="num">Out-performers</th><th>Top contributor</th>
+  </tr></thead>
+  <tbody>
+  
+    <tr>
+      <td><a href="../stocks/MU.html">MU</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 1043.19 vs SMA10 976.65"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 976.65 vs SMA50 718.25"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 718.25 vs SMA200 395.67"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 639,735,975 vs down-vol 433,521,324"></span></span></td>
+      <td>Micron Technology, Inc.</td>
+      <td><a href="../industries/semiconductors.html">Semiconductors</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="263.9">+263.9</td>
+      <td class="num" data-v="2">2</td>
+      <td class="small">Ashley Moody</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/AMAT.html">AMAT</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 592.92 vs SMA10 530.99"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 530.99 vs SMA50 441.04"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 441.04 vs SMA200 315.52"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 137,150,342 vs down-vol 39,262,833"></span></span></td>
+      <td>Applied Materials Inc</td>
+      <td><a href="../industries/semiconductors.html">Semiconductors</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="184.5">+184.5</td>
+      <td class="num" data-v="5">5</td>
+      <td class="small">Ashley Moody</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/INTC.html">INTC</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 121.10 vs SMA10 114.37"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 114.37 vs SMA50 99.92"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 99.92 vs SMA200 54.96"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 1,201,609,476 vs down-vol 1,353,784,008"></span></span></td>
+      <td>Intel Corp</td>
+      <td><a href="../industries/other.html">Other</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="82.1">+82.1</td>
+      <td class="num" data-v="2">2</td>
+      <td class="small">Dwight Evans</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ICHR.html">ICHR</a><span class="mdots" title="momentum as of 2026-06-18"><span class="mdot bull" title="Price vs SMA10: price 98.61 vs SMA10 80.76"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 80.76 vs SMA50 70.79"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 70.79 vs SMA200 38.44"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 17,933,570 vs down-vol 5,917,570"></span></span></td>
+      <td>Ichor Holdings</td>
+      <td><a href="../industries/semiconductors.html">Semiconductors</a></td>
+      <td><span class="cap mid">mid</span></td>
+      <td class="num sig pos" data-v="75.9">+75.9</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Debbie Wasserman Schultz</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/GOOG.html">GOOG</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 362.10 vs SMA10 362.68"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 362.68 vs SMA50 363.57"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 363.57 vs SMA200 309.84"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 174,757,009 vs down-vol 269,936,244"></span></span></td>
+      <td>Alphabet Inc. Class C Capital Stock</td>
+      <td><a href="../industries/other.html">Other</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="52.9">+52.9</td>
+      <td class="num" data-v="4">4</td>
+      <td class="small">Jerry Moran,</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/AMD.html">AMD</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 512.48 vs SMA10 497.49"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 497.49 vs SMA50 404.94"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 404.94 vs SMA200 259.27"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 369,572,872 vs down-vol 261,701,330"></span></span></td>
+      <td>Advanced Micro Devices</td>
+      <td><a href="../industries/other.html">Other</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="28.4">+28.4</td>
+      <td class="num" data-v="4">4</td>
+      <td class="small">Marjorie Taylor Greene</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/GOOGL.html">GOOGL</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 363.79 vs SMA10 364.85"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 364.85 vs SMA50 366.36"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 366.36 vs SMA200 310.32"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 270,312,616 vs down-vol 369,638,554"></span></span></td>
+      <td>Alphabet Inc. Class A Common Stock</td>
+      <td><a href="../industries/software-services.html">Software &amp; Services</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="20.0">+20.0</td>
+      <td class="num" data-v="5">5</td>
+      <td class="small">Dwight Evans</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/HWM.html">HWM</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 283.23 vs SMA10 261.48"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 261.48 vs SMA50 255.78"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 255.78 vs SMA200 222.99"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 25,971,239 vs down-vol 24,801,834"></span></span></td>
+      <td>Howmet Aerospace Inc.</td>
+      <td><a href="../industries/materials.html">Materials</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="19.2">+19.2</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Ashley Moody</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/HL.html">HL</a><span class="mdots" title="momentum as of 2026-06-18"><span class="mdot bull" title="Price vs SMA10: price 15.96 vs SMA10 15.39"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 15.39 vs SMA50 17.71"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 17.71 vs SMA200 17.75"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 211,738,995 vs down-vol 210,190,823"></span></span></td>
+      <td>Hecla Mining Company</td>
+      <td><a href="../industries/materials.html">Materials</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="17.0">+17.0</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Debbie Wasserman Schultz</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/PANW.html">PANW</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 282.13 vs SMA10 274.71"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 274.71 vs SMA50 222.31"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 222.31 vs SMA200 195.65"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 92,083,838 vs down-vol 88,311,884"></span></span></td>
+      <td>Palo Alto Networks, Inc. Common Stock</td>
+      <td><a href="../industries/technology-hardware.html">Technology Hardware</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="16.6">+16.6</td>
+      <td class="num" data-v="3">3</td>
+      <td class="small">Nancy Pelosi</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/NVDA.html">NVDA</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 204.65 vs SMA10 207.56"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 207.56 vs SMA50 208.74"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 208.74 vs SMA200 189.70"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 1,269,368,520 vs down-vol 2,187,563,893"></span></span></td>
+      <td>Nvidia Corp</td>
+      <td><a href="../industries/other.html">Other</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="14.3">+14.3</td>
+      <td class="num" data-v="6">6</td>
+      <td class="small">Dwight Evans</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/VSAT.html">VSAT</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 64.55 vs SMA10 66.68"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 66.68 vs SMA50 67.15"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 67.15 vs SMA200 45.99"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 23,176,831 vs down-vol 41,184,393"></span></span></td>
+      <td>Viasat Inc</td>
+      <td><a href="../industries/telecommunication-services.html">Telecommunication Services</a></td>
+      <td><span class="cap mid">mid</span></td>
+      <td class="num sig pos" data-v="13.0">+13.0</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Debbie Wasserman Schultz</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/LLY.html">LLY</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 1112.00 vs SMA10 1134.47"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 1134.47 vs SMA50 1008.19"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 1008.19 vs SMA200 964.27"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 31,469,344 vs down-vol 32,459,453"></span></span></td>
+      <td>Eli Lilly &amp; Co.</td>
+      <td><a href="../industries/other.html">Other</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="12.7">+12.7</td>
+      <td class="num" data-v="5">5</td>
+      <td class="small">Sheldon Whitehouse</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/MRVL.html">MRVL</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 289.54 vs SMA10 282.57"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 282.57 vs SMA50 194.02"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 194.02 vs SMA200 111.83"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 795,765,420 vs down-vol 398,467,965"></span></span></td>
+      <td>Marvell Technology, Inc. Common Stock</td>
+      <td><a href="../industries/semiconductors.html">Semiconductors</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="12.7">+12.7</td>
+      <td class="num" data-v="2">2</td>
+      <td class="small">Angus S King, Jr.</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/AVGO.html">AVGO</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 392.90 vs SMA10 389.67"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 389.67 vs SMA50 410.46"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 410.46 vs SMA200 359.39"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 312,108,267 vs down-vol 365,228,821"></span></span></td>
+      <td>Broadcom Inc. Common Stock</td>
+      <td><a href="../industries/semiconductors.html">Semiconductors</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="11.3">+11.3</td>
+      <td class="num" data-v="2">2</td>
+      <td class="small">Shelley M Capito</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/GLW.html">GLW</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 175.40 vs SMA10 180.14"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 180.14 vs SMA50 178.60"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 178.60 vs SMA200 119.94"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 117,795,830 vs down-vol 127,578,377"></span></span></td>
+      <td>Corning Incorporated</td>
+      <td><a href="../industries/materials.html">Materials</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="8.6">+8.6</td>
+      <td class="num" data-v="2">2</td>
+      <td class="small">Marjorie Taylor Greene</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/GS.html">GS</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 1099.14 vs SMA10 1057.40"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 1057.40 vs SMA50 970.05"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 970.05 vs SMA200 874.81"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 35,118,044 vs down-vol 12,443,448"></span></span></td>
+      <td>Goldman Sachs Group Inc.</td>
+      <td><a href="../industries/diversified-financials.html">Diversified Financials</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="8.1">+8.1</td>
+      <td class="num" data-v="5">5</td>
+      <td class="small">Sheldon Whitehouse</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/NGD.html">NGD</a><span class="mdots" title="momentum as of 2026-03-19"><span class="mdot bear" title="Price vs SMA10: price 9.08 vs SMA10 10.49"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 10.49 vs SMA50 11.15"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 11.15 vs SMA200 7.52"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 97,278,508 vs down-vol 160,890,931"></span></span></td>
+      <td>—</td>
+      <td><a href="../industries/other.html">Other</a></td>
+      <td></td>
+      <td class="num sig pos" data-v="8.1">+8.1</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Debbie Wasserman Schultz</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/LRCX.html">LRCX</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 374.18 vs SMA10 347.49"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 347.49 vs SMA50 295.31"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 295.31 vs SMA200 208.61"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 138,035,165 vs down-vol 73,009,680"></span></span></td>
+      <td>Lam Research Corp</td>
+      <td><a href="../industries/other.html">Other</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="7.9">+7.9</td>
+      <td class="num" data-v="2">2</td>
+      <td class="small">Marjorie Taylor Greene</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/SPG.html">SPG</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 209.86 vs SMA10 212.32"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 212.32 vs SMA50 204.63"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 204.63 vs SMA200 190.38"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 18,680,187 vs down-vol 19,272,327"></span></span></td>
+      <td>Simon Property Group, Inc.</td>
+      <td><a href="../industries/diversified-financials.html">Diversified Financials</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="7.9">+7.9</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Victoria Spartz</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/IBKR.html">IBKR</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 95.09 vs SMA10 89.12"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 89.12 vs SMA50 83.01"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 83.01 vs SMA200 72.03"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 71,197,575 vs down-vol 39,979,559"></span></span></td>
+      <td>Interactive Brokers Group, Inc. Class A Common Stock</td>
+      <td><a href="../industries/diversified-financials.html">Diversified Financials</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="5.1">+5.1</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Morgan McGarvey</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/VRT.html">VRT</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 317.58 vs SMA10 302.54"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 302.54 vs SMA50 320.50"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 320.50 vs SMA200 222.90"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 55,174,830 vs down-vol 63,152,275"></span></span></td>
+      <td>Vertiv Holdings Co Class A Common Stock</td>
+      <td><a href="../industries/technology-hardware.html">Technology Hardware</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="4.8">+4.8</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Angus S King, Jr.</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/FMAO.html">FMAO</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 28.55 vs SMA10 28.41"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 28.41 vs SMA50 27.43"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 27.43 vs SMA200 26.03"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 953,582 vs down-vol 619,742"></span></span></td>
+      <td>Farmers &amp; Merchants Bancorp, Inc.</td>
+      <td><a href="../industries/banks.html">Banks</a></td>
+      <td><span class="cap small">small</span></td>
+      <td class="num sig pos" data-v="4.0">+4.0</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Robert E. Latta</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/GE.html">GE</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 357.03 vs SMA10 334.59"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 334.59 vs SMA50 306.74"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 306.74 vs SMA200 305.02"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 80,756,254 vs down-vol 15,884,523"></span></span></td>
+      <td>GE Aerospace</td>
+      <td><a href="../industries/technology-hardware.html">Technology Hardware</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="3.9">+3.9</td>
+      <td class="num" data-v="2">2</td>
+      <td class="small">Shelley M Capito</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/TSLA.html">TSLA</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 396.38 vs SMA10 401.44"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 401.44 vs SMA50 401.34"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 401.34 vs SMA200 416.61"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 499,308,739 vs down-vol 426,784,432"></span></span></td>
+      <td>Tesla, Inc. Common Stock</td>
+      <td><a href="../industries/other.html">Other</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="3.7">+3.7</td>
+      <td class="num" data-v="2">2</td>
+      <td class="small">Morgan McGarvey</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CAT.html">CAT</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 955.92 vs SMA10 917.48"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 917.48 vs SMA50 868.66"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 868.66 vs SMA200 667.50"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 33,677,365 vs down-vol 21,882,178"></span></span></td>
+      <td>Caterpillar Inc.</td>
+      <td><a href="../industries/capital-goods.html">Capital Goods</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="3.5">+3.5</td>
+      <td class="num" data-v="2">2</td>
+      <td class="small">Marjorie Taylor Greene</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/GH.html">GH</a><span class="mdots" title="momentum as of 2026-06-18"><span class="mdot bull" title="Price vs SMA10: price 131.78 vs SMA10 129.19"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 129.19 vs SMA50 105.79"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 105.79 vs SMA200 93.91"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 32,844,795 vs down-vol 17,920,897"></span></span></td>
+      <td>Guardant Health, Inc. Common Stock</td>
+      <td><a href="../industries/health-care-equipment-services.html">Health Care Equipment &amp; Services</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="3.4">+3.4</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Sheldon Whitehouse</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/DELL.html">DELL</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 419.32 vs SMA10 398.83"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 398.83 vs SMA50 277.85"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 277.85 vs SMA200 172.17"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 183,147,482 vs down-vol 67,319,417"></span></span></td>
+      <td>Dell Technologies Inc.</td>
+      <td><a href="../industries/technology-hardware.html">Technology Hardware</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="3.3">+3.3</td>
+      <td class="num" data-v="2">2</td>
+      <td class="small">Marjorie Taylor Greene</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/PWR.html">PWR</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 714.85 vs SMA10 700.05"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 700.05 vs SMA50 689.21"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 689.21 vs SMA200 521.86"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 8,671,270 vs down-vol 12,733,873"></span></span></td>
+      <td>Quanta Services, Inc.</td>
+      <td><a href="../industries/capital-goods.html">Capital Goods</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="3.1">+3.1</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Angus S King, Jr.</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ASML.html">ASML</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 1867.83 vs SMA10 1798.76"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 1798.76 vs SMA50 1569.82"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 1569.82 vs SMA200 1261.60"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 26,274,509 vs down-vol 12,676,616"></span></span></td>
+      <td>ASML Holding NV</td>
+      <td><a href="../industries/other.html">Other</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="2.0">+2.0</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Marjorie Taylor Greene</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CEG.html">CEG</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 267.17 vs SMA10 256.20"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 256.20 vs SMA50 284.65"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 284.65 vs SMA200 319.44"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 42,921,294 vs down-vol 40,242,200"></span></span></td>
+      <td>Constellation Energy Corporation Common Stock</td>
+      <td><a href="../industries/utilities.html">Utilities</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="1.8">+1.8</td>
+      <td class="num" data-v="2">2</td>
+      <td class="small">Shelley M Capito</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/TGT.html">TGT</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 127.81 vs SMA10 128.72"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 128.72 vs SMA50 126.28"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 126.28 vs SMA200 107.29"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 47,458,298 vs down-vol 64,162,324"></span></span></td>
+      <td>Target Corporation</td>
+      <td><a href="../industries/retailing.html">Retailing</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="1.6">+1.6</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Dan Newhouse</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CRWD.html">CRWD</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 682.96 vs SMA10 677.13"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 677.13 vs SMA50 560.39"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 560.39 vs SMA200 488.05"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 31,744,825 vs down-vol 39,576,773"></span></span></td>
+      <td>CrowdStrike Holdings, Inc. Class A Common Stock</td>
+      <td><a href="../industries/software-services.html">Software &amp; Services</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="1.2">+1.2</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Marjorie Taylor Greene</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CRDO.html">CRDO</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 249.33 vs SMA10 238.22"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 238.22 vs SMA50 194.10"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 194.10 vs SMA200 152.87"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 135,532,502 vs down-vol 59,500,661"></span></span></td>
+      <td>Credo Technology Group Holding Ltd Ordinary Shares</td>
+      <td><a href="../industries/semiconductors.html">Semiconductors</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="1.2">+1.2</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Markwayne Mullin</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/KEX.html">KEX</a><span class="mdots" title="momentum as of 2026-06-18"><span class="mdot bear" title="Price vs SMA10: price 140.64 vs SMA10 141.34"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 141.34 vs SMA50 144.29"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 144.29 vs SMA200 119.28"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 5,905,856 vs down-vol 5,459,687"></span></span></td>
+      <td>Kirby Corporation</td>
+      <td><a href="../industries/transportation.html">Transportation</a></td>
+      <td><span class="cap mid">mid</span></td>
+      <td class="num sig pos" data-v="1.2">+1.2</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Angus S King, Jr.</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/ROST.html">ROST</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 233.25 vs SMA10 233.60"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 233.60 vs SMA50 225.91"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 225.91 vs SMA200 190.68"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 37,161,371 vs down-vol 32,698,748"></span></span></td>
+      <td>Ross Stores Inc</td>
+      <td><a href="../industries/retailing.html">Retailing</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="1.2">+1.2</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Dan Newhouse</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/KO.html">KO</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 79.93 vs SMA10 80.70"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 80.70 vs SMA50 78.88"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 78.88 vs SMA200 73.65"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 128,188,279 vs down-vol 206,500,148"></span></span></td>
+      <td>Coca-Cola Company</td>
+      <td><a href="../industries/food-beverage-tobacco.html">Food, Beverage &amp; Tobacco</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="1.1">+1.1</td>
+      <td class="num" data-v="2">2</td>
+      <td class="small">Sheldon Whitehouse</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/BIIB.html">BIIB</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 198.67 vs SMA10 197.07"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 197.07 vs SMA50 190.15"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 190.15 vs SMA200 174.41"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 8,567,545 vs down-vol 11,360,163"></span></span></td>
+      <td>Biogen Inc. Common Stock</td>
+      <td><a href="../industries/pharmaceuticals-biotech.html">Pharmaceuticals &amp; Biotech</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="1.1">+1.1</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Maria Elvira Salazar</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/CSCO.html">CSCO</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 117.33 vs SMA10 121.49"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 121.49 vs SMA50 104.32"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 104.32 vs SMA200 82.39"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 231,501,121 vs down-vol 255,507,780"></span></span></td>
+      <td>Cisco Systems, Inc. Common Stock (DE)</td>
+      <td><a href="../industries/technology-hardware.html">Technology Hardware</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num sig pos" data-v="1.0">+1.0</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Maria Elvira Salazar</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/COHR.html">COHR</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 378.85 vs SMA10 383.56"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 383.56 vs SMA50 355.08"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 355.08 vs SMA200 222.39"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 57,338,097 vs down-vol 59,732,683"></span></span></td>
+      <td>Coherent Corp.</td>
+      <td><a href="../industries/technology-hardware.html">Technology Hardware</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num sig pos" data-v="1.0">+1.0</td>
+      <td class="num" data-v="1">1</td>
+      <td class="small">Markwayne Mullin</td>
+    </tr>
+  
+  </tbody>
+</table>
+
+<h2>What out-performers are buying now <span class="muted">(last 30 days)</span></h2>
+<p class="muted small">Recent purchases by out-performers, ranked by the share of their proven portfolios
+   going into each name. Returns aren't meaningful yet — this is where the smart money is <em>going</em>,
+   to balance the backward-looking view above.</p>
+
+<table class="sortable">
+  <thead><tr>
+    <th>Ticker</th><th>Company</th><th>Industry</th><th>Cap</th>
+    <th class="num">Out-performer allocation</th><th class="num">Out-performers</th><th>Latest disclosure</th>
+  </tr></thead>
+  <tbody>
+  
+    <tr>
+      <td><a href="../stocks/FMAO.html">FMAO</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 28.55 vs SMA10 28.41"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 28.41 vs SMA50 27.43"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 27.43 vs SMA200 26.03"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 953,582 vs down-vol 619,742"></span></span></td>
+      <td>Farmers &amp; Merchants Bancorp, Inc.</td>
+      <td><a href="../industries/banks.html">Banks</a></td>
+      <td><span class="cap small">small</span></td>
+      <td class="num" data-v="25.2">25.2%</td>
+      <td class="num" data-v="1">1</td>
+      <td>2026-06-05</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/BIIB.html">BIIB</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bull" title="Price vs SMA10: price 198.67 vs SMA10 197.07"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 197.07 vs SMA50 190.15"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 190.15 vs SMA200 174.41"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 8,567,545 vs down-vol 11,360,163"></span></span></td>
+      <td>Biogen Inc. Common Stock</td>
+      <td><a href="../industries/pharmaceuticals-biotech.html">Pharmaceuticals &amp; Biotech</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num" data-v="8.8">8.8%</td>
+      <td class="num" data-v="1">1</td>
+      <td>2026-06-08</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/IBM.html">IBM</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 262.35 vs SMA10 276.62"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 276.62 vs SMA50 250.39"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 250.39 vs SMA200 273.41"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 162,410,307 vs down-vol 85,060,679"></span></span></td>
+      <td>International Business Machines Corporation</td>
+      <td><a href="../industries/other.html">Other</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num" data-v="6.3">6.3%</td>
+      <td class="num" data-v="1">1</td>
+      <td>2026-06-08</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/DDOG.html">DDOG</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 226.63 vs SMA10 231.93"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 231.93 vs SMA50 183.93"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 183.93 vs SMA200 151.00"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 53,635,419 vs down-vol 65,133,817"></span></span></td>
+      <td>Datadog, Inc. Class A Common Stock</td>
+      <td><a href="../industries/software-services.html">Software &amp; Services</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num" data-v="3.9">3.9%</td>
+      <td class="num" data-v="1">1</td>
+      <td>2026-06-08</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/QCOM.html">QCOM</a><span class="mdots" title="momentum as of 2026-06-17"><span class="mdot bear" title="Price vs SMA10: price 212.97 vs SMA10 213.54"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 213.54 vs SMA50 189.46"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 189.46 vs SMA200 166.48"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 260,341,198 vs down-vol 165,172,987"></span></span></td>
+      <td>Qualcomm Inc</td>
+      <td><a href="../industries/technology-hardware.html">Technology Hardware</a></td>
+      <td><span class="cap mega">mega</span></td>
+      <td class="num" data-v="3.9">3.9%</td>
+      <td class="num" data-v="1">1</td>
+      <td>2026-06-08</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../stocks/BEP.html">BEP</a><span class="mdots" title="momentum as of 2026-06-18"><span class="mdot bear" title="Price vs SMA10: price 35.24 vs SMA10 35.29"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 35.29 vs SMA50 34.79"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 34.79 vs SMA200 30.36"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 9,979,689 vs down-vol 7,499,057"></span></span></td>
+      <td>Brookfield Renewable Partners L.P.</td>
+      <td><a href="../industries/other.html">Other</a></td>
+      <td><span class="cap large">large</span></td>
+      <td class="num" data-v="0.8">0.8%</td>
+      <td class="num" data-v="1">1</td>
+      <td>2026-06-08</td>
+    </tr>
+  
+  </tbody>
+</table>
+
+
+<h2>Member leaderboard</h2>
+<p class="muted small">Dollar-weighted return = each position weighted by the midpoint of its disclosed
+   amount range; the <strong>Disclosed $</strong> column (and all dollar figures site-wide) are
+   <em>bracket midpoints</em> — filings report ranges (e.g. $1,001–$15,000), not exact amounts. Members
+   with at least 3 priced positions are ranked.</p>
+<table class="sortable">
+  <thead><tr>
+    <th class="num">#</th><th>Member</th><th>Chamber</th>
+    <th class="num">Dollar-wtd return</th><th class="num">vs SPY (alpha)</th>
+    <th class="num">Equal-wtd</th><th class="num">Win rate</th>
+    <th class="num">Positions</th><th class="num">Disclosed $</th>
+  </tr></thead>
+  <tbody>
+  
+    <tr>
+      <td class="num">1</td>
+      <td><a href="../members/moody-ashley.html">Ashley Moody</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num pos" data-v="432.62">+432.6%</td>
+      <td class="num pos" data-v="409.11">+409.1%</td>
+      <td class="num pos" data-v="489.83">+489.8%</td>
+      <td class="num" data-v="100.0">100.0%</td>
+      <td class="num" data-v="3">3</td>
+      <td class="num" data-v="325002">$325K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">2</td>
+      <td><a href="../members/wasserman-schultz-debbie.html">Debbie Wasserman Schultz</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="120.6">+120.6%</td>
+      <td class="num pos" data-v="102.36">+102.4%</td>
+      <td class="num pos" data-v="120.6">+120.6%</td>
+      <td class="num" data-v="62.5">62.5%</td>
+      <td class="num" data-v="8">8</td>
+      <td class="num" data-v="64004">$64K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">3</td>
+      <td><a href="../members/evans-dwight.html">Dwight Evans</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="119.36">+119.4%</td>
+      <td class="num pos" data-v="85.91">+85.9%</td>
+      <td class="num pos" data-v="119.36">+119.4%</td>
+      <td class="num" data-v="100.0">100.0%</td>
+      <td class="num" data-v="6">6</td>
+      <td class="num" data-v="48003">$48K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">4</td>
+      <td><a href="../members/greene-marjorie-taylor.html">Marjorie Taylor Greene</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="66.57">+66.6%</td>
+      <td class="num pos" data-v="40.6">+40.6%</td>
+      <td class="num pos" data-v="71.96">+72.0%</td>
+      <td class="num" data-v="77.0">77.0%</td>
+      <td class="num" data-v="369">369</td>
+      <td class="num" data-v="3197184">$3.2M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">5</td>
+      <td><a href="../members/moran-jerry.html">Jerry Moran,</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num pos" data-v="55.15">+55.1%</td>
+      <td class="num pos" data-v="40.45">+40.5%</td>
+      <td class="num pos" data-v="55.15">+55.1%</td>
+      <td class="num" data-v="100.0">100.0%</td>
+      <td class="num" data-v="4">4</td>
+      <td class="num" data-v="32002">$32K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">6</td>
+      <td><a href="../members/king-jr-angus-s.html">Angus S King, Jr.</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num pos" data-v="42.67">+42.7%</td>
+      <td class="num pos" data-v="33.5">+33.5%</td>
+      <td class="num pos" data-v="42.67">+42.7%</td>
+      <td class="num" data-v="56.5">56.5%</td>
+      <td class="num" data-v="23">23</td>
+      <td class="num" data-v="184012">$184K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">7</td>
+      <td><a href="../members/fetterman-john.html">John Fetterman</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num pos" data-v="41.5">+41.5%</td>
+      <td class="num pos" data-v="27.19">+27.2%</td>
+      <td class="num pos" data-v="41.5">+41.5%</td>
+      <td class="num" data-v="50.0">50.0%</td>
+      <td class="num" data-v="8">8</td>
+      <td class="num" data-v="64004">$64K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">8</td>
+      <td><a href="../members/whitehouse-sheldon.html">Sheldon Whitehouse</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num pos" data-v="39.05">+39.0%</td>
+      <td class="num pos" data-v="19.03">+19.0%</td>
+      <td class="num pos" data-v="33.24">+33.2%</td>
+      <td class="num" data-v="87.5">87.5%</td>
+      <td class="num" data-v="8">8</td>
+      <td class="num" data-v="88504">$89K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">9</td>
+      <td><a href="../members/pelosi-nancy.html">Nancy Pelosi</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="35.72">+35.7%</td>
+      <td class="num pos" data-v="21.75">+21.8%</td>
+      <td class="num pos" data-v="23.16">+23.2%</td>
+      <td class="num" data-v="88.9">88.9%</td>
+      <td class="num" data-v="9">9</td>
+      <td class="num" data-v="14800004">$14.8M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">10</td>
+      <td><a href="../members/capito-shelley-m.html">Shelley M Capito</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num pos" data-v="32.33">+32.3%</td>
+      <td class="num pos" data-v="15.28">+15.3%</td>
+      <td class="num pos" data-v="34.86">+34.9%</td>
+      <td class="num" data-v="81.8">81.8%</td>
+      <td class="num" data-v="22">22</td>
+      <td class="num" data-v="200511">$201K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">11</td>
+      <td><a href="../members/sessions-pete.html">Pete Sessions</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="29.05">+29.1%</td>
+      <td class="num neg" data-v="-1.53">-1.5%</td>
+      <td class="num pos" data-v="29.05">+29.1%</td>
+      <td class="num" data-v="60.0">60.0%</td>
+      <td class="num" data-v="5">5</td>
+      <td class="num" data-v="40002">$40K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">12</td>
+      <td><a href="../members/morrison-kelly-louise.html">Kelly Louise Morrison</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="26.24">+26.2%</td>
+      <td class="num neg" data-v="-6.35">-6.3%</td>
+      <td class="num pos" data-v="35.18">+35.2%</td>
+      <td class="num" data-v="80.0">80.0%</td>
+      <td class="num" data-v="10">10</td>
+      <td class="num" data-v="153505">$154K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">13</td>
+      <td><a href="../members/newhouse-dan.html">Dan Newhouse</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="26.08">+26.1%</td>
+      <td class="num pos" data-v="16.21">+16.2%</td>
+      <td class="num pos" data-v="26.08">+26.1%</td>
+      <td class="num" data-v="54.2">54.2%</td>
+      <td class="num" data-v="24">24</td>
+      <td class="num" data-v="192012">$192K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">14</td>
+      <td><a href="../members/lee-laurel.html">Laurel Lee</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="23.28">+23.3%</td>
+      <td class="num neg" data-v="-3.48">-3.5%</td>
+      <td class="num pos" data-v="11.04">+11.0%</td>
+      <td class="num" data-v="50.0">50.0%</td>
+      <td class="num" data-v="6">6</td>
+      <td class="num" data-v="255503">$256K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">15</td>
+      <td><a href="../members/spartz-victoria.html">Victoria Spartz</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="20.39">+20.4%</td>
+      <td class="num pos" data-v="7.88">+7.9%</td>
+      <td class="num pos" data-v="28.86">+28.9%</td>
+      <td class="num" data-v="100.0">100.0%</td>
+      <td class="num" data-v="3">3</td>
+      <td class="num" data-v="115502">$116K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">16</td>
+      <td><a href="../members/keating-william-r.html">William R. Keating</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="20.15">+20.1%</td>
+      <td class="num neg" data-v="-4.82">-4.8%</td>
+      <td class="num pos" data-v="20.15">+20.1%</td>
+      <td class="num" data-v="50.0">50.0%</td>
+      <td class="num" data-v="12">12</td>
+      <td class="num" data-v="96006">$96K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">17</td>
+      <td><a href="../members/latta-robert-e.html">Robert E. Latta</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="19.5">+19.5%</td>
+      <td class="num pos" data-v="4.01">+4.0%</td>
+      <td class="num pos" data-v="18.96">+19.0%</td>
+      <td class="num" data-v="90.0">90.0%</td>
+      <td class="num" data-v="10">10</td>
+      <td class="num" data-v="129005">$129K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">18</td>
+      <td><a href="../members/moskowitz-jared.html">Jared Moskowitz</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="19.33">+19.3%</td>
+      <td class="num pos" data-v="0.58">+0.6%</td>
+      <td class="num pos" data-v="16.01">+16.0%</td>
+      <td class="num" data-v="59.0">59.0%</td>
+      <td class="num" data-v="234">234</td>
+      <td class="num" data-v="2019117">$2.0M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">19</td>
+      <td><a href="../members/fields-cleo.html">Cleo Fields</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="17.91">+17.9%</td>
+      <td class="num pos" data-v="2.17">+2.2%</td>
+      <td class="num pos" data-v="16.53">+16.5%</td>
+      <td class="num" data-v="66.0">66.0%</td>
+      <td class="num" data-v="209">209</td>
+      <td class="num" data-v="21369604">$21.4M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">20</td>
+      <td><a href="../members/manning-kathy.html">Kathy Manning</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="16.75">+16.8%</td>
+      <td class="num neg" data-v="-16.93">-16.9%</td>
+      <td class="num pos" data-v="14.9">+14.9%</td>
+      <td class="num" data-v="56.4">56.4%</td>
+      <td class="num" data-v="39">39</td>
+      <td class="num" data-v="403520">$404K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">21</td>
+      <td><a href="../members/dingell-debbie.html">Debbie Dingell</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="16.31">+16.3%</td>
+      <td class="num neg" data-v="-9.22">-9.2%</td>
+      <td class="num pos" data-v="4.71">+4.7%</td>
+      <td class="num" data-v="33.3">33.3%</td>
+      <td class="num" data-v="3">3</td>
+      <td class="num" data-v="48502">$49K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">22</td>
+      <td><a href="../members/kean-thomas-h.html">Thomas H. Kean</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="16.05">+16.1%</td>
+      <td class="num neg" data-v="-1.98">-2.0%</td>
+      <td class="num pos" data-v="19.08">+19.1%</td>
+      <td class="num" data-v="61.5">61.5%</td>
+      <td class="num" data-v="52">52</td>
+      <td class="num" data-v="440526">$441K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">23</td>
+      <td><a href="../members/doggett-lloyd.html">Lloyd Doggett</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="15.86">+15.9%</td>
+      <td class="num neg" data-v="-8.04">-8.0%</td>
+      <td class="num pos" data-v="15.86">+15.9%</td>
+      <td class="num" data-v="70.7">70.7%</td>
+      <td class="num" data-v="41">41</td>
+      <td class="num" data-v="328020">$328K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">24</td>
+      <td><a href="../members/mullin-markwayne.html">Markwayne Mullin</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num pos" data-v="15.82">+15.8%</td>
+      <td class="num pos" data-v="3.59">+3.6%</td>
+      <td class="num pos" data-v="18.4">+18.4%</td>
+      <td class="num" data-v="55.8">55.8%</td>
+      <td class="num" data-v="172">172</td>
+      <td class="num" data-v="7210586">$7.2M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">25</td>
+      <td><a href="../members/comer-james.html">James Comer</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="15.77">+15.8%</td>
+      <td class="num neg" data-v="-3.88">-3.9%</td>
+      <td class="num pos" data-v="15.77">+15.8%</td>
+      <td class="num" data-v="62.1">62.1%</td>
+      <td class="num" data-v="29">29</td>
+      <td class="num" data-v="232014">$232K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">26</td>
+      <td><a href="../members/donalds-byron.html">Byron Donalds</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="14.56">+14.6%</td>
+      <td class="num pos" data-v="0.76">+0.8%</td>
+      <td class="num pos" data-v="14.56">+14.6%</td>
+      <td class="num" data-v="38.1">38.1%</td>
+      <td class="num" data-v="84">84</td>
+      <td class="num" data-v="672042">$672K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">27</td>
+      <td><a href="../members/bresnahan-rob.html">Rob Bresnahan</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="13.73">+13.7%</td>
+      <td class="num neg" data-v="-4.64">-4.6%</td>
+      <td class="num pos" data-v="13.37">+13.4%</td>
+      <td class="num" data-v="50.4">50.4%</td>
+      <td class="num" data-v="242">242</td>
+      <td class="num" data-v="2450621">$2.5M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">28</td>
+      <td><a href="../members/mcconnell-jr-a-mitchell.html">A. Mitchell McConnell, Jr.</a>
+          </td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num pos" data-v="13.36">+13.4%</td>
+      <td class="num neg" data-v="-5.06">-5.1%</td>
+      <td class="num pos" data-v="13.36">+13.4%</td>
+      <td class="num" data-v="75.0">75.0%</td>
+      <td class="num" data-v="8">8</td>
+      <td class="num" data-v="64004">$64K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">29</td>
+      <td><a href="../members/hill-james-french.html">James French Hill</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="11.3">+11.3%</td>
+      <td class="num neg" data-v="-5.5">-5.5%</td>
+      <td class="num pos" data-v="9.37">+9.4%</td>
+      <td class="num" data-v="50.0">50.0%</td>
+      <td class="num" data-v="4">4</td>
+      <td class="num" data-v="257502">$258K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">30</td>
+      <td><a href="../members/hern-kevin.html">Kevin Hern</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="10.53">+10.5%</td>
+      <td class="num neg" data-v="-8.19">-8.2%</td>
+      <td class="num pos" data-v="16.39">+16.4%</td>
+      <td class="num" data-v="70.0">70.0%</td>
+      <td class="num" data-v="20">20</td>
+      <td class="num" data-v="327010">$327K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">31</td>
+      <td><a href="../members/cisneros-gilbert.html">Gilbert Cisneros</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="10.05">+10.1%</td>
+      <td class="num pos" data-v="2.07">+2.1%</td>
+      <td class="num pos" data-v="8.66">+8.7%</td>
+      <td class="num" data-v="52.6">52.6%</td>
+      <td class="num" data-v="791">791</td>
+      <td class="num" data-v="8147396">$8.1M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">32</td>
+      <td><a href="../members/westerman-bruce.html">Bruce Westerman</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="9.95">+9.9%</td>
+      <td class="num pos" data-v="0.14">+0.1%</td>
+      <td class="num pos" data-v="10.8">+10.8%</td>
+      <td class="num" data-v="82.5">82.5%</td>
+      <td class="num" data-v="103">103</td>
+      <td class="num" data-v="946552">$947K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">33</td>
+      <td><a href="../members/johnson-julie.html">Julie Johnson</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="9.92">+9.9%</td>
+      <td class="num pos" data-v="4.47">+4.5%</td>
+      <td class="num pos" data-v="9.92">+9.9%</td>
+      <td class="num" data-v="77.2">77.2%</td>
+      <td class="num" data-v="79">79</td>
+      <td class="num" data-v="632040">$632K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">34</td>
+      <td><a href="../members/mcgarvey-morgan.html">Morgan McGarvey</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="9.39">+9.4%</td>
+      <td class="num pos" data-v="6.11">+6.1%</td>
+      <td class="num pos" data-v="9.39">+9.4%</td>
+      <td class="num" data-v="50.0">50.0%</td>
+      <td class="num" data-v="6">6</td>
+      <td class="num" data-v="48003">$48K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">35</td>
+      <td><a href="../members/larsen-rick.html">Rick Larsen</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="8.84">+8.8%</td>
+      <td class="num neg" data-v="-6.29">-6.3%</td>
+      <td class="num pos" data-v="8.84">+8.8%</td>
+      <td class="num" data-v="52.9">52.9%</td>
+      <td class="num" data-v="17">17</td>
+      <td class="num" data-v="136008">$136K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">36</td>
+      <td><a href="../members/salazar-maria-elvira.html">Maria Elvira Salazar</a>
+          <span class="pill op">out-performer</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="7.69">+7.7%</td>
+      <td class="num pos" data-v="3.69">+3.7%</td>
+      <td class="num pos" data-v="8.09">+8.1%</td>
+      <td class="num" data-v="60.4">60.4%</td>
+      <td class="num" data-v="48">48</td>
+      <td class="num" data-v="1039024">$1.0M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">37</td>
+      <td><a href="../members/boozman-john.html">John Boozman</a>
+          </td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num pos" data-v="7.65">+7.7%</td>
+      <td class="num neg" data-v="-2.26">-2.3%</td>
+      <td class="num pos" data-v="8.36">+8.4%</td>
+      <td class="num" data-v="52.6">52.6%</td>
+      <td class="num" data-v="192">192</td>
+      <td class="num" data-v="1872596">$1.9M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">38</td>
+      <td><a href="../members/case-ed.html">Ed Case</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="7.2">+7.2%</td>
+      <td class="num neg" data-v="-3.58">-3.6%</td>
+      <td class="num pos" data-v="7.2">+7.2%</td>
+      <td class="num" data-v="88.9">88.9%</td>
+      <td class="num" data-v="9">9</td>
+      <td class="num" data-v="72004">$72K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">39</td>
+      <td><a href="../members/taylor-david-j.html">David J. Taylor</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="7.13">+7.1%</td>
+      <td class="num pos" data-v="1.47">+1.5%</td>
+      <td class="num pos" data-v="6.62">+6.6%</td>
+      <td class="num" data-v="60.4">60.4%</td>
+      <td class="num" data-v="111">111</td>
+      <td class="num" data-v="937056">$937K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">40</td>
+      <td><a href="../members/letlow-julia.html">Julia Letlow</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="7.11">+7.1%</td>
+      <td class="num pos" data-v="2.94">+2.9%</td>
+      <td class="num pos" data-v="6.6">+6.6%</td>
+      <td class="num" data-v="37.7">37.7%</td>
+      <td class="num" data-v="138">138</td>
+      <td class="num" data-v="1153069">$1.2M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">41</td>
+      <td><a href="../members/peters-gary-c.html">Gary C Peters</a>
+          </td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num pos" data-v="7.01">+7.0%</td>
+      <td class="num neg" data-v="-1.28">-1.3%</td>
+      <td class="num pos" data-v="2.67">+2.7%</td>
+      <td class="num" data-v="60.0">60.0%</td>
+      <td class="num" data-v="5">5</td>
+      <td class="num" data-v="89002">$89K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">42</td>
+      <td><a href="../members/fleischmann-charles-j-chuck.html">Charles J. &#34;Chuck&#34; Fleischmann</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="6.94">+6.9%</td>
+      <td class="num neg" data-v="-3.17">-3.2%</td>
+      <td class="num pos" data-v="5.31">+5.3%</td>
+      <td class="num" data-v="66.7">66.7%</td>
+      <td class="num" data-v="3">3</td>
+      <td class="num" data-v="48502">$49K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">43</td>
+      <td><a href="../members/moore-tim.html">Tim Moore</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="6.56">+6.6%</td>
+      <td class="num pos" data-v="3.09">+3.1%</td>
+      <td class="num pos" data-v="6.64">+6.6%</td>
+      <td class="num" data-v="49.1">49.1%</td>
+      <td class="num" data-v="114">114</td>
+      <td class="num" data-v="4539557">$4.5M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">44</td>
+      <td><a href="../members/miller-carol-devine.html">Carol Devine Miller</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="6.31">+6.3%</td>
+      <td class="num neg" data-v="-32.47">-32.5%</td>
+      <td class="num pos" data-v="6.31">+6.3%</td>
+      <td class="num" data-v="66.7">66.7%</td>
+      <td class="num" data-v="9">9</td>
+      <td class="num" data-v="72004">$72K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">45</td>
+      <td><a href="../members/gottheimer-josh.html">Josh Gottheimer</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="6.1">+6.1%</td>
+      <td class="num pos" data-v="0.55">+0.6%</td>
+      <td class="num pos" data-v="6.19">+6.2%</td>
+      <td class="num" data-v="46.5">46.5%</td>
+      <td class="num" data-v="273">273</td>
+      <td class="num" data-v="2233136">$2.2M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">46</td>
+      <td><a href="../members/mccormick-richard-dean-dr.html">Richard Dean Dr McCormick</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="4.23">+4.2%</td>
+      <td class="num neg" data-v="-3.78">-3.8%</td>
+      <td class="num pos" data-v="4.23">+4.2%</td>
+      <td class="num" data-v="58.9">58.9%</td>
+      <td class="num" data-v="56">56</td>
+      <td class="num" data-v="448028">$448K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">47</td>
+      <td><a href="../members/shreve-jefferson.html">Jefferson Shreve</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="3.9">+3.9%</td>
+      <td class="num neg" data-v="-4.17">-4.2%</td>
+      <td class="num pos" data-v="5.62">+5.6%</td>
+      <td class="num" data-v="52.1">52.1%</td>
+      <td class="num" data-v="190">190</td>
+      <td class="num" data-v="8582595">$8.6M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">48</td>
+      <td><a href="../members/mcclain-lisa.html">Lisa McClain</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="3.62">+3.6%</td>
+      <td class="num pos" data-v="0.11">+0.1%</td>
+      <td class="num pos" data-v="3.13">+3.1%</td>
+      <td class="num" data-v="33.8">33.8%</td>
+      <td class="num" data-v="701">701</td>
+      <td class="num" data-v="6543850">$6.5M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">49</td>
+      <td><a href="../members/jackson-jonathan.html">Jonathan Jackson</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="3.15">+3.1%</td>
+      <td class="num neg" data-v="-3.43">-3.4%</td>
+      <td class="num pos" data-v="4.37">+4.4%</td>
+      <td class="num" data-v="42.6">42.6%</td>
+      <td class="num" data-v="68">68</td>
+      <td class="num" data-v="1552034">$1.6M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">50</td>
+      <td><a href="../members/tuberville-thomas-h.html">Thomas H Tuberville</a>
+          </td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num pos" data-v="2.92">+2.9%</td>
+      <td class="num neg" data-v="-12.14">-12.1%</td>
+      <td class="num pos" data-v="3.15">+3.1%</td>
+      <td class="num" data-v="100.0">100.0%</td>
+      <td class="num" data-v="4">4</td>
+      <td class="num" data-v="172502">$173K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">51</td>
+      <td><a href="../members/foxx-virginia.html">Virginia Foxx</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="2.66">+2.7%</td>
+      <td class="num neg" data-v="-9.65">-9.7%</td>
+      <td class="num pos" data-v="3.61">+3.6%</td>
+      <td class="num" data-v="54.5">54.5%</td>
+      <td class="num" data-v="33">33</td>
+      <td class="num" data-v="288516">$289K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">52</td>
+      <td><a href="../members/torres-ritchie-john.html">Ritchie John Torres</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="2.49">+2.5%</td>
+      <td class="num neg" data-v="-7.49">-7.5%</td>
+      <td class="num pos" data-v="2.49">+2.5%</td>
+      <td class="num" data-v="33.3">33.3%</td>
+      <td class="num" data-v="63">63</td>
+      <td class="num" data-v="504032">$504K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">53</td>
+      <td><a href="../members/james-john.html">John James</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="0.91">+0.9%</td>
+      <td class="num pos" data-v="0.76">+0.8%</td>
+      <td class="num pos" data-v="1.02">+1.0%</td>
+      <td class="num" data-v="23.1">23.1%</td>
+      <td class="num" data-v="121">121</td>
+      <td class="num" data-v="992560">$993K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">54</td>
+      <td><a href="../members/franklin-scott-scott.html">Scott Scott Franklin</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="0.68">+0.7%</td>
+      <td class="num neg" data-v="-22.02">-22.0%</td>
+      <td class="num pos" data-v="0.13">+0.1%</td>
+      <td class="num" data-v="50.7">50.7%</td>
+      <td class="num" data-v="69">69</td>
+      <td class="num" data-v="1369034">$1.4M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">55</td>
+      <td><a href="../members/britt-katie.html">Katie Britt</a>
+          </td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num pos" data-v="0.57">+0.6%</td>
+      <td class="num neg" data-v="-2.05">-2.0%</td>
+      <td class="num pos" data-v="0.57">+0.6%</td>
+      <td class="num" data-v="31.2">31.2%</td>
+      <td class="num" data-v="16">16</td>
+      <td class="num" data-v="128008">$128K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">56</td>
+      <td><a href="../members/walberg-tim.html">Tim Walberg</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num pos" data-v="0.26">+0.3%</td>
+      <td class="num pos" data-v="1.93">+1.9%</td>
+      <td class="num neg" data-v="-0.14">-0.1%</td>
+      <td class="num" data-v="38.5">38.5%</td>
+      <td class="num" data-v="13">13</td>
+      <td class="num" data-v="324506">$325K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">57</td>
+      <td><a href="../members/graham-lindsey.html">Lindsey Graham</a>
+          </td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num neg" data-v="-0.18">-0.2%</td>
+      <td class="num neg" data-v="-14.95">-14.9%</td>
+      <td class="num neg" data-v="-0.18">-0.2%</td>
+      <td class="num" data-v="0.0">0.0%</td>
+      <td class="num" data-v="3">3</td>
+      <td class="num" data-v="97502">$98K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">58</td>
+      <td><a href="../members/hoyle-valerie.html">Valerie Hoyle</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num neg" data-v="-0.44">-0.4%</td>
+      <td class="num neg" data-v="-1.38">-1.4%</td>
+      <td class="num neg" data-v="-0.51">-0.5%</td>
+      <td class="num" data-v="34.7">34.7%</td>
+      <td class="num" data-v="190">190</td>
+      <td class="num" data-v="1569095">$1.6M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">59</td>
+      <td><a href="../members/landsman-greg.html">Greg Landsman</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num neg" data-v="-0.63">-0.6%</td>
+      <td class="num pos" data-v="0.55">+0.6%</td>
+      <td class="num neg" data-v="-0.24">-0.2%</td>
+      <td class="num" data-v="16.7">16.7%</td>
+      <td class="num" data-v="54">54</td>
+      <td class="num" data-v="603527">$604K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">60</td>
+      <td><a href="../members/delaney-april-mcclain.html">April McClain Delaney</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num neg" data-v="-2.83">-2.8%</td>
+      <td class="num neg" data-v="-14.3">-14.3%</td>
+      <td class="num neg" data-v="-2.24">-2.2%</td>
+      <td class="num" data-v="53.6">53.6%</td>
+      <td class="num" data-v="166">166</td>
+      <td class="num" data-v="1695583">$1.7M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">61</td>
+      <td><a href="../members/guest-michael-patrick.html">Michael Patrick Guest</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num neg" data-v="-4.17">-4.2%</td>
+      <td class="num neg" data-v="-26.14">-26.1%</td>
+      <td class="num neg" data-v="-4.17">-4.2%</td>
+      <td class="num" data-v="50.0">50.0%</td>
+      <td class="num" data-v="4">4</td>
+      <td class="num" data-v="32002">$32K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">62</td>
+      <td><a href="../members/pfluger-august-lee.html">August Lee Pfluger</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num neg" data-v="-4.32">-4.3%</td>
+      <td class="num neg" data-v="-10.18">-10.2%</td>
+      <td class="num neg" data-v="-4.32">-4.3%</td>
+      <td class="num" data-v="25.0">25.0%</td>
+      <td class="num" data-v="4">4</td>
+      <td class="num" data-v="130002">$130K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">63</td>
+      <td><a href="../members/mcguire-john.html">John McGuire</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num neg" data-v="-5.02">-5.0%</td>
+      <td class="num neg" data-v="-12.41">-12.4%</td>
+      <td class="num neg" data-v="-5.02">-5.0%</td>
+      <td class="num" data-v="20.0">20.0%</td>
+      <td class="num" data-v="10">10</td>
+      <td class="num" data-v="80005">$80K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">64</td>
+      <td><a href="../members/allen-richard-w.html">Richard W. Allen</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num neg" data-v="-5.74">-5.7%</td>
+      <td class="num neg" data-v="-22.79">-22.8%</td>
+      <td class="num neg" data-v="-4.57">-4.6%</td>
+      <td class="num" data-v="35.7">35.7%</td>
+      <td class="num" data-v="14">14</td>
+      <td class="num" data-v="308007">$308K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">65</td>
+      <td><a href="../members/hickenlooper-john-w.html">John W Hickenlooper</a>
+          </td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num neg" data-v="-16.77">-16.8%</td>
+      <td class="num neg" data-v="-31.65">-31.6%</td>
+      <td class="num neg" data-v="-13.93">-13.9%</td>
+      <td class="num" data-v="40.0">40.0%</td>
+      <td class="num" data-v="10">10</td>
+      <td class="num" data-v="1950005">$2.0M</td>
+    </tr>
+  
+    <tr>
+      <td class="num">66</td>
+      <td><a href="../members/blumenauer-earl.html">Earl Blumenauer</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td class="num neg" data-v="-19.34">-19.3%</td>
+      <td class="num neg" data-v="-57.16">-57.2%</td>
+      <td class="num pos" data-v="2.12">+2.1%</td>
+      <td class="num" data-v="66.7">66.7%</td>
+      <td class="num" data-v="3">3</td>
+      <td class="num" data-v="48502">$49K</td>
+    </tr>
+  
+    <tr>
+      <td class="num">67</td>
+      <td><a href="../members/mccormick-david-h.html">David H McCormick</a>
+          </td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num neg" data-v="-31.66">-31.7%</td>
+      <td class="num neg" data-v="-59.79">-59.8%</td>
+      <td class="num neg" data-v="-31.98">-32.0%</td>
+      <td class="num" data-v="0.0">0.0%</td>
+      <td class="num" data-v="24">24</td>
+      <td class="num" data-v="1247512">$1.2M</td>
+    </tr>
+  
+  </tbody>
+</table>
+<h2>Filings to review with Claude <span class="muted">(100)</span></h2>
+<p class="muted small">These periodic transaction reports are scanned image PDFs (paper filings) that
+   can't be machine-read, so their trades are <strong>not</strong> reflected in the leaderboard above —
+   several of Congress's most active traders file this way. Each report can be transcribed from the linked
+   PDF, manually or with Claude.</p>
+
+<table class="sortable">
+  <thead><tr>
+    <th>Member</th><th>Chamber</th><th class="num">Filings</th><th>Latest</th><th>Reports (disclosure date)</th>
+  </tr></thead>
+  <tbody>
+  
+    <tr>
+      <td>RICHARD BLUMENTHAL</td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num" data-v="33">33</td>
+      <td>2026-06-08</td>
+      <td class="small">
+        <a href="https://efdsearch.senate.gov/search/view/paper/a0d25e8f-fe54-4328-a7ea-504da008742b/" target="_blank" rel="noopener">2026-06-08</a> · <a href="https://efdsearch.senate.gov/search/view/paper/d02263c3-381d-4ee9-8d84-2c44d9baa59e/" target="_blank" rel="noopener">2026-05-19</a> · <a href="https://efdsearch.senate.gov/search/view/paper/f028d2ce-4ab7-41a8-a67a-91675b6941d7/" target="_blank" rel="noopener">2026-04-08</a> · <a href="https://efdsearch.senate.gov/search/view/paper/d337c392-e0aa-428e-be93-44a327b90d08/" target="_blank" rel="noopener">2026-03-13</a> · <a href="https://efdsearch.senate.gov/search/view/paper/068274e1-4b7a-4453-a242-563dde4c10d8/" target="_blank" rel="noopener">2026-02-12</a> · <a href="https://efdsearch.senate.gov/search/view/paper/f873aeb4-adbb-4934-a188-79416a2e4c76/" target="_blank" rel="noopener">2026-01-20</a> · <a href="https://efdsearch.senate.gov/search/view/paper/13a0fc2a-bbbb-4c1b-b380-d315e198d2a3/" target="_blank" rel="noopener">2025-12-22</a> · <a href="https://efdsearch.senate.gov/search/view/paper/16afdd38-c0ec-4e37-bc05-cbd82901b43f/" target="_blank" rel="noopener">2025-12-12</a> · <a href="https://efdsearch.senate.gov/search/view/paper/19dc3e18-b10f-465d-8f37-117ab78a8d0b/" target="_blank" rel="noopener">2025-12-01</a> · <a href="https://efdsearch.senate.gov/search/view/paper/e63995b3-352b-4cf8-ac61-ae05cfa7553b/" target="_blank" rel="noopener">2025-11-17</a> · <a href="https://efdsearch.senate.gov/search/view/paper/4728c5fd-8bbd-43f7-a028-d17cfb8008dc/" target="_blank" rel="noopener">2025-10-24</a> · <a href="https://efdsearch.senate.gov/search/view/paper/f8c167e9-090d-471d-81c9-f8c7366420d1/" target="_blank" rel="noopener">2025-10-02</a> · <a href="https://efdsearch.senate.gov/search/view/paper/387cefb6-11f7-4871-89ef-5bad61124584/" target="_blank" rel="noopener">2025-09-24</a> · <a href="https://efdsearch.senate.gov/search/view/paper/e08ef39c-87e8-4381-9f92-41218ecc7cd4/" target="_blank" rel="noopener">2025-09-12</a> · <a href="https://efdsearch.senate.gov/search/view/paper/05ec5023-a80c-47ce-8f1c-02494ac41ba3/" target="_blank" rel="noopener">2025-08-25</a> · <a href="https://efdsearch.senate.gov/search/view/paper/09694768-3b1e-4af0-8b46-8521c00cbd96/" target="_blank" rel="noopener">2025-08-13</a> · <a href="https://efdsearch.senate.gov/search/view/paper/85d70f0a-406a-40e1-80bb-bd9fbdf4d360/" target="_blank" rel="noopener">2025-08-13</a> · <a href="https://efdsearch.senate.gov/search/view/paper/db518e1a-cc0c-4d04-95c9-f22f1c1a1e36/" target="_blank" rel="noopener">2025-07-18</a> · <a href="https://efdsearch.senate.gov/search/view/paper/69b40e20-ff5a-45cd-92cb-a24035f53f33/" target="_blank" rel="noopener">2025-07-03</a> · <a href="https://efdsearch.senate.gov/search/view/paper/95c54ecf-69b7-47d2-8cc9-e68dac2db254/" target="_blank" rel="noopener">2025-06-20</a> · <a href="https://efdsearch.senate.gov/search/view/paper/a3722489-195c-4554-8ad0-d32981aa2f61/" target="_blank" rel="noopener">2025-05-28</a> · <a href="https://efdsearch.senate.gov/search/view/paper/d5562ad3-9789-426c-9ba9-a056e09d62c1/" target="_blank" rel="noopener">2025-05-06</a> · <a href="https://efdsearch.senate.gov/search/view/paper/ee360a8f-8d24-4dd3-8176-652d7ec64d3c/" target="_blank" rel="noopener">2025-04-07</a> · <a href="https://efdsearch.senate.gov/search/view/paper/8e8ae815-6d8b-4330-8aa0-da89ab2e2ca0/" target="_blank" rel="noopener">2025-03-17</a> · <a href="https://efdsearch.senate.gov/search/view/paper/4fbbf6be-25c1-4589-bda0-95b5295c4107/" target="_blank" rel="noopener">2025-03-04</a> · <a href="https://efdsearch.senate.gov/search/view/paper/14607985-10ba-44a3-bd64-9840e003b06e/" target="_blank" rel="noopener">2025-02-10</a> · <a href="https://efdsearch.senate.gov/search/view/paper/d7d35e4a-545e-4215-a318-f90031461bc3/" target="_blank" rel="noopener">2025-01-21</a> · <a href="https://efdsearch.senate.gov/search/view/paper/7d8d619e-cbcb-4fec-9146-d4bbd7b87c3a/" target="_blank" rel="noopener">2024-12-31</a> · <a href="https://efdsearch.senate.gov/search/view/paper/9af2d969-8530-41e5-bba4-fbdfa7dce896/" target="_blank" rel="noopener">2024-12-09</a> · <a href="https://efdsearch.senate.gov/search/view/paper/fde3b4a5-78ab-4ec7-a0a1-fc462d39649a/" target="_blank" rel="noopener">2024-10-30</a> · <a href="https://efdsearch.senate.gov/search/view/paper/520e479e-3586-4de5-a16b-cb7c22414594/" target="_blank" rel="noopener">2024-10-16</a> · <a href="https://efdsearch.senate.gov/search/view/paper/c6b29455-39fd-4033-93fe-f9b1d69c9751/" target="_blank" rel="noopener">2024-10-02</a> · <a href="https://efdsearch.senate.gov/search/view/paper/d7e2b033-3bb4-4877-95fc-497264e9e0ce/" target="_blank" rel="noopener">2024-08-20</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Michael T. McCaul <span class="muted small">(TX)</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num" data-v="24">24</td>
+      <td>2026-06-10</td>
+      <td class="small">
+        <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116141.pdf" target="_blank" rel="noopener">2026-06-10</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115820.pdf" target="_blank" rel="noopener">2026-05-04</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115728.pdf" target="_blank" rel="noopener">2026-04-08</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/8221359.pdf" target="_blank" rel="noopener">2026-03-10</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/8221326.pdf" target="_blank" rel="noopener">2026-02-11</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221302.pdf" target="_blank" rel="noopener">2026-01-15</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221263.pdf" target="_blank" rel="noopener">2025-12-09</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221228.pdf" target="_blank" rel="noopener">2025-11-10</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/9115684.pdf" target="_blank" rel="noopener">2025-10-10</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/9115662.pdf" target="_blank" rel="noopener">2025-09-25</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/9115677.pdf" target="_blank" rel="noopener">2025-09-11</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/9115664.pdf" target="_blank" rel="noopener">2025-08-12</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221173.pdf" target="_blank" rel="noopener">2025-07-07</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221120.pdf" target="_blank" rel="noopener">2025-06-09</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220904.pdf" target="_blank" rel="noopener">2025-05-12</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220834.pdf" target="_blank" rel="noopener">2025-04-17</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220754.pdf" target="_blank" rel="noopener">2025-02-11</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220723.pdf" target="_blank" rel="noopener">2025-01-15</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220706.pdf" target="_blank" rel="noopener">2024-12-16</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220685.pdf" target="_blank" rel="noopener">2024-11-12</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220661.pdf" target="_blank" rel="noopener">2024-10-10</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220643.pdf" target="_blank" rel="noopener">2024-09-16</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220615.pdf" target="_blank" rel="noopener">2024-08-15</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220551.pdf" target="_blank" rel="noopener">2024-07-22</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Rohit Khanna <span class="muted small">(CA)</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num" data-v="24">24</td>
+      <td>2026-06-09</td>
+      <td class="small">
+        <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116142.pdf" target="_blank" rel="noopener">2026-06-09</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115822.pdf" target="_blank" rel="noopener">2026-05-11</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115726.pdf" target="_blank" rel="noopener">2026-04-07</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/8221358.pdf" target="_blank" rel="noopener">2026-03-09</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/8221322.pdf" target="_blank" rel="noopener">2026-02-06</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221285.pdf" target="_blank" rel="noopener">2026-01-06</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221264.pdf" target="_blank" rel="noopener">2025-12-08</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221231.pdf" target="_blank" rel="noopener">2025-11-06</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/9115679.pdf" target="_blank" rel="noopener">2025-10-03</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/9115676.pdf" target="_blank" rel="noopener">2025-09-09</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/9115671.pdf" target="_blank" rel="noopener">2025-08-07</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221176.pdf" target="_blank" rel="noopener">2025-07-09</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221124.pdf" target="_blank" rel="noopener">2025-06-10</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220906.pdf" target="_blank" rel="noopener">2025-05-12</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220827.pdf" target="_blank" rel="noopener">2025-04-10</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220783.pdf" target="_blank" rel="noopener">2025-03-06</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220750.pdf" target="_blank" rel="noopener">2025-02-06</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220711.pdf" target="_blank" rel="noopener">2025-01-08</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220691.pdf" target="_blank" rel="noopener">2024-12-05</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220674.pdf" target="_blank" rel="noopener">2024-11-08</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220660.pdf" target="_blank" rel="noopener">2024-10-04</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220626.pdf" target="_blank" rel="noopener">2024-09-06</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220570.pdf" target="_blank" rel="noopener">2024-08-07</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220534.pdf" target="_blank" rel="noopener">2024-07-08</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Tony Wied <span class="muted small">(WI)</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num" data-v="12">12</td>
+      <td>2026-05-05</td>
+      <td class="small">
+        <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9115816.pdf" target="_blank" rel="noopener">2026-05-05</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/8221360.pdf" target="_blank" rel="noopener">2026-03-09</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221297.pdf" target="_blank" rel="noopener">2026-01-09</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221233.pdf" target="_blank" rel="noopener">2025-11-10</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/9115665.pdf" target="_blank" rel="noopener">2025-08-06</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221177.pdf" target="_blank" rel="noopener">2025-07-09</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220903.pdf" target="_blank" rel="noopener">2025-05-13</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220824.pdf" target="_blank" rel="noopener">2025-04-04</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220799.pdf" target="_blank" rel="noopener">2025-03-14</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220757.pdf" target="_blank" rel="noopener">2025-02-10</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220714.pdf" target="_blank" rel="noopener">2025-01-09</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220698.pdf" target="_blank" rel="noopener">2024-12-12</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Nicole Malliotakis <span class="muted small">(NY)</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num" data-v="3">3</td>
+      <td>2026-01-07</td>
+      <td class="small">
+        <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221287.pdf" target="_blank" rel="noopener">2026-01-07</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8221276.pdf" target="_blank" rel="noopener">2025-12-19</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/8220710.pdf" target="_blank" rel="noopener">2025-01-07</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Vicente Gonzalez <span class="muted small">(TX)</span></td>
+      <td><span class="pill house">house</span></td>
+      <td class="num" data-v="3">3</td>
+      <td>2025-04-30</td>
+      <td class="small">
+        <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220845.pdf" target="_blank" rel="noopener">2025-04-30</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220809.pdf" target="_blank" rel="noopener">2025-03-31</a> · <a href="https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/8220796.pdf" target="_blank" rel="noopener">2025-03-13</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td>JOHN FETTERMAN</td>
+      <td><span class="pill senate">senate</span></td>
+      <td class="num" data-v="1">1</td>
+      <td>2024-07-12</td>
+      <td class="small">
+        <a href="https://efdsearch.senate.gov/search/view/paper/3b1affbf-2359-4fef-980d-1d2600cb8731/" target="_blank" rel="noopener">2024-07-12</a>
+      </td>
+    </tr>
+  
+  </tbody>
+</table>
+
+
+<p class="small disclaimer" style="margin-top:24px">
+  Returns are a stylized "copy the disclosure" backtest using disclosed dollar <em>ranges</em> (not exact
+  share counts) and closing prices on/after each public filing date. They do not reflect the member's
+  actual entry prices, taxes, or position sizing, and are not investment advice.
+</p>
+
+<script>
+// Click a header to sort its table. data-sort="num" cells sort numerically.
+document.querySelectorAll('table.sortable').forEach(function(tbl){
+  tbl.querySelectorAll('th').forEach(function(th, idx){
+    th.addEventListener('click', function(){
+      var body = tbl.tBodies[0], rows = Array.prototype.slice.call(body.rows);
+      var asc = th.dataset.asc !== 'true'; th.dataset.asc = asc;
+      rows.sort(function(a,b){
+        var x=a.cells[idx], y=b.cells[idx];
+        var nx=parseFloat((x.dataset.v||x.textContent).replace(/[^0-9.\-]/g,''));
+        var ny=parseFloat((y.dataset.v||y.textContent).replace(/[^0-9.\-]/g,''));
+        if(!isNaN(nx)&&!isNaN(ny)) return asc?nx-ny:ny-nx;
+        return asc ? x.textContent.localeCompare(y.textContent)
+                   : y.textContent.localeCompare(x.textContent);
+      });
+      rows.forEach(function(r){ body.appendChild(r); });
+    });
+  });
+});
+</script>
+<footer>
+  Trades: U.S. House Clerk &amp; Senate eFD disclosures · Market data: Polygon.io ·
+  Returns assume buying at the close on/after each disclosure date, benchmarked vs SPY.
+  Educational use only — not investment advice.
+</footer>
+</div>
+</body>
+</html>

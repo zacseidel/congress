@@ -1,0 +1,35 @@
+{
+  "ticker": "DOW",
+  "name": "Dow Inc.",
+  "market": "stocks",
+  "locale": "us",
+  "primary_exchange": "XNYS",
+  "type": "CS",
+  "active": true,
+  "currency_name": "usd",
+  "cik": "0001751788",
+  "composite_figi": "BBG00BN96922",
+  "share_class_figi": "BBG00BN96931",
+  "market_cap": 23424096735.0,
+  "phone_number": "(989) 636-1000",
+  "address": {
+    "address1": "2211 H.H. DOW WAY",
+    "city": "MIDLAND",
+    "state": "MI",
+    "postal_code": "48674"
+  },
+  "description": "Dow Chemical is a diversified global chemicals producer formed in 2019 as a result of the DowDuPont merger and subsequent separations. The firm is a leading producer of several chemicals, including polyethylene, ethylene oxide, and silicone rubber. Its products have numerous applications in consumer and industrial end markets.",
+  "sic_code": "2821",
+  "sic_description": "PLASTIC MATERIALS, SYNTH RESINS & NONVULCAN ELASTOMERS",
+  "ticker_root": "DOW",
+  "homepage_url": "https://www.dow.com",
+  "total_employees": 34600,
+  "list_date": "2019-03-20",
+  "branding": {
+    "logo_url": "https://api.polygon.io/v1/reference/company-branding/ZG93LmNvbQ/images/2025-04-04_logo.svg",
+    "icon_url": "https://api.polygon.io/v1/reference/company-branding/ZG93LmNvbQ/images/2025-04-04_icon.png"
+  },
+  "share_class_shares_outstanding": 720741438,
+  "weighted_shares_outstanding": 720741438,
+  "round_lot": 100
+}

@@ -1,0 +1,63 @@
+{
+  "start_date": "2024-01-01",
+  "end_date": "2024-12-31",
+  "filing_date": "2025-02-27",
+  "acceptance_datetime": "2025-02-27T21:16:25Z",
+  "timeframe": "annual",
+  "fiscal_period": "FY",
+  "fiscal_year": "2024",
+  "cik": "0000803649",
+  "sic": "6798",
+  "tickers": [
+    "EQC"
+  ],
+  "company_name": "Equity Commonwealth",
+  "source_filing_url": "https://api.polygon.io/v1/reference/sec/filings/0000803649-25-000020",
+  "source_filing_file_url": "http://api.polygon.io/v1/reference/sec/filings/0000803649-25-000020/files/eqc-20241231_htm.xml",
+  "financials": {
+    "balance_sheet": {
+      "current_assets": {
+        "value": 293624000.0,
+        "unit": "USD",
+        "label": "Current Assets",
+        "order": 200
+      },
+      "assets": {
+        "value": 293624000.0,
+        "unit": "USD",
+        "label": "Assets",
+        "order": 100
+      },
+      "noncurrent_assets": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Noncurrent Assets",
+        "order": 300
+      },
+      "liabilities": {
+        "value": 114769000.0,
+        "unit": "USD",
+        "label": "Liabilities",
+        "order": 600
+      },
+      "liabilities_and_equity": {
+        "value": 293624000.0,
+        "unit": "USD",
+        "label": "Liabilities And Equity",
+        "order": 1900
+      },
+      "noncurrent_liabilities": {
+        "value": 0,
+        "unit": "USD",
+        "label": "Noncurrent Liabilities",
+        "order": 800
+      },
+      "current_liabilities": {
+        "value": 114769000.0,
+        "unit": "USD",
+        "label": "Current Liabilities",
+        "order": 700
+      }
+    }
+  }
+}

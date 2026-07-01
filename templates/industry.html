@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}{{ industry }} · Congressional Trades{% endblock %}
+{% block content %}
+<p class="small"><a href="{{ root }}map.html">← Skill map</a></p>
+<h2>{{ industry }}</h2>
+<p class="muted">{{ roll.members|length }} members traded in this industry;
+   {{ roll.n_aligned_members }} sit on a committee with jurisdiction over it.</p>
+{% if not roll.stocks %}
+<p class="disclaimer">No classified trades in this industry yet — either no member has traded a stock
+  here in the window, or its companies haven't been enriched with market data yet. Check back as
+  enrichment progresses.</p>
+{% endif %}
+
+<h3>Members ranked by return in {{ industry }}</h3>
+<table class="sortable">
+  <thead><tr>
+    <th>Member</th><th>Chamber</th><th>Committee-aligned</th>
+    <th class="num">Dollar-wtd return</th><th class="num">Positions</th><th class="num">Disclosed $</th>
+  </tr></thead>
+  <tbody>
+  {% for m in roll.members %}
+    <tr class="{{ 'aligned-row' if m.aligned else '' }}">
+      <td><a href="{{ root }}members/{{ m.member_id }}.html">{{ m.member }}</a></td>
+      <td><span class="pill {{ m.chamber }}">{{ m.chamber }}</span></td>
+      <td>{% if m.aligned %}<span class="star">★</span> yes{% else %}—{% endif %}</td>
+      <td class="num {{ cls(m.dw_return) }}" data-v="{{ m.dw_return }}">{{ pct(m.dw_return) }}</td>
+      <td class="num" data-v="{{ m.n }}">{{ m.n }}</td>
+      <td class="num" data-v="{{ m.dollars }}">{{ money(m.dollars) }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<h3>Most-bought {{ industry }} stocks</h3>
+<table class="sortable">
+  <thead><tr><th>Ticker</th><th>Company</th><th>Cap</th><th class="num">Buyers</th><th class="num">Disclosed $</th></tr></thead>
+  <tbody>
+  {% for s in roll.stocks %}
+    <tr>
+      <td><a href="{{ root }}stocks/{{ s.ticker }}.html">{{ s.ticker }}</a>{{ mdots(s.ticker) }}</td>
+      <td>{{ s.name or '—' }}</td>
+      <td><span class="cap {{ s.cap }}">{{ s.cap }}</span></td>
+      <td class="num" data-v="{{ s.n_buyers }}">{{ s.n_buyers }}</td>
+      <td class="num" data-v="{{ s.dollars }}">{{ money(s.dollars) }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

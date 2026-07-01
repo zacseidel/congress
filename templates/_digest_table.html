@@ -1,0 +1,26 @@
+{% if digest %}
+<table class="sortable">
+  <thead><tr>
+    <th>Disclosed</th><th>Member</th><th>Ticker</th><th>Type</th><th class="num">Amount</th>
+    <th>Industry</th><th>Cap</th><th>Committee jurisdiction</th><th class="num">Member 2yr</th>
+  </tr></thead>
+  <tbody>
+  {% for d in digest %}
+    <tr class="{{ 'aligned-row' if d.aligned else '' }}">
+      <td>{{ d.disclosure_date }}</td>
+      <td><a href="{{ root }}members/{{ d.member_id }}.html">{{ d.member }}</a>
+          <span class="pill {{ d.chamber }}">{{ d.chamber }}</span></td>
+      <td><a href="{{ root }}stocks/{{ d.ticker }}.html">{{ d.ticker }}</a>{{ mdots(d.ticker) }}</td>
+      <td class="{{ 'pos' if d.tx_type=='P' else ('neg' if d.tx_type=='S' else '') }}">{{ d.type_label }}</td>
+      <td class="num" data-v="{{ d.amount_mid or 0 }}">{{ money(d.amount_mid) }}</td>
+      <td>{% if d.industry %}<a href="{{ root }}industries/{{ slug(d.industry) }}.html">{{ d.industry }}</a>{% else %}<span class="muted">pending</span>{% endif %}</td>
+      <td>{% if d.cap %}<span class="cap {{ d.cap }}">{{ d.cap }}</span>{% endif %}</td>
+      <td class="small">{% if d.aligned %}<span class="star">★</span> {{ d.committees|join(', ') }}{% else %}—{% endif %}</td>
+      <td class="num {{ cls(d.member_return) }}" data-v="{{ d.member_return if d.member_return is not none else -9999 }}">{{ pct(d.member_return) }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p class="muted">No trades disclosed in this window.</p>
+{% endif %}

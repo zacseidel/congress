@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}What's new — Congressional Trades{% endblock %}
+{% block content %}
+<h2>What's new <span class="muted">({{ digest|length }} disclosure{{ '' if digest|length == 1 else 's' }} · last {{ digest_window_days }} days)</span></h2>
+<p class="muted">Buys and sells with a public disclosure date in the last {{ digest_window_days }} days, most recent first.
+   Highlighted rows are in an industry the member's committee oversees.
+   <a href="reports/{{ report_date }}.html">Full leaderboard →</a></p>
+{% include "_op_changes.html" %}
+
+<h3>Out-performer trades <span class="muted">({{ digest_op|length }})</span></h3>
+{% with digest = digest_op %}{% include "_digest_table.html" %}{% endwith %}
+
+<h3>Everyone else <span class="muted">({{ digest_rest|length }})</span></h3>
+{% with digest = digest_rest %}{% include "_digest_table.html" %}{% endwith %}
+{% endblock %}
