@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-01",
-  "n_total": 134,
-  "n_matched": 133,
+  "generated": "2026-07-06",
+  "n_total": 135,
+  "n_matched": 134,
   "match_rate": 99.3,
   "members": {
     "aderholt-robert-b": {
@@ -8607,6 +8607,45 @@
         "Technology Hardware",
         "Transportation",
         "Utilities"
+      ]
+    },
+    "mccaul-michael-t": {
+      "bioguide": "M001157",
+      "match_method": "state+district",
+      "matched_name": "Michael T. McCaul",
+      "committees": [
+        {
+          "id": "HSHM",
+          "name": "House Committee on Homeland Security",
+          "type": "house",
+          "is_sub": false,
+          "title": "Vice Chair"
+        },
+        {
+          "id": "HSFA",
+          "name": "House Committee on Foreign Affairs",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSFA05",
+          "name": "House Committee on Foreign Affairs: East Asia and Pacific",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSFA14",
+          "name": "House Committee on Foreign Affairs: Europe",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        }
+      ],
+      "industries": [
+        "Capital Goods",
+        "Software & Services"
       ]
     }
   },
