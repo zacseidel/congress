@@ -1,5 +1,100 @@
 [
   {
+    "id": "60aa62027641061a0badcfc0d34b4b0be908f0c35bdaae682c6b65af2a3eef68",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "3 Telltale Signs an 8%+ Dividend Is Built to Last",
+    "author": "Michael Foster",
+    "published_utc": "2026-06-29T10:37:00Z",
+    "article_url": "https://www.investing.com/analysis/3-telltale-signs-an-8-dividend-is-built-to-last-200682948",
+    "tickers": [
+      "NVDA",
+      "AAPL",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "MSFT",
+      "AMZN",
+      "STRL",
+      "NVT",
+      "CRDO"
+    ],
+    "amp_url": "https://m.investing.com/analysis/3-telltale-signs-an-8-dividend-is-built-to-last-200682948?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "The article examines how closed-end funds (CEFs) can sustainably offer 8%+ dividend yields by investing in profitable stocks and returning those profits to shareholders. Using Liberty All-Star Growth Fund (ASG) as an example, the author outlines three key evaluation criteria: portfolio quality (focusing on large-cap tech and data-center beneficiaries), trading at a discount to net asset value, and consistent dividend history. ASG currently yields 8.2% and trades at a 12.2% discount to NAV, making it potentially attractive for investors bullish on U.S. large-cap and AI stocks.",
+    "keywords": [
+      "closed-end funds",
+      "dividend yield",
+      "net asset value discount",
+      "portfolio quality",
+      "sustainable payouts",
+      "AI stocks",
+      "data centers"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a top position in ASG's portfolio and identified as a beneficiary of AI and data-center buildout trends."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a top large-cap stalwart position in ASG's portfolio."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a top position in ASG's portfolio of quality large-cap stocks."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a top position in ASG's portfolio of quality large-cap stocks."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a top position in ASG's portfolio of quality large-cap stocks."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a top position in ASG's portfolio of quality large-cap stocks."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a top large-cap position in ASG's portfolio."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a top position in ASG's portfolio of quality large-cap stocks."
+      },
+      {
+        "ticker": "STRL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a lesser-known holding that benefits from data-center buildout."
+      },
+      {
+        "ticker": "NVT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a company benefiting from data-center buildout providing systems and services."
+      },
+      {
+        "ticker": "CRDO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a company benefiting from data-center buildout."
+      }
+    ]
+  },
+  {
     "id": "86727669b3e3c6fd03bfaced11bc9905a1d27638b292c4769c55927d58f8814c",
     "publisher": {
       "name": "The Motley Fool",
@@ -283,82 +378,6 @@
         "ticker": "CDNS",
         "sentiment": "positive",
         "sentiment_reasoning": "Rated Buy by BofA with approximately 6% upside potential; positioned to benefit from AI chip design and semiconductor growth"
-      }
-    ]
-  },
-  {
-    "id": "e7458033979ec3b6f7d84974bd0cb38630232a573488e573bae0a2de50a55934",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "The Anthropic IPO Could Make These 5 AI Stocks Unexpected Winners",
-    "author": "Micah Zimmerman",
-    "published_utc": "2026-06-07T09:19:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/07/anthropic-ipo-make-ai-stocks-winner-cls-crdo-alab/?source=iedfolrf0000001",
-    "tickers": [
-      "CLS",
-      "CRDO",
-      "ALAB",
-      "COHR",
-      "MRVL",
-      "AMZN",
-      "GOOG",
-      "GOOGL"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F872968%2Fgettyimages-1690604913.jpg&w=1200&op=resize",
-    "description": "Anthropic's IPO filing at a ~$1 trillion valuation will drive massive AI infrastructure spending. The company has committed $100+ billion to AWS and Google for compute capacity, positioning infrastructure suppliers like Celestica, Credo Technology, Astera Labs, Coherent, and Marvell Technology to benefit from the resulting data center build-out.",
-    "keywords": [
-      "Anthropic IPO",
-      "AI infrastructure",
-      "compute capacity",
-      "hyperscaler spending",
-      "semiconductor connectivity",
-      "optical networking",
-      "custom silicon"
-    ],
-    "insights": [
-      {
-        "ticker": "CLS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Integrates GPUs and networking gear into AI racks for hyperscalers; positioned as primary assembler for Anthropic's infrastructure expansion with recent product launches."
-      },
-      {
-        "ticker": "CRDO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Supplies Active Electrical Cables for AI clusters; has three confirmed hyperscaler customers with direct Anthropic relationships, creating structural demand linkage."
-      },
-      {
-        "ticker": "ALAB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Designs critical semiconductor connectivity silicon for AI racks; recently launched advanced fabric switch now shipping to leading cloud customers supporting infrastructure expansion."
-      },
-      {
-        "ticker": "COHR",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Provides optical transceivers connecting data center servers; backed by $2 billion Nvidia investment and multibillion-dollar purchase commitment, positioned for optical demand growth."
-      },
-      {
-        "ticker": "MRVL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Primary architect of custom silicon for hyperscalers; Nvidia CEO identified as potential trillion-dollar company; stock surged 33% on single day with strong design win pipeline."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Holds substantial equity stake in Anthropic and secured $100B+ compute commitment; positioned to benefit from infrastructure spending through AWS services and Trainium accelerators."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Holds substantial equity stake in Anthropic and secured 5 gigawatts of compute capacity commitment, positioning Google Cloud for significant infrastructure revenue."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Holds substantial equity stake in Anthropic and secured 5 gigawatts of compute capacity commitment, positioning Google Cloud for significant infrastructure revenue."
       }
     ]
   }

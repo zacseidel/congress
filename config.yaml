@@ -41,7 +41,8 @@ report:
   news_relevant_days: 120       # a ticker is "relevant" for news refresh if disclosed within this window
 
 ocr:
-  max_filings_per_run: 20       # scanned House PTRs to OCR per run (slow — keep bounded)
+  max_filings_per_run: 12       # scanned House PTRs to OCR per run (~2 min each; bounds the
+                                # dedicated ocr.yml run to ~25 min, drains the backlog daily)
   dpi: 300                      # render resolution for OCR
   # Match threshold lives in src/ocr_ptr.py (MATCH_CUTOFF = 0.86).
 

@@ -1,5 +1,99 @@
 [
   {
+    "id": "b4b0d179fa70a05c060fafb9e0859b5c8011c731a320c32ae87b19be74410196",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Forget MP Materials. This Established \"Picks and Shovels\" Mining Giant Is the Safer Way to Play the Metals Supercycle.",
+    "author": "Lee Samaha",
+    "published_utc": "2026-07-03T06:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/03/forget-mp-materials-this-established-picks-and-sho/?source=iedfolrf0000001",
+    "tickers": [
+      "FCX",
+      "MP"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876336%2Fcopper-wire-factory-production-machinery-1200x798-36b7a2e.jpg&w=1200&op=resize",
+    "description": "The article argues that Freeport-McMoRan is a safer investment than MP Materials for those betting on a metals supercycle driven by electrification and AI infrastructure. While both companies benefit from rising copper and rare earth demand, Freeport-McMoRan presents lower execution risk with established production recovery plans and cost-effective expansion initiatives, whereas MP Materials faces execution risks from its Texas magnet facility construction and Chinese export controls on rare-earth processing technology.",
+    "keywords": [
+      "metals supercycle",
+      "copper demand",
+      "electrification",
+      "rare earth elements",
+      "mining stocks",
+      "supply constraints",
+      "electric vehicles",
+      "renewable energy"
+    ],
+    "insights": [
+      {
+        "ticker": "FCX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Positioned as the safer, lower-risk option with strong upside potential. Company has clear production recovery plans through 2028, cost-effective leaching initiatives targeting significant output increases, and multiple expansion projects. Well-positioned to benefit from rising copper prices driven by robust demand and constrained supply growth."
+      },
+      {
+        "ticker": "MP",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Carries higher execution risk from its 10X magnet manufacturing facility construction in Texas. Faces additional headwinds from Chinese export controls limiting access to rare-earth processing technology. While the company is described as 'fine and worthy,' it presents greater downside risk compared to Freeport-McMoRan despite similar upside potential in the metals supercycle."
+      }
+    ]
+  },
+  {
+    "id": "eb8404d2bcc521af59695c7040b2cda656c7872b61f366bc786fadeb15a594ec",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "Copper Stocks Are Getting a Bigger Spotlight as Gold\u2019s Rally Cracks",
+    "author": "Nathan Reiff",
+    "published_utc": "2026-07-02T08:36:00Z",
+    "article_url": "https://www.investing.com/analysis/copper-stocks-are-getting-a-bigger-spotlight-as-golds-rally-cracks-200683184",
+    "tickers": [
+      "HBM",
+      "TECK",
+      "FCX",
+      "NGLOY"
+    ],
+    "amp_url": "https://m.investing.com/analysis/copper-stocks-are-getting-a-bigger-spotlight-as-golds-rally-cracks-200683184?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "Gold prices have declined 7% year-to-date in 2026, while copper futures have surged 8% due to strong demand from AI infrastructure and defense applications. Supply constraints from deeper, lower-grade mines are creating opportunities for dominant copper producers. HudBay Minerals and Teck Resources are positioned as key beneficiaries, with HudBay focusing on aggressive North American expansion and Teck pursuing a merger with Anglo American to become a major global copper player.",
+    "keywords": [
+      "copper demand",
+      "gold decline",
+      "mining stocks",
+      "AI infrastructure",
+      "supply constraints",
+      "copper prices",
+      "mining expansion"
+    ],
+    "insights": [
+      {
+        "ticker": "HBM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company shows strong financial performance with record Q1 2026 revenue of $757M (27% YOY growth), aggressive but responsible expansion plans including Arizona Sonoran acquisition and Copper Mountain expansion, attractive 14x earnings valuation, and analyst consensus of 10 Buys with 19% upside potential."
+      },
+      {
+        "ticker": "TECK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company is strategically pivoting to focus on copper after exiting steelmaking coal business in 2024, pursuing merger with Anglo American to create one of the world's largest copper mining firms, and positioned to capitalize on surging copper demand. However, merger uncertainty introduces some execution risk."
+      },
+      {
+        "ticker": "FCX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a major global mining competitor but not analyzed in detail. Serves as a benchmark for comparison regarding scale and diversification relative to smaller copper producers."
+      },
+      {
+        "ticker": "NGLOY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Referenced as merger partner with Teck Resources to form 'Anglo Teck,' but no independent analysis provided. Merger outcome remains uncertain and could impact valuation."
+      }
+    ]
+  },
+  {
     "id": "5b5923b119aa35f1c2810b13f22e91dafd089674ed6ba88f1035fb9447ee77df",
     "publisher": {
       "name": "Investing.com",
@@ -148,111 +242,6 @@
         "ticker": "HBM",
         "sentiment": "positive",
         "sentiment_reasoning": "Integrated producer with diversified copper-zinc-gold operations across the Americas, providing stable production exposure complementing the discovery-stage thesis in the copper sector."
-      }
-    ]
-  },
-  {
-    "id": "66d5887ec2194400d8104620b0107f523c77004b1daee56bc1c37149f0f2a166",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "Something Historic Is Quietly Lifting Commodities To Records \u2014 And It's Not Hormuz",
-    "author": "Piero Cingari",
-    "published_utc": "2026-05-13T20:08:36Z",
-    "article_url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52543213/historical-rally-commodities-strait-of-hormuz-ai-race-buildout-copper-record-?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "FCX",
-      "NVDA",
-      "MSFT",
-      "GOOG",
-      "GOOGL",
-      "META",
-      "AMZN"
-    ],
-    "image_url": "https://cdn.benzinga.com/files/images/story/2026/05/13/Macro-Image-Of-Copper-Bar.jpeg?width=1200&height=800&fit=crop",
-    "description": "Commodity prices, particularly industrial and precious metals, have reached record highs driven by AI data center buildouts and electrification trends rather than energy disruptions. Copper, silver, and lithium are surging due to unprecedented demand from AI infrastructure, with supply constrained by geopolitical factors and structural underinvestment. This could create broader inflationary pressures across manufacturing and construction sectors.",
-    "keywords": [
-      "AI data centers",
-      "copper demand",
-      "commodity prices",
-      "supply constraints",
-      "electrification",
-      "inflation",
-      "industrial metals",
-      "energy transition"
-    ],
-    "insights": [
-      {
-        "ticker": "FCX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Well-positioned to benefit from record copper prices driven by AI and electrification demand; CEO highlighted copper entering a 'new era' with strong greenfield pipeline"
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major beneficiary of AI capex acceleration; driving unprecedented demand for copper and raw materials needed for AI infrastructure buildout"
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Significant AI capex commitments contributing to demand for copper and materials; hyperscaler driving data center expansion"
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major AI capex investor with hyperscale data center buildouts requiring substantial quantities of copper and industrial metals"
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major AI capex investor with hyperscale data center buildouts requiring substantial quantities of copper and industrial metals"
-      },
-      {
-        "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Significant AI infrastructure investment commitments driving demand for copper and raw materials"
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major hyperscaler with substantial AI capex commitments contributing to copper and industrial metals demand"
-      }
-    ]
-  },
-  {
-    "id": "b6430c76720e2dfacd6b5b5b331d883392bc66d6a02a3f075a3cef074ff69857",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "Copper Prices Hit Record High As AI Data Center Boom Fuels Global Supply Crunch, Pushing CPER ETF Higher",
-    "author": "Sweta Killa",
-    "published_utc": "2026-05-13T08:29:59Z",
-    "article_url": "https://www.benzinga.com/markets/commodities/26/05/52514784/copper-prices-hit-record-high-as-ai-data-center-boom-fuels-global-supply-crunch-pushing-cper-?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "FCX"
-    ],
-    "image_url": "https://cdn.benzinga.com/files/images/story/2026/05/13/Copper-Ore--Macro-Photography--Ore-Extra.jpeg?width=1200&height=800&fit=crop",
-    "description": "Copper prices surged to record highs, climbing roughly 75% since October 2023 and over 40% in the past 12 months, driven by AI data center demand and global supply disruptions. The CPER ETF tracking copper futures reached $40.46, up 15.7% year-to-date. Supply constraints from Indonesia's Grasberg mine closure and declining Chinese inventories are intensifying the tight market, while strong Chinese exports of clean-tech products further boost copper demand.",
-    "keywords": [
-      "copper prices",
-      "AI data centers",
-      "supply crunch",
-      "CPER ETF",
-      "Grasberg mine",
-      "inventory decline",
-      "global supply disruptions"
-    ],
-    "insights": [
-      {
-        "ticker": "FCX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "As operator of the world's second-largest copper mine (Grasberg), the company benefits from record-high copper prices driven by supply constraints and strong demand, though production disruptions persist until expected full recovery by end of 2027."
       }
     ]
   }

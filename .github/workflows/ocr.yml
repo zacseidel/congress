@@ -1,0 +1,62 @@
+name: OCR scanned House PTRs
+
+# Dedicated, decoupled OCR pipeline. OCR of scanned (paper) House PTRs is slow
+# (~2 min/filing on a hosted runner) and used to make the standard run-tracker
+# workflow take ~an hour. It runs on its own schedule here so the frequent
+# leaderboard/report refresh stays fast; each run drains a capped, resumable slice
+# of the queue (config ocr.max_filings_per_run) and commits the new ledger rows,
+# which run-tracker picks up on its next run.
+
+on:
+  schedule:
+    # Daily at 09:41 UTC. Off the top of the hour (GitHub delays/drops :00 crons)
+    # and clear of run-tracker (08:23 Mon/Wed) so their pushes don't collide.
+    - cron: '41 9 * * *'
+  workflow_dispatch:
+    inputs:
+      max_filings:
+        description: "Max scanned filings to OCR this run (overrides config cap)"
+        required: false
+
+# Never let two OCR runs overlap — they share the queue and both push to main.
+concurrency:
+  group: ocr
+  cancel-in-progress: false
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install system OCR deps
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr poppler-utils
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: OCR scanned House PTRs (capped, resumable)
+        run: |
+          python src/ocr_scanned.py ${{ github.event.inputs.max_filings && format('--max-filings {0}', github.event.inputs.max_filings) || '' }}
+        env:
+          HTTP_USER_AGENT: ${{ secrets.HTTP_USER_AGENT }}
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet && { echo "No OCR changes to commit."; exit 0; }
+          git commit -m "OCR scanned House PTRs $(date +%Y-%m-%d)"
+          # Rebase onto any concurrent run-tracker push before pushing.
+          git pull --rebase --autostash origin main
+          git push

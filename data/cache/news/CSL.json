@@ -1,5 +1,44 @@
 [
   {
+    "id": "f2bcc793ed73da539e22c38d1bc411425b52b8e41adba60aa62a68c6cfd60d3f",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Why Owens Corning Stock Rocked the Market This Week",
+    "author": "Eric Volkman",
+    "published_utc": "2026-07-04T00:18:36Z",
+    "article_url": "https://www.fool.com/investing/2026/07/03/why-owens-corning-stock-rocked-the-market-this-wee/?source=iedfolrf0000001",
+    "tickers": [
+      "OC",
+      "CSL"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877450%2Flaborer-working-on-construction-of-a-house.jpg&w=1200&op=resize",
+    "description": "Owens Corning stock surged nearly 11% during a holiday-shortened trading week following reports that industry peer Carlisle made unsolicited acquisition bids valued at over $10 billion. The offers consisted of a mix of cash and stock, though Owens Corning has not substantially engaged with the suitor. The company may be holding out for a higher price or waiting for its recent business strategy changes to take effect before evaluating its future.",
+    "keywords": [
+      "acquisition",
+      "buyout offer",
+      "construction supplies",
+      "unsolicited bid",
+      "stock surge",
+      "business strategy"
+    ],
+    "insights": [
+      {
+        "ticker": "OC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock jumped nearly 11% on acquisition interest from a competitor, indicating investor optimism about a potential deal at a premium valuation."
+      },
+      {
+        "ticker": "CSL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While making acquisition bids shows strategic intent, the lack of engagement from the target company and uncertainty about deal success warrants a neutral stance without clear positive or negative implications."
+      }
+    ]
+  },
+  {
     "id": "82a595efda90d047c14439fd229b5e3ebcb0d1c7f80954e0ef9d18609926a378",
     "publisher": {
       "name": "The Motley Fool",
@@ -174,50 +213,6 @@
         "ticker": "CSL",
         "sentiment": "negative",
         "sentiment_reasoning": "Missed analyst expectations for EPS and revenue, lowered full-year guidance, experienced margin compression, and faced challenges in new construction and residential markets"
-      }
-    ]
-  },
-  {
-    "id": "162875cb35398a10a377b4dd31fb7651c79e8063a32a5cc9af37c54b130f932f",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "3 Dividend Stocks to Double Up on Right Now",
-    "author": "Justin Pope",
-    "published_utc": "2025-03-17T09:26:00Z",
-    "article_url": "https://www.fool.com/investing/2025/03/17/3-dividend-stocks-to-double-up-on-right-now/?source=iedfolrf0000001",
-    "tickers": [
-      "O",
-      "CNI",
-      "CSL"
-    ],
-    "image_url": "https://g.foolcdn.com/editorial/images/810465/dividend-stock-buy-ideas.jpg",
-    "description": "The article discusses three companies - Realty Income, Canadian National Railway, and Carlisle Companies - that the author believes are compelling investment opportunities despite the recent market volatility. The author highlights the companies' strong management, steady dividends, and long-term growth potential.",
-    "keywords": [
-      "Realty Income",
-      "Canadian National Railway",
-      "Carlisle Companies",
-      "dividend stocks",
-      "commercial real estate"
-    ],
-    "insights": [
-      {
-        "ticker": "O",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The author believes Realty Income is an excellent choice for income-focused investors, citing its high dividend yield, long history of dividend increases, and attractive valuation."
-      },
-      {
-        "ticker": "CNI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The author sees the recent decline in Canadian National Railway's stock price as a buying opportunity, highlighting the company's strong management, steady demand for its services, and potential to weather short-term challenges."
-      },
-      {
-        "ticker": "CSL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The author believes Carlisle Companies is poised for substantial long-term growth, citing the company's exposure to the commercial real estate market, its history of dividend increases, and its attractive valuation."
       }
     ]
   }

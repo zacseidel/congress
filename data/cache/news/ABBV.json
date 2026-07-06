@@ -1,227 +1,304 @@
 [
   {
-    "id": "13d59a93e1db1ebeed2f65d789ffe2db486b807951781d6f1bffcc1033ca371d",
+    "id": "1458d2557f0039479364076abeee98ccbd4ed654348325132e96212f371ba40e",
     "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "AbbVie Declares Quarterly Dividend",
-    "author": "Prnewswire",
-    "published_utc": "2026-06-18T20:05:00Z",
-    "article_url": "https://www.benzinga.com/pressreleases/26/06/n53291666/abbvie-declares-quarterly-dividend?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+    "title": "Fidelity Health Care vs. State Street Biotech: Which ETF Fits Your Portfolio Best?",
+    "author": "Erin Kennedy",
+    "published_utc": "2026-07-05T13:15:01Z",
+    "article_url": "https://www.fool.com/coverage/etfs/2026/07/05/fidelity-health-care-vs-state-street-biotech-which-etf-fits-your-portfolio-best/?source=iedfolrf0000001",
     "tickers": [
-      "ABBV"
+      "FHLC",
+      "XBI",
+      "LLY",
+      "JNJ",
+      "ABBV",
+      "MRNA"
     ],
-    "image_url": "https://cdn.benzinga.com/files/imagecache/bz2_opengraph_meta_image_400x300/sites/all/themes/bz2/images/bz-icon.png",
-    "description": "AbbVie Inc. declared a quarterly cash dividend of $1.73 per share, payable August 14, 2026, to stockholders of record as of July 15, 2026. The company has increased its dividend by more than 330 percent since its inception in 2013 and is a member of the S&P Dividend Aristocrats Index.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fe2a7a839652ce1e4b5e887767e5794b4ba7e66f4-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "The Fidelity MSCI Health Care Index ETF (FHLC) offers broad healthcare sector exposure with lower costs (0.08% expense ratio), higher dividend yield (1.3%), and lower volatility, making it suitable for conservative investors. The State Street SPDR S&P Biotech ETF (XBI) focuses on biotechnology with higher growth potential (89.3% 1-year return) but carries significantly higher risk (54% maximum drawdown) and costs (0.35% expense ratio), appealing to aggressive investors.",
     "keywords": [
-      "dividend",
-      "quarterly cash dividend",
-      "AbbVie",
-      "S&P Dividend Aristocrats",
-      "dividend increase",
-      "shareholder returns"
+      "healthcare ETF",
+      "biotech ETF",
+      "portfolio diversification",
+      "expense ratio",
+      "dividend yield",
+      "volatility",
+      "risk management"
     ],
     "insights": [
       {
+        "ticker": "FHLC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recommended for conservative investors due to lower expense ratio (0.08%), higher dividend yield (1.3%), broader diversification (338 stocks), lower maximum drawdown (17.7%), and more stable 5-year returns (~$1,289 on $1,000 invested)."
+      },
+      {
+        "ticker": "XBI",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Suitable for aggressive investors seeking growth with strong 1-year returns (89.3%), but carries significant risks including high maximum drawdown (54%), higher expense ratio (0.35%), lower dividend yield (0.4%), and disappointing 5-year performance (~$1,154 on $1,000 invested)."
+      },
+      {
+        "ticker": "LLY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Major holding (14%) in FHLC, representing a stable, established pharmaceutical company within the diversified healthcare portfolio."
+      },
+      {
+        "ticker": "JNJ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Significant holding (8.95%) in FHLC, a blue-chip healthcare company providing stability to the diversified fund."
+      },
+      {
         "ticker": "ABBV",
         "sentiment": "positive",
-        "sentiment_reasoning": "The company declared a quarterly dividend and has demonstrated consistent dividend growth of over 330% since 2013. Membership in the S&P Dividend Aristocrats Index indicates 25+ consecutive years of annual dividend increases, reflecting strong financial health and commitment to shareholder returns."
+        "sentiment_reasoning": "Notable holding (6.5%) in FHLC, a major pharmaceutical company contributing to the fund's diversified healthcare exposure."
+      },
+      {
+        "ticker": "MRNA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Top holding (1.48%) in XBI biotech fund, representing higher-risk growth potential typical of the biotech sector."
       }
     ]
   },
   {
-    "id": "d38477537dc22c124c226703a7dab16be7724accf704d3a81c8555bbf8f9306d",
+    "id": "b0eab9657ad797dd4e41593bd23fda32610bca13cef1d936bee4dd44c431755e",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Which Is the Better High Dividend ETF, iShares' HDV or Fidelity's FDVV?",
+    "author": "Robert Izquierdo",
+    "published_utc": "2026-07-04T21:05:01Z",
+    "article_url": "https://www.fool.com/coverage/etfs/2026/07/04/which-is-the-better-high-dividend-etf-ishares-hdv-or-fidelity-s-fdvv/?source=iedfolrf0000001",
+    "tickers": [
+      "HDV",
+      "FDVV",
+      "NVDA",
+      "AAPL",
+      "MSFT",
+      "ABBV",
+      "CVX"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F4db1f9dc6b521047b90577456a50b49560e87c49-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "iShares' HDV and Fidelity's FDVV both offer 2.80% dividend yields but follow different strategies. HDV focuses on defensive sectors (healthcare, energy) with lower costs (0.08% expense ratio) and lower volatility, making it ideal for conservative investors. FDVV emphasizes tech stocks with higher growth potential but carries higher costs (0.15% expense ratio) and volatility, delivering stronger 5-year returns ($1,883 vs $1,673 on $1,000 invested).",
+    "keywords": [
+      "dividend ETF",
+      "HDV",
+      "FDVV",
+      "high dividend yield",
+      "defensive stocks",
+      "technology stocks",
+      "expense ratio",
+      "volatility",
+      "income investing"
+    ],
+    "insights": [
+      {
+        "ticker": "HDV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Highlighted as the better choice for cost-conscious, conservative investors with the lowest expense ratio (0.08%), lowest beta (0.53), and lowest maximum drawdown (-15.40%), offering stable dividend income with reduced volatility."
+      },
+      {
+        "ticker": "FDVV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Positioned favorably for growth-oriented investors seeking total returns, delivering superior 5-year performance ($1,883 vs $1,673) and exposure to high-growth tech stocks, though with higher expense ratio (0.15%) and volatility (beta 0.86)."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a major holding (6.65%) in FDVV, representing the fund's tech-heavy positioning; no independent sentiment expressed."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a significant holding (6.05%) in FDVV; included as example of tech sector exposure without independent evaluation."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Noted as a holding (4.15%) in FDVV; mentioned as part of the fund's technology sector weighting without separate analysis."
+      },
+      {
+        "ticker": "ABBV",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Second-largest holding (6.47%) in HDV; mentioned as part of healthcare sector exposure without separate evaluation."
+      },
+      {
+        "ticker": "CVX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Major holding (5.41%) in HDV; included as example of energy sector weighting without independent assessment."
+      }
+    ]
+  },
+  {
+    "id": "f34108ef7365e758826d4eed652e5eed74d5af25416f145908311c8294b40cb2",
     "publisher": {
       "name": "GlobeNewswire Inc.",
       "homepage_url": "https://www.globenewswire.com",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
     },
-    "title": "Genmab Announces Epcoritamab Monotherapy and Epcoritamab-Based Combination Regimens Demonstrate High Response Rates in Elderly Patients with Newly Diagnosed Diffuse Large B-Cell Lymphoma (DLBCL)",
-    "author": "Genmab A/S",
-    "published_utc": "2026-06-13T16:45:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/13/3311409/0/en/Genmab-Announces-Epcoritamab-Monotherapy-and-Epcoritamab-Based-Combination-Regimens-Demonstrate-High-Response-Rates-in-Elderly-Patients-with-Newly-Diagnosed-Diffuse-Large-B-Cell-Ly.html",
+    "title": "Exploring SKYRIZI's Exceptional Growth: Revenue and Market Expansion Analysis",
+    "author": "Researchandmarkets.Com",
+    "published_utc": "2026-07-03T11:57:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/03/3321811/28124/en/Exploring-SKYRIZI-s-Exceptional-Growth-Revenue-and-Market-Expansion-Analysis.html",
     "tickers": [
-      "GMAB",
       "ABBV"
     ],
-    "image_url": "https://ml-eu.globenewswire.com/Resource/Download/368a5dab-dfc5-4e1d-bfa6-2af5e5216fce",
-    "description": "Genmab announced positive Phase 2 and Phase 1b/2 trial results for epcoritamab in elderly DLBCL patients. The monotherapy arm (EPCORE DLBCL-3) showed 67% overall response rate and 58% complete response rate, while the combination with R-mini-CHOP (EPCORE NHL-2) demonstrated 93% overall response rate and 86% complete response rate with durable remissions and sustained MRD negativity.",
+    "image_url": "https://ml.globenewswire.com/Resource/Download/908fb457-7f8e-4a08-9081-5565e3dfb3d7",
+    "description": "SKYRIZI, AbbVie's IL-23 inhibitor, has achieved blockbuster status with global sales reaching $11.7 billion in 2024 (51% YoY growth). The drug is expanding across multiple indications including psoriasis, psoriatic arthritis, and IBD, with strong gastroenterology uptake and favorable dosing schedules. AbbVie forecasts combined revenues for SKYRIZI and Rinvoq to exceed $31 billion annually by 2027, positioning SKYRIZI as the largest contributor to its $26.7 billion immunology portfolio.",
     "keywords": [
-      "epcoritamab",
-      "DLBCL",
-      "diffuse large B-cell lymphoma",
-      "elderly patients",
-      "clinical trial results",
-      "immunotherapy",
-      "T-cell engaging antibody",
-      "MRD negativity",
-      "first-line treatment"
+      "SKYRIZI",
+      "IL-23 inhibitor",
+      "psoriasis",
+      "IBD",
+      "Crohn's disease",
+      "ulcerative colitis",
+      "blockbuster drug",
+      "immunology",
+      "biologics",
+      "clinical efficacy"
     ],
     "insights": [
       {
-        "ticker": "GMAB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong clinical trial results demonstrating high response rates and durable remissions for epcoritamab in elderly DLBCL patients. Both monotherapy and combination approaches showed robust efficacy with manageable safety profiles, supporting potential for expanded use and regulatory approvals in earlier lines of therapy."
-      },
-      {
         "ticker": "ABBV",
         "sentiment": "positive",
-        "sentiment_reasoning": "As co-developer of epcoritamab with shared commercial responsibilities, positive trial results enhance the commercial potential of the drug. The data supports broader clinical utility and potential for additional regulatory approvals across multiple indications and patient populations."
+        "sentiment_reasoning": "SKYRIZI demonstrates exceptional revenue growth ($11.7B in 2024, 51% YoY increase), strong market positioning as Humira replacement, broad multi-indication expansion, best-in-class efficacy, and is positioned as the largest contributor to AbbVie's immunology portfolio with forecasted combined revenues exceeding $31 billion by 2027."
       }
     ]
   },
   {
-    "id": "dce98598f52521e39a4fd3fceed95910492616e062d741d2672d1b5ca4437a70",
+    "id": "601687a71345f9c0096be0a93714fa7c8a840f7b90ca8e0fd4fa6a83b356bade",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Teva's Biosimilar Boom Is Just Getting Started. Is It Time to Buy This Rebounding Pharma Stock?",
-    "author": "Alex Carchidi",
-    "published_utc": "2026-06-12T20:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/12/tevas-biosimilar-boom-is-just-getting-started-is-i/?source=iedfolrf0000001",
+    "title": "Big Pharma Has a Case of Merger Mania",
+    "author": "Motley Fool Staff",
+    "published_utc": "2026-06-30T04:26:13Z",
+    "article_url": "https://www.fool.com/investing/2026/06/30/big-pharma-has-a-case-of-merger-mania/?source=iedfolrf0000001",
     "tickers": [
-      "TEVA",
-      "ABBV",
-      "ALVO",
-      "ALVOW"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F867662%2Fchemist-team-looking-beaker-of-green-chemical.jpg&w=1200&op=resize",
-    "description": "Teva Pharmaceutical has rebounded 97% in 12 months driven by its expanding biosimilars lineup and branded drugs like Austedo. However, the stock now trades at a fair 25x P/E ratio with 2026 revenue expected to be flat to lower. While biosimilars could grow to $800 million by 2027, the narrow-margin business faces intense competition and the easy gains may already be priced in. The analyst recommends watching but not buying.",
-    "keywords": [
-      "biosimilars",
-      "pharmaceutical",
-      "Teva rebound",
-      "generic drugs",
-      "FDA approval",
-      "Austedo",
-      "Humira copies",
-      "valuation",
-      "stock recommendation"
-    ],
-    "insights": [
-      {
-        "ticker": "TEVA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While the company shows strong recovery and promising biosimilar pipeline, the analyst cautions that current valuation (25x P/E) is fair but not a bargain, 2026 revenue is expected flat to lower, and the easy gains have already been made. The recommendation is to watch but not buy."
-      },
-      {
-        "ticker": "ABBV",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as the branded drug manufacturer whose Humira faces biosimilar competition from Teva's Simlandi. The article notes Humira copies have captured only about 21% of volume by late 2024, indicating the branded drug maintains significant market share despite biosimilar pressure."
-      },
-      {
-        "ticker": "ALVO",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Teva's biotech partner that develops and manufactures biosimilars while Teva handles U.S. commercialization. The partnership is key to Teva's biosimilar strategy, but Teva captures only a slice of proceeds due to narrow margins and high competition in the biosimilar space."
-      },
-      {
-        "ticker": "ALVOW",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Teva's biotech partner that develops and manufactures biosimilars while Teva handles U.S. commercialization. The partnership is key to Teva's biosimilar strategy, but Teva captures only a slice of proceeds due to narrow margins and high competition in the biosimilar space."
-      }
-    ]
-  },
-  {
-    "id": "3b8bbd46ef4f0f810338ea6f3c2662cb99df6093ee3331d977dac9ccc99b02af",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "AbbVie Says Nine-Year Data Reinforces Venetoclax Benefit In Leukemia Patients",
-    "author": "Vandana Singh",
-    "published_utc": "2026-06-12T14:30:54Z",
-    "article_url": "https://www.benzinga.com/news/health-care/26/06/53167789/abbvie-says-nine-year-data-reinforces-venetoclax-benefit-in-leukemia-patients?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "ABBV",
-      "TRUH",
-      "XLV"
-    ],
-    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/06/12/Abbvie.jpeg",
-    "description": "AbbVie announced nine-year Phase 3 CLL14 trial data showing venetoclax plus obinutuzumab significantly improved progression-free survival (6.4 years vs 3.2 years) compared to chlorambucil plus obinutuzumab in previously untreated chronic lymphocytic leukemia patients. The fixed-duration combination demonstrated median time to next treatment of 7.6 years with sustained safety and efficacy.",
-    "keywords": [
-      "venetoclax",
-      "chronic lymphocytic leukemia",
-      "CLL14 trial",
-      "obinutuzumab",
-      "progression-free survival",
-      "EHA 2026 Congress"
-    ],
-    "insights": [
-      {
-        "ticker": "ABBV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Nine-year clinical trial data demonstrates strong efficacy of venetoclax-based therapy with significantly improved progression-free survival and durable off-treatment benefits, supporting the drug's long-term value proposition and potentially strengthening market position in leukemia treatment."
-      },
-      {
-        "ticker": "TRUH",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "As a healthcare sector ETF with significant ABBV weighting, positive company-specific news provides modest support, but the ETF's performance is diversified across multiple holdings and the article notes the stock was only up 0.41%."
-      },
-      {
-        "ticker": "XLV",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Similar to TRUH, this broad healthcare ETF benefits from ABBV's positive news but the impact is diluted across numerous healthcare holdings, with minimal stock price movement observed."
-      }
-    ]
-  },
-  {
-    "id": "002ff204122db2e0ae75e82c351dea337853bc1bcea0bce058ce2794c2b4f7bf",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "AbbVie Reports Promising New Clinical Updates. Here's What It Means for the Company's Dividend.",
-    "author": "Jeff Siegel",
-    "published_utc": "2026-06-12T10:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/12/abbvie-reports-promising-new-clinical-updates-here/?source=iedfolrf0000001",
-    "tickers": [
-      "ABBV",
       "LLY",
-      "JNJ",
-      "AMGN"
+      "MRK",
+      "PFE",
+      "UTHR",
+      "ASND",
+      "NVO",
+      "ABBV",
+      "GSK",
+      "RHHBY",
+      "MRNA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F873849%2Fbiotech-pharma-researchers-talk-lab.jpg&w=1200&op=resize",
-    "description": "AbbVie presented 21 clinical presentations on blood cancer therapies at the European Hematology Association Congress, showcasing progress in its oncology portfolio which generated $6.7 billion in 2025 revenue. The company's diversified pipeline across immunology, oncology, and neuroscience is helping offset Humira's patent-driven decline and could support future dividend growth through expanded cash flow.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fc47db2a1c503a664a2cf92c2e8b3d9031eec6c2f-1280x720.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "The pharmaceutical industry is experiencing a record-breaking M&A wave in 2026, driven by looming patent cliffs worth $300 billion in annual revenue, FDA regulatory improvements for rare diseases, and the need to diversify portfolios. Companies are making strategic bolt-on acquisitions of late-stage drug candidates rather than massive mergers. While some firms like Eli Lilly are well-positioned, others like Merck and Pfizer face near-term patent expirations that could impact revenue significantly.",
     "keywords": [
-      "clinical trial data",
-      "oncology portfolio",
-      "blood cancer therapies",
-      "dividend growth",
-      "pipeline expansion",
-      "Humira decline",
-      "cash flow"
+      "pharmaceutical M&A",
+      "patent cliff",
+      "GLP-1 drugs",
+      "FDA regulatory changes",
+      "drug acquisitions",
+      "rare diseases",
+      "oncology",
+      "biotech consolidation"
     ],
     "insights": [
-      {
-        "ticker": "ABBV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Positive clinical updates on 21 blood cancer presentations, diversified revenue streams reducing single-product dependency, and strong oncology portfolio ($6.7B revenue) supporting future dividend sustainability and growth potential."
-      },
       {
         "ticker": "LLY",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only as a comparison point for dividend yield (roughly 2% vs AbbVie's 3%); no specific news or analysis provided about the company."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Described as the best-run big pharma currently, with strong GLP-1 portfolio (Tirzepatide/Mounjaro/Zepbound patented through 2036), robust pipeline, and strategic bolt-on acquisitions to diversify beyond current blockbusters. Favorable patent-cliff exposure compared to peers."
       },
       {
-        "ticker": "JNJ",
+        "ticker": "MRK",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only as a comparison point for dividend yield (roughly 2% vs AbbVie's 3%); no specific news or analysis provided about the company."
+        "sentiment_reasoning": "Aggressive M&A strategy with three major deals in 10 months, but faces significant risk as Keytruda (>50% of revenue) loses patent protection in 2028, leaving little room for error in integrating acquisitions."
       },
       {
-        "ticker": "AMGN",
+        "ticker": "PFE",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only as a comparison point for dividend yield (roughly 2% vs AbbVie's 3%); no specific news or analysis provided about the company."
+        "sentiment_reasoning": "Facing substantial patent cliffs ($17-18B in annual revenue losses) with Prevnar and cancer drugs expiring through 2027, but maintains strong dividend yield (~7%), affordable valuation, and oncology pipeline potential. Recovery expected by 2029."
+      },
+      {
+        "ticker": "UTHR",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Highlighted as a hidden gem that has easily beaten the market in recent years, with six FDA-approved treatments, robust pipeline, and strong entrepreneurial leadership focused on solving real patient problems."
+      },
+      {
+        "ticker": "ASND",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Innovative transconjugation technology platform enabling less frequent dosing for endocrinology and oncology treatments. Positioned as potential acquisition target for big pharma seeking novel drug delivery technology."
+      },
+      {
+        "ticker": "NVO",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Despite early GLP-1 monopoly with Ozempic, has significantly trailed the market over the past 10 years as competition from Eli Lilly and others intensified."
+      },
+      {
+        "ticker": "ABBV",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Actively participating in M&A wave with $10 billion immunology acquisition, indicating strategic portfolio diversification efforts."
+      },
+      {
+        "ticker": "GSK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Engaged in M&A activity with $10 billion acquisition, participating in industry consolidation trend."
+      },
+      {
+        "ticker": "RHHBY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Actively licensing drugs from other companies as part of portfolio diversification strategy during M&A wave."
+      },
+      {
+        "ticker": "MRNA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Facing regulatory burden challenges that make clinical trial investments questionable, as noted by CEO regarding COVID-flu vaccine combination development."
+      }
+    ]
+  },
+  {
+    "id": "cc0748396ae02018c8e44e7a0169eb1dd83816fcf271d283bd3f0a325fa67841",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "AbbVie Stock Hits a New 52-Week High. Has It Gotten Too Expensive to Buy?",
+    "author": "David Jagielski, Cpa",
+    "published_utc": "2026-06-29T15:21:30Z",
+    "article_url": "https://www.fool.com/investing/2026/06/29/abbvie-stock-hits-a-new-52-week-high-has-it-gotten/?source=iedfolrf0000001",
+    "tickers": [
+      "ABBV",
+      "PFE"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876702%2Fdoctor-standing-in-a-hospital.jpg&w=1200&op=resize",
+    "description": "AbbVie hit a new 52-week high and is up 40% over the past 12 months, though year-to-date gains are modest at 11%. Despite the elevated stock price, the company trades at less than 18x forward earnings\u2014below the S&P 500 average of 21\u2014making it reasonably valued. The pharmaceutical giant's recent $10.9 billion acquisition of Apogee Therapeutics and strong financial performance support its position as an attractive long-term dividend stock.",
+    "keywords": [
+      "AbbVie",
+      "52-week high",
+      "pharmaceutical",
+      "acquisition",
+      "dividend stock",
+      "valuation",
+      "Apogee Therapeutics",
+      "immunology"
+    ],
+    "insights": [
+      {
+        "ticker": "ABBV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The article highlights AbbVie's strong financial performance, attractive valuation relative to peers, strategic growth through acquisitions, above-average dividend yield (2.7%), and solid resiliency despite healthcare reform concerns. The author recommends it as a good long-term buy despite the elevated stock price."
+      },
+      {
+        "ticker": "PFE",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Pfizer is mentioned only as a comparison point in a related article headline ('AbbVie vs. Pfizer') but receives no substantive analysis or commentary in the main article content."
       }
     ]
   }

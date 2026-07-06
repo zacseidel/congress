@@ -1,216 +1,266 @@
 [
   {
-    "id": "d9bef2db1f32f9c79e30bc8517bd1a7eed1007d9be1d1b8f469807c6f2334c37",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Meme Coins News: Pepeto Presale Passes $10.28 Million as the Solana Price Prediction Targets $600 While SOL Tokens Collapse",
-    "author": "Not Specified",
-    "published_utc": "2026-06-17T22:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/17/3313855/0/en/Meme-Coins-News-Pepeto-Presale-Passes-10-28-Million-as-the-Solana-Price-Prediction-Targets-600-While-SOL-Tokens-Collapse.html",
-    "tickers": [
-      "SCBFY",
-      "CME"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/56f71463-c2f6-44df-8991-fd7c9a4deec7",
-    "description": "Pepeto's presale has raised $10.28 million, attracting large crypto wallets. Meanwhile, Solana (SOL) has declined 75% from its all-time high to $73, with token launches dropping 42% since mid-January. Despite bullish long-term tech developments like Firedancer and Alpenglow, investor attention is shifting from Solana tokens to Ethereum-based projects. Solana price predictions range from $250-$600 depending on the analyst.",
-    "keywords": [
-      "meme coins",
-      "Pepeto presale",
-      "Solana price prediction",
-      "SOL tokens",
-      "Ethereum",
-      "crypto market",
-      "token launches",
-      "DeFi"
-    ],
-    "insights": [
-      {
-        "ticker": "SCBFY",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Standard Chartered maintains a measured Solana price prediction of $250 for 2026 and $2,000 by 2030, suggesting cautious optimism about long-term prospects despite near-term challenges."
-      },
-      {
-        "ticker": "CME",
-        "sentiment": "positive",
-        "sentiment_reasoning": "CME Group extended 24/7 SOL derivatives trading in June, indicating institutional support and increased accessibility for trading Solana, which is a bullish signal for market infrastructure."
-      }
-    ]
-  },
-  {
-    "id": "cadcd6c068878acdd605f95c8f7b3c6dd354f78dcd1f0eada1e84a6b0d95e565",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "Small Caps Near Record Highs, Robinhood Rallies 12%: Stock Market Today",
-    "author": "Piero Cingari",
-    "published_utc": "2026-06-17T17:33:03Z",
-    "article_url": "https://www.benzinga.com/markets/equities/26/06/53258383/russell-2000-small-caps-near-records-ahead-fed-meeting-robinhood-jumps-deutsche-bank-upgrad?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "AMAT",
-      "HOOD",
-      "FRMI",
-      "CBOE",
-      "CME",
-      "CVNA",
-      "KMX"
-    ],
-    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/06/17/Robinhood-Robinhood-Mobile-Icon-App-On-A.jpeg",
-    "description": "U.S. stocks traded higher midday Wednesday with semiconductor equipment names and small caps leading gains ahead of Fed Chair Kevin Warsh's first interest-rate decision. The Russell 2000 jumped 1.2% to a record high. Applied Materials surged 7% after Citi raised its price target, while Robinhood rallied 12.2% on strong trading volumes. Exchange operators fell sharply after Kalshi's Bitcoin futures approval raised competitive concerns.",
-    "keywords": [
-      "stock market",
-      "Federal Reserve",
-      "semiconductor",
-      "small caps",
-      "interest rates",
-      "Bitcoin futures",
-      "trading volumes"
-    ],
-    "insights": [
-      {
-        "ticker": "AMAT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Surged 7% after Citi raised price target to $710 from $550 and reiterated Buy rating, citing durable AI-driven demand for wafer-fab equipment"
-      },
-      {
-        "ticker": "HOOD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Jumped 12.2% after Deutsche Bank raised price target to $105 from $98, citing record June trading volumes and workforce optimization"
-      },
-      {
-        "ticker": "FRMI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Surged 13.3% on reports that OpenAI is evaluating capacity at the company's Project Matador AI power campus with potential for major commercial agreement"
-      },
-      {
-        "ticker": "CBOE",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Dropped 5.8% after analysts flagged Kalshi's approval to offer Bitcoin perpetual futures as a competitive threat to incumbent venues"
-      },
-      {
-        "ticker": "CME",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Fell 4.4% due to competitive concerns from Kalshi's Bitcoin futures approval affecting exchange operators"
-      },
-      {
-        "ticker": "CVNA",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Dropped 7.6% as peer exchange operators were hammered by competitive threats from Kalshi's Bitcoin futures approval"
-      },
-      {
-        "ticker": "KMX",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Fell 7.0% despite beating earnings expectations, as profit slipped year-over-year from $1.38 to $1.31 adjusted EPS"
-      }
-    ]
-  },
-  {
-    "id": "d2d415cd5e0542a812226b9c22150d581ea14d4d902277a71c81e2ae55a10b97",
+    "id": "b72a3ce31f1799981ed65827431c2dfea808184b210e1081b7058bad261654e5",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Kevin Warsh May Throw President Donald Trump Under the Bus in His First FOMC Meeting as Fed Chair",
-    "author": "Sean Williams",
-    "published_utc": "2026-06-17T08:06:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/17/kevin-warsh-throw-donald-trump-under-bus-fomc-fed/?source=iedfolrf0000001",
+    "title": "Stock Market Investors Just Got Bad News From the Federal Reserve. History Says a Big Drop Could Follow.",
+    "author": "Trevor Jennewine",
+    "published_utc": "2026-07-01T08:12:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/01/stock-market-bad-news-federal-reserve-big-drop/?source=iedfolrf0000001",
+    "tickers": [
+      "GS",
+      "GSpA",
+      "GSpC",
+      "GSpD",
+      "MS",
+      "MSpA",
+      "MSpE",
+      "MSpF",
+      "MSpI",
+      "MSpK",
+      "MSpL",
+      "MSpO",
+      "MSpP",
+      "MSpQ",
+      "CME"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876878%2Fmarket-red-6.jpg&w=1200&op=resize",
+    "description": "The Federal Reserve now expects at least one interest rate increase in 2026, reversing earlier expectations for rate cuts. Historical data shows that the previous four rate-increase cycles since 1999 coincided with stock market corrections, with the S&P 500 and Nasdaq Composite declining an average of 10% and 15% respectively in the three months following the first rate hike. Higher interest rates reduce stock valuations and increase borrowing costs, potentially pressuring equities.",
+    "keywords": [
+      "Federal Reserve",
+      "interest rate increase",
+      "stock market correction",
+      "inflation",
+      "S&P 500",
+      "Nasdaq Composite",
+      "valuation multiples",
+      "rate-increase cycle"
+    ],
+    "insights": [
+      {
+        "ticker": "GS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a source providing economic analysis and forecasts regarding Fed policy and inflation effects. No direct investment recommendation or negative outlook attributed to the company itself."
+      },
+      {
+        "ticker": "GSpA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a source providing economic analysis and forecasts regarding Fed policy and inflation effects. No direct investment recommendation or negative outlook attributed to the company itself."
+      },
+      {
+        "ticker": "GSpC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a source providing economic analysis and forecasts regarding Fed policy and inflation effects. No direct investment recommendation or negative outlook attributed to the company itself."
+      },
+      {
+        "ticker": "GSpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a source providing economic analysis and forecasts regarding Fed policy and inflation effects. No direct investment recommendation or negative outlook attributed to the company itself."
+      },
+      {
+        "ticker": "MS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cited for their contrarian view that the Fed will hold rates steady through 2026 as inflation cools. Presented as an alternative perspective without negative implications for the company."
+      },
+      {
+        "ticker": "MSpA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cited for their contrarian view that the Fed will hold rates steady through 2026 as inflation cools. Presented as an alternative perspective without negative implications for the company."
+      },
+      {
+        "ticker": "MSpE",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cited for their contrarian view that the Fed will hold rates steady through 2026 as inflation cools. Presented as an alternative perspective without negative implications for the company."
+      },
+      {
+        "ticker": "MSpF",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cited for their contrarian view that the Fed will hold rates steady through 2026 as inflation cools. Presented as an alternative perspective without negative implications for the company."
+      },
+      {
+        "ticker": "MSpI",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cited for their contrarian view that the Fed will hold rates steady through 2026 as inflation cools. Presented as an alternative perspective without negative implications for the company."
+      },
+      {
+        "ticker": "MSpK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cited for their contrarian view that the Fed will hold rates steady through 2026 as inflation cools. Presented as an alternative perspective without negative implications for the company."
+      },
+      {
+        "ticker": "MSpL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cited for their contrarian view that the Fed will hold rates steady through 2026 as inflation cools. Presented as an alternative perspective without negative implications for the company."
+      },
+      {
+        "ticker": "MSpO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cited for their contrarian view that the Fed will hold rates steady through 2026 as inflation cools. Presented as an alternative perspective without negative implications for the company."
+      },
+      {
+        "ticker": "MSpP",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cited for their contrarian view that the Fed will hold rates steady through 2026 as inflation cools. Presented as an alternative perspective without negative implications for the company."
+      },
+      {
+        "ticker": "MSpQ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cited for their contrarian view that the Fed will hold rates steady through 2026 as inflation cools. Presented as an alternative perspective without negative implications for the company."
+      },
+      {
+        "ticker": "CME",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Referenced as a data source (FedWatch tool) for market expectations regarding Fed policy. No investment sentiment expressed regarding the company."
+      }
+    ]
+  },
+  {
+    "id": "6c90ba9ff0ec26598f1786d43c26de6fcaad2bd53800a72c805eca61bf02f28f",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Inflation Is Surging: Here's How That Might Affect the Stock Market in 2026",
+    "author": "Neil Patel",
+    "published_utc": "2026-06-29T17:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/06/29/inflation-surging-how-affect-stock-market-2026/?source=iedfolrf0000001",
     "tickers": [
       "CME"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874550%2Fkevin-warsh-wh-photo-president-donald-trump-swearing-in-ceremony-daniel-torok.jpg&w=1200&op=resize",
-    "description": "New Fed Chair Kevin Warsh holds his first FOMC meeting on June 17, 2026, as U.S. inflation hits a three-year high of 4.2% in May. The article suggests Warsh will likely blame President Trump's tariff and Iran policies for elevated inflation, similar to his predecessor Jerome Powell. The FOMC is expected to shift from an easing bias to a neutral stance, with growing market expectations for potential rate hikes by year-end, which poses challenges for the historically expensive stock market.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874473%2Finflation-typed-on-calculator.jpg&w=1200&op=resize",
+    "description": "Inflation has surged to a three-year high with the PCE price index rising 4.1% in May 2026, driven by Middle East conflicts affecting energy prices. With a strong job market showing 172,000 nonfarm payroll gains, the Federal Reserve is unlikely to cut rates and may instead raise them by December. Despite these headwinds, the S&P 500 remains up over 7% in 2026, suggesting investor optimism. Long-term investors should maintain diversified portfolios of high-quality stocks rather than attempting to time the market.",
     "keywords": [
-      "Fed Chair Kevin Warsh",
-      "FOMC meeting",
+      "inflation",
+      "PCE price index",
+      "Federal Reserve",
+      "interest rates",
+      "stock market",
+      "nonfarm payrolls",
+      "diversification"
+    ],
+    "insights": [
+      {
+        "ticker": "CME",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "CME Group is mentioned only as the provider of the FedWatch Tool used to assess interest rate probabilities. There is no direct investment thesis or performance commentary provided about the company itself."
+      }
+    ]
+  },
+  {
+    "id": "5aa2ca0acc071151bd60e3f3661f63c95e218dd3b73795d88b3301cf808b5e5d",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "President Donald Trump Just Took a Jab at His Handpicked Fed Chair, Kevin Warsh, Over Interest Rates",
+    "author": "Sean Williams",
+    "published_utc": "2026-06-28T08:06:00Z",
+    "article_url": "https://www.fool.com/investing/2026/06/28/trump-took-jab-fed-chair-kevin-warsh-interest-rate/?source=iedfolrf0000001",
+    "tickers": [
+      "CME"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875757%2Fdonald-trump-fed-kevin-warsh-ceremony-wh-photo-daniel-torok.jpg&w=1200&op=resize",
+    "description": "President Trump criticized Fed Chair Kevin Warsh and the FOMC for not cutting interest rates after their June 17 meeting. Trump's own policy decisions\u2014including tariffs and the Iran war that disrupted oil supplies\u2014have created inflation pressures that may force the Fed to raise rates instead, contradicting Trump's preference for lower rates. Nine of 18 FOMC members now expect rate hikes by year-end, with the probability of a December 2026 hike reaching 89%.",
+    "keywords": [
+      "Federal Reserve",
+      "interest rates",
       "inflation",
       "monetary policy",
-      "interest rates",
-      "Trump tariffs",
-      "energy prices",
+      "tariffs",
+      "oil prices",
+      "stock market",
+      "FOMC",
       "rate hikes"
     ],
     "insights": [
       {
         "ticker": "CME",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Increased volatility and uncertainty around interest rate expectations typically benefit derivatives and futures trading platforms."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as the source of FedWatch Tool data; no direct operational impact from rate policy changes implied."
       }
     ]
   },
   {
-    "id": "83ed2a9fdd68e0eddffd4acf9780ca6f23945be9683c78503a638947a437a2f5",
+    "id": "3b7420cdbee6183750e00a55cafbe3928cc91db5733ed96d0c994e2fa9a110ae",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "Kalshi\u2019s $40 Billion Target Prices Prediction Markets as Exchange Infrastructure",
+    "author": "Tim Baker",
+    "published_utc": "2026-06-25T13:23:00Z",
+    "article_url": "https://www.investing.com/analysis/kalshis-40-billion-target-prices-prediction-markets-as-exchange-infrastructure-200682789",
+    "tickers": [
+      "CME",
+      "META"
+    ],
+    "amp_url": "https://m.investing.com/analysis/kalshis-40-billion-target-prices-prediction-markets-as-exchange-infrastructure-200682789?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "Kalshi, a regulated prediction market platform, is in talks to raise funding at a $40 billion valuation, nearly doubling its $22 billion valuation from seven weeks prior. The platform achieved $16.81 billion in monthly trading volume in May 2026 with $2 billion annualized revenue, commanding a 20x revenue multiple comparable to exchange infrastructure plays. However, the company faces significant regulatory risks from 12+ state lawsuits alleging unlicensed sports betting operations, with sports contracts representing up to 90% of revenue.",
+    "keywords": [
+      "prediction markets",
+      "event contracts",
+      "CFTC regulation",
+      "sports betting",
+      "regulatory risk",
+      "exchange infrastructure",
+      "institutional trading",
+      "crypto perpetual futures"
+    ],
+    "insights": [
+      {
+        "ticker": "CME",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a valuation comparison point for exchange infrastructure premiums; no direct business impact or developments reported."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Developing competing prediction-market app (Meta Arena) which increases competitive pressure on Kalshi, but no material impact on Meta's core business reported."
+      }
+    ]
+  },
+  {
+    "id": "496cba254bdd14c55708b9bb8c6ff202e45a39d7b3df8862bc7d6d5037c52ba1",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "In 6 Words, Fed Governor Lisa Cook Issued a Stark Warning to Wall Street",
-    "author": "Katie Brockman",
-    "published_utc": "2026-06-16T21:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/16/in-6-words-fed-governor-lisa-cook-issued-a-stark-w/?source=iedfolrf0000001",
+    "title": "The Fed's Latest Inflation Outlook Offers Wall Street Its First Relief in Months",
+    "author": "James Brumley",
+    "published_utc": "2026-06-20T13:16:00Z",
+    "article_url": "https://www.fool.com/investing/2026/06/20/fed-inflation-outlook-wall-street-relief-interest/?source=iedfolrf0000001",
     "tickers": [
       "CME"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874654%2Fgettyimages-1428665288-2000x1363-f3d124c.jpg&w=1200&op=resize",
-    "description": "Fed Governor Lisa Cook warned that interest rate increases are on the table as inflation continues to surge, reaching a three-year high of 4.2%. While the labor market remains resilient, the Fed is shifting focus toward controlling inflation. The CME FedWatch Tool estimates a 58% probability of a rate hike by December, which could dampen market gains as borrowing costs increase.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874036%2Folder-man-working-at-computer.jpg&w=1200&op=resize",
+    "description": "The Federal Reserve's latest economic projections indicate interest rates will rise to 3.8% by year-end to combat persistent inflation expected at 3.6% in 2026. However, the Fed notes the economy remains resilient with solid growth, strong productivity, and stable employment. While inflation should cool significantly by 2027-2028, allowing rates to fall, the article cautions that stocks remain technically overbought and a market correction is due.",
     "keywords": [
+      "Federal Reserve",
+      "inflation outlook",
       "interest rates",
-      "inflation",
-      "Federal Reserve",
-      "rate hike",
-      "monetary policy",
-      "market volatility",
-      "energy prices"
+      "FOMC",
+      "economic growth",
+      "market correction",
+      "fed funds rate"
     ],
     "insights": [
       {
         "ticker": "CME",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only as the provider of the FedWatch Tool used to estimate rate hike probabilities; no direct impact from the Fed's policy decisions."
-      }
-    ]
-  },
-  {
-    "id": "a0eef30e1cf361c76da32e227005eac3c446fb3bbfd2966a28911fbd165e1a4b",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Wow! The Probability of an Interest Rate Hike in 2026 Has Soared Over the Past Week.",
-    "author": "Sean Williams",
-    "published_utc": "2026-06-16T08:06:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/16/wow-probability-interest-rate-hike-2026-has-soared/?source=iedfolrf0000001",
-    "tickers": [
-      "CME"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874165%2Fnewspaper-inflation-report-wages-price-shock-fed-monetary-policy-getty.jpg&w=1200&op=resize",
-    "description": "U.S. inflation jumped to a 4.2% three-year high in May, causing the CME FedWatch Tool to show a 71% probability of an interest rate hike by December 2026, up from below 50% just days earlier. New Fed Chair Kevin Warsh's historically hawkish stance makes rate hikes more likely, which could pressure expensive stock valuations and force businesses to cut back on AI infrastructure spending.",
-    "keywords": [
-      "interest rate hike",
-      "inflation",
-      "Federal Reserve",
-      "CME FedWatch Tool",
-      "Kevin Warsh",
-      "stock market",
-      "AI spending",
-      "Trumpflation"
-    ],
-    "insights": [
-      {
-        "ticker": "CME",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "CME Group's FedWatch Tool is referenced as a key predictive instrument for rate hike probabilities, but the company itself is neither positively nor negatively impacted by the rate hike scenario discussed."
+        "sentiment_reasoning": "CME is mentioned as a data source for interest rate futures market expectations, serving an informational role with no direct positive or negative implications for the company's business."
       }
     ]
   }

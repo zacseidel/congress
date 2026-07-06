@@ -7,9 +7,10 @@ name: Congressional Trades Tracker (standard)
 
 on:
   schedule:
-    # Mondays and Wednesdays at 08:00 UTC = 2am MDT (summer) / 1am MST (winter).
+    # Mondays and Wednesdays at 08:23 UTC = ~2am MDT (summer) / ~1am MST (winter).
     # GitHub cron is fixed UTC and doesn't follow DST, so the local time drifts 1h.
-    - cron: '0 8 * * 1,3'
+    # Off the top of the hour on purpose: GitHub delays/drops :00 crons under load.
+    - cron: '23 8 * * 1,3'
   workflow_dispatch:
     inputs:
       enrich_max:
@@ -53,10 +54,10 @@ jobs:
         env:
           HTTP_USER_AGENT: ${{ secrets.HTTP_USER_AGENT }}
 
-      - name: OCR scanned House PTRs (capped, resumable)
-        run: python src/ocr_scanned.py
-        env:
-          HTTP_USER_AGENT: ${{ secrets.HTTP_USER_AGENT }}
+      # OCR of scanned House PTRs is slow (~2 min/filing) and used to dominate this
+      # run. It now lives in its own schedule (.github/workflows/ocr.yml) so the
+      # leaderboard/report refresh stays fast; OCR'd rows land in the ledger via that
+      # workflow's commit and are picked up on the next run here.
 
       - name: Refresh prices (grouped-daily → per-ticker close bars)
         run: python src/fetch_prices.py
@@ -98,5 +99,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/ docs/
-          git diff --staged --quiet || git commit -m "Update congressional trades report $(date +%Y-%m-%d)"
+          git diff --staged --quiet && { echo "No changes to commit."; exit 0; }
+          git commit -m "Update congressional trades report $(date +%Y-%m-%d)"
+          git pull --rebase --autostash origin main
           git push
