@@ -22,6 +22,47 @@ pipeline:
   lookback_days: 730            # trailing 2-year window for filings + returns
   benchmark_ticker: "SPY"
 
+dashboard:                      # combined Smart Money dashboard (docs/index.html)
+  congress_window_days: 120     # a congressional purchase counts as "recent" within this window
+  top_funds_n: 200              # only new buys from the top-N funds by alpha count (skill, not consensus)
+  min_fund_alpha: 0.0           # ...and only funds that actually beat SPY
+
+# --- Hedge (13F institutional-holdings) report ------------------------------- #
+openfigi:
+  # CUSIP->ticker resolver. Unauthenticated: ~25 req/min, <=10 jobs/request.
+  # Set OPENFIGI_API_KEY (free at openfigi.com/api) to auto-use the keyed_* limits
+  # below — ~125x faster, turning a cold full-universe resolve from ~90 min into ~1 min.
+  rate_limit_calls_per_min: 20
+  batch_size: 10
+  keyed_rate_calls_per_min: 250   # used automatically when OPENFIGI_API_KEY is set
+  keyed_batch_size: 100
+
+hedge:
+  # Candidate selection: a CONCENTRATION + SIZE band, not top-by-AUM. Alpha lives in
+  # concentrated active bets, which are anti-correlated with size — ranking by AUM
+  # systematically misses small high-alpha funds (e.g. Ratan Capital, $0.27B/+31%).
+  # Selecting uses cached holdings-counts (aum_index), so it costs zero extra fetches.
+  min_aum: 100000000            # $100M floor — a real, liquid fund
+  min_holdings: 5               # exclude near-empty / single-name filers
+  max_holdings: 150             # exclude closet-indexers / diversified funds (custodians already gone)
+  candidate_pool_size: 6000     # hard safety cap on the band (by AUM) to bound a run
+  pool_pins: [1566887]          # CIKs ALWAYS included regardless of band (e.g. Ratan Capital Management)
+  leaderboard_size: 500         # funds shown on the alpha leaderboard
+  watchlist_size: 40            # top funds promoted to deep per-fund pages
+  watchlist_pins: []            # CIKs always kept on the watchlist regardless of rank
+  passive_blocklist:            # mega passive managers excluded from the pool (by name substring)
+    - "VANGUARD"
+    - "BLACKROCK"
+    - "STATE STREET"
+    - "GEODE"
+    - "FMR "                    # Fidelity
+  min_filings: 4                # a fund needs >= this many 13F-HR in-window to be rankable
+  min_coverage: 0.90            # >= this fraction of portfolio value must be priced to rank
+  min_hit_rate: 0.50            # require > this share of quarters beat SPY (a ratio, not a
+                                # quarter count) — drops one-lucky-quarter flukes without forcing 8q
+  change_threshold: 0.15        # min |Q/Q share change| to count as an increase/decrease (diff_holdings)
+  fetch_workers: 8              # concurrent EDGAR fetch threads (shared throttle keeps under 10 req/s)
+
 scoring:
   # A member must have at least this many resolved positions to appear ranked.
   min_positions_to_rank: 3

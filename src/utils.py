@@ -36,6 +36,8 @@ NEWS_CACHE = CACHE_DIR / "news"                # recent headlines per ticker
 AGGS_CACHE = CACHE_DIR / "aggs"                # 2yr daily bars per ticker
 GROUPED_CACHE = CACHE_DIR / "grouped"          # all-ticker closes per date
 PTR_PDF_CACHE = CACHE_DIR / "ptr_pdfs"
+CUSIP_CACHE = CACHE_DIR / "cusip"              # CUSIP -> ticker resolution (Hedge/13F)
+EDGAR_CACHE = CACHE_DIR / "edgar"              # raw SEC 13F submissions/index/XML (Hedge/13F)
 
 POLYGON_BASE = "https://api.polygon.io"
 
@@ -293,6 +295,35 @@ class PolygonClient:
                 logging.getLogger("polygon").warning(
                     "ticker_details failed for %s: %s", ticker, self._safe_err(e))
             return None
+
+    def cusip_lookup(self, cusip: str) -> Optional[dict]:
+        """CUSIP -> best matching ticker via /v3/reference/tickers?cusip=.
+
+        Returns {ticker, name, active} for the best candidate, or None if Polygon
+        has no reference row for the CUSIP (common for names delisted before
+        Polygon's coverage). No `active` filter — 13F holdings include delisted
+        names, so we want inactive matches too. Uncached here: the Hedge CUSIP
+        resolver (resolve_cusip.py) owns the persistent per-CUSIP cache, so this
+        is only ever called on a resolver cache miss.
+        """
+        url = f"{self.BASE}/v3/reference/tickers"
+        try:
+            data = self._get(url, {"cusip": cusip, "limit": 10})
+        except Exception as e:
+            logging.getLogger("polygon").warning(
+                "cusip_lookup failed for %s: %s", cusip, self._safe_err(e))
+            return None
+        results = data.get("results", []) or []
+        if not results:
+            return None
+        # Prefer an active US common-stock/ADR listing; fall back to the first row.
+        def score(r: dict) -> tuple:
+            return (1 if r.get("active") else 0,
+                    1 if r.get("market") == "stocks" else 0,
+                    1 if r.get("type") in ("CS", "ADRC") else 0)
+        best = max(results, key=score)
+        return {"ticker": best.get("ticker"), "name": best.get("name"),
+                "active": best.get("active")}
 
     def ticker_news(self, ticker: str) -> list:
         path = NEWS_CACHE / f"{ticker}.json"

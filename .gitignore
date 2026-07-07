@@ -2,4 +2,16 @@
 __pycache__/
 *.pyc
 data/cache/ptr_pdfs/
+# Hedge (13F) machine caches — regenerable, thousands of files. Kept out of git to
+# avoid repo bloat + merge conflicts; persisted across CI runs via actions/cache.
+data/cache/cusip/
+data/cache/edgar/
+data/cache/hedge_grouped/
+# Large regenerable hedge intermediates — rebuilt every run from the EDGAR/price caches,
+# and their detail is preserved in the rendered docs/hedge pages, so they're not committed
+# (they'd otherwise add ~65MB to git history per refresh). The small products
+# (rankings / candidate_pool / managers / filers) + the static rendered site are enough.
+data/hedge/holdings.json.gz
+data/hedge/fund_performance.json.gz
+data/hedge/changes.json.gz
 .DS_Store

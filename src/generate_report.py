@@ -411,9 +411,11 @@ def run(today: date | None = None) -> None:
     runs_set = sorted(set(runs) | {report_date})
     save_json(RUNS_PATH, runs_set)
 
+    # Congress landing is congress.html; the combined Smart Money dashboard
+    # (generate_dashboard.py) owns docs/index.html as the site root.
     itmpl = env.get_template("index.html")
     DOCS.mkdir(parents=True, exist_ok=True)
-    (DOCS / "index.html").write_text(itmpl.render(
+    (DOCS / "congress.html").write_text(itmpl.render(
         reports=index, root="", benchmark=benchmark,
         latest_report=report_date, outperformer_ids=outperformer_ids,
     ), encoding="utf-8")
