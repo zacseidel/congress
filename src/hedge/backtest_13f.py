@@ -34,7 +34,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import (DATA_DIR, Progress, load_config, load_json_gz, most_recent_trading_day,
-                   save_json_gz, setup_logging)
+                   save_json, save_json_gz, setup_logging)
 from resolve_cusip import cached as cusip_cached
 from price_hedge import build_price_map
 from holdings_io import load_holdings
@@ -44,6 +44,53 @@ log = setup_logging("backtest_13f")
 HEDGE_DIR = DATA_DIR / "hedge"
 HOLDINGS_PATH = HEDGE_DIR / "holdings.json.gz"
 PERFORMANCE_PATH = HEDGE_DIR / "fund_performance.json.gz"
+ATTRIBUTION_PATH = HEDGE_DIR / "alpha_attribution.json"
+
+
+def _write_alpha_attribution(cfg: dict, results: dict, contribs: dict) -> None:
+    """Aggregate each stock's contribution to the TOTAL alpha of the ranked funds.
+
+    Total alpha = sum of alpha across every fund that passes the ranking gates. A
+    stock's contribution = the sum of its per-fund alpha contributions across those
+    funds; its share = contribution / total alpha (shares ~sum to 100%). This is the
+    'where did the smart money's edge actually come from' view — ranking by produced
+    alpha, not by how many funds hold a name."""
+    h = cfg.get("hedge", {})
+    min_f, min_cov, min_hit = h.get("min_filings", 4), h.get("min_coverage", 0.90), h.get("min_hit_rate", 0.50)
+
+    def ranked(r):
+        return (r["n_periods"] >= min_f - 1 and r["coverage"] >= min_cov
+                and r.get("hit_rate") is not None and r["hit_rate"] > min_hit)
+
+    agg: dict = {}
+    total_alpha = 0.0
+    n = 0
+    for cik, rec in results.items():
+        if not ranked(rec):
+            continue
+        n += 1
+        total_alpha += rec["alpha"]
+        for t, (c, issuer) in contribs.get(int(cik), {}).items():
+            a = agg.get(t)
+            if a is None:
+                a = agg[t] = {"issuer": issuer, "contribution": 0.0, "n_funds": 0, "top": None}
+            a["contribution"] += c
+            a["n_funds"] += 1
+            a["issuer"] = issuer or a["issuer"]
+            if a["top"] is None or c > a["top"][2]:
+                a["top"] = (rec["cik"], rec["name"], c)
+
+    stocks = [{"ticker": t, "issuer": d["issuer"], "contribution": round(d["contribution"], 4),
+               "share": round(d["contribution"] / total_alpha, 4) if total_alpha else 0,
+               "n_funds": d["n_funds"], "top_fund_cik": d["top"][0], "top_fund_name": d["top"][1]}
+              for t, d in agg.items()]
+    stocks.sort(key=lambda x: x["contribution"], reverse=True)
+    from datetime import datetime, timezone
+    save_json(ATTRIBUTION_PATH, {"generated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+                                 "total_alpha": round(total_alpha, 4), "n_funds": n, "stocks": stocks})
+    log.info("Alpha attribution: %d ranked funds, total alpha %.1f (sum of fund alphas); top stock %s = %.0f%% of it",
+             n, total_alpha, stocks[0]["ticker"] if stocks else "-",
+             100 * stocks[0]["share"] if stocks else 0)
 
 
 def _ticker_for(cusip: str):
@@ -149,7 +196,7 @@ def backtest_fund(cik: int, holdings_by_filing: dict, price_map: dict,
         key=lambda x: x["contribution"], reverse=True)
     drivers = [d for d in drivers_all if d["contribution"] > 0][:15]
     detractors = [d for d in drivers_all if d["contribution"] < 0][-10:][::-1]
-    return {
+    record = {
         "cik": cik, "name": name,
         "n_filings": len(filing_dates),
         "n_periods": len(periods),
@@ -164,6 +211,10 @@ def backtest_fund(cik: int, holdings_by_filing: dict, price_map: dict,
         "drivers": drivers,
         "detractors": detractors,
     }
+    # Full per-ticker alpha contribution (all positions, not just the top drivers) for
+    # the cross-fund "share of total alpha" aggregation in run().
+    contrib_full = {t: (round(d["contribution"], 5), d["issuer"]) for t, d in contrib.items()}
+    return record, contrib_full
 
 
 def run(ciks=None, today: date = None) -> None:
@@ -197,10 +248,13 @@ def run(ciks=None, today: date = None) -> None:
                     benchmark, today_iso)
 
     results = {}
+    contribs = {}
     prog = Progress(len(by_fund), "funds backtested", log, every=5)
     for cik, hbf in by_fund.items():
         try:
-            results[str(cik)] = backtest_fund(cik, hbf, price_map, benchmark, today_iso)
+            rec, contrib = backtest_fund(cik, hbf, price_map, benchmark, today_iso)
+            results[str(cik)] = rec
+            contribs[cik] = contrib
         except Exception as e:
             log.warning("backtest failed for CIK %s: %s", cik, e)
         prog.step()
@@ -208,6 +262,7 @@ def run(ciks=None, today: date = None) -> None:
 
     save_json_gz(PERFORMANCE_PATH, results)
     log.info("Wrote %d fund performances -> %s", len(results), PERFORMANCE_PATH)
+    _write_alpha_attribution(cfg, results, contribs)
     # Quick leaderboard preview to stderr.
     ranked = sorted(results.values(), key=lambda r: r["alpha"], reverse=True)
     log.info("--- alpha leaderboard (preview) ---")

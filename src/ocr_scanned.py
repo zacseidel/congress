@@ -21,6 +21,8 @@ Usage:
 
 import argparse
 import sys
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
 from pathlib import Path
 
@@ -30,6 +32,16 @@ from utils import (LEDGER_PATH, REVIEWED_PATH, UNPARSED_PATH, Progress, http_ses
                    load_config, load_json, save_json, setup_logging)
 
 log = setup_logging("ocr_scanned")
+
+_local = threading.local()
+
+
+def _session():
+    """One requests.Session per worker thread (Session isn't guaranteed thread-safe)."""
+    s = getattr(_local, "session", None)
+    if s is None:
+        s = _local.session = http_session()
+    return s
 
 
 def _download(url: str, session) -> bytes | None:
@@ -41,6 +53,19 @@ def _download(url: str, session) -> bytes | None:
     except Exception as e:
         log.warning("download %s failed: %s", url, e)
     return None
+
+
+def _process(rec, smap, keys, dpi):
+    """Download + OCR one filing (runs in a worker thread; no shared-state writes).
+    Returns the extracted rows, or None to leave the filing queued for retry."""
+    pdf = _download(rec["source_url"], _session())
+    if not pdf:
+        return None                        # transient — leave in queue, retry next run
+    try:
+        return ocr_ptr.extract_filing(pdf, smap, keys, rec["disclosure_date"], dpi=dpi)
+    except Exception as e:
+        log.warning("OCR failed for %s (%s): %s", rec["doc_id"], rec["member"], e)
+        return None
 
 
 def run(max_filings: int | None = None, member_filter: str | None = None) -> None:
@@ -70,45 +95,46 @@ def run(max_filings: int | None = None, member_filter: str | None = None) -> Non
     log.info("OCR queue: %d House paper filings pending, processing %d this run",
              len(queue), len(todo))
 
-    session = http_session()
+    # OCR is CPU-bound and shells out to tesseract/poppler (which release the GIL), so
+    # process filings concurrently. Download + OCR happen in worker threads; all ledger /
+    # queue mutations stay on the main thread as results arrive, keeping writes race-free.
+    workers = ocfg.get("workers", 4)
     prog = Progress(len(todo), "OCR filings", log, every=1)
     n_filings = n_rows = n_dismissed = 0
 
-    for key, rec in todo:
-        prog.step(f"{rec['member']} {rec['disclosure_date']}")
-        pdf = _download(rec["source_url"], session)
-        if not pdf:
-            continue                       # transient — leave in queue, retry next run
-        try:
-            recs = ocr_ptr.extract_filing(pdf, smap, keys, rec["disclosure_date"], dpi=dpi)
-        except Exception as e:
-            log.warning("OCR failed for %s (%s): %s", rec["doc_id"], rec["member"], e)
-            continue
-        if not recs:
-            if rec["doc_id"] not in reviewed:
-                reviewed.append(rec["doc_id"])
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        futs = {ex.submit(_process, rec, smap, keys, dpi): (key, rec) for key, rec in todo}
+        for fut in as_completed(futs):
+            key, rec = futs[fut]
+            prog.step(f"{rec['member']} {rec['disclosure_date']}")
+            recs = fut.result()
+            if recs is None:
+                continue                   # download/OCR failed — leave queued for retry
+            if not recs:
+                if rec["doc_id"] not in reviewed:
+                    reviewed.append(rec["doc_id"])
+                unparsed.pop(key, None)
+                n_dismissed += 1
+                continue
+            for i, r in enumerate(recs):
+                tx_id = f"{rec['chamber']}:{rec['doc_id']}:o{i}"
+                ledger[tx_id] = {
+                    "tx_id": tx_id,
+                    "first_seen": (ledger.get(tx_id) or {}).get("first_seen") or run_stamp,
+                    "chamber": rec["chamber"],
+                    "member": rec["member"], "member_id": rec["member_id"], "party": "",
+                    "state": rec.get("state", ""), "district": rec.get("district", ""),
+                    "ticker": r["ticker"], "asset_name": r["asset_name"], "owner": "",
+                    "tx_type": r["tx_type"], "tx_date": r["tx_date"],
+                    "disclosure_date": rec["disclosure_date"],
+                    "amount_min": r["amount_min"], "amount_max": r["amount_max"],
+                    "amount_mid": (r["amount_min"] + r["amount_max"]) / 2,
+                    "doc_id": rec["doc_id"], "source_url": rec["source_url"],
+                    "entered_by": "ocr", "match_score": r["match_score"],
+                }
+                n_rows += 1
             unparsed.pop(key, None)
-            n_dismissed += 1
-            continue
-        for i, r in enumerate(recs):
-            tx_id = f"{rec['chamber']}:{rec['doc_id']}:o{i}"
-            ledger[tx_id] = {
-                "tx_id": tx_id,
-                "first_seen": (ledger.get(tx_id) or {}).get("first_seen") or run_stamp,
-                "chamber": rec["chamber"],
-                "member": rec["member"], "member_id": rec["member_id"], "party": "",
-                "state": rec.get("state", ""), "district": rec.get("district", ""),
-                "ticker": r["ticker"], "asset_name": r["asset_name"], "owner": "",
-                "tx_type": r["tx_type"], "tx_date": r["tx_date"],
-                "disclosure_date": rec["disclosure_date"],
-                "amount_min": r["amount_min"], "amount_max": r["amount_max"],
-                "amount_mid": (r["amount_min"] + r["amount_max"]) / 2,
-                "doc_id": rec["doc_id"], "source_url": rec["source_url"],
-                "entered_by": "ocr", "match_score": r["match_score"],
-            }
-            n_rows += 1
-        unparsed.pop(key, None)
-        n_filings += 1
+            n_filings += 1
 
     save_json(LEDGER_PATH, ledger)
     save_json(UNPARSED_PATH, unparsed)

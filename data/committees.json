@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-06",
-  "n_total": 135,
-  "n_matched": 134,
+  "generated": "2026-07-08",
+  "n_total": 136,
+  "n_matched": 135,
   "match_rate": 99.3,
   "members": {
     "aderholt-robert-b": {
@@ -8646,6 +8646,70 @@
       "industries": [
         "Capital Goods",
         "Software & Services"
+      ]
+    },
+    "khanna-rohit": {
+      "bioguide": "K000389",
+      "match_method": "state+district",
+      "matched_name": "Ro Khanna",
+      "committees": [
+        {
+          "id": "HSAS",
+          "name": "House Committee on Armed Services",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSGO",
+          "name": "House Committee on Oversight and Government Reform",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSZS",
+          "name": "House Select Committee on the Strategic Competition Between the United States and the Chinese Communist Party",
+          "type": "house",
+          "is_sub": false,
+          "title": "Ranking Member"
+        },
+        {
+          "id": "HSGO05",
+          "name": "House Committee on Oversight and Government Reform: Economic Growth, Energy Policy, and Regulatory Affairs",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSGO12",
+          "name": "House Committee on Oversight and Government Reform: Cybersecurity, Information Technology, and Government Innovation",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSAS28",
+          "name": "House Committee on Armed Services: Seapower and Projection Forces",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSAS35",
+          "name": "House Committee on Armed Services: Cyber, Information Technologies, and Innovation",
+          "type": "house",
+          "is_sub": true,
+          "title": "Ranking Member"
+        }
+      ],
+      "industries": [
+        "Capital Goods",
+        "Energy",
+        "Semiconductors",
+        "Software & Services",
+        "Technology Hardware",
+        "Utilities"
       ]
     }
   },

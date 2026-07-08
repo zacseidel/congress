@@ -40,6 +40,7 @@ STYLE = """
  .wrap{max-width:1080px;margin:0 auto;padding:24px 20px 60px;}
  header.site{border-bottom:1px solid var(--line);background:var(--card);} header.site .wrap{padding:16px 20px;}
  header.site h1{font-size:18px;margin:0;} header.site a{color:inherit;}
+ nav.top{margin-top:6px;} nav.top a{margin-right:18px;font-size:14px;font-weight:600;color:var(--blue);}
  h2{font-size:19px;margin:26px 0 10px;} .muted{color:var(--muted);} .small{font-size:13px;}
  .stat-row{display:flex;gap:28px;flex-wrap:wrap;margin:10px 0;}
  .stat .n{font-size:24px;font-weight:600;} .stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
@@ -57,7 +58,9 @@ STYLE = """
 PAGE = """<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ p.name }} — Hedge 13F</title><style>{{ style }}</style></head><body>
-<header class="site"><div class="wrap"><h1>📈 <a href="../index.html">Hedge — 13F Smart Money</a></h1></div></header>
+<header class="site"><div class="wrap"><h1>📈 <a href="../index.html">Hedge — 13F Smart Money</a></h1>
+  <nav class="top"><a href="../../index.html">💡 Dashboard</a><a href="../../congress.html">🏛️ Congress Trades</a><a href="../index.html">📈 Hedge Leaderboard</a></nav>
+</div></header>
 <div class="wrap">
 <p class="small muted"><a href="../index.html">&larr; Leaderboard</a> · CIK {{ p.cik }} · latest filing {{ ch.latest_filing or '—' }}</p>
 <h2>{{ p.name }}</h2>
@@ -149,24 +152,33 @@ def run() -> None:
         if h["filing_date"] == latest_date[h["cik"]] and not h.get("put_call"):
             latest_by_fund[h["cik"]].append(h)
 
-    def congress_has(ticker: str) -> bool:
-        return ticker and (Path(DOCS_DIR).parent / "stocks" / f"{ticker}.html").exists()
+    # Unified stock pages at docs/stocks/ (hedge-featured or congress-traded tickers).
+    page_tickers = set(load_json(HEDGE_DIR / "stock_pages.json").get("tickers", [])) \
+        if (HEDGE_DIR / "stock_pages.json").exists() else set()
+    if (DATA_DIR / "rankings.json").exists():
+        page_tickers |= set(load_json(DATA_DIR / "rankings.json").get("stocks", {}).keys())
 
     def tlink(r):
         t = r.get("ticker")
         if not t:
             return f'<span class="muted">{r["cusip"][:6]}…</span>'
-        if congress_has(t):
-            return f'<a href="{CONGRESS_STOCK_REL}/{t}.html" title="Congressional trades in {t}">{t}★</a>'
-        return t
+        return f'<a href="../../stocks/{t}.html">{t}</a>' if t in page_tickers else t
 
     tmpl = Template(PAGE)
     tmpl.globals["tlink"] = tlink
     funds_dir = DOCS_DIR / "funds"
     funds_dir.mkdir(parents=True, exist_ok=True)
+    # Clear stale pages from prior runs (the ranked set changes each run), so no
+    # orphaned pages linger.
+    for old in funds_dir.glob("*.html"):
+        old.unlink()
 
-    # Only render watchlist funds (deep pages); leaderboard covers the rest.
-    targets = [cik for cik in perf if int(cik) in watchlist] or list(perf)
+    # Render a page for each fund DISPLAYED on the leaderboard (top leaderboard_size),
+    # so every displayed/linked row resolves. The full ranked set stays in the data.
+    from utils import load_config
+    board_size = load_config().get("hedge", {}).get("leaderboard_size", 500)
+    ranked_ciks = [str(r["cik"]) for r in rankings.get("leaderboard", [])][:board_size]
+    targets = [c for c in ranked_ciks if c in perf] or list(perf)
     target_ciks = {int(c) for c in targets}
 
     # Per-ticker position value by filing date, for the "position timeline" (buys by

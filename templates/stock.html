@@ -18,9 +18,15 @@
   {% if info.current_price %}<div class="stat"><div class="n">{{ usd(info.current_price) }}</div><div class="l">Last close</div></div>{% endif %}
   {% if info.market_cap %}<div class="stat"><div class="n">{{ money(info.market_cap) }}</div><div class="l">Market cap</div></div>{% endif %}
   {% if info.week_52_high %}<div class="stat"><div class="n">{{ usd(info.week_52_low) }}–{{ usd(info.week_52_high) }}</div><div class="l">2-yr range</div></div>{% endif %}
+  {% if s.buyers %}
   <div class="stat"><div class="n">{{ s.n_buyers }}</div><div class="l">Members buying</div></div>
   <div class="stat"><div class="n">{{ s.n_outperformer_buyers }}</div><div class="l">Out-performers buying</div></div>
   <div class="stat"><div class="n">{{ money(s.total_buy_dollars) }}</div><div class="l">Total disclosed buys</div></div>
+  {% endif %}
+  {% if hedge %}
+  <div class="stat"><div class="n">{{ hedge.n_holders }}</div><div class="l">Ranked funds holding</div></div>
+  {% if hedge.n_buyers %}<div class="stat"><div class="n">{{ hedge.n_buyers }}</div><div class="l">Newly buying</div></div>{% endif %}
+  {% endif %}
   {% if tperf and tperf.dw_return is not none %}
   <div class="stat"><div class="n {{ cls(tperf.dw_return) }}">{{ pct(tperf.dw_return) }}</div><div class="l">Buyers' return</div></div>
   <div class="stat"><div class="n {{ cls(tperf.alpha) }}">{{ pct(tperf.alpha) }}</div><div class="l">vs S&P 500</div></div>
@@ -70,7 +76,8 @@
 </ul>
 {% endif %}
 
-<h3>Members who traded {{ s.ticker }}</h3>
+{% if s.buyers %}
+<h3>🏛️ Members of Congress who traded {{ s.ticker }}</h3>
 <table class="sortable">
   <thead><tr>
     <th>Member</th><th>Chamber</th><th>Out-performer</th>
@@ -91,4 +98,27 @@
 </table>
 <p class="muted small">Disclosed $ figures are <em>bracket midpoints</em> — filings report ranges
    (e.g. $1,001–$15,000), not exact amounts.</p>
+{% endif %}
+
+{% if hedge %}
+<h3>📈 Top hedge funds who traded {{ s.ticker }} <span class="muted small">ranked 13F funds · latest filing</span></h3>
+{% if hedge.alpha_share and hedge.alpha_share > 0 %}<p class="muted small">This name produced
+  {{ '%.1f'|format(100*hedge.alpha_share) }}% of the ranked funds&rsquo; total alpha.</p>{% endif %}
+{% if hedge.buyers %}<p class="small"><b>🛒 Newly buying:</b>
+  {% for b in hedge.buyers[:8] %}<a href="{{ root }}hedge/funds/{{ b.cik }}.html">{{ b.name }}</a>
+  <span class="muted">(+{{ '%.0f'|format(100*b.alpha) }}%, {{ '%.1f'|format(100*b.conv) }}% of book)</span>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+{% if hedge.holders %}<table class="sortable">
+  <thead><tr><th>Fund</th><th class="num">Fund alpha vs SPY</th><th class="num">Position</th><th class="num">% of book</th></tr></thead>
+  <tbody>
+  {% for f in hedge.holders %}<tr>
+    <td><a href="{{ root }}hedge/funds/{{ f.cik }}.html">{{ f.name }}</a></td>
+    <td class="num {{ 'pos' if f.alpha>=0 else 'neg' }}" data-v="{{ f.alpha }}">{{ '%+.0f'|format(100*f.alpha) }}%</td>
+    <td class="num" data-v="{{ f.value }}">${{ '%.0f'|format(f.value/1e6) }}M</td>
+    <td class="num" data-v="{{ f.conv }}">{{ '%.1f'|format(100*f.conv) }}%</td>
+  </tr>{% endfor %}
+  </tbody>
+</table>{% endif %}
+<p class="muted small">Hedge data: SEC EDGAR 13F · ranked funds beat SPY in &gt;50% of their quarters ·
+  fund alpha = mirror-portfolio return minus SPY.</p>
+{% endif %}
 {% endblock %}

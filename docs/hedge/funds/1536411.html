@@ -7,6 +7,7 @@
  .wrap{max-width:1080px;margin:0 auto;padding:24px 20px 60px;}
  header.site{border-bottom:1px solid var(--line);background:var(--card);} header.site .wrap{padding:16px 20px;}
  header.site h1{font-size:18px;margin:0;} header.site a{color:inherit;}
+ nav.top{margin-top:6px;} nav.top a{margin-right:18px;font-size:14px;font-weight:600;color:var(--blue);}
  h2{font-size:19px;margin:26px 0 10px;} .muted{color:var(--muted);} .small{font-size:13px;}
  .stat-row{display:flex;gap:28px;flex-wrap:wrap;margin:10px 0;}
  .stat .n{font-size:24px;font-weight:600;} .stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
@@ -16,53 +17,171 @@
  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;} tr:last-child td{border-bottom:none;}
  .pos{color:var(--green);} .neg{color:var(--red);}
  .cols{display:flex;gap:20px;flex-wrap:wrap;} .cols>div{flex:1 1 320px;}
+ .scroll{overflow-x:auto;} h3{font-size:14px;margin:8px 0 6px;}
+ table.tl td, table.tl th{padding:5px 9px;} table.tl td.new{background:#dafbe1;font-weight:600;}
  footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:14px;}
 </style></head><body>
-<header class="site"><div class="wrap"><h1>📈 <a href="../index.html">Hedge — 13F Smart Money</a></h1></div></header>
+<header class="site"><div class="wrap"><h1>📈 <a href="../index.html">Hedge — 13F Smart Money</a></h1>
+  <nav class="top"><a href="../../index.html">💡 Dashboard</a><a href="../../congress.html">🏛️ Congress Trades</a><a href="../index.html">📈 Hedge Leaderboard</a></nav>
+</div></header>
 <div class="wrap">
 <p class="small muted"><a href="../index.html">&larr; Leaderboard</a> · CIK 1536411 · latest filing 2026-05-15</p>
 <h2>Duquesne Family Office LLC</h2>
 <div class="stat-row">
-  <div class="stat"><div class="n pos">+52.5%</div><div class="l">Alpha vs SPY</div></div>
-  <div class="stat"><div class="n">+89.5%</div><div class="l">Follow return</div></div>
-  <div class="stat"><div class="n">+37.0%</div><div class="l">SPY, same windows</div></div>
+  <div class="stat"><div class="n pos">+51.9%</div><div class="l">Alpha vs SPY</div></div>
+  <div class="stat"><div class="n">+89.4%</div><div class="l">Follow return</div></div>
+  <div class="stat"><div class="n">+37.5%</div><div class="l">SPY, same windows</div></div>
   <div class="stat"><div class="n">$2.9B</div><div class="l">Latest book</div></div>
   <div class="stat"><div class="n">95%</div><div class="l">Priced coverage</div></div>
 </div>
+
+<h2>What drove alpha <span class="muted small">each position&rsquo;s contribution to the +52% alpha vs SPY (weight &times; excess return)</span></h2>
+<div class="cols">
+<div><h3 class="muted small">Top contributors</h3>
+<table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Contribution</th><th class="num">Avg wt</th><th class="num">Qtrs</th></tr></thead><tbody>
+<tr><td><a href="../../stocks/NTRA.html">NTRA</a></td><td class="small">NATERA INC</td>
+  <td class="num pos">+19.1pp</td>
+  <td class="num">15%</td><td class="num">8</td></tr><tr><td><a href="../../stocks/TEVA.html">TEVA</a></td><td class="small">TEVA PHARMACEUTICAL INDS LTD</td>
+  <td class="num pos">+7.8pp</td>
+  <td class="num">5%</td><td class="num">7</td></tr><tr><td><a href="../../stocks/VST.html">VST</a></td><td class="small">VISTRA CORP</td>
+  <td class="num pos">+5.9pp</td>
+  <td class="num">3%</td><td class="num">4</td></tr><tr><td>WWD</td><td class="small">WOODWARD INC</td>
+  <td class="num pos">+5.2pp</td>
+  <td class="num">5%</td><td class="num">8</td></tr><tr><td><a href="../../stocks/TSM.html">TSM</a></td><td class="small">TAIWAN SEMICONDUCTOR MFG LTD</td>
+  <td class="num pos">+4.6pp</td>
+  <td class="num">4%</td><td class="num">7</td></tr><tr><td><a href="../../stocks/COHR.html">COHR</a></td><td class="small">COHERENT CORP</td>
+  <td class="num pos">+3.6pp</td>
+  <td class="num">6%</td><td class="num">6</td></tr><tr><td><a href="../../stocks/GEV.html">GEV</a></td><td class="small">GE VERNOVA INC</td>
+  <td class="num pos">+2.4pp</td>
+  <td class="num">1%</td><td class="num">4</td></tr><tr><td><a href="../../stocks/WBD.html">WBD</a></td><td class="small">WARNER BROS DISCOVERY INC</td>
+  <td class="num pos">+2.2pp</td>
+  <td class="num">2%</td><td class="num">2</td></tr><tr><td><a href="../../stocks/BE.html">BE</a></td><td class="small">BLOOM ENERGY CORP</td>
+  <td class="num pos">+2.1pp</td>
+  <td class="num">1%</td><td class="num">2</td></tr><tr><td><a href="../../stocks/STX.html">STX</a></td><td class="small">SEAGATE TECHNOLOGY HLDNGS PL</td>
+  <td class="num pos">+1.5pp</td>
+  <td class="num">3%</td><td class="num">7</td></tr><tr><td>ROKU</td><td class="small">ROKU INC</td>
+  <td class="num pos">+1.4pp</td>
+  <td class="num">2%</td><td class="num">5</td></tr><tr><td><a href="../../stocks/SNDK.html">SNDK</a></td><td class="small">SANDISK CORP</td>
+  <td class="num pos">+1.2pp</td>
+  <td class="num">1%</td><td class="num">2</td></tr><tr><td><a href="../../stocks/GOOGL.html">GOOGL</a></td><td class="small">ALPHABET INC</td>
+  <td class="num pos">+1.1pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/STM.html">STM</a></td><td class="small">STMICROELECTRONICS N V</td>
+  <td class="num pos">+1.1pp</td>
+  <td class="num">2%</td><td class="num">2</td></tr><tr><td>AEVA</td><td class="small">AEVA TECHNOLOGIES INC</td>
+  <td class="num pos">+0.8pp</td>
+  <td class="num">1%</td><td class="num">2</td></tr>
+</tbody></table></div>
+<div><h3 class="muted small">Top detractors</h3>
+<table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Contribution</th><th class="num">Avg wt</th><th class="num">Qtrs</th></tr></thead><tbody>
+<tr><td><a href="../../stocks/DOCU.html">DOCU</a></td><td class="small">DOCUSIGN INC</td>
+  <td class="num neg">-3.3pp</td>
+  <td class="num">3%</td><td class="num">4</td></tr><tr><td><a href="../../stocks/CPNG.html">CPNG</a></td><td class="small">COUPANG INC</td>
+  <td class="num neg">-2.8pp</td>
+  <td class="num">6%</td><td class="num">8</td></tr><tr><td><a href="../../stocks/MELI.html">MELI</a></td><td class="small">MERCADOLIBRE INC</td>
+  <td class="num neg">-2.0pp</td>
+  <td class="num">3%</td><td class="num">8</td></tr><tr><td><a href="../../stocks/OPCH.html">OPCH</a></td><td class="small">OPTION CARE HEALTH INC</td>
+  <td class="num neg">-1.4pp</td>
+  <td class="num">1%</td><td class="num">5</td></tr><tr><td>XLF</td><td class="small">SPDR FINANCIALS SELECT SECTOR</td>
+  <td class="num neg">-1.3pp</td>
+  <td class="num">4%</td><td class="num">2</td></tr><tr><td><a href="../../stocks/AA.html">AA</a></td><td class="small">ALCOA CORP</td>
+  <td class="num neg">-1.3pp</td>
+  <td class="num">3%</td><td class="num">2</td></tr><tr><td><a href="../../stocks/SE.html">SE</a></td><td class="small">SEA LTD</td>
+  <td class="num neg">-1.3pp</td>
+  <td class="num">2%</td><td class="num">5</td></tr><tr><td>FLUT</td><td class="small">FLUTTER ENTMT PLC</td>
+  <td class="num neg">-1.2pp</td>
+  <td class="num">2%</td><td class="num">7</td></tr><tr><td>STUB</td><td class="small">STUBHUB HLDGS INC</td>
+  <td class="num neg">-1.1pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td>EWZ</td><td class="small">ISHARES MSCI BRAZIL ETF</td>
+  <td class="num neg">-0.9pp</td>
+  <td class="num">3%</td><td class="num">3</td></tr>
+</tbody></table></div>
+</div>
+
 <div class="cols">
 <div><h2>New buys <span class="muted small">2026-02-17 → 2026-05-15</span></h2>
 <table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Value</th></tr></thead><tbody>
-<tr><td><a href="../../stocks/AVGO.html" title="Congressional trades in AVGO">AVGO★</a></td><td class="small">Broadcom Inc</td><td class="num">$61M</td></tr><tr><td>ARGT</td><td class="small">Global X Fds</td><td class="num">$36M</td></tr><tr><td>CAI</td><td class="small">Caris Life Sciences Inc</td><td class="num">$34M</td></tr><tr><td>RVMD</td><td class="small">Revolution Medicines Inc</td><td class="num">$31M</td></tr><tr><td><a href="../../stocks/SNDK.html" title="Congressional trades in SNDK">SNDK★</a></td><td class="small">Sandisk Corp</td><td class="num">$24M</td></tr><tr><td><a href="../../stocks/HUM.html" title="Congressional trades in HUM">HUM★</a></td><td class="small">Humana Inc</td><td class="num">$24M</td></tr><tr><td><a href="../../stocks/TWLO.html" title="Congressional trades in TWLO">TWLO★</a></td><td class="small">Twilio Inc</td><td class="num">$23M</td></tr><tr><td><a href="../../stocks/JBL.html" title="Congressional trades in JBL">JBL★</a></td><td class="small">Jabil Inc</td><td class="num">$22M</td></tr><tr><td>GSG</td><td class="small">Ishares S&P Gsci Commodity-</td><td class="num">$21M</td></tr><tr><td><a href="../../stocks/LIN.html" title="Congressional trades in LIN">LIN★</a></td><td class="small">Linde Plc</td><td class="num">$20M</td></tr><tr><td><a href="../../stocks/STX.html" title="Congressional trades in STX">STX★</a></td><td class="small">Seagate Technology Hldngs Pl</td><td class="num">$20M</td></tr><tr><td>NUVB</td><td class="small">Nuvation Bio Inc</td><td class="num">$19M</td></tr><tr><td><a href="../../stocks/INTC.html" title="Congressional trades in INTC">INTC★</a></td><td class="small">Intel Corp</td><td class="num">$18M</td></tr><tr><td>BLTE</td><td class="small">Belite Bio Inc Sponsored</td><td class="num">$17M</td></tr><tr><td><a href="../../stocks/ARM.html" title="Congressional trades in ARM">ARM★</a></td><td class="small">Arm Holdings Plc</td><td class="num">$16M</td></tr>
+<tr><td><a href="../../stocks/AVGO.html">AVGO</a></td><td class="small">Broadcom Inc</td><td class="num">$61M</td></tr><tr><td>ARGT</td><td class="small">Global X Fds</td><td class="num">$36M</td></tr><tr><td>CAI</td><td class="small">Caris Life Sciences Inc</td><td class="num">$34M</td></tr><tr><td><a href="../../stocks/RVMD.html">RVMD</a></td><td class="small">Revolution Medicines Inc</td><td class="num">$31M</td></tr><tr><td><a href="../../stocks/SNDK.html">SNDK</a></td><td class="small">Sandisk Corp</td><td class="num">$24M</td></tr><tr><td><a href="../../stocks/HUM.html">HUM</a></td><td class="small">Humana Inc</td><td class="num">$24M</td></tr><tr><td><a href="../../stocks/TWLO.html">TWLO</a></td><td class="small">Twilio Inc</td><td class="num">$23M</td></tr><tr><td>JBL</td><td class="small">Jabil Inc</td><td class="num">$22M</td></tr><tr><td>GSG</td><td class="small">Ishares S&P Gsci Commodity-</td><td class="num">$21M</td></tr><tr><td><a href="../../stocks/LIN.html">LIN</a></td><td class="small">Linde Plc</td><td class="num">$20M</td></tr><tr><td><a href="../../stocks/STX.html">STX</a></td><td class="small">Seagate Technology Hldngs Pl</td><td class="num">$20M</td></tr><tr><td>NUVB</td><td class="small">Nuvation Bio Inc</td><td class="num">$19M</td></tr><tr><td><a href="../../stocks/INTC.html">INTC</a></td><td class="small">Intel Corp</td><td class="num">$18M</td></tr><tr><td>BLTE</td><td class="small">Belite Bio Inc Sponsored</td><td class="num">$17M</td></tr><tr><td><a href="../../stocks/ARM.html">ARM</a></td><td class="small">Arm Holdings Plc</td><td class="num">$16M</td></tr>
 </tbody></table></div>
 <div><h2>Exits</h2>
 <table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Was</th></tr></thead><tbody>
-<tr><td>XLF</td><td class="small">Select Sector Spdr Tr</td><td class="num">$301M</td></tr><tr><td>RSP</td><td class="small">Invesco Exchange Traded Fd T</td><td class="num">$225M</td></tr><tr><td><a href="../../stocks/GOOGL.html" title="Congressional trades in GOOGL">GOOGL★</a></td><td class="small">Alphabet Inc</td><td class="num">$121M</td></tr><tr><td>COGT</td><td class="small">Cogent Biosciences Inc</td><td class="num">$79M</td></tr><tr><td><a href="../../stocks/ENTG.html" title="Congressional trades in ENTG">ENTG★</a></td><td class="small">Entegris Inc</td><td class="num">$71M</td></tr><tr><td><a href="../../stocks/DOCU.html" title="Congressional trades in DOCU">DOCU★</a></td><td class="small">Docusign Inc</td><td class="num">$70M</td></tr><tr><td>EEM</td><td class="small">Ishares Tr</td><td class="num">$49M</td></tr><tr><td><a href="../../stocks/DAL.html" title="Congressional trades in DAL">DAL★</a></td><td class="small">Delta Air Lines Inc Del</td><td class="num">$45M</td></tr><tr><td><a href="../../stocks/ON.html" title="Congressional trades in ON">ON★</a></td><td class="small">On Semiconductor Corp</td><td class="num">$29M</td></tr><tr><td>FLUT</td><td class="small">Flutter Entmt Plc</td><td class="num">$25M</td></tr><tr><td>AEVA</td><td class="small">Aeva Technologies Inc</td><td class="num">$24M</td></tr><tr><td><a href="../../stocks/GS.html" title="Congressional trades in GS">GS★</a></td><td class="small">Goldman Sachs Group Inc</td><td class="num">$24M</td></tr><tr><td><a href="../../stocks/RH.html" title="Congressional trades in RH">RH★</a></td><td class="small">Rh</td><td class="num">$16M</td></tr><tr><td><a href="../../stocks/CMG.html" title="Congressional trades in CMG">CMG★</a></td><td class="small">Chipotle Mexican Grill Inc</td><td class="num">$15M</td></tr><tr><td>Z</td><td class="small">Zillow Group Inc</td><td class="num">$13M</td></tr>
+<tr><td>XLF</td><td class="small">Select Sector Spdr Tr</td><td class="num">$301M</td></tr><tr><td>RSP</td><td class="small">Invesco Exchange Traded Fd T</td><td class="num">$225M</td></tr><tr><td><a href="../../stocks/GOOGL.html">GOOGL</a></td><td class="small">Alphabet Inc</td><td class="num">$121M</td></tr><tr><td>COGT</td><td class="small">Cogent Biosciences Inc</td><td class="num">$79M</td></tr><tr><td><a href="../../stocks/ENTG.html">ENTG</a></td><td class="small">Entegris Inc</td><td class="num">$71M</td></tr><tr><td><a href="../../stocks/DOCU.html">DOCU</a></td><td class="small">Docusign Inc</td><td class="num">$70M</td></tr><tr><td>EEM</td><td class="small">Ishares Tr</td><td class="num">$49M</td></tr><tr><td><a href="../../stocks/DAL.html">DAL</a></td><td class="small">Delta Air Lines Inc Del</td><td class="num">$45M</td></tr><tr><td><a href="../../stocks/ON.html">ON</a></td><td class="small">On Semiconductor Corp</td><td class="num">$29M</td></tr><tr><td>FLUT</td><td class="small">Flutter Entmt Plc</td><td class="num">$25M</td></tr><tr><td>AEVA</td><td class="small">Aeva Technologies Inc</td><td class="num">$24M</td></tr><tr><td><a href="../../stocks/GS.html">GS</a></td><td class="small">Goldman Sachs Group Inc</td><td class="num">$24M</td></tr><tr><td><a href="../../stocks/RH.html">RH</a></td><td class="small">Rh</td><td class="num">$16M</td></tr><tr><td><a href="../../stocks/CMG.html">CMG</a></td><td class="small">Chipotle Mexican Grill Inc</td><td class="num">$15M</td></tr><tr><td>Z</td><td class="small">Zillow Group Inc</td><td class="num">$13M</td></tr>
 </tbody></table></div>
 </div>
 <h2>Largest holdings <span class="muted small">latest filing</span></h2>
 <table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Value</th><th class="num">% book</th></tr></thead><tbody>
-<tr><td><a href="../../stocks/NTRA.html" title="Congressional trades in NTRA">NTRA★</a></td><td class="small">Natera Inc</td>
-  <td class="num">$613M</td><td class="num">20.9%</td></tr><tr><td><a href="../../stocks/INSM.html" title="Congressional trades in INSM">INSM★</a></td><td class="small">Insmed Inc</td>
-  <td class="num">$189M</td><td class="num">6.4%</td></tr><tr><td><a href="../../stocks/TSM.html" title="Congressional trades in TSM">TSM★</a></td><td class="small">Taiwan Semiconductor Manufac</td>
-  <td class="num">$167M</td><td class="num">5.7%</td></tr><tr><td>YPF</td><td class="small">Ypf Sociedad Anonima</td>
-  <td class="num">$150M</td><td class="num">5.1%</td></tr><tr><td>EWZ</td><td class="small">Ishares Inc</td>
-  <td class="num">$132M</td><td class="num">4.5%</td></tr><tr><td>TBBB</td><td class="small">Bbb Foods Inc</td>
-  <td class="num">$110M</td><td class="num">3.7%</td></tr><tr><td><a href="../../stocks/AA.html" title="Congressional trades in AA">AA★</a></td><td class="small">Alcoa Corp</td>
-  <td class="num">$99M</td><td class="num">3.4%</td></tr><tr><td><span class="muted">N62509…</span></td><td class="small">Newamsterdam Pharma Company</td>
-  <td class="num">$98M</td><td class="num">3.3%</td></tr><tr><td><a href="../../stocks/SE.html" title="Congressional trades in SE">SE★</a></td><td class="small">Sea Ltd</td>
-  <td class="num">$91M</td><td class="num">3.1%</td></tr><tr><td>STM</td><td class="small">Stmicroelectronics N V</td>
-  <td class="num">$90M</td><td class="num">3.1%</td></tr><tr><td>WWD</td><td class="small">Woodward Inc</td>
-  <td class="num">$76M</td><td class="num">2.6%</td></tr><tr><td>TEVA</td><td class="small">Teva Pharmaceutical Inds Ltd</td>
-  <td class="num">$72M</td><td class="num">2.4%</td></tr><tr><td>ROKU</td><td class="small">Roku Inc</td>
-  <td class="num">$71M</td><td class="num">2.4%</td></tr><tr><td><a href="../../stocks/AVGO.html" title="Congressional trades in AVGO">AVGO★</a></td><td class="small">Broadcom Inc</td>
-  <td class="num">$61M</td><td class="num">2.1%</td></tr><tr><td><a href="../../stocks/CPNG.html" title="Congressional trades in CPNG">CPNG★</a></td><td class="small">Coupang Inc</td>
-  <td class="num">$50M</td><td class="num">1.7%</td></tr><tr><td><a href="../../stocks/OPCH.html" title="Congressional trades in OPCH">OPCH★</a></td><td class="small">Option Care Health Inc</td>
-  <td class="num">$50M</td><td class="num">1.7%</td></tr><tr><td>CRH</td><td class="small">Crh Plc</td>
-  <td class="num">$40M</td><td class="num">1.4%</td></tr><tr><td>FIGR</td><td class="small">Figure Technology Solutio</td>
-  <td class="num">$39M</td><td class="num">1.3%</td></tr><tr><td>ARGT</td><td class="small">Global X Fds</td>
-  <td class="num">$36M</td><td class="num">1.2%</td></tr><tr><td>CAI</td><td class="small">Caris Life Sciences Inc</td>
+<tr><td><a href="../../stocks/NTRA.html">NTRA</a></td><td class="small">NATERA INC</td>
+  <td class="num">$613M</td><td class="num">20.9%</td></tr><tr><td><a href="../../stocks/INSM.html">INSM</a></td><td class="small">INSMED INC</td>
+  <td class="num">$189M</td><td class="num">6.4%</td></tr><tr><td><a href="../../stocks/TSM.html">TSM</a></td><td class="small">TAIWAN SEMICONDUCTOR MFG LTD</td>
+  <td class="num">$167M</td><td class="num">5.7%</td></tr><tr><td><a href="../../stocks/YPF.html">YPF</a></td><td class="small">YPF SOCIEDAD ANONIMA</td>
+  <td class="num">$150M</td><td class="num">5.1%</td></tr><tr><td>EWZ</td><td class="small">ISHARES MSCI BRAZIL ETF</td>
+  <td class="num">$132M</td><td class="num">4.5%</td></tr><tr><td>TBBB</td><td class="small">BBB FOODS INC</td>
+  <td class="num">$110M</td><td class="num">3.7%</td></tr><tr><td><a href="../../stocks/AA.html">AA</a></td><td class="small">ALCOA CORP</td>
+  <td class="num">$99M</td><td class="num">3.4%</td></tr><tr><td><span class="muted">N62509…</span></td><td class="small">NEWAMSTERDAM PHARMA COMPANY</td>
+  <td class="num">$98M</td><td class="num">3.3%</td></tr><tr><td><a href="../../stocks/SE.html">SE</a></td><td class="small">SEA LTD</td>
+  <td class="num">$91M</td><td class="num">3.1%</td></tr><tr><td><a href="../../stocks/STM.html">STM</a></td><td class="small">STMICROELECTRONICS N V</td>
+  <td class="num">$90M</td><td class="num">3.1%</td></tr><tr><td>WWD</td><td class="small">WOODWARD INC</td>
+  <td class="num">$76M</td><td class="num">2.6%</td></tr><tr><td><a href="../../stocks/TEVA.html">TEVA</a></td><td class="small">TEVA PHARMACEUTICAL INDS LTD</td>
+  <td class="num">$72M</td><td class="num">2.4%</td></tr><tr><td>ROKU</td><td class="small">ROKU INC</td>
+  <td class="num">$71M</td><td class="num">2.4%</td></tr><tr><td><a href="../../stocks/AVGO.html">AVGO</a></td><td class="small">BROADCOM INC</td>
+  <td class="num">$61M</td><td class="num">2.1%</td></tr><tr><td><a href="../../stocks/CPNG.html">CPNG</a></td><td class="small">COUPANG INC</td>
+  <td class="num">$50M</td><td class="num">1.7%</td></tr><tr><td><a href="../../stocks/OPCH.html">OPCH</a></td><td class="small">OPTION CARE HEALTH INC</td>
+  <td class="num">$50M</td><td class="num">1.7%</td></tr><tr><td><a href="../../stocks/CRH.html">CRH</a></td><td class="small">CRH PLC</td>
+  <td class="num">$40M</td><td class="num">1.4%</td></tr><tr><td>FIGR</td><td class="small">FIGURE TECHNOLOGY SOLUTIO</td>
+  <td class="num">$39M</td><td class="num">1.3%</td></tr><tr><td>ARGT</td><td class="small">GLOBAL X FDS</td>
+  <td class="num">$36M</td><td class="num">1.2%</td></tr><tr><td>CAI</td><td class="small">CARIS LIFE SCIENCES INC</td>
   <td class="num">$34M</td><td class="num">1.2%</td></tr>
 </tbody></table>
+<h2>Position timeline <span class="muted small">position value ($M) by 13F, quarter over quarter</span></h2>
+<div class="scroll"><table class="tl"><thead><tr><th>Ticker</th>
+<th class="num">Q2'24</th><th class="num">Q3'24</th><th class="num">Q4'24</th><th class="num">Q1'25</th><th class="num">Q2'25</th><th class="num">Q3'25</th><th class="num">Q4'25</th><th class="num">Q1'26</th></tr></thead><tbody>
+<tr><td><a href="../../stocks/NTRA.html">NTRA</a> <span class="small muted">NATERA INC</span></td>
+<td class="num new" title="2024-08-14: $214M">214</td><td class="num " title="2024-11-14: $453M">453</td><td class="num " title="2025-02-14: $565M">565</td><td class="num " title="2025-05-15: $481M">481</td><td class="num " title="2025-08-15: $521M">521</td><td class="num " title="2025-11-14: $517M">517</td><td class="num " title="2026-02-17: $575M">575</td><td class="num " title="2026-05-15: $613M">613</td>
+</tr><tr><td><a href="../../stocks/INSM.html">INSM</a> <span class="small muted">INSMED INC</span></td>
+<td class="num new" title="2024-08-14: $1M">1</td><td class="num " title="2024-11-14: $1M">1</td><td class="num " title="2025-02-14: $41M">41</td><td class="num " title="2025-05-15: $104M">104</td><td class="num " title="2025-08-15: $227M">227</td><td class="num " title="2025-11-14: $349M">349</td><td class="num " title="2026-02-17: $258M">258</td><td class="num " title="2026-05-15: $189M">189</td>
+</tr><tr><td><a href="../../stocks/TEVA.html">TEVA</a> <span class="small muted">TEVA PHARMACEUTICAL IN</span></td>
+<td class="num " title=""></td><td class="num new" title="2024-11-14: $26M">26</td><td class="num " title="2025-02-14: $198M">198</td><td class="num " title="2025-05-15: $229M">229</td><td class="num " title="2025-08-15: $268M">268</td><td class="num " title="2025-11-14: $335M">335</td><td class="num " title="2026-02-17: $183M">183</td><td class="num " title="2026-05-15: $72M">72</td>
+</tr><tr><td>XLF <span class="small muted">SPDR FINANCIALS SELECT</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-08-15: $52M">52</td><td class="num " title=""></td><td class="num " title="2026-02-17: $301M">301</td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/CPNG.html">CPNG</a> <span class="small muted">COUPANG INC</span></td>
+<td class="num new" title="2024-08-14: $230M">230</td><td class="num " title="2024-11-14: $287M">287</td><td class="num " title="2025-02-14: $196M">196</td><td class="num " title="2025-05-15: $204M">204</td><td class="num " title="2025-08-15: $123M">123</td><td class="num " title="2025-11-14: $149M">149</td><td class="num " title="2026-02-17: $160M">160</td><td class="num " title="2026-05-15: $50M">50</td>
+</tr><tr><td><a href="../../stocks/COHR.html">COHR</a> <span class="small muted">COHERENT CORP</span></td>
+<td class="num new" title="2024-08-14: $260M">260</td><td class="num " title="2024-11-14: $265M">265</td><td class="num " title="2025-02-14: $267M">267</td><td class="num " title="2025-05-15: $144M">144</td><td class="num " title="2025-08-15: $103M">103</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title="2026-05-15: $10M">10</td>
+</tr><tr><td><a href="../../stocks/VST.html">VST</a> <span class="small muted">VISTRA CORP</span></td>
+<td class="num new" title="2024-08-14: $226M">226</td><td class="num " title="2024-11-14: $46M">46</td><td class="num " title="2025-02-14: $39M">39</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title="2025-11-14: $46M">46</td><td class="num " title=""></td><td class="num " title=""></td>
+</tr><tr><td>RSP <span class="small muted">INVESCO EXCHANGE TRADE</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2026-02-17: $225M">225</td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/TSM.html">TSM</a> <span class="small muted">TAIWAN SEMICONDUCTOR M</span></td>
+<td class="num " title=""></td><td class="num new" title="2024-11-14: $10M">10</td><td class="num " title="2025-02-14: $21M">21</td><td class="num " title="2025-05-15: $99M">99</td><td class="num " title="2025-08-15: $173M">173</td><td class="num " title="2025-11-14: $214M">214</td><td class="num " title="2026-02-17: $165M">165</td><td class="num " title="2026-05-15: $167M">167</td>
+</tr><tr><td>WWD <span class="small muted">WOODWARD INC</span></td>
+<td class="num new" title="2024-08-14: $166M">166</td><td class="num " title="2024-11-14: $181M">181</td><td class="num " title="2025-02-14: $204M">204</td><td class="num " title="2025-05-15: $200M">200</td><td class="num " title="2025-08-15: $208M">208</td><td class="num " title="2025-11-14: $160M">160</td><td class="num " title="2026-02-17: $179M">179</td><td class="num " title="2026-05-15: $76M">76</td>
+</tr><tr><td><a href="../../stocks/STX.html">STX</a> <span class="small muted">SEAGATE TECHNOLOGY HLD</span></td>
+<td class="num new" title="2024-08-14: $181M">181</td><td class="num " title="2024-11-14: $180M">180</td><td class="num " title="2025-02-14: $135M">135</td><td class="num " title="2025-05-15: $19M">19</td><td class="num " title="2025-08-15: $29M">29</td><td class="num " title="2025-11-14: $20M">20</td><td class="num " title=""></td><td class="num " title="2026-05-15: $20M">20</td>
+</tr><tr><td><a href="../../stocks/MSFT.html">MSFT</a> <span class="small muted">MICROSOFT CORP</span></td>
+<td class="num new" title="2024-08-14: $179M">179</td><td class="num " title="2024-11-14: $19M">19</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title="2025-08-15: $100M">100</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/PM.html">PM</a> <span class="small muted">PHILIP MORRIS INTL INC</span></td>
+<td class="num new" title="2024-08-14: $90M">90</td><td class="num " title="2024-11-14: $138M">138</td><td class="num " title="2025-02-14: $163M">163</td><td class="num " title="2025-05-15: $175M">175</td><td class="num " title="2025-08-15: $149M">149</td><td class="num " title=""></td><td class="num " title="2026-02-17: $11M">11</td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/AMZN.html">AMZN</a> <span class="small muted">AMAZON COM INC</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-02-14: $72M">72</td><td class="num " title="2025-05-15: $26M">26</td><td class="num " title=""></td><td class="num " title="2025-11-14: $96M">96</td><td class="num " title="2026-02-17: $170M">170</td><td class="num " title="2026-05-15: $10M">10</td>
+</tr><tr><td><a href="../../stocks/YPF.html">YPF</a> <span class="small muted">YPF SOCIEDAD ANONIMA</span></td>
+<td class="num new" title="2024-08-14: $13M">13</td><td class="num " title="2024-11-14: $9M">9</td><td class="num " title="2025-02-14: $72M">72</td><td class="num " title="2025-05-15: $73M">73</td><td class="num " title="2025-08-15: $22M">22</td><td class="num " title="2025-11-14: $3M">3</td><td class="num " title="2026-02-17: $22M">22</td><td class="num " title="2026-05-15: $150M">150</td>
+</tr><tr><td><a href="../../stocks/MELI.html">MELI</a> <span class="small muted">MERCADOLIBRE INC</span></td>
+<td class="num new" title="2024-08-14: $60M">60</td><td class="num " title="2024-11-14: $99M">99</td><td class="num " title="2025-02-14: $91M">91</td><td class="num " title="2025-05-15: $105M">105</td><td class="num " title="2025-08-15: $140M">140</td><td class="num " title="2025-11-14: $136M">136</td><td class="num " title="2026-02-17: $95M">95</td><td class="num " title="2026-05-15: $5M">5</td>
+</tr><tr><td><a href="../../stocks/KMI.html">KMI</a> <span class="small muted">KINDER MORGAN INC DEL</span></td>
+<td class="num new" title="2024-08-14: $134M">134</td><td class="num " title="2024-11-14: $58M">58</td><td class="num " title="2025-02-14: $61M">61</td><td class="num " title="2025-05-15: $47M">47</td><td class="num " title="2025-08-15: $32M">32</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/ENTG.html">ENTG</a> <span class="small muted">ENTEGRIS INC</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-08-15: $133M">133</td><td class="num " title=""></td><td class="num " title="2026-02-17: $71M">71</td><td class="num " title=""></td>
+</tr><tr><td>EWZ <span class="small muted">ISHARES MSCI BRAZIL ET</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-08-15: $21M">21</td><td class="num " title=""></td><td class="num " title="2026-02-17: $113M">113</td><td class="num " title="2026-05-15: $132M">132</td>
+</tr><tr><td><a href="../../stocks/DOCU.html">DOCU</a> <span class="small muted">DOCUSIGN INC</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-05-15: $87M">87</td><td class="num " title="2025-08-15: $101M">101</td><td class="num " title="2025-11-14: $122M">122</td><td class="num " title="2026-02-17: $70M">70</td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/GOOGL.html">GOOGL</a> <span class="small muted">ALPHABET INC</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-02-14: $15M">15</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title="2025-11-14: $25M">25</td><td class="num " title="2026-02-17: $121M">121</td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/SE.html">SE</a> <span class="small muted">SEA LTD</span></td>
+<td class="num new" title="2024-08-14: $5M">5</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title="2025-08-15: $50M">50</td><td class="num " title="2025-11-14: $49M">49</td><td class="num " title="2026-02-17: $120M">120</td><td class="num " title="2026-05-15: $91M">91</td>
+</tr>
+</tbody></table></div>
+<p class="small muted">Green = first disclosed (new buy) · brighter = larger position · blank = not held that quarter.</p>
+
 <h2>Quarter-by-quarter <span class="muted small">follow-the-filing</span></h2>
 <table><thead><tr><th>Entry</th><th>Exit</th><th class="num">Fund</th><th class="num">SPY</th><th class="num">Cov</th><th class="num">Names</th></tr></thead><tbody>
 <tr><td>2024-08-14</td><td>2024-11-14</td>
@@ -93,9 +212,9 @@
   <td class="num pos">+0.8%</td>
   <td class="num">+8.2%</td>
   <td class="num">97%</td>
-  <td class="num">54/62</td></tr><tr><td>2026-05-15</td><td>2026-07-06</td>
+  <td class="num">54/62</td></tr><tr><td>2026-05-15</td><td>2026-07-08</td>
   <td class="num pos">+15.7%</td>
-  <td class="num">+0.8%</td>
+  <td class="num">+1.2%</td>
   <td class="num">96%</td>
   <td class="num">60/70</td></tr>
 </tbody></table>

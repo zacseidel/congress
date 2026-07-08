@@ -23,8 +23,8 @@ from jinja2 import Environment, FileSystemLoader
 
 sys.path.insert(0, str(Path(__file__).parent))
 from taxonomy import committee_to_industries
-from utils import (DATA_DIR, ROOT, UNPARSED_PATH, load_config, load_json, parse_date,
-                   save_json, setup_logging, slugify)
+from utils import (DATA_DIR, ROOT, UNPARSED_PATH, load_config, load_json, load_json_gz,
+                   parse_date, save_json, setup_logging, slugify)
 
 log = setup_logging("generate_report")
 
@@ -343,10 +343,20 @@ def run(today: date | None = None) -> None:
             alias_stems.add(variant)
     _prune_stale(DOCS / "members", member_ids | alias_stems)
 
-    # --- stock pages ------------------------------------------------------- #
+    # --- stock pages (UNIFIED: congress trades + top hedge funds) ---------- #
+    # The hedge pipeline (generate_hedge_stocks) writes per-ticker hedge holders/buyers;
+    # we render one page per ticker showing whichever is relevant. Union = congress-traded
+    # tickers + hedge "featured" names (top alpha/new-buy stocks Congress never traded).
+    hedge_holders = load_json_gz(DATA_DIR / "hedge" / "stock_holders.json.gz") \
+        if (DATA_DIR / "hedge" / "stock_holders.json.gz").exists() else {}
+    hedge_featured = set(load_json(DATA_DIR / "hedge" / "stock_pages.json").get("tickers", [])) \
+        if (DATA_DIR / "hedge" / "stock_pages.json").exists() else set()
     stmpl = env.get_template("stock.html")
     (DOCS / "stocks").mkdir(parents=True, exist_ok=True)
-    for ticker, s in stocks.items():
+    all_tickers = set(stocks) | (hedge_featured & set(hedge_holders))
+    for ticker in all_tickers:
+        s = stocks.get(ticker) or {"ticker": ticker, "name": hedge_holders.get(ticker, {}).get("issuer", ""),
+                                   "buyers": []}
         ci = info.get(ticker, {})
         has_chart = (CHARTS_DIR / f"{ticker}.png").exists()
         tcls = ticker_class.get(ticker)
@@ -357,11 +367,11 @@ def run(today: date | None = None) -> None:
                     jur_buyers.add(b["member_id"])
         (DOCS / "stocks" / f"{ticker}.html").write_text(
             stmpl.render(s=s, info=ci, has_chart=has_chart, tclass=tcls,
-                         tperf=ticker_perf.get(ticker),
+                         tperf=ticker_perf.get(ticker), hedge=hedge_holders.get(ticker),
                          jurisdiction_buyer_ids=jur_buyers,
                          n_jurisdiction_buyers=len(jur_buyers), **common),
             encoding="utf-8")
-    _prune_stale(DOCS / "stocks", set(stocks.keys()))
+    _prune_stale(DOCS / "stocks", all_tickers)
 
     # --- graph layer: skill map, network, industry pages ------------------- #
     if graph:

@@ -1,5 +1,66 @@
 [
   {
+    "id": "4fbbd87fc809a32d7eefbfbf2893cc93e351851da3d0fb091a2a5dcb3349cd2e",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "CAVA vs. Krispy Kreme: Which Consumer Stock Is a Better Buy in 2026?",
+    "author": "Josh Kohn-Lindquist",
+    "published_utc": "2026-06-26T11:15:01Z",
+    "article_url": "https://www.fool.com/coverage/better-buy/2026/06/26/cava-vs-krispy-kreme-which-consumer-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
+    "tickers": [
+      "CAVA",
+      "DNUT",
+      "CMG",
+      "MCD",
+      "SBUX"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F1c43c7ea2a115de06def5b60d05cbbe789d96aa5-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "CAVA Group demonstrates strong growth with 22.4% revenue increase and positive net income, while Krispy Kreme faces challenges with declining revenue and significant losses amid a turnaround strategy. The article recommends CAVA for growth-focused investors, though it trades at a premium valuation, while suggesting investors wait for Krispy Kreme's turnaround to gain traction before investing.",
+    "keywords": [
+      "fast-casual dining",
+      "Mediterranean restaurant",
+      "doughnut company",
+      "revenue growth",
+      "turnaround strategy",
+      "valuation comparison",
+      "net income",
+      "debt-to-equity ratio",
+      "free cash flow",
+      "consumer stocks"
+    ],
+    "insights": [
+      {
+        "ticker": "CAVA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong revenue growth of 22.4% YoY, positive net income of $63.7M, healthy balance sheet with 0.6x debt-to-equity ratio, rapid expansion with 20 new locations in Q1, and leadership in the healthy fast-casual niche support a positive outlook."
+      },
+      {
+        "ticker": "DNUT",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Revenue declined 8.6% YoY, significant net loss of $515.8M with negative 33.9% net margin, high debt-to-equity ratio of 2.2x, negative free cash flow of $64M, and unproven turnaround execution despite strategic refranchising efforts."
+      },
+      {
+        "ticker": "CMG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in the fast-casual space and as a reference point for food safety risks affecting the category, but no specific financial analysis provided."
+      },
+      {
+        "ticker": "MCD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitive threat to Krispy Kreme in the broader consumer discretionary space, but no specific analysis or recommendation provided."
+      },
+      {
+        "ticker": "SBUX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitive threat to Krispy Kreme, but no specific financial analysis or investment recommendation provided."
+      }
+    ]
+  },
+  {
     "id": "298b374e449505091405c7c150ced30d10c967d4b20eb213faa72a41bc464f39",
     "publisher": {
       "name": "The Motley Fool",
@@ -149,62 +210,6 @@
         "ticker": "DNUT",
         "sentiment": "negative",
         "sentiment_reasoning": "Suffered significant losses after ending McDonald's partnership, reported Q2 net loss of $441.1 million, 13.5% revenue drop, and stock down 52% year-to-date"
-      }
-    ]
-  },
-  {
-    "id": "bf48203f52578f8a9f88459fff3f0e4cb9bac5d24dbc8523d0f37a644a0a9fbd",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Why Is Wall Street So Bearish on Krispy Kreme? There's 1 Key Reason.",
-    "author": "Anders Bylund",
-    "published_utc": "2025-08-22T12:11:00Z",
-    "article_url": "https://www.fool.com/investing/2025/08/22/why-wall-street-is-so-bearish-on-krispy-kreme/?source=iedfolrf0000001",
-    "tickers": [
-      "DNUT",
-      "MCD",
-      "WMT",
-      "COST",
-      "KR"
-    ],
-    "image_url": "https://g.foolcdn.com/editorial/images/830391/donuts-and-burgers.jpg",
-    "description": "Krispy Kreme abandoned its nationwide doughnut delivery partnership with McDonald's due to excessive infrastructure costs, resulting in a 73% stock price drop and a strategic review of its logistics operations.",
-    "keywords": [
-      "doughnuts",
-      "partnership",
-      "logistics",
-      "stock decline",
-      "delivery"
-    ],
-    "insights": [
-      {
-        "ticker": "DNUT",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock dropped 73%, failed McDonald's partnership, expensive infrastructure costs, and need to restructure delivery network"
-      },
-      {
-        "ticker": "MCD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Limited involvement in the partnership, no direct negative impact mentioned"
-      },
-      {
-        "ticker": "WMT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a potential future delivery partner with no specific details"
-      },
-      {
-        "ticker": "COST",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a potential future delivery partner with no specific details"
-      },
-      {
-        "ticker": "KR",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a potential future delivery partner with no specific details"
       }
     ]
   }

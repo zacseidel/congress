@@ -48,6 +48,8 @@ hedge:
   candidate_pool_size: 6000     # hard safety cap on the band (by AUM) to bound a run
   pool_pins: [1566887]          # CIKs ALWAYS included regardless of band (e.g. Ratan Capital Management)
   leaderboard_size: 500         # funds shown on the alpha leaderboard
+  stock_pages_drivers: 120      # render per-stock pages for the top-N alpha contributors...
+  stock_pages_buys: 120         # ...and the top-N skill-weighted new buys (so linked tickers have pages)
   watchlist_size: 40            # top funds promoted to deep per-fund pages
   watchlist_pins: []            # CIKs always kept on the watchlist regardless of rank
   passive_blocklist:            # mega passive managers excluded from the pool (by name substring)
@@ -85,6 +87,8 @@ ocr:
   max_filings_per_run: 12       # scanned House PTRs to OCR per run (~2 min each; bounds the
                                 # dedicated ocr.yml run to ~25 min, drains the backlog daily)
   dpi: 300                      # render resolution for OCR
+  workers: 4                    # filings OCR'd concurrently (tesseract/poppler release the GIL).
+                                # Raise toward core count locally; keep modest on CI runners.
   # Match threshold lives in src/ocr_ptr.py (MATCH_CUTOFF = 0.86).
 
 graph:

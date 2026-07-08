@@ -248,6 +248,12 @@ def run() -> None:
     })
     log.info("Committees: matched %d/%d members (%.1f%%); %d committees in reference",
              matched, total, 100 * matched / total if total else 0, len(committee_ref))
+    unmatched = sorted(cid for cid, e in out_members.items() if not e["bioguide"])
+    if unmatched:
+        # Usually former members whose trades are still in-window (no current committee seat);
+        # a sudden jump here means a stale roster cache or a name-format/chamber-change bug.
+        log.info("Committees: %d unmatched (likely former members): %s",
+                 len(unmatched), ", ".join(unmatched))
 
 
 if __name__ == "__main__":

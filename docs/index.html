@@ -8,6 +8,7 @@
  .wrap{max-width:1080px;margin:0 auto;padding:24px 20px 60px;}
  header.site{border-bottom:1px solid var(--line);background:var(--card);} header.site .wrap{padding:18px 20px;}
  header.site h1{font-size:20px;margin:0;} .sub{color:var(--muted);font-size:14px;margin-top:3px;}
+ nav.top{margin-top:8px;} nav.top a{margin-right:18px;font-size:14px;font-weight:600;} nav.top a.here{color:var(--ink);}
  h2{font-size:19px;margin:30px 0 6px;} .muted{color:var(--muted);} .small{font-size:13px;}
  table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:10px 0;}
  th,td{padding:8px 11px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap;} tr:last-child td{border-bottom:none;}
@@ -19,212 +20,274 @@
  .cardlink{flex:1 1 300px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;}
  .cardlink h3{margin:0 0 6px;font-size:16px;} .cardlink a{margin-right:12px;font-size:14px;}
  .lead{background:#f0f7ff;border:1px solid #cfe4ff;border-radius:8px;padding:12px 16px;font-size:14px;margin:12px 0;}
+ .bar{display:inline-block;height:9px;background:#1a7f37;border-radius:2px;vertical-align:middle;margin-left:6px;}
  footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:14px;}
 </style></head><body>
 <header class="site"><div class="wrap">
   <h1>💡 Smart Money Dashboard</h1>
-  <div class="sub">Where U.S. Congress and top 13F hedge funds are putting money — updated 2026-07-07 10:51 UTC</div>
+  <div class="sub">Ranked by share of <em>total alpha produced</em> — where Congress and top hedge funds actually made their edge. Updated 2026-07-08 14:17 UTC</div>
+  <nav class="top"><a class="here" href="index.html">💡 Dashboard</a><a href="congress.html">🏛️ Congress Trades</a><a href="hedge/index.html">📈 Hedge Fund 13Fs</a></nav>
 </div></header>
 <div class="wrap">
 
-<h2>🎯 Convergence <span class="muted small">stocks BOTH Congress and top hedge funds are buying now</span></h2>
+<h2>🎯 Convergence <span class="muted small">stocks that drove alpha for BOTH Congress out-performers and top hedge funds</span></h2>
 
-<div class="lead">These 30 names show rare agreement: bought by members of Congress in the
-  last 120 days <em>and</em> newly added by a market-beating hedge fund in its latest 13F.
-  Ranked by the buying fund&rsquo;s alpha — skill, not crowd.</div>
+<div class="lead">These 30 names produced a meaningful share of the excess return on
+  <em>both</em> sides — the strongest signal in the dataset. Share = % of each side's total alpha.</div>
 <table class="conv"><thead><tr>
-  <th>Ticker</th><th class="num">Congress buyers</th><th>Top fund buying (its alpha vs SPY)</th>
-  <th class="num">#&nbsp;top&nbsp;funds</th></tr></thead><tbody>
+  <th>Ticker</th><th class="num">Hedge α-share</th><th class="num">Congress α-share</th>
+  <th>Top fund (its alpha)</th><th>Top member</th></tr></thead><tbody>
 <tr>
-  <td><a href="stocks/KHC.html">KHC</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Elemental Capital Partners LLC <span class="pos">+530%</span></td>
-  <td class="num">2</td>
-</tr><tr>
-  <td><a href="stocks/PFE.html">PFE</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Elemental Capital Partners LLC <span class="pos">+530%</span></td>
-  <td class="num">2</td>
-</tr><tr>
-  <td><a href="stocks/VZ.html">VZ</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Elemental Capital Partners LLC <span class="pos">+530%</span></td>
-  <td class="num">2</td>
-</tr><tr>
-  <td><a href="stocks/AEP.html">AEP</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Elemental Capital Partners LLC <span class="pos">+530%</span></td>
-  <td class="num">4</td>
-</tr><tr>
-  <td><a href="stocks/AVGO.html">AVGO</a> <span class="badge">both</span></td>
-  <td class="num">3</td>
-  <td class="small">Broad Peak Investment Advisers Pte Ltd <span class="pos">+221%</span></td>
-  <td class="num">6</td>
-</tr><tr>
-  <td><a href="stocks/CIEN.html">CIEN</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Broad Peak Investment Advisers Pte Ltd <span class="pos">+221%</span></td>
-  <td class="num">3</td>
-</tr><tr>
-  <td><a href="stocks/MSFT.html">MSFT</a> <span class="badge">both</span></td>
-  <td class="num">8</td>
-  <td class="small">FengHe Fund Management Pte. Ltd. <span class="pos">+213%</span></td>
-  <td class="num">6</td>
-</tr><tr>
-  <td><a href="stocks/TER.html">TER</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">FengHe Fund Management Pte. Ltd. <span class="pos">+213%</span></td>
-  <td class="num">10</td>
-</tr><tr>
-  <td><a href="stocks/BWXT.html">BWXT</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">FengHe Fund Management Pte. Ltd. <span class="pos">+213%</span></td>
-  <td class="num">4</td>
-</tr><tr>
-  <td><a href="stocks/SNDK.html">SNDK</a> <span class="badge">both</span></td>
-  <td class="num">2</td>
-  <td class="small">Talos Eurisko Asset Management LP <span class="pos">+189%</span></td>
-  <td class="num">10</td>
-</tr><tr>
-  <td><a href="stocks/MSI.html">MSI</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Talos Eurisko Asset Management LP <span class="pos">+189%</span></td>
-  <td class="num">2</td>
-</tr><tr>
-  <td><a href="stocks/TXN.html">TXN</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Slate Path Capital LP <span class="pos">+166%</span></td>
-  <td class="num">5</td>
-</tr><tr>
-  <td><a href="stocks/PANW.html">PANW</a> <span class="badge">both</span></td>
-  <td class="num">3</td>
-  <td class="small">Atreides Management, LP <span class="pos">+150%</span></td>
-  <td class="num">3</td>
-</tr><tr>
-  <td><a href="stocks/VST.html">VST</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Atreides Management, LP <span class="pos">+150%</span></td>
-  <td class="num">7</td>
-</tr><tr>
-  <td><a href="stocks/V.html">V</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Atreides Management, LP <span class="pos">+150%</span></td>
-  <td class="num">7</td>
-</tr><tr>
-  <td><a href="stocks/AVAV.html">AVAV</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Atreides Management, LP <span class="pos">+150%</span></td>
-  <td class="num">3</td>
-</tr><tr>
   <td><a href="stocks/MU.html">MU</a> <span class="badge">both</span></td>
-  <td class="num">3</td>
-  <td class="small">Longitude (Cayman) Ltd. <span class="pos">+144%</span></td>
-  <td class="num">12</td>
+  <td class="num pos">7.4%</td>
+  <td class="num pos">29.3%</td>
+  <td class="small"><a href="hedge/funds/1697814.html">UG Investment Advisers Ltd.</a></td>
+  <td class="small">Ashley Moody</td>
 </tr><tr>
-  <td><a href="stocks/PYPL.html">PYPL</a> <span class="badge">both</span></td>
-  <td class="num">2</td>
-  <td class="small">Longitude (Cayman) Ltd. <span class="pos">+144%</span></td>
-  <td class="num">3</td>
+  <td><a href="stocks/AMAT.html">AMAT</a> <span class="badge">both</span></td>
+  <td class="num pos">1.4%</td>
+  <td class="num pos">17.9%</td>
+  <td class="small"><a href="hedge/funds/1317588.html">ABRAMS BISON INVESTMENTS, LLC</a></td>
+  <td class="small">Ashley Moody</td>
 </tr><tr>
-  <td><a href="stocks/NFLX.html">NFLX</a> <span class="badge">both</span></td>
-  <td class="num">2</td>
-  <td class="small">Longitude (Cayman) Ltd. <span class="pos">+144%</span></td>
-  <td class="num">10</td>
+  <td><a href="stocks/INTC.html">INTC</a> <span class="badge">both</span></td>
+  <td class="num pos">1.5%</td>
+  <td class="num pos">11.5%</td>
+  <td class="small"><a href="hedge/funds/1065521.html">SOFTBANK GROUP CORP.</a></td>
+  <td class="small">Dwight Evans</td>
 </tr><tr>
-  <td><a href="stocks/HOOD.html">HOOD</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Longitude (Cayman) Ltd. <span class="pos">+144%</span></td>
-  <td class="num">4</td>
+  <td><a href="stocks/GOOG.html">GOOG</a> <span class="badge">both</span></td>
+  <td class="num pos">3.5%</td>
+  <td class="num pos">8.0%</td>
+  <td class="small"><a href="hedge/funds/1974312.html">TORNO CAPITAL, LLC</a></td>
+  <td class="small">Jerry Moran,</td>
+</tr><tr>
+  <td><a href="stocks/GOOGL.html">GOOGL</a> <span class="badge">both</span></td>
+  <td class="num pos">5.7%</td>
+  <td class="num pos">2.9%</td>
+  <td class="small"><a href="hedge/funds/1474069.html">KEYWISE CAPITAL MANAGEMENT (HK</a></td>
+  <td class="small">Dwight Evans</td>
 </tr><tr>
   <td><a href="stocks/AMD.html">AMD</a> <span class="badge">both</span></td>
-  <td class="num">3</td>
-  <td class="small">Central Asset Investments & Management Holdings (HK) Ltd <span class="pos">+144%</span></td>
-  <td class="num">10</td>
+  <td class="num pos">3.4%</td>
+  <td class="num pos">3.7%</td>
+  <td class="small"><a href="hedge/funds/1664999.html">Longitude (Cayman) Ltd.</a></td>
+  <td class="small">Marjorie Taylor Greene</td>
+</tr><tr>
+  <td><a href="stocks/NVDA.html">NVDA</a> <span class="badge">both</span></td>
+  <td class="num pos">4.5%</td>
+  <td class="num pos">2.1%</td>
+  <td class="small"><a href="hedge/funds/1954929.html">Summa Corp.</a></td>
+  <td class="small">Dwight Evans</td>
+</tr><tr>
+  <td><a href="stocks/AVGO.html">AVGO</a> <span class="badge">both</span></td>
+  <td class="num pos">3.1%</td>
+  <td class="num pos">1.5%</td>
+  <td class="small"><a href="hedge/funds/1426763.html">Cincinnati Specialty Underwrit</a></td>
+  <td class="small">Shelley M Capito</td>
+</tr><tr>
+  <td><a href="stocks/TSM.html">TSM</a> <span class="badge">both</span></td>
+  <td class="num pos">3.5%</td>
+  <td class="num pos">0.5%</td>
+  <td class="small"><a href="hedge/funds/1608485.html">LANSDOWNE PARTNERS (UK) LLP</a></td>
+  <td class="small">Cleo Fields</td>
+</tr><tr>
+  <td><a href="stocks/HWM.html">HWM</a> <span class="badge">both</span></td>
+  <td class="num pos">0.3%</td>
+  <td class="num pos">2.8%</td>
+  <td class="small"><a href="hedge/funds/1113000.html">KENSICO CAPITAL MANAGEMENT COR</a></td>
+  <td class="small">Ashley Moody</td>
 </tr><tr>
   <td><a href="stocks/LRCX.html">LRCX</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Central Asset Investments & Management Holdings (HK) Ltd <span class="pos">+144%</span></td>
-  <td class="num">7</td>
+  <td class="num pos">2.6%</td>
+  <td class="num pos">0.4%</td>
+  <td class="small"><a href="hedge/funds/1550660.html">OAKTOP CAPITAL MANAGEMENT II, </a></td>
+  <td class="small">Marjorie Taylor Greene</td>
 </tr><tr>
-  <td><a href="stocks/VG.html">VG</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Central Asset Investments & Management Holdings (HK) Ltd <span class="pos">+144%</span></td>
-  <td class="num">4</td>
+  <td><a href="stocks/PANW.html">PANW</a> <span class="badge">both</span></td>
+  <td class="num pos">0.7%</td>
+  <td class="num pos">2.4%</td>
+  <td class="small"><a href="hedge/funds/1693745.html">Anatole Investment Management </a></td>
+  <td class="small">Nancy Pelosi</td>
 </tr><tr>
-  <td><a href="stocks/WAB.html">WAB</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">Maple Rock Capital Partners Inc. <span class="pos">+129%</span></td>
-  <td class="num">1</td>
+  <td><a href="stocks/VRT.html">VRT</a> <span class="badge">both</span></td>
+  <td class="num pos">2.0%</td>
+  <td class="num pos">0.7%</td>
+  <td class="small"><a href="hedge/funds/1903866.html">Highlander Partners, L.P.</a></td>
+  <td class="small">Angus S King, Jr.</td>
 </tr><tr>
-  <td><a href="stocks/COHR.html">COHR</a> <span class="badge">both</span></td>
-  <td class="num">2</td>
-  <td class="small">CloudAlpha Capital Management Limited/Hong Kong <span class="pos">+127%</span></td>
-  <td class="num">8</td>
+  <td><a href="stocks/HL.html">HL</a> <span class="badge">both</span></td>
+  <td class="num pos">0.0%</td>
+  <td class="num pos">2.4%</td>
+  <td class="small"><a href="hedge/funds/2054965.html">Towarzystwo Funduszy Inwestycy</a></td>
+  <td class="small">Debbie Wasserman Schultz</td>
 </tr><tr>
-  <td><a href="stocks/GLW.html">GLW</a> <span class="badge">both</span></td>
-  <td class="num">2</td>
-  <td class="small">CloudAlpha Capital Management Limited/Hong Kong <span class="pos">+127%</span></td>
-  <td class="num">8</td>
+  <td><a href="stocks/TSLA.html">TSLA</a> <span class="badge">both</span></td>
+  <td class="num pos">1.6%</td>
+  <td class="num pos">0.5%</td>
+  <td class="small"><a href="hedge/funds/1680843.html">NIGHTVIEW CAPITAL, LLC</a></td>
+  <td class="small">Morgan McGarvey</td>
+</tr><tr>
+  <td><a href="stocks/LLY.html">LLY</a> <span class="badge">both</span></td>
+  <td class="num pos">0.4%</td>
+  <td class="num pos">1.6%</td>
+  <td class="small"><a href="hedge/funds/1627608.html">Monashee Investment Management</a></td>
+  <td class="small">Sheldon Whitehouse</td>
+</tr><tr>
+  <td><a href="stocks/VSAT.html">VSAT</a> <span class="badge">both</span></td>
+  <td class="num pos">0.1%</td>
+  <td class="num pos">1.8%</td>
+  <td class="small"><a href="hedge/funds/1624095.html">Tenzing Global Management, LLC</a></td>
+  <td class="small">Debbie Wasserman Schultz</td>
 </tr><tr>
   <td><a href="stocks/MRVL.html">MRVL</a> <span class="badge">both</span></td>
-  <td class="num">2</td>
-  <td class="small">CloudAlpha Capital Management Limited/Hong Kong <span class="pos">+127%</span></td>
-  <td class="num">9</td>
+  <td class="num pos">0.8%</td>
+  <td class="num pos">1.1%</td>
+  <td class="small"><a href="hedge/funds/1860672.html">Elemental Capital Partners LLC</a></td>
+  <td class="small">Angus S King, Jr.</td>
 </tr><tr>
-  <td><a href="stocks/MTSI.html">MTSI</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">CloudAlpha Capital Management Limited/Hong Kong <span class="pos">+127%</span></td>
-  <td class="num">5</td>
+  <td><a href="stocks/AAPL.html">AAPL</a> <span class="badge">both</span></td>
+  <td class="num pos">0.7%</td>
+  <td class="num pos">1.2%</td>
+  <td class="small"><a href="hedge/funds/1169683.html">OAKLAND FINANCIAL CORP</a></td>
+  <td class="small">Ed Case</td>
 </tr><tr>
-  <td><a href="stocks/DASH.html">DASH</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">CloudAlpha Capital Management Limited/Hong Kong <span class="pos">+127%</span></td>
-  <td class="num">6</td>
+  <td><a href="stocks/GLW.html">GLW</a> <span class="badge">both</span></td>
+  <td class="num pos">1.3%</td>
+  <td class="num pos">0.5%</td>
+  <td class="small"><a href="hedge/funds/1509842.html">PointState Capital LP</a></td>
+  <td class="small">Marjorie Taylor Greene</td>
 </tr><tr>
-  <td><a href="stocks/AEIS.html">AEIS</a> <span class="badge">both</span></td>
-  <td class="num">1</td>
-  <td class="small">CloudAlpha Capital Management Limited/Hong Kong <span class="pos">+127%</span></td>
-  <td class="num">3</td>
+  <td><a href="stocks/GS.html">GS</a> <span class="badge">both</span></td>
+  <td class="num pos">0.6%</td>
+  <td class="num pos">1.1%</td>
+  <td class="small"><a href="hedge/funds/1680843.html">NIGHTVIEW CAPITAL, LLC</a></td>
+  <td class="small">Sheldon Whitehouse</td>
+</tr><tr>
+  <td><a href="stocks/DELL.html">DELL</a> <span class="badge">both</span></td>
+  <td class="num pos">1.0%</td>
+  <td class="num pos">0.5%</td>
+  <td class="small"><a href="hedge/funds/1599858.html">Michael & Susan Dell Foundatio</a></td>
+  <td class="small">Marjorie Taylor Greene</td>
+</tr><tr>
+  <td><a href="stocks/GE.html">GE</a> <span class="badge">both</span></td>
+  <td class="num pos">0.9%</td>
+  <td class="num pos">0.5%</td>
+  <td class="small"><a href="hedge/funds/2016939.html">Evergreen Quality Fund GP, Ltd</a></td>
+  <td class="small">Shelley M Capito</td>
+</tr><tr>
+  <td><a href="stocks/CAT.html">CAT</a> <span class="badge">both</span></td>
+  <td class="num pos">0.9%</td>
+  <td class="num pos">0.4%</td>
+  <td class="small"><a href="hedge/funds/1317253.html">Minneapolis Portfolio Manageme</a></td>
+  <td class="small">Marjorie Taylor Greene</td>
+</tr><tr>
+  <td><a href="stocks/IBKR.html">IBKR</a> <span class="badge">both</span></td>
+  <td class="num pos">0.5%</td>
+  <td class="num pos">0.7%</td>
+  <td class="small"><a href="hedge/funds/1657335.html">Oakcliff Capital Partners, LP</a></td>
+  <td class="small">Morgan McGarvey</td>
+</tr><tr>
+  <td><a href="stocks/PWR.html">PWR</a> <span class="badge">both</span></td>
+  <td class="num pos">0.9%</td>
+  <td class="num pos">0.3%</td>
+  <td class="small"><a href="hedge/funds/1050464.html">PECONIC PARTNERS LLC</a></td>
+  <td class="small">Angus S King, Jr.</td>
+</tr><tr>
+  <td><a href="stocks/SPG.html">SPG</a> <span class="badge">both</span></td>
+  <td class="num pos">0.0%</td>
+  <td class="num pos">1.0%</td>
+  <td class="small"><a href="hedge/funds/1317253.html">Minneapolis Portfolio Manageme</a></td>
+  <td class="small">Victoria Spartz</td>
+</tr><tr>
+  <td><a href="stocks/GH.html">GH</a> <span class="badge">both</span></td>
+  <td class="num pos">0.4%</td>
+  <td class="num pos">0.6%</td>
+  <td class="small"><a href="hedge/funds/1789778.html">Blue Water Life Science Adviso</a></td>
+  <td class="small">Sheldon Whitehouse</td>
+</tr><tr>
+  <td><a href="stocks/BAC.html">BAC</a> <span class="badge">both</span></td>
+  <td class="num pos">0.1%</td>
+  <td class="num pos">0.3%</td>
+  <td class="small"><a href="hedge/funds/1700286.html">ALGEBRIS (UK) LTD</a></td>
+  <td class="small">Tim Walberg</td>
+</tr><tr>
+  <td><a href="stocks/WFC.html">WFC</a> <span class="badge">both</span></td>
+  <td class="num pos">0.2%</td>
+  <td class="num pos">0.2%</td>
+  <td class="small"><a href="hedge/funds/1317961.html">Latash Investments, LLC</a></td>
+  <td class="small">Tim Walberg</td>
 </tr>
 </tbody></table>
 
 
 <div class="cols">
-<div><h2>🏛️ Congress is buying <span class="muted small">last 120d</span></h2>
-<table><thead><tr><th>Ticker</th><th class="num">Members</th></tr></thead><tbody>
-<tr><td><a href="stocks/MSFT.html">MSFT</a></td><td class="num">8</td></tr><tr><td><a href="stocks/AAPL.html">AAPL</a></td><td class="num">6</td></tr><tr><td><a href="stocks/AMZN.html">AMZN</a></td><td class="num">5</td></tr><tr><td><a href="stocks/UNH.html">UNH</a></td><td class="num">5</td></tr><tr><td><a href="stocks/TSM.html">TSM</a></td><td class="num">4</td></tr><tr><td><a href="stocks/IBM.html">IBM</a></td><td class="num">4</td></tr><tr><td><a href="stocks/HD.html">HD</a></td><td class="num">4</td></tr><tr><td><a href="stocks/AXP.html">AXP</a></td><td class="num">3</td></tr><tr><td><a href="stocks/AMD.html">AMD</a></td><td class="num">3</td></tr><tr><td><a href="stocks/CVX.html">CVX</a></td><td class="num">3</td></tr><tr><td><a href="stocks/EQT.html">EQT</a></td><td class="num">3</td></tr><tr><td><a href="stocks/MU.html">MU</a></td><td class="num">3</td></tr><tr><td><a href="stocks/NVDA.html">NVDA</a></td><td class="num">3</td></tr><tr><td><a href="stocks/PANW.html">PANW</a></td><td class="num">3</td></tr><tr><td><a href="stocks/LLY.html">LLY</a></td><td class="num">3</td></tr>
+<div><h2>📈 Where hedge-fund alpha came from <span class="muted small">636 ranked funds</span></h2>
+<table><thead><tr><th>Ticker</th><th class="num">α-share</th><th>Top fund</th></tr></thead><tbody>
+<tr><td><a href="stocks/MU.html">MU</a></td>
+  <td class="num">7.4%</td>
+  <td class="small"><a href="hedge/funds/1697814.html">UG Investment Advisers Ltd.</a></td></tr><tr><td><a href="stocks/GOOGL.html">GOOGL</a></td>
+  <td class="num">5.7%</td>
+  <td class="small"><a href="hedge/funds/1474069.html">KEYWISE CAPITAL MANAGEMENT (HK</a></td></tr><tr><td><a href="stocks/NVDA.html">NVDA</a></td>
+  <td class="num">4.5%</td>
+  <td class="small"><a href="hedge/funds/1954929.html">Summa Corp.</a></td></tr><tr><td><a href="stocks/BE.html">BE</a></td>
+  <td class="num">3.8%</td>
+  <td class="small"><a href="hedge/funds/1860672.html">Elemental Capital Partners LLC</a></td></tr><tr><td><a href="stocks/SNDK.html">SNDK</a></td>
+  <td class="num">3.7%</td>
+  <td class="small"><a href="hedge/funds/1713269.html">Oxbow Capital Management (HK) </a></td></tr><tr><td><a href="stocks/GOOG.html">GOOG</a></td>
+  <td class="num">3.5%</td>
+  <td class="small"><a href="hedge/funds/1974312.html">TORNO CAPITAL, LLC</a></td></tr><tr><td><a href="stocks/TSM.html">TSM</a></td>
+  <td class="num">3.5%</td>
+  <td class="small"><a href="hedge/funds/1608485.html">LANSDOWNE PARTNERS (UK) LLP</a></td></tr><tr><td><a href="stocks/AMD.html">AMD</a></td>
+  <td class="num">3.4%</td>
+  <td class="small"><a href="hedge/funds/1664999.html">Longitude (Cayman) Ltd.</a></td></tr><tr><td><a href="stocks/HOOD.html">HOOD</a></td>
+  <td class="num">3.4%</td>
+  <td class="small"><a href="hedge/funds/1836733.html">Ribbit Management Company, LLC</a></td></tr><tr><td><a href="stocks/STX.html">STX</a></td>
+  <td class="num">3.2%</td>
+  <td class="small"><a href="hedge/funds/1713269.html">Oxbow Capital Management (HK) </a></td></tr><tr><td><a href="stocks/AVGO.html">AVGO</a></td>
+  <td class="num">3.1%</td>
+  <td class="small"><a href="hedge/funds/1426763.html">Cincinnati Specialty Underwrit</a></td></tr><tr><td><a href="stocks/RVMD.html">RVMD</a></td>
+  <td class="num">2.8%</td>
+  <td class="small"><a href="hedge/funds/1595430.html">Nextech Invest, Ltd.</a></td></tr><tr><td><a href="stocks/WDC.html">WDC</a></td>
+  <td class="num">2.7%</td>
+  <td class="small"><a href="hedge/funds/1658363.html">Maple Rock Capital Partners In</a></td></tr><tr><td><a href="stocks/LRCX.html">LRCX</a></td>
+  <td class="num">2.6%</td>
+  <td class="small"><a href="hedge/funds/1550660.html">OAKTOP CAPITAL MANAGEMENT II, </a></td></tr><tr><td><a href="stocks/GEV.html">GEV</a></td>
+  <td class="num">2.6%</td>
+  <td class="small"><a href="hedge/funds/1104883.html">SIRIOS CAPITAL MANAGEMENT L P</a></td></tr>
 </tbody></table></div>
-<div><h2>📈 Top funds are buying <span class="muted small">best performers&rsquo; latest new bets</span></h2>
-<table><thead><tr><th>Ticker</th><th>Bought by (alpha)</th></tr></thead><tbody>
-<tr><td><a href="stocks/AEP.html">AEP</a></td>
-  <td class="small">Elemental Capital Partners LLC <span class="pos">+530%</span> <span class="muted">+3</span></td></tr><tr><td><a href="stocks/PFE.html">PFE</a></td>
-  <td class="small">Elemental Capital Partners LLC <span class="pos">+530%</span> <span class="muted">+1</span></td></tr><tr><td><a href="stocks/VZ.html">VZ</a></td>
-  <td class="small">Elemental Capital Partners LLC <span class="pos">+530%</span> <span class="muted">+1</span></td></tr><tr><td><a href="stocks/KHC.html">KHC</a></td>
-  <td class="small">Elemental Capital Partners LLC <span class="pos">+530%</span> <span class="muted">+1</span></td></tr><tr><td>ARCC</td>
-  <td class="small">Elemental Capital Partners LLC <span class="pos">+530%</span></td></tr><tr><td><a href="stocks/ET.html">ET</a></td>
-  <td class="small">Elemental Capital Partners LLC <span class="pos">+530%</span></td></tr><tr><td>PAA</td>
-  <td class="small">Elemental Capital Partners LLC <span class="pos">+530%</span></td></tr><tr><td>CTMX</td>
-  <td class="small">Nextech Invest, Ltd. <span class="pos">+315%</span></td></tr><tr><td>CRVS</td>
-  <td class="small">Nextech Invest, Ltd. <span class="pos">+315%</span></td></tr><tr><td>GDS</td>
-  <td class="small">Broad Peak Investment Advisers Pte Ltd <span class="pos">+221%</span> <span class="muted">+3</span></td></tr><tr><td><a href="stocks/AVGO.html">AVGO</a></td>
-  <td class="small">Broad Peak Investment Advisers Pte Ltd <span class="pos">+221%</span> <span class="muted">+5</span></td></tr><tr><td><a href="stocks/CIEN.html">CIEN</a></td>
-  <td class="small">Broad Peak Investment Advisers Pte Ltd <span class="pos">+221%</span> <span class="muted">+2</span></td></tr><tr><td><a href="stocks/LOW.html">LOW</a></td>
-  <td class="small">Broad Peak Investment Advisers Pte Ltd <span class="pos">+221%</span> <span class="muted">+3</span></td></tr><tr><td><a href="stocks/WMT.html">WMT</a></td>
-  <td class="small">Broad Peak Investment Advisers Pte Ltd <span class="pos">+221%</span> <span class="muted">+5</span></td></tr><tr><td>HSAI</td>
-  <td class="small">Broad Peak Investment Advisers Pte Ltd <span class="pos">+221%</span></td></tr>
+<div><h2>🏛️ Where Congress alpha came from <span class="muted small">out-performers</span></h2>
+<table><thead><tr><th>Ticker</th><th class="num">α-share</th><th>Top member</th></tr></thead><tbody>
+<tr><td><a href="stocks/MU.html">MU</a></td>
+  <td class="num">29.3%</td><td class="small">Ashley Moody</td></tr><tr><td><a href="stocks/AMAT.html">AMAT</a></td>
+  <td class="num">17.9%</td><td class="small">Ashley Moody</td></tr><tr><td><a href="stocks/INTC.html">INTC</a></td>
+  <td class="num">11.5%</td><td class="small">Dwight Evans</td></tr><tr><td><a href="stocks/ICHR.html">ICHR</a></td>
+  <td class="num">8.1%</td><td class="small">Debbie Wasserman Schultz</td></tr><tr><td><a href="stocks/GOOG.html">GOOG</a></td>
+  <td class="num">8.0%</td><td class="small">Jerry Moran,</td></tr><tr><td><a href="stocks/AMD.html">AMD</a></td>
+  <td class="num">3.7%</td><td class="small">Marjorie Taylor Greene</td></tr><tr><td><a href="stocks/GOOGL.html">GOOGL</a></td>
+  <td class="num">2.9%</td><td class="small">Dwight Evans</td></tr><tr><td><a href="stocks/HWM.html">HWM</a></td>
+  <td class="num">2.8%</td><td class="small">Ashley Moody</td></tr><tr><td><a href="stocks/HL.html">HL</a></td>
+  <td class="num">2.4%</td><td class="small">Debbie Wasserman Schultz</td></tr><tr><td><a href="stocks/PANW.html">PANW</a></td>
+  <td class="num">2.4%</td><td class="small">Nancy Pelosi</td></tr><tr><td><a href="stocks/NVDA.html">NVDA</a></td>
+  <td class="num">2.1%</td><td class="small">Dwight Evans</td></tr><tr><td><a href="stocks/VSAT.html">VSAT</a></td>
+  <td class="num">1.8%</td><td class="small">Debbie Wasserman Schultz</td></tr><tr><td><a href="stocks/LLY.html">LLY</a></td>
+  <td class="num">1.6%</td><td class="small">Sheldon Whitehouse</td></tr><tr><td><a href="stocks/AVGO.html">AVGO</a></td>
+  <td class="num">1.5%</td><td class="small">Shelley M Capito</td></tr><tr><td><a href="stocks/AAPL.html">AAPL</a></td>
+  <td class="num">1.2%</td><td class="small">Ed Case</td></tr>
 </tbody></table></div>
 </div>
 
 <h2>Explore the reports</h2>
 <div class="cards">
   <div class="cardlink"><h3>🏛️ Congressional Trades</h3>
-    <div class="small muted">69 members ranked · buy-the-disclosure alpha vs SPY</div>
+    <div class="small muted">Members ranked by buy-the-disclosure alpha vs SPY</div>
     <div style="margin-top:8px"><a href="congress.html">Leaderboard &amp; archive</a><a href="graph.html">Network</a><a href="map.html">Skill map</a></div></div>
   <div class="cardlink"><h3>📈 Hedge Fund 13Fs</h3>
-    <div class="small muted">659 funds ranked · mirror-portfolio alpha vs SPY</div>
+    <div class="small muted">636 funds ranked · mirror-portfolio alpha vs SPY</div>
     <div style="margin-top:8px"><a href="hedge/index.html">Leaderboard</a><a href="hedge/index.html">Top funds &amp; drivers</a></div></div>
 </div>
 
-<footer>Congress: U.S. House Clerk &amp; Senate eFD · Hedge: SEC EDGAR 13F · Prices: Polygon.io ·
-  Both benchmarked vs SPY. Educational use only — not investment advice.</footer>
+<footer>Alpha attribution: each stock's summed contribution to the total alpha of the ranked funds /
+  out-performing members. Congress: House &amp; Senate disclosures · Hedge: SEC EDGAR 13F · Prices: Polygon.io ·
+  benchmark SPY. Educational use only — not investment advice.</footer>
 </div></body></html>

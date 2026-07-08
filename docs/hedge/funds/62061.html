@@ -7,6 +7,7 @@
  .wrap{max-width:1080px;margin:0 auto;padding:24px 20px 60px;}
  header.site{border-bottom:1px solid var(--line);background:var(--card);} header.site .wrap{padding:16px 20px;}
  header.site h1{font-size:18px;margin:0;} header.site a{color:inherit;}
+ nav.top{margin-top:6px;} nav.top a{margin-right:18px;font-size:14px;font-weight:600;color:var(--blue);}
  h2{font-size:19px;margin:26px 0 10px;} .muted{color:var(--muted);} .small{font-size:13px;}
  .stat-row{display:flex;gap:28px;flex-wrap:wrap;margin:10px 0;}
  .stat .n{font-size:24px;font-weight:600;} .stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
@@ -16,53 +17,171 @@
  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;} tr:last-child td{border-bottom:none;}
  .pos{color:var(--green);} .neg{color:var(--red);}
  .cols{display:flex;gap:20px;flex-wrap:wrap;} .cols>div{flex:1 1 320px;}
+ .scroll{overflow-x:auto;} h3{font-size:14px;margin:8px 0 6px;}
+ table.tl td, table.tl th{padding:5px 9px;} table.tl td.new{background:#dafbe1;font-weight:600;}
  footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:14px;}
 </style></head><body>
-<header class="site"><div class="wrap"><h1>📈 <a href="../index.html">Hedge — 13F Smart Money</a></h1></div></header>
+<header class="site"><div class="wrap"><h1>📈 <a href="../index.html">Hedge — 13F Smart Money</a></h1>
+  <nav class="top"><a href="../../index.html">💡 Dashboard</a><a href="../../congress.html">🏛️ Congress Trades</a><a href="../index.html">📈 Hedge Leaderboard</a></nav>
+</div></header>
 <div class="wrap">
 <p class="small muted"><a href="../index.html">&larr; Leaderboard</a> · CIK 62061 · latest filing 2026-02-09</p>
 <h2>V. M. MANNING & CO., INC.</h2>
 <div class="stat-row">
-  <div class="stat"><div class="n pos">+3.8%</div><div class="l">Alpha vs SPY</div></div>
-  <div class="stat"><div class="n">+18.6%</div><div class="l">Follow return</div></div>
-  <div class="stat"><div class="n">+14.7%</div><div class="l">SPY, same windows</div></div>
+  <div class="stat"><div class="n pos">+3.9%</div><div class="l">Alpha vs SPY</div></div>
+  <div class="stat"><div class="n">+19.1%</div><div class="l">Follow return</div></div>
+  <div class="stat"><div class="n">+15.2%</div><div class="l">SPY, same windows</div></div>
   <div class="stat"><div class="n">$0.1B</div><div class="l">Latest book</div></div>
   <div class="stat"><div class="n">97%</div><div class="l">Priced coverage</div></div>
 </div>
+
+<h2>What drove alpha <span class="muted small">each position&rsquo;s contribution to the +4% alpha vs SPY (weight &times; excess return)</span></h2>
+<div class="cols">
+<div><h3 class="muted small">Top contributors</h3>
+<table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Contribution</th><th class="num">Avg wt</th><th class="num">Qtrs</th></tr></thead><tbody>
+<tr><td><a href="../../stocks/AAPL.html">AAPL</a></td><td class="small">APPLE INC</td>
+  <td class="num pos">+1.3pp</td>
+  <td class="num">11%</td><td class="num">2</td></tr><tr><td><a href="../../stocks/GEV.html">GEV</a></td><td class="small">GE VERNOVA INC</td>
+  <td class="num pos">+1.2pp</td>
+  <td class="num">2%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/NUE.html">NUE</a></td><td class="small">NUCOR CORP</td>
+  <td class="num pos">+0.9pp</td>
+  <td class="num">2%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/CSCO.html">CSCO</a></td><td class="small">CISCO SYS INC</td>
+  <td class="num pos">+0.5pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/INTC.html">INTC</a></td><td class="small">INTEL CORP</td>
+  <td class="num pos">+0.5pp</td>
+  <td class="num">0%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/LLY.html">LLY</a></td><td class="small">ELI LILLY & CO</td>
+  <td class="num pos">+0.4pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/FDX.html">FDX</a></td><td class="small">FEDEX CORP</td>
+  <td class="num pos">+0.4pp</td>
+  <td class="num">2%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/MRK.html">MRK</a></td><td class="small">MERCK & CO INC</td>
+  <td class="num pos">+0.4pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/GOOGL.html">GOOGL</a></td><td class="small">ALPHABET INC</td>
+  <td class="num pos">+0.3pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/TGT.html">TGT</a></td><td class="small">TARGET CORP</td>
+  <td class="num pos">+0.2pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/BE.html">BE</a></td><td class="small">BLOOM ENERGY CORP</td>
+  <td class="num pos">+0.2pp</td>
+  <td class="num">0%</td><td class="num">1</td></tr><tr><td>PSLV</td><td class="small">SPROTT PHYSICAL SILVER TRUST</td>
+  <td class="num pos">+0.2pp</td>
+  <td class="num">0%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/FCX.html">FCX</a></td><td class="small">FREEPORT-MCMORAN INC</td>
+  <td class="num pos">+0.1pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td>TFC</td><td class="small">TRUIST FINL CORP</td>
+  <td class="num pos">+0.1pp</td>
+  <td class="num">1%</td><td class="num">2</td></tr><tr><td><a href="../../stocks/GE.html">GE</a></td><td class="small">GE AEROSPACE</td>
+  <td class="num pos">+0.1pp</td>
+  <td class="num">2%</td><td class="num">3</td></tr>
+</tbody></table></div>
+<div><h3 class="muted small">Top detractors</h3>
+<table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Contribution</th><th class="num">Avg wt</th><th class="num">Qtrs</th></tr></thead><tbody>
+<tr><td><a href="../../stocks/ABT.html">ABT</a></td><td class="small">ABBOTT LABS</td>
+  <td class="num neg">-1.1pp</td>
+  <td class="num">2%</td><td class="num">2</td></tr><tr><td><a href="../../stocks/DIS.html">DIS</a></td><td class="small">DISNEY WALT CO</td>
+  <td class="num neg">-0.5pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/MSFT.html">MSFT</a></td><td class="small">MICROSOFT CORP</td>
+  <td class="num neg">-0.5pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/VMC.html">VMC</a></td><td class="small">VULCAN MATLS CO</td>
+  <td class="num neg">-0.5pp</td>
+  <td class="num">3%</td><td class="num">3</td></tr><tr><td>OLN</td><td class="small">OLIN CORP</td>
+  <td class="num neg">-0.3pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/KMB.html">KMB</a></td><td class="small">KIMBERLY-CLARK CORP</td>
+  <td class="num neg">-0.3pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/STZ.html">STZ</a></td><td class="small">CONSTELLATION BRANDS INC</td>
+  <td class="num neg">-0.2pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/DUK.html">DUK</a></td><td class="small">DUKE ENERGY CORP NEW</td>
+  <td class="num neg">-0.2pp</td>
+  <td class="num">2%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/PLTR.html">PLTR</a></td><td class="small">PALANTIR TECHNOLOGIES INC</td>
+  <td class="num neg">-0.2pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/PG.html">PG</a></td><td class="small">PROCTER AND GAMBLE CO</td>
+  <td class="num neg">-0.1pp</td>
+  <td class="num">1%</td><td class="num">3</td></tr>
+</tbody></table></div>
+</div>
+
 <div class="cols">
 <div><h2>New buys <span class="muted small">2025-10-16 → 2026-02-09</span></h2>
 <table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Value</th></tr></thead><tbody>
-<tr><td>QQQ</td><td class="small">INVESCO QQQ TR</td><td class="num">$1M</td></tr><tr><td><a href="../../stocks/CAT.html" title="Congressional trades in CAT">CAT★</a></td><td class="small">CATERPILLAR INC</td><td class="num">$0M</td></tr><tr><td><a href="../../stocks/BE.html" title="Congressional trades in BE">BE★</a></td><td class="small">BLOOM ENERGY CORP</td><td class="num">$0M</td></tr><tr><td>MUB</td><td class="small">ISHARES TR</td><td class="num">$0M</td></tr><tr><td><a href="../../stocks/RTX.html" title="Congressional trades in RTX">RTX★</a></td><td class="small">RTX CORPORATION</td><td class="num">$0M</td></tr><tr><td>VTI</td><td class="small">VANGUARD INDEX FDS</td><td class="num">$0M</td></tr>
+<tr><td><a href="../../stocks/QQQ.html">QQQ</a></td><td class="small">INVESCO QQQ TR</td><td class="num">$1M</td></tr><tr><td><a href="../../stocks/CAT.html">CAT</a></td><td class="small">CATERPILLAR INC</td><td class="num">$0M</td></tr><tr><td><a href="../../stocks/BE.html">BE</a></td><td class="small">BLOOM ENERGY CORP</td><td class="num">$0M</td></tr><tr><td>MUB</td><td class="small">ISHARES TR</td><td class="num">$0M</td></tr><tr><td><a href="../../stocks/RTX.html">RTX</a></td><td class="small">RTX CORPORATION</td><td class="num">$0M</td></tr><tr><td><a href="../../stocks/VTI.html">VTI</a></td><td class="small">VANGUARD INDEX FDS</td><td class="num">$0M</td></tr>
 </tbody></table></div>
 <div><h2>Exits</h2>
 <table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Was</th></tr></thead><tbody>
-<tr><td><a href="../../stocks/TFC.html" title="Congressional trades in TFC">TFC★</a></td><td class="small">TRUIST FINL CORP</td><td class="num">$1M</td></tr><tr><td><span class="muted">30231G…</span></td><td class="small">EXXON MOBIL CORP</td><td class="num">$0M</td></tr><tr><td>ARDX</td><td class="small">ARDELYX INC</td><td class="num">$0M</td></tr><tr><td><a href="../../stocks/RBLX.html" title="Congressional trades in RBLX">RBLX★</a></td><td class="small">ROBLOX CORP</td><td class="num">$0M</td></tr>
+<tr><td>TFC</td><td class="small">TRUIST FINL CORP</td><td class="num">$1M</td></tr><tr><td><span class="muted">30231G…</span></td><td class="small">EXXON MOBIL CORP</td><td class="num">$0M</td></tr><tr><td>ARDX</td><td class="small">ARDELYX INC</td><td class="num">$0M</td></tr><tr><td><a href="../../stocks/RBLX.html">RBLX</a></td><td class="small">ROBLOX CORP</td><td class="num">$0M</td></tr>
 </tbody></table></div>
 </div>
 <h2>Largest holdings <span class="muted small">latest filing</span></h2>
 <table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Value</th><th class="num">% book</th></tr></thead><tbody>
-<tr><td><a href="../../stocks/NVDA.html" title="Congressional trades in NVDA">NVDA★</a></td><td class="small">NVIDIA CORPORATION</td>
-  <td class="num">$42M</td><td class="num">42.3%</td></tr><tr><td><a href="../../stocks/AAPL.html" title="Congressional trades in AAPL">AAPL★</a></td><td class="small">APPLE INC</td>
-  <td class="num">$10M</td><td class="num">9.7%</td></tr><tr><td><a href="../../stocks/VMC.html" title="Congressional trades in VMC">VMC★</a></td><td class="small">VULCAN MATLS CO</td>
-  <td class="num">$3M</td><td class="num">3.4%</td></tr><tr><td><a href="../../stocks/FDX.html" title="Congressional trades in FDX">FDX★</a></td><td class="small">FEDEX CORP</td>
-  <td class="num">$2M</td><td class="num">2.5%</td></tr><tr><td><a href="../../stocks/ABT.html" title="Congressional trades in ABT">ABT★</a></td><td class="small">ABBOTT LABS</td>
-  <td class="num">$2M</td><td class="num">2.4%</td></tr><tr><td><a href="../../stocks/NUE.html" title="Congressional trades in NUE">NUE★</a></td><td class="small">NUCOR CORP</td>
-  <td class="num">$2M</td><td class="num">2.3%</td></tr><tr><td><a href="../../stocks/GEV.html" title="Congressional trades in GEV">GEV★</a></td><td class="small">GE VERNOVA INC</td>
-  <td class="num">$2M</td><td class="num">2.2%</td></tr><tr><td><a href="../../stocks/DUK.html" title="Congressional trades in DUK">DUK★</a></td><td class="small">DUKE ENERGY CORP NEW</td>
-  <td class="num">$2M</td><td class="num">2.0%</td></tr><tr><td><a href="../../stocks/BA.html" title="Congressional trades in BA">BA★</a></td><td class="small">BOEING CO</td>
-  <td class="num">$2M</td><td class="num">1.9%</td></tr><tr><td><a href="../../stocks/SPY.html" title="Congressional trades in SPY">SPY★</a></td><td class="small">SPDR S&P 500 ETF TR</td>
+<tr><td><a href="../../stocks/NVDA.html">NVDA</a></td><td class="small">NVIDIA CORPORATION</td>
+  <td class="num">$42M</td><td class="num">42.3%</td></tr><tr><td><a href="../../stocks/AAPL.html">AAPL</a></td><td class="small">APPLE INC</td>
+  <td class="num">$10M</td><td class="num">9.7%</td></tr><tr><td><a href="../../stocks/VMC.html">VMC</a></td><td class="small">VULCAN MATLS CO</td>
+  <td class="num">$3M</td><td class="num">3.4%</td></tr><tr><td><a href="../../stocks/FDX.html">FDX</a></td><td class="small">FEDEX CORP</td>
+  <td class="num">$2M</td><td class="num">2.5%</td></tr><tr><td><a href="../../stocks/ABT.html">ABT</a></td><td class="small">ABBOTT LABS</td>
+  <td class="num">$2M</td><td class="num">2.4%</td></tr><tr><td><a href="../../stocks/NUE.html">NUE</a></td><td class="small">NUCOR CORP</td>
+  <td class="num">$2M</td><td class="num">2.3%</td></tr><tr><td><a href="../../stocks/GEV.html">GEV</a></td><td class="small">GE VERNOVA INC</td>
+  <td class="num">$2M</td><td class="num">2.2%</td></tr><tr><td><a href="../../stocks/DUK.html">DUK</a></td><td class="small">DUKE ENERGY CORP NEW</td>
+  <td class="num">$2M</td><td class="num">2.0%</td></tr><tr><td><a href="../../stocks/BA.html">BA</a></td><td class="small">BOEING CO</td>
+  <td class="num">$2M</td><td class="num">1.9%</td></tr><tr><td><a href="../../stocks/SPY.html">SPY</a></td><td class="small">SPDR S&P 500 ETF TR</td>
   <td class="num">$2M</td><td class="num">1.9%</td></tr><tr><td><span class="muted">438516…</span></td><td class="small">HONEYWELL INTL INC</td>
-  <td class="num">$2M</td><td class="num">1.8%</td></tr><tr><td><a href="../../stocks/MRK.html" title="Congressional trades in MRK">MRK★</a></td><td class="small">MERCK & CO INC</td>
-  <td class="num">$1M</td><td class="num">1.5%</td></tr><tr><td><a href="../../stocks/AMZN.html" title="Congressional trades in AMZN">AMZN★</a></td><td class="small">AMAZON COM INC</td>
-  <td class="num">$1M</td><td class="num">1.4%</td></tr><tr><td><a href="../../stocks/TXT.html" title="Congressional trades in TXT">TXT★</a></td><td class="small">TEXTRON INC</td>
-  <td class="num">$1M</td><td class="num">1.4%</td></tr><tr><td><a href="../../stocks/FCX.html" title="Congressional trades in FCX">FCX★</a></td><td class="small">FREEPORT-MCMORAN INC</td>
-  <td class="num">$1M</td><td class="num">1.4%</td></tr><tr><td><a href="../../stocks/DIS.html" title="Congressional trades in DIS">DIS★</a></td><td class="small">DISNEY WALT CO</td>
-  <td class="num">$1M</td><td class="num">1.3%</td></tr><tr><td><a href="../../stocks/LLY.html" title="Congressional trades in LLY">LLY★</a></td><td class="small">ELI LILLY & CO</td>
-  <td class="num">$1M</td><td class="num">1.3%</td></tr><tr><td><a href="../../stocks/CSCO.html" title="Congressional trades in CSCO">CSCO★</a></td><td class="small">CISCO SYS INC</td>
-  <td class="num">$1M</td><td class="num">1.2%</td></tr><tr><td><a href="../../stocks/TGT.html" title="Congressional trades in TGT">TGT★</a></td><td class="small">TARGET CORP</td>
-  <td class="num">$1M</td><td class="num">1.2%</td></tr><tr><td><a href="../../stocks/MSFT.html" title="Congressional trades in MSFT">MSFT★</a></td><td class="small">MICROSOFT CORP</td>
+  <td class="num">$2M</td><td class="num">1.8%</td></tr><tr><td><a href="../../stocks/MRK.html">MRK</a></td><td class="small">MERCK & CO INC</td>
+  <td class="num">$1M</td><td class="num">1.5%</td></tr><tr><td><a href="../../stocks/AMZN.html">AMZN</a></td><td class="small">AMAZON COM INC</td>
+  <td class="num">$1M</td><td class="num">1.4%</td></tr><tr><td><a href="../../stocks/TXT.html">TXT</a></td><td class="small">TEXTRON INC</td>
+  <td class="num">$1M</td><td class="num">1.4%</td></tr><tr><td><a href="../../stocks/FCX.html">FCX</a></td><td class="small">FREEPORT-MCMORAN INC</td>
+  <td class="num">$1M</td><td class="num">1.4%</td></tr><tr><td><a href="../../stocks/DIS.html">DIS</a></td><td class="small">DISNEY WALT CO</td>
+  <td class="num">$1M</td><td class="num">1.3%</td></tr><tr><td><a href="../../stocks/LLY.html">LLY</a></td><td class="small">ELI LILLY & CO</td>
+  <td class="num">$1M</td><td class="num">1.3%</td></tr><tr><td><a href="../../stocks/CSCO.html">CSCO</a></td><td class="small">CISCO SYS INC</td>
+  <td class="num">$1M</td><td class="num">1.2%</td></tr><tr><td><a href="../../stocks/TGT.html">TGT</a></td><td class="small">TARGET CORP</td>
+  <td class="num">$1M</td><td class="num">1.2%</td></tr><tr><td><a href="../../stocks/MSFT.html">MSFT</a></td><td class="small">MICROSOFT CORP</td>
   <td class="num">$1M</td><td class="num">1.2%</td></tr>
 </tbody></table>
+<h2>Position timeline <span class="muted small">position value ($M) by 13F, quarter over quarter</span></h2>
+<div class="scroll"><table class="tl"><thead><tr><th>Ticker</th>
+<th class="num">Q2'25</th><th class="num">Q3'25</th><th class="num">Q4'25</th></tr></thead><tbody>
+<tr><td><a href="../../stocks/NVDA.html">NVDA</a> <span class="small muted">NVIDIA CORPORATION</span></td>
+<td class="num new" title="2025-09-04: $45M">45</td><td class="num " title="2025-10-16: $45M">45</td><td class="num " title="2026-02-09: $42M">42</td>
+</tr><tr><td><a href="../../stocks/AAPL.html">AAPL</a> <span class="small muted">APPLE INC</span></td>
+<td class="num " title=""></td><td class="num new" title="2025-10-16: $12M">12</td><td class="num " title="2026-02-09: $10M">10</td>
+</tr><tr><td><a href="../../stocks/VMC.html">VMC</a> <span class="small muted">VULCAN MATLS CO</span></td>
+<td class="num new" title="2025-09-04: $3M">3</td><td class="num " title="2025-10-16: $3M">3</td><td class="num " title="2026-02-09: $3M">3</td>
+</tr><tr><td><a href="../../stocks/ABT.html">ABT</a> <span class="small muted">ABBOTT LABS</span></td>
+<td class="num " title=""></td><td class="num new" title="2025-10-16: $3M">3</td><td class="num " title="2026-02-09: $2M">2</td>
+</tr><tr><td><a href="../../stocks/FDX.html">FDX</a> <span class="small muted">FEDEX CORP</span></td>
+<td class="num new" title="2025-09-04: $2M">2</td><td class="num " title="2025-10-16: $2M">2</td><td class="num " title="2026-02-09: $2M">2</td>
+</tr><tr><td><a href="../../stocks/SPY.html">SPY</a> <span class="small muted">SPDR S&P 500 ETF TR</span></td>
+<td class="num new" title="2025-09-04: $2M">2</td><td class="num " title="2025-10-16: $2M">2</td><td class="num " title="2026-02-09: $2M">2</td>
+</tr><tr><td><a href="../../stocks/DUK.html">DUK</a> <span class="small muted">DUKE ENERGY CORP NEW</span></td>
+<td class="num new" title="2025-09-04: $2M">2</td><td class="num " title="2025-10-16: $2M">2</td><td class="num " title="2026-02-09: $2M">2</td>
+</tr><tr><td><a href="../../stocks/NUE.html">NUE</a> <span class="small muted">NUCOR CORP</span></td>
+<td class="num new" title="2025-09-04: $2M">2</td><td class="num " title="2025-10-16: $2M">2</td><td class="num " title="2026-02-09: $2M">2</td>
+</tr><tr><td><a href="../../stocks/BA.html">BA</a> <span class="small muted">BOEING CO</span></td>
+<td class="num " title=""></td><td class="num new" title="2025-10-16: $2M">2</td><td class="num " title="2026-02-09: $2M">2</td>
+</tr><tr><td><a href="../../stocks/GEV.html">GEV</a> <span class="small muted">GE VERNOVA INC</span></td>
+<td class="num new" title="2025-09-04: $2M">2</td><td class="num " title="2025-10-16: $2M">2</td><td class="num " title="2026-02-09: $2M">2</td>
+</tr><tr><td><a href="../../stocks/GE.html">GE</a> <span class="small muted">GE AEROSPACE</span></td>
+<td class="num new" title="2025-09-04: $2M">2</td><td class="num " title="2025-10-16: $2M">2</td><td class="num " title="2026-02-09: $0M">0</td>
+</tr><tr><td><a href="../../stocks/AMZN.html">AMZN</a> <span class="small muted">AMAZON COM INC</span></td>
+<td class="num " title=""></td><td class="num new" title="2025-10-16: $2M">2</td><td class="num " title="2026-02-09: $1M">1</td>
+</tr><tr><td><a href="../../stocks/MRK.html">MRK</a> <span class="small muted">MERCK & CO INC</span></td>
+<td class="num new" title="2025-09-04: $1M">1</td><td class="num " title="2025-10-16: $1M">1</td><td class="num " title="2026-02-09: $1M">1</td>
+</tr><tr><td><a href="../../stocks/TXT.html">TXT</a> <span class="small muted">TEXTRON INC</span></td>
+<td class="num new" title="2025-09-04: $1M">1</td><td class="num " title="2025-10-16: $1M">1</td><td class="num " title="2026-02-09: $1M">1</td>
+</tr><tr><td><a href="../../stocks/DIS.html">DIS</a> <span class="small muted">DISNEY WALT CO</span></td>
+<td class="num new" title="2025-09-04: $1M">1</td><td class="num " title="2025-10-16: $1M">1</td><td class="num " title="2026-02-09: $1M">1</td>
+</tr><tr><td>TFC <span class="small muted">TRUIST FINL CORP</span></td>
+<td class="num new" title="2025-09-04: $1M">1</td><td class="num " title="2025-10-16: $1M">1</td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/FCX.html">FCX</a> <span class="small muted">FREEPORT-MCMORAN INC</span></td>
+<td class="num new" title="2025-09-04: $1M">1</td><td class="num " title="2025-10-16: $1M">1</td><td class="num " title="2026-02-09: $1M">1</td>
+</tr><tr><td><a href="../../stocks/LLY.html">LLY</a> <span class="small muted">ELI LILLY & CO</span></td>
+<td class="num new" title="2025-09-04: $1M">1</td><td class="num " title="2025-10-16: $1M">1</td><td class="num " title="2026-02-09: $1M">1</td>
+</tr><tr><td><a href="../../stocks/MSFT.html">MSFT</a> <span class="small muted">MICROSOFT CORP</span></td>
+<td class="num new" title="2025-09-04: $1M">1</td><td class="num " title="2025-10-16: $1M">1</td><td class="num " title="2026-02-09: $1M">1</td>
+</tr><tr><td><a href="../../stocks/CSCO.html">CSCO</a> <span class="small muted">CISCO SYS INC</span></td>
+<td class="num new" title="2025-09-04: $1M">1</td><td class="num " title="2025-10-16: $1M">1</td><td class="num " title="2026-02-09: $1M">1</td>
+</tr><tr><td><a href="../../stocks/TGT.html">TGT</a> <span class="small muted">TARGET CORP</span></td>
+<td class="num new" title="2025-09-04: $1M">1</td><td class="num " title="2025-10-16: $1M">1</td><td class="num " title="2026-02-09: $1M">1</td>
+</tr><tr><td>OLN <span class="small muted">OLIN CORP</span></td>
+<td class="num new" title="2025-09-04: $1M">1</td><td class="num " title="2025-10-16: $1M">1</td><td class="num " title="2026-02-09: $1M">1</td>
+</tr>
+</tbody></table></div>
+<p class="small muted">Green = first disclosed (new buy) · brighter = larger position · blank = not held that quarter.</p>
+
 <h2>Quarter-by-quarter <span class="muted small">follow-the-filing</span></h2>
 <table><thead><tr><th>Entry</th><th>Exit</th><th class="num">Fund</th><th class="num">SPY</th><th class="num">Cov</th><th class="num">Names</th></tr></thead><tbody>
 <tr><td>2025-09-04</td><td>2025-10-16</td>
@@ -73,9 +192,9 @@
   <td class="num pos">+10.2%</td>
   <td class="num">+5.0%</td>
   <td class="num">97%</td>
-  <td class="num">49/52</td></tr><tr><td>2026-02-09</td><td>2026-07-06</td>
-  <td class="num pos">+3.9%</td>
-  <td class="num">+7.3%</td>
+  <td class="num">49/52</td></tr><tr><td>2026-02-09</td><td>2026-07-08</td>
+  <td class="num pos">+4.3%</td>
+  <td class="num">+7.8%</td>
   <td class="num">98%</td>
   <td class="num">52/54</td></tr>
 </tbody></table>

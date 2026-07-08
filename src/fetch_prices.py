@@ -11,8 +11,9 @@ for the per-ticker aggregates endpoint. Snapshots are permanently cached, so a c
 start fills only the missing days and steady state is a single call for the latest
 session.
 
-Output: per-ticker {t, c} bars written to AGGS_CACHE — the same shape fetch_charts,
-compute_momentum, and compute_performance already read (they only use t and c).
+Output: per-ticker {t, c[, v]} bars written to AGGS_CACHE — the shape fetch_charts,
+compute_momentum, and compute_performance read. "v" (volume) is carried only on days
+whose snapshot has it, feeding compute_momentum's up-vs-down-volume dot.
 
 Usage:
   python src/fetch_prices.py
@@ -47,7 +48,7 @@ def _epoch_ms(d: date) -> int:
     return int(datetime(d.year, d.month, d.day, tzinfo=timezone.utc).timestamp() * 1000)
 
 
-def run() -> None:
+def run(refresh_days: int = 0) -> None:
     cfg = load_config()
     pcfg = cfg["polygon"]
     benchmark = cfg["pipeline"]["benchmark_ticker"]
@@ -75,6 +76,17 @@ def run() -> None:
         for d in uncached:
             poly.grouped_daily(d, keep=keep)  # permanently cached; holidays marked empty
             prog.step(d.isoformat())
+
+        # One-time backfill: re-fetch the most recent `refresh_days` trading days so their
+        # snapshots carry volume (older close-only days feed the momentum volume dot). New
+        # days already store volume, so this is only needed once to seed the recent window.
+        if refresh_days:
+            recent = [d for d in days if (GROUPED_CACHE / f"{d.isoformat()}.json.gz").exists()][-refresh_days:]
+            log.info("Refreshing %d recent snapshots to backfill volume", len(recent))
+            rprog = Progress(len(recent), "snapshots refreshed", log, every=5)
+            for d in recent:
+                poly.grouped_daily(d, keep=keep, force=True)
+                rprog.step(d.isoformat())
     else:
         log.warning("POLYGON_API_KEY not set — building bars from cached snapshots only")
 
@@ -91,20 +103,29 @@ def run() -> None:
             continue  # empty file == non-trading-day marker
         n_days += 1
         t = _epoch_ms(date.fromisoformat(iso))
-        for ticker, close in snap.items():
+        for ticker, val in snap.items():
+            # Snapshots are [close, volume] (v2) or a bare close (v1, no volume).
+            close, vol = (val[0], val[1] if len(val) > 1 else 0) if isinstance(val, list) else (val, 0)
             if close is not None:
-                by_ticker[ticker].append((t, close))
+                by_ticker[ticker].append((t, close, vol))
 
     written = 0
     for ticker, series in by_ticker.items():
         series.sort()
-        save_json_gz(AGGS_CACHE / f"{ticker}.json.gz", [{"t": t, "c": c} for t, c in series])
+        # Keep bars minimal: only carry "v" when we actually have volume (recent v2 days).
+        bars = [({"t": t, "c": c, "v": v} if v else {"t": t, "c": c}) for t, c, v in series]
+        save_json_gz(AGGS_CACHE / f"{ticker}.json.gz", bars)
         written += 1
     log.info("Built close series for %d tickers from %d trading days", written, n_days)
 
 
 def main() -> None:
-    run()
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--refresh-days", type=int, default=0,
+                    help="re-fetch the last N cached trading days to backfill volume (one-time)")
+    args = ap.parse_args()
+    run(refresh_days=args.refresh_days)
 
 
 if __name__ == "__main__":

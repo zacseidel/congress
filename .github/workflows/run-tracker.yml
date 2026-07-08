@@ -7,10 +7,10 @@ name: Congressional Trades Tracker (standard)
 
 on:
   schedule:
-    # Mondays and Wednesdays at 08:23 UTC = ~2am MDT (summer) / ~1am MST (winter).
+    # Mondays at 08:23 UTC = ~2am MDT (summer) / ~1am MST (winter).
     # GitHub cron is fixed UTC and doesn't follow DST, so the local time drifts 1h.
     # Off the top of the hour on purpose: GitHub delays/drops :00 crons under load.
-    - cron: '23 8 * * 1,3'
+    - cron: '23 8 * * 1'
   workflow_dispatch:
     inputs:
       enrich_max:

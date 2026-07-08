@@ -1,5 +1,45 @@
 [
   {
+    "id": "f67155af7b9903b9976616d7cac5af905ac6d0ef51c6b67ff06cf5474416de02",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Modern Therapy Group launches virtual intensive outpatient program for mental health",
+    "author": "Not Specified",
+    "published_utc": "2026-06-24T22:54:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/06/24/3317219/0/en/Modern-Therapy-Group-launches-virtual-intensive-outpatient-program-for-mental-health.html",
+    "tickers": [
+      "CI",
+      "UNH"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/4fc04957-6a07-4bb9-aa56-6346632e23ac",
+    "description": "Modern Therapy Group has launched a virtual intensive outpatient program (IOP) for adults with depression, anxiety, trauma, and other mental health conditions. The program offers five days a week of clinician-led telehealth treatment, providing a middle ground between weekly therapy and inpatient care. Available in seven states with in-network coverage from major insurers including Blue Cross Blue Shield, Aetna, Cigna, and Optum/United.",
+    "keywords": [
+      "virtual intensive outpatient program",
+      "mental health treatment",
+      "telehealth",
+      "depression",
+      "anxiety",
+      "trauma",
+      "therapy"
+    ],
+    "insights": [
+      {
+        "ticker": "CI",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as an in-network insurance partner; the partnership is routine business practice with no material implications highlighted."
+      },
+      {
+        "ticker": "UNH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as an in-network insurance provider; the relationship is standard operational coverage with no strategic or financial implications discussed."
+      }
+    ]
+  },
+  {
     "id": "4af7b261bb5da7004351dfe8e829659ad684533e5a9f02136a039b4d917369bf",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -167,61 +207,6 @@
         "ticker": "BMRN",
         "sentiment": "neutral",
         "sentiment_reasoning": "Listed as a top holding (7.7% of AUM, $24.48M) in the fund's portfolio, representing an established biotech position."
-      }
-    ]
-  },
-  {
-    "id": "5c900b2c868adf12d32c1a7616972dc08192ba0dc815cdf9d59f65215ce95326",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Ushur Launches Voice-Guided Experience for Synchronized Voice and Visual Customer Interactions in Regulated Industries",
-    "author": "Ushur",
-    "published_utc": "2026-03-19T16:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/03/19/3259297/0/en/Ushur-Launches-Voice-Guided-Experience-for-Synchronized-Voice-and-Visual-Customer-Interactions-in-Regulated-Industries.html",
-    "tickers": [
-      "CI",
-      "AFL",
-      "UNM",
-      "UNMA"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/49a9e2b1-f557-4858-88f2-fb42a94add84",
-    "description": "Ushur announced Voice-Guided Experience, a new capability that enables organizations in regulated industries to guide customers through complex workflows using synchronized voice and mobile interactions. The AI-powered feature keeps voice conversations active while opening a synchronized mobile experience, allowing customers to speak or tap without switching channels. The platform supports 74 languages, maintains enterprise-grade compliance (HITRUST r2, SOC 2, HIPAA), and is designed to improve completion rates and reduce operational burden for healthcare, insurance, and financial services organizations.",
-    "keywords": [
-      "AI agents",
-      "voice-guided experience",
-      "omnichannel customer service",
-      "regulated industries",
-      "healthcare",
-      "insurance",
-      "compliance",
-      "HIPAA",
-      "customer experience",
-      "mobile integration"
-    ],
-    "insights": [
-      {
-        "ticker": "CI",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Cigna is mentioned as a customer relying on Ushur's platform, but the article provides no specific information about Cigna's performance, strategy, or outcomes related to this technology adoption."
-      },
-      {
-        "ticker": "AFL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Aflac is listed as a customer of Ushur's platform, but the article contains no specific details about Aflac's use case, results, or strategic implications."
-      },
-      {
-        "ticker": "UNM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Unum is mentioned as a customer relying on Ushur's platform, but the article provides no specific information about Unum's implementation or outcomes."
-      },
-      {
-        "ticker": "UNMA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Unum is mentioned as a customer relying on Ushur's platform, but the article provides no specific information about Unum's implementation or outcomes."
       }
     ]
   }

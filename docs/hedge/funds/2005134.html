@@ -7,6 +7,7 @@
  .wrap{max-width:1080px;margin:0 auto;padding:24px 20px 60px;}
  header.site{border-bottom:1px solid var(--line);background:var(--card);} header.site .wrap{padding:16px 20px;}
  header.site h1{font-size:18px;margin:0;} header.site a{color:inherit;}
+ nav.top{margin-top:6px;} nav.top a{margin-right:18px;font-size:14px;font-weight:600;color:var(--blue);}
  h2{font-size:19px;margin:26px 0 10px;} .muted{color:var(--muted);} .small{font-size:13px;}
  .stat-row{display:flex;gap:28px;flex-wrap:wrap;margin:10px 0;}
  .stat .n{font-size:24px;font-weight:600;} .stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
@@ -16,50 +17,168 @@
  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;} tr:last-child td{border-bottom:none;}
  .pos{color:var(--green);} .neg{color:var(--red);}
  .cols{display:flex;gap:20px;flex-wrap:wrap;} .cols>div{flex:1 1 320px;}
+ .scroll{overflow-x:auto;} h3{font-size:14px;margin:8px 0 6px;}
+ table.tl td, table.tl th{padding:5px 9px;} table.tl td.new{background:#dafbe1;font-weight:600;}
  footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:14px;}
 </style></head><body>
-<header class="site"><div class="wrap"><h1>📈 <a href="../index.html">Hedge — 13F Smart Money</a></h1></div></header>
+<header class="site"><div class="wrap"><h1>📈 <a href="../index.html">Hedge — 13F Smart Money</a></h1>
+  <nav class="top"><a href="../../index.html">💡 Dashboard</a><a href="../../congress.html">🏛️ Congress Trades</a><a href="../index.html">📈 Hedge Leaderboard</a></nav>
+</div></header>
 <div class="wrap">
 <p class="small muted"><a href="../index.html">&larr; Leaderboard</a> · CIK 2005134 · latest filing 2026-05-12</p>
 <h2>Arrow Capital Pty Ltd</h2>
 <div class="stat-row">
-  <div class="stat"><div class="n pos">+6.2%</div><div class="l">Alpha vs SPY</div></div>
-  <div class="stat"><div class="n">+28.4%</div><div class="l">Follow return</div></div>
-  <div class="stat"><div class="n">+22.1%</div><div class="l">SPY, same windows</div></div>
+  <div class="stat"><div class="n pos">+6.3%</div><div class="l">Alpha vs SPY</div></div>
+  <div class="stat"><div class="n">+28.9%</div><div class="l">Follow return</div></div>
+  <div class="stat"><div class="n">+22.6%</div><div class="l">SPY, same windows</div></div>
   <div class="stat"><div class="n">$0.1B</div><div class="l">Latest book</div></div>
   <div class="stat"><div class="n">98%</div><div class="l">Priced coverage</div></div>
 </div>
+
+<h2>What drove alpha <span class="muted small">each position&rsquo;s contribution to the +6% alpha vs SPY (weight &times; excess return)</span></h2>
+<div class="cols">
+<div><h3 class="muted small">Top contributors</h3>
+<table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Contribution</th><th class="num">Avg wt</th><th class="num">Qtrs</th></tr></thead><tbody>
+<tr><td><a href="../../stocks/HOOD.html">HOOD</a></td><td class="small">ROBINHOOD MKTS INC</td>
+  <td class="num pos">+3.9pp</td>
+  <td class="num">4%</td><td class="num">4</td></tr><tr><td><a href="../../stocks/NET.html">NET</a></td><td class="small">CLOUDFLARE INC</td>
+  <td class="num pos">+2.8pp</td>
+  <td class="num">5%</td><td class="num">1</td></tr><tr><td><a href="../../stocks/MT.html">MT</a></td><td class="small">ArcelorMittal SA</td>
+  <td class="num pos">+2.5pp</td>
+  <td class="num">3%</td><td class="num">2</td></tr><tr><td><a href="../../stocks/TSM.html">TSM</a></td><td class="small">TAIWAN SEMICONDUCTOR MFG LTD</td>
+  <td class="num pos">+1.8pp</td>
+  <td class="num">6%</td><td class="num">5</td></tr><tr><td><a href="../../stocks/DAL.html">DAL</a></td><td class="small">DELTA AIR LINES INC DEL</td>
+  <td class="num pos">+1.6pp</td>
+  <td class="num">6%</td><td class="num">6</td></tr><tr><td><a href="../../stocks/GOOGL.html">GOOGL</a></td><td class="small">ALPHABET INC</td>
+  <td class="num pos">+1.6pp</td>
+  <td class="num">7%</td><td class="num">2</td></tr><tr><td><a href="../../stocks/MPC.html">MPC</a></td><td class="small">MARATHON PETE CORP</td>
+  <td class="num pos">+1.5pp</td>
+  <td class="num">5%</td><td class="num">6</td></tr><tr><td><a href="../../stocks/DOW.html">DOW</a></td><td class="small">DOW INC</td>
+  <td class="num pos">+1.4pp</td>
+  <td class="num">4%</td><td class="num">1</td></tr><tr><td>NXE</td><td class="small">NEXGEN ENERGY LTD</td>
+  <td class="num pos">+1.4pp</td>
+  <td class="num">3%</td><td class="num">1</td></tr><tr><td><a href="../../stocks/CCJ.html">CCJ</a></td><td class="small">CAMECO CORP</td>
+  <td class="num pos">+1.1pp</td>
+  <td class="num">4%</td><td class="num">4</td></tr><tr><td><a href="../../stocks/RTX.html">RTX</a></td><td class="small">RTX CORPORATION</td>
+  <td class="num pos">+0.9pp</td>
+  <td class="num">4%</td><td class="num">2</td></tr><tr><td><a href="../../stocks/MRK.html">MRK</a></td><td class="small">MERCK & CO INC</td>
+  <td class="num pos">+0.9pp</td>
+  <td class="num">3%</td><td class="num">1</td></tr><tr><td><a href="../../stocks/C.html">C</a></td><td class="small">CITIGROUP INC</td>
+  <td class="num pos">+0.9pp</td>
+  <td class="num">5%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/DB.html">DB</a></td><td class="small">DEUTSCHE BANK A G</td>
+  <td class="num pos">+0.8pp</td>
+  <td class="num">4%</td><td class="num">1</td></tr><tr><td><a href="../../stocks/HUBB.html">HUBB</a></td><td class="small">HUBBELL INC</td>
+  <td class="num pos">+0.8pp</td>
+  <td class="num">4%</td><td class="num">1</td></tr>
+</tbody></table></div>
+<div><h3 class="muted small">Top detractors</h3>
+<table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Contribution</th><th class="num">Avg wt</th><th class="num">Qtrs</th></tr></thead><tbody>
+<tr><td><a href="../../stocks/SHOP.html">SHOP</a></td><td class="small">SHOPIFY INC</td>
+  <td class="num neg">-2.1pp</td>
+  <td class="num">4%</td><td class="num">4</td></tr><tr><td><a href="../../stocks/UBER.html">UBER</a></td><td class="small">UBER TECHNOLOGIES INC</td>
+  <td class="num neg">-2.1pp</td>
+  <td class="num">5%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/AA.html">AA</a></td><td class="small">ALCOA CORP</td>
+  <td class="num neg">-1.7pp</td>
+  <td class="num">3%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/WMT.html">WMT</a></td><td class="small">WALMART INC</td>
+  <td class="num neg">-1.3pp</td>
+  <td class="num">8%</td><td class="num">4</td></tr><tr><td><a href="../../stocks/BKR.html">BKR</a></td><td class="small">BAKER HUGHES COMPANY</td>
+  <td class="num neg">-1.3pp</td>
+  <td class="num">6%</td><td class="num">1</td></tr><tr><td><a href="../../stocks/NVO.html">NVO</a></td><td class="small">NOVO-NORDISK A S</td>
+  <td class="num neg">-1.3pp</td>
+  <td class="num">5%</td><td class="num">4</td></tr><tr><td><a href="../../stocks/MSFT.html">MSFT</a></td><td class="small">MICROSOFT CORP</td>
+  <td class="num neg">-1.2pp</td>
+  <td class="num">6%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/WFC.html">WFC</a></td><td class="small">WELLS FARGO CO NEW</td>
+  <td class="num neg">-1.1pp</td>
+  <td class="num">4%</td><td class="num">3</td></tr><tr><td><a href="../../stocks/CVX.html">CVX</a></td><td class="small">CHEVRON CORP NEW</td>
+  <td class="num neg">-0.9pp</td>
+  <td class="num">9%</td><td class="num">1</td></tr><tr><td><a href="../../stocks/BAC.html">BAC</a></td><td class="small">BANK AMERICA CORP</td>
+  <td class="num neg">-0.7pp</td>
+  <td class="num">5%</td><td class="num">2</td></tr>
+</tbody></table></div>
+</div>
+
 <div class="cols">
 <div><h2>New buys <span class="muted small">2026-02-20 → 2026-05-12</span></h2>
 <table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Value</th></tr></thead><tbody>
-<tr><td><a href="../../stocks/CVX.html" title="Congressional trades in CVX">CVX★</a></td><td class="small">Chevron Corp</td><td class="num">$8M</td></tr><tr><td><a href="../../stocks/KMI.html" title="Congressional trades in KMI">KMI★</a></td><td class="small">Kinder Morgan Inc</td><td class="num">$7M</td></tr><tr><td><span class="muted">G0593M…</span></td><td class="small">AstraZeneca PLC</td><td class="num">$6M</td></tr><tr><td><a href="../../stocks/DE.html" title="Congressional trades in DE">DE★</a></td><td class="small">Deere & Co</td><td class="num">$6M</td></tr><tr><td><a href="../../stocks/SE.html" title="Congressional trades in SE">SE★</a></td><td class="small">Sea Ltd</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/BKR.html" title="Congressional trades in BKR">BKR★</a></td><td class="small">Baker Hughes Co</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/ADM.html" title="Congressional trades in ADM">ADM★</a></td><td class="small">Archer-Daniels-Midland Co</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/HOOD.html" title="Congressional trades in HOOD">HOOD★</a></td><td class="small">Robinhood Markets Inc</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/NET.html" title="Congressional trades in NET">NET★</a></td><td class="small">Cloudflare Inc</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/AA.html" title="Congressional trades in AA">AA★</a></td><td class="small">Alcoa Corp</td><td class="num">$4M</td></tr><tr><td><a href="../../stocks/INTC.html" title="Congressional trades in INTC">INTC★</a></td><td class="small">Intel Corp</td><td class="num">$4M</td></tr>
+<tr><td><a href="../../stocks/CVX.html">CVX</a></td><td class="small">Chevron Corp</td><td class="num">$8M</td></tr><tr><td><a href="../../stocks/KMI.html">KMI</a></td><td class="small">Kinder Morgan Inc</td><td class="num">$7M</td></tr><tr><td><span class="muted">G0593M…</span></td><td class="small">AstraZeneca PLC</td><td class="num">$6M</td></tr><tr><td><a href="../../stocks/DE.html">DE</a></td><td class="small">Deere & Co</td><td class="num">$6M</td></tr><tr><td><a href="../../stocks/SE.html">SE</a></td><td class="small">Sea Ltd</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/BKR.html">BKR</a></td><td class="small">Baker Hughes Co</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/ADM.html">ADM</a></td><td class="small">Archer-Daniels-Midland Co</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/HOOD.html">HOOD</a></td><td class="small">Robinhood Markets Inc</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/NET.html">NET</a></td><td class="small">Cloudflare Inc</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/AA.html">AA</a></td><td class="small">Alcoa Corp</td><td class="num">$4M</td></tr><tr><td><a href="../../stocks/INTC.html">INTC</a></td><td class="small">Intel Corp</td><td class="num">$4M</td></tr>
 </tbody></table></div>
 <div><h2>Exits</h2>
 <table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Was</th></tr></thead><tbody>
-<tr><td><a href="../../stocks/WMT.html" title="Congressional trades in WMT">WMT★</a></td><td class="small">Walmart Inc</td><td class="num">$8M</td></tr><tr><td><a href="../../stocks/GOOGL.html" title="Congressional trades in GOOGL">GOOGL★</a></td><td class="small">Alphabet Inc</td><td class="num">$7M</td></tr><tr><td><a href="../../stocks/NVO.html" title="Congressional trades in NVO">NVO★</a></td><td class="small">Novo Nordisk A/S</td><td class="num">$7M</td></tr><tr><td><a href="../../stocks/C.html" title="Congressional trades in C">C★</a></td><td class="small">Citigroup Inc</td><td class="num">$6M</td></tr><tr><td><a href="../../stocks/CCJ.html" title="Congressional trades in CCJ">CCJ★</a></td><td class="small">Cameco Corp</td><td class="num">$6M</td></tr><tr><td>CRH</td><td class="small">CRH PLC</td><td class="num">$6M</td></tr><tr><td><a href="../../stocks/BAC.html" title="Congressional trades in BAC">BAC★</a></td><td class="small">Bank of America Corp</td><td class="num">$6M</td></tr><tr><td><a href="../../stocks/SHOP.html" title="Congressional trades in SHOP">SHOP★</a></td><td class="small">Shopify Inc</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/WFC.html" title="Congressional trades in WFC">WFC★</a></td><td class="small">Wells Fargo & Co</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/FCX.html" title="Congressional trades in FCX">FCX★</a></td><td class="small">Freeport-McMoRan Inc</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/MS.html" title="Congressional trades in MS">MS★</a></td><td class="small">Morgan Stanley</td><td class="num">$4M</td></tr>
+<tr><td><a href="../../stocks/WMT.html">WMT</a></td><td class="small">Walmart Inc</td><td class="num">$8M</td></tr><tr><td><a href="../../stocks/GOOGL.html">GOOGL</a></td><td class="small">Alphabet Inc</td><td class="num">$7M</td></tr><tr><td><a href="../../stocks/NVO.html">NVO</a></td><td class="small">Novo Nordisk A/S</td><td class="num">$7M</td></tr><tr><td><a href="../../stocks/C.html">C</a></td><td class="small">Citigroup Inc</td><td class="num">$6M</td></tr><tr><td><a href="../../stocks/CCJ.html">CCJ</a></td><td class="small">Cameco Corp</td><td class="num">$6M</td></tr><tr><td><a href="../../stocks/CRH.html">CRH</a></td><td class="small">CRH PLC</td><td class="num">$6M</td></tr><tr><td><a href="../../stocks/BAC.html">BAC</a></td><td class="small">Bank of America Corp</td><td class="num">$6M</td></tr><tr><td><a href="../../stocks/SHOP.html">SHOP</a></td><td class="small">Shopify Inc</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/WFC.html">WFC</a></td><td class="small">Wells Fargo & Co</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/FCX.html">FCX</a></td><td class="small">Freeport-McMoRan Inc</td><td class="num">$5M</td></tr><tr><td><a href="../../stocks/MS.html">MS</a></td><td class="small">Morgan Stanley</td><td class="num">$4M</td></tr>
 </tbody></table></div>
 </div>
 <h2>Largest holdings <span class="muted small">latest filing</span></h2>
 <table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Value</th><th class="num">% book</th></tr></thead><tbody>
-<tr><td><a href="../../stocks/CVX.html" title="Congressional trades in CVX">CVX★</a></td><td class="small">Chevron Corp</td>
-  <td class="num">$8M</td><td class="num">8.4%</td></tr><tr><td><a href="../../stocks/ETR.html" title="Congressional trades in ETR">ETR★</a></td><td class="small">Entergy Corp</td>
-  <td class="num">$8M</td><td class="num">8.3%</td></tr><tr><td><a href="../../stocks/AMZN.html" title="Congressional trades in AMZN">AMZN★</a></td><td class="small">Amazon.com Inc</td>
-  <td class="num">$8M</td><td class="num">8.0%</td></tr><tr><td><a href="../../stocks/KMI.html" title="Congressional trades in KMI">KMI★</a></td><td class="small">Kinder Morgan Inc</td>
-  <td class="num">$7M</td><td class="num">7.0%</td></tr><tr><td><a href="../../stocks/TSM.html" title="Congressional trades in TSM">TSM★</a></td><td class="small">Taiwan Semiconductor Manufacturing Co Ltd</td>
-  <td class="num">$7M</td><td class="num">6.6%</td></tr><tr><td><a href="../../stocks/DAL.html" title="Congressional trades in DAL">DAL★</a></td><td class="small">Delta Air Lines Inc</td>
-  <td class="num">$6M</td><td class="num">6.3%</td></tr><tr><td><span class="muted">G0593M…</span></td><td class="small">AstraZeneca PLC</td>
-  <td class="num">$6M</td><td class="num">5.8%</td></tr><tr><td><a href="../../stocks/DE.html" title="Congressional trades in DE">DE★</a></td><td class="small">Deere & Co</td>
-  <td class="num">$6M</td><td class="num">5.6%</td></tr><tr><td><a href="../../stocks/SE.html" title="Congressional trades in SE">SE★</a></td><td class="small">Sea Ltd</td>
-  <td class="num">$5M</td><td class="num">5.5%</td></tr><tr><td><a href="../../stocks/BKR.html" title="Congressional trades in BKR">BKR★</a></td><td class="small">Baker Hughes Co</td>
-  <td class="num">$5M</td><td class="num">5.5%</td></tr><tr><td><a href="../../stocks/ADM.html" title="Congressional trades in ADM">ADM★</a></td><td class="small">Archer-Daniels-Midland Co</td>
-  <td class="num">$5M</td><td class="num">5.0%</td></tr><tr><td><a href="../../stocks/MPC.html" title="Congressional trades in MPC">MPC★</a></td><td class="small">Marathon Petroleum Corp</td>
-  <td class="num">$5M</td><td class="num">4.9%</td></tr><tr><td><a href="../../stocks/HOOD.html" title="Congressional trades in HOOD">HOOD★</a></td><td class="small">Robinhood Markets Inc</td>
-  <td class="num">$5M</td><td class="num">4.9%</td></tr><tr><td><a href="../../stocks/NET.html" title="Congressional trades in NET">NET★</a></td><td class="small">Cloudflare Inc</td>
-  <td class="num">$5M</td><td class="num">4.9%</td></tr><tr><td><a href="../../stocks/WPM.html" title="Congressional trades in WPM">WPM★</a></td><td class="small">Wheaton Precious Metals Corp</td>
-  <td class="num">$5M</td><td class="num">4.6%</td></tr><tr><td><a href="../../stocks/AA.html" title="Congressional trades in AA">AA★</a></td><td class="small">Alcoa Corp</td>
-  <td class="num">$4M</td><td class="num">4.4%</td></tr><tr><td><a href="../../stocks/INTC.html" title="Congressional trades in INTC">INTC★</a></td><td class="small">Intel Corp</td>
+<tr><td><a href="../../stocks/CVX.html">CVX</a></td><td class="small">CHEVRON CORP NEW</td>
+  <td class="num">$8M</td><td class="num">8.4%</td></tr><tr><td><a href="../../stocks/ETR.html">ETR</a></td><td class="small">ENTERGY CORP NEW</td>
+  <td class="num">$8M</td><td class="num">8.3%</td></tr><tr><td><a href="../../stocks/AMZN.html">AMZN</a></td><td class="small">AMAZON COM INC</td>
+  <td class="num">$8M</td><td class="num">8.0%</td></tr><tr><td><a href="../../stocks/KMI.html">KMI</a></td><td class="small">KINDER MORGAN INC DEL</td>
+  <td class="num">$7M</td><td class="num">7.0%</td></tr><tr><td><a href="../../stocks/TSM.html">TSM</a></td><td class="small">TAIWAN SEMICONDUCTOR MFG LTD</td>
+  <td class="num">$7M</td><td class="num">6.6%</td></tr><tr><td><a href="../../stocks/DAL.html">DAL</a></td><td class="small">DELTA AIR LINES INC DEL</td>
+  <td class="num">$6M</td><td class="num">6.3%</td></tr><tr><td><span class="muted">G0593M…</span></td><td class="small">ASTRAZENECA PLC</td>
+  <td class="num">$6M</td><td class="num">5.8%</td></tr><tr><td><a href="../../stocks/DE.html">DE</a></td><td class="small">DEERE & CO</td>
+  <td class="num">$6M</td><td class="num">5.6%</td></tr><tr><td><a href="../../stocks/SE.html">SE</a></td><td class="small">SEA LTD</td>
+  <td class="num">$5M</td><td class="num">5.5%</td></tr><tr><td><a href="../../stocks/BKR.html">BKR</a></td><td class="small">BAKER HUGHES COMPANY</td>
+  <td class="num">$5M</td><td class="num">5.5%</td></tr><tr><td><a href="../../stocks/ADM.html">ADM</a></td><td class="small">ARCHER DANIELS MIDLAND CO</td>
+  <td class="num">$5M</td><td class="num">5.0%</td></tr><tr><td><a href="../../stocks/MPC.html">MPC</a></td><td class="small">MARATHON PETE CORP</td>
+  <td class="num">$5M</td><td class="num">4.9%</td></tr><tr><td><a href="../../stocks/HOOD.html">HOOD</a></td><td class="small">ROBINHOOD MKTS INC</td>
+  <td class="num">$5M</td><td class="num">4.9%</td></tr><tr><td><a href="../../stocks/NET.html">NET</a></td><td class="small">CLOUDFLARE INC</td>
+  <td class="num">$5M</td><td class="num">4.9%</td></tr><tr><td><a href="../../stocks/WPM.html">WPM</a></td><td class="small">WHEATON PRECIOUS METALS CORP</td>
+  <td class="num">$5M</td><td class="num">4.6%</td></tr><tr><td><a href="../../stocks/AA.html">AA</a></td><td class="small">ALCOA CORP</td>
+  <td class="num">$4M</td><td class="num">4.4%</td></tr><tr><td><a href="../../stocks/INTC.html">INTC</a></td><td class="small">INTEL CORP</td>
   <td class="num">$4M</td><td class="num">4.1%</td></tr>
 </tbody></table>
+<h2>Position timeline <span class="muted small">position value ($M) by 13F, quarter over quarter</span></h2>
+<div class="scroll"><table class="tl"><thead><tr><th>Ticker</th>
+<th class="num">Q4'24</th><th class="num">Q1'25</th><th class="num">Q2'25</th><th class="num">Q3'25</th><th class="num">Q4'25</th><th class="num">Q4'25</th><th class="num">Q1'26</th></tr></thead><tbody>
+<tr><td><a href="../../stocks/AMZN.html">AMZN</a> <span class="small muted">AMAZON COM INC</span></td>
+<td class="num new" title="2025-02-13: $5M">5</td><td class="num " title="2025-05-13: $4M">4</td><td class="num " title="2025-08-14: $12M">12</td><td class="num " title=""></td><td class="num " title="2026-02-17: $10M">10</td><td class="num " title="2026-02-20: $7M">7</td><td class="num " title="2026-05-12: $8M">8</td>
+</tr><tr><td><a href="../../stocks/DAL.html">DAL</a> <span class="small muted">DELTA AIR LINES INC DE</span></td>
+<td class="num new" title="2025-02-13: $4M">4</td><td class="num " title=""></td><td class="num " title="2025-08-14: $11M">11</td><td class="num " title="2025-11-14: $9M">9</td><td class="num " title="2026-02-17: $12M">12</td><td class="num " title="2026-02-20: $8M">8</td><td class="num " title="2026-05-12: $6M">6</td>
+</tr><tr><td><a href="../../stocks/WMT.html">WMT</a> <span class="small muted">WALMART INC</span></td>
+<td class="num new" title="2025-02-13: $9M">9</td><td class="num " title="2025-05-13: $6M">6</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title="2026-02-17: $12M">12</td><td class="num " title="2026-02-20: $8M">8</td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/TSM.html">TSM</a> <span class="small muted">TAIWAN SEMICONDUCTOR M</span></td>
+<td class="num new" title="2025-02-13: $3M">3</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title="2025-11-14: $6M">6</td><td class="num " title="2026-02-17: $11M">11</td><td class="num " title="2026-02-20: $8M">8</td><td class="num " title="2026-05-12: $7M">7</td>
+</tr><tr><td><a href="../../stocks/MSFT.html">MSFT</a> <span class="small muted">MICROSOFT CORP</span></td>
+<td class="num " title=""></td><td class="num new" title="2025-05-13: $7M">7</td><td class="num " title="2025-08-14: $11M">11</td><td class="num " title="2025-11-14: $9M">9</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/MPC.html">MPC</a> <span class="small muted">MARATHON PETE CORP</span></td>
+<td class="num " title=""></td><td class="num new" title="2025-05-13: $7M">7</td><td class="num " title="2025-08-14: $11M">11</td><td class="num " title="2025-11-14: $7M">7</td><td class="num " title="2026-02-17: $7M">7</td><td class="num " title="2026-02-20: $5M">5</td><td class="num " title="2026-05-12: $5M">5</td>
+</tr><tr><td><a href="../../stocks/JPM.html">JPM</a> <span class="small muted">JPMORGAN CHASE & CO.</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-08-14: $11M">11</td><td class="num " title="2025-11-14: $11M">11</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/WPM.html">WPM</a> <span class="small muted">WHEATON PRECIOUS METAL</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-11-14: $9M">9</td><td class="num " title="2026-02-17: $11M">11</td><td class="num " title="2026-02-20: $7M">7</td><td class="num " title="2026-05-12: $5M">5</td>
+</tr><tr><td><a href="../../stocks/GOOGL.html">GOOGL</a> <span class="small muted">ALPHABET INC</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2026-02-17: $11M">11</td><td class="num " title="2026-02-20: $7M">7</td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/ETR.html">ETR</a> <span class="small muted">ENTERGY CORP NEW</span></td>
+<td class="num new" title="2025-02-13: $4M">4</td><td class="num " title=""></td><td class="num " title="2025-08-14: $10M">10</td><td class="num " title="2025-11-14: $8M">8</td><td class="num " title="2026-02-17: $10M">10</td><td class="num " title="2026-02-20: $7M">7</td><td class="num " title="2026-05-12: $8M">8</td>
+</tr><tr><td><a href="../../stocks/NVO.html">NVO</a> <span class="small muted">NOVO-NORDISK A S</span></td>
+<td class="num new" title="2025-02-13: $3M">3</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title="2025-11-14: $6M">6</td><td class="num " title="2026-02-17: $10M">10</td><td class="num " title="2026-02-20: $7M">7</td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/PFE.html">PFE</a> <span class="small muted">PFIZER INC</span></td>
+<td class="num new" title="2025-02-13: $4M">4</td><td class="num " title=""></td><td class="num " title="2025-08-14: $7M">7</td><td class="num " title="2025-11-14: $10M">10</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/UBER.html">UBER</a> <span class="small muted">UBER TECHNOLOGIES INC</span></td>
+<td class="num " title=""></td><td class="num new" title="2025-05-13: $5M">5</td><td class="num " title="2025-08-14: $8M">8</td><td class="num " title="2025-11-14: $9M">9</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/KMI.html">KMI</a> <span class="small muted">KINDER MORGAN INC DEL</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-08-14: $9M">9</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title="2026-05-12: $7M">7</td>
+</tr><tr><td><a href="../../stocks/C.html">C</a> <span class="small muted">CITIGROUP INC</span></td>
+<td class="num " title=""></td><td class="num new" title="2025-05-13: $4M">4</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title="2026-02-17: $9M">9</td><td class="num " title="2026-02-20: $6M">6</td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/CCJ.html">CCJ</a> <span class="small muted">CAMECO CORP</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-08-14: $5M">5</td><td class="num " title="2025-11-14: $6M">6</td><td class="num " title="2026-02-17: $9M">9</td><td class="num " title="2026-02-20: $6M">6</td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/CVX.html">CVX</a> <span class="small muted">CHEVRON CORP NEW</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2026-05-12: $8M">8</td>
+</tr><tr><td><a href="../../stocks/CRH.html">CRH</a> <span class="small muted">CRH PLC</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-11-14: $7M">7</td><td class="num " title="2026-02-17: $8M">8</td><td class="num " title="2026-02-20: $6M">6</td><td class="num " title=""></td>
+</tr><tr><td>BAESY <span class="small muted">BAE Systems PLC</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-11-14: $8M">8</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/BAC.html">BAC</a> <span class="small muted">BANK AMERICA CORP</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2026-02-17: $8M">8</td><td class="num " title="2026-02-20: $6M">6</td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/MT.html">MT</a> <span class="small muted">ArcelorMittal SA</span></td>
+<td class="num " title=""></td><td class="num " title=""></td><td class="num new" title="2025-08-14: $8M">8</td><td class="num " title="2025-11-14: $5M">5</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title=""></td>
+</tr><tr><td><a href="../../stocks/HOOD.html">HOOD</a> <span class="small muted">ROBINHOOD MKTS INC</span></td>
+<td class="num " title=""></td><td class="num new" title="2025-05-13: $3M">3</td><td class="num " title="2025-08-14: $8M">8</td><td class="num " title="2025-11-14: $6M">6</td><td class="num " title=""></td><td class="num " title=""></td><td class="num " title="2026-05-12: $5M">5</td>
+</tr>
+</tbody></table></div>
+<p class="small muted">Green = first disclosed (new buy) · brighter = larger position · blank = not held that quarter.</p>
+
 <h2>Quarter-by-quarter <span class="muted small">follow-the-filing</span></h2>
 <table><thead><tr><th>Entry</th><th>Exit</th><th class="num">Fund</th><th class="num">SPY</th><th class="num">Cov</th><th class="num">Names</th></tr></thead><tbody>
 <tr><td>2025-02-13</td><td>2025-05-13</td>
@@ -86,9 +205,9 @@
   <td class="num pos">+4.3%</td>
   <td class="num">+7.1%</td>
   <td class="num">100%</td>
-  <td class="num">17/17</td></tr><tr><td>2026-05-12</td><td>2026-07-06</td>
-  <td class="num pos">+2.5%</td>
-  <td class="num">+0.9%</td>
+  <td class="num">17/17</td></tr><tr><td>2026-05-12</td><td>2026-07-08</td>
+  <td class="num pos">+2.9%</td>
+  <td class="num">+1.3%</td>
   <td class="num">94%</td>
   <td class="num">16/17</td></tr>
 </tbody></table>

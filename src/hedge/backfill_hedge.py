@@ -16,6 +16,13 @@ Usage:
   python src/hedge/backfill_hedge.py --top-n 50            # use existing pool, run 5 funds..N
   python src/hedge/backfill_hedge.py --discover --top-n 500
   python src/hedge/backfill_hedge.py --seed                # run the 9 hand-picked seed funds
+  python src/hedge/backfill_hedge.py --reprice             # weekly: re-mark existing holdings
+                                                           # to today's prices + re-render, no
+                                                           # EDGAR fetch (holdings unchanged)
+
+Cadence: 13F holdings only change quarterly, so run the full pipeline (with --discover)
+once a quarter. In between, --reprice updates returns/alpha and the pages as prices move,
+skipping the slow EDGAR stages (discover / fetch_13f / resolve_cusip / diff_holdings).
 """
 
 import argparse
@@ -32,6 +39,7 @@ import resolve_cusip
 import backtest_13f
 import rank_funds
 import diff_holdings
+import generate_hedge_stocks
 import generate_hedge_report
 
 log = setup_logging("backfill_hedge")
@@ -48,9 +56,25 @@ def _pool_ciks(top_n: int) -> list:
 
 
 def run(top_n: int = None, do_discover: bool = False, seed: bool = False,
-        discover_quarters: int = 3) -> None:
+        discover_quarters: int = 3, reprice: bool = False) -> None:
     cfg = load_config().get("hedge", {})
     top_n = top_n or cfg.get("candidate_pool_size", 1000)
+
+    # Weekly reprice: holdings are unchanged since the last quarterly fetch, so skip the
+    # EDGAR stages and just re-mark to current prices + re-render. changes.json (Q/Q new
+    # buys/exits) is likewise unchanged, so diff_holdings is skipped and its output reused.
+    if reprice:
+        log.info("[reprice] Re-marking existing holdings to current prices (no EDGAR fetch)")
+        log.info("[1/4] Backtesting mirror portfolios")
+        backtest_13f.run()
+        log.info("[2/4] Rendering per-stock pages")
+        generate_hedge_stocks.run()
+        log.info("[3/4] Ranking + rendering leaderboard")
+        rank_funds.run()
+        log.info("[4/4] Rendering per-fund pages")
+        generate_hedge_report.run()
+        log.info("Hedge reprice complete.")
+        return
 
     if do_discover:
         log.info("[1/5] Discovering + ranking filer universe")
@@ -72,16 +96,19 @@ def run(top_n: int = None, do_discover: bool = False, seed: bool = False,
     log.info("[3/5] Resolving CUSIPs")
     resolve_cusip.run()
 
-    log.info("[4/7] Backtesting mirror portfolios")
+    log.info("[4/8] Backtesting mirror portfolios")
     backtest_13f.run()
 
-    log.info("[5/7] Diffing quarter-over-quarter holdings")
+    log.info("[5/8] Diffing quarter-over-quarter holdings")
     diff_holdings.run()
 
-    log.info("[6/7] Ranking + rendering leaderboard")
+    log.info("[6/8] Rendering per-stock pages")
+    generate_hedge_stocks.run()
+
+    log.info("[7/8] Ranking + rendering leaderboard")
     rank_funds.run()
 
-    log.info("[7/7] Rendering per-fund pages")
+    log.info("[8/8] Rendering per-fund pages")
     generate_hedge_report.run()
     log.info("Hedge pipeline complete.")
 
@@ -92,9 +119,11 @@ def main() -> None:
     ap.add_argument("--discover", action="store_true", help="rebuild the filer universe + AUM ranking first")
     ap.add_argument("--seed", action="store_true", help="run the 9 hand-picked seed funds instead of the pool")
     ap.add_argument("--quarters", type=int, default=3)
+    ap.add_argument("--reprice", action="store_true",
+                    help="re-mark existing holdings to current prices + re-render, no EDGAR fetch")
     args = ap.parse_args()
     run(top_n=args.top_n, do_discover=args.discover, seed=args.seed,
-        discover_quarters=args.quarters)
+        discover_quarters=args.quarters, reprice=args.reprice)
 
 
 if __name__ == "__main__":

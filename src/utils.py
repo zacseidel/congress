@@ -380,7 +380,7 @@ class PolygonClient:
                     "aggregates failed for %s: %s", ticker, self._safe_err(e))
             return []
 
-    def grouped_daily(self, day: date, keep: Optional[set] = None) -> dict[str, float]:
+    def grouped_daily(self, day: date, keep: Optional[set] = None, force: bool = False) -> dict[str, float]:
         """
         {TICKER: close} for `day`. Permanently cached; empty file marks a known
         non-trading day. Falls back up to 4 prior days if `day` isn't a trading day.
@@ -389,14 +389,21 @@ class PolygonClient:
                 ever read congress-traded tickers + the benchmark). Tickers missing
                 from a pruned snapshot are priced from their own `aggs` history by
                 the caller, so no grouped re-fetch is ever needed for new names.
+        `force`: re-fetch `day` even if it's already cached, overwriting the snapshot
+                (used to backfill volume onto older close-only snapshots). Only the
+                exact `day` is forced; if that fetch fails the existing snapshot is
+                left untouched — no data-loss window.
         """
         for delta in range(5):
             target = day - timedelta(days=delta)
             cache_path = GROUPED_CACHE / f"{target.isoformat()}.json.gz"
-            if cache_path.exists():
+            forcing = force and delta == 0
+            if cache_path.exists() and not forcing:
                 data = load_json_gz(cache_path)
                 if data:
-                    return data
+                    # Snapshots store [close, volume] (v2); older ones are bare closes (v1).
+                    # This method's contract is {ticker: close}, so normalise either shape.
+                    return {t: (v[0] if isinstance(v, list) else v) for t, v in data.items()}
                 continue  # empty == non-trading day, try previous
             url = f"{self.BASE}/v2/aggs/grouped/locale/us/market/stocks/{target.isoformat()}"
             try:
@@ -411,22 +418,28 @@ class PolygonClient:
                 else:
                     logging.getLogger("polygon").warning(
                         "grouped_daily failed for %s: %s", target, self._safe_err(e))
+                # A forced re-fetch that fails must not destroy the existing snapshot.
+                if forcing and cache_path.exists():
+                    data = load_json_gz(cache_path)
+                    if data:
+                        return {t: (v[0] if isinstance(v, list) else v) for t, v in data.items()}
                 continue
             results = payload.get("results") or []
             if not results:
                 save_json_gz(cache_path, {})  # non-trading day marker
                 continue
             # Map Polygon symbols back to our ledger tickers (BRK.B -> BRKB) so share
-            # classes aren't dropped by the keep-set filter.
-            prices = {}
+            # classes aren't dropped by the keep-set filter. Store [close, volume] so the
+            # momentum step gets directional volume; return closes only (this contract).
+            snap = {}
             for r in results:
                 if "T" not in r or "c" not in r:
                     continue
                 t = TICKER_ALIASES_REV.get(r["T"], r["T"])
                 if keep is None or t in keep:
-                    prices[t] = r["c"]
-            save_json_gz(cache_path, prices)
+                    snap[t] = [r["c"], int(r.get("v") or 0)]  # volume is a share count
+            save_json_gz(cache_path, snap)
             logging.getLogger("polygon").info(
-                "Fetched grouped daily %s: %d tickers (kept)", target, len(prices))
-            return prices
+                "Fetched grouped daily %s: %d tickers (kept)", target, len(snap))
+            return {t: v[0] for t, v in snap.items()}
         return {}
