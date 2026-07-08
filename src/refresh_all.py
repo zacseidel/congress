@@ -55,6 +55,9 @@ def _run(label: str, script: str, args=None) -> None:
 
 def _push() -> None:
     log.info("=== Commit + push ===")
+    # Ensure the "ours" merge driver exists (a no-op that keeps our file) so the merge=ours
+    # rules in .gitattributes auto-resolve data/ and docs/ conflicts to local. Idempotent.
+    subprocess.run(["git", "config", "merge.ours.driver", "true"], cwd=str(ROOT))
     subprocess.run(["git", "add", "data/", "docs/"], cwd=str(ROOT))
     staged = subprocess.run(["git", "diff", "--staged", "--quiet"], cwd=str(ROOT))
     if staged.returncode == 0:
@@ -62,7 +65,9 @@ def _push() -> None:
         return
     from datetime import date
     subprocess.run(["git", "commit", "-m", f"Refresh reports {date.today().isoformat()}"], cwd=str(ROOT))
-    subprocess.run(["git", "pull", "--rebase", "--autostash", "origin", "main"], cwd=str(ROOT))
+    # Merge (NOT rebase): rebase swaps ours/theirs, which would invert merge=ours and keep
+    # the remote copies. A plain merge keeps local for every generated/data file.
+    subprocess.run(["git", "pull", "--no-rebase", "origin", "main"], cwd=str(ROOT))
     subprocess.run(["git", "push"], cwd=str(ROOT))
 
 
