@@ -1,0 +1,18 @@
+# On any merge conflict under data/ or docs/, always keep OUR (local) version.
+#
+# Rationale: this repo has two producers of these files — your local pipeline and the
+# GitHub Actions runs. Both regenerate the price caches, the rendered site, and the data
+# ledgers, so they collide on almost every file every time you pull. Local is the source
+# of truth (you run the full pipeline locally), so local always wins; anything CI fetched
+# is re-derived on your next run.
+#
+# This needs the "ours" merge driver defined locally (a no-op that keeps our file) and
+# pulls kept as merges (rebase swaps the meaning of ours/theirs):
+#   git config merge.ours.driver true
+#   git config pull.rebase false
+# src/refresh_all.py sets the driver automatically before it pushes. Source code
+# (src/, templates/, workflows, config) is intentionally NOT here — those only ever change
+# by hand, so a real conflict there should surface, not be silently discarded.
+
+data/**   merge=ours
+docs/**   merge=ours
