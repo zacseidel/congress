@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-08",
-  "n_total": 136,
-  "n_matched": 135,
+  "generated": "2026-07-13",
+  "n_total": 138,
+  "n_matched": 137,
   "match_rate": 99.3,
   "members": {
     "aderholt-robert-b": {
@@ -8709,6 +8709,161 @@
         "Semiconductors",
         "Software & Services",
         "Technology Hardware",
+        "Utilities"
+      ]
+    },
+    "wied-tony": {
+      "bioguide": "W000829",
+      "match_method": "state+district",
+      "matched_name": "Tony Wied",
+      "committees": [
+        {
+          "id": "HSPW",
+          "name": "House Committee on Transportation and Infrastructure",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSAG",
+          "name": "House Committee on Agriculture",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSSM",
+          "name": "House Committee on Small Business",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSAG15",
+          "name": "House Committee on Agriculture: Forestry and Horticulture",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSAG29",
+          "name": "House Committee on Agriculture: Livestock, Dairy, and Poultry",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSAG03",
+          "name": "House Committee on Agriculture: Nutrition and Foreign Agriculture",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSSM22",
+          "name": "House Committee on Small Business: Innovation, Entrepreneurship, and Workforce Development",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSSM21",
+          "name": "House Committee on Small Business: Rural Development, Energy, and Supply Chains",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSPW05",
+          "name": "House Committee on Transportation and Infrastructure: Aviation",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSPW02",
+          "name": "House Committee on Transportation and Infrastructure: Water Resources and Environment",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSPW12",
+          "name": "House Committee on Transportation and Infrastructure: Highways and Transit",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        }
+      ],
+      "industries": [
+        "Capital Goods",
+        "Energy",
+        "Food & Staples Retailing",
+        "Food, Beverage & Tobacco",
+        "Materials",
+        "Transportation",
+        "Utilities"
+      ]
+    },
+    "wittman-robert-j": {
+      "bioguide": "W000804",
+      "match_method": "state+district",
+      "matched_name": "Robert J. Wittman",
+      "committees": [
+        {
+          "id": "HSII",
+          "name": "House Committee on Natural Resources",
+          "type": "house",
+          "is_sub": false,
+          "title": "Vice Chair"
+        },
+        {
+          "id": "HSAS",
+          "name": "House Committee on Armed Services",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSII06",
+          "name": "House Committee on Natural Resources: Energy and Mineral Resources",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSII13",
+          "name": "House Committee on Natural Resources: Water, Wildlife and Fisheries",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSZS",
+          "name": "House Select Committee on the Strategic Competition Between the United States and the Chinese Communist Party",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSAS25",
+          "name": "House Committee on Armed Services: Tactical Air and Land Forces",
+          "type": "house",
+          "is_sub": true,
+          "title": "Chairman"
+        },
+        {
+          "id": "HSAS28",
+          "name": "House Committee on Armed Services: Seapower and Projection Forces",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        }
+      ],
+      "industries": [
+        "Capital Goods",
+        "Energy",
+        "Materials",
         "Utilities"
       ]
     }
