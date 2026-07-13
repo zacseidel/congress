@@ -30,12 +30,13 @@ import compute_performance
 import score_and_rank
 import build_graph
 import generate_report
+import generate_decisions
 from utils import load_config, setup_logging
 
 log = setup_logging("backfill")
 
 
-def run(lookback_days: int, enrich_max: int) -> None:
+def run(lookback_days: int, enrich_max: int, skip_ocr: bool = False) -> None:
     # Phase 1 — produce the leaderboard fast. Returns come from grouped-daily
     # pricing and need no Polygon enrichment, so render a complete report first.
     log.info("[1/10] fetch House ===========================================")
@@ -44,8 +45,15 @@ def run(lookback_days: int, enrich_max: int) -> None:
     fetch_senate.run(lookback_days)
     log.info("[3/10] fetch committees ======================================")
     fetch_committees.run()
-    log.info("[3.5/10] OCR scanned House PTRs (capped, resumable) ==========")
-    ocr_scanned.run()
+    if skip_ocr:
+        # OCR is slow and runs locally only (CI is OCR-free — see full-refresh.yml and
+        # the retired schedule in ocr.yml). The report surfaces the resulting backlog.
+        log.info("[3.5/10] OCR skipped (--skip-ocr) — runs locally only =======")
+    else:
+        # Local run: drain the ENTIRE paper-filing queue (House + Senate), not the small
+        # per-run cap CI used to use. Resumable, so interrupting is safe.
+        log.info("[3.5/10] OCR scanned PTRs (House + Senate, full queue) =======")
+        ocr_scanned.run(max_filings=0)
     log.info("[3.7/10] prices (grouped-daily → per-ticker close bars) =======")
     fetch_prices.run()
     log.info("[4/10] performance (pricing all disclosure dates) ============")
@@ -56,6 +64,8 @@ def run(lookback_days: int, enrich_max: int) -> None:
     build_graph.run()
     log.info("[7/10] report (leaderboard + map ready) ======================")
     generate_report.run()
+    log.info("[7.5/10] personal decisions page (positions.md) =============")
+    generate_decisions.run()
     log.info(">>> Leaderboard, skill map and network are live in docs/ — open them while enrichment runs.")
 
     # Phase 2 — slow on the free tier (~4 Polygon calls/ticker at 5/min). This
@@ -82,8 +92,10 @@ def main() -> None:
     ap.add_argument("--lookback-days", type=int, default=cfg["pipeline"]["lookback_days"])
     ap.add_argument("--enrich-max", type=int, default=10_000,
                     help="max new tickers to enrich this pass (default: effectively all)")
+    ap.add_argument("--skip-ocr", action="store_true",
+                    help="skip OCR of scanned House PTRs (CI uses this; OCR runs locally only)")
     args = ap.parse_args()
-    run(args.lookback_days, args.enrich_max)
+    run(args.lookback_days, args.enrich_max, args.skip_ocr)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %}Decisions — Personal Positions{% endblock %}
+{% block content %}
+<p class="small"><a href="{{ root }}index.html">← Dashboard</a></p>
+<h2>Position Decisions</h2>
+<p class="muted">My own open and closed positions with reasoning, priced against {{ benchmark }}.
+   Figures are per-share price performance (no position sizing); <strong>alpha</strong> = the
+   position's return minus {{ benchmark }} over the same window. Sectioned by the quarter each
+   position was <strong>opened</strong>. Generated {{ generated }}.</p>
+
+<div class="stat-row card">
+  <div class="stat"><div class="n">{{ n_open }}</div><div class="l">Open positions</div></div>
+  <div class="stat"><div class="n">{{ n_closed }}</div><div class="l">Closed positions</div></div>
+  <div class="stat"><div class="n {{ cls(stats.avg_alpha_open) }}">{{ pct(stats.avg_alpha_open) }}</div><div class="l">Avg alpha · open</div></div>
+  <div class="stat"><div class="n {{ cls(stats.avg_alpha_closed) }}">{{ pct(stats.avg_alpha_closed) }}</div><div class="l">Avg alpha · closed (held)</div></div>
+</div>
+
+<h2>🟢 Open positions</h2>
+{% if open_quarters %}
+{% for q in open_quarters %}
+<details class="fold" open>
+  <summary><h2>{{ q.quarter }} <span class="muted small">({{ q.rows|length }} open)</span></h2></summary>
+  <table class="sortable">
+    <thead><tr>
+      <th>Ticker</th><th>Opened</th><th>Held</th>
+      <th class="num">Entry</th><th class="num">Current</th>
+      <th class="num">Return</th><th class="num">{{ benchmark }}</th><th class="num">Alpha</th><th>Notes</th>
+    </tr></thead>
+    <tbody>
+    {% for r in q.rows %}
+      <tr>
+        <td>{{ r.ticker }}</td>
+        <td>{{ r.open_date }}</td>
+        <td class="small muted">{{ r.held }}</td>
+        <td class="num">{{ usd(r.entry) }}</td>
+        <td class="num">{{ usd(r.current) }}</td>
+        <td class="num {{ cls(r.ret) }}" data-v="{{ r.ret if r.ret is not none else -9999 }}">{{ pct(r.ret) }}</td>
+        <td class="num {{ cls(r.spy_ret) }}" data-v="{{ r.spy_ret if r.spy_ret is not none else -9999 }}">{{ pct(r.spy_ret) }}</td>
+        <td class="num {{ cls(r.alpha) }}" data-v="{{ r.alpha if r.alpha is not none else -9999 }}">{{ pct(r.alpha) }}</td>
+        <td class="small">{{ r.notes }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</details>
+{% endfor %}
+{% else %}<p class="muted">No open positions.</p>{% endif %}
+
+<h2>🔴 Closed positions</h2>
+<p class="muted small">Two windows per position: <strong>held</strong> (open → close) and
+  <strong>since close</strong> (close → now) — each against {{ benchmark }}.</p>
+{% if closed_quarters %}
+{% for q in closed_quarters %}
+<details class="fold" open>
+  <summary><h2>{{ q.quarter }} <span class="muted small">({{ q.rows|length }} closed)</span></h2></summary>
+  <div class="scroll">
+  <table class="sortable">
+    <thead><tr>
+      <th>Ticker</th><th>Opened</th><th>Closed</th><th>Held</th>
+      <th class="num">Entry</th><th class="num">Close</th>
+      <th class="num">Return</th><th class="num">{{ benchmark }}</th><th class="num">Alpha</th>
+      <th class="num">Current</th><th class="num">Since close</th><th class="num">{{ benchmark }} since</th><th class="num">Alpha since</th>
+      <th>Notes</th>
+    </tr></thead>
+    <tbody>
+    {% for r in q.rows %}
+      <tr>
+        <td>{{ r.ticker }}</td>
+        <td>{{ r.open_date }}</td>
+        <td>{{ r.close_date }}</td>
+        <td class="small muted">{{ r.held }}</td>
+        <td class="num">{{ usd(r.entry) }}</td>
+        <td class="num">{{ usd(r.close_px) }}</td>
+        <td class="num {{ cls(r.ret_held) }}" data-v="{{ r.ret_held if r.ret_held is not none else -9999 }}">{{ pct(r.ret_held) }}</td>
+        <td class="num {{ cls(r.spy_held) }}" data-v="{{ r.spy_held if r.spy_held is not none else -9999 }}">{{ pct(r.spy_held) }}</td>
+        <td class="num {{ cls(r.alpha_held) }}" data-v="{{ r.alpha_held if r.alpha_held is not none else -9999 }}">{{ pct(r.alpha_held) }}</td>
+        <td class="num">{{ usd(r.current) }}</td>
+        <td class="num {{ cls(r.ret_since) }}" data-v="{{ r.ret_since if r.ret_since is not none else -9999 }}">{{ pct(r.ret_since) }}</td>
+        <td class="num {{ cls(r.spy_since) }}" data-v="{{ r.spy_since if r.spy_since is not none else -9999 }}">{{ pct(r.spy_since) }}</td>
+        <td class="num {{ cls(r.alpha_since) }}" data-v="{{ r.alpha_since if r.alpha_since is not none else -9999 }}">{{ pct(r.alpha_since) }}</td>
+        <td class="small">{{ r.notes }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</details>
+{% endfor %}
+{% else %}<p class="muted">No closed positions.</p>{% endif %}
+
+<p class="small disclaimer" style="margin-top:24px">
+  Personal positions and reasoning, shown for tracking / education only — not investment advice.
+  Returns use adjusted closing prices on/after each date and reflect price only (no position
+  sizing, taxes, or fees). "Current" is the latest available close and may lag by a day.
+</p>
+{% endblock %}

@@ -39,7 +39,10 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Backfill (full pipeline, all tickers)
-        run: python src/backfill.py --enrich-max ${{ github.event.inputs.enrich_max || 10000 }}
+        # --skip-ocr: OCR of scanned House PTRs runs locally only, never on CI. The
+        # report surfaces the backlog (data/ocr_state.json); drain it with
+        # `python src/ocr_scanned.py` on your machine.
+        run: python src/backfill.py --skip-ocr --enrich-max ${{ github.event.inputs.enrich_max || 10000 }}
         env:
           HTTP_USER_AGENT: ${{ secrets.HTTP_USER_AGENT }}
           POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}

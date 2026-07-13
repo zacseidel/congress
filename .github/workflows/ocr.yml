@@ -1,17 +1,17 @@
 name: OCR scanned House PTRs
 
-# Dedicated, decoupled OCR pipeline. OCR of scanned (paper) House PTRs is slow
-# (~2 min/filing on a hosted runner) and used to make the standard run-tracker
-# workflow take ~an hour. It runs on its own schedule here so the frequent
-# leaderboard/report refresh stays fast; each run drains a capped, resumable slice
-# of the queue (config ocr.max_filings_per_run) and commits the new ledger rows,
-# which run-tracker picks up on its next run.
+# Dedicated OCR pipeline for scanned (paper) House PTRs. OCR is slow (~2 min/filing
+# on a hosted runner), so it now runs LOCALLY only — the daily schedule was retired
+# to keep it off GitHub's runners. Run `python src/ocr_scanned.py` on your machine to
+# drain the queue; the report surfaces the remaining backlog (data/ocr_state.json).
+#
+# This workflow is kept as a MANUAL escape hatch (workflow_dispatch) in case you ever
+# want CI to catch up the queue. Each run drains a capped, resumable slice (config
+# ocr.max_filings_per_run) and commits the new ledger rows.
 
 on:
-  schedule:
-    # Daily at 09:41 UTC. Off the top of the hour (GitHub delays/drops :00 crons)
-    # and clear of run-tracker (08:23 Mon/Wed) so their pushes don't collide.
-    - cron: '41 9 * * *'
+  # No schedule: OCR runs locally. Trigger from the Actions tab only if you need CI to
+  # process the backlog. To re-enable automatic runs, restore a `schedule:` cron here.
   workflow_dispatch:
     inputs:
       max_filings:

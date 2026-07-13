@@ -58,8 +58,8 @@ TEMPLATE = """<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 </style></head><body>
 <header class="site"><div class="wrap">
   <h1>💡 Smart Money Dashboard</h1>
-  <div class="sub">Ranked by share of <em>total alpha produced</em> — where Congress and top hedge funds actually made their edge. Updated {{ generated }}</div>
-  <nav class="top"><a class="here" href="index.html">💡 Dashboard</a><a href="congress.html">🏛️ Congress Trades</a><a href="hedge/index.html">📈 Hedge Fund 13Fs</a></nav>
+  <div class="sub">Ranked by share of <em>total alpha produced</em> — where Congress and top hedge funds actually made their edge. Updated {{ generated }}{% if hedge_wave %} · latest 13F filing wave <b>{{ hedge_wave }}</b>{% endif %}</div>
+  <nav class="top"><a class="here" href="index.html">💡 Dashboard</a><a href="congress.html">🏛️ Congress Trades</a><a href="hedge/index.html">📈 Hedge Fund 13Fs</a><a href="decisions.html">🎯 Decisions</a></nav>
 </div></header>
 <div class="wrap">
 
@@ -102,6 +102,9 @@ TEMPLATE = """<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
   <div class="cardlink"><h3>📈 Hedge Fund 13Fs</h3>
     <div class="small muted">{{ n_hedge_funds }} funds ranked · mirror-portfolio alpha vs SPY</div>
     <div style="margin-top:8px"><a href="hedge/index.html">Leaderboard</a><a href="hedge/index.html">Top funds &amp; drivers</a></div></div>
+  <div class="cardlink"><h3>🎯 Decisions</h3>
+    <div class="small muted">My own open &amp; closed positions, priced vs SPY</div>
+    <div style="margin-top:8px"><a href="decisions.html">Position tracker</a></div></div>
 </div>
 
 <footer>Alpha attribution: each stock's summed contribution to the total alpha of the ranked funds /
@@ -170,6 +173,15 @@ def run() -> None:
     if (DATA_DIR / "rankings.json").exists():
         page_tickers |= set(load_json(DATA_DIR / "rankings.json").get("stocks", {}).keys())
 
+    # Latest 13F filing wave (e.g. "2025Q4"), from the hedge snapshot index — stamps the
+    # dashboard so the vintage of the hedge signal is clear, not just the render time.
+    hedge_wave = None
+    ri_path = DATA_DIR / "hedge" / "report_index.json"
+    if ri_path.exists():
+        ri = load_json(ri_path)
+        if ri:
+            hedge_wave = ri[0].get("quarter")
+
     def clink(ticker: str) -> str:
         return f'<a href="stocks/{ticker}.html">{ticker}</a>' if ticker in page_tickers else ticker
 
@@ -184,7 +196,7 @@ def run() -> None:
     tmpl.globals["flink"] = flink
     html = tmpl.render(generated=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
                        convergence=convergence[:30], hedge_top=hedge_top, congress_top=congress_top,
-                       n_hedge_funds=n_hedge_funds)
+                       n_hedge_funds=n_hedge_funds, hedge_wave=hedge_wave)
     DOCS.mkdir(parents=True, exist_ok=True)
     (DOCS / "index.html").write_text(html)
     log.info("Dashboard: %d convergence (of %d hedge / %d congress alpha stocks) -> %s",

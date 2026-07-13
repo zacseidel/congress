@@ -29,6 +29,10 @@ UNPARSED_PATH = DATA_DIR / "unparsed_filings.json"
 # Filings reviewed by hand and dismissed as "not applicable" (no public-equity trades),
 # so the fetchers don't re-flag them into the queue on the next run.
 REVIEWED_PATH = DATA_DIR / "reviewed_filings.json"
+# Freshness stamp written by ocr_scanned.run() (last_run date + counts). OCR now runs
+# locally only (removed from CI), so the report reads this to show how current the
+# scanned-filing backlog is.
+OCR_STATE_PATH = DATA_DIR / "ocr_state.json"
 CACHE_DIR = DATA_DIR / "cache"
 POLYGON_CACHE = CACHE_DIR / "polygon"          # ticker details
 FINANCIALS_CACHE = CACHE_DIR / "financials"

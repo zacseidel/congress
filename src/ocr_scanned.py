@@ -1,39 +1,54 @@
 from __future__ import annotations
 
 """
-OCR scanned (paper) House PTRs from the review queue straight into the ledger.
+OCR scanned (paper) PTRs from the review queue straight into the ledger.
 
-Walks `data/unparsed_filings.json` (House paper filings only — they have direct PDF
-links and a known form), OCRs each with `ocr_ptr`, and:
+Walks `data/unparsed_filings.json` and OCRs each paper filing with `ocr_ptr`:
+  - House filings are direct PDFs on the grid form -> ocr_ptr.extract_filing;
+  - Senate filings are page-image GIFs behind the eFD viewer, on a typed
+    "Stock Act Transaction" list -> ocr_ptr.extract_senate_pages.
 
+For each filing it then:
   - writes the extracted equity rows to `data/transactions.json`, tagged
     `entered_by="ocr"` (with a `match_score`) so they're distinguishable and revertible;
   - removes the filing from the queue;
-  - if a filing yields no public stocks (cash/crypto/talent-firm payments, attachment
-    sheets), records its DocID in `data/reviewed_filings.json` so it isn't re-flagged.
+  - if a filing yields no public stocks (cash/crypto/private LLC/trust interests,
+    attachment sheets), records its DocID in `data/reviewed_filings.json` so it isn't
+    re-flagged.
 
 OCR is slow, so each run is capped (config `ocr.max_filings_per_run`) and resumable —
-processed filings leave the queue, so re-running continues where it left off.
+processed filings leave the queue, so re-running continues where it left off. Pass
+`--max-filings 0` to drain the whole queue (used by local runs).
 
 Usage:
   python src/ocr_scanned.py [--max-filings N] [--member SUBSTR]
 """
 
 import argparse
+import io
+import re
 import sys
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
 from pathlib import Path
 
+import numpy as np
+from PIL import Image
+
 sys.path.insert(0, str(Path(__file__).parent))
+import fetch_senate
 import ocr_ptr
-from utils import (LEDGER_PATH, REVIEWED_PATH, UNPARSED_PATH, Progress, http_session,
-                   load_config, load_json, save_json, setup_logging)
+from utils import (LEDGER_PATH, OCR_STATE_PATH, REVIEWED_PATH, UNPARSED_PATH, Progress,
+                   http_session, load_config, load_json, save_json, setup_logging)
 
 log = setup_logging("ocr_scanned")
 
 _local = threading.local()
+
+# Senate paper filings serve one scanned GIF per page from efd-media-public, linked from
+# the /search/view/paper/ page (which needs an accepted eFD site agreement to load).
+_SEN_GIF_RE = re.compile(r"https://efd-media-public[^\"']+\.gif", re.I)
 
 
 def _session():
@@ -41,6 +56,19 @@ def _session():
     s = getattr(_local, "session", None)
     if s is None:
         s = _local.session = http_session()
+    return s
+
+
+def _senate_session():
+    """Per-thread eFD session with the site agreement already accepted (required before
+    the Senate viewer will serve paper-filing pages)."""
+    s = getattr(_local, "sen_session", None)
+    if s is None:
+        s = _local.sen_session = http_session()
+        try:
+            fetch_senate.accept_agreement(s)
+        except Exception as e:
+            log.warning("Senate eFD agreement failed: %s", e)
     return s
 
 
@@ -55,9 +83,44 @@ def _download(url: str, session) -> bytes | None:
     return None
 
 
-def _process(rec, smap, keys, dpi):
+def _senate_pages(view_url: str) -> list[np.ndarray] | None:
+    """Resolve a Senate paper filing's page-image GIFs and decode them to grayscale
+    arrays. Returns None (leave queued for retry) if the page or images won't load."""
+    s = _senate_session()
+    try:
+        html = s.get(view_url, timeout=30).text
+    except Exception as e:
+        log.warning("senate view %s failed: %s", view_url, e)
+        return None
+    urls = list(dict.fromkeys(_SEN_GIF_RE.findall(html)))
+    if not urls:
+        return None                        # couldn't resolve images — retry next run
+    pages = []
+    for u in urls:
+        content = _download(u, s)
+        if content:
+            try:
+                pages.append(np.array(Image.open(io.BytesIO(content)).convert("L")))
+            except Exception as e:
+                log.warning("senate gif %s decode failed: %s", u, e)
+    return pages or None
+
+
+def _process(rec, smap, keys, dpi, valid_tickers):
     """Download + OCR one filing (runs in a worker thread; no shared-state writes).
-    Returns the extracted rows, or None to leave the filing queued for retry."""
+    Returns the extracted rows, [] to dismiss (no public stocks), or None to leave the
+    filing queued for retry. House filings are direct PDFs; Senate filings are page-image
+    GIFs parsed by the typed-list extractor."""
+    if rec.get("chamber") == "senate":
+        pages = _senate_pages(rec["source_url"])
+        if pages is None:
+            return None                    # transient — leave in queue, retry next run
+        try:
+            return ocr_ptr.extract_senate_pages(pages, smap, keys, rec["disclosure_date"],
+                                                valid_tickers)
+        except Exception as e:
+            log.warning("Senate OCR failed for %s (%s): %s", rec["doc_id"], rec["member"], e)
+            return None
     pdf = _download(rec["source_url"], _session())
     if not pdf:
         return None                        # transient — leave in queue, retry next run
@@ -84,15 +147,18 @@ def run(max_filings: int | None = None, member_filter: str | None = None) -> Non
 
     smap = ocr_ptr.build_stock_map()
     keys = list(smap)
-    log.info("Stock dictionary: %d names", len(smap))
+    valid_tickers = set(smap.values())     # Senate parenthesised-symbol validation set
+    log.info("Stock dictionary: %d names, %d tickers", len(smap), len(valid_tickers))
 
-    # House paper filings only (direct PDF + known form). Group a member's filings
-    # together (oldest first) for deterministic, resumable progress.
-    queue = [(k, v) for k, v in unparsed.items() if v.get("chamber") == "house"
+    # House paper filings are direct PDFs (grid form); Senate paper filings are page-image
+    # GIFs (typed-list form). Both are handled — group a member's filings together (oldest
+    # first) for deterministic, resumable progress.
+    queue = [(k, v) for k, v in unparsed.items()
+             if v.get("chamber") in ("house", "senate")
              and (not member_filter or member_filter.lower() in v["member"].lower())]
     queue.sort(key=lambda kv: (kv[1]["member"], kv[1]["disclosure_date"]))
     todo = queue[:max_filings] if max_filings else queue
-    log.info("OCR queue: %d House paper filings pending, processing %d this run",
+    log.info("OCR queue: %d paper filings pending (House PDF + Senate GIF), processing %d this run",
              len(queue), len(todo))
 
     # OCR is CPU-bound and shells out to tesseract/poppler (which release the GIL), so
@@ -103,7 +169,8 @@ def run(max_filings: int | None = None, member_filter: str | None = None) -> Non
     n_filings = n_rows = n_dismissed = 0
 
     with ThreadPoolExecutor(max_workers=workers) as ex:
-        futs = {ex.submit(_process, rec, smap, keys, dpi): (key, rec) for key, rec in todo}
+        futs = {ex.submit(_process, rec, smap, keys, dpi, valid_tickers): (key, rec)
+                for key, rec in todo}
         for fut in as_completed(futs):
             key, rec = futs[fut]
             prog.step(f"{rec['member']} {rec['disclosure_date']}")
@@ -136,18 +203,29 @@ def run(max_filings: int | None = None, member_filter: str | None = None) -> Non
             unparsed.pop(key, None)
             n_filings += 1
 
+    remaining = sum(1 for v in unparsed.values() if v.get("chamber") in ("house", "senate"))
     save_json(LEDGER_PATH, ledger)
     save_json(UNPARSED_PATH, unparsed)
     save_json(REVIEWED_PATH, sorted(set(reviewed)))
+    # Freshness stamp for the report banner: when OCR last ran and what's left in the
+    # queue. Written every run (even a no-op) so the report can tell "up to date" from
+    # "backlog, last processed N days ago". See utils.OCR_STATE_PATH.
+    save_json(OCR_STATE_PATH, {
+        "last_run": run_stamp,
+        "processed": n_filings,
+        "rows_added": n_rows,
+        "dismissed": n_dismissed,
+        "queue_remaining": remaining,
+    })
     log.info("OCR: %d filings -> %d equity rows; %d filings had no public stocks "
-             "(dismissed). %d House paper filings still queued.",
-             n_filings, n_rows, n_dismissed,
-             sum(1 for v in unparsed.values() if v.get("chamber") == "house"))
+             "(dismissed). %d paper filings still queued.",
+             n_filings, n_rows, n_dismissed, remaining)
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="OCR scanned House PTRs into the ledger.")
-    ap.add_argument("--max-filings", type=int, default=None, help="cap filings this run")
+    ap = argparse.ArgumentParser(description="OCR scanned House + Senate PTRs into the ledger.")
+    ap.add_argument("--max-filings", type=int, default=None,
+                    help="cap filings this run (0 = drain the whole queue)")
     ap.add_argument("--member", help="only filings whose member name contains this text")
     args = ap.parse_args()
     run(args.max_filings, args.member)

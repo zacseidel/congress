@@ -17,8 +17,12 @@ refresh_all.py with the matching flag:
 
 Detection: compare the filing wave the calendar says should be available now against the
 newest wave we've actually ingested (max quarter in data/hedge/report_index.json, written
-by rank_funds). A new wave that we haven't fetched -> full update. The full fetch is
-incremental, so if it re-triggers while a wave is still landing it only pulls what's new.
+by rank_funds). A new wave that we haven't fetched -> full update. Because 13Fs keep
+arriving through and just after the ~45-day deadline (deadline-day filers, amendments,
+newly-qualifying funds), the full path also stays on for a DISCOVER_GRACE_DAYS landing tail
+past the deadline even once the wave is ingested — so late/new filers get picked up in the
+same wave rather than waiting a quarter. The full fetch is incremental, so these re-runs
+only pull what's new.
 
 Usage:
   python src/update.py                  # auto: reprice normally, full after a new 13F wave
@@ -41,10 +45,17 @@ log = setup_logging("update")
 ROOT = Path(__file__).parent.parent
 REPORT_INDEX = DATA_DIR / "hedge" / "report_index.json"
 FILING_DEADLINE_DAYS = 45   # 13F-HR is due ~45 days after the reporting quarter ends
+DISCOVER_GRACE_DAYS = 10    # keep re-discovering this long past the deadline (landing tail)
 
 
 def _quarter(d: date) -> str:
     return f"{d.year}Q{(d.month - 1) // 3 + 1}"
+
+
+def _wave_deadline(today: date) -> date:
+    """The ~45-day 13F deadline for the wave that becomes current in today's quarter."""
+    qstart = date(today.year, ((today.month - 1) // 3) * 3 + 1, 1)
+    return qstart + timedelta(days=FILING_DEADLINE_DAYS)
 
 
 def expected_filing_wave(today: date) -> str:
@@ -79,6 +90,14 @@ def decide(today: date, force_full: bool, force_reprice: bool) -> tuple[bool, st
         return True, "no hedge data yet — cold start, running full 13F fetch"
     if expected > have:
         return True, f"new 13F wave available ({expected}; last ingested {have})"
+    # Landing tail: the wave is ingested, but 13Fs keep arriving through and shortly after
+    # the deadline (deadline-day filers EDGAR hadn't published, amendments, newly-qualifying
+    # funds). Keep running the full discover for DISCOVER_GRACE_DAYS past the deadline so
+    # those get pulled + re-ranked; the fetch is incremental, so re-runs only pull what's new.
+    deadline = _wave_deadline(today)
+    if expected == have and deadline <= today <= deadline + timedelta(days=DISCOVER_GRACE_DAYS):
+        return True, (f"{expected} landing window (<={DISCOVER_GRACE_DAYS}d past deadline "
+                      f"{deadline.isoformat()}) — re-discovering late/new filers")
     return False, f"no new 13F wave since last run (current {have})"
 
 

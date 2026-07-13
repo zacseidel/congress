@@ -17,6 +17,12 @@
   <div class="stat"><div class="n">{{ n_outperformers }}</div><div class="l">Out-performers</div></div>
 </div>
 
+{% if ocr_status %}
+<p class="banner {{ ocr_status.level }}">
+  <strong>{{ ocr_status.headline }}</strong>{% if ocr_status.level == 'warn' %} — scanned/paper PTRs (listed below) are <em>not</em> in the leaderboard. Run <code>python src/ocr_scanned.py</code> locally to catch up.{% endif %}
+</p>
+{% endif %}
+
 {% include "_op_changes.html" %}
 
 <details class="fold" open>

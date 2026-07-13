@@ -56,6 +56,9 @@ TEMPLATE = """<!DOCTYPE html>
  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;} tr:last-child td{border-bottom:none;}
  tbody tr:hover{background:#f6f8fa;} .pos{color:var(--green);} .neg{color:var(--red);}
  .pill{display:inline-block;font-size:11px;padding:1px 7px;border-radius:10px;background:#dafbe1;color:var(--green);}
+ .ctrack{display:inline-block;width:56px;height:9px;background:#eaeef2;border-radius:2px;vertical-align:middle;overflow:hidden;margin-right:7px;}
+ .cbar{display:block;height:100%;background:var(--green);border-radius:2px;}
+ .wave{background:#ddf4ff;border:1px solid #54aeff;color:#0a3069;border-radius:8px;padding:10px 14px;font-size:14px;margin:14px 0 4px;}
  .disclaimer{background:#fff8c5;border:1px solid #d4a72c;border-radius:8px;padding:12px 16px;font-size:13px;color:#54470f;margin:16px 0;}
  nav.top{margin-top:6px;} nav.top a{margin-right:18px;font-size:14px;font-weight:600;} nav.top a.here{color:var(--ink);}
  footer{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:14px;}
@@ -64,6 +67,8 @@ TEMPLATE = """<!DOCTYPE html>
   <nav class="top"><a href="../index.html">💡 Dashboard</a><a href="../congress.html">🏛️ Congress Trades</a><a class="here" href="index.html">📈 Hedge Fund 13Fs</a></nav>
 </div></header>
 <div class="wrap">
+{% if not snapshot %}<p class="wave">📅 Latest 13F filing wave: <b>{{ as_of }}</b>
+  <span class="muted small">— the New buys &amp; Conviction below reflect this quarter&rsquo;s filings. Prior waves are archived at the bottom.</span></p>{% endif %}
 <p class="muted small">Generated {{ generated }} · {{ n_ranked }} ranked of {{ n_total }} funds ·
   &ldquo;Mirror the disclosed book, buy at each 13F&rsquo;s public filing date, rebalance at the next filing.&rdquo;
   Alpha = cumulative fund return &minus; SPY over the same windows.</p>
@@ -81,9 +86,10 @@ TEMPLATE = """<!DOCTYPE html>
 </tbody></table>
 
 <h2>🛒 What out-performers are buying now <span class="muted small">new 13F positions, by skill-weighted conviction (alpha&times;consistency &times; position size)</span></h2>
-<table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Funds</th><th>Highest-conviction buyer (alpha · size)</th></tr></thead><tbody>
+<table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Funds</th><th class="num">Conviction</th><th>Highest-conviction buyer (alpha · size)</th></tr></thead><tbody>
 {% for b in buying_now %}<tr><td>{{ tlink(b.ticker) }}</td><td class="small">{{ b.issuer[:30] }}</td>
   <td class="num">{{ b.n_funds }}</td>
+  <td class="num" title="Skill-weighted conviction, indexed to the strongest buy this wave (=100). Σ over buyers of max(alpha,0)×hit-rate × position/book."><span class="ctrack"><span class="cbar" style="width:{{ b.conviction }}%"></span></span><b>{{ b.conviction }}</b></td>
   <td class="small">{{ flink(b.top_cik, b.top_name) }} <span class="pos">+{{ '%.0f'|format(100*b.top_alpha) }}%</span> <span class="muted">· {{ '%.1f'|format(100*b.top_conv) }}% of book</span></td></tr>{% endfor %}
 </tbody></table>
 
@@ -204,8 +210,13 @@ def run() -> None:
                     b["top_vote"] = vote
                     b["top"] = (d["manager"], cik, alpha_by_cik[cik], conv)
     buying_now = sorted(buys.values(), key=lambda x: x["score"], reverse=True)[:15]
+    # The raw score (Σ skill×conviction) is an abstract small decimal, so surface it as a
+    # 0–100 index against the strongest buy this wave — that's the number the table is
+    # sorted by, made legible so the ranking is self-explanatory.
+    top_score = buying_now[0]["score"] if buying_now else 0.0
     for b in buying_now:
         b["top_name"], b["top_cik"], b["top_alpha"], b["top_conv"] = b["top"]
+        b["conviction"] = round(100 * b["score"] / top_score) if top_score > 0 else 0
 
     # Unified stock pages live at docs/stocks/. A ticker has one if it's hedge-featured
     # or congress-traded.

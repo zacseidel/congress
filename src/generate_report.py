@@ -23,8 +23,8 @@ from jinja2 import Environment, FileSystemLoader
 
 sys.path.insert(0, str(Path(__file__).parent))
 from taxonomy import committee_to_industries
-from utils import (DATA_DIR, ROOT, UNPARSED_PATH, load_config, load_json, load_json_gz,
-                   parse_date, save_json, setup_logging, slugify)
+from utils import (DATA_DIR, OCR_STATE_PATH, ROOT, UNPARSED_PATH, load_config, load_json,
+                   load_json_gz, parse_date, save_json, setup_logging, slugify)
 
 log = setup_logging("generate_report")
 
@@ -154,6 +154,26 @@ def _build_unparsed(report_date: str, lookback_days: int):
     return members, len(rows)
 
 
+def _ocr_status(report_date: str, ocr_pending: int):
+    """One-line freshness/backlog banner for the OCR pipeline. OCR runs locally only
+    (removed from CI), so `data/ocr_state.json` records when it last ran; combined with
+    the live paper-filing queue size this tells the reader whether scanned filings are up
+    to date, backlogged, or never processed. `ocr_pending` counts House + Senate paper
+    filings — both are OCR'd. Returns {level, headline}."""
+    if ocr_pending == 0:
+        return {"level": "ok", "headline": "OCR up to date — no scanned filings awaiting transcription."}
+    n = ocr_pending
+    noun = "filing" if n == 1 else "filings"
+    state = load_json(OCR_STATE_PATH) if OCR_STATE_PATH.exists() else {}
+    last_run = state.get("last_run")
+    if not last_run:
+        return {"level": "warn", "headline": f"{n} scanned {noun} unprocessed · no OCR processing yet"}
+    days = (date.fromisoformat(report_date) - date.fromisoformat(last_run)).days
+    ago = "today" if days <= 0 else ("yesterday" if days == 1 else f"{days} days ago")
+    return {"level": "warn",
+            "headline": f"{n} scanned {noun} awaiting OCR · last processed {last_run} ({ago})"}
+
+
 def _prune_stale(dir_path, keep_stems) -> int:
     """Delete *.html in dir_path whose stem isn't in keep_stems (orphans from
     merged/removed members, stocks, or industries). Does not touch the report archive."""
@@ -250,8 +270,11 @@ def run(today: date | None = None) -> None:
                  op_changes_since, len(op_added), len(op_removed))
 
     unparsed_members, unparsed_total = _build_unparsed(report_date, cfg["pipeline"]["lookback_days"])
-    log.info("Unparsed filings flagged for review: %d across %d members",
-             unparsed_total, len(unparsed_members))
+    # Both House and Senate paper filings are OCR'd; the queue is the OCR backlog.
+    ocr_pending = sum(m["count"] for m in unparsed_members if m["chamber"] in ("house", "senate"))
+    ocr_status = _ocr_status(report_date, ocr_pending)
+    log.info("Unparsed filings flagged for review: %d across %d members (%d OCR-pending) — %s",
+             unparsed_total, len(unparsed_members), ocr_pending, ocr_status["headline"])
 
     env = _env()
 
@@ -285,7 +308,8 @@ def run(today: date | None = None) -> None:
         benchmark_period=benchmark_period,
         op_buys=op_buys, digest_other=digest_other, digest_window_days=whats_new_days,
         op_added=op_added, op_removed=op_removed, op_changes_since=op_changes_since,
-        unparsed_members=unparsed_members, unparsed_total=unparsed_total, **common,
+        unparsed_members=unparsed_members, unparsed_total=unparsed_total,
+        ocr_status=ocr_status, **common,
     ), encoding="utf-8")
 
     # "What's new" standalone page (docs root): out-performer trades first, then everyone else.

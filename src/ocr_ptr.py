@@ -322,3 +322,109 @@ def extract_filing(pdf_bytes: bytes, smap: dict, keys: list, disclosure_date: st
         learned.insert(0, best_ang)
         records.extend(_extract_page(_rotate(raw, best_ang), smap, keys, disclosure_date))
     return records
+
+
+# --------------------------------------------------------------------------- #
+# Senate paper filings — a different animal from House
+# --------------------------------------------------------------------------- #
+# Senate scanned PTRs come as page-image GIFs (not PDFs) and appear in two layouts:
+#   1. The standard checkbox grid form (identical to House, printed with IBM/Microsoft
+#      EXAMPLE rows). In practice the senators who file this way disclose private
+#      LLC/trust interests, not public stocks, so it yields nothing — and the printed
+#      examples must never be captured as trades.
+#   2. A typed "Senator <Name> Stock Act Transaction" list: a plain table of
+#      "Description  Date  $min-$max" under Sales / Purchases / Exchanges headers. THIS
+#      is where real stock trades live (e.g. Sen. Boozman). Older lists carry no ticker;
+#      newer ones put it in parentheses, e.g. "Apple Computer Inc (AAPL)".
+#
+# We parse layout 2 by full-page OCR + line rules (grid detection doesn't apply): track
+# the current Sales/Purchases section for the transaction type, treat any line bearing
+# BOTH a date and a "$min-$max" range as a transaction anchor, fold following wrapped
+# continuation lines into its description, then resolve a ticker — the parenthesised
+# symbol when present (validated against the known universe), else a fuzzy name match.
+# Requiring a date AND a dollar range per row is what keeps layout 1's example rows
+# (which have neither in text form) from ever becoming false trades.
+
+_SEN_SECTION_RE = re.compile(r"^\s*(sales?|purchases?|exchanges?)\s*[:.]?\s*$", re.I)
+_SEN_AMOUNT_RE = re.compile(r"\$\s*([\d,]{3,})\s*[-–—to]{1,3}\s*\$?\s*([\d,]{3,})")
+# Senate typed lists write dates with single-digit month/day ("9/22/22", "5/3/21"),
+# unlike the House form's zero-padded DATE_RE. Keep this permissive; clean_date validates.
+_SEN_DATE_RE = re.compile(r"(\d{1,2})/(\d{1,2})/(\d{2,4})")
+_SEN_TICKER_RE = re.compile(r"\(([A-Z]{1,5})\)")
+_OWNER_CODES = {"S", "J", "DC", "SP", "C", "JT"}   # owner/relationship codes, not tickers
+
+
+def _sen_type(section: str) -> str:
+    s = section.strip().lower()
+    if s.startswith("purchase"):
+        return "P"
+    if s.startswith("exchange"):
+        return "E"
+    return "S"                                     # sale(s)
+
+
+def _sen_resolve(desc: str, smap: dict, keys: list, valid_tickers: set) -> tuple[str | None, float, str]:
+    """Ticker for one Senate list row: trust a parenthesised symbol only if it's a real
+    ticker in the known universe; otherwise fall back to a fuzzy company-name match."""
+    for m in _SEN_TICKER_RE.finditer(desc):
+        t = m.group(1).upper()
+        if t not in _OWNER_CODES and t in valid_tickers:
+            name = _SEN_TICKER_RE.sub("", desc).strip()
+            return t, 1.0, name[:80]
+    name_only = _SEN_TICKER_RE.sub("", desc).strip()
+    ticker, score = match_stock(name_only, smap, keys)
+    if ticker:
+        return ticker, round(score, 3), name_only[:80]
+    return None, 0.0, name_only[:80]
+
+
+def extract_senate_pages(pages: list[np.ndarray], smap: dict, keys: list,
+                         disclosure_date: str, valid_tickers: set) -> list[dict]:
+    """Extract equity rows from a Senate paper PTR's page images (see block comment).
+    Row schema matches extract_filing: ticker, match_score, tx_type, tx_date,
+    amount_min/max, asset_name."""
+    out = []
+    for img in pages:
+        text = pytesseract.image_to_string(img, config="--psm 6")
+        lines = [ln.rstrip() for ln in text.splitlines()]
+        n = len(lines)
+        section = None
+        for i, ln in enumerate(lines):
+            stripped = ln.strip()
+            if _SEN_SECTION_RE.match(stripped):
+                section = _sen_type(stripped)
+                continue
+            am = _SEN_AMOUNT_RE.search(ln)
+            dm = _SEN_DATE_RE.search(ln)
+            if not (am and dm):
+                continue                            # not a transaction anchor
+            desc = ln[:dm.start()].strip()
+            # Fold in wrapped continuation lines (asset name / ticker spilled onto the
+            # next line(s)) up to the next anchor or section header. The scans often
+            # insert a blank line between an anchor and its wrapped remainder — where the
+            # parenthesised ticker lives — so skip blanks rather than stop on them. Cap at
+            # two folded lines so trailing page noise can't run away into the description.
+            j, folded = i + 1, 0
+            while j < n and folded < 2:
+                nxt = lines[j].strip()
+                if _SEN_SECTION_RE.match(nxt):
+                    break
+                if _SEN_AMOUNT_RE.search(lines[j]) and _SEN_DATE_RE.search(lines[j]):
+                    break
+                if nxt:
+                    desc += " " + nxt
+                    folded += 1
+                j += 1
+            ticker, score, name = _sen_resolve(desc, smap, keys, valid_tickers)
+            if not ticker:
+                continue
+            amount_min = int(am.group(1).replace(",", ""))
+            amount_max = int(am.group(2).replace(",", ""))
+            out.append({
+                "ticker": ticker, "match_score": score,
+                "tx_type": section or "S",
+                "tx_date": clean_date(dm, disclosure_date) or disclosure_date,
+                "amount_min": amount_min, "amount_max": amount_max,
+                "asset_name": name or ticker,
+            })
+    return out
