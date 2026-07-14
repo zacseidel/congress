@@ -9,7 +9,7 @@ name: Congressional Trades Tracker (full refresh)
 on:
   schedule:
     # 1st of each month at 09:00 UTC
-    - cron: '0 9 1 * *'
+    # - cron: '0 9 1 * *'
   workflow_dispatch:
     inputs:
       enrich_max:
