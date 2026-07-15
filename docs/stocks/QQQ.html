@@ -45,6 +45,10 @@
   .news li { margin:4px 0; }
   .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
                 padding:12px 16px; font-size:13px; color:#54470f; }
+  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
+  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
+  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
+  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
   footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
   /* heatmap */
   .heat { font-size:12px; }
@@ -100,29 +104,30 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-13.html">Leaderboard</a>
+    <a href="../reports/2026-07-15.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
+    <a href="../decisions.html">Decisions</a>
   </nav>
 </div></header>
 <div class="wrap">
 
-<p class="small"><a href="../reports/2026-07-13.html">← Back to leaderboard</a></p>
-<h2>QQQ — Invesco QQQ Trust, Series 1<span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 725.51 vs SMA10 719.73"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 719.73 vs SMA50 715.16"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 715.16 vs SMA200 638.00"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 483,001,321 vs down-vol 427,829,689"></span></span></h2>
+<p class="small"><a href="../reports/2026-07-15.html">← Back to leaderboard</a></p>
+<h2>QQQ — Invesco QQQ Trust, Series 1<span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bear" title="Price vs SMA10: price 719.69 vs SMA10 719.81"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 719.81 vs SMA50 717.20"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 717.20 vs SMA200 639.19"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 389,170,573 vs down-vol 464,382,051"></span></span></h2>
 <p class="legend small">
   <span class="mdot bull"></span> bullish · <span class="mdot bear"></span> bearish ·
   <span class="mdot na"></span> n/a &nbsp; — dots: price&gt;SMA10 · SMA10&gt;SMA50 · SMA50&gt;SMA200 · up&gt;down volume (20d)</p>
 
 
 <div class="stat-row card">
-  <div class="stat"><div class="n">$725.51</div><div class="l">Last close</div></div>
+  <div class="stat"><div class="n">$719.69</div><div class="l">Last close</div></div>
   
   <div class="stat"><div class="n">$416.06–$746.16</div><div class="l">2-yr range</div></div>
   
   
-  <div class="stat"><div class="n">120</div><div class="l">Ranked funds holding</div></div>
-  <div class="stat"><div class="n">6</div><div class="l">Newly buying</div></div>
+  <div class="stat"><div class="n">123</div><div class="l">Ranked funds holding</div></div>
+  <div class="stat"><div class="n">4</div><div class="l">Newly buying</div></div>
   
   
 </div>
@@ -166,93 +171,91 @@
 
 <h3>📈 Top hedge funds who traded QQQ <span class="muted small">ranked 13F funds · latest filing</span></h3>
 <p class="muted small">This name produced
-  0.9% of the ranked funds&rsquo; total alpha.</p>
+  1.1% of the ranked funds&rsquo; total alpha.</p>
 <p class="small"><b>🛒 Newly buying:</b>
   <a href="../hedge/funds/1861159.html">O&#39;Neil Global Advisors, Inc.</a>
-  <span class="muted">(+2%, 7.3% of book)</span> · <a href="../hedge/funds/62061.html">V. M. MANNING &amp; CO., INC.</a>
-  <span class="muted">(+4%, 0.6% of book)</span> · <a href="../hedge/funds/932929.html">WESTBOURNE INVESTMENTS, INC.</a>
-  <span class="muted">(+8%, 0.1% of book)</span> · <a href="../hedge/funds/2083656.html">Ducere Wealth Management LLC</a>
-  <span class="muted">(+1%, 0.1% of book)</span> · <a href="../hedge/funds/2033053.html">Paul R. Ried Financial Group, LLC</a>
-  <span class="muted">(+10%, 0.1% of book)</span> · <a href="../hedge/funds/1814191.html">ACT WEALTH MANAGEMENT, LLC</a>
-  <span class="muted">(+1%, 0.1% of book)</span></p>
+  <span class="muted">(+5%, 7.3% of book)</span> · <a href="../hedge/funds/62061.html">V. M. MANNING &amp; CO., INC.</a>
+  <span class="muted">(+6%, 0.6% of book)</span> · <a href="../hedge/funds/932929.html">WESTBOURNE INVESTMENTS, INC.</a>
+  <span class="muted">(+6%, 0.1% of book)</span> · <a href="../hedge/funds/2033053.html">Paul R. Ried Financial Group, LLC</a>
+  <span class="muted">(+10%, 0.1% of book)</span></p>
 <table class="sortable">
   <thead><tr><th>Fund</th><th class="num">Fund alpha vs SPY</th><th class="num">Position</th><th class="num">% of book</th></tr></thead>
   <tbody>
   <tr>
     <td><a href="../hedge/funds/1622346.html">SHANDA ASSET MANAGEMENT HOLDINGS Ltd</a></td>
-    <td class="num pos" data-v="0.2614">+26%</td>
+    <td class="num pos" data-v="0.268">+27%</td>
     <td class="num" data-v="1269796000">$1270M</td>
     <td class="num" data-v="0.6907269067445093">69.1%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1542927.html">National Mutual Insurance Federation of Agricultural Cooperatives</a></td>
-    <td class="num pos" data-v="0.0108">+1%</td>
+    <td class="num pos" data-v="0.0127">+1%</td>
     <td class="num" data-v="1015259620">$1015M</td>
     <td class="num" data-v="0.0781790614288974">7.8%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2017993.html">Hancock Prospecting Pty Ltd</a></td>
-    <td class="num pos" data-v="0.3014">+30%</td>
+    <td class="num pos" data-v="0.3193">+32%</td>
     <td class="num" data-v="737468081">$737M</td>
     <td class="num" data-v="0.22148201491067462">22.1%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1767435.html">Artemis Wealth Advisors, LLC</a></td>
-    <td class="num pos" data-v="0.1699">+17%</td>
+    <td class="num pos" data-v="0.1863">+19%</td>
     <td class="num" data-v="460036307">$460M</td>
     <td class="num" data-v="0.6959810965756441">69.6%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1103887.html">NWI MANAGEMENT LP</a></td>
-    <td class="num pos" data-v="0.1619">+16%</td>
+    <td class="num pos" data-v="0.1476">+15%</td>
     <td class="num" data-v="402496000">$402M</td>
     <td class="num" data-v="0.2243872633736138">22.4%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1556168.html">Consolidated Investment Group LLC</a></td>
-    <td class="num pos" data-v="0.1606">+16%</td>
+    <td class="num pos" data-v="0.1681">+17%</td>
     <td class="num" data-v="206341850">$206M</td>
     <td class="num" data-v="0.22380480565869618">22.4%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1964389.html">PPSC Investment Service Corp</a></td>
-    <td class="num pos" data-v="0.3005">+30%</td>
+    <td class="num pos" data-v="0.3058">+31%</td>
     <td class="num" data-v="151899924">$152M</td>
     <td class="num" data-v="0.11980578713444776">12.0%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1630798.html">Industrial Alliance Investment Management Inc.</a></td>
-    <td class="num pos" data-v="0.0579">+6%</td>
+    <td class="num pos" data-v="0.065">+6%</td>
     <td class="num" data-v="116170000">$116M</td>
     <td class="num" data-v="0.6944643711142994">69.4%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1672070.html">Parker Investment Management, LLC</a></td>
-    <td class="num pos" data-v="0.3095">+31%</td>
+    <td class="num pos" data-v="0.3246">+32%</td>
     <td class="num" data-v="98745934">$99M</td>
     <td class="num" data-v="0.15003227285290377">15.0%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1254890.html">TAIYO LIFE INSURANCE CO</a></td>
-    <td class="num pos" data-v="0.0574">+6%</td>
+    <td class="num pos" data-v="0.0633">+6%</td>
     <td class="num" data-v="86577000">$87M</td>
     <td class="num" data-v="0.09553250347307662">9.6%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1767686.html">Yarbrough Capital, LLC</a></td>
-    <td class="num pos" data-v="0.1289">+13%</td>
+    <td class="num pos" data-v="0.1554">+16%</td>
     <td class="num" data-v="83401339">$83M</td>
     <td class="num" data-v="0.02923545131963815">2.9%</td>
   </tr><tr>
+    <td><a href="../hedge/funds/894119.html">Anchor Capital Management Group Inc</a></td>
+    <td class="num pos" data-v="0.039">+4%</td>
+    <td class="num" data-v="76476350">$76M</td>
+    <td class="num" data-v="0.5319460499440912">53.2%</td>
+  </tr><tr>
     <td><a href="../hedge/funds/2066488.html">Golden Reserve Retirement LLC</a></td>
-    <td class="num pos" data-v="0.0204">+2%</td>
+    <td class="num pos" data-v="0.0183">+2%</td>
     <td class="num" data-v="62427506">$62M</td>
     <td class="num" data-v="0.12880573001615114">12.9%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1097362.html">SUN LIFE FINANCIAL INC</a></td>
-    <td class="num pos" data-v="0.0341">+3%</td>
+    <td class="num pos" data-v="0.0352">+4%</td>
     <td class="num" data-v="62014000">$62M</td>
     <td class="num" data-v="0.035208101031250924">3.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1753271.html">Portfolio Strategies, Inc.</a></td>
-    <td class="num pos" data-v="0.2211">+22%</td>
+    <td class="num pos" data-v="0.2387">+24%</td>
     <td class="num" data-v="53433998">$53M</td>
     <td class="num" data-v="0.06587917001528933">6.6%</td>
-  </tr><tr>
-    <td><a href="../hedge/funds/1992748.html">CJM Wealth Advisers, Ltd.</a></td>
-    <td class="num pos" data-v="0.0059">+1%</td>
-    <td class="num" data-v="50965781">$51M</td>
-    <td class="num" data-v="0.15523811520197964">15.5%</td>
   </tr>
   </tbody>
 </table>

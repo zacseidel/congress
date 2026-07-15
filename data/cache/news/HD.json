@@ -1,300 +1,363 @@
 [
   {
-    "id": "848b4f3d2cbfa9a2492db7923fde5e46a6a820bebebe3a915988c47d49fdb876",
+    "id": "67ab071738c7d57470612b2032765f89a3f8071a87695ec450e58364ef638a6f",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Alphabet Stock Investors: Here's the Most Important Metric to Follow",
-    "author": "Neil Patel",
-    "published_utc": "2026-06-29T19:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/29/alphabet-stock-investors-most-important-metric/?source=iedfolrf0000001",
+    "title": "Home Depot vs. Lowe's: A Look at Recent Revenue Trends for These Home Improvement Giants",
+    "author": "Robert Izquierdo",
+    "published_utc": "2026-07-11T21:30:02Z",
+    "article_url": "https://www.fool.com/coverage/charts/2026/07/11/home-depot-vs-lowe-s-a-look-at-recent-revenue-trends-for-these-home-improvement-giants/?source=iedfolrf0000001",
     "tickers": [
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
       "HD",
-      "WFC",
-      "WFCpA",
-      "WFCpC",
-      "WFCpD",
-      "WFCpL",
-      "WFCpY",
-      "WFCpZ",
-      "UL"
+      "LOW"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876311%2Falphabet-company-name-on-red-filter-with-office-in-background_the-motley-fool.png&w=1200&op=resize",
-    "description": "Alphabet shares have doubled in 12 months despite a recent 15% pullback. The key metric investors should monitor is Google Cloud's backlog, which nearly doubled to $462 billion in Q1 2026\u2014nearly 6x the segment's annualized revenue. With 63% YoY revenue growth and expanding enterprise customer base, Google Cloud's backlog trajectory will signal whether Alphabet's massive $185 billion capital expenditure is justified.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Fcharts%2Fproduction%2Fprocessed%2Fhd-low%2Fquarter%2Frevenue%2Fbar%2Fprimary%2Fstandard%2Flimit-8%2Flatest%2Fhd-low_quarter_revenue_bar_primary_standard_limit8.png&w=1200&op=resize",
+    "description": "Home Depot maintains roughly double the revenue of Lowe's in the home improvement retail sector. Both companies display stable seasonal patterns, though recent interest rate headwinds and a soft housing market pressured stock prices. Home Depot's P/S ratio dipped below 2.0 in May before recovering, while Lowe's offers a compelling valuation at 1.3 P/S and recently raised its dividend 4%.",
     "keywords": [
-      "Google Cloud",
-      "backlog",
-      "AI infrastructure",
-      "capital expenditure",
-      "enterprise customers",
-      "hyperscaler",
-      "revenue growth"
+      "home improvement retail",
+      "revenue trends",
+      "seasonal patterns",
+      "interest rate headwinds",
+      "housing market",
+      "valuation",
+      "dividend",
+      "price-to-sales ratio"
     ],
     "insights": [
       {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Cloud segment showing exceptional growth (63% YoY revenue growth, 203% operating income jump) with massive $462B backlog indicating strong AI demand. Stock has doubled in 12 months and is positioned to benefit from AI boom, though valuation heavily depends on backlog trajectory and capital expenditure returns."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Cloud segment showing exceptional growth (63% YoY revenue growth, 203% operating income jump) with massive $462B backlog indicating strong AI demand. Stock has doubled in 12 months and is positioned to benefit from AI boom, though valuation heavily depends on backlog trajectory and capital expenditure returns."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Cloud segment showing exceptional growth (63% YoY revenue growth, 203% operating income jump) with massive $462B backlog indicating strong AI demand. Stock has doubled in 12 months and is positioned to benefit from AI boom, though valuation heavily depends on backlog trajectory and capital expenditure returns."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Cloud segment showing exceptional growth (63% YoY revenue growth, 203% operating income jump) with massive $462B backlog indicating strong AI demand. Stock has doubled in 12 months and is positioned to benefit from AI boom, though valuation heavily depends on backlog trajectory and capital expenditure returns."
-      },
-      {
         "ticker": "HD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as an established non-tech enterprise customer of Google Cloud, indicating quality of customer base, but no specific performance data or sentiment drivers provided."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Home Depot demonstrates consistent revenue dominance with approximately double Lowe's revenue, benefits from a strong professional contractor customer base, and achieved an attractive valuation (P/S of 1.99) that attracted investor interest. The company maintains stable operational performance despite market headwinds."
       },
       {
-        "ticker": "WFC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as an established enterprise customer of Google Cloud, indicating quality of customer base, but no specific performance data or sentiment drivers provided."
-      },
-      {
-        "ticker": "WFCpA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as an established enterprise customer of Google Cloud, indicating quality of customer base, but no specific performance data or sentiment drivers provided."
-      },
-      {
-        "ticker": "WFCpC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as an established enterprise customer of Google Cloud, indicating quality of customer base, but no specific performance data or sentiment drivers provided."
-      },
-      {
-        "ticker": "WFCpD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as an established enterprise customer of Google Cloud, indicating quality of customer base, but no specific performance data or sentiment drivers provided."
-      },
-      {
-        "ticker": "WFCpL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as an established enterprise customer of Google Cloud, indicating quality of customer base, but no specific performance data or sentiment drivers provided."
-      },
-      {
-        "ticker": "WFCpY",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as an established enterprise customer of Google Cloud, indicating quality of customer base, but no specific performance data or sentiment drivers provided."
-      },
-      {
-        "ticker": "WFCpZ",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as an established enterprise customer of Google Cloud, indicating quality of customer base, but no specific performance data or sentiment drivers provided."
-      },
-      {
-        "ticker": "UL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as an established non-tech enterprise customer of Google Cloud, indicating quality of customer base, but no specific performance data or sentiment drivers provided."
+        "ticker": "LOW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Lowe's offers a compelling valuation with a P/S ratio of 1.3 at a low point for the year, recently raised its dividend by 4% to $1.25 per share, and maintains stable revenue patterns. Despite operational adjustments, the company presents solid investment fundamentals."
       }
     ]
   },
   {
-    "id": "904c520689ce190fdce50f23ec27e7b7163d5eaa4137c3f54c22b2f4fea61246",
+    "id": "1812a61eb0abbc3f49a0b34127f2c9e34bcf5a607d922ab24d8e66537ec2c3e0",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Home Depot vs. Lowe's: Which Big Box Home Improvement Stock Is a Better Buy in 2026?",
+    "title": "Home Depot vs. Lowe's: Which Big Box Home Improvement Giant Is the Better Buy in 2026?",
     "author": "Brendan Coffey",
-    "published_utc": "2026-06-25T19:31:50Z",
-    "article_url": "https://www.fool.com/coverage/better-buy/2026/06/25/home-depot-vs-lowe-s-which-big-box-home-improvement-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
+    "published_utc": "2026-07-06T17:29:52Z",
+    "article_url": "https://www.fool.com/coverage/better-buy/2026/07/06/home-depot-vs-lowe-s-which-big-box-home-improvement-giant-is-the-better-buy-in-2026/?source=iedfolrf0000001",
     "tickers": [
       "HD",
       "LOW",
       "AMZN"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F7089e9c275d4f6f9668a8e5e172ac46be0ed0aaa-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "The Motley Fool compares Home Depot and Lowe's as investment options in 2026. Home Depot maintains dominance in the professional contractor market with strategic acquisitions and a strong distribution network, while Lowe's is aggressively expanding into larger professional markets with innovative tools and faster fulfillment. Despite Home Depot's larger scale and higher profitability, Lowe's is recommended as the better buy due to its lower valuation metrics, higher projected growth rates (8% sales growth vs. 4% for Home Depot), and better value proposition.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F3caa0e2607e9485862b0d89e5f6f6be899ae6c41-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Home Depot and Lowe's dominate the home improvement retail market with different growth strategies. Home Depot leads in the professional contractor segment with a $357B market cap, higher margins, and strong free cash flow, but trades at a premium valuation (P/E 25.41). Lowe's, with a $128B market cap, appears cheaper (P/E 19.24) and is aggressively expanding into the professional market while maintaining its DIY homeowner base. Analysts project Lowe's will grow faster in 2026 with 8% sales growth versus Home Depot's 4%, making Lowe's the potentially better value despite Home Depot's market dominance.",
     "keywords": [
       "home improvement retail",
-      "stock comparison",
-      "valuation analysis",
       "professional contractors",
+      "DIY homeowners",
+      "valuation comparison",
+      "market growth",
       "acquisitions",
-      "supply chain",
-      "digital transformation",
-      "growth projections"
+      "free cash flow",
+      "earnings multiples"
     ],
     "insights": [
       {
         "ticker": "HD",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strong market dominance, solid financial performance ($164.7B revenue, $14.8B net income), strategic acquisitions expanding into HVAC and specialty distribution, and robust free cash flow of $12.7B. However, higher valuation (P/E 24.34) and slower projected growth (4% sales, 1% net income) in 2026 limit upside potential."
+        "sentiment_reasoning": "Dominates the professional contractor market, strong financial metrics with $14.8B net income, $12.7B free cash flow, higher gross margins (31.14%), and strategic acquisitions (SRS, GMS, Mingledorff's) to expand HVAC and pro segments. However, higher valuation and slower projected growth temper enthusiasm."
       },
       {
         "ticker": "LOW",
         "sentiment": "positive",
-        "sentiment_reasoning": "Recommended as the better buy due to attractive valuation (Forward P/E 17.1x vs. 21.7x for Home Depot, lower P/S ratio), stronger projected growth (8% sales, 2.5% net income in 2026), innovative AI-assisted contractor tools, and successful expansion into professional markets. Smaller revenue base ($86.3B) provides more room for growth."
+        "sentiment_reasoning": "Positioned as the better buy in 2026 due to lower valuation multiples (P/E 19.24 vs 25.41), stronger projected growth (8% sales vs 4% for Home Depot), successful acquisitions expanding professional reach, and strong free cash flow of $7.7B. AI-assisted tools for contractors and improved customer experience initiatives show momentum."
       },
       {
         "ticker": "AMZN",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitive threat to both Home Depot and Lowe's in the digital space and e-commerce, but not analyzed as an investment option in this article."
+        "sentiment_reasoning": "Mentioned as a competitive threat to Home Depot in the home improvement space as a digital-first platform, but not analyzed in detail as a primary investment option in this comparison."
       }
     ]
   },
   {
-    "id": "680835af2524cdc024d9c994b7b360ac0ea56c417f57602b6c7061f018e92200",
+    "id": "b74e33fa1b10ee3bc186f7489273513f5afa89b880ea1c3d107cd58f9da2de6b",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Why Home Depot and Lowe's Fell After the Fed Held Interest Rates Steady.",
+    "title": "3 Dividend ETF Picks That Could Build Serious Long-Term Wealth",
+    "author": "James Brumley",
+    "published_utc": "2026-07-05T21:20:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/05/3-dividend-etf-picks-that-could-build-serious-long/?source=iedfolrf0000001",
+    "tickers": [
+      "SCHD",
+      "VIG",
+      "DGRO",
+      "AAPL",
+      "MSFT",
+      "AVGO",
+      "JNJ",
+      "AMJB",
+      "JPM",
+      "JPMpC",
+      "JPMpD",
+      "JPMpJ",
+      "JPMpK",
+      "JPMpL",
+      "JPMpM",
+      "VYLD",
+      "MRK",
+      "HD",
+      "UNH"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875683%2Frich-millionaire-billionaire-raining-money.jpg&w=1200&op=resize",
+    "description": "The article examines three dividend-focused ETFs as wealth-building alternatives to growth stocks. SCHD offers higher yields through value-oriented dividend stocks, VIG combines growth potential with rising dividends, and DGRO provides a balanced hybrid approach. All three can build serious long-term wealth through dividend reinvestment if held patiently.",
+    "keywords": [
+      "dividend ETFs",
+      "long-term wealth",
+      "dividend reinvestment",
+      "value investing",
+      "growth stocks",
+      "passive income"
+    ],
+    "insights": [
+      {
+        "ticker": "SCHD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Highlighted as the top pick for dividend investors due to its higher trailing yield of 3.3%, focus on fundamentals and dividend growth history, and potential outperformance as value stocks gain favor in later economic cycles."
+      },
+      {
+        "ticker": "VIG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Positioned as a growth/income hybrid with strong capital appreciation potential and dividend payments that have increased nearly 50% over five years, making it attractive for long-term wealth building despite lower current yield."
+      },
+      {
+        "ticker": "DGRO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recommended as a balanced alternative combining features of the other two ETFs, with unique dividend-dollar-weighted construction and a 3% holding cap that provides a different performance profile and diversification benefits."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a holding in VIG and DGRO; included as an example of growth stocks that meet dividend criteria but are not traditionally viewed as dividend stocks."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding in VIG and also held in DGRO; cited as a growth name that technically qualifies as a dividend stock despite not being traditionally viewed as one."
+      },
+      {
+        "ticker": "AVGO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a top holding in VIG; used as an example of growth technology stocks that meet dividend criteria."
+      },
+      {
+        "ticker": "JNJ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a holding in DGRO; mentioned as a typical dividend stock holding without specific positive or negative commentary."
+      },
+      {
+        "ticker": "AMJB",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Noted as a holding in DGRO; included as an example of traditional dividend stock holdings without specific analysis."
+      },
+      {
+        "ticker": "JPM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Noted as a holding in DGRO; included as an example of traditional dividend stock holdings without specific analysis."
+      },
+      {
+        "ticker": "JPMpC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Noted as a holding in DGRO; included as an example of traditional dividend stock holdings without specific analysis."
+      },
+      {
+        "ticker": "JPMpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Noted as a holding in DGRO; included as an example of traditional dividend stock holdings without specific analysis."
+      },
+      {
+        "ticker": "JPMpJ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Noted as a holding in DGRO; included as an example of traditional dividend stock holdings without specific analysis."
+      },
+      {
+        "ticker": "JPMpK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Noted as a holding in DGRO; included as an example of traditional dividend stock holdings without specific analysis."
+      },
+      {
+        "ticker": "JPMpL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Noted as a holding in DGRO; included as an example of traditional dividend stock holdings without specific analysis."
+      },
+      {
+        "ticker": "JPMpM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Noted as a holding in DGRO; included as an example of traditional dividend stock holdings without specific analysis."
+      },
+      {
+        "ticker": "VYLD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Noted as a holding in DGRO; included as an example of traditional dividend stock holdings without specific analysis."
+      },
+      {
+        "ticker": "MRK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding in SCHD; mentioned as an example of the fund's holdings without specific commentary."
+      },
+      {
+        "ticker": "HD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cited as a top holding in SCHD; included as an example of the fund's value-oriented portfolio without specific analysis."
+      },
+      {
+        "ticker": "UNH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding in SCHD; mentioned as an example of the fund's holdings without specific commentary."
+      }
+    ]
+  },
+  {
+    "id": "83481485efc382181fffc5c15fc3f1e1fe1261c0aad0f545234602b08f30b038",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Want Decades of Passive Income? Buy This ETF and Hold It Forever.",
     "author": "Neil Patel",
-    "published_utc": "2026-06-22T13:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/22/home-depot-lowes-stock-fed-interest-rates-steady/?source=iedfolrf0000001",
+    "published_utc": "2026-07-03T11:27:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/03/decades-passive-income-buy-this-etf-hold-forever/?source=iedfolrf0000001",
     "tickers": [
-      "HD",
-      "LOW"
+      "SCHD",
+      "UNH",
+      "MRK",
+      "HD"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875192%2Fladder-home-renovation-project.jpg&w=1200&op=resize",
-    "description": "Home Depot and Lowe's shares dropped 2.5-3% after the Federal Reserve held interest rates steady on June 17, 2026. Higher mortgage rates (30-year fixed at 6.47%) reduce housing turnover and consumer spending on home improvement projects. Both retailers forecast weak same-store sales growth of just 1% for fiscal 2026, with some Fed officials expecting potential rate hikes ahead.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874331%2Frolled-up-money-next-to-calculator-and-dividends-written-on-post-it.jpg&w=1200&op=resize",
+    "description": "The Schwab U.S. Dividend Equity ETF (SCHD) is recommended as a long-term holding for passive income, offering a 3.25% dividend yield\u2014more than three times the S&P 500's 1.07%. The ETF tracks 100 dividend-paying companies with at least 10 years of consecutive dividend payments and has seen its payout rise 211% over the past decade. Year-to-date performance shows 18.9% total return versus the S&P 500's 8.1%.",
     "keywords": [
-      "Federal Reserve",
-      "interest rates",
-      "mortgage rates",
-      "housing market",
-      "home improvement retail",
-      "consumer discretionary",
-      "same-store sales"
+      "dividend ETF",
+      "passive income",
+      "long-term investing",
+      "dividend yield",
+      "SCHD",
+      "dividend growth"
     ],
     "insights": [
       {
-        "ticker": "HD",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock fell 2.5-3% on Fed rate decision. Higher interest rates reduce housing turnover and consumer confidence for renovation spending. Company forecasts weak 1% same-store sales growth for fiscal 2026. CEO noted industry not expecting significant growth in housing turnover."
+        "ticker": "SCHD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Highlighted as an attractive forever holding with a 3.25% dividend yield (3x S&P 500), 211% payout growth over 10 years, strong 18.9% YTD returns, low 0.06% expense ratio, and holdings in established companies with consistent earnings power."
       },
       {
-        "ticker": "LOW",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock fell 2.5-3% on Fed rate decision. Faces same headwinds as Home Depot with elevated mortgage rates dampening housing activity and discretionary spending. Also forecasts weak 1% same-store sales growth for fiscal 2026."
+        "ticker": "UNH",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as one of the top three holdings in SCHD, representing an established business with strong industry position and steady earnings."
+      },
+      {
+        "ticker": "MRK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as one of the top three holdings in SCHD, representing an established business with strong industry position and steady earnings."
+      },
+      {
+        "ticker": "HD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as one of the top three holdings in SCHD, representing an established business with strong industry position and steady earnings."
       }
     ]
   },
   {
-    "id": "ae9af8fb5319081dcca601621e26e29ffe6b4ec4703904161a3c5292d271b9a3",
+    "id": "dd2388c5d4708862ce271641f767ba00b43f28f53482662cf563e93c4461f7b0",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "This Homebuilder's Average Selling Price Just Hit a 9-Year Low. Here's Why That's Great News for Home Depot",
-    "author": "Lawrence Rothman, Cfa",
-    "published_utc": "2026-06-22T11:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/22/this-homebuilders-average-selling-price-just-hit-a/?source=iedfolrf0000001",
+    "title": "Want a Lifetime of Passive Income? Buy Realty Income Stock in July and Never Sell.",
+    "author": "James Brumley",
+    "published_utc": "2026-07-02T07:20:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/02/want-a-lifetime-of-passive-income-buy-realty-incom/?source=iedfolrf0000001",
     "tickers": [
-      "LEN",
-      "LEN.B",
+      "O",
+      "WMT",
       "HD",
-      "LOW"
+      "FDX",
+      "DG",
+      "DLR",
+      "DLRpJ",
+      "DLRpK",
+      "DLRpL"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874491%2Fgettyimages-1657566602-1200x800-5b2df79.jpg&w=1200&op=resize",
-    "description": "Lennar reported lower average home selling prices ($371,000) to boost demand amid affordability challenges. Lower home prices should increase existing home sales and lead to more major renovation projects, benefiting Home Depot, the largest home-improvement retailer. Despite short-term economic concerns, Home Depot's stock trades at an attractive valuation with positive long-term outlook.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875201%2Ffalling-cash-happy-investor.jpg&w=1200&op=resize",
+    "description": "Realty Income (O), a REIT specializing in brick-and-mortar retail properties, is presented as a long-term dividend investment opportunity. Despite retail sector challenges, the company maintains 98%+ occupancy rates with strong tenants like Walmart and Home Depot, has paid monthly dividends since 1969 with quarterly increases since 1998, and is exploring new markets including AI data center infrastructure.",
     "keywords": [
-      "homebuilder",
-      "average selling price",
-      "home affordability",
-      "home improvement",
-      "housing market",
-      "renovation demand",
-      "mortgage rates",
-      "retail valuation"
+      "REIT",
+      "dividend stock",
+      "passive income",
+      "retail real estate",
+      "occupancy rates",
+      "dividend growth",
+      "AI infrastructure"
     ],
     "insights": [
       {
-        "ticker": "LEN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Lennar reported lower average selling prices and increased incentives to drive demand, indicating market challenges. While home deliveries increased 2%, the lower pricing reflects affordability pressures rather than strong underlying demand."
+        "ticker": "O",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company demonstrates resilience with 98%+ occupancy rates, consistent monthly dividend payments since 1969, quarterly dividend increases since 1998, 13.6% compound annual returns since 1994 IPO, and strategic diversification into AI data center partnerships."
       },
       {
-        "ticker": "LEN.B",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Lennar reported lower average selling prices and increased incentives to drive demand, indicating market challenges. While home deliveries increased 2%, the lower pricing reflects affordability pressures rather than strong underlying demand."
+        "ticker": "WMT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Mentioned as a top-20 tenant of Realty Income with both brick-and-mortar and e-commerce operations, demonstrating adaptability to changing retail landscape."
       },
       {
         "ticker": "HD",
         "sentiment": "positive",
-        "sentiment_reasoning": "Expected to benefit from increased home sales and renovation projects as lower home prices improve affordability. Stock trades at attractive P/E ratio of 24 versus 28 earlier in the year, with positive long-term outlook despite near-term economic headwinds."
+        "sentiment_reasoning": "Listed as a top-20 tenant of Realty Income, representing a stable, essential retail business that benefits from Realty Income's portfolio strength."
       },
       {
-        "ticker": "LOW",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as Home Depot's nearest competitor in the home-improvement retail sector. Would benefit similarly from increased renovation demand, but no specific company performance data provided."
-      }
-    ]
-  },
-  {
-    "id": "09643d19e4e48456eb235d760467643b7498e33716841b02aa74bfaf39f4e4f1",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "Father\u2019s Day Investing: 3 Stocks Built for Long-Term Returns",
-    "author": "Chris Markoch",
-    "published_utc": "2026-06-16T15:16:00Z",
-    "article_url": "https://www.investing.com/analysis/fathers-day-investing-3-stocks-built-for-longterm-returns-200682259",
-    "tickers": [
-      "SWK",
-      "SWP",
-      "HD",
-      "YETI"
-    ],
-    "amp_url": "https://m.investing.com/analysis/fathers-day-investing-3-stocks-built-for-longterm-returns-200682259?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "As sector rotation away from AI gains momentum, three dividend-paying stocks offer long-term investment potential for Father's Day: Stanley Black & Decker benefits from industrial recovery and supply chain diversification efforts; Home Depot shows signs of recovery with potential interest rate cuts unlocking the housing market; and YETI Holdings demonstrates premium market resilience despite margin pressure from tariffs.",
-    "keywords": [
-      "sector rotation",
-      "industrial stocks",
-      "dividend stocks",
-      "long-term investing",
-      "housing market",
-      "tariffs",
-      "supply chain"
-    ],
-    "insights": [
-      {
-        "ticker": "SWK",
+        "ticker": "FDX",
         "sentiment": "positive",
-        "sentiment_reasoning": "Up 15% in 2026, showing industrial sector recovery. Company is reducing China supply chain exposure and analysts forecast 15% earnings growth. Despite negative 5-year returns, it's a dividend king with 58 consecutive years of dividend increases."
+        "sentiment_reasoning": "Identified as a top-20 tenant that benefits from e-commerce growth, providing diversification and resilience to Realty Income's tenant base."
       },
       {
-        "ticker": "SWP",
+        "ticker": "DG",
         "sentiment": "positive",
-        "sentiment_reasoning": "Up 15% in 2026, showing industrial sector recovery. Company is reducing China supply chain exposure and analysts forecast 15% earnings growth. Despite negative 5-year returns, it's a dividend king with 58 consecutive years of dividend increases."
+        "sentiment_reasoning": "Listed as a top-20 tenant of Realty Income, representing a stable discount retail business contributing to the REIT's strong occupancy."
       },
       {
-        "ticker": "HD",
+        "ticker": "DLR",
         "sentiment": "positive",
-        "sentiment_reasoning": "Showing signs of recovery with 10% gain over prior 30 days. Consensus price target implies over 10% upside. Potential catalysts include interest rate cuts unlocking housing market and resilient consumer spending. 16-year consecutive dividend increase history."
+        "sentiment_reasoning": "Partnership with Realty Income on AI data center facilities represents growth opportunity and strategic diversification beyond traditional retail real estate."
       },
       {
-        "ticker": "YETI",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Demonstrates continued premium market demand with year-over-year revenue growth, but earnings down 16% YOY due to tariff-related margin pressure. No dividend but expanded $500M share repurchase program suggests management believes stock is undervalued. Negative 5-year returns."
+        "ticker": "DLRpJ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Partnership with Realty Income on AI data center facilities represents growth opportunity and strategic diversification beyond traditional retail real estate."
+      },
+      {
+        "ticker": "DLRpK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Partnership with Realty Income on AI data center facilities represents growth opportunity and strategic diversification beyond traditional retail real estate."
+      },
+      {
+        "ticker": "DLRpL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Partnership with Realty Income on AI data center facilities represents growth opportunity and strategic diversification beyond traditional retail real estate."
       }
     ]
   }

@@ -45,6 +45,10 @@
   .news li { margin:4px 0; }
   .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
                 padding:12px 16px; font-size:13px; color:#54470f; }
+  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
+  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
+  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
+  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
   footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
   /* heatmap */
   .heat { font-size:12px; }
@@ -100,16 +104,17 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-13.html">Leaderboard</a>
+    <a href="../reports/2026-07-15.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
+    <a href="../decisions.html">Decisions</a>
   </nav>
 </div></header>
 <div class="wrap">
 
-<p class="small"><a href="../reports/2026-07-13.html">← Back to leaderboard</a></p>
-<h2>EA — Electronic Arts Inc<span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 206.41 vs SMA10 205.45"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 205.45 vs SMA50 202.73"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 202.73 vs SMA200 201.67"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 18,679,297 vs down-vol 17,323,721"></span></span></h2>
+<p class="small"><a href="../reports/2026-07-15.html">← Back to leaderboard</a></p>
+<h2>EA — Electronic Arts Inc<span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 206.65 vs SMA10 205.72"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 205.72 vs SMA50 202.88"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 202.88 vs SMA200 202.03"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 18,511,319 vs down-vol 17,118,585"></span></span></h2>
 <p class="legend small">
   <span class="mdot bull"></span> bullish · <span class="mdot bear"></span> bearish ·
   <span class="mdot na"></span> n/a &nbsp; — dots: price&gt;SMA10 · SMA10&gt;SMA50 · SMA50&gt;SMA200 · up&gt;down volume (20d)</p>
@@ -122,28 +127,28 @@
 
 
 <div class="stat-row card">
-  <div class="stat"><div class="n">$206.41</div><div class="l">Last close</div></div>
+  <div class="stat"><div class="n">$206.65</div><div class="l">Last close</div></div>
   <div class="stat"><div class="n">$50.9B</div><div class="l">Market cap</div></div>
-  <div class="stat"><div class="n">$116.53–$206.56</div><div class="l">2-yr range</div></div>
+  <div class="stat"><div class="n">$116.53–$206.65</div><div class="l">2-yr range</div></div>
   
   <div class="stat"><div class="n">3</div><div class="l">Members buying</div></div>
   <div class="stat"><div class="n">0</div><div class="l">Out-performers buying</div></div>
   <div class="stat"><div class="n">$96K</div><div class="l">Total disclosed buys</div></div>
   
   
-  <div class="stat"><div class="n">8</div><div class="l">Ranked funds holding</div></div>
-  <div class="stat"><div class="n">1</div><div class="l">Newly buying</div></div>
+  <div class="stat"><div class="n">10</div><div class="l">Ranked funds holding</div></div>
+  <div class="stat"><div class="n">2</div><div class="l">Newly buying</div></div>
   
   
   <div class="stat"><div class="n pos">+2.3%</div><div class="l">Buyers' return</div></div>
-  <div class="stat"><div class="n neg">-5.8%</div><div class="l">vs S&P 500</div></div>
+  <div class="stat"><div class="n neg">-5.7%</div><div class="l">vs S&P 500</div></div>
   
 </div>
 
 <p class="small muted">Members who bought EA earned a dollar-weighted
    <strong class="pos">+2.3%</strong> from their disclosure
-   dates, versus <strong>+8.1%</strong> for the S&P 500 over the same holding
-   windows (-5.8% alpha).</p>
+   dates, versus <strong>+8.0%</strong> for the S&P 500 over the same holding
+   windows (-5.7% alpha).</p>
 
 
 
@@ -210,7 +215,7 @@
       <td><span class="pill house">house</span></td>
       <td>—</td>
       <td class="num" data-v="64004">$64K</td>
-      <td class="num pos" data-v="4.4">+4.4%</td>
+      <td class="num pos" data-v="4.42">+4.4%</td>
     </tr>
   
     <tr>
@@ -228,7 +233,7 @@
       <td><span class="pill house">house</span></td>
       <td>—</td>
       <td class="num" data-v="16001">$16K</td>
-      <td class="num pos" data-v="1.08">+1.1%</td>
+      <td class="num pos" data-v="1.2">+1.2%</td>
     </tr>
   
   </tbody>
@@ -242,49 +247,60 @@
 <p class="muted small">This name produced
   0.0% of the ranked funds&rsquo; total alpha.</p>
 <p class="small"><b>🛒 Newly buying:</b>
-  <a href="../hedge/funds/1903793.html">TPG GP A, LLC</a>
-  <span class="muted">(+54%, 0.4% of book)</span></p>
+  <a href="../hedge/funds/1635999.html">Think Investments LP</a>
+  <span class="muted">(+49%, 1.9% of book)</span> · <a href="../hedge/funds/1903793.html">TPG GP A, LLC</a>
+  <span class="muted">(+55%, 0.4% of book)</span></p>
 <table class="sortable">
   <thead><tr><th>Fund</th><th class="num">Fund alpha vs SPY</th><th class="num">Position</th><th class="num">% of book</th></tr></thead>
   <tbody>
   <tr>
+    <td><a href="../hedge/funds/1635999.html">Think Investments LP</a></td>
+    <td class="num pos" data-v="0.4884">+49%</td>
+    <td class="num" data-v="14270900">$14M</td>
+    <td class="num" data-v="0.019242680872139043">1.9%</td>
+  </tr><tr>
     <td><a href="../hedge/funds/1903793.html">TPG GP A, LLC</a></td>
-    <td class="num pos" data-v="0.5441">+54%</td>
+    <td class="num pos" data-v="0.5496">+55%</td>
     <td class="num" data-v="13251550">$13M</td>
     <td class="num" data-v="0.003601995683512849">0.4%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1851362.html">Lorne Steinberg Wealth Management Inc.</a></td>
-    <td class="num pos" data-v="0.0807">+8%</td>
+    <td class="num pos" data-v="0.0819">+8%</td>
     <td class="num" data-v="10079332">$10M</td>
     <td class="num" data-v="0.023878380014139163">2.4%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1745796.html">North Growth Management Ltd.</a></td>
-    <td class="num pos" data-v="0.6113">+61%</td>
+    <td class="num pos" data-v="0.6508">+65%</td>
     <td class="num" data-v="7184000">$7M</td>
     <td class="num" data-v="0.010997068570947472">1.1%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1106191.html">GMT CAPITAL CORP</a></td>
-    <td class="num pos" data-v="0.328">+33%</td>
+    <td class="num pos" data-v="0.3087">+31%</td>
     <td class="num" data-v="4754248">$5M</td>
     <td class="num" data-v="0.002169389908428577">0.2%</td>
   </tr><tr>
+    <td><a href="../hedge/funds/1730575.html">Midwest Professional Planners, LTD.</a></td>
+    <td class="num pos" data-v="0.0106">+1%</td>
+    <td class="num" data-v="1243763">$1M</td>
+    <td class="num" data-v="0.0029297455008094777">0.3%</td>
+  </tr><tr>
     <td><a href="../hedge/funds/2097528.html">Greenfield Seitz Capital Management, LLC</a></td>
-    <td class="num pos" data-v="0.0552">+6%</td>
+    <td class="num pos" data-v="0.0574">+6%</td>
     <td class="num" data-v="371043">$0M</td>
     <td class="num" data-v="0.0011190979101413628">0.1%</td>
   </tr><tr>
     <td><a href="../hedge/funds/893738.html">DELTA CAPITAL MANAGEMENT LLC</a></td>
-    <td class="num pos" data-v="0.0554">+6%</td>
+    <td class="num pos" data-v="0.0405">+4%</td>
     <td class="num" data-v="348000">$0M</td>
     <td class="num" data-v="0.0019156244495332042">0.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1965239.html">STF Management LP</a></td>
-    <td class="num pos" data-v="0.1478">+15%</td>
+    <td class="num pos" data-v="0.1625">+16%</td>
     <td class="num" data-v="301591">$0M</td>
     <td class="num" data-v="0.0028305548518584535">0.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1910386.html">GUERRA PAN ADVISORS, LLC</a></td>
-    <td class="num pos" data-v="0.0896">+9%</td>
+    <td class="num pos" data-v="0.0906">+9%</td>
     <td class="num" data-v="295612">$0M</td>
     <td class="num" data-v="0.0018285144850107393">0.2%</td>
   </tr>

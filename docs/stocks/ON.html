@@ -45,6 +45,10 @@
   .news li { margin:4px 0; }
   .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
                 padding:12px 16px; font-size:13px; color:#54470f; }
+  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
+  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
+  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
+  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
   footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
   /* heatmap */
   .heat { font-size:12px; }
@@ -100,16 +104,17 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-13.html">Leaderboard</a>
+    <a href="../reports/2026-07-15.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
+    <a href="../decisions.html">Decisions</a>
   </nav>
 </div></header>
 <div class="wrap">
 
-<p class="small"><a href="../reports/2026-07-13.html">← Back to leaderboard</a></p>
-<h2>ON — ON Semiconductor Corp<span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 95.96 vs SMA10 93.30"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 93.30 vs SMA50 110.63"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 110.63 vs SMA200 72.14"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 142,038,084 vs down-vol 144,212,531"></span></span></h2>
+<p class="small"><a href="../reports/2026-07-15.html">← Back to leaderboard</a></p>
+<h2>ON — ON Semiconductor Corp<span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bear" title="Price vs SMA10: price 93.73 vs SMA10 93.79"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 93.79 vs SMA50 110.32"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 110.32 vs SMA200 72.55"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 130,166,879 vs down-vol 153,781,384"></span></span></h2>
 <p class="legend small">
   <span class="mdot bull"></span> bullish · <span class="mdot bear"></span> bearish ·
   <span class="mdot na"></span> n/a &nbsp; — dots: price&gt;SMA10 · SMA10&gt;SMA50 · SMA50&gt;SMA200 · up&gt;down volume (20d)</p>
@@ -122,7 +127,7 @@
 
 
 <div class="stat-row card">
-  <div class="stat"><div class="n">$95.96</div><div class="l">Last close</div></div>
+  <div class="stat"><div class="n">$93.73</div><div class="l">Last close</div></div>
   <div class="stat"><div class="n">$43.9B</div><div class="l">Market cap</div></div>
   <div class="stat"><div class="n">$31.95–$133.93</div><div class="l">2-yr range</div></div>
   
@@ -131,8 +136,8 @@
   <div class="stat"><div class="n">$40K</div><div class="l">Total disclosed buys</div></div>
   
   
-  <div class="stat"><div class="n">15</div><div class="l">Ranked funds holding</div></div>
-  <div class="stat"><div class="n">4</div><div class="l">Newly buying</div></div>
+  <div class="stat"><div class="n">14</div><div class="l">Ranked funds holding</div></div>
+  <div class="stat"><div class="n">3</div><div class="l">Newly buying</div></div>
   
   
   <div class="stat"><div class="n neg">-2.2%</div><div class="l">Buyers' return</div></div>
@@ -234,86 +239,80 @@
   0.1% of the ranked funds&rsquo; total alpha.</p>
 <p class="small"><b>🛒 Newly buying:</b>
   <a href="../hedge/funds/1582090.html">Sachem Head Capital Management LP</a>
-  <span class="muted">(+48%, 2.9% of book)</span> · <a href="../hedge/funds/1950490.html">Panoramic Capital, LLC</a>
-  <span class="muted">(+61%, 2.5% of book)</span> · <a href="../hedge/funds/1536444.html">Camarda Financial Advisors, LLC</a>
-  <span class="muted">(+4%, 0.8% of book)</span> · <a href="../hedge/funds/1564835.html">ASAHI LIFE ASSET MANAGEMENT CO., LTD.</a>
-  <span class="muted">(+1%, 0.2% of book)</span></p>
+  <span class="muted">(+50%, 2.9% of book)</span> · <a href="../hedge/funds/1950490.html">Panoramic Capital, LLC</a>
+  <span class="muted">(+64%, 2.5% of book)</span> · <a href="../hedge/funds/1536444.html">Camarda Financial Advisors, LLC</a>
+  <span class="muted">(+4%, 0.8% of book)</span></p>
 <table class="sortable">
   <thead><tr><th>Fund</th><th class="num">Fund alpha vs SPY</th><th class="num">Position</th><th class="num">% of book</th></tr></thead>
   <tbody>
   <tr>
     <td><a href="../hedge/funds/1559706.html">Slate Path Capital LP</a></td>
-    <td class="num pos" data-v="1.5899">+159%</td>
+    <td class="num pos" data-v="1.6412">+164%</td>
     <td class="num" data-v="482901696">$483M</td>
     <td class="num" data-v="0.07171325707085646">7.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1418427.html">Robeco Schweiz AG</a></td>
-    <td class="num pos" data-v="0.0714">+7%</td>
+    <td class="num pos" data-v="0.0717">+7%</td>
     <td class="num" data-v="121505554">$122M</td>
     <td class="num" data-v="0.02569614445043957">2.6%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1582090.html">Sachem Head Capital Management LP</a></td>
-    <td class="num pos" data-v="0.4827">+48%</td>
+    <td class="num pos" data-v="0.4956">+50%</td>
     <td class="num" data-v="120434400">$120M</td>
     <td class="num" data-v="0.029011995491884178">2.9%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1569453.html">F&amp;V Capital Management, LLC</a></td>
-    <td class="num pos" data-v="0.0206">+2%</td>
+    <td class="num pos" data-v="0.0297">+3%</td>
     <td class="num" data-v="17076000">$17M</td>
     <td class="num" data-v="0.036078139723561505">3.6%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1708759.html">Maytus Capital Management, LLC</a></td>
-    <td class="num pos" data-v="0.671">+67%</td>
+    <td class="num pos" data-v="0.7059">+71%</td>
     <td class="num" data-v="11884863">$12M</td>
     <td class="num" data-v="0.021149708111444506">2.1%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1302404.html">Channing Capital Management, LLC</a></td>
-    <td class="num pos" data-v="0.0513">+5%</td>
+    <td class="num pos" data-v="0.0488">+5%</td>
     <td class="num" data-v="8660936">$9M</td>
     <td class="num" data-v="0.002217877691259667">0.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1759364.html">Totem Point Management, LLC</a></td>
-    <td class="num pos" data-v="0.4382">+44%</td>
+    <td class="num pos" data-v="0.4697">+47%</td>
     <td class="num" data-v="8401739">$8M</td>
     <td class="num" data-v="0.10719943232807118">10.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2011874.html">Napean Trading &amp; Investment Co (Singapore) PTE Ltd</a></td>
-    <td class="num pos" data-v="1.2219">+122%</td>
+    <td class="num pos" data-v="1.1831">+118%</td>
     <td class="num" data-v="7907741">$8M</td>
     <td class="num" data-v="0.03394410426541814">3.4%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1950490.html">Panoramic Capital, LLC</a></td>
-    <td class="num pos" data-v="0.6104">+61%</td>
+    <td class="num pos" data-v="0.6409">+64%</td>
     <td class="num" data-v="3560400">$4M</td>
     <td class="num" data-v="0.02500009040449499">2.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2043130.html">Generali Investments Towarzystwo Funduszy Inwestycyjnych</a></td>
-    <td class="num pos" data-v="0.0875">+9%</td>
+    <td class="num pos" data-v="0.0953">+10%</td>
     <td class="num" data-v="2482992">$2M</td>
     <td class="num" data-v="0.012816668284111671">1.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1569688.html">Kerrisdale Advisers, LLC</a></td>
-    <td class="num pos" data-v="0.4533">+45%</td>
+    <td class="num pos" data-v="0.4491">+45%</td>
     <td class="num" data-v="2304043">$2M</td>
     <td class="num" data-v="0.008769793175596119">0.9%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1536444.html">Camarda Financial Advisors, LLC</a></td>
-    <td class="num pos" data-v="0.037">+4%</td>
+    <td class="num pos" data-v="0.0407">+4%</td>
     <td class="num" data-v="1466947">$1M</td>
     <td class="num" data-v="0.007721223668998352">0.8%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1910386.html">GUERRA PAN ADVISORS, LLC</a></td>
-    <td class="num pos" data-v="0.0896">+9%</td>
+    <td class="num pos" data-v="0.0906">+9%</td>
     <td class="num" data-v="666073">$1M</td>
     <td class="num" data-v="0.004120009094943907">0.4%</td>
   </tr><tr>
-    <td><a href="../hedge/funds/1564835.html">ASAHI LIFE ASSET MANAGEMENT CO., LTD.</a></td>
-    <td class="num pos" data-v="0.0071">+1%</td>
-    <td class="num" data-v="341551">$0M</td>
-    <td class="num" data-v="0.002207598974878192">0.2%</td>
-  </tr><tr>
     <td><a href="../hedge/funds/1965239.html">STF Management LP</a></td>
-    <td class="num pos" data-v="0.1478">+15%</td>
+    <td class="num pos" data-v="0.1625">+16%</td>
     <td class="num" data-v="108138">$0M</td>
     <td class="num" data-v="0.0010149193463010152">0.1%</td>
   </tr>

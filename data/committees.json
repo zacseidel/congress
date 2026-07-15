@@ -1,8 +1,8 @@
 {
-  "generated": "2026-07-13",
+  "generated": "2026-07-15",
   "n_total": 138,
-  "n_matched": 137,
-  "match_rate": 99.3,
+  "n_matched": 136,
+  "match_rate": 98.6,
   "members": {
     "aderholt-robert-b": {
       "bioguide": "A000055",
@@ -1547,6 +1547,13 @@
           "title": null
         },
         {
+          "id": "HSSY18",
+          "name": "House Committee on Science, Space, and Technology: Environment",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
           "id": "HSHM07",
           "name": "House Committee on Homeland Security: Transportation and Maritime Security",
           "type": "house",
@@ -1563,18 +1570,52 @@
       ],
       "industries": [
         "Capital Goods",
+        "Materials",
         "Semiconductors",
         "Software & Services",
         "Technology Hardware",
-        "Transportation"
+        "Transportation",
+        "Utilities"
       ]
     },
     "greene-marjorie-taylor": {
       "bioguide": "F000485",
       "match_method": "state+district",
       "matched_name": "Clay Fuller",
-      "committees": [],
-      "industries": []
+      "committees": [
+        {
+          "id": "HSPW",
+          "name": "House Committee on Transportation and Infrastructure",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSSM",
+          "name": "House Committee on Small Business",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSSM22",
+          "name": "House Committee on Small Business: Innovation, Entrepreneurship, and Workforce Development",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSSM24",
+          "name": "House Committee on Small Business: Oversight, Investigations, and Regulations",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        }
+      ],
+      "industries": [
+        "Capital Goods",
+        "Transportation"
+      ]
     },
     "guest-michael-patrick": {
       "bioguide": "G000591",
@@ -1784,6 +1825,13 @@
           "title": null
         },
         {
+          "id": "HSHM",
+          "name": "House Committee on Homeland Security",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
           "id": "HSAP02",
           "name": "House Committee on Appropriations: Defense",
           "type": "house",
@@ -1793,6 +1841,20 @@
         {
           "id": "HSAP20",
           "name": "House Committee on Appropriations: Transportation, Housing and Urban Development, and Related Agencies",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSHM09",
+          "name": "House Committee on Homeland Security: Oversight, Investigations, and Accountability",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSHM12",
+          "name": "House Committee on Homeland Security: Emergency Management and Technology",
           "type": "house",
           "is_sub": true,
           "title": null
@@ -1810,6 +1872,7 @@
         "Capital Goods",
         "Diversified Financials",
         "Real Estate",
+        "Software & Services",
         "Transportation"
       ]
     },
@@ -2712,6 +2775,13 @@
         {
           "id": "HSAP",
           "name": "House Committee on Appropriations",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSFA",
+          "name": "House Committee on Foreign Affairs",
           "type": "house",
           "is_sub": false,
           "title": null
@@ -3926,6 +3996,13 @@
         {
           "id": "HSSY",
           "name": "House Committee on Science, Space, and Technology",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSGO",
+          "name": "House Committee on Oversight and Government Reform",
           "type": "house",
           "is_sub": false,
           "title": null
@@ -6403,140 +6480,11 @@
       ]
     },
     "graham-lindsey": {
-      "bioguide": "G000359",
-      "match_method": "last_name",
-      "matched_name": "Lindsey Graham",
-      "committees": [
-        {
-          "id": "SSAP",
-          "name": "Senate Committee on Appropriations",
-          "type": "senate",
-          "is_sub": false,
-          "title": null
-        },
-        {
-          "id": "SSAP16",
-          "name": "Senate Committee on Appropriations: Commerce, Justice, Science, and Related Agencies",
-          "type": "senate",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "SSAP02",
-          "name": "Senate Committee on Appropriations: Department of Defense",
-          "type": "senate",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "SSAP22",
-          "name": "Senate Committee on Appropriations: Energy and Water Development",
-          "type": "senate",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "SSAP18",
-          "name": "Senate Committee on Appropriations: Departments of Labor, Health and Human Services, and Education, and Related Agencies",
-          "type": "senate",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "SSAP20",
-          "name": "Senate Committee on Appropriations: State, Foreign Operations, and Related Programs",
-          "type": "senate",
-          "is_sub": true,
-          "title": "Chairman"
-        },
-        {
-          "id": "SSAP24",
-          "name": "Senate Committee on Appropriations: Transportation, Housing and Urban Development, and Related Agencies",
-          "type": "senate",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "SSEV",
-          "name": "Senate Committee on Environment and Public Works",
-          "type": "senate",
-          "is_sub": false,
-          "title": null
-        },
-        {
-          "id": "SSEV09",
-          "name": "Senate Committee on Environment and Public Works: Chemical Safety, Waste Management, Environmental Justice, and Regulatory Oversight",
-          "type": "senate",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "SSEV10",
-          "name": "Senate Committee on Environment and Public Works: Clean Air, Climate, and Nuclear Innovation and Safety",
-          "type": "senate",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "SSEV08",
-          "name": "Senate Committee on Environment and Public Works: Transportation and Infrastructure",
-          "type": "senate",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "SSBU",
-          "name": "Senate Committee on the Budget",
-          "type": "senate",
-          "is_sub": false,
-          "title": "Chairman"
-        },
-        {
-          "id": "SSJU",
-          "name": "Senate Committee on the Judiciary",
-          "type": "senate",
-          "is_sub": false,
-          "title": null
-        },
-        {
-          "id": "SSJU22",
-          "name": "Senate Committee on the Judiciary: Crime and Counterterrorism",
-          "type": "senate",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "SSJU25",
-          "name": "Senate Committee on the Judiciary: Federal Courts, Oversight, Agency Action, and Federal Rights",
-          "type": "senate",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "SSJU04",
-          "name": "Senate Committee on the Judiciary: Border Security and Immigration",
-          "type": "senate",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "SSJU28",
-          "name": "Senate Committee on the Judiciary: Privacy, Technology, and the Law",
-          "type": "senate",
-          "is_sub": true,
-          "title": null
-        }
-      ],
-      "industries": [
-        "Capital Goods",
-        "Energy",
-        "Health Care Equipment & Services",
-        "Materials",
-        "Pharmaceuticals & Biotech",
-        "Real Estate",
-        "Transportation",
-        "Utilities"
-      ]
+      "bioguide": null,
+      "match_method": "unmatched",
+      "matched_name": null,
+      "committees": [],
+      "industries": []
     },
     "fetterman-john": {
       "bioguide": "F000479",
@@ -8194,59 +8142,24 @@
       "bioguide": "M001246",
       "match_method": "state+district",
       "matched_name": "Analilia Mejia",
-      "committees": [],
-      "industries": []
-    },
-    "shreve-jefferson": {
-      "bioguide": "S001229",
-      "match_method": "state+district",
-      "matched_name": "Jefferson Shreve",
       "committees": [
         {
-          "id": "HSPW",
-          "name": "House Committee on Transportation and Infrastructure",
+          "id": "HSHM",
+          "name": "House Committee on Homeland Security",
           "type": "house",
           "is_sub": false,
           "title": null
         },
         {
-          "id": "HSFA",
-          "name": "House Committee on Foreign Affairs",
+          "id": "HSSM",
+          "name": "House Committee on Small Business",
           "type": "house",
           "is_sub": false,
           "title": null
         },
         {
-          "id": "HSPW05",
-          "name": "House Committee on Transportation and Infrastructure: Aviation",
-          "type": "house",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "HSPW14",
-          "name": "House Committee on Transportation and Infrastructure: Railroads, Pipelines, and Hazardous Materials",
-          "type": "house",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "HSPW12",
-          "name": "House Committee on Transportation and Infrastructure: Highways and Transit",
-          "type": "house",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "HSFA07",
-          "name": "House Committee on Foreign Affairs: Western Hemisphere",
-          "type": "house",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "HSFA19",
-          "name": "House Committee on Foreign Affairs: South and Central Asia",
+          "id": "HSHM11",
+          "name": "House Committee on Homeland Security: Border Security and Enforcement",
           "type": "house",
           "is_sub": true,
           "title": null
@@ -8254,6 +8167,45 @@
       ],
       "industries": [
         "Capital Goods",
+        "Software & Services"
+      ]
+    },
+    "shreve-jefferson": {
+      "bioguide": "S001229",
+      "match_method": "state+district",
+      "matched_name": "Jefferson Shreve",
+      "committees": [
+        {
+          "id": "HSAP",
+          "name": "House Committee on Appropriations",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSAP19",
+          "name": "House Committee on Appropriations: Commerce, Justice, Science, and Related Agencies",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSAP20",
+          "name": "House Committee on Appropriations: Transportation, Housing and Urban Development, and Related Agencies",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSAP15",
+          "name": "House Committee on Appropriations: Homeland Security",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        }
+      ],
+      "industries": [
+        "Real Estate",
         "Transportation"
       ]
     },
@@ -8765,6 +8717,13 @@
           "type": "house",
           "is_sub": true,
           "title": null
+        },
+        {
+          "id": "HSSM23",
+          "name": "House Committee on Small Business: Contracting and Infrastructure",
+          "type": "house",
+          "is_sub": true,
+          "title": "Chairman"
         },
         {
           "id": "HSSM21",

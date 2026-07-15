@@ -1,341 +1,320 @@
 [
   {
-    "id": "b654dbfd0b486d67b6d8af22b823fda41641f10776d33cddd954b7ca346e2bd3",
+    "id": "c3d663cead5e5f710457ea358ad65e23c13897cb5d18608db61f00aa2ea4b2be",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Could the SpaceX, Anthropic, and OpenAI IPOs Trigger a 40% Stock Market Crash? Here's What the Data Says.",
-    "author": "Micah Zimmerman",
-    "published_utc": "2026-06-30T15:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/could-the-spacex-anthropic-and-openai-ipos-trigger/?source=iedfolrf0000001",
+    "title": "Prediction: AMD Stock Will Soar After Aug. 4. The Reason Is Hiding in Plain Sight",
+    "author": "Harsh Chauhan",
+    "published_utc": "2026-07-15T15:33:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/15/prediction-amd-stock-will-soar-after-aug-4-the-rea/?source=iedfolrf0000001",
     "tickers": [
-      "SPCX",
-      "NVDA",
       "AMD",
-      "MSFT",
-      "AAPL",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "AMZN",
-      "META",
-      "QQQ"
+      "NVDA",
+      "INTC"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875723%2Fgettyimages-2154454934.jpg&w=1200&op=resize",
-    "description": "While a 40% market crash from the SpaceX, Anthropic, and OpenAI IPOs is unlikely, the combined $200 billion raise could trigger significant rotations within AI and tech stocks. Capital funding these IPOs will likely come from existing tech holdings, creating selling pressure on AI infrastructure companies like Nvidia and AMD. The real risk is concentrated valuation pressure on overweighted tech names rather than a systemic market crash.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878752%2Famd_tmf.png&w=1200&op=resize",
+    "description": "AMD is positioned to deliver strong Q2 earnings on Aug. 4 due to surging demand for server CPUs driven by agentic AI and inference workloads. The CPU-to-GPU ratio in AI data centers is shifting from 1:4-1:8 toward 1:1-1:2, potentially increasing server CPU demand by 4x. AMD has gained market share (33% in Q1 2026 vs. 27.2% year-ago) and is raising prices, with server CPU prices up 10-20% between March-April. Despite a rich valuation (186x trailing earnings), AMD's ability to outperform expectations could sustain its momentum.",
     "keywords": [
-      "IPO",
-      "SpaceX",
-      "Anthropic",
-      "OpenAI",
-      "market crash",
-      "AI stocks",
-      "tech rotation",
-      "capital allocation",
-      "Nasdaq-100"
+      "AMD earnings",
+      "server CPUs",
+      "agentic AI",
+      "inference workloads",
+      "GPU-to-CPU ratio",
+      "pricing power",
+      "market share gains",
+      "AI data centers"
     ],
     "insights": [
       {
-        "ticker": "SPCX",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "SpaceX completed a record $75B IPO but will likely attract capital from existing tech holdings, creating rotation pressure on other AI/tech stocks rather than being a direct negative for the company itself."
+        "ticker": "AMD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong catalysts for Q2 earnings driven by surging server CPU demand from agentic AI workloads, significant market share gains, pricing power with 10-20% price increases, and analyst expectations for continued growth. Long-term server CPU market expected to grow over 35% annually through 2030."
       },
       {
         "ticker": "NVDA",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Nvidia faces mechanical selling pressure as fund managers rotate capital from AI infrastructure stocks into new IPOs. The article specifically identifies Nvidia as overweighted in QQQ and vulnerable to displacement."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "negative",
-        "sentiment_reasoning": "AMD, like Nvidia, is identified as an AI infrastructure company facing rotation pressure and potential selling as capital moves into SpaceX, Anthropic, and OpenAI IPOs."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Microsoft is overweighted in QQQ and could face displacement pressure as new IPOs are added to the index, creating selling pressure on existing constituents."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Apple is overweighted in QQQ and vulnerable to displacement as SpaceX and other mega-cap IPOs enter the index, potentially triggering forced selling."
-      },
-      {
-        "ticker": "GOOG",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is mentioned as a company that may face doubt about continued AI infrastructure spending, but the article doesn't directly attribute negative pressure to the IPO rotation."
+        "sentiment_reasoning": "Mentioned as the primary GPU provider for AI data centers, but the article focuses on the shift toward CPU demand, which could reduce relative GPU demand growth. No direct negative or positive catalyst discussed."
       },
       {
-        "ticker": "GOOGL",
+        "ticker": "INTC",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is mentioned as a company that may face doubt about continued AI infrastructure spending, but the article doesn't directly attribute negative pressure to the IPO rotation."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is mentioned as a company that may face doubt about continued AI infrastructure spending, but the article doesn't directly attribute negative pressure to the IPO rotation."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is mentioned as a company that may face doubt about continued AI infrastructure spending, but the article doesn't directly attribute negative pressure to the IPO rotation."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Amazon is mentioned similarly to Alphabet regarding potential AI spending concerns, but no direct negative sentiment is attributed to the IPO rotation."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Meta is overweighted in QQQ and could face displacement pressure as new mega-cap IPOs are added to the index."
-      },
-      {
-        "ticker": "QQQ",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "QQQ will be forced to add SpaceX and potentially other IPOs, creating index rebalancing effects that displace existing overweighted constituents, but this is a mechanical process rather than a negative outlook for the ETF itself."
+        "sentiment_reasoning": "Implicitly referenced as a competitor in server CPUs, but no specific analysis provided. The article focuses on AMD's gains without detailing Intel's position or performance."
       }
     ]
   },
   {
-    "id": "52c943fd99497dff290c54d92b14aab8ea908639e50b6168c7be3e7b3357585d",
+    "id": "e6345448f803ac57096362dd094aaf6f331222b5cf945942bf19dc7a2c99e4e0",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Why Intel Stock Just Popped",
-    "author": "Rich Smith",
-    "published_utc": "2026-06-30T15:16:09Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/why-intel-stock-just-popped/?source=iedfolrf0000001",
+    "title": "5 Stocks to Buy If the Market Drops Again",
+    "author": "Neil Rozenbaum",
+    "published_utc": "2026-07-15T15:08:48Z",
+    "article_url": "https://www.fool.com/investing/2026/07/15/5-stocks-to-buy-if-the-market-drops-again/?source=iedfolrf0000001",
     "tickers": [
-      "INTC",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "AXON",
+      "AMD",
+      "PLTR",
+      "RDDT"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878977%2Fgettyimages-1088813672.jpg&w=1200&op=resize",
+    "description": "The article discusses five stocks that investors should consider buying if the market experiences a pullback. The author identifies specific companies he would add to his portfolio during a market downturn, viewing it as an opportunity to purchase quality names at potentially lower valuations.",
+    "keywords": [
+      "market pullback",
+      "buying opportunity",
+      "stock recommendations",
+      "portfolio strategy",
+      "market downturn"
+    ],
+    "insights": [
+      {
+        "ticker": "GOOG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as one of the five stocks the author would buy during a market pullback, indicating confidence in its long-term value and quality as a holding."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as one of the five stocks the author would buy during a market pullback, indicating confidence in its long-term value and quality as a holding."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as one of the five stocks the author would buy during a market pullback, indicating confidence in its long-term value and quality as a holding."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as one of the five stocks the author would buy during a market pullback, indicating confidence in its long-term value and quality as a holding."
+      },
+      {
+        "ticker": "AXON",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Included in the author's list of stocks to buy on market weakness, suggesting it is viewed as a quality company worth accumulating at lower prices."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Featured as one of the five recommended stocks for purchase during market pullbacks, indicating the author sees it as a strong long-term investment."
+      },
+      {
+        "ticker": "PLTR",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Included in the author's watchlist of stocks to buy on market weakness, reflecting confidence in its investment potential."
+      },
+      {
+        "ticker": "RDDT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as one of the five stocks the author would add to his portfolio during a market downturn, indicating it is viewed as a quality buying opportunity."
+      }
+    ]
+  },
+  {
+    "id": "30c0647a428964a8a8d8c440f6024fe20c7fca870b3549d5bdf24e277d7b7f2d",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "AMD\u2019s 5C Deal Positions It as a Direct Nvidia Rival",
+    "author": "Thomas Hughes",
+    "published_utc": "2026-07-15T14:15:00Z",
+    "article_url": "https://www.investing.com/analysis/amds-5c-deal-positions-it-as-a-direct-nvidia-rival-200683984",
+    "tickers": [
       "AMD",
       "NVDA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876931%2Fintel-cube-statue-with-lit-up-logo-on-a-plaza-is-intc.jpg&w=1200&op=resize",
-    "description": "Intel stock jumped 4.2% after Wells Fargo analyst Aaron Rakers raised AMD's price target to $615, citing potential growth in CPU-based AI inference. While the analyst didn't mention Intel directly, investors see similar upside potential for Intel as the AI market shifts from GPUs to CPUs. However, Intel's valuation at 900x earnings appears stretched compared to competitors, raising questions about whether the gains are already priced in.",
+    "amp_url": "https://m.investing.com/analysis/amds-5c-deal-positions-it-as-a-direct-nvidia-rival-200683984?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "AMD's partnership with 5C to collaborate on next-gen data center construction strengthens its position as a viable direct competitor to NVIDIA. The deal transforms AMD from a hardware vendor into a full-stack operator capable of delivering hyperscale data centers with advanced cooling systems on a turnkey basis. Analysts view this positively, with 44 analysts covering AMD and a consensus price target trending toward $700 (25% upside). Key risks remain valuation at 75x current-year outlook and execution, though forecasts suggest double-digit hypergrowth and potential $200 billion revenue within the next decade.",
     "keywords": [
-      "Intel",
-      "AMD",
-      "Nvidia",
-      "AI market",
-      "GPU vs CPU",
-      "semiconductor",
-      "valuation",
-      "price target"
-    ],
-    "insights": [
-      {
-        "ticker": "INTC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock jumped 4.2% on optimism about CPU growth in AI inference market; however, sentiment is tempered by extremely high valuation at 900x earnings, suggesting potential gains may already be priced in."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Wells Fargo analyst raised price target to $615 with bullish forecasts for CPU revenue growth (68% in 2026, 28% in 2027, 22% in 2028) as AI market shifts to inference; however, valuation at 180x earnings is elevated."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Maintains dominant position in AI GPU market with most AI spending; valued at only 30x earnings, making it appear as the safer bet compared to AMD and Intel despite smaller daily gains."
-      }
-    ]
-  },
-  {
-    "id": "521337839aeee5aa7efcdb73c8c278a654a09f0a8ae632283dfc32379d3f8da4",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Nvidia vs. AMD: Which AI CPU Stock Is the Better Buy?",
-    "author": "Adria Cimino",
-    "published_utc": "2026-06-30T09:02:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/nvidia-vs-amd-which-ai-cpu-stock-is-the/?source=iedfolrf0000001",
-    "tickers": [
-      "NVDA",
-      "AMD",
-      "INTC"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876441%2Fgettyimages-1565467832-1200x675-128554e.jpg&w=1200&op=resize",
-    "description": "As agentic AI emerges, CPUs are becoming increasingly important alongside GPUs. While Nvidia dominates the GPU market and is entering the CPU space with ambitious $20 billion sales forecasts, AMD holds a stronger existing position in CPUs with 39% market share and 52% in desktops. Both companies are positioned to benefit from AI growth, but Nvidia is recommended as the better buy due to its significantly lower valuation at 21x forward earnings compared to AMD's 70x.",
-    "keywords": [
-      "agentic AI",
-      "CPU market",
-      "GPU market",
-      "semiconductor chips",
-      "data center",
-      "PC market",
-      "valuation"
-    ],
-    "insights": [
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Nvidia is expanding into the CPU market with strong forecasts ($20 billion in stand-alone CPU sales), launching new platforms (Vera Rubin), and has a significantly cheaper valuation (21x forward earnings) compared to AMD. The company is positioned as the better buy despite AMD's stronger existing CPU position."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "AMD maintains a strong existing position in the CPU market with 39% market share and 52% in desktops. The company is benefiting from AI infrastructure demand with data center becoming a major earnings growth driver. However, it trades at a premium valuation (70x forward earnings) compared to Nvidia."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Intel is mentioned as the global CPU leader with nearly 60% market share, but the article does not provide specific analysis or recommendations regarding Intel's position in the emerging AI CPU market."
-      }
-    ]
-  },
-  {
-    "id": "b5955bb87da445b1943ecd14c198399ec91f444241f20f5033c60b5cebede2a6",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "The OpenAI Trade Isn't Microsoft Anymore. Here's Where Smart Money May Be Looking.",
-    "author": "Marc Guberti",
-    "published_utc": "2026-06-28T11:25:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/28/the-openai-trade-isnt-microsoft-anymore-heres-wher/?source=iedfolrf0000001",
-    "tickers": [
-      "MSFT",
-      "NVDA",
-      "AVGO",
-      "AMD",
-      "META",
-      "AMZN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876056%2Fgettyimages-1492319884-1200x675-128554e.jpg&w=1200&op=resize",
-    "description": "Microsoft is no longer viewed as the best way to gain exposure to OpenAI due to competitive tensions between the companies. Nvidia emerges as the superior investment choice, as OpenAI's massive infrastructure spending needs ($115 billion through 2029) will heavily depend on Nvidia's GPU chips. Nvidia's dominance in AI semiconductors and strong growth metrics make it better positioned to benefit from OpenAI's scaling.",
-    "keywords": [
-      "OpenAI IPO",
       "AI infrastructure",
-      "GPU chips",
-      "competitive dynamics",
-      "hyperscalers",
-      "semiconductor demand"
+      "data center construction",
+      "GPU competition",
+      "hyperscale deployment",
+      "full-stack operator",
+      "MI450 lineup",
+      "analyst sentiment",
+      "valuation risk"
     ],
     "insights": [
       {
-        "ticker": "MSFT",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Microsoft's relationship with OpenAI has deteriorated as the company now competes directly with ChatGPT through its own products. It is no longer considered the best investment vehicle for OpenAI exposure."
+        "ticker": "AMD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The 5C partnership positions AMD as a direct NVIDIA competitor with full-stack capabilities. Analyst sentiment is firming with increasing coverage (44 analysts), consensus price target trending to $700 (25% upside), and strong institutional ownership (70%+). The deal enables AMD to monetize AI infrastructure investments and provides multiple growth engines across AI applications."
       },
       {
         "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Nvidia is positioned as the primary beneficiary of OpenAI's infrastructure spending. The company has established itself as the dominant GPU provider with superior margins and growth (85% YoY revenue growth), and faces strong demand from multiple AI competitors seeking chips."
-      },
-      {
-        "ticker": "AVGO",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Broadcom is mentioned as a viable alternative AI chipmaker that does business with OpenAI, but is significantly smaller than Nvidia with lower net income than Nvidia's revenue alone."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "AMD is noted as another competitor in AI chips with OpenAI business, but lacks Nvidia's market dominance and pricing power in the GPU space."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Meta is mentioned as a hyperscaler competing with OpenAI for Nvidia chips, but is not the focus of the investment thesis."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Amazon is referenced as a hyperscaler with substantial profits competing for Nvidia chips, but is peripheral to the main investment argument."
+        "sentiment_reasoning": "While AMD is positioned as a direct rival, the article notes demand metrics suggest sufficient room for both companies to operate, with GPU demand exceeding capacity. NVIDIA maintains analyst coverage of 54 analysts, but the article frames AMD's advancement as competitive rather than threatening NVIDIA's dominance."
       }
     ]
   },
   {
-    "id": "06840074ea859d24d6bc23173822606f7571fc303ec40cf751aa1ccfcf218c3e",
+    "id": "12a7fb0cf031f0616182ee56bbc33d9a73a2d14cabb22bfa69c3b8d9acd63e24",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Where Will Nvidia Stock Be in 2030?",
-    "author": "Daniel Sparks",
-    "published_utc": "2026-06-27T17:18:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/27/where-will-nvidia-stock-be-in-2030/?source=iedfolrf0000001",
+    "title": "Wall Street Says This Artificial Intelligence (AI) Stock Is Overvalued. Here's Why I Disagree",
+    "author": "Prosper Junior Bakiny",
+    "published_utc": "2026-07-15T06:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/15/wall-street-says-this-artificial-intelligence-ai-s/?source=iedfolrf0000001",
     "tickers": [
+      "AMD",
+      "NVDA"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878624%2Famd-logo.png&w=1200&op=resize",
+    "description": "AMD stock has surged 279% over the past year and trades at 79.4x forward earnings, prompting Wall Street to suggest a 5% downside. However, the author argues AMD remains a strong buy due to its leadership in server CPUs, positioning it to capitalize on the agentic AI boom. AMD's market opportunity forecast nearly doubled from 18% to 35% CAGR through 2030, indicating accelerating demand for its processors.",
+    "keywords": [
+      "artificial intelligence",
+      "AMD",
+      "server CPU",
+      "AI agents",
+      "valuation",
+      "semiconductor",
+      "market opportunity"
+    ],
+    "insights": [
+      {
+        "ticker": "AMD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Despite high valuation multiples (79.4x forward earnings), the author is bullish on AMD due to its market leadership in server CPUs, strong positioning in the agentic AI boom, competitive moat, and accelerating demand evidenced by management nearly doubling its market growth forecast from 18% to 35% CAGR through 2030."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a reference point for comparison, with CEO Jensen Huang cited regarding AI agents. Used as an example of a company that was considered overvalued but exceeded expectations as the AI market proved larger than anticipated."
+      }
+    ]
+  },
+  {
+    "id": "cebebcc3feaea916a3beefd142186454e8c0645c6cea9a9f439fdde28829c850",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Had You Bought This Magnificent Vanguard ETF at the Start of January, You'd Be Crushing the S&P 500 in 2026",
+    "author": "Anthony Di Pizio",
+    "published_utc": "2026-07-14T15:17:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/14/bought-vanguard-etf-january-crushing-sp-500-2026/?source=iedfolrf0000001",
+    "tickers": [
+      "VGT",
       "NVDA",
-      "AMZN",
+      "AAPL",
       "MSFT",
       "GOOG",
       "GOOGL",
       "GOOGM",
       "GOOGN",
-      "META",
-      "AMD"
+      "AMZN",
+      "AVGO",
+      "MU",
+      "AMD",
+      "INTC",
+      "LRCX",
+      "UBER"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876667%2Fnvidia-nvda-stock.png&w=1200&op=resize",
-    "description": "Nvidia's stock has declined 18% from its May high amid concerns about peak AI spending, despite strong Q1 FY2027 results showing 85% revenue growth. While major tech companies plan $725 billion in AI infrastructure spending for 2026, risks include slowing capital expenditure cycles, competition from in-house chips by customers, and potential margin compression. The stock trades at 30x earnings (down from 40+), and could reach $200s-$300s by 2030 if the AI buildout sustains, but faces significant downside if spending peaks.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878573%2Fa-digital-render-of-a-bull-pushing-money-up-the-slope-of-a-roller-coaster.jpg&w=1200&op=resize",
+    "description": "The Vanguard Information Technology ETF (VGT) has returned 23.3% in 2026, significantly outpacing the S&P 500's 10.3% return. The ETF's strong performance is driven by five trillion-dollar tech companies\u2014Nvidia, Apple, Microsoft, Alphabet, and Amazon\u2014which comprise 50.6% of its portfolio. While AI infrastructure demand remains strong, rising costs and customer concerns about spending sustainability present near-term risks.",
     "keywords": [
-      "AI infrastructure spending",
-      "GPU market dominance",
-      "competitive threats",
-      "margin compression",
-      "capital expenditure cycle",
-      "valuation multiple",
-      "in-house chip development"
+      "Vanguard Information Technology ETF",
+      "AI infrastructure boom",
+      "semiconductor demand",
+      "tech stocks outperformance",
+      "capital expenditure concerns"
     ],
     "insights": [
       {
-        "ticker": "NVDA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Strong near-term fundamentals (85% revenue growth, accelerating AI buildout) offset by significant long-term uncertainties regarding peak AI spending, customer competition through in-house chips, and potential margin erosion. Valuation has improved but wide range of 2030 outcomes creates balanced risk-reward."
+        "ticker": "VGT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "ETF significantly outperforming S&P 500 with 23.3% YTD return vs 10.3%, strong historical track record of 14.9% compound annual returns since 2004, and positioned to benefit from long-term AI and emerging technologies."
       },
       {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Major AI infrastructure investor ($725B combined capex with peers in 2026) but developing competing in-house chips to reduce Nvidia dependence, creating both opportunity and threat dynamics."
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Largest holding in VGT at 16.79%, outperforming S&P 500, benefits from strong AI chip demand where supply significantly lags demand."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Second-largest holding at 15.27% of VGT portfolio, contributing to ETF's outperformance."
       },
       {
         "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Significant AI capex contributor but also designing in-house chips to lower AI computing costs and reduce reliance on Nvidia, indicating strategic shift in chip sourcing."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Third-largest holding at 9.88%, leader in AI software and cloud services; currently lagging but described as attractively valued with recovery expected."
       },
       {
         "ticker": "GOOG",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Major AI infrastructure spender but actively developing competing silicon; Google-built chips already power workloads at AI developers like Anthropic, reducing future Nvidia dependency."
+        "sentiment_reasoning": "Major VGT holding among top five trillion-dollar companies, but CEO reports customer complaints about AI spending costs, indicating potential demand headwinds."
       },
       {
         "ticker": "GOOGL",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Major AI infrastructure spender but actively developing competing silicon; Google-built chips already power workloads at AI developers like Anthropic, reducing future Nvidia dependency."
+        "sentiment_reasoning": "Major VGT holding among top five trillion-dollar companies, but CEO reports customer complaints about AI spending costs, indicating potential demand headwinds."
       },
       {
         "ticker": "GOOGM",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Major AI infrastructure spender but actively developing competing silicon; Google-built chips already power workloads at AI developers like Anthropic, reducing future Nvidia dependency."
+        "sentiment_reasoning": "Major VGT holding among top five trillion-dollar companies, but CEO reports customer complaints about AI spending costs, indicating potential demand headwinds."
       },
       {
         "ticker": "GOOGN",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Major AI infrastructure spender but actively developing competing silicon; Google-built chips already power workloads at AI developers like Anthropic, reducing future Nvidia dependency."
+        "sentiment_reasoning": "Major VGT holding among top five trillion-dollar companies, but CEO reports customer complaints about AI spending costs, indicating potential demand headwinds."
       },
       {
-        "ticker": "META",
+        "ticker": "AMZN",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Part of the $725B AI capex consortium but also designing in-house chips to reduce Nvidia dependence and lower AI infrastructure costs."
+        "sentiment_reasoning": "One of five trillion-dollar tech companies in VGT portfolio, but no specific performance details provided in article."
+      },
+      {
+        "ticker": "AVGO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Outperforming S&P 500, benefits from strong demand for data center chips critical to AI infrastructure."
+      },
+      {
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Outperforming S&P 500, benefits from strong demand for data center components critical to AI development."
       },
       {
         "ticker": "AMD",
         "sentiment": "positive",
-        "sentiment_reasoning": "Positioned as credible alternative to Nvidia with its own accelerators; benefits from potential erosion of Nvidia's pricing power and market share as competition intensifies."
+        "sentiment_reasoning": "Stock more than doubled in 2026, central to AI infrastructure boom."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock more than doubled in 2026, central to AI infrastructure boom."
+      },
+      {
+        "ticker": "LRCX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock more than doubled in 2026, central to AI infrastructure boom."
+      },
+      {
+        "ticker": "UBER",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Burned through entire 2026 AI budget in four months, COO expressing difficulty justifying AI spending levels, indicating cost concerns."
       }
     ]
   }

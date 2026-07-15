@@ -1,345 +1,293 @@
 [
   {
-    "id": "5a33ee30a2b2a908ce79301bbf7b80fce74fe55b1c8869b9b5cd76297d715ae7",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "AI Fears Hit Nebius Stock, But Has the Growth Thesis Changed?",
-    "author": "Ryan Hasson",
-    "published_utc": "2026-06-30T19:07:00Z",
-    "article_url": "https://www.investing.com/analysis/ai-fears-hit-nebius-stock-but-has-the-growth-thesis-changed-200683071",
-    "tickers": [
-      "NBIS",
-      "META",
-      "MSFT"
-    ],
-    "amp_url": "https://m.investing.com/analysis/ai-fears-hit-nebius-stock-but-has-the-growth-thesis-changed-200683071?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "Nebius stock has pulled back 13% from its June 22 all-time high of $299.86 amid broader AI sector volatility and valuation concerns, trading at a P/S ratio of ~80 and P/E above 93. However, the company's fundamental growth thesis remains intact with strong 2026 revenue guidance of $3-3.4 billion, contracted power capacity over 4 gigawatts, and major multi-year agreements with Meta and Microsoft providing forward visibility. The recent selloff is characterized as a sentiment event rather than a fundamental deterioration.",
-    "keywords": [
-      "AI infrastructure",
-      "neocloud",
-      "valuation concerns",
-      "AI sentiment",
-      "contracted revenue",
-      "hyperscaler demand",
-      "semiconductor sector"
-    ],
-    "insights": [
-      {
-        "ticker": "NBIS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Stock faces near-term headwinds from elevated valuation (P/S ~80, P/E >93) and AI sector volatility, with a 13% pullback from peak. However, fundamentals remain strong with robust revenue guidance, major customer contracts (Meta, Microsoft), and accelerating expansion. The article suggests the selloff is sentiment-driven rather than fundamental, making it neutral overall\u2014neither bullish nor bearish on the core business."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Meta is mentioned as one of Nebius's major multi-year agreement partners, providing significant contracted revenue visibility and supporting the AI infrastructure buildout thesis."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Microsoft is highlighted as another major multi-year agreement partner with Nebius, anchoring the company's contracted revenue backlog and demonstrating strong hyperscaler demand for AI infrastructure."
-      }
-    ]
-  },
-  {
-    "id": "b9c98fa618a9793a008470185fec741472ca9249a77dc936c3ff1ae6cedd1ffc",
+    "id": "eb543036f49b39656830ff6790ce9d37550110e1b3c3f7104a51876cb0139780",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "The \"Magnificent Seven's\" Capex Supercycle Has Given Birth to 2 Millionaire-Maker Stocks Hiding in Plain Sight. Here's the Best of the Bunch",
-    "author": "Harsh Chauhan",
-    "published_utc": "2026-06-30T18:23:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/the-magnificent-sevens-capex-supercycle-has-given/?source=iedfolrf0000001",
+    "title": "Which Is the Better Value Stock: Microsoft or Nvidia?",
+    "author": "Keithen Drury",
+    "published_utc": "2026-07-15T15:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/15/which-is-the-better-value-stock-microsoft-or-nvidi/?source=iedfolrf0000001",
+    "tickers": [
+      "MSFT",
+      "NVDA"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878180%2Ftwo-people-analyizing-a-graph.jpg&w=1200&op=resize",
+    "description": "The article compares Microsoft and Nvidia as potential value stocks despite their growth classifications. Microsoft trades at 22.9x trailing earnings, below the S&P 500's 25.6x, making it a textbook value stock. Nvidia, while more expensive on trailing metrics, trades at 16.5x next year's earnings given its 96% expected growth rate. The author concludes Nvidia is the better 5-year pick due to higher expected revenue growth and less priced-in expectations, while Microsoft faces uncertainty about returns on its massive data center investments.",
+    "keywords": [
+      "value stocks",
+      "AI investment",
+      "data centers",
+      "valuation metrics",
+      "growth stocks",
+      "semiconductor",
+      "cloud computing"
+    ],
+    "insights": [
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Microsoft is viewed as a solid investment with strong AI revenue growth (123% YoY) and cloud computing expansion (40% growth), but faces uncertainty about long-term returns on its massive data center spending. The author considers it less attractive than Nvidia over the next 5 years due to lower upside potential."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Nvidia is positioned as the better value pick with expected 96% quarterly growth, a well-defined hardware business serving AI hyperscalers, and clear visibility through 2030 with the AI infrastructure build-out. The author believes significant revenue growth is not fully priced into the stock, offering better 5-year upside potential."
+      }
+    ]
+  },
+  {
+    "id": "c80b20d2c497bae3bba21d183afefa88df42baf16d47b20252e33a53546437be",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "Why Micron Is Doubling Down While the HBM Shortage Persists",
+    "author": "Thomas Hughes",
+    "published_utc": "2026-07-15T14:31:00Z",
+    "article_url": "https://www.investing.com/analysis/why-micron-is-doubling-down-while-the-hbm-shortage-persists-200683987",
     "tickers": [
       "MU",
-      "DELL",
+      "NVDA",
       "AMZN",
-      "MSFT",
       "GOOG",
       "GOOGL",
       "GOOGM",
       "GOOGN",
-      "META"
+      "MSFT"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876423%2Fman-sitting-flying-currency-notes.jpg&w=1200&op=resize",
-    "description": "Major U.S. hyperscalers are projected to spend a record $725 billion on AI infrastructure this year, creating significant opportunities for semiconductor and server suppliers. Micron Technology and Dell Technologies are positioned to benefit from this supercycle, with Micron identified as the better investment due to higher predicted earnings growth and cheaper valuation.",
+    "amp_url": "https://m.investing.com/analysis/why-micron-is-doubling-down-while-the-hbm-shortage-persists-200683987?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "Micron is increasing its domestic investment to $250 billion over 10 years to expand HBM production capacity and compete with SK Hynix amid persistent semiconductor shortages expected to last into the next decade. The company is capturing significant market share from major AI infrastructure providers like Amazon, Alphabet, and Microsoft, while analysts project nearly 30% upside with potential for over 100% gains longer-term due to strong demand, pricing power, and favorable valuation metrics.",
     "keywords": [
+      "HBM shortage",
+      "semiconductor manufacturing",
       "AI infrastructure",
-      "capital expenditure",
+      "capital investment",
       "memory chips",
-      "AI servers",
-      "supercycle",
-      "high-bandwidth memory",
-      "hyperscalers"
+      "market competition",
+      "pricing power",
+      "production capacity"
     ],
     "insights": [
       {
         "ticker": "MU",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strong demand for high-bandwidth memory chips used in AI accelerators, predicted 42% annual HBM market growth through 2030, attractive valuation, and significantly higher earnings growth expected compared to peers."
-      },
-      {
-        "ticker": "DELL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Booming AI server demand with $51.3 billion backlog, 35% annual market growth predicted through 2034, and accelerating growth rates, though earnings growth expected to be lower than Micron."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major hyperscaler investing heavily in AI infrastructure as part of the $725 billion combined capex by top four companies."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major hyperscaler investing heavily in AI infrastructure as part of the $725 billion combined capex by top four companies."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major hyperscaler (Google) investing heavily in AI infrastructure as part of the $725 billion combined capex by top four companies."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major hyperscaler (Google) investing heavily in AI infrastructure as part of the $725 billion combined capex by top four companies."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major hyperscaler (Google) investing heavily in AI infrastructure as part of the $725 billion combined capex by top four companies."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major hyperscaler (Google) investing heavily in AI infrastructure as part of the $725 billion combined capex by top four companies."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major hyperscaler investing heavily in AI infrastructure as part of the $725 billion combined capex by top four companies."
-      }
-    ]
-  },
-  {
-    "id": "ddf5284480377eeb4fba3eb37275eb859985231402efc93ffc64ee52376a5424",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "Rezolve AI Stock Has a Short-Squeeze Setup, But Execution Comes First",
-    "author": "Thomas Hughes",
-    "published_utc": "2026-06-30T15:46:00Z",
-    "article_url": "https://www.investing.com/analysis/rezolve-ai-stock-has-a-shortsqueeze-setup-but-execution-comes-first-200683061",
-    "tickers": [
-      "RZLV",
-      "RZLVW",
-      "MSFT",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "V"
-    ],
-    "amp_url": "https://m.investing.com/analysis/rezolve-ai-stock-has-a-shortsqueeze-setup-but-execution-comes-first-200683061?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "Rezolve AI presents a potential short-squeeze opportunity with strong fundamentals including 670% expected 2026 revenue growth, partnerships with Microsoft, Alphabet, and Visa, and a path to profitability. However, the stock's upside is tempered by a $200 million resale shelf registration overhang and the company's status as a UK-based foreign private issuer with semi-annual reporting. Key catalysts include the H1 2026 results, with critical support at $1.80.",
-    "keywords": [
-      "short squeeze",
-      "agentic commerce",
-      "revenue growth",
-      "profitability inflection",
-      "hyperscaler partnerships",
-      "institutional ownership",
-      "shelf registration overhang"
-    ],
-    "insights": [
-      {
-        "ticker": "RZLV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company demonstrates strong fundamentals with 670% projected 2026 revenue growth, Q1 revenue exceeding full-year 2025 totals, partnerships with major tech and financial companies (Microsoft, Alphabet, Visa), path to profitability by year-end, $300M buyback authorization, and analyst consensus of Moderate Buy. Short-squeeze setup with high short interest provides additional upside catalyst."
-      },
-      {
-        "ticker": "RZLVW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company demonstrates strong fundamentals with 670% projected 2026 revenue growth, Q1 revenue exceeding full-year 2025 totals, partnerships with major tech and financial companies (Microsoft, Alphabet, Visa), path to profitability by year-end, $300M buyback authorization, and analyst consensus of Moderate Buy. Short-squeeze setup with high short interest provides additional upside catalyst."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hyperscaler partner listing Rezolve's AI model on its cloud platform. Partnership is positive for Rezolve but Microsoft is only mentioned in supporting context without direct impact analysis."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hyperscaler partner listing Rezolve's AI model on its cloud platform. Partnership is positive for Rezolve but Alphabet is only mentioned in supporting context without direct impact analysis."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hyperscaler partner listing Rezolve's AI model on its cloud platform. Partnership is positive for Rezolve but Alphabet is only mentioned in supporting context without direct impact analysis."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hyperscaler partner listing Rezolve's AI model on its cloud platform. Partnership is positive for Rezolve but Alphabet is only mentioned in supporting context without direct impact analysis."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hyperscaler partner listing Rezolve's AI model on its cloud platform. Partnership is positive for Rezolve but Alphabet is only mentioned in supporting context without direct impact analysis."
-      },
-      {
-        "ticker": "V",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a financial partner for Rezolve's loyalty program and cashback services through Mashreq Bank. Partnership is positive for Rezolve but Visa is only mentioned in supporting context without direct impact analysis."
-      }
-    ]
-  },
-  {
-    "id": "b654dbfd0b486d67b6d8af22b823fda41641f10776d33cddd954b7ca346e2bd3",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Could the SpaceX, Anthropic, and OpenAI IPOs Trigger a 40% Stock Market Crash? Here's What the Data Says.",
-    "author": "Micah Zimmerman",
-    "published_utc": "2026-06-30T15:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/could-the-spacex-anthropic-and-openai-ipos-trigger/?source=iedfolrf0000001",
-    "tickers": [
-      "SPCX",
-      "NVDA",
-      "AMD",
-      "MSFT",
-      "AAPL",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "AMZN",
-      "META",
-      "QQQ"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875723%2Fgettyimages-2154454934.jpg&w=1200&op=resize",
-    "description": "While a 40% market crash from the SpaceX, Anthropic, and OpenAI IPOs is unlikely, the combined $200 billion raise could trigger significant rotations within AI and tech stocks. Capital funding these IPOs will likely come from existing tech holdings, creating selling pressure on AI infrastructure companies like Nvidia and AMD. The real risk is concentrated valuation pressure on overweighted tech names rather than a systemic market crash.",
-    "keywords": [
-      "IPO",
-      "SpaceX",
-      "Anthropic",
-      "OpenAI",
-      "market crash",
-      "AI stocks",
-      "tech rotation",
-      "capital allocation",
-      "Nasdaq-100"
-    ],
-    "insights": [
-      {
-        "ticker": "SPCX",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "SpaceX completed a record $75B IPO but will likely attract capital from existing tech holdings, creating rotation pressure on other AI/tech stocks rather than being a direct negative for the company itself."
+        "sentiment_reasoning": "Company is aggressively investing $250 billion in U.S. capacity, capturing significant market share from major tech companies, benefiting from extended HBM shortage, gaining pricing power, and trading at attractive valuation (12x current-year earnings) with analyst consensus Buy rating and 30% upside potential."
       },
       {
         "ticker": "NVDA",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Nvidia faces mechanical selling pressure as fund managers rotate capital from AI infrastructure stocks into new IPOs. The article specifically identifies Nvidia as overweighted in QQQ and vulnerable to displacement."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "negative",
-        "sentiment_reasoning": "AMD, like Nvidia, is identified as an AI infrastructure company facing rotation pressure and potential selling as capital moves into SpaceX, Anthropic, and OpenAI IPOs."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Microsoft is overweighted in QQQ and could face displacement pressure as new IPOs are added to the index, creating selling pressure on existing constituents."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Apple is overweighted in QQQ and vulnerable to displacement as SpaceX and other mega-cap IPOs enter the index, potentially triggering forced selling."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is mentioned as a company that may face doubt about continued AI infrastructure spending, but the article doesn't directly attribute negative pressure to the IPO rotation."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is mentioned as a company that may face doubt about continued AI infrastructure spending, but the article doesn't directly attribute negative pressure to the IPO rotation."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is mentioned as a company that may face doubt about continued AI infrastructure spending, but the article doesn't directly attribute negative pressure to the IPO rotation."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is mentioned as a company that may face doubt about continued AI infrastructure spending, but the article doesn't directly attribute negative pressure to the IPO rotation."
+        "sentiment": "positive",
+        "sentiment_reasoning": "NVIDIA benefits from persistent HBM shortage and increased production capacity investments by suppliers like Micron, supporting continued strong demand for AI chips and infrastructure, though sentiment is indirect as a customer rather than direct subject."
       },
       {
         "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Amazon is mentioned similarly to Alphabet regarding potential AI spending concerns, but no direct negative sentiment is attributed to the IPO rotation."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Amazon benefits from Micron's HBM supply for its Trainium chips as part of the second-tier AI infrastructure market, supporting its AI infrastructure development and competitive positioning."
       },
       {
-        "ticker": "META",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Meta is overweighted in QQQ and could face displacement pressure as new mega-cap IPOs are added to the index."
+        "ticker": "GOOG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Alphabet benefits from increased HBM availability from Micron for its Tensor Processing Units, supporting its AI infrastructure and competitive AI capabilities."
       },
       {
-        "ticker": "QQQ",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "QQQ will be forced to add SpaceX and potentially other IPOs, creating index rebalancing effects that displace existing overweighted constituents, but this is a mechanical process rather than a negative outlook for the ETF itself."
+        "ticker": "GOOGL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Alphabet benefits from increased HBM availability from Micron for its Tensor Processing Units, supporting its AI infrastructure and competitive AI capabilities."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Alphabet benefits from increased HBM availability from Micron for its Tensor Processing Units, supporting its AI infrastructure and competitive AI capabilities."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Alphabet benefits from increased HBM availability from Micron for its Tensor Processing Units, supporting its AI infrastructure and competitive AI capabilities."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Microsoft benefits from Micron's HBM supply for its Maia architecture as part of the second-tier AI infrastructure market, supporting its AI infrastructure development."
       }
     ]
   },
   {
-    "id": "e620b5d3c9e96700185c6a161a0abfc813b1969115181fd2eaec22bdea465245",
+    "id": "d164722b60bd24f2c3a73d3c1aff0e3c8a7aec39c66f4ef155d21b56619762fb",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Billionaires Bill Ackman, Jeremy Grantham, and Cliff Asness Are Piling Into This AI Stock the Market Is Severely Undervaluing",
-    "author": "Adam Levy",
-    "published_utc": "2026-06-30T15:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/billionaires-bill-ackman-jeremy-grantham-and-cliff/?source=iedfolrf0000001",
+    "title": "AI Stocks: Falling Knife or Once-in-a-Decade Buying Opportunity?",
+    "author": "Adria Cimino",
+    "published_utc": "2026-07-14T23:10:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/14/ai-stocks-falling-knife-or-once-in-a-decade-buying/?source=iedfolrf0000001",
     "tickers": [
-      "MSFT"
+      "NVDA",
+      "MSFT",
+      "AMZN",
+      "IVES",
+      "SOXX"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876343%2Fgettyimages-man-pointing-at-screen-charts-phone.jpg&w=1200&op=resize",
-    "description": "Three prominent billionaire investors\u2014Bill Ackman, Jeremy Grantham, and Cliff Asness\u2014have made substantial investments in Microsoft, with Ackman's Pershing Square buying approximately $2 billion worth of the stock. Despite strong fundamentals including 40% Azure revenue growth and a $627 billion contracted revenue backlog, Microsoft trades at its lowest price since early 2024 at a 21x earnings multiple, presenting what these investors view as a significant buying opportunity.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878760%2Fartificial-intelligence-ai.jpg&w=1200&op=resize",
+    "description": "AI stocks have experienced recent declines amid investor concerns about economic conditions and whether massive infrastructure spending will justify returns. However, the article argues this may represent a buying opportunity, as the AI story is still in early stages with significant long-term growth potential across multiple industries. Quality infrastructure players like Nvidia and Microsoft are trading at reasonable valuations relative to their growth prospects.",
     "keywords": [
-      "Microsoft",
-      "AI stock",
-      "cloud computing",
-      "Azure",
-      "enterprise software",
-      "undervalued",
-      "billionaire investors",
-      "Copilot",
+      "AI stocks",
+      "artificial intelligence",
+      "market decline",
+      "buying opportunity",
+      "infrastructure investment",
+      "semiconductor stocks",
       "valuation"
     ],
     "insights": [
       {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Positioned as a quality infrastructure winner with strong earnings growth from AI boom; trading at 22x forward earnings considered attractive; highlighted as well-positioned for long-term growth despite recent declines"
+      },
+      {
         "ticker": "MSFT",
         "sentiment": "positive",
-        "sentiment_reasoning": "The article highlights strong fundamentals including 40% Azure growth, $627 billion contracted revenue backlog, 17% enterprise software growth, and only 20 million of 450 million potential Copilot users, indicating significant upside potential. Trading at 21x earnings with sustained double-digit growth prospects, the stock is characterized as severely undervalued and has attracted investments from three prominent billionaire fund managers known for disciplined value investing."
+        "sentiment_reasoning": "Tech powerhouse trading at only 20x forward earnings estimates; mentioned as a bargain hunting opportunity alongside Nvidia; positioned as quality player for long-term AI growth"
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Cloud computing giant generating significant revenue growth as key player in early stages of AI boom; contributing to market gains"
+      },
+      {
+        "ticker": "IVES",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Jumped nearly 50% from launch a year ago but slipped 10% since June 1; used as benchmark for AI stock movement showing both gains and recent declines"
+      },
+      {
+        "ticker": "SOXX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Soared over 200% in past three years but dropped 15% since June 22 peak; illustrates AI stock volatility and recent downward trend despite strong historical performance"
+      }
+    ]
+  },
+  {
+    "id": "65f0053a70b0b337dfa1e86476bafcca8f8bb3161ba7251f55dc4a4a6f98724b",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "NICE vs. Twilio: Which Technology Stock Is a Better Buy in 2026?",
+    "author": "Sara Appino",
+    "published_utc": "2026-07-14T23:06:12Z",
+    "article_url": "https://www.fool.com/coverage/better-buy/2026/07/14/nice-vs-twilio-which-technology-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
+    "tickers": [
+      "NICE",
+      "TWLO",
+      "AMZN",
+      "MSFT",
+      "CRM"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fdf62d03add0a26cc05ef3d45b8f39a15145fe783-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "The article compares NICE and Twilio as investment options for 2026. NICE is recommended as the better choice due to its established profitability (20.8% net margin), lower valuation (Forward P/E of 9.0x), and proven cloud momentum across 150+ countries. While Twilio shows impressive headline revenue growth of 14%, the article argues this is inflated by carrier pass-through fees that don't contribute to gross profit, with underlying organic growth being more modest. NICE's steady execution and AI-embedded enterprise solutions are positioned as more attractive than Twilio's still-developing voice AI story.",
+    "keywords": [
+      "AI-driven customer engagement",
+      "cloud software",
+      "profitability vs growth",
+      "valuation comparison",
+      "enterprise automation",
+      "financial compliance",
+      "developer tools",
+      "telecommunications"
+    ],
+    "insights": [
+      {
+        "ticker": "NICE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recommended as the better buy with established profitability (20.8% net margin, $612.1M net income), conservative valuation (Forward P/E 9.0x vs sector 357.9x), strong balance sheet (0.0x debt-to-equity), and proven cloud momentum with AI capabilities already embedded at enterprise scale."
+      },
+      {
+        "ticker": "TWLO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While showing impressive 14% revenue growth and recent profitability achievement, the article raises concerns that headline growth is inflated by carrier pass-through fees that don't add to gross profit, underlying organic growth is modest, and the voice AI story remains a small portion of a business still dependent on lower-margin SMS messaging."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as Twilio's cloud infrastructure provider, representing a dependency risk. If service costs rise or outages occur, Twilio's operations could suffer significantly."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a potential competitive threat to NICE, as broader tech giants like Microsoft could commoditize NICE's specialized AI tools."
+      },
+      {
+        "ticker": "CRM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a competitor to Twilio in the communications and customer experience space."
+      }
+    ]
+  },
+  {
+    "id": "84a9abeef55afe35d06469884bd48487ae72daa89de6e6cd9f31e0ac13a4695f",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Vanguard Small-Cap Growth ETF vs Russell 1000 Growth ETF. Should Investors Go Small- or Large-Caps for Growth in 2026?",
+    "author": "Brendan Coffey",
+    "published_utc": "2026-07-14T19:16:45Z",
+    "article_url": "https://www.fool.com/coverage/etfs/2026/07/14/vanguard-small-cap-growth-etf-vs-russell-1000-growth-etf-should-investors-go-small-or-large-caps-for-growth-in-2026/?source=iedfolrf0000001",
+    "tickers": [
+      "VONG",
+      "VBK",
+      "NVDA",
+      "AAPL",
+      "MSFT"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F4db1f9dc6b521047b90577456a50b49560e87c49-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "The article compares two Vanguard growth ETFs: VONG (large-cap focused) and VBK (small-cap focused). While VONG demonstrates superior long-term 5-year returns (13.7% annualized) with lower volatility, VBK has outperformed year-to-date (21.1% vs 5.3%) and offers broader diversification across 550 holdings. The author recommends VBK for closing out 2026 better, citing small caps' strong recent performance, though VONG remains the better choice for pure long-term returns.",
+    "keywords": [
+      "growth ETF",
+      "large-cap vs small-cap",
+      "Vanguard",
+      "ETF comparison",
+      "investment strategy",
+      "2026 outlook"
+    ],
+    "insights": [
+      {
+        "ticker": "VONG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Superior long-term performance with 13.7% annualized 5-year returns, lower maximum drawdown (32.70% vs 38.40%), and 61% of assets in top 10 positions providing stability. Recommended for long-term investors despite recent underperformance."
+      },
+      {
+        "ticker": "VBK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Exceptional recent performance with 21.1% year-to-date returns, broader diversification across 550 holdings with only 10% in top 10 positions, lower expense ratio (0.05%), and positioned to benefit from small-cap market resurgence. Recommended for 2026 outlook."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as largest holding in VONG at 13%, indicating significant exposure to technology sector leadership, but no specific sentiment commentary provided."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Second-largest holding in VONG at 11.9%, representing major tech exposure, but no specific sentiment analysis provided."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Third-largest holding in VONG at 9%, contributing to tech sector concentration, but no specific sentiment commentary provided."
       }
     ]
   }

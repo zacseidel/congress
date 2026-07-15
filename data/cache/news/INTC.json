@@ -1,302 +1,308 @@
 [
   {
-    "id": "622c1b87f1e8780755e9eeae356d13271b2e136de1d90f447b81ce687092b9bf",
+    "id": "c3d663cead5e5f710457ea358ad65e23c13897cb5d18608db61f00aa2ea4b2be",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Stock Market Today, June 30: Rocket Lab Soars on Acquisition and Major Indexes Gain",
-    "author": "Emma Newbery",
-    "published_utc": "2026-06-30T21:03:28Z",
-    "article_url": "https://www.fool.com/coverage/stock-market-today/2026/06/30/stock-market-today-june-30-rocket-lab-soars-on-acquisition-and-major-indexes-gain/?source=iedfolrf0000001",
+    "title": "Prediction: AMD Stock Will Soar After Aug. 4. The Reason Is Hiding in Plain Sight",
+    "author": "Harsh Chauhan",
+    "published_utc": "2026-07-15T15:33:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/15/prediction-amd-stock-will-soar-after-aug-4-the-rea/?source=iedfolrf0000001",
     "tickers": [
-      "RKLB",
-      "INTC",
-      "IRDM",
-      "CNXC"
+      "AMD",
+      "NVDA",
+      "INTC"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fe7dd8b70435a213a06dcc8bea55f01f7acf42b48-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Major stock indexes closed higher on June 30, 2026, with the S&P 500 rising 0.79% and the Nasdaq Composite gaining 1.52%, marking the strongest quarter since 2020. Tech and industrial sectors led gains, while Rocket Lab surged following its $8 billion acquisition of Iridium Communications. Intel also rose 6% amid AI stock momentum. Gold prices slipped slightly, and analysts suggest further rallies are possible in July.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878752%2Famd_tmf.png&w=1200&op=resize",
+    "description": "AMD is positioned to deliver strong Q2 earnings on Aug. 4 due to surging demand for server CPUs driven by agentic AI and inference workloads. The CPU-to-GPU ratio in AI data centers is shifting from 1:4-1:8 toward 1:1-1:2, potentially increasing server CPU demand by 4x. AMD has gained market share (33% in Q1 2026 vs. 27.2% year-ago) and is raising prices, with server CPU prices up 10-20% between March-April. Despite a rich valuation (186x trailing earnings), AMD's ability to outperform expectations could sustain its momentum.",
     "keywords": [
-      "stock market",
-      "S&P 500",
-      "Nasdaq",
-      "Rocket Lab",
-      "acquisition",
-      "Iridium Communications",
-      "Intel",
-      "AI stocks",
-      "tech sector",
-      "earnings"
+      "AMD earnings",
+      "server CPUs",
+      "agentic AI",
+      "inference workloads",
+      "GPU-to-CPU ratio",
+      "pricing power",
+      "market share gains",
+      "AI data centers"
     ],
     "insights": [
       {
-        "ticker": "RKLB",
+        "ticker": "AMD",
         "sentiment": "positive",
-        "sentiment_reasoning": "Stock surged following announcement of $8 billion acquisition of Iridium Communications, demonstrating strong market approval of the deal and growth prospects."
+        "sentiment_reasoning": "Strong catalysts for Q2 earnings driven by surging server CPU demand from agentic AI workloads, significant market share gains, pricing power with 10-20% price increases, and analyst expectations for continued growth. Long-term server CPU market expected to grow over 35% annually through 2030."
       },
       {
-        "ticker": "INTC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Rose 6% as chipmakers and AI stocks gained momentum, benefiting from broader sector strength in artificial intelligence."
-      },
-      {
-        "ticker": "IRDM",
+        "ticker": "NVDA",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Being acquired by Rocket Lab for $8 billion; sentiment is neutral as acquisition details and shareholder impact are not specified in the article."
-      },
-      {
-        "ticker": "CNXC",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock tumbled more than 11% after quarterly profit missed expectations, indicating disappointing financial performance."
-      }
-    ]
-  },
-  {
-    "id": "3930e6f77b4cc228f0eba990ab6ef5c49e086a763261748b26439890dfef4364",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "The Quantum Bubble Is Real Enough to Take Seriously",
-    "author": "Nathan Reiff",
-    "published_utc": "2026-06-30T17:13:00Z",
-    "article_url": "https://www.investing.com/analysis/the-quantum-bubble-is-real-enough-to-take-seriously-200683066",
-    "tickers": [
-      "QBTS",
-      "RGTI",
-      "RGTIW",
-      "IONQ",
-      "IONQ.WS",
-      "INTC",
-      "IBM"
-    ],
-    "amp_url": "https://m.investing.com/analysis/the-quantum-bubble-is-real-enough-to-take-seriously-200683066?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "The quantum computing industry faces potential valuation concerns despite real technological progress. Pure-play quantum companies like D-Wave and Rigetti show impressive stock gains but trade at extremely high price-to-sales multiples (700x+ for D-Wave) with minimal revenues. While some companies like IonQ demonstrate strong commercial traction and substantial cash reserves, the sector faces profitability challenges, high R&D costs, and increasing competition from tech giants like Intel and IBM entering the quantum space.",
-    "keywords": [
-      "quantum computing bubble",
-      "valuation concerns",
-      "price-to-sales ratio",
-      "profitability challenges",
-      "commercial traction",
-      "R&D spending",
-      "cash reserves",
-      "competition from tech giants"
-    ],
-    "insights": [
-      {
-        "ticker": "QBTS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Strong revenue growth (179% YOY) and aggressive acquisitions supported by cash reserves are positive, but extremely high valuation multiple (700x sales) relative to low absolute revenue (~$25M) raises concerns about whether stock price has moved too far ahead of fundamentals."
-      },
-      {
-        "ticker": "RGTI",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Despite 65% stock appreciation, 2025 revenue declined year-over-year, making future contract wins critical. Trading at even higher sales multiples than D-Wave while showing revenue contraction presents significant valuation risk."
-      },
-      {
-        "ticker": "RGTIW",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Despite 65% stock appreciation, 2025 revenue declined year-over-year, making future contract wins critical. Trading at even higher sales multiples than D-Wave while showing revenue contraction presents significant valuation risk."
-      },
-      {
-        "ticker": "IONQ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Demonstrates strongest commercial traction in the sector with $65M Q1 2026 revenue (755% YOY growth), substantial $3.1B cash reserves, and largest revenues among pure-play quantum firms. However, R&D costs tripling YOY to $126M creates profitability challenges."
-      },
-      {
-        "ticker": "IONQ.WS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Demonstrates strongest commercial traction in the sector with $65M Q1 2026 revenue (755% YOY growth), substantial $3.1B cash reserves, and largest revenues among pure-play quantum firms. However, R&D costs tripling YOY to $126M creates profitability challenges."
+        "sentiment_reasoning": "Mentioned as the primary GPU provider for AI data centers, but the article focuses on the shift toward CPU demand, which could reduce relative GPU demand growth. No direct negative or positive catalyst discussed."
       },
       {
         "ticker": "INTC",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Represents external competitive threat to smaller quantum firms through plans to double down on quantum operations, but also benefits the quantum technology sector overall through increased legitimacy and investment."
-      },
-      {
-        "ticker": "IBM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Similar to Intel, represents both competitive threat to pure-play quantum companies and validation of quantum technology's importance through signaled plans to expand quantum operations."
+        "sentiment_reasoning": "Implicitly referenced as a competitor in server CPUs, but no specific analysis provided. The article focuses on AMD's gains without detailing Intel's position or performance."
       }
     ]
   },
   {
-    "id": "6f7601cb03f15b584849e5feadf7cbc7ffc0fece6505dd890e0c70779b60f756",
+    "id": "77ba42fe26a4d4aa89ea90e2102c1482e3002334ef9b64206391c97f96c26406",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Market Indexes Close Out June With a Tech-Fueled Tuesday Rally",
-    "author": "Anders Bylund",
-    "published_utc": "2026-06-30T17:11:25Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/market-indexes-close-out-june-with-a-tech-rally/?source=iedfolrf0000001",
+    "title": "AI Chip Spending Is Projected to Hit $1.6 Trillion by 2030. Here Are the Stocks Positioned to Capture Much of It.",
+    "author": "Will Healy",
+    "published_utc": "2026-07-15T10:24:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/15/ai-chip-spending-is-projected-to-hit-1-6-trillion/?source=iedfolrf0000001",
     "tickers": [
+      "NVDA",
+      "ASML",
+      "SKHY",
+      "TSM",
+      "INTC"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878054%2Fai-chip.jpg&w=1200&op=resize",
+    "description": "McKinsey projects semiconductor spending will reach $1.6 trillion by 2030, driven by AI demand. The article highlights three companies positioned to benefit: Nvidia dominates AI accelerators with strong growth despite high valuation; ASML is the sole EUV lithography equipment manufacturer essential to chip production; and SK Hynix leads the high-bandwidth memory market with a partnership deal with Nvidia.",
+    "keywords": [
+      "AI chips",
+      "semiconductor spending",
+      "GPU",
+      "high-bandwidth memory",
+      "lithography equipment",
+      "chip manufacturing"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Dominant position in AI accelerators with 1,600% stock gains since Oct 2022; P/E ratio of 31 is below S&P 500 average; 85% annual revenue increase and 211% profit growth in Q1; expected to continue beating the market despite massive market cap."
+      },
+      {
+        "ticker": "ASML",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Monopoly on EUV lithography equipment essential for advanced chip production; 28% of revenue from recurring service contracts; Q1 revenue up 13% YoY and net income up 17%; stock up 120% over last year with continued boom expected as demand for advanced semiconductors remains high."
+      },
+      {
+        "ticker": "SKHY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Dominant 56% market share in high-bandwidth memory; Q1 revenue up 199% and net income up 398%; new partnership with Nvidia to develop specialized HBM chips; P/E ratio of 43 appears cheap relative to growth rate. Risk noted: memory market history of boom-bust cycles."
+      },
+      {
+        "ticker": "TSM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as major chip fabricator increasing EUV equipment purchases to meet AI demand, but not analyzed in detail as primary investment focus."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as chip fabricator increasing EUV equipment purchases, but not analyzed as primary investment focus."
+      }
+    ]
+  },
+  {
+    "id": "68a08c8229ffe96d51487242ef2955b047a5936ca7aabd7f55b38bb1cae68605",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "High NA EUV reaches new readiness milestone with first high-volume Logic product",
+    "author": "Asml",
+    "published_utc": "2026-07-15T05:01:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/15/3327453/0/en/High-NA-EUV-reaches-new-readiness-milestone-with-first-high-volume-Logic-product.html",
+    "tickers": [
+      "ASML",
+      "INTC"
+    ],
+    "image_url": "https://ml-eu.globenewswire.com/Resource/Download/0e922787-0d4f-4763-99ed-f3c70bdc20b1",
+    "description": "Intel Foundry has begun high-volume manufacturing of Intel Core Ultra Series 3 processors (Panther Lake) using ASML's High NA EUV lithography technology on the Intel 18A process node. This marks the first commercial production of logic chips using High NA EUV, with specific layers now dual-qualified in Oregon and product shipping to customers at yields matching the NXE platform. The milestone demonstrates the technology's readiness for broader adoption in advanced semiconductor manufacturing.",
+    "keywords": [
+      "High NA EUV",
+      "Intel 18A",
+      "Panther Lake",
+      "lithography",
+      "semiconductor manufacturing",
+      "ASML",
+      "Intel Foundry",
+      "advanced chip production"
+    ],
+    "insights": [
+      {
+        "ticker": "ASML",
+        "sentiment": "positive",
+        "sentiment_reasoning": "ASML achieved a significant milestone with the first high-volume production of logic chips using its High NA EUV technology, demonstrating market readiness and validating years of R&D investment. This represents successful commercialization and positions ASML as a critical enabler of next-generation semiconductor manufacturing."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Intel Foundry successfully integrated and deployed High NA EUV technology into production, becoming the first to ship high-volume logic products using this advanced lithography. This demonstrates manufacturing capability, process maturity, and competitive positioning in advanced chip production."
+      }
+    ]
+  },
+  {
+    "id": "8bd41a2db63d9c9221e109774adbdc0dff047de377078c0a33f97a033911049c",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Cadence Design Systems vs. Synopsys: Which Technology Stock Is a Better Buy in 2026?",
+    "author": "Sara Appino",
+    "published_utc": "2026-07-14T23:19:03Z",
+    "article_url": "https://www.fool.com/coverage/better-buy/2026/07/14/cadence-design-systems-vs-synopsys-which-technology-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
+    "tickers": [
+      "CDNS",
+      "SNPS",
+      "INTC"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F8cd6be858db5e4ce4620efa120c8f078af15d22a-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Both Cadence Design Systems and Synopsys are leaders in chip design software, benefiting from strong semiconductor demand. Cadence offers a cleaner growth story with record backlogs and strong profitability, while Synopsys provides broader capabilities through its Ansys acquisition but faces integration complexity and higher valuation multiples. The article recommends Cadence as the better 2026 buy due to its simpler execution and stronger balance sheet.",
+    "keywords": [
+      "chip design software",
+      "semiconductor industry",
+      "2nm chip design",
+      "acquisition integration",
+      "valuation comparison",
+      "free cash flow",
+      "AI-powered design tools"
+    ],
+    "insights": [
+      {
+        "ticker": "CDNS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong revenue growth (14.1% YoY), record backlog, raised full-year outlook, excellent balance sheet (0.5x debt-to-equity, 2.9x current ratio), higher gross margins (85.15%), and cleaner execution story without major integration risks. Recommended as the better buy."
+      },
+      {
+        "ticker": "SNPS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Solid revenue growth (15.1% YoY) and larger scale ($7.1B revenue), but faces significant headwinds including massive Ansys acquisition integration complexity, higher debt load, lower gross margins (64.88%), pending class action lawsuits, and higher valuation multiples (30.0x forward P/E vs. 48.6x for Cadence). Long-term potential exists but near-term execution risks are substantial."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a Cadence partnership customer for multi-year collaboration on chip design, indicating continued reliance on design software providers. No specific performance data provided in the article."
+      }
+    ]
+  },
+  {
+    "id": "cebebcc3feaea916a3beefd142186454e8c0645c6cea9a9f439fdde28829c850",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Had You Bought This Magnificent Vanguard ETF at the Start of January, You'd Be Crushing the S&P 500 in 2026",
+    "author": "Anthony Di Pizio",
+    "published_utc": "2026-07-14T15:17:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/14/bought-vanguard-etf-january-crushing-sp-500-2026/?source=iedfolrf0000001",
+    "tickers": [
+      "VGT",
+      "NVDA",
       "AAPL",
-      "AMAT",
+      "MSFT",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "AMZN",
+      "AVGO",
+      "MU",
+      "AMD",
       "INTC",
-      "HON",
-      "HONIV",
-      "SOXX",
-      "SPCX",
-      "QQQ",
-      "ONEQ"
+      "LRCX",
+      "UBER"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876950%2Fspcx-spacex-logo-gray.png&w=1200&op=resize",
-    "description": "Tech stocks led a broad market rally on the final trading day of June, driven by semiconductor strength and AI infrastructure optimism. The Nasdaq Composite rose 1.34%, S&P 500 gained 0.71%, while the Dow added 0.29%. Chip stocks surged with the semiconductor ETF climbing 3.6%, while SpaceX jumped 4.1% on government investment program discussions.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878573%2Fa-digital-render-of-a-bull-pushing-money-up-the-slope-of-a-roller-coaster.jpg&w=1200&op=resize",
+    "description": "The Vanguard Information Technology ETF (VGT) has returned 23.3% in 2026, significantly outpacing the S&P 500's 10.3% return. The ETF's strong performance is driven by five trillion-dollar tech companies\u2014Nvidia, Apple, Microsoft, Alphabet, and Amazon\u2014which comprise 50.6% of its portfolio. While AI infrastructure demand remains strong, rising costs and customer concerns about spending sustainability present near-term risks.",
     "keywords": [
-      "semiconductor stocks",
-      "AI infrastructure spending",
-      "tech rally",
-      "chip stocks",
-      "market close",
-      "June 2026"
+      "Vanguard Information Technology ETF",
+      "AI infrastructure boom",
+      "semiconductor demand",
+      "tech stocks outperformance",
+      "capital expenditure concerns"
     ],
     "insights": [
+      {
+        "ticker": "VGT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "ETF significantly outperforming S&P 500 with 23.3% YTD return vs 10.3%, strong historical track record of 14.9% compound annual returns since 2004, and positioned to benefit from long-term AI and emerging technologies."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Largest holding in VGT at 16.79%, outperforming S&P 500, benefits from strong AI chip demand where supply significantly lags demand."
+      },
       {
         "ticker": "AAPL",
         "sentiment": "positive",
-        "sentiment_reasoning": "Led S&P 500 and Nasdaq higher with a 2.35% gain, adding $110 billion in market capitalization"
+        "sentiment_reasoning": "Second-largest holding at 15.27% of VGT portfolio, contributing to ETF's outperformance."
       },
       {
-        "ticker": "AMAT",
+        "ticker": "MSFT",
         "sentiment": "positive",
-        "sentiment_reasoning": "Gained 5.46% following bullish analyst upgrade reflecting continued AI infrastructure spending optimism"
+        "sentiment_reasoning": "Third-largest holding at 9.88%, leader in AI software and cloud services; currently lagging but described as attractively valued with recovery expected."
       },
       {
-        "ticker": "INTC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Rose 7.43% on bullish analyst notes, benefiting from semiconductor sector strength and AI infrastructure demand"
-      },
-      {
-        "ticker": "HON",
+        "ticker": "GOOG",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Dropped 1.75% due to mechanical adjustment from aerospace spinoff completion, not a reflection of company performance"
+        "sentiment_reasoning": "Major VGT holding among top five trillion-dollar companies, but CEO reports customer complaints about AI spending costs, indicating potential demand headwinds."
       },
       {
-        "ticker": "HONIV",
+        "ticker": "GOOGL",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Dropped 1.75% due to mechanical adjustment from aerospace spinoff completion, not a reflection of company performance"
+        "sentiment_reasoning": "Major VGT holding among top five trillion-dollar companies, but CEO reports customer complaints about AI spending costs, indicating potential demand headwinds."
       },
       {
-        "ticker": "SOXX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Climbed 4.19% as semiconductor sector surged on AI infrastructure spending optimism"
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Major VGT holding among top five trillion-dollar companies, but CEO reports customer complaints about AI spending costs, indicating potential demand headwinds."
       },
       {
-        "ticker": "SPCX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Jumped 3.93% on reports of discussions to donate equity to government-backed children's investment program"
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Major VGT holding among top five trillion-dollar companies, but CEO reports customer complaints about AI spending costs, indicating potential demand headwinds."
       },
       {
-        "ticker": "QQQ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Gained 1.63% tracking Nasdaq-100 index, benefiting from tech sector strength"
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "One of five trillion-dollar tech companies in VGT portfolio, but no specific performance details provided in article."
       },
       {
-        "ticker": "ONEQ",
+        "ticker": "AVGO",
         "sentiment": "positive",
-        "sentiment_reasoning": "Rose 1.35% tracking Nasdaq Composite, benefiting from broad tech sector rally"
-      }
-    ]
-  },
-  {
-    "id": "52c943fd99497dff290c54d92b14aab8ea908639e50b6168c7be3e7b3357585d",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Why Intel Stock Just Popped",
-    "author": "Rich Smith",
-    "published_utc": "2026-06-30T15:16:09Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/why-intel-stock-just-popped/?source=iedfolrf0000001",
-    "tickers": [
-      "INTC",
-      "AMD",
-      "NVDA"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876931%2Fintel-cube-statue-with-lit-up-logo-on-a-plaza-is-intc.jpg&w=1200&op=resize",
-    "description": "Intel stock jumped 4.2% after Wells Fargo analyst Aaron Rakers raised AMD's price target to $615, citing potential growth in CPU-based AI inference. While the analyst didn't mention Intel directly, investors see similar upside potential for Intel as the AI market shifts from GPUs to CPUs. However, Intel's valuation at 900x earnings appears stretched compared to competitors, raising questions about whether the gains are already priced in.",
-    "keywords": [
-      "Intel",
-      "AMD",
-      "Nvidia",
-      "AI market",
-      "GPU vs CPU",
-      "semiconductor",
-      "valuation",
-      "price target"
-    ],
-    "insights": [
+        "sentiment_reasoning": "Outperforming S&P 500, benefits from strong demand for data center chips critical to AI infrastructure."
+      },
       {
-        "ticker": "INTC",
+        "ticker": "MU",
         "sentiment": "positive",
-        "sentiment_reasoning": "Stock jumped 4.2% on optimism about CPU growth in AI inference market; however, sentiment is tempered by extremely high valuation at 900x earnings, suggesting potential gains may already be priced in."
+        "sentiment_reasoning": "Outperforming S&P 500, benefits from strong demand for data center components critical to AI development."
       },
       {
         "ticker": "AMD",
         "sentiment": "positive",
-        "sentiment_reasoning": "Wells Fargo analyst raised price target to $615 with bullish forecasts for CPU revenue growth (68% in 2026, 28% in 2027, 22% in 2028) as AI market shifts to inference; however, valuation at 180x earnings is elevated."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Maintains dominant position in AI GPU market with most AI spending; valued at only 30x earnings, making it appear as the safer bet compared to AMD and Intel despite smaller daily gains."
-      }
-    ]
-  },
-  {
-    "id": "521337839aeee5aa7efcdb73c8c278a654a09f0a8ae632283dfc32379d3f8da4",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Nvidia vs. AMD: Which AI CPU Stock Is the Better Buy?",
-    "author": "Adria Cimino",
-    "published_utc": "2026-06-30T09:02:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/nvidia-vs-amd-which-ai-cpu-stock-is-the/?source=iedfolrf0000001",
-    "tickers": [
-      "NVDA",
-      "AMD",
-      "INTC"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876441%2Fgettyimages-1565467832-1200x675-128554e.jpg&w=1200&op=resize",
-    "description": "As agentic AI emerges, CPUs are becoming increasingly important alongside GPUs. While Nvidia dominates the GPU market and is entering the CPU space with ambitious $20 billion sales forecasts, AMD holds a stronger existing position in CPUs with 39% market share and 52% in desktops. Both companies are positioned to benefit from AI growth, but Nvidia is recommended as the better buy due to its significantly lower valuation at 21x forward earnings compared to AMD's 70x.",
-    "keywords": [
-      "agentic AI",
-      "CPU market",
-      "GPU market",
-      "semiconductor chips",
-      "data center",
-      "PC market",
-      "valuation"
-    ],
-    "insights": [
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Nvidia is expanding into the CPU market with strong forecasts ($20 billion in stand-alone CPU sales), launching new platforms (Vera Rubin), and has a significantly cheaper valuation (21x forward earnings) compared to AMD. The company is positioned as the better buy despite AMD's stronger existing CPU position."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "AMD maintains a strong existing position in the CPU market with 39% market share and 52% in desktops. The company is benefiting from AI infrastructure demand with data center becoming a major earnings growth driver. However, it trades at a premium valuation (70x forward earnings) compared to Nvidia."
+        "sentiment_reasoning": "Stock more than doubled in 2026, central to AI infrastructure boom."
       },
       {
         "ticker": "INTC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Intel is mentioned as the global CPU leader with nearly 60% market share, but the article does not provide specific analysis or recommendations regarding Intel's position in the emerging AI CPU market."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock more than doubled in 2026, central to AI infrastructure boom."
+      },
+      {
+        "ticker": "LRCX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock more than doubled in 2026, central to AI infrastructure boom."
+      },
+      {
+        "ticker": "UBER",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Burned through entire 2026 AI budget in four months, COO expressing difficulty justifying AI spending levels, indicating cost concerns."
       }
     ]
   }

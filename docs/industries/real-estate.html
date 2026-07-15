@@ -45,6 +45,10 @@
   .news li { margin:4px 0; }
   .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
                 padding:12px 16px; font-size:13px; color:#54470f; }
+  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
+  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
+  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
+  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
   footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
   /* heatmap */
   .heat { font-size:12px; }
@@ -100,10 +104,11 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-13.html">Leaderboard</a>
+    <a href="../reports/2026-07-15.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
+    <a href="../decisions.html">Decisions</a>
   </nav>
 </div></header>
 <div class="wrap">
@@ -144,7 +149,7 @@
       <td><a href="../members/foxx-virginia.html">Virginia Foxx</a></td>
       <td><span class="pill house">house</span></td>
       <td>—</td>
-      <td class="num pos" data-v="5.2">+5.2%</td>
+      <td class="num pos" data-v="5.5">+5.5%</td>
       <td class="num" data-v="4">4</td>
       <td class="num" data-v="32002">$32K</td>
     </tr>
@@ -153,7 +158,7 @@
       <td><a href="../members/mcclain-lisa.html">Lisa McClain</a></td>
       <td><span class="pill house">house</span></td>
       <td><span class="star">★</span> yes</td>
-      <td class="num pos" data-v="4.0">+4.0%</td>
+      <td class="num pos" data-v="4.2">+4.2%</td>
       <td class="num" data-v="5">5</td>
       <td class="num" data-v="40002">$40K</td>
     </tr>
@@ -162,9 +167,9 @@
       <td><a href="../members/khanna-rohit.html">Rohit Khanna</a></td>
       <td><span class="pill house">house</span></td>
       <td>—</td>
-      <td class="num pos" data-v="2.3">+2.3%</td>
-      <td class="num" data-v="6">6</td>
-      <td class="num" data-v="48003">$48K</td>
+      <td class="num pos" data-v="0.6">+0.6%</td>
+      <td class="num" data-v="7">7</td>
+      <td class="num" data-v="56004">$56K</td>
     </tr>
   
     <tr class="">
@@ -185,15 +190,15 @@
   <tbody>
   
     <tr>
-      <td><a href="../stocks/INVH.html">INVH</a><span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bear" title="Price vs SMA10: price 29.60 vs SMA10 30.10"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 30.10 vs SMA50 29.22"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 29.22 vs SMA200 27.62"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 63,420,426 vs down-vol 57,181,231"></span></span></td>
+      <td><a href="../stocks/INVH.html">INVH</a><span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 30.23 vs SMA10 30.02"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 30.02 vs SMA50 29.29"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 29.29 vs SMA200 27.62"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 66,752,212 vs down-vol 51,827,275"></span></span></td>
       <td>Invitation Homes Inc. Common Stock</td>
       <td><span class="cap large">large</span></td>
       <td class="num" data-v="2">2</td>
-      <td class="num" data-v="56004">$56K</td>
+      <td class="num" data-v="64004">$64K</td>
     </tr>
   
     <tr>
-      <td><a href="../stocks/JLL.html">JLL</a><span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 324.44 vs SMA10 321.90"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 321.90 vs SMA50 305.79"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 305.79 vs SMA200 315.64"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 4,404,751 vs down-vol 3,474,408"></span></span></td>
+      <td><a href="../stocks/JLL.html">JLL</a><span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bear" title="Price vs SMA10: price 314.39 vs SMA10 322.72"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 322.72 vs SMA50 305.38"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 305.38 vs SMA200 315.73"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 4,157,408 vs down-vol 3,994,545"></span></span></td>
       <td>Jones Lang LaSalle, Inc.</td>
       <td><span class="cap large">large</span></td>
       <td class="num" data-v="1">1</td>
@@ -201,7 +206,7 @@
     </tr>
   
     <tr>
-      <td><a href="../stocks/EFC.html">EFC</a><span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 13.58 vs SMA10 13.54"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 13.54 vs SMA50 13.49"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 13.49 vs SMA200 13.20"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 13,405,782 vs down-vol 14,279,430"></span></span></td>
+      <td><a href="../stocks/EFC.html">EFC</a><span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 13.62 vs SMA10 13.53"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 13.53 vs SMA50 13.50"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 13.50 vs SMA200 13.21"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 12,915,402 vs down-vol 15,315,764"></span></span></td>
       <td>Ellington Financial Inc. Common Stock</td>
       <td><span class="cap small">small</span></td>
       <td class="num" data-v="1">1</td>
@@ -209,7 +214,7 @@
     </tr>
   
     <tr>
-      <td><a href="../stocks/GTY.html">GTY</a><span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 34.37 vs SMA10 34.06"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 34.06 vs SMA50 33.21"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 33.21 vs SMA200 30.66"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 7,751,944 vs down-vol 4,016,896"></span></span></td>
+      <td><a href="../stocks/GTY.html">GTY</a><span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 34.45 vs SMA10 34.18"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 34.18 vs SMA50 33.27"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 33.27 vs SMA200 30.73"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 7,723,849 vs down-vol 3,945,517"></span></span></td>
       <td>Getty Realty Corp.</td>
       <td><span class="cap small">small</span></td>
       <td class="num" data-v="1">1</td>
@@ -217,7 +222,7 @@
     </tr>
   
     <tr>
-      <td><a href="../stocks/OPEN.html">OPEN</a><span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bear" title="Price vs SMA10: price 4.76 vs SMA10 4.82"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 4.82 vs SMA50 4.75"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 4.75 vs SMA200 5.83"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 840,794,585 vs down-vol 425,929,995"></span></span></td>
+      <td><a href="../stocks/OPEN.html">OPEN</a><span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bear" title="Price vs SMA10: price 4.55 vs SMA10 4.82"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 4.82 vs SMA50 4.71"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 4.71 vs SMA200 5.80"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 936,458,248 vs down-vol 421,694,734"></span></span></td>
       <td>Opendoor Technologies Inc Common Stock</td>
       <td><span class="cap mid">mid</span></td>
       <td class="num" data-v="1">1</td>
@@ -225,7 +230,7 @@
     </tr>
   
     <tr>
-      <td><a href="../stocks/UE.html">UE</a><span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bear" title="Price vs SMA10: price 22.76 vs SMA10 22.91"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 22.91 vs SMA50 22.48"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 22.48 vs SMA200 20.58"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 14,963,655 vs down-vol 9,458,569"></span></span></td>
+      <td><a href="../stocks/UE.html">UE</a><span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 22.92 vs SMA10 22.82"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 22.82 vs SMA50 22.53"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 22.53 vs SMA200 20.61"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 14,735,626 vs down-vol 9,458,569"></span></span></td>
       <td>UBRAN EDGE PROPERTIES</td>
       <td><span class="cap mid">mid</span></td>
       <td class="num" data-v="1">1</td>

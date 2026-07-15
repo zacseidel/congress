@@ -45,6 +45,10 @@
   .news li { margin:4px 0; }
   .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
                 padding:12px 16px; font-size:13px; color:#54470f; }
+  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
+  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
+  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
+  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
   footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
   /* heatmap */
   .heat { font-size:12px; }
@@ -100,16 +104,17 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-13.html">Leaderboard</a>
+    <a href="../reports/2026-07-15.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
+    <a href="../decisions.html">Decisions</a>
   </nav>
 </div></header>
 <div class="wrap">
 
-<p class="small"><a href="../reports/2026-07-13.html">← Back to leaderboard</a></p>
-<h2>FSLR — First Solar, Inc.<span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bear" title="Price vs SMA10: price 227.83 vs SMA10 230.59"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 230.59 vs SMA50 248.39"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 248.39 vs SMA200 235.44"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 16,875,848 vs down-vol 21,445,165"></span></span></h2>
+<p class="small"><a href="../reports/2026-07-15.html">← Back to leaderboard</a></p>
+<h2>FSLR — First Solar, Inc.<span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bear" title="Price vs SMA10: price 220.58 vs SMA10 227.56"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 227.56 vs SMA50 249.37"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 249.37 vs SMA200 235.47"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 14,408,154 vs down-vol 22,890,646"></span></span></h2>
 <p class="legend small">
   <span class="mdot bull"></span> bullish · <span class="mdot bear"></span> bearish ·
   <span class="mdot na"></span> n/a &nbsp; — dots: price&gt;SMA10 · SMA10&gt;SMA50 · SMA50&gt;SMA200 · up&gt;down volume (20d)</p>
@@ -122,7 +127,7 @@
 
 
 <div class="stat-row card">
-  <div class="stat"><div class="n">$227.83</div><div class="l">Last close</div></div>
+  <div class="stat"><div class="n">$220.58</div><div class="l">Last close</div></div>
   <div class="stat"><div class="n">$27.4B</div><div class="l">Market cap</div></div>
   <div class="stat"><div class="n">$120.38–$318.25</div><div class="l">2-yr range</div></div>
   
@@ -131,8 +136,8 @@
   <div class="stat"><div class="n">$8K</div><div class="l">Total disclosed buys</div></div>
   
   
-  <div class="stat"><div class="n">19</div><div class="l">Ranked funds holding</div></div>
-  <div class="stat"><div class="n">2</div><div class="l">Newly buying</div></div>
+  <div class="stat"><div class="n">18</div><div class="l">Ranked funds holding</div></div>
+  <div class="stat"><div class="n">1</div><div class="l">Newly buying</div></div>
   
   
   <div class="stat"><div class="n neg">-13.4%</div><div class="l">Buyers' return</div></div>
@@ -223,85 +228,84 @@
 <h3>📈 Top hedge funds who traded FSLR <span class="muted small">ranked 13F funds · latest filing</span></h3>
 
 <p class="small"><b>🛒 Newly buying:</b>
-  <a href="../hedge/funds/1564835.html">ASAHI LIFE ASSET MANAGEMENT CO., LTD.</a>
-  <span class="muted">(+1%, 0.2% of book)</span> · <a href="../hedge/funds/949615.html">KAYNE ANDERSON CAPITAL ADVISORS LP</a>
-  <span class="muted">(+1%, 0.0% of book)</span></p>
+  <a href="../hedge/funds/949615.html">KAYNE ANDERSON CAPITAL ADVISORS LP</a>
+  <span class="muted">(+2%, 0.0% of book)</span></p>
 <table class="sortable">
   <thead><tr><th>Fund</th><th class="num">Fund alpha vs SPY</th><th class="num">Position</th><th class="num">% of book</th></tr></thead>
   <tbody>
   <tr>
     <td><a href="../hedge/funds/1911523.html">Clean Energy Transition LLP</a></td>
-    <td class="num pos" data-v="0.4351">+44%</td>
+    <td class="num pos" data-v="0.4216">+42%</td>
     <td class="num" data-v="281408552">$281M</td>
     <td class="num" data-v="0.23077972656859816">23.1%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1418427.html">Robeco Schweiz AG</a></td>
-    <td class="num pos" data-v="0.0714">+7%</td>
+    <td class="num pos" data-v="0.0717">+7%</td>
     <td class="num" data-v="127369204">$127M</td>
     <td class="num" data-v="0.02693619638589941">2.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1050464.html">PECONIC PARTNERS LLC</a></td>
-    <td class="num pos" data-v="1.0377">+104%</td>
+    <td class="num pos" data-v="1.0574">+106%</td>
     <td class="num" data-v="77917700">$78M</td>
     <td class="num" data-v="0.013478864183572735">1.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1894532.html">SORA INVESTORS LLC</a></td>
-    <td class="num pos" data-v="0.2718">+27%</td>
+    <td class="num pos" data-v="0.2847">+28%</td>
     <td class="num" data-v="18824916">$19M</td>
     <td class="num" data-v="0.017336458407600706">1.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1602476.html">Lumbard &amp; Kellner, LLC</a></td>
-    <td class="num pos" data-v="0.3257">+33%</td>
+    <td class="num pos" data-v="0.3248">+32%</td>
     <td class="num" data-v="7152648">$7M</td>
     <td class="num" data-v="0.02478707562879143">2.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1596053.html">Arosa Capital Management LP</a></td>
-    <td class="num pos" data-v="0.6731">+67%</td>
+    <td class="num pos" data-v="0.6661">+67%</td>
     <td class="num" data-v="6016430">$6M</td>
     <td class="num" data-v="0.03917249742385664">3.9%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1631208.html">Credit Capital Investments LLC</a></td>
-    <td class="num pos" data-v="1.0191">+102%</td>
+    <td class="num pos" data-v="1.0393">+104%</td>
     <td class="num" data-v="5069582">$5M</td>
     <td class="num" data-v="0.046017950386653">4.6%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2017598.html">Summerhill Capital Management lnc.</a></td>
-    <td class="num pos" data-v="0.1428">+14%</td>
+    <td class="num pos" data-v="0.1603">+16%</td>
     <td class="num" data-v="4223337">$4M</td>
     <td class="num" data-v="0.03685230640686564">3.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1839122.html">Bouvel Investment Partners, LLC</a></td>
-    <td class="num pos" data-v="0.0791">+8%</td>
+    <td class="num pos" data-v="0.0691">+7%</td>
     <td class="num" data-v="3324226">$3M</td>
     <td class="num" data-v="0.009645442661190532">1.0%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1745796.html">North Growth Management Ltd.</a></td>
-    <td class="num pos" data-v="0.6113">+61%</td>
+    <td class="num pos" data-v="0.6508">+65%</td>
     <td class="num" data-v="3022000">$3M</td>
     <td class="num" data-v="0.004625994045295554">0.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1817652.html">HIMENSION CAPITAL (SINGAPORE) PTE. LTD.</a></td>
-    <td class="num pos" data-v="0.6265">+63%</td>
+    <td class="num pos" data-v="0.6223">+62%</td>
     <td class="num" data-v="2119756">$2M</td>
     <td class="num" data-v="0.0016284225670537094">0.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1596077.html">New England Research &amp; Management, Inc.</a></td>
-    <td class="num pos" data-v="0.0536">+5%</td>
+    <td class="num pos" data-v="0.0267">+3%</td>
     <td class="num" data-v="1548886">$2M</td>
     <td class="num" data-v="0.006545732797416567">0.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1781948.html">Legend Financial Advisors, Inc.</a></td>
-    <td class="num pos" data-v="0.1554">+16%</td>
+    <td class="num pos" data-v="0.1611">+16%</td>
     <td class="num" data-v="955330">$1M</td>
     <td class="num" data-v="0.006158587089011751">0.6%</td>
   </tr><tr>
     <td><a href="../hedge/funds/949615.html">KAYNE ANDERSON CAPITAL ADVISORS LP</a></td>
-    <td class="num pos" data-v="0.0084">+1%</td>
+    <td class="num pos" data-v="0.0193">+2%</td>
     <td class="num" data-v="940733">$1M</td>
     <td class="num" data-v="0.00018033807489777816">0.0%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1553562.html">AMF Tjanstepension AB</a></td>
-    <td class="num pos" data-v="0.0141">+1%</td>
+    <td class="num pos" data-v="0.0154">+2%</td>
     <td class="num" data-v="778980">$1M</td>
     <td class="num" data-v="5.164478404079988e-05">0.0%</td>
   </tr>

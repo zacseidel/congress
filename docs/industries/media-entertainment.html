@@ -45,6 +45,10 @@
   .news li { margin:4px 0; }
   .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
                 padding:12px 16px; font-size:13px; color:#54470f; }
+  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
+  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
+  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
+  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
   footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
   /* heatmap */
   .heat { font-size:12px; }
@@ -100,10 +104,11 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-13.html">Leaderboard</a>
+    <a href="../reports/2026-07-15.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
+    <a href="../decisions.html">Decisions</a>
   </nav>
 </div></header>
 <div class="wrap">
@@ -153,7 +158,7 @@
       <td><a href="../members/cisneros-gilbert.html">Gilbert Cisneros</a></td>
       <td><span class="pill house">house</span></td>
       <td>—</td>
-      <td class="num neg" data-v="-3.9">-3.9%</td>
+      <td class="num neg" data-v="-3.7">-3.7%</td>
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="24002">$24K</td>
     </tr>
@@ -162,9 +167,9 @@
       <td><a href="../members/khanna-rohit.html">Rohit Khanna</a></td>
       <td><span class="pill house">house</span></td>
       <td>—</td>
-      <td class="num neg" data-v="-21.3">-21.3%</td>
-      <td class="num" data-v="2">2</td>
-      <td class="num" data-v="16001">$16K</td>
+      <td class="num neg" data-v="-12.9">-12.9%</td>
+      <td class="num" data-v="3">3</td>
+      <td class="num" data-v="24002">$24K</td>
     </tr>
   
   </tbody>
@@ -176,7 +181,7 @@
   <tbody>
   
     <tr>
-      <td><a href="../stocks/FWONK.html">FWONK</a><span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bear" title="Price vs SMA10: price 96.13 vs SMA10 96.40"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 96.40 vs SMA50 90.95"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 90.95 vs SMA200 92.33"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 31,270,484 vs down-vol 12,954,423"></span></span></td>
+      <td><a href="../stocks/FWONK.html">FWONK</a><span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 100.87 vs SMA10 97.89"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 97.89 vs SMA50 91.54"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 91.54 vs SMA200 92.29"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 34,154,544 vs down-vol 11,362,210"></span></span></td>
       <td>Liberty Media Corporation Series C Liberty Formula One Common Stock</td>
       <td><span class="cap large">large</span></td>
       <td class="num" data-v="1">1</td>
@@ -184,15 +189,15 @@
     </tr>
   
     <tr>
-      <td><a href="../stocks/NWS.html">NWS</a><span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 30.93 vs SMA10 29.74"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 29.74 vs SMA50 29.96"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 29.96 vs SMA200 29.43"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 16,517,185 vs down-vol 29,299,464"></span></span></td>
+      <td><a href="../stocks/NWS.html">NWS</a><span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 31.15 vs SMA10 30.27"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 30.27 vs SMA50 29.99"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 29.99 vs SMA200 29.41"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 17,734,825 vs down-vol 26,486,901"></span></span></td>
       <td>News Corporation Class B Common Stock</td>
       <td><span class="cap large">large</span></td>
       <td class="num" data-v="2">2</td>
-      <td class="num" data-v="24002">$24K</td>
+      <td class="num" data-v="32002">$32K</td>
     </tr>
   
     <tr>
-      <td><a href="../stocks/FOXA.html">FOXA</a><span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 54.12 vs SMA10 53.53"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 53.53 vs SMA50 60.51"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 60.51 vs SMA200 63.28"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 101,822,626 vs down-vol 124,066,619"></span></span></td>
+      <td><a href="../stocks/FOXA.html">FOXA</a><span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 54.87 vs SMA10 54.56"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 54.56 vs SMA50 60.20"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 60.20 vs SMA200 63.23"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 103,874,215 vs down-vol 123,813,125"></span></span></td>
       <td>Fox Corporation Class A Common Stock</td>
       <td><span class="cap large">large</span></td>
       <td class="num" data-v="1">1</td>
@@ -200,7 +205,7 @@
     </tr>
   
     <tr>
-      <td><a href="../stocks/FOX.html">FOX</a><span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 48.75 vs SMA10 48.17"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 48.17 vs SMA50 54.41"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 54.41 vs SMA200 56.90"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 29,354,834 vs down-vol 31,872,097"></span></span></td>
+      <td><a href="../stocks/FOX.html">FOX</a><span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 49.50 vs SMA10 48.98"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 48.98 vs SMA50 54.14"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 54.14 vs SMA200 56.85"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 29,771,255 vs down-vol 32,075,903"></span></span></td>
       <td>Fox Corporation Class B Common Stock</td>
       <td><span class="cap large">large</span></td>
       <td class="num" data-v="1">1</td>
@@ -208,7 +213,7 @@
     </tr>
   
     <tr>
-      <td><a href="../stocks/PSKY.html">PSKY</a><span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bear" title="Price vs SMA10: price 9.41 vs SMA10 9.84"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 9.84 vs SMA50 10.28"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 10.28 vs SMA200 12.51"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 75,396,689 vs down-vol 109,211,360"></span></span></td>
+      <td><a href="../stocks/PSKY.html">PSKY</a><span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bear" title="Price vs SMA10: price 9.12 vs SMA10 9.76"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 9.76 vs SMA50 10.25"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 10.25 vs SMA200 12.41"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 79,337,002 vs down-vol 112,177,378"></span></span></td>
       <td>Paramount Skydance Corporation Class B Common Stock</td>
       <td><span class="cap large">large</span></td>
       <td class="num" data-v="1">1</td>
@@ -216,7 +221,7 @@
     </tr>
   
     <tr>
-      <td><a href="../stocks/NYT.html">NYT</a><span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 74.96 vs SMA10 72.66"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 72.66 vs SMA50 74.93"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 74.93 vs SMA200 71.12"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 19,480,877 vs down-vol 17,449,737"></span></span></td>
+      <td><a href="../stocks/NYT.html">NYT</a><span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bear" title="Price vs SMA10: price 72.98 vs SMA10 73.30"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 73.30 vs SMA50 74.73"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 74.73 vs SMA200 71.28"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 19,715,117 vs down-vol 17,011,548"></span></span></td>
       <td>New York Times Co.</td>
       <td><span class="cap large">large</span></td>
       <td class="num" data-v="1">1</td>

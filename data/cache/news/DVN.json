@@ -1,5 +1,51 @@
 [
   {
+    "id": "7d2bc4a60ba43732691a7729cd5bcadd7fee6440425045e359e155aca5d12770",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Oil is Starting to Flow Out of the Strait of Hormuz Again. Should You Still Buy Oil Stocks?",
+    "author": "Reuben Gregg Brewer",
+    "published_utc": "2026-07-04T13:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/04/oil-is-starting-to-flow-out-of-the-strait-of-hormu/?source=iedfolrf0000001",
+    "tickers": [
+      "CVX",
+      "DVN",
+      "FANG"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875830%2F22_10_24-a-person-in-front-of-energy-infrastructure-_mf-dload.jpg&w=1200&op=resize",
+    "description": "Following geopolitical tensions in the Middle East that temporarily spiked oil prices, the market has cooled and prices have returned to pre-conflict levels. Despite this, major oil companies warn that prices don't reflect true industry fundamentals. The article argues that oil and natural gas remain vital to the global economy and recommends integrated energy companies like ExxonMobil and Chevron over pure-play drillers due to their diversification across the energy value chain, geographic spread, conservative leverage, and decades of dividend growth.",
+    "keywords": [
+      "oil prices",
+      "Middle East geopolitical conflict",
+      "energy sector",
+      "integrated energy companies",
+      "dividend stocks",
+      "commodity volatility",
+      "Strait of Hormuz"
+    ],
+    "insights": [
+      {
+        "ticker": "CVX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Highlighted as a top energy investment with similar strengths to ExxonMobil: integrated operations, global diversification, low leverage (0.25x debt-to-equity), consistent dividend growth, and higher current dividend yield of 4.1%. Also benefits from management's view that oil prices don't reflect true fundamentals."
+      },
+      {
+        "ticker": "DVN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a pure-play onshore U.S. driller but cautioned against for long-term investors due to complete reliance on oil and natural gas prices without diversification across the energy value chain, making it more volatile than integrated competitors."
+      },
+      {
+        "ticker": "FANG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Similar to Devon Energy, presented as a pure-play driller with exposure limited to commodity prices and lacking the diversification benefits of integrated energy companies, making it less suitable for most long-term investors seeking stability."
+      }
+    ]
+  },
+  {
     "id": "b86f8cb9a18730410dd02da083638438b1f7302f796fd874aa6e9252777dcfe2",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -246,42 +292,6 @@
         "ticker": "SMH",
         "sentiment": "negative",
         "sentiment_reasoning": "Lost 2.9% as semiconductor sector weakened amid technology selloff and valuation concerns"
-      }
-    ]
-  },
-  {
-    "id": "b91e3850c3dd7380a784a00b8b7644da51807735a28dfd99a6b6b35ce23c83cf",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Devon Energy Provides Updated 2026 Outlook",
-    "author": "Na",
-    "published_utc": "2026-06-09T20:55:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/09/3309364/0/en/Devon-Energy-Provides-Updated-2026-Outlook.html",
-    "tickers": [
-      "DVN"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/08a7f129-4e96-45d8-a4b4-7f85c56da4ae",
-    "description": "Devon Energy announced its combined company outlook following the completion of its merger with Coterra Energy. The company expects 2026 production of 1.380 million barrels of oil equivalent per day with $4.9 billion in capital spending, primarily focused on the Permian Basin. Devon targets returning up to 70% of free cash flow to shareholders through dividends and share repurchases, while planning to retire $1.25 billion in debt and capture $600 million in synergies by 2027.",
-    "keywords": [
-      "merger",
-      "production outlook",
-      "capital expenditure",
-      "Permian Basin",
-      "shareholder returns",
-      "free cash flow",
-      "synergies",
-      "debt reduction",
-      "oil and gas"
-    ],
-    "insights": [
-      {
-        "ticker": "DVN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The company demonstrated strong operational metrics post-merger with significant production guidance (1.38 million BOE/d), disciplined capital allocation ($4.9 billion), commitment to shareholder returns (up to 70% of FCF), debt reduction ($1.25 billion), and substantial synergy capture ($600 million in 2027). Management expressed confidence in translating the merger into durable free cash flow growth."
       }
     ]
   }

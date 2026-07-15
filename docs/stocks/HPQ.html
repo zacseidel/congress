@@ -45,6 +45,10 @@
   .news li { margin:4px 0; }
   .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
                 padding:12px 16px; font-size:13px; color:#54470f; }
+  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
+  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
+  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
+  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
   footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
   /* heatmap */
   .heat { font-size:12px; }
@@ -100,29 +104,30 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-13.html">Leaderboard</a>
+    <a href="../reports/2026-07-15.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
+    <a href="../decisions.html">Decisions</a>
   </nav>
 </div></header>
 <div class="wrap">
 
-<p class="small"><a href="../reports/2026-07-13.html">← Back to leaderboard</a></p>
-<h2>HPQ — HP Inc.<span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 24.22 vs SMA10 22.91"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 22.91 vs SMA50 23.28"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 23.28 vs SMA200 22.57"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 155,372,254 vs down-vol 162,281,512"></span></span></h2>
+<p class="small"><a href="../reports/2026-07-15.html">← Back to leaderboard</a></p>
+<h2>HPQ — HP Inc.<span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 24.63 vs SMA10 23.30"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 23.30 vs SMA50 23.45"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 23.45 vs SMA200 22.54"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 161,118,299 vs down-vol 166,540,288"></span></span></h2>
 <p class="legend small">
   <span class="mdot bull"></span> bullish · <span class="mdot bear"></span> bearish ·
   <span class="mdot na"></span> n/a &nbsp; — dots: price&gt;SMA10 · SMA10&gt;SMA50 · SMA50&gt;SMA200 · up&gt;down volume (20d)</p>
 
 
 <div class="stat-row card">
-  <div class="stat"><div class="n">$24.22</div><div class="l">Last close</div></div>
+  <div class="stat"><div class="n">$24.63</div><div class="l">Last close</div></div>
   <div class="stat"><div class="n">$21.2B</div><div class="l">Market cap</div></div>
   <div class="stat"><div class="n">$18.20–$39.30</div><div class="l">2-yr range</div></div>
   
   
-  <div class="stat"><div class="n">11</div><div class="l">Ranked funds holding</div></div>
-  <div class="stat"><div class="n">3</div><div class="l">Newly buying</div></div>
+  <div class="stat"><div class="n">10</div><div class="l">Ranked funds holding</div></div>
+  <div class="stat"><div class="n">2</div><div class="l">Newly buying</div></div>
   
   
 </div>
@@ -184,65 +189,59 @@
 
 <p class="small"><b>🛒 Newly buying:</b>
   <a href="../hedge/funds/2041062.html">Talos Eurisko Asset Management LP</a>
-  <span class="muted">(+175%, 1.7% of book)</span> · <a href="../hedge/funds/2029917.html">ADAPT Investment Managers SA</a>
-  <span class="muted">(+13%, 0.9% of book)</span> · <a href="../hedge/funds/1708759.html">Maytus Capital Management, LLC</a>
-  <span class="muted">(+67%, 0.3% of book)</span></p>
+  <span class="muted">(+186%, 1.7% of book)</span> · <a href="../hedge/funds/1708759.html">Maytus Capital Management, LLC</a>
+  <span class="muted">(+71%, 0.3% of book)</span></p>
 <table class="sortable">
   <thead><tr><th>Fund</th><th class="num">Fund alpha vs SPY</th><th class="num">Position</th><th class="num">% of book</th></tr></thead>
   <tbody>
   <tr>
     <td><a href="../hedge/funds/2026352.html">Talaria Asset Management Pty Ltd</a></td>
-    <td class="num pos" data-v="0.1313">+13%</td>
+    <td class="num pos" data-v="0.1223">+12%</td>
     <td class="num" data-v="39247951">$39M</td>
     <td class="num" data-v="0.07923990544063833">7.9%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1745796.html">North Growth Management Ltd.</a></td>
-    <td class="num pos" data-v="0.6113">+61%</td>
+    <td class="num pos" data-v="0.6508">+65%</td>
     <td class="num" data-v="15922000">$16M</td>
     <td class="num" data-v="0.02437295737564388">2.4%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2041062.html">Talos Eurisko Asset Management LP</a></td>
-    <td class="num pos" data-v="1.7543">+175%</td>
+    <td class="num pos" data-v="1.8612">+186%</td>
     <td class="num" data-v="10018015">$10M</td>
     <td class="num" data-v="0.017117136407766225">1.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1730580.html">Harbor Island Capital LLC</a></td>
-    <td class="num pos" data-v="0.4485">+45%</td>
+    <td class="num pos" data-v="0.498">+50%</td>
     <td class="num" data-v="5674749">$6M</td>
     <td class="num" data-v="0.021081925929628858">2.1%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2057421.html">General Pension Society PZU Joint Stock Co</a></td>
-    <td class="num pos" data-v="0.4866">+49%</td>
+    <td class="num pos" data-v="0.4962">+50%</td>
     <td class="num" data-v="4979232">$5M</td>
     <td class="num" data-v="0.012243019764299682">1.2%</td>
   </tr><tr>
-    <td><a href="../hedge/funds/2029917.html">ADAPT Investment Managers SA</a></td>
-    <td class="num pos" data-v="0.1276">+13%</td>
-    <td class="num" data-v="2606778">$3M</td>
-    <td class="num" data-v="0.008853379613111858">0.9%</td>
-  </tr><tr>
     <td><a href="../hedge/funds/1708759.html">Maytus Capital Management, LLC</a></td>
-    <td class="num pos" data-v="0.671">+67%</td>
+    <td class="num pos" data-v="0.7059">+71%</td>
     <td class="num" data-v="1517878">$2M</td>
     <td class="num" data-v="0.0027011398153081916">0.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1520601.html">AFFINITY INVESTMENT ADVISORS, LLC</a></td>
-    <td class="num pos" data-v="0.2156">+22%</td>
+    <td class="num pos" data-v="0.215">+22%</td>
     <td class="num" data-v="1363679">$1M</td>
     <td class="num" data-v="0.008529807520181011">0.9%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2134841.html">First Nebraska Trust Co</a></td>
-    <td class="num pos" data-v="0.0561">+6%</td>
+    <td class="num pos" data-v="0.0429">+4%</td>
     <td class="num" data-v="1006583">$1M</td>
     <td class="num" data-v="0.0018612646895113615">0.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2055199.html">Kennondale Capital Management LLC</a></td>
-    <td class="num pos" data-v="0.0568">+6%</td>
+    <td class="num pos" data-v="0.0694">+7%</td>
     <td class="num" data-v="836530">$1M</td>
     <td class="num" data-v="0.006029724328799881">0.6%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1569453.html">F&amp;V Capital Management, LLC</a></td>
-    <td class="num pos" data-v="0.0206">+2%</td>
+    <td class="num pos" data-v="0.0297">+3%</td>
     <td class="num" data-v="231000">$0M</td>
     <td class="num" data-v="0.00048805635254993597">0.0%</td>
   </tr>

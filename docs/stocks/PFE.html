@@ -45,6 +45,10 @@
   .news li { margin:4px 0; }
   .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
                 padding:12px 16px; font-size:13px; color:#54470f; }
+  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
+  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
+  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
+  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
   footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
   /* heatmap */
   .heat { font-size:12px; }
@@ -100,16 +104,17 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-13.html">Leaderboard</a>
+    <a href="../reports/2026-07-15.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
+    <a href="../decisions.html">Decisions</a>
   </nav>
 </div></header>
 <div class="wrap">
 
-<p class="small"><a href="../reports/2026-07-13.html">← Back to leaderboard</a></p>
-<h2>PFE — Pfizer Inc.<span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 24.17 vs SMA10 24.12"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 24.12 vs SMA50 25.44"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 25.44 vs SMA200 25.87"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 350,789,014 vs down-vol 676,674,148"></span></span></h2>
+<p class="small"><a href="../reports/2026-07-15.html">← Back to leaderboard</a></p>
+<h2>PFE — Pfizer Inc.<span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 24.25 vs SMA10 24.13"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 24.13 vs SMA50 25.35"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 25.35 vs SMA200 25.87"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 309,700,716 vs down-vol 717,537,368"></span></span></h2>
 <p class="legend small">
   <span class="mdot bull"></span> bullish · <span class="mdot bear"></span> bearish ·
   <span class="mdot na"></span> n/a &nbsp; — dots: price&gt;SMA10 · SMA10&gt;SMA50 · SMA50&gt;SMA200 · up&gt;down volume (20d)</p>
@@ -122,28 +127,28 @@
 
 
 <div class="stat-row card">
-  <div class="stat"><div class="n">$24.17</div><div class="l">Last close</div></div>
+  <div class="stat"><div class="n">$24.25</div><div class="l">Last close</div></div>
   <div class="stat"><div class="n">$147.7B</div><div class="l">Market cap</div></div>
   <div class="stat"><div class="n">$21.59–$31.39</div><div class="l">2-yr range</div></div>
   
   <div class="stat"><div class="n">8</div><div class="l">Members buying</div></div>
   <div class="stat"><div class="n">0</div><div class="l">Out-performers buying</div></div>
-  <div class="stat"><div class="n">$234K</div><div class="l">Total disclosed buys</div></div>
+  <div class="stat"><div class="n">$242K</div><div class="l">Total disclosed buys</div></div>
   
   
-  <div class="stat"><div class="n">51</div><div class="l">Ranked funds holding</div></div>
-  <div class="stat"><div class="n">6</div><div class="l">Newly buying</div></div>
+  <div class="stat"><div class="n">45</div><div class="l">Ranked funds holding</div></div>
+  <div class="stat"><div class="n">4</div><div class="l">Newly buying</div></div>
   
   
-  <div class="stat"><div class="n neg">-4.0%</div><div class="l">Buyers' return</div></div>
-  <div class="stat"><div class="n neg">-12.1%</div><div class="l">vs S&P 500</div></div>
+  <div class="stat"><div class="n neg">-4.1%</div><div class="l">Buyers' return</div></div>
+  <div class="stat"><div class="n neg">-11.8%</div><div class="l">vs S&P 500</div></div>
   
 </div>
 
 <p class="small muted">Members who bought PFE earned a dollar-weighted
-   <strong class="neg">-4.0%</strong> from their disclosure
-   dates, versus <strong>+8.1%</strong> for the S&P 500 over the same holding
-   windows (-12.1% alpha).</p>
+   <strong class="neg">-4.1%</strong> from their disclosure
+   dates, versus <strong>+7.7%</strong> for the S&P 500 over the same holding
+   windows (-11.8% alpha).</p>
 
 
 
@@ -210,7 +215,16 @@
       <td><span class="pill house">house</span></td>
       <td>—</td>
       <td class="num" data-v="65001">$65K</td>
-      <td class="num neg" data-v="-2.47">-2.5%</td>
+      <td class="num neg" data-v="-2.3">-2.3%</td>
+    </tr>
+  
+    <tr>
+      <td><a href="../members/khanna-rohit.html">Rohit Khanna</a>
+          </td>
+      <td><span class="pill house">house</span></td>
+      <td>—</td>
+      <td class="num" data-v="48003">$48K</td>
+      <td class="num neg" data-v="-3.09">-3.1%</td>
     </tr>
   
     <tr>
@@ -223,21 +237,12 @@
     </tr>
   
     <tr>
-      <td><a href="../members/khanna-rohit.html">Rohit Khanna</a>
-          </td>
-      <td><span class="pill house">house</span></td>
-      <td>—</td>
-      <td class="num" data-v="40002">$40K</td>
-      <td class="num neg" data-v="-2.09">-2.1%</td>
-    </tr>
-  
-    <tr>
       <td><a href="../members/lee-laurel.html">Laurel Lee</a>
           <span class="star" title="Sits on a committee that regulates this industry">★</span></td>
       <td><span class="pill house">house</span></td>
       <td>—</td>
       <td class="num" data-v="32500">$32K</td>
-      <td class="num neg" data-v="-3.82">-3.8%</td>
+      <td class="num neg" data-v="-3.5">-3.5%</td>
     </tr>
   
     <tr>
@@ -255,7 +260,7 @@
       <td><span class="pill house">house</span></td>
       <td>—</td>
       <td class="num" data-v="8000">$8K</td>
-      <td class="num neg" data-v="-3.9">-3.9%</td>
+      <td class="num neg" data-v="-3.58">-3.6%</td>
     </tr>
   
     <tr>
@@ -286,91 +291,89 @@
 <h3>📈 Top hedge funds who traded PFE <span class="muted small">ranked 13F funds · latest filing</span></h3>
 
 <p class="small"><b>🛒 Newly buying:</b>
-  <a href="../hedge/funds/1317253.html">Minneapolis Portfolio Management Group, LLC</a>
-  <span class="muted">(+37%, 3.6% of book)</span> · <a href="../hedge/funds/1443689.html">Senator Investment Group LP</a>
+  <a href="../hedge/funds/1443689.html">Senator Investment Group LP</a>
   <span class="muted">(+5%, 1.6% of book)</span> · <a href="../hedge/funds/1904373.html">Caldwell Investment Management Ltd.</a>
   <span class="muted">(+3%, 0.8% of book)</span> · <a href="../hedge/funds/1860672.html">Elemental Capital Partners LLC</a>
-  <span class="muted">(+476%, 0.2% of book)</span> · <a href="../hedge/funds/2092331.html">BLALOCK WILLIAMS, LLC</a>
-  <span class="muted">(+1%, 0.2% of book)</span> · <a href="../hedge/funds/2060765.html">DSG Capital Advisors, LLC</a>
+  <span class="muted">(+439%, 0.2% of book)</span> · <a href="../hedge/funds/2060765.html">DSG Capital Advisors, LLC</a>
   <span class="muted">(+3%, 0.0% of book)</span></p>
 <table class="sortable">
   <thead><tr><th>Fund</th><th class="num">Fund alpha vs SPY</th><th class="num">Position</th><th class="num">% of book</th></tr></thead>
   <tbody>
   <tr>
     <td><a href="../hedge/funds/2026352.html">Talaria Asset Management Pty Ltd</a></td>
-    <td class="num pos" data-v="0.1313">+13%</td>
+    <td class="num pos" data-v="0.1223">+12%</td>
     <td class="num" data-v="49985208">$50M</td>
     <td class="num" data-v="0.10091796015926126">10.1%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1443689.html">Senator Investment Group LP</a></td>
-    <td class="num pos" data-v="0.0538">+5%</td>
+    <td class="num pos" data-v="0.0506">+5%</td>
     <td class="num" data-v="35100000">$35M</td>
     <td class="num" data-v="0.01611743230607143">1.6%</td>
   </tr><tr>
-    <td><a href="../hedge/funds/1317253.html">Minneapolis Portfolio Management Group, LLC</a></td>
-    <td class="num pos" data-v="0.3725">+37%</td>
-    <td class="num" data-v="33944368">$34M</td>
-    <td class="num" data-v="0.03604498107894216">3.6%</td>
-  </tr><tr>
     <td><a href="../hedge/funds/1733755.html">Arnhold LLC</a></td>
-    <td class="num pos" data-v="0.2596">+26%</td>
+    <td class="num pos" data-v="0.2507">+25%</td>
     <td class="num" data-v="27288060">$27M</td>
     <td class="num" data-v="0.02003934757782222">2.0%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1058231.html">LINCLUDEN MANAGEMENT LTD</a></td>
-    <td class="num pos" data-v="0.006">+1%</td>
+    <td class="num pos" data-v="0.0169">+2%</td>
     <td class="num" data-v="11268000">$11M</td>
     <td class="num" data-v="0.012000690135534951">1.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1088731.html">BOURGEON CAPITAL MANAGEMENT LLC</a></td>
-    <td class="num pos" data-v="0.214">+21%</td>
+    <td class="num pos" data-v="0.2023">+20%</td>
     <td class="num" data-v="9973090">$10M</td>
     <td class="num" data-v="0.017367903111819502">1.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1569411.html">Addenda Capital Inc.</a></td>
-    <td class="num pos" data-v="0.0552">+6%</td>
+    <td class="num pos" data-v="0.0561">+6%</td>
     <td class="num" data-v="8165664">$8M</td>
     <td class="num" data-v="0.002299511344771478">0.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1600152.html">Bellecapital International Ltd.</a></td>
-    <td class="num pos" data-v="0.0535">+5%</td>
+    <td class="num pos" data-v="0.0514">+5%</td>
     <td class="num" data-v="7202015">$7M</td>
     <td class="num" data-v="0.012993852228360189">1.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1006407.html">FISHMAN JAY A LTD/MI</a></td>
-    <td class="num pos" data-v="0.0427">+4%</td>
+    <td class="num pos" data-v="0.0403">+4%</td>
     <td class="num" data-v="5539342">$6M</td>
     <td class="num" data-v="0.004945670255926331">0.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2010854.html">BOCHK Asset Management Ltd</a></td>
-    <td class="num pos" data-v="0.5209">+52%</td>
+    <td class="num pos" data-v="0.527">+53%</td>
     <td class="num" data-v="3813264">$4M</td>
     <td class="num" data-v="0.007890565201660659">0.8%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1731132.html">Game Creek Capital, LP</a></td>
-    <td class="num pos" data-v="0.3095">+31%</td>
+    <td class="num pos" data-v="0.2899">+29%</td>
     <td class="num" data-v="3773250">$4M</td>
     <td class="num" data-v="0.014480421911197637">1.4%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2134841.html">First Nebraska Trust Co</a></td>
-    <td class="num pos" data-v="0.0561">+6%</td>
+    <td class="num pos" data-v="0.0429">+4%</td>
     <td class="num" data-v="3731855">$4M</td>
     <td class="num" data-v="0.006900543658969426">0.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2077903.html">Cherokee Insurance Co</a></td>
-    <td class="num pos" data-v="0.0816">+8%</td>
+    <td class="num pos" data-v="0.0868">+9%</td>
     <td class="num" data-v="3564672">$4M</td>
     <td class="num" data-v="0.01353038848272079">1.4%</td>
   </tr><tr>
     <td><a href="../hedge/funds/932929.html">WESTBOURNE INVESTMENTS, INC.</a></td>
-    <td class="num pos" data-v="0.077">+8%</td>
+    <td class="num pos" data-v="0.0647">+6%</td>
     <td class="num" data-v="3526610">$4M</td>
     <td class="num" data-v="0.01676667802159846">1.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1911735.html">SS&amp;H Financial Advisors, Inc.</a></td>
-    <td class="num pos" data-v="0.0308">+3%</td>
+    <td class="num pos" data-v="0.0156">+2%</td>
     <td class="num" data-v="2812000">$3M</td>
     <td class="num" data-v="0.008204996527757516">0.8%</td>
+  </tr><tr>
+    <td><a href="../hedge/funds/1740316.html">Gifford Fong Associates</a></td>
+    <td class="num pos" data-v="0.1868">+19%</td>
+    <td class="num" data-v="2777000">$3M</td>
+    <td class="num" data-v="0.005538359672285466">0.6%</td>
   </tr>
   </tbody>
 </table>

@@ -1,5 +1,198 @@
 [
   {
+    "id": "b2f6199d61fd7acd2b98ff0822ac361126e42033a1601326243cb0268af8833c",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "There Are Now 4 Honeywell Stocks After This Latest Spin-Off. Which Is the Better Buy Today?",
+    "author": "Thomas Niel",
+    "published_utc": "2026-07-07T15:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/07/there-are-now-4-honeywell-stocks-after-this-latest/?source=iedfolrf0000001",
+    "tickers": [
+      "HON",
+      "HONA",
+      "SOLS",
+      "QNT"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876817%2Fgettyimages-1465056863-1200x675-128554e.jpg&w=1200&op=resize",
+    "description": "Following Honeywell's breakup into four separate public entities, the article analyzes each spinoff's investment potential. Honeywell Technologies (industrial automation core) and Honeywell Aerospace trade at 27-28x forward earnings with high growth expectations already priced in. Solstice Advanced Materials emerges as the strongest candidate, trading at 30x forward earnings with over 20% forecasted growth and exposure to AI and nuclear energy trends. Quantinuum, the quantum computing venture, remains speculative with no material revenue.",
+    "keywords": [
+      "Honeywell spinoff",
+      "industrial automation",
+      "aerospace",
+      "quantum computing",
+      "specialty chemicals",
+      "valuation",
+      "earnings growth",
+      "AI exposure",
+      "nuclear energy"
+    ],
+    "insights": [
+      {
+        "ticker": "HON",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Trading at 28x forward earnings with 3.5% revenue growth and 7% EPS growth. While management guides for potential double-digit earnings growth, current valuation appears stretched. Author recommends waiting for weakness before entering a position."
+      },
+      {
+        "ticker": "HONA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Trading at 27x forward earnings with high growth expectations already factored in. While cheaper than peers like GE Aerospace and Boeing, any earnings disappointment could trigger significant losses. Author advises caution despite aerospace sector strength."
+      },
+      {
+        "ticker": "SOLS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Trading at 30x forward earnings with forecasted growth exceeding 20%. Offers dual exposure to AI-related tailwinds (data center cooling, semiconductor materials) and nuclear energy (uranium hexafluoride production). Author identifies it as the best positioned to outperform among the spinoffs."
+      },
+      {
+        "ticker": "QNT",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Valuation based entirely on future potential with no material revenue and heavy losses forecasted. Author suggests investors bullish on quantum computing should own Honeywell Technologies instead for indirect exposure with lower risk."
+      }
+    ]
+  },
+  {
+    "id": "64ce846df20ff76fe730b852972b8f4d0502eafeba0fdc00ca6dcd8509fc6723",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "3 Quantum Computing Stocks to Watch in the Second Half of 2026",
+    "author": "Adam Spatacco",
+    "published_utc": "2026-07-07T12:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/07/3-quantum-computing-stocks-to-watch-in-the-second/?source=iedfolrf0000001",
+    "tickers": [
+      "NVDA",
+      "IONQ",
+      "IONQ.WS",
+      "QNT",
+      "AMZN",
+      "MSFT",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877438%2Fgettyimages-2211414345-8.jpg&w=1200&op=resize",
+    "description": "Quantum computing stocks are emerging as compelling opportunities within the AI ecosystem, with McKinsey projecting $1.3-2.7 trillion in economic value by 2035. The article highlights three key players: Nvidia, which provides classical computing infrastructure for quantum systems; IonQ, a pure-play quantum computing company with aggressive expansion; and Quantinuum, a newly public company backed by major institutional investors like JPMorgan Chase and Nvidia.",
+    "keywords": [
+      "quantum computing",
+      "artificial intelligence",
+      "quantum-classical hybrid systems",
+      "trapped-ion systems",
+      "quantum hardware",
+      "commercialization"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Positioned as the foundational backbone for hybrid quantum-classical systems with its GPU architecture and CUDA software. cuQuantum toolkit enables quantum circuit simulation without capital-intensive physical processors. Strong competitive moat in classical computing that will benefit from quantum advancement."
+      },
+      {
+        "ticker": "IONQ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Offers direct pure-play quantum computing exposure with trapped-ion systems accessible via major cloud platforms. However, valuation reflects extraordinarily high expectations despite being early-stage and unprofitable. Aggressive acquisition strategy is compelling but carries execution risk."
+      },
+      {
+        "ticker": "IONQ.WS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Offers direct pure-play quantum computing exposure with trapped-ion systems accessible via major cloud platforms. However, valuation reflects extraordinarily high expectations despite being early-stage and unprofitable. Aggressive acquisition strategy is compelling but carries execution risk."
+      },
+      {
+        "ticker": "QNT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recently went public with diversified backing from JPMorgan Chase, Amgen, Mitsui, and Nvidia, providing more stable investment profile than smaller peers. Strong institutional support and focus on chemistry, cybersecurity, and machine learning applications. However, expect near-term volatility as investors digest post-IPO earnings."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as providing cloud platform access (Amazon Braket) for quantum computing applications, but no specific investment thesis or sentiment provided in the article."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as providing cloud platform access (Microsoft Azure) for quantum computing applications, but no specific investment thesis or sentiment provided in the article."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as providing cloud platform access (Google Cloud) for quantum computing applications, but no specific investment thesis or sentiment provided in the article."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as providing cloud platform access (Google Cloud) for quantum computing applications, but no specific investment thesis or sentiment provided in the article."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as providing cloud platform access (Google Cloud) for quantum computing applications, but no specific investment thesis or sentiment provided in the article."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as providing cloud platform access (Google Cloud) for quantum computing applications, but no specific investment thesis or sentiment provided in the article."
+      }
+    ]
+  },
+  {
+    "id": "10f5132aa7b89def78abb5c684789f27daef99dde38b6b9dde8abf2317f2af4d",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Is Honeywell Stock a Buy After Its Latest Structural Shakeup?",
+    "author": "James Halley",
+    "published_utc": "2026-07-03T23:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/03/is-honeywell-stock-a-buy-after-its-latest-structur/?source=iedfolrf0000001",
+    "tickers": [
+      "HON",
+      "HONA",
+      "SOLS",
+      "QNT"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876816%2Frobot-robotics-machine-manufacture-technology-engineering-1.jpg&w=1200&op=resize",
+    "description": "Honeywell completed its spinoff of its aerospace division on June 29, 2026, transforming into a pure-play industrial automation company focused on building, process, and industrial automation. The restructuring allows the company to capitalize on secular megatrends like warehouse automation and AI-driven energy efficiency. With a 49.1% stake in quantum computing leader Quantinuum and management targeting 4-6% organic growth with double-digit earnings growth over three years, analysts set an average price target of $474.75, representing 114% upside from current levels.",
+    "keywords": [
+      "spinoff",
+      "industrial automation",
+      "aerospace division",
+      "quantum computing",
+      "conglomerate restructuring",
+      "organic growth",
+      "ESG funds"
+    ],
+    "insights": [
+      {
+        "ticker": "HON",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The company's focused strategy on high-growth automation segments, strong Q1 growth (11% in building/industrial automation), strategic stake in quantum computing leader Quantinuum, and analyst price targets suggesting 114% upside support a positive outlook. Management's guidance for 4-6% organic growth and double-digit earnings growth over three years is encouraging."
+      },
+      {
+        "ticker": "HONA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While the aerospace division showed solid fundamentals with a $19 billion defense and commercial backlog, it was spun off as a separate entity. The article focuses on Honeywell Technologies post-spinoff, making the aerospace company a secondary consideration with neither clear bullish nor bearish indicators in this context."
+      },
+      {
+        "ticker": "SOLS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Solstice was spun off in October and is mentioned only briefly as part of the portfolio transformation. The article provides minimal analysis of this company's prospects, warranting a neutral stance."
+      },
+      {
+        "ticker": "QNT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Described as the world leader in full-stack quantum computing with the industry benchmark for quantum volume. Honeywell's 49.1% stake provides exposure to this high-growth technology, and the company's recent IPO (June 4) positions it as a strategic asset that could appreciate and lift Honeywell's equity value."
+      }
+    ]
+  },
+  {
     "id": "8aaa6714487b519b83c4d0a9b111e2e33f34dd25e77ee55e16564dcb069a1468",
     "publisher": {
       "name": "Investing.com",
@@ -127,159 +320,6 @@
         "ticker": "MSFT",
         "sentiment": "positive",
         "sentiment_reasoning": "Microsoft announced recent progress with topological qubit approach, positioning itself within the diverse quantum hardware ecosystem benefiting from government support and policy tailwinds."
-      }
-    ]
-  },
-  {
-    "id": "1f92bf353dd3c1755d94fec04c5872da78b364e4287754e2ee31de8357adb2ae",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Could This New Quantum Stock Be a Millionaire-Maker?",
-    "author": "Rick Orford",
-    "published_utc": "2026-06-25T13:26:57Z",
-    "article_url": "https://www.fool.com/investing/2026/06/25/could-this-new-quantum-stock-be-a-millionaire-make/?source=iedfolrf0000001",
-    "tickers": [
-      "QNT"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876168%2F941-qnt.png&w=1200&op=resize",
-    "description": "Quantinuum's quantum computing platform features trapped-ion technology and major partnerships that could position it as a leader in the industry. However, the stock's potential depends on successful commercialization and execution, with valuation expectations that may already be overextended.",
-    "keywords": [
-      "quantum computing",
-      "IPO",
-      "Quantinuum",
-      "trapped-ion technology",
-      "commercialization",
-      "valuation risk"
-    ],
-    "insights": [
-      {
-        "ticker": "QNT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While the article acknowledges Quantinuum's strong technological foundation (full-stack model, trapped-ion technology, major partnerships) and potential to become an important quantum computing platform, it emphasizes significant risks including dependence on commercialization success, execution challenges, and already-stretched valuation expectations. The balanced presentation of both upside potential and downside risks warrants a neutral stance."
-      }
-    ]
-  },
-  {
-    "id": "697959a168aa268171d07e6133e4d259dc19931002bbc85faf80238c065a2bcf",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "IonQ vs. Quantinuum: Which Quantum Computing Accuracy-Leading Stock Looks Like the Better Buy?",
-    "author": "Geoffrey Seiler",
-    "published_utc": "2026-06-25T13:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/25/ionq-vs-quantinuum-quantum-computing-stock-buy/?source=iedfolrf0000001",
-    "tickers": [
-      "IONQ",
-      "IONQ.WS",
-      "QNT",
-      "SKYT"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875832%2Fgettyimages-1648617109.jpg&w=1200&op=resize",
-    "description": "IonQ and Quantinuum are leading the quantum computing race using trapped-ion technology with record-breaking accuracy levels. IonQ achieves 99.99% 2-qubit gate fidelity and is pursuing vertical integration through acquisitions, while Quantinuum offers 99.9975% 1-qubit fidelity and a robust software stack. The analyst favors IonQ due to its accuracy lead and vertical integration strategy, though both stocks present speculative opportunities in the emerging quantum computing sector.",
-    "keywords": [
-      "quantum computing",
-      "trapped-ion technology",
-      "qubit gate fidelity",
-      "error correction",
-      "vertical integration",
-      "quantum software"
-    ],
-    "insights": [
-      {
-        "ticker": "IONQ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "IonQ leads in 2-qubit gate accuracy at 99.99%, has acquired Oxford Ionics for advanced Electronic Qubit Control technology, and is pursuing vertical integration through the SkyWater Technology acquisition. The analyst explicitly recommends IonQ as the better choice between the two companies."
-      },
-      {
-        "ticker": "IONQ.WS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "IonQ leads in 2-qubit gate accuracy at 99.99%, has acquired Oxford Ionics for advanced Electronic Qubit Control technology, and is pursuing vertical integration through the SkyWater Technology acquisition. The analyst explicitly recommends IonQ as the better choice between the two companies."
-      },
-      {
-        "ticker": "QNT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Quantinuum demonstrates strong accuracy metrics (99.9975% 1-qubit, 99.92% 2-qubit fidelity) and possesses a robust software stack including Guppy and TKET. While trailing IonQ in 2-qubit fidelity, the company is recognized as a legitimate competitor worthy of speculative investment."
-      },
-      {
-        "ticker": "SKYT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "SkyWater Technology is being acquired by IonQ for vertical integration, enabling rapid prototype testing and faster commercialization scaling. The Motley Fool holds positions in this company, indicating confidence in the strategic value of this acquisition."
-      }
-    ]
-  },
-  {
-    "id": "817b3507e82fce7914d72ded55efddca02dc8faadd36f807f95d5f52477a58d5",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "3 Quantum Computing Stocks Down Sharply -- but 1 Offers Exceptional Value",
-    "author": "Micah Zimmerman",
-    "published_utc": "2026-06-17T08:31:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/17/3-quantum-computing-stocks-down-sharply-but-one-o/?source=iedfolrf0000001",
-    "tickers": [
-      "RGTI",
-      "RGTIW",
-      "IONQ",
-      "IONQ.WS",
-      "QBTS",
-      "QNT",
-      "HON"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874038%2Fgettyimages-2149037448.jpg&w=1200&op=resize",
-    "description": "Quantum computing stocks have experienced a valuation reset after a strong rally in April-May. While Rigetti Computing and IonQ show impressive technology and growth, their valuations appear stretched. D-Wave Quantum stands out as offering better value with strong booking momentum, major enterprise contracts, and a more reasonable valuation that may underestimate its commercial potential.",
-    "keywords": [
-      "quantum computing",
-      "valuation reset",
-      "booking growth",
-      "enterprise contracts",
-      "quantum annealing",
-      "fault-tolerant computing"
-    ],
-    "insights": [
-      {
-        "ticker": "RGTI",
-        "sentiment": "negative",
-        "sentiment_reasoning": "While technology is advancing, revenue base is too thin ($4.4M in Q1) to justify current valuation with confidence. Stock is down 19% YTD and market cap implies commercial traction not yet demonstrated. Analyst is watching but not buying."
-      },
-      {
-        "ticker": "RGTIW",
-        "sentiment": "negative",
-        "sentiment_reasoning": "While technology is advancing, revenue base is too thin ($4.4M in Q1) to justify current valuation with confidence. Stock is down 19% YTD and market cap implies commercial traction not yet demonstrated. Analyst is watching but not buying."
-      },
-      {
-        "ticker": "IONQ",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Best fundamentals in pure-play quantum space with exceptional 755% YoY revenue growth, $470M backlog, and raised guidance. However, stock trades at premium valuation that prices in years of perfect execution. Market is charging investors to own the fundamentals rather than paying them."
-      },
-      {
-        "ticker": "IONQ.WS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Best fundamentals in pure-play quantum space with exceptional 755% YoY revenue growth, $470M backlog, and raised guidance. However, stock trades at premium valuation that prices in years of perfect execution. Market is charging investors to own the fundamentals rather than paying them."
-      },
-      {
-        "ticker": "QBTS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strongest value proposition with 1,994% YoY booking growth, $33.4M in closed bookings, major enterprise contracts ($20M and $10M deals), and only dual-platform quantum company. Trading at ~$23 with 20% YTD decline, market appears to be pricing in yesterday's skepticism while ignoring current booking momentum."
-      },
-      {
-        "ticker": "QNT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as better-funded competitor with $12.7B valuation and Honeywell backing. IPO filing reminded investors of competitive landscape but limited operational details provided in article."
-      },
-      {
-        "ticker": "HON",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as backer of Quantinuum IPO. No direct sentiment expressed regarding the company itself."
       }
     ]
   }

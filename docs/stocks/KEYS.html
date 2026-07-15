@@ -45,6 +45,10 @@
   .news li { margin:4px 0; }
   .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
                 padding:12px 16px; font-size:13px; color:#54470f; }
+  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
+  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
+  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
+  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
   footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
   /* heatmap */
   .heat { font-size:12px; }
@@ -100,16 +104,17 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-13.html">Leaderboard</a>
+    <a href="../reports/2026-07-15.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
+    <a href="../decisions.html">Decisions</a>
   </nav>
 </div></header>
 <div class="wrap">
 
-<p class="small"><a href="../reports/2026-07-13.html">← Back to leaderboard</a></p>
-<h2>KEYS — Keysight Technologies, Inc.<span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bear" title="Price vs SMA10: price 322.05 vs SMA10 325.86"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 325.86 vs SMA50 344.27"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 344.27 vs SMA200 257.94"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 17,364,333 vs down-vol 15,133,854"></span></span></h2>
+<p class="small"><a href="../reports/2026-07-15.html">← Back to leaderboard</a></p>
+<h2>KEYS — Keysight Technologies, Inc.<span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 325.73 vs SMA10 323.64"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 323.64 vs SMA50 343.50"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 343.50 vs SMA200 259.41"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 15,934,684 vs down-vol 16,532,770"></span></span></h2>
 <p class="legend small">
   <span class="mdot bull"></span> bullish · <span class="mdot bear"></span> bearish ·
   <span class="mdot na"></span> n/a &nbsp; — dots: price&gt;SMA10 · SMA10&gt;SMA50 · SMA50&gt;SMA200 · up&gt;down volume (20d)</p>
@@ -122,7 +127,7 @@
 
 
 <div class="stat-row card">
-  <div class="stat"><div class="n">$322.05</div><div class="l">Last close</div></div>
+  <div class="stat"><div class="n">$325.73</div><div class="l">Last close</div></div>
   <div class="stat"><div class="n">$59.9B</div><div class="l">Market cap</div></div>
   <div class="stat"><div class="n">$119.86–$373.34</div><div class="l">2-yr range</div></div>
   
@@ -131,19 +136,19 @@
   <div class="stat"><div class="n">$48K</div><div class="l">Total disclosed buys</div></div>
   
   
-  <div class="stat"><div class="n">17</div><div class="l">Ranked funds holding</div></div>
-  <div class="stat"><div class="n">2</div><div class="l">Newly buying</div></div>
+  <div class="stat"><div class="n">18</div><div class="l">Ranked funds holding</div></div>
+  <div class="stat"><div class="n">3</div><div class="l">Newly buying</div></div>
   
   
-  <div class="stat"><div class="n pos">+33.5%</div><div class="l">Buyers' return</div></div>
-  <div class="stat"><div class="n pos">+19.8%</div><div class="l">vs S&P 500</div></div>
+  <div class="stat"><div class="n pos">+34.1%</div><div class="l">Buyers' return</div></div>
+  <div class="stat"><div class="n pos">+20.5%</div><div class="l">vs S&P 500</div></div>
   
 </div>
 
 <p class="small muted">Members who bought KEYS earned a dollar-weighted
-   <strong class="pos">+33.5%</strong> from their disclosure
-   dates, versus <strong>+13.7%</strong> for the S&P 500 over the same holding
-   windows (+19.8% alpha).</p>
+   <strong class="pos">+34.1%</strong> from their disclosure
+   dates, versus <strong>+13.6%</strong> for the S&P 500 over the same holding
+   windows (+20.5% alpha).</p>
 
 
 
@@ -219,7 +224,7 @@
       <td><span class="pill house">house</span></td>
       <td>—</td>
       <td class="num" data-v="8000">$8K</td>
-      <td class="num pos" data-v="111.54">+111.5%</td>
+      <td class="num pos" data-v="113.96">+114.0%</td>
     </tr>
   
     <tr>
@@ -228,7 +233,7 @@
       <td><span class="pill house">house</span></td>
       <td>—</td>
       <td class="num" data-v="8000">$8K</td>
-      <td class="num neg" data-v="-0.6">-0.6%</td>
+      <td class="num pos" data-v="0.53">+0.5%</td>
     </tr>
   
   </tbody>
@@ -243,86 +248,87 @@
   0.2% of the ranked funds&rsquo; total alpha.</p>
 <p class="small"><b>🛒 Newly buying:</b>
   <a href="../hedge/funds/1861159.html">O&#39;Neil Global Advisors, Inc.</a>
-  <span class="muted">(+2%, 6.1% of book)</span> · <a href="../hedge/funds/1780365.html">WT Asset Management Ltd</a>
-  <span class="muted">(+61%, 3.4% of book)</span></p>
+  <span class="muted">(+5%, 6.1% of book)</span> · <a href="../hedge/funds/1780365.html">WT Asset Management Ltd</a>
+  <span class="muted">(+72%, 3.4% of book)</span> · <a href="../hedge/funds/2045870.html">Virtus Wealth Solutions LLC</a>
+  <span class="muted">(+12%, 0.9% of book)</span></p>
 <table class="sortable">
   <thead><tr><th>Fund</th><th class="num">Fund alpha vs SPY</th><th class="num">Position</th><th class="num">% of book</th></tr></thead>
   <tbody>
   <tr>
     <td><a href="../hedge/funds/1780365.html">WT Asset Management Ltd</a></td>
-    <td class="num pos" data-v="0.6145">+61%</td>
+    <td class="num pos" data-v="0.7208">+72%</td>
     <td class="num" data-v="162997235">$163M</td>
     <td class="num" data-v="0.03414908456697304">3.4%</td>
   </tr><tr>
     <td><a href="../hedge/funds/18748.html">CENTRAL SECURITIES CORP</a></td>
-    <td class="num pos" data-v="0.0276">+3%</td>
+    <td class="num pos" data-v="0.0215">+2%</td>
     <td class="num" data-v="56474000">$56M</td>
     <td class="num" data-v="0.046612346332694704">4.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1808928.html">Cartenna Capital, LP</a></td>
-    <td class="num pos" data-v="0.1949">+19%</td>
+    <td class="num pos" data-v="0.1787">+18%</td>
     <td class="num" data-v="53650300">$54M</td>
     <td class="num" data-v="0.023405057326910044">2.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1586986.html">Electron Capital Partners, LLC</a></td>
-    <td class="num pos" data-v="0.3883">+39%</td>
+    <td class="num pos" data-v="0.4033">+40%</td>
     <td class="num" data-v="46598392">$47M</td>
     <td class="num" data-v="0.021891834569290072">2.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2041062.html">Talos Eurisko Asset Management LP</a></td>
-    <td class="num pos" data-v="1.7543">+175%</td>
+    <td class="num pos" data-v="1.8612">+186%</td>
     <td class="num" data-v="36887970">$37M</td>
     <td class="num" data-v="0.06302809631404907">6.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1000097.html">KINGDON CAPITAL MANAGEMENT, L.L.C.</a></td>
-    <td class="num pos" data-v="0.3171">+32%</td>
+    <td class="num pos" data-v="0.306">+31%</td>
     <td class="num" data-v="22589600">$23M</td>
     <td class="num" data-v="0.037829644551121804">3.8%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1903866.html">Highlander Partners, L.P.</a></td>
-    <td class="num pos" data-v="0.3145">+31%</td>
+    <td class="num pos" data-v="0.3223">+32%</td>
     <td class="num" data-v="22363704">$22M</td>
     <td class="num" data-v="0.08751904627929026">8.8%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1418427.html">Robeco Schweiz AG</a></td>
-    <td class="num pos" data-v="0.0714">+7%</td>
+    <td class="num pos" data-v="0.0717">+7%</td>
     <td class="num" data-v="22166045">$22M</td>
     <td class="num" data-v="0.004687702540864459">0.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1943822.html">FIRETRAIL INVESTMENTS PTY LTD</a></td>
-    <td class="num pos" data-v="0.0312">+3%</td>
+    <td class="num pos" data-v="0.0347">+3%</td>
     <td class="num" data-v="10937776">$11M</td>
     <td class="num" data-v="0.0373219407885827">3.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1000742.html">SANDLER CAPITAL MANAGEMENT</a></td>
-    <td class="num pos" data-v="0.2134">+21%</td>
+    <td class="num pos" data-v="0.1954">+20%</td>
     <td class="num" data-v="9339952">$9M</td>
     <td class="num" data-v="0.06345130658528626">6.3%</td>
   </tr><tr>
+    <td><a href="../hedge/funds/2045870.html">Virtus Wealth Solutions LLC</a></td>
+    <td class="num pos" data-v="0.1155">+12%</td>
+    <td class="num" data-v="4548134">$5M</td>
+    <td class="num" data-v="0.00865885863830426">0.9%</td>
+  </tr><tr>
     <td><a href="../hedge/funds/1767435.html">Artemis Wealth Advisors, LLC</a></td>
-    <td class="num pos" data-v="0.1699">+17%</td>
+    <td class="num pos" data-v="0.1863">+19%</td>
     <td class="num" data-v="3389040">$3M</td>
     <td class="num" data-v="0.005127220916367197">0.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1840129.html">Hel Ved Capital Management Ltd</a></td>
-    <td class="num pos" data-v="0.7093">+71%</td>
+    <td class="num pos" data-v="0.7578">+76%</td>
     <td class="num" data-v="1919551">$2M</td>
     <td class="num" data-v="0.003320165831122736">0.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1733356.html">Paradiem, LLC</a></td>
-    <td class="num pos" data-v="0.1091">+11%</td>
+    <td class="num pos" data-v="0.1075">+11%</td>
     <td class="num" data-v="1399708">$1M</td>
     <td class="num" data-v="0.0030833543234245644">0.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1566887.html">Ratan Capital Management LP</a></td>
-    <td class="num pos" data-v="0.323">+32%</td>
+    <td class="num pos" data-v="0.3401">+34%</td>
     <td class="num" data-v="1030651">$1M</td>
     <td class="num" data-v="0.0038260840047603397">0.4%</td>
-  </tr><tr>
-    <td><a href="../hedge/funds/1861159.html">O&#39;Neil Global Advisors, Inc.</a></td>
-    <td class="num pos" data-v="0.0232">+2%</td>
-    <td class="num" data-v="884948">$1M</td>
-    <td class="num" data-v="0.06131332262977693">6.1%</td>
   </tr>
   </tbody>
 </table>

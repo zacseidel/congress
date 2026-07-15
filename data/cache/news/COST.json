@@ -1,237 +1,200 @@
 [
   {
-    "id": "e8da112f4fd10a9e5fcdd40f4cc057fc7811b87725bca65ad0bce0efd5dd4e7d",
+    "id": "c7a24df42abe6999d51e21d73737d9a00a956a636575b331d341ecc5f86fedaf",
     "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Best Buy\u2019s Turnaround Is Gaining Traction, But Wall Street Still Needs Proof",
-    "author": "Peter Frank",
-    "published_utc": "2026-06-30T20:11:00Z",
-    "article_url": "https://www.investing.com/analysis/best-buys-turnaround-is-gaining-traction-but-wall-street-still-needs-proof-200683076",
+    "title": "If You're Worried About a Market Crash, Here's the 1 Thing You Shouldn't Do, According to History.",
+    "author": "Jennifer Saibil",
+    "published_utc": "2026-07-15T13:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/15/if-youre-worried-about-a-market-crash-heres-the-1/?source=iedfolrf0000001",
     "tickers": [
-      "BBY",
+      "PG",
+      "KO",
+      "COST",
+      "TJX"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877998%2Fperson-with-hands-crossed.jpg&w=1200&op=resize",
+    "description": "With the S&P 500 facing valuation concerns and macroeconomic headwinds, the article advises investors not to sell during a market crash. Historical data shows that staying invested and holding through downturns leads to significant long-term gains. The article recommends building a defensive portfolio with dividend and stable stocks, and keeping cash reserves to buy at lower prices.",
+    "keywords": [
+      "market crash",
+      "S&P 500",
+      "CAPE ratio",
+      "defensive stocks",
+      "portfolio diversification",
+      "market recovery",
+      "investor psychology"
+    ],
+    "insights": [
+      {
+        "ticker": "PG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Mentioned as a defensive dividend stock that performs well during market downturns and provides passive income under all circumstances."
+      },
+      {
+        "ticker": "KO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Cited as a defensive dividend stock suitable for protecting portfolios during market crashes."
+      },
+      {
+        "ticker": "COST",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recommended as a defensive stock that performs well under market pressure and economic stress."
+      },
+      {
+        "ticker": "TJX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Suggested as a defensive stock that can perform well during challenging market conditions."
+      }
+    ]
+  },
+  {
+    "id": "15c0f8c035cec1d75a46d019a87cf65270e504c99bd40ab095b2fa52529cc9eb",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Here's How Many Shares of Costco Stock You'd Need for $1,000 in Yearly Dividends",
+    "author": "Eric Volkman",
+    "published_utc": "2026-07-15T11:19:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/15/heres-how-many-shares-of-costco-stock-youd-need-fo/?source=iedfolrf0000001",
+    "tickers": [
+      "COST"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878143%2Fcostco-by-getty-images.jpg&w=1200&op=resize",
+    "description": "Costco raised its quarterly dividend to $1.47 per share (annual $5.88) for the 22nd consecutive year, requiring 171 shares to generate $1,000 in annual dividends. Despite a low 0.6% dividend yield, the company demonstrates strong fundamentals with 92%+ membership renewal rates, 14% membership growth over two years, and record 2025 sales of $275 billion. Recent stock weakness following profit-taking and disappointing earnings reports presents a buying opportunity for long-term investors.",
+    "keywords": [
+      "dividend raise",
+      "membership renewal",
+      "retail stocks",
+      "dividend yield",
+      "earnings report",
+      "membership growth"
+    ],
+    "insights": [
+      {
+        "ticker": "COST",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company demonstrates consistent dividend growth (22 years of raises), strong membership metrics (92%+ renewal rate, 145+ million members), record financial performance ($275B sales, $8.1B net income in 2025), and solid long-term growth prospects despite recent short-term stock weakness and low dividend yield."
+      }
+    ]
+  },
+  {
+    "id": "fe3be5a64c2cdc96f44970be7c333ce3e927db634f09b1102cebdd03f5b057be",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Costco Stock: Buy the Dip?",
+    "author": "Parkev Tatevosian, Cfa",
+    "published_utc": "2026-07-14T05:26:07Z",
+    "article_url": "https://www.fool.com/investing/2026/07/14/costco-stock-buy-the-dip/?source=iedfolrf0000001",
+    "tickers": [
+      "COST"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878736%2Fimclgwnfkg5fq.png&w=1200&op=resize",
+    "description": "Costco shares declined following the company's monthly sales report, despite reporting a 10.6% increase in June sales. The article discusses whether this dip presents a buying opportunity for investors, noting that such opportunities are rare for Costco stock.",
+    "keywords": [
+      "Costco stock decline",
+      "monthly sales data",
+      "June sales growth",
+      "buying opportunity",
+      "stock dip"
+    ],
+    "insights": [
+      {
+        "ticker": "COST",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While Costco reported strong June sales growth of 10.6%, the stock fell 4% following the announcement, indicating mixed market reaction. The article presents a balanced view of whether the dip represents a buying opportunity, without taking a definitive bullish or bearish stance. The Motley Fool maintains a position in and recommends the stock, suggesting underlying confidence despite short-term volatility."
+      }
+    ]
+  },
+  {
+    "id": "77ce058688b6c784a6b955a6d48648a4d4257bba1084b34fca8e3f57239f08d3",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Costco Could Be Poised for Major Gains Before 2030. Here Is Why Now May Be the Time to Buy.",
+    "author": "Jeff Siegel",
+    "published_utc": "2026-07-11T13:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/11/costco-could-be-poised-for-major-gains-before-2030/?source=iedfolrf0000001",
+    "tickers": [
+      "COST"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877883%2Fcostco-shopping-warehouse-wholesale.jpg&w=1200&op=resize",
+    "description": "Costco's membership model generates strong recurring revenue with 92.3% U.S./Canada renewal rates and 10.7% year-over-year membership fee growth. The company operates 931 warehouses globally with significant international expansion opportunities, maintains strong financial health with $13.3 billion in operating cash flow, and benefits from 21.5% e-commerce comparable sales growth. Despite premium valuation multiples, Costco's competitive advantages position it well for continued shareholder returns through 2030.",
+    "keywords": [
+      "membership revenue",
+      "warehouse expansion",
+      "recurring revenue model",
+      "customer loyalty",
+      "e-commerce growth",
+      "financial strength",
+      "valuation premium",
+      "competitive advantage"
+    ],
+    "insights": [
+      {
+        "ticker": "COST",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong membership fee growth (10.7% YoY), exceptional renewal rates (92.3% U.S./Canada), expanding warehouse footprint (931 locations), robust e-commerce growth (21.5%), solid cash generation ($13.3B operating cash flow), and durable competitive moat through recurring revenue model support long-term growth potential through 2030."
+      }
+    ]
+  },
+  {
+    "id": "3303cf77d34fa8fdf79b226ff53ab4673fac073c5180a3fab5cdb8784a9faee2",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Why Is Amazon so Much Cheaper Than Walmart and Costco? This Is the Only Answer I Can Think of.",
+    "author": "Micah Zimmerman",
+    "published_utc": "2026-07-10T20:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/10/why-is-amazon-so-much-cheaper-than-walmart-and-cos/?source=iedfolrf0000001",
+    "tickers": [
       "AMZN",
       "WMT",
-      "COST",
-      "AAPL"
+      "COST"
     ],
-    "amp_url": "https://m.investing.com/analysis/best-buys-turnaround-is-gaining-traction-but-wall-street-still-needs-proof-200683076?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "Best Buy is showing signs of stabilization with Q1 results beating expectations, including revenue of $8.94B, comparable sales up 2%, and improved margins. However, Wall Street remains cautious with a Hold rating, citing concerns about leadership transitions, muted sales guidance, appliance sales decline, and ongoing competitive pressure from e-commerce giants.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878123%2Fgetty-delivery-fedex-ups-amazon.jpg&w=1200&op=resize",
+    "description": "Amazon trades at a lower forward P/E ratio than Walmart and Costco despite stronger growth prospects. The valuation gap reflects investor preferences: Walmart and Costco command premium multiples for predictable, bond-like earnings stability, while Amazon's lower multiple reflects uncertainty around massive AI and cloud infrastructure spending rather than weakness in its business fundamentals.",
     "keywords": [
-      "Best Buy turnaround",
-      "retail recovery",
-      "comparable sales growth",
-      "margin expansion",
-      "e-commerce competition",
-      "leadership transition",
-      "dividend yield"
+      "valuation",
+      "forward P/E ratio",
+      "Amazon Web Services",
+      "cloud computing",
+      "artificial intelligence",
+      "retail",
+      "earnings growth",
+      "investor sentiment"
     ],
     "insights": [
-      {
-        "ticker": "BBY",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While Q1 results exceeded expectations with revenue growth, margin expansion, and strong performance in gaming/computing/services, the stock remains below recent highs. Analyst consensus is Hold with limited upside, and concerns persist regarding leadership changes, flat 2027 guidance, appliance sales decline, and intense competition from Amazon, Walmart, Costco, and Apple. The turnaround shows promise but requires further proof of sustainability."
-      },
       {
         "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitive threat to Best Buy in e-commerce and retail, representing ongoing pressure on traditional retailers. No specific performance data provided in the article."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Amazon's earnings are growing rapidly driven by AWS cloud division and advertising business with high profit margins. The company is designing its own data-center chips and achieved record profitability. Lower P/E valuation reflects growth uncertainty, not business weakness."
       },
       {
         "ticker": "WMT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitive threat to Best Buy in retail and e-commerce. No specific performance data provided in the article."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Walmart commands a premium valuation due to predictable, reliable earnings growth and consistent performance across economic cycles. The company is building higher-margin businesses like advertising and membership programs alongside its core retail operations."
       },
       {
         "ticker": "COST",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitive threat to Best Buy through warehouse club competition. No specific performance data provided in the article."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitive threat to Best Buy through direct-to-consumer sales and mobile/computing categories. No specific performance data provided in the article."
-      }
-    ]
-  },
-  {
-    "id": "febe4b1fc7ca7ba2de3af1eddd9eddfefb3232bd3dd610e4004600103fe9b18e",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Organic Produce Summit Unveils Robust Education Program for 10th Anniversary Celebration",
-    "author": "Na",
-    "published_utc": "2026-06-30T16:58:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/30/3320032/0/en/Organic-Produce-Summit-Unveils-Robust-Education-Program-for-10th-Anniversary-Celebration.html",
-    "tickers": [
-      "COST",
-      "SFM",
-      "NGVC"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/490e282d-9986-41b3-a673-4522e4952d4e",
-    "description": "The Organic Produce Summit returns July 14-16, 2026 in Monterey, California, featuring keynote speakers, panel discussions, and networking events focused on sustainability, market trends, and innovation in organic produce. The event brings together growers, retailers, and industry leaders to address challenges in organic agriculture, worker well-being, consumer nutrition, and retail strategies.",
-    "keywords": [
-      "organic produce",
-      "sustainability",
-      "retail strategy",
-      "agriculture",
-      "industry conference",
-      "networking",
-      "innovation",
-      "worker well-being",
-      "consumer trends"
-    ],
-    "insights": [
-      {
-        "ticker": "COST",
         "sentiment": "positive",
-        "sentiment_reasoning": "Represented by Amanda Kuhn on a panel discussing worker well-being and ethical labor practices, positioning the company as engaged in responsible agriculture initiatives."
-      },
-      {
-        "ticker": "SFM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Featured panelist Rachel O'Connor discussing retail challenges and growth opportunities, indicating active participation in industry dialogue."
-      },
-      {
-        "ticker": "NGVC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Represented by Alan Lewis on a panel about nutrition and organic produce positioning at retail, showing engagement with health-conscious consumer trends."
-      }
-    ]
-  },
-  {
-    "id": "a836583a1560bb406c2b07e08ead2f1ba8e873be15b5c2ed0e8bd55c433d7e54",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "Costco\u2019s Secret Growth Engine May Be Running Out of Gas",
-    "author": "Dan Schmidt",
-    "published_utc": "2026-06-29T15:16:00Z",
-    "article_url": "https://www.investing.com/analysis/costcos-secret-growth-engine-may-be-running-out-of-gas-200682983",
-    "tickers": [
-      "COST"
-    ],
-    "amp_url": "https://m.investing.com/analysis/costcos-secret-growth-engine-may-be-running-out-of-gas-200682983?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "Costco's recent strong sales growth has been significantly driven by elevated gasoline prices, which the company uses as a loss-leader to attract members. As fuel prices normalize following their May peaks, the company's comparable sales growth is expected to decelerate. While the stock has declined over 10% from its all-time high of $1,096, analysts debate whether new members will provide durable revenue or if the growth was merely temporary. The stock currently trades at 46x forward earnings, and investors await June sales figures and September earnings to determine if Costco can justify its premium valuation without the gas tailwind.",
-    "keywords": [
-      "gasoline prices",
-      "comparable sales",
-      "membership retention",
-      "valuation",
-      "technical analysis",
-      "moving averages",
-      "RSI indicator"
-    ],
-    "insights": [
-      {
-        "ticker": "COST",
-        "sentiment": "negative",
-        "sentiment_reasoning": "The article highlights that Costco's primary growth driver (elevated gas prices) is fading, with comparable sales growth expected to peak. The stock has declined 10% from its May high, trading at a premium 46x forward earnings multiple. Technical indicators show weakening momentum with the RSI dipping below bullish thresholds and price testing the 200-day moving average, suggesting the rally may have exhausted itself without the fuel-price tailwind."
-      }
-    ]
-  },
-  {
-    "id": "f1628723f842f7852ad2f21fd8141f020427de42811b260c947fe2b8be2dd293",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "You Can Buy 1 Share of Costco for Less Than $1,000 Right Now. Here's Why the Price Could Go Up by the End of 2030.",
-    "author": "Anders Bylund",
-    "published_utc": "2026-06-28T11:21:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/28/you-can-buy-1-share-of-costco-for-less-than-1000/?source=iedfolrf0000001",
-    "tickers": [
-      "COST",
-      "WMT",
-      "TGT",
-      "DLTR",
-      "PSMT"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875935%2Fcost-costco-logo-red.png&w=1200&op=resize",
-    "description": "Despite trading at premium valuation ratios (48x trailing earnings and 48x free cash flow), Costco's stock is positioned for continued growth through 2030. The warehouse club's 92.2% membership renewal rate, high-margin membership fee income, planned expansion of 30+ warehouses annually, and successful tech investments justify its premium pricing compared to discount retail peers.",
-    "keywords": [
-      "Costco",
-      "warehouse club",
-      "membership model",
-      "premium valuation",
-      "retail expansion",
-      "technology investment",
-      "membership renewal rate",
-      "discount retailers"
-    ],
-    "insights": [
-      {
-        "ticker": "COST",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The article presents a bullish case for Costco, highlighting its strong membership loyalty (92.2% renewal rate), high-margin membership fee income, planned expansion of 30+ warehouses annually, successful tech upgrades (same-day delivery, AI-powered pages), and justified premium valuation. Wall Street consensus supports a buy rating with 14% upside potential."
-      },
-      {
-        "ticker": "WMT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Walmart is mentioned as a peer comparison point, trading at lower valuation ratios than Costco. The article notes the author holds a position in Walmart but uses it primarily as a benchmark for Costco's premium valuation without making a specific investment case."
-      },
-      {
-        "ticker": "TGT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Target is referenced as a discount retailer peer trading at lower valuation multiples than Costco, used as a comparative benchmark without specific investment commentary."
-      },
-      {
-        "ticker": "DLTR",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Dollar Tree is mentioned as a discount retailer peer with lower valuation ratios than Costco, used only for comparative valuation analysis."
-      },
-      {
-        "ticker": "PSMT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "PriceSmart is referenced as a discount retailer peer with lower valuation ratios than Costco, used only for comparative valuation analysis."
-      }
-    ]
-  },
-  {
-    "id": "09959055bd99b6ae98861f184febb05cea405df77b87d71e68ecde61837eef0d",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Can Costco Stock Reach $1,000 by the End of 2026?",
-    "author": "Jennifer Saibil",
-    "published_utc": "2026-06-28T10:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/28/can-costco-stock-reach-1000-by-the-end-of-2026/?source=iedfolrf0000001",
-    "tickers": [
-      "COST"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875787%2Fperson-pushing-a-wagon-with-a-child-in-a-warehouse-store.jpg&w=1200&op=resize",
-    "description": "Costco stock hit $1,000 for the first time in February 2025 and recently traded near that level despite market volatility. The company demonstrates strong fundamentals with accelerating revenue growth (11.6% YoY), rising earnings per share ($4.93 vs $4.28), and expanding e-commerce sales (21.5% growth). Key growth drivers include fuel stations attracting new members and digital services. Trading at a P/E ratio of 48, the stock is susceptible to sentiment shifts but the author believes it can reach $1,000 by year-end given its strong operational performance and lower current valuation.",
-    "keywords": [
-      "Costco stock price target",
-      "revenue growth",
-      "e-commerce expansion",
-      "membership growth",
-      "fuel stations",
-      "earnings per share",
-      "P/E ratio",
-      "recession-proof stock"
-    ],
-    "insights": [
-      {
-        "ticker": "COST",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong operational performance with accelerating revenue growth (11.6% YoY), rising EPS ($4.93 vs $4.28), robust e-commerce growth (21.5%), and expanding membership base. Company demonstrates resilience in inflationary environment and has multiple growth drivers including fuel stations and digital services. Recent stock decline attributed to sentiment rather than fundamentals, presenting potential upside to $1,000 target."
+        "sentiment_reasoning": "Costco has the highest forward P/E multiple, reflecting investor confidence in its membership model that creates loyal, recurring customers. The company offers predictable earnings growth and is valued as a dependable compounder with minimal execution risk."
       }
     ]
   }

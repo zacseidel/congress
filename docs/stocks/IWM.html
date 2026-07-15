@@ -45,6 +45,10 @@
   .news li { margin:4px 0; }
   .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
                 padding:12px 16px; font-size:13px; color:#54470f; }
+  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
+  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
+  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
+  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
   footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
   /* heatmap */
   .heat { font-size:12px; }
@@ -100,16 +104,17 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-13.html">Leaderboard</a>
+    <a href="../reports/2026-07-15.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
+    <a href="../decisions.html">Decisions</a>
   </nav>
 </div></header>
 <div class="wrap">
 
-<p class="small"><a href="../reports/2026-07-13.html">← Back to leaderboard</a></p>
-<h2>IWM — iShares Russell 2000 ETF<span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bear" title="Price vs SMA10: price 295.99 vs SMA10 297.79"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 297.79 vs SMA50 288.62"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 288.62 vs SMA200 262.10"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 309,465,619 vs down-vol 215,244,311"></span></span></h2>
+<p class="small"><a href="../reports/2026-07-15.html">← Back to leaderboard</a></p>
+<h2>IWM — iShares Russell 2000 ETF<span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bear" title="Price vs SMA10: price 294.51 vs SMA10 296.71"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 296.71 vs SMA50 289.38"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 289.38 vs SMA200 262.62"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 252,218,229 vs down-vol 234,619,797"></span></span></h2>
 <p class="legend small">
   <span class="mdot bull"></span> bullish · <span class="mdot bear"></span> bearish ·
   <span class="mdot na"></span> n/a &nbsp; — dots: price&gt;SMA10 · SMA10&gt;SMA50 · SMA50&gt;SMA200 · up&gt;down volume (20d)</p>
@@ -122,7 +127,7 @@
 
 
 <div class="stat-row card">
-  <div class="stat"><div class="n">$295.99</div><div class="l">Last close</div></div>
+  <div class="stat"><div class="n">$294.51</div><div class="l">Last close</div></div>
   
   <div class="stat"><div class="n">$174.82–$300.45</div><div class="l">2-yr range</div></div>
   
@@ -131,7 +136,7 @@
   <div class="stat"><div class="n">$8K</div><div class="l">Total disclosed buys</div></div>
   
   
-  <div class="stat"><div class="n">66</div><div class="l">Ranked funds holding</div></div>
+  <div class="stat"><div class="n">64</div><div class="l">Ranked funds holding</div></div>
   <div class="stat"><div class="n">5</div><div class="l">Newly buying</div></div>
   
   
@@ -206,90 +211,90 @@
 
 <h3>📈 Top hedge funds who traded IWM <span class="muted small">ranked 13F funds · latest filing</span></h3>
 <p class="muted small">This name produced
-  0.1% of the ranked funds&rsquo; total alpha.</p>
+  0.0% of the ranked funds&rsquo; total alpha.</p>
 <p class="small"><b>🛒 Newly buying:</b>
   <a href="../hedge/funds/1492040.html">JCIC Asset Management Inc.</a>
-  <span class="muted">(+1%, 2.0% of book)</span> · <a href="../hedge/funds/1700272.html">Azora Capital LP</a>
-  <span class="muted">(+31%, 1.1% of book)</span> · <a href="../hedge/funds/1804352.html">PING CAPITAL MANAGEMENT, INC.</a>
-  <span class="muted">(+60%, 0.1% of book)</span> · <a href="../hedge/funds/2040070.html">Integrated Capital Management, LLC</a>
-  <span class="muted">(+7%, 0.1% of book)</span> · <a href="../hedge/funds/931588.html">PROVIDA PENSION FUND ADMINISTRATOR</a>
+  <span class="muted">(+2%, 2.0% of book)</span> · <a href="../hedge/funds/1700272.html">Azora Capital LP</a>
+  <span class="muted">(+30%, 1.1% of book)</span> · <a href="../hedge/funds/1804352.html">PING CAPITAL MANAGEMENT, INC.</a>
+  <span class="muted">(+65%, 0.1% of book)</span> · <a href="../hedge/funds/2040070.html">Integrated Capital Management, LLC</a>
+  <span class="muted">(+6%, 0.1% of book)</span> · <a href="../hedge/funds/931588.html">PROVIDA PENSION FUND ADMINISTRATOR</a>
   <span class="muted">(+2%, 0.1% of book)</span></p>
 <table class="sortable">
   <thead><tr><th>Fund</th><th class="num">Fund alpha vs SPY</th><th class="num">Position</th><th class="num">% of book</th></tr></thead>
   <tbody>
   <tr>
     <td><a href="../hedge/funds/1452689.html">Valiant Capital Management, L.P.</a></td>
-    <td class="num pos" data-v="0.6728">+67%</td>
+    <td class="num pos" data-v="0.6753">+68%</td>
     <td class="num" data-v="225134648">$225M</td>
     <td class="num" data-v="0.17716692280581037">17.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1278387.html">BROADWOOD CAPITAL INC</a></td>
-    <td class="num pos" data-v="0.1489">+15%</td>
+    <td class="num pos" data-v="0.0801">+8%</td>
     <td class="num" data-v="117780160">$118M</td>
     <td class="num" data-v="0.08301662372292617">8.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/791191.html">ANDERSON HOAGLAND &amp; CO</a></td>
-    <td class="num pos" data-v="0.0163">+2%</td>
+    <td class="num pos" data-v="0.0074">+1%</td>
     <td class="num" data-v="56793376">$57M</td>
     <td class="num" data-v="0.044512286119648026">4.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1556168.html">Consolidated Investment Group LLC</a></td>
-    <td class="num pos" data-v="0.1606">+16%</td>
+    <td class="num pos" data-v="0.1681">+17%</td>
     <td class="num" data-v="38474224">$38M</td>
     <td class="num" data-v="0.04173034323957619">4.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2047823.html">Finley Financial, LLC</a></td>
-    <td class="num pos" data-v="0.0472">+5%</td>
+    <td class="num pos" data-v="0.0438">+4%</td>
     <td class="num" data-v="21887736">$22M</td>
     <td class="num" data-v="0.10247396618144165">10.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1700272.html">Azora Capital LP</a></td>
-    <td class="num pos" data-v="0.3054">+31%</td>
+    <td class="num pos" data-v="0.2951">+30%</td>
     <td class="num" data-v="17211448">$17M</td>
     <td class="num" data-v="0.011319212290272962">1.1%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1427373.html">Palisades Investment Partners, LLC</a></td>
-    <td class="num pos" data-v="0.3219">+32%</td>
+    <td class="num pos" data-v="0.2717">+27%</td>
     <td class="num" data-v="8448120">$8M</td>
     <td class="num" data-v="0.03312160273159011">3.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1716659.html">Parisi Gray Wealth Management</a></td>
-    <td class="num pos" data-v="0.0363">+4%</td>
+    <td class="num pos" data-v="0.0342">+3%</td>
     <td class="num" data-v="8208804">$8M</td>
     <td class="num" data-v="0.019556368355005946">2.0%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1664324.html">Mandatum Life Insurance Co Ltd</a></td>
-    <td class="num pos" data-v="0.087">+9%</td>
+    <td class="num pos" data-v="0.0839">+8%</td>
     <td class="num" data-v="7665928">$8M</td>
     <td class="num" data-v="0.017235682536358696">1.7%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1492040.html">JCIC Asset Management Inc.</a></td>
-    <td class="num pos" data-v="0.0081">+1%</td>
+    <td class="num pos" data-v="0.0184">+2%</td>
     <td class="num" data-v="6421756">$6M</td>
     <td class="num" data-v="0.019668897878874405">2.0%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2064588.html">WINCAP FINANCIAL LLC</a></td>
-    <td class="num pos" data-v="0.0113">+1%</td>
+    <td class="num pos" data-v="0.0085">+1%</td>
     <td class="num" data-v="5846478">$6M</td>
     <td class="num" data-v="0.03890556144333555">3.9%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1850996.html">IronBridge Private Wealth, LLC</a></td>
-    <td class="num pos" data-v="0.006">+1%</td>
+    <td class="num pos" data-v="0.0317">+3%</td>
     <td class="num" data-v="5669032">$6M</td>
     <td class="num" data-v="0.018284088696894032">1.8%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1569411.html">Addenda Capital Inc.</a></td>
-    <td class="num pos" data-v="0.0552">+6%</td>
+    <td class="num pos" data-v="0.0561">+6%</td>
     <td class="num" data-v="5395610">$5M</td>
     <td class="num" data-v="0.001519443661527395">0.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1900195.html">SURIENCE PRIVATE WEALTH LLC</a></td>
-    <td class="num pos" data-v="0.0702">+7%</td>
+    <td class="num pos" data-v="0.0696">+7%</td>
     <td class="num" data-v="5150960">$5M</td>
     <td class="num" data-v="0.055291853029442256">5.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/931588.html">PROVIDA PENSION FUND ADMINISTRATOR</a></td>
-    <td class="num pos" data-v="0.0154">+2%</td>
+    <td class="num pos" data-v="0.016">+2%</td>
     <td class="num" data-v="4549529">$5M</td>
     <td class="num" data-v="0.0007870208301856557">0.1%</td>
   </tr>

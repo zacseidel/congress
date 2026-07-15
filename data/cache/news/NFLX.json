@@ -1,283 +1,325 @@
 [
   {
-    "id": "2da3b45fb4637d0c3577a02af4619ba2d2698a5131de001bc6b01da59f2ef250",
+    "id": "811555c4b7d2f9a1979eec0030aade6ffd8dc99f78cd5ad9eae8ae7ef3023529",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Should You Buy Netflix Stock Right Now?",
-    "author": "Anders Bylund",
-    "published_utc": "2026-06-30T20:17:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/should-you-buy-netflix-stock-right-now/?source=iedfolrf0000001",
+    "title": "Got $500? 5 Ridiculously Cheap Stocks You Can Buy Now",
+    "author": "Parkev Tatevosian, Cfa",
+    "published_utc": "2026-07-14T05:25:22Z",
+    "article_url": "https://www.fool.com/investing/2026/07/14/got-500-5-ridiculously-cheap-stocks-you-can-buy-no/?source=iedfolrf0000001",
+    "tickers": [
+      "CELH",
+      "NFLX",
+      "UBER",
+      "PINS",
+      "DKNG"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878735%2Fimkh4j8hpmx_i.png&w=1200&op=resize",
+    "description": "The article identifies five undervalued stocks trading below $100 per share that appear cheap based on various valuation metrics. Stock prices referenced are from July 10, 2026.",
+    "keywords": [
+      "undervalued stocks",
+      "cheap stocks",
+      "stocks under $100",
+      "valuation metrics",
+      "stock picking"
+    ],
+    "insights": [
+      {
+        "ticker": "CELH",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Mentioned as one of the five undervalued stocks identified in the article; The Motley Fool recommends it"
+      },
+      {
+        "ticker": "NFLX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Author has a position in the stock and it is recommended by The Motley Fool"
+      },
+      {
+        "ticker": "UBER",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Author has a position in the stock and it is recommended by The Motley Fool"
+      },
+      {
+        "ticker": "PINS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Author has a position in the stock and it is recommended by The Motley Fool"
+      },
+      {
+        "ticker": "DKNG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned in the stocks list but no explicit recommendation or analysis provided in the article"
+      }
+    ]
+  },
+  {
+    "id": "cc192ca1513f505c39d28a79644441f700d666e440356457cd1b98fda651bd02",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Netflix Is Down 43% From Its Most Recent High. History Says This May Happen Next",
+    "author": "Prosper Junior Bakiny",
+    "published_utc": "2026-07-13T13:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/13/netflix-is-down-43-from-its-most-recent-high-histo/?source=iedfolrf0000001",
     "tickers": [
       "NFLX",
+      "DIS",
+      "ROKU",
       "FOX",
-      "FOXA",
-      "WMG",
-      "WBD"
+      "FOXA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F832697%2Fbuilding-with-netflix-logo-on-top_netflix.jpg&w=1200&op=resize",
-    "description": "Netflix stock has fallen 44% over the past year and now trades at 24x trailing earnings, down from 50+ times previously. Despite the sell-off driven by market drama rather than fundamentals, the company demonstrates strong operational efficiency with 48.5% return on equity, double-digit revenue growth (16% YoY), and impressive profitability metrics that outpace entertainment sector rivals. Analysts view the current valuation as attractive for long-term investors.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878413%2Fnetflix-logo.png&w=1200&op=resize",
+    "description": "Netflix stock has declined 43% from its recent high amid poor guidance, leadership changes, and low subscriber engagement. Historical precedent suggests the stock could either bottom out around 40% decline (as in 2018) or drop significantly further like the 70% decline in 2021-2022. However, the company's new initiatives including ad-supported tiers, live TV channels, and sports content could drive recovery, making current levels potentially attractive for long-term investors.",
     "keywords": [
-      "Netflix valuation",
-      "stock price decline",
-      "return on equity",
-      "revenue growth",
-      "entertainment stocks",
-      "long-term investing"
+      "streaming",
+      "subscriber engagement",
+      "stock decline",
+      "live TV",
+      "sports content",
+      "competitive landscape",
+      "monetization"
     ],
     "insights": [
       {
         "ticker": "NFLX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Stock faces near-term headwinds from low engagement and competitive pressures that could drive further declines, but long-term outlook is positive due to new growth initiatives (live TV, sports) and historical recovery patterns. Author recommends buying on the dip for long-term investors."
+      },
+      {
+        "ticker": "DIS",
         "sentiment": "positive",
-        "sentiment_reasoning": "Despite recent 44% price decline, the article highlights Netflix's superior operational efficiency (48.5% ROE), strong revenue growth (16% YoY), and attractive valuation (24x P/E) that no longer demands perfection. The sell-off is attributed to market drama rather than business fundamentals, presenting a buying opportunity for long-term investors."
+        "sentiment_reasoning": "Mentioned as gaining competitive advantage through majority stake in FuboTV, strengthening its streaming position against Netflix."
+      },
+      {
+        "ticker": "ROKU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Being acquired by Fox, which positions it as part of a larger competitive force in the streaming ecosystem."
       },
       {
         "ticker": "FOX",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only as a comparison point for Netflix's superior return on equity (48.5% vs Fox's lower returns), with no independent analysis or investment recommendation provided."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Acquiring Roku to strengthen its streaming and content distribution capabilities in competitive landscape."
       },
       {
         "ticker": "FOXA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only as a comparison point for Netflix's superior return on equity (48.5% vs Fox's lower returns), with no independent analysis or investment recommendation provided."
-      },
-      {
-        "ticker": "WMG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Referenced as having higher ROE (68.5%) than Netflix, but the article notes this is not necessarily positive due to low equity and heavy debt load, making it a cautionary comparison rather than an endorsement."
-      },
-      {
-        "ticker": "WBD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only in context of bidding drama that contributed to Netflix's stock decline, with no independent analysis or investment perspective provided."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Acquiring Roku to strengthen its streaming and content distribution capabilities in competitive landscape."
       }
     ]
   },
   {
-    "id": "28098fdef61256048f17fbe19280e4d1d05d1105fb08619a56595c38b2ad233a",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "France Licensing Day Breaks Records, Moves to New Paris Location in Biggest Edition Yet",
-    "author": "Global Licensing Group",
-    "published_utc": "2026-06-30T19:41:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/30/3320083/0/en/France-Licensing-Day-Breaks-Records-Moves-to-New-Paris-Location-in-Biggest-Edition-Yet.html",
-    "tickers": [
-      "MAT",
-      "NFLX",
-      "WBD",
-      "SNROY"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/b539f3a8-28ea-4e6e-8a8c-c1f08c150b41",
-    "description": "France Licensing Day 2026 achieved record attendance with 550+ attendees and 55 exhibitors at its new Paris venue on June 30. The event facilitated 500+ meetings between major brands including Paramount, Netflix, Warner Bros. Discovery, and Mattel with French retailers and licensees. The 8th annual Licensing International France Awards recognized excellence across 17 categories, with winners including Mattel's Barbie collaboration and Netflix's LEGO One Piece line.",
-    "keywords": [
-      "licensing",
-      "brand partnerships",
-      "retail strategy",
-      "B2B networking",
-      "France market",
-      "entertainment brands",
-      "deal-making"
-    ],
-    "insights": [
-      {
-        "ticker": "MAT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Mattel won the Retail Operations award for Barbie x Demeliss at Boulanger, demonstrating successful brand extension and strong retail presence at a major licensing event."
-      },
-      {
-        "ticker": "NFLX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Netflix exhibited at the event and won the Harline Products award for LEGO One Piece Construction Line, showcasing successful licensing partnerships and brand extension strategy."
-      },
-      {
-        "ticker": "WBD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Warner Bros. Discovery participated as a global entertainment leader exhibitor, indicating active engagement in the French licensing market and brand extension opportunities."
-      },
-      {
-        "ticker": "SNROY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Sanrio's Hello Kitty & Friends won the Corporate, Lifestyle and Celebrity Brands award, recognizing successful brand management and market presence."
-      }
-    ]
-  },
-  {
-    "id": "ea52768adb26bcebeb50140791250b6c1c5c2b10171974c73ae1fa7089d89b5b",
+    "id": "51f655e589cf8f519d753d7212b8efd81d6f3811e723fad8c4fc60fa79eeb39d",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Should You Buy Netflix Stock Before July 16?",
-    "author": "David Jagielski, Cpa",
-    "published_utc": "2026-06-29T19:16:53Z",
-    "article_url": "https://www.fool.com/investing/2026/06/29/should-you-buy-netflix-stock-before-july-16/?source=iedfolrf0000001",
+    "title": "In 7 Words, Kevin Warsh Just Sent the Clearest Signal Yet About Where Interest Rates Are Headed in 2026",
+    "author": "Bram Berkowitz",
+    "published_utc": "2026-07-13T12:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/13/in-7-words-kevin-warsh-just-sent-the-clearest-sign/?source=iedfolrf0000001",
     "tickers": [
       "NFLX",
-      "WBD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876683%2Fadvisor-reviewing-data-on-a-laptop-with-a-family.jpg&w=1200&op=resize",
-    "description": "Netflix stock has declined over 20% in 2026 following co-founder Reed Hastings' departure announcement, raising concerns about the company's future direction and potential acquisition rumors. Despite growth slowing to 16% (below its 10-year 20% average), the stock trades at a reasonable 24x earnings. The author suggests Netflix remains a solid long-term buy for patient investors ahead of its July 16 earnings report, arguing the market may have overreacted to leadership changes.",
-    "keywords": [
-      "Netflix earnings",
-      "stock decline",
-      "Reed Hastings departure",
-      "acquisition rumors",
-      "growth rate",
-      "valuation",
-      "streaming"
-    ],
-    "insights": [
-      {
-        "ticker": "NFLX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Despite near-term headwinds from leadership transition and stock decline, the author views Netflix as a solid long-term investment opportunity. The company maintains double-digit growth (16%), trades at reasonable valuation (24x earnings), and has a diversified business model. The author recommends buying for multi-year holding periods, suggesting the market overreacted to Hastings' departure."
-      },
-      {
-        "ticker": "WBD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only in context of a failed acquisition attempt by Netflix earlier in the year during a bidding war with Paramount Skydance. No direct investment recommendation or analysis provided."
-      }
-    ]
-  },
-  {
-    "id": "89eeab405fda16f0c91ea3dc4bc0890f3c3944c381696c368aa01b778be887c0",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Vietnam Tech Summit 2026 to Bring AI Leaders, Founders, Investors, and Vietnamese Tech Talent to Silicon Valley",
-    "author": "Vietspark",
-    "published_utc": "2026-06-27T01:20:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/27/3318523/0/en/Vietnam-Tech-Summit-2026-to-Bring-AI-Leaders-Founders-Investors-and-Vietnamese-Tech-Talent-to-Silicon-Valley.html",
-    "tickers": [
+      "AAPL",
+      "AMZN",
       "GOOG",
       "GOOGL",
       "GOOGM",
       "GOOGN",
-      "MSFT",
       "META",
-      "NFLX",
+      "MSFT",
       "NVDA",
-      "INTU",
-      "WMT"
+      "TSLA"
     ],
-    "image_url": "https://www.globenewswire.com/news-release/2026/06/27/3318523/0/en/Vietnam-Tech-Summit-2026-to-Bring-AI-Leaders-Founders-Investors-and-Vietnamese-Tech-Talent-to-Silicon-Valley.html",
-    "description": "Vietnam Tech Summit 2026, the largest Vietnamese-led tech summit in the United States, will take place August 7-8 at the Computer History Museum in Mountain View, California. The fifth annual summit has grown from 100 attendees in 2022 to over 900 in 2025, featuring company tours, keynotes on AI, recruiting opportunities, mentorship, and the Vietnam AI Stars startup competition. The event aims to help Vietnamese and Vietnam-connected tech talent build careers in the AI era.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878290%2Fwarsh-official-white-house-photo-by-daniel-torok.jpg&w=1200&op=resize",
+    "description": "Federal Reserve Chair Kevin Warsh signaled a hawkish stance on inflation at a recent Central Banking forum, stating 'prices are too high.' This comment has led markets to price in a 52% probability of a quarter-point rate increase in September 2026, with another expected in March 2027. Despite initial expectations that Warsh would support lower rates, his focus on price stability suggests a more hawkish approach than anticipated.",
     "keywords": [
-      "Vietnam Tech Summit",
-      "AI",
-      "Silicon Valley",
-      "Vietnamese tech talent",
-      "startup competition",
-      "mentorship",
-      "recruiting",
-      "company tours"
+      "Federal Reserve",
+      "Kevin Warsh",
+      "interest rates",
+      "inflation",
+      "price stability",
+      "monetary policy",
+      "FOMC",
+      "rate hike"
     ],
     "insights": [
       {
+        "ticker": "NFLX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned only in a 'Read Next' promotional section unrelated to the main article content; no substantive analysis provided."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed only in market data ticker section with no contextual analysis in the article."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed only in market data ticker section with no contextual analysis in the article."
+      },
+      {
         "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google is prominently featured as a keynote speaker (Quoc Le, Google Fellow and VP at Google DeepMind), company tour host, and mentoring floor participant, indicating strong engagement with the summit and Vietnamese tech talent development."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed only in market data ticker section with no contextual analysis in the article."
       },
       {
         "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google is prominently featured as a keynote speaker (Quoc Le, Google Fellow and VP at Google DeepMind), company tour host, and mentoring floor participant, indicating strong engagement with the summit and Vietnamese tech talent development."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed only in market data ticker section with no contextual analysis in the article."
       },
       {
         "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google is prominently featured as a keynote speaker (Quoc Le, Google Fellow and VP at Google DeepMind), company tour host, and mentoring floor participant, indicating strong engagement with the summit and Vietnamese tech talent development."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed only in market data ticker section with no contextual analysis in the article."
       },
       {
         "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google is prominently featured as a keynote speaker (Quoc Le, Google Fellow and VP at Google DeepMind), company tour host, and mentoring floor participant, indicating strong engagement with the summit and Vietnamese tech talent development."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Microsoft is highlighted as a company tour host and part of the broader Company Access Network, demonstrating commitment to recruiting Vietnamese tech talent and participating in the summit."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed only in market data ticker section with no contextual analysis in the article."
       },
       {
         "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Meta is featured as a company tour host, keynote speaker (Nam Nguyen, VP Head of Engineering for Instagram), and mentoring floor participant, showing active recruitment and leadership involvement."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed only in market data ticker section with no contextual analysis in the article."
       },
       {
-        "ticker": "NFLX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Netflix is included as a company tour host and part of VietSpark's behind-the-scenes access program, indicating participation in Vietnamese tech talent recruitment."
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed only in market data ticker section with no contextual analysis in the article."
       },
       {
         "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "NVIDIA is part of the Company Access Network and has mentoring floor representation, indicating participation in recruiting Vietnamese tech talent."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed only in market data ticker section with no contextual analysis in the article."
       },
       {
-        "ticker": "INTU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Intuit is part of the Company Access Network and has multiple mentoring floor participants, showing commitment to Vietnamese tech talent recruitment."
-      },
-      {
-        "ticker": "WMT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Walmart is included in the Company Access Network and has mentoring floor representation, indicating participation in the summit's talent recruitment efforts."
+        "ticker": "TSLA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed only in market data ticker section with no contextual analysis in the article."
       }
     ]
   },
   {
-    "id": "3d265aa737075498204b93ccba93dc5b4f3770e0d5740cb0b9a1a8b58ad04283",
+    "id": "1913fa93a907af19f252011ad38ceb58cbb398ee0ad60b6ce6fbdb73bce7869b",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Revealed! 3 Undervalued Stocks I Just Bought",
-    "author": "Parkev Tatevosian, Cfa",
-    "published_utc": "2026-06-27T00:20:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/26/revealed-3-undervalued-stocks-i-just-bought/?source=iedfolrf0000001",
+    "title": "Netflix Might Be Ready to Buy Something Again, but It's Not What You Think",
+    "author": "Rick Munarriz",
+    "published_utc": "2026-07-12T10:07:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/12/netflix-might-be-ready-to-buy-something-again-but/?source=iedfolrf0000001",
     "tickers": [
       "NFLX",
-      "MA",
-      "LLY"
+      "WBD",
+      "AMZN",
+      "CCZ",
+      "CMCSA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876626%2Fstock-market-graph-on-smartphone.jpg&w=1200&op=resize",
-    "description": "The author identifies three undervalued stocks purchased at attractive prices in a volatile market. The stocks mentioned are Netflix, Mastercard, and Eli Lilly, which the author believes present good investment opportunities despite recent market volatility.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878536%2Fgettyimages-1317797291.jpg&w=1200&op=resize",
+    "description": "Netflix is reportedly bidding for Letterboxd, a film-review platform with 30 million users, in a deal valued around $250 million. This represents Netflix's shift toward smaller, strategic acquisitions rather than major deals. The move comes as Netflix stock has fallen 41% over the past year amid investor confidence issues, though the company continues to make logical, cost-effective investments like its recent acquisition of Radford Studio Center.",
     "keywords": [
-      "undervalued stocks",
-      "investment opportunity",
-      "volatile market",
-      "stock buying",
-      "market dip"
+      "Netflix acquisition",
+      "Letterboxd",
+      "streaming",
+      "stock decline",
+      "strategic investments",
+      "content production"
     ],
     "insights": [
       {
         "ticker": "NFLX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Author purchased the stock, indicating belief in its undervaluation. Recent price decline (down 32-46% mentioned in related articles) presents buying opportunity at lower prices."
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock has declined 41% over the past year with disappointing quarterly results and guidance. The company faces a confidence crisis with investors, experiencing stock declines both when pursuing acquisitions and when being outbid. However, the smaller strategic acquisition approach shows some positive strategic direction."
       },
       {
-        "ticker": "MA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Author has a position in the stock and included it among three undervalued stocks worth buying, suggesting confidence in its value proposition."
+        "ticker": "WBD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a past acquisition target that Netflix lost to Paramount Skydance. No current involvement in the story, included for context only."
       },
       {
-        "ticker": "LLY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Author has a position in the stock and selected it as one of three undervalued stocks to purchase, indicating belief in its investment potential."
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as owner of IMDb, used as a precedent example for streaming services owning review platforms. No sentiment implications."
+      },
+      {
+        "ticker": "CCZ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as former owner of Rotten Tomatoes before its spinoff. Used as historical precedent, no current sentiment implications."
+      },
+      {
+        "ticker": "CMCSA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as former owner of Rotten Tomatoes before its spinoff. Used as historical precedent, no current sentiment implications."
+      }
+    ]
+  },
+  {
+    "id": "2dfd7d3379cbbcc623f9a7ba02f87e11be259887c227fae337abbf74fbd4d6dc",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "3 Reasons Why Netflix Has a Lot to Prove on July 16",
+    "author": "Jack Delaney",
+    "published_utc": "2026-07-12T08:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/12/3-reasons-why-netflix-has-a-lot-to-prove-july-16/?source=iedfolrf0000001",
+    "tickers": [
+      "NFLX",
+      "WBD",
+      "ROKU",
+      "FOX",
+      "FOXA"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878137%2Fgettyimages-1376203813.jpg&w=1200&op=resize",
+    "description": "Netflix faces significant pressure ahead of its Q2 2026 earnings report on July 16. With stock down nearly 20% in 2026 and 40% over the past year, investors are seeking reassurance on three key fronts: whether content costs remain under control, clarity on the company's acquisition strategy, and evidence that Netflix is reversing recent losses. The earnings report will be a critical test for both short-term traders and long-term investors.",
+    "keywords": [
+      "earnings report",
+      "content costs",
+      "stock price decline",
+      "acquisition strategy",
+      "Q2 2026",
+      "streaming",
+      "Netflix House"
+    ],
+    "insights": [
+      {
+        "ticker": "NFLX",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock has declined nearly 20% in 2026 and 40% over the past 12 months. Investors are concerned about rising content costs, unclear acquisition strategy, and the company's ability to reverse recent losses. The upcoming earnings report is positioned as a critical test of whether Netflix can stabilize."
+      },
+      {
+        "ticker": "WBD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned in context of Netflix walking away from a bidding war in February. The decision was initially cheered by investors as it avoided potential overpayment, but the company itself is not the focus of analysis."
+      },
+      {
+        "ticker": "ROKU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a potential acquisition target for Netflix, but Fox entered a definitive agreement to acquire Roku instead. No direct sentiment impact on Roku is expressed in the article."
+      },
+      {
+        "ticker": "FOX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned only as the company that acquired Roku, preventing Netflix from making a competitive bid. No sentiment analysis is provided."
+      },
+      {
+        "ticker": "FOXA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned only as the company that acquired Roku, preventing Netflix from making a competitive bid. No sentiment analysis is provided."
       }
     ]
   }

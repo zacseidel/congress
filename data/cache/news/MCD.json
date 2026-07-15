@@ -1,5 +1,51 @@
 [
   {
+    "id": "0969e6639774c4760112792a30213fb43b49a7aaf25878da1f963abc982b10db",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "3 Dividend Stocks That Recently Hit 52-Week Lows to Buy in July",
+    "author": "Reuben Gregg Brewer",
+    "published_utc": "2026-07-05T13:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/05/3-dividend-stocks-that-recently-hit-52-week-lows-t/?source=iedfolrf0000001",
+    "tickers": [
+      "MCD",
+      "CLX",
+      "GIS"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874502%2F22_09_26-a-parent-showing-their-child-how-to-save-using-a-piggy-bank-_financial-lessons-save-money-_mf-dload.jpg&w=1200&op=resize",
+    "description": "The article recommends three dividend stocks trading near 52-week lows: McDonald's (approaching Dividend King status with 49 consecutive increases), Clorox (48 consecutive years of dividend increases), and General Mills (127 years of consecutive dividend payments). Despite current market pessimism, all three are well-run companies with strong histories, attractive yields, and undervalued P/E ratios.",
+    "keywords": [
+      "dividend stocks",
+      "52-week lows",
+      "value investing",
+      "dividend kings",
+      "consumer staples",
+      "fast food",
+      "packaged food"
+    ],
+    "insights": [
+      {
+        "ticker": "MCD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong business fundamentals with 95% franchised model providing stable recurring revenue, impressive Q1 2026 same-store sales growth of 3.6%, 49 consecutive dividend increases (one year from Dividend King status), attractive 2.7% yield, and P/E of 22x below its 5-year average of 26x."
+      },
+      {
+        "ticker": "CLX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "48 consecutive years of dividend increases with Dividend King status expected in 2027, recent strategic acquisition of Gojo/Purell brand to expand growth, historically high 5.1% dividend yield, and P/E of 15x well below 5-year average of 37x despite current market pessimism."
+      },
+      {
+        "ticker": "GIS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "127 consecutive years of dividend payments demonstrating resilience, recent earnings bounce with solid fiscal 2027 guidance, attractive 6.49% dividend yield, P/E of 8.5x significantly below 5-year average of 15x, and company positioned to refocus on innovation and growth after difficult 2026."
+      }
+    ]
+  },
+  {
     "id": "2e671f637057f967a2c74726400c250bec0313a060cfff049aab7bd4542da710",
     "publisher": {
       "name": "The Motley Fool",
@@ -177,75 +223,6 @@
         "ticker": "MCD",
         "sentiment": "positive",
         "sentiment_reasoning": "Fulfilled cage-free commitments and achieved 100% cage-free sourcing among restaurant chains."
-      }
-    ]
-  },
-  {
-    "id": "cf463e02af89fc21a768e773e7a9c20a676c9444cbd60e164a47b68477bf1c19",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "5 Dividend Stocks to Buy and Hold Forever",
-    "author": "Justin Pope",
-    "published_utc": "2026-06-22T10:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/22/5-dividend-stocks-to-buy-and-hold-forever/?source=iedfolrf0000001",
-    "tickers": [
-      "ABBV",
-      "MCD",
-      "JNJ",
-      "WMT",
-      "BDX",
-      "ABT",
-      "AMZN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874322%2Fmoney-growth-dividends.jpg&w=1200&op=resize",
-    "description": "The article highlights five blue-chip dividend stocks suitable for long-term buy-and-hold investing: AbbVie, McDonald's, Johnson & Johnson, Walmart, and Becton Dickinson. These companies have demonstrated decades of consecutive dividend increases and strong financial fundamentals, with dividends well-covered by earnings and solid growth prospects ahead.",
-    "keywords": [
-      "dividend stocks",
-      "buy and hold",
-      "dividend kings",
-      "long-term investing",
-      "dividend growth",
-      "blue-chip stocks"
-    ],
-    "insights": [
-      {
-        "ticker": "ABBV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Dividend King status with 50+ consecutive increases, diverse product portfolio with 12 billion-dollar products, dividend payout ratio under 50% of earnings, and anticipated 20%+ annualized earnings growth."
-      },
-      {
-        "ticker": "MCD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Approaching Dividend King status with strong recurring revenue from franchising model, 57% dividend payout ratio with room for growth, and expected high-single-digit earnings growth."
-      },
-      {
-        "ticker": "JNJ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Legendary dividend stock with 64 consecutive dividend increases, AAA-rated balance sheet, dividend consuming under 50% of earnings, and stable 8-9% annual earnings growth expected."
-      },
-      {
-        "ticker": "WMT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "53 years of consecutive dividend increases, strong competitive moat with massive scale, e-commerce growth engine, 34% dividend payout ratio with substantial cushion, and 9% expected earnings growth."
-      },
-      {
-        "ticker": "BDX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Dividend King with 54 consecutive yearly increases, strong patent portfolio with $1 billion annual R&D spending, dividend at one-third of earnings estimates providing safety margin."
-      },
-      {
-        "ticker": "ABT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as historical parent company of AbbVie; no specific investment recommendation or analysis provided in the article."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only as a competitive reference point for Walmart's e-commerce strategy; not recommended as a dividend stock."
       }
     ]
   }

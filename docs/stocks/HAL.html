@@ -45,6 +45,10 @@
   .news li { margin:4px 0; }
   .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
                 padding:12px 16px; font-size:13px; color:#54470f; }
+  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
+  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
+  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
+  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
   footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
   /* heatmap */
   .heat { font-size:12px; }
@@ -100,16 +104,17 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-13.html">Leaderboard</a>
+    <a href="../reports/2026-07-15.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
+    <a href="../decisions.html">Decisions</a>
   </nav>
 </div></header>
 <div class="wrap">
 
-<p class="small"><a href="../reports/2026-07-13.html">← Back to leaderboard</a></p>
-<h2>HAL — Halliburton Company<span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 34.39 vs SMA10 33.85"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 33.85 vs SMA50 38.58"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 38.58 vs SMA200 33.04"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 89,101,964 vs down-vol 166,821,661"></span></span></h2>
+<p class="small"><a href="../reports/2026-07-15.html">← Back to leaderboard</a></p>
+<h2>HAL — Halliburton Company<span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 35.42 vs SMA10 34.08"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 34.08 vs SMA50 38.31"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 38.31 vs SMA200 33.15"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 85,164,355 vs down-vol 156,137,866"></span></span></h2>
 <p class="legend small">
   <span class="mdot bull"></span> bullish · <span class="mdot bear"></span> bearish ·
   <span class="mdot na"></span> n/a &nbsp; — dots: price&gt;SMA10 · SMA10&gt;SMA50 · SMA50&gt;SMA200 · up&gt;down volume (20d)</p>
@@ -122,7 +127,7 @@
 
 
 <div class="stat-row card">
-  <div class="stat"><div class="n">$34.39</div><div class="l">Last close</div></div>
+  <div class="stat"><div class="n">$35.42</div><div class="l">Last close</div></div>
   <div class="stat"><div class="n">$30.3B</div><div class="l">Market cap</div></div>
   <div class="stat"><div class="n">$19.26–$42.98</div><div class="l">2-yr range</div></div>
   
@@ -131,19 +136,19 @@
   <div class="stat"><div class="n">$73K</div><div class="l">Total disclosed buys</div></div>
   
   
-  <div class="stat"><div class="n">14</div><div class="l">Ranked funds holding</div></div>
-  <div class="stat"><div class="n">6</div><div class="l">Newly buying</div></div>
+  <div class="stat"><div class="n">15</div><div class="l">Ranked funds holding</div></div>
+  <div class="stat"><div class="n">7</div><div class="l">Newly buying</div></div>
   
   
-  <div class="stat"><div class="n pos">+40.5%</div><div class="l">Buyers' return</div></div>
-  <div class="stat"><div class="n pos">+24.3%</div><div class="l">vs S&P 500</div></div>
+  <div class="stat"><div class="n pos">+43.1%</div><div class="l">Buyers' return</div></div>
+  <div class="stat"><div class="n pos">+27.2%</div><div class="l">vs S&P 500</div></div>
   
 </div>
 
 <p class="small muted">Members who bought HAL earned a dollar-weighted
-   <strong class="pos">+40.5%</strong> from their disclosure
-   dates, versus <strong>+16.2%</strong> for the S&P 500 over the same holding
-   windows (+24.3% alpha).</p>
+   <strong class="pos">+43.1%</strong> from their disclosure
+   dates, versus <strong>+15.9%</strong> for the S&P 500 over the same holding
+   windows (+27.2% alpha).</p>
 
 
 
@@ -210,7 +215,7 @@
       <td><span class="pill house">house</span></td>
       <td>—</td>
       <td class="num" data-v="32500">$32K</td>
-      <td class="num pos" data-v="54.35">+54.4%</td>
+      <td class="num pos" data-v="58.98">+59.0%</td>
     </tr>
   
     <tr>
@@ -237,7 +242,7 @@
       <td><span class="pill house">house</span></td>
       <td>—</td>
       <td class="num" data-v="8000">$8K</td>
-      <td class="num pos" data-v="62.22">+62.2%</td>
+      <td class="num pos" data-v="67.08">+67.1%</td>
     </tr>
   
   </tbody>
@@ -251,83 +256,89 @@
 
 <p class="small"><b>🛒 Newly buying:</b>
   <a href="../hedge/funds/2043810.html">BFI Infinity Ltd.</a>
-  <span class="muted">(+4%, 2.5% of book)</span> · <a href="../hedge/funds/1443689.html">Senator Investment Group LP</a>
+  <span class="muted">(+3%, 2.5% of book)</span> · <a href="../hedge/funds/1801585.html">AMJ Financial Wealth Management</a>
+  <span class="muted">(+1%, 2.4% of book)</span> · <a href="../hedge/funds/1443689.html">Senator Investment Group LP</a>
   <span class="muted">(+5%, 1.5% of book)</span> · <a href="../hedge/funds/1757282.html">NKCFO LLC</a>
   <span class="muted">(+5%, 1.5% of book)</span> · <a href="../hedge/funds/2010854.html">BOCHK Asset Management Ltd</a>
-  <span class="muted">(+52%, 0.5% of book)</span> · <a href="../hedge/funds/1890748.html">Kercheville Advisors, LLC</a>
-  <span class="muted">(+15%, 0.2% of book)</span> · <a href="../hedge/funds/2054965.html">Towarzystwo Funduszy Inwestycyjnych Allianz Polska S.A.</a>
-  <span class="muted">(+35%, 0.0% of book)</span></p>
+  <span class="muted">(+53%, 0.5% of book)</span> · <a href="../hedge/funds/1890748.html">Kercheville Advisors, LLC</a>
+  <span class="muted">(+14%, 0.2% of book)</span> · <a href="../hedge/funds/2054965.html">Towarzystwo Funduszy Inwestycyjnych Allianz Polska S.A.</a>
+  <span class="muted">(+31%, 0.0% of book)</span></p>
 <table class="sortable">
   <thead><tr><th>Fund</th><th class="num">Fund alpha vs SPY</th><th class="num">Position</th><th class="num">% of book</th></tr></thead>
   <tbody>
   <tr>
     <td><a href="../hedge/funds/1443689.html">Senator Investment Group LP</a></td>
-    <td class="num pos" data-v="0.0538">+5%</td>
+    <td class="num pos" data-v="0.0506">+5%</td>
     <td class="num" data-v="33012560">$33M</td>
     <td class="num" data-v="0.01515890886182682">1.5%</td>
   </tr><tr>
+    <td><a href="../hedge/funds/1801585.html">AMJ Financial Wealth Management</a></td>
+    <td class="num pos" data-v="0.0088">+1%</td>
+    <td class="num" data-v="10295426">$10M</td>
+    <td class="num" data-v="0.024383198053708744">2.4%</td>
+  </tr><tr>
     <td><a href="../hedge/funds/2042955.html">Generali Powszechne Towarzystwo Emerytalne</a></td>
-    <td class="num pos" data-v="0.1673">+17%</td>
+    <td class="num pos" data-v="0.1935">+19%</td>
     <td class="num" data-v="8577800">$9M</td>
     <td class="num" data-v="0.015166675536791362">1.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2022614.html">Black Cypress Capital Management, LLC</a></td>
-    <td class="num pos" data-v="0.2611">+26%</td>
+    <td class="num pos" data-v="0.2684">+27%</td>
     <td class="num" data-v="6766451">$7M</td>
     <td class="num" data-v="0.04857687010638243">4.9%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1757282.html">NKCFO LLC</a></td>
-    <td class="num pos" data-v="0.0531">+5%</td>
+    <td class="num pos" data-v="0.0473">+5%</td>
     <td class="num" data-v="4946000">$5M</td>
     <td class="num" data-v="0.014659375509417745">1.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/727117.html">BUILDER INVESTMENT GROUP INC /ADV</a></td>
-    <td class="num pos" data-v="0.0551">+6%</td>
+    <td class="num pos" data-v="0.0672">+7%</td>
     <td class="num" data-v="4563078">$5M</td>
     <td class="num" data-v="0.009902379613774649">1.0%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2043810.html">BFI Infinity Ltd.</a></td>
-    <td class="num pos" data-v="0.0382">+4%</td>
+    <td class="num pos" data-v="0.032">+3%</td>
     <td class="num" data-v="4521748">$5M</td>
     <td class="num" data-v="0.02535718897752972">2.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1383782.html">Merrion Investment Management Co, LLC</a></td>
-    <td class="num pos" data-v="0.1944">+19%</td>
+    <td class="num pos" data-v="0.2049">+20%</td>
     <td class="num" data-v="4323990">$4M</td>
     <td class="num" data-v="0.023238437453310733">2.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1315269.html">Scott &amp; Selber, Inc.</a></td>
-    <td class="num pos" data-v="0.175">+18%</td>
+    <td class="num pos" data-v="0.1883">+19%</td>
     <td class="num" data-v="4296166">$4M</td>
     <td class="num" data-v="0.011092111096842877">1.1%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2010854.html">BOCHK Asset Management Ltd</a></td>
-    <td class="num pos" data-v="0.5209">+52%</td>
+    <td class="num pos" data-v="0.527">+53%</td>
     <td class="num" data-v="2612330">$3M</td>
     <td class="num" data-v="0.0054055423892114965">0.5%</td>
   </tr><tr>
     <td><a href="../hedge/funds/869179.html">MONETTA FINANCIAL SERVICES INC</a></td>
-    <td class="num pos" data-v="0.0712">+7%</td>
+    <td class="num pos" data-v="0.0808">+8%</td>
     <td class="num" data-v="1481620">$1M</td>
     <td class="num" data-v="0.011487535343407271">1.1%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1890748.html">Kercheville Advisors, LLC</a></td>
-    <td class="num pos" data-v="0.1482">+15%</td>
+    <td class="num pos" data-v="0.144">+14%</td>
     <td class="num" data-v="664780">$1M</td>
     <td class="num" data-v="0.002126200445453674">0.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2043130.html">Generali Investments Towarzystwo Funduszy Inwestycyjnych</a></td>
-    <td class="num pos" data-v="0.0875">+9%</td>
+    <td class="num pos" data-v="0.0953">+10%</td>
     <td class="num" data-v="389900">$0M</td>
     <td class="num" data-v="0.0020125795668995876">0.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1740316.html">Gifford Fong Associates</a></td>
-    <td class="num pos" data-v="0.1799">+18%</td>
+    <td class="num pos" data-v="0.1868">+19%</td>
     <td class="num" data-v="226000">$0M</td>
     <td class="num" data-v="0.0004507271465381762">0.0%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2054965.html">Towarzystwo Funduszy Inwestycyjnych Allianz Polska S.A.</a></td>
-    <td class="num pos" data-v="0.352">+35%</td>
+    <td class="num pos" data-v="0.314">+31%</td>
     <td class="num" data-v="12867">$0M</td>
     <td class="num" data-v="0.0002290525872661964">0.0%</td>
   </tr>

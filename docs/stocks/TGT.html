@@ -45,6 +45,10 @@
   .news li { margin:4px 0; }
   .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
                 padding:12px 16px; font-size:13px; color:#54470f; }
+  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
+  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
+  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
+  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
   footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
   /* heatmap */
   .heat { font-size:12px; }
@@ -100,16 +104,17 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-13.html">Leaderboard</a>
+    <a href="../reports/2026-07-15.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
+    <a href="../decisions.html">Decisions</a>
   </nav>
 </div></header>
 <div class="wrap">
 
-<p class="small"><a href="../reports/2026-07-13.html">← Back to leaderboard</a></p>
-<h2>TGT — Target Corporation<span class="mdots" title="momentum as of 2026-07-10"><span class="mdot bull" title="Price vs SMA10: price 135.14 vs SMA10 131.89"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 131.89 vs SMA50 128.36"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 128.36 vs SMA200 110.48"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 51,066,100 vs down-vol 48,012,758"></span></span></h2>
+<p class="small"><a href="../reports/2026-07-15.html">← Back to leaderboard</a></p>
+<h2>TGT — Target Corporation<span class="mdots" title="momentum as of 2026-07-14"><span class="mdot bull" title="Price vs SMA10: price 134.00 vs SMA10 131.34"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 131.34 vs SMA50 128.59"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 128.59 vs SMA200 110.95"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 41,727,170 vs down-vol 54,763,490"></span></span></h2>
 <p class="legend small">
   <span class="mdot bull"></span> bullish · <span class="mdot bear"></span> bearish ·
   <span class="mdot na"></span> n/a &nbsp; — dots: price&gt;SMA10 · SMA10&gt;SMA50 · SMA50&gt;SMA200 · up&gt;down volume (20d)</p>
@@ -122,7 +127,7 @@
 
 
 <div class="stat-row card">
-  <div class="stat"><div class="n">$135.14</div><div class="l">Last close</div></div>
+  <div class="stat"><div class="n">$134.00</div><div class="l">Last close</div></div>
   <div class="stat"><div class="n">$58.1B</div><div class="l">Market cap</div></div>
   <div class="stat"><div class="n">$83.68–$160.69</div><div class="l">2-yr range</div></div>
   
@@ -132,18 +137,18 @@
   
   
   <div class="stat"><div class="n">21</div><div class="l">Ranked funds holding</div></div>
-  <div class="stat"><div class="n">6</div><div class="l">Newly buying</div></div>
+  <div class="stat"><div class="n">7</div><div class="l">Newly buying</div></div>
   
   
-  <div class="stat"><div class="n pos">+3.6%</div><div class="l">Buyers' return</div></div>
-  <div class="stat"><div class="n neg">-1.6%</div><div class="l">vs S&P 500</div></div>
+  <div class="stat"><div class="n pos">+3.5%</div><div class="l">Buyers' return</div></div>
+  <div class="stat"><div class="n neg">-1.7%</div><div class="l">vs S&P 500</div></div>
   
 </div>
 
 <p class="small muted">Members who bought TGT earned a dollar-weighted
-   <strong class="pos">+3.6%</strong> from their disclosure
+   <strong class="pos">+3.5%</strong> from their disclosure
    dates, versus <strong>+5.2%</strong> for the S&P 500 over the same holding
-   windows (-1.6% alpha).</p>
+   windows (-1.7% alpha).</p>
 
 
 
@@ -228,7 +233,7 @@
       <td><span class="pill house">house</span></td>
       <td>—</td>
       <td class="num" data-v="8000">$8K</td>
-      <td class="num neg" data-v="-15.14">-15.1%</td>
+      <td class="num neg" data-v="-15.86">-15.9%</td>
     </tr>
   
     <tr>
@@ -246,7 +251,7 @@
       <td><span class="pill house">house</span></td>
       <td><span class="pill op">yes</span></td>
       <td class="num" data-v="8000">$8K</td>
-      <td class="num pos" data-v="41.18">+41.2%</td>
+      <td class="num pos" data-v="39.99">+40.0%</td>
     </tr>
   
     <tr>
@@ -255,7 +260,7 @@
       <td><span class="pill house">house</span></td>
       <td><span class="pill op">yes</span></td>
       <td class="num" data-v="8000">$8K</td>
-      <td class="num pos" data-v="51.96">+52.0%</td>
+      <td class="num pos" data-v="50.68">+50.7%</td>
     </tr>
   
   </tbody>
@@ -269,90 +274,91 @@
 
 <p class="small"><b>🛒 Newly buying:</b>
   <a href="../hedge/funds/1860487.html">Deuterium Capital Management, LLC</a>
-  <span class="muted">(+22%, 2.8% of book)</span> · <a href="../hedge/funds/1520601.html">AFFINITY INVESTMENT ADVISORS, LLC</a>
+  <span class="muted">(+19%, 2.8% of book)</span> · <a href="../hedge/funds/1520601.html">AFFINITY INVESTMENT ADVISORS, LLC</a>
   <span class="muted">(+22%, 0.9% of book)</span> · <a href="../hedge/funds/869179.html">MONETTA FINANCIAL SERVICES INC</a>
-  <span class="muted">(+7%, 0.8% of book)</span> · <a href="../hedge/funds/2010854.html">BOCHK Asset Management Ltd</a>
-  <span class="muted">(+52%, 0.2% of book)</span> · <a href="../hedge/funds/932929.html">WESTBOURNE INVESTMENTS, INC.</a>
-  <span class="muted">(+8%, 0.1% of book)</span> · <a href="../hedge/funds/1767384.html">Clarity Wealth Advisors, LLC</a>
+  <span class="muted">(+8%, 0.8% of book)</span> · <a href="../hedge/funds/1080351.html">MITCHELL CAPITAL MANAGEMENT CO</a>
+  <span class="muted">(+1%, 0.6% of book)</span> · <a href="../hedge/funds/2010854.html">BOCHK Asset Management Ltd</a>
+  <span class="muted">(+53%, 0.2% of book)</span> · <a href="../hedge/funds/932929.html">WESTBOURNE INVESTMENTS, INC.</a>
+  <span class="muted">(+6%, 0.1% of book)</span> · <a href="../hedge/funds/1767384.html">Clarity Wealth Advisors, LLC</a>
   <span class="muted">(+2%, 0.0% of book)</span></p>
 <table class="sortable">
   <thead><tr><th>Fund</th><th class="num">Fund alpha vs SPY</th><th class="num">Position</th><th class="num">% of book</th></tr></thead>
   <tbody>
   <tr>
     <td><a href="../hedge/funds/1781880.html">NAN FUNG TRINITY (HK) Ltd</a></td>
-    <td class="num pos" data-v="0.2992">+30%</td>
+    <td class="num pos" data-v="0.2808">+28%</td>
     <td class="num" data-v="11729494">$12M</td>
     <td class="num" data-v="0.012880815599934047">1.3%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2060765.html">DSG Capital Advisors, LLC</a></td>
-    <td class="num pos" data-v="0.0307">+3%</td>
+    <td class="num pos" data-v="0.0266">+3%</td>
     <td class="num" data-v="11379521">$11M</td>
     <td class="num" data-v="0.018198765146775733">1.8%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1334199.html">Cambridge Financial Group, Inc.</a></td>
-    <td class="num pos" data-v="0.0803">+8%</td>
+    <td class="num pos" data-v="0.0887">+9%</td>
     <td class="num" data-v="9621704">$10M</td>
     <td class="num" data-v="0.03598492023142793">3.6%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1664324.html">Mandatum Life Insurance Co Ltd</a></td>
-    <td class="num pos" data-v="0.087">+9%</td>
+    <td class="num pos" data-v="0.0839">+8%</td>
     <td class="num" data-v="5420428">$5M</td>
     <td class="num" data-v="0.012187014568776237">1.2%</td>
   </tr><tr>
+    <td><a href="../hedge/funds/1080351.html">MITCHELL CAPITAL MANAGEMENT CO</a></td>
+    <td class="num pos" data-v="0.0052">+1%</td>
+    <td class="num" data-v="3067814">$3M</td>
+    <td class="num" data-v="0.005629185007146828">0.6%</td>
+  </tr><tr>
     <td><a href="../hedge/funds/1108831.html">STONERIDGE INVESTMENT PARTNERS LLC</a></td>
-    <td class="num pos" data-v="0.059">+6%</td>
+    <td class="num pos" data-v="0.0557">+6%</td>
     <td class="num" data-v="2959000">$3M</td>
     <td class="num" data-v="0.0214000043393047">2.1%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1539919.html">Waratah Capital Advisors Ltd.</a></td>
-    <td class="num pos" data-v="0.0602">+6%</td>
+    <td class="num pos" data-v="0.0533">+5%</td>
     <td class="num" data-v="2438423">$2M</td>
     <td class="num" data-v="0.002183973850111892">0.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1860487.html">Deuterium Capital Management, LLC</a></td>
-    <td class="num pos" data-v="0.2199">+22%</td>
+    <td class="num pos" data-v="0.1922">+19%</td>
     <td class="num" data-v="2424000">$2M</td>
     <td class="num" data-v="0.028195910162293402">2.8%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1725362.html">Bell &amp; Brown Wealth Advisors, LLC</a></td>
-    <td class="num pos" data-v="0.0227">+2%</td>
+    <td class="num pos" data-v="0.0202">+2%</td>
     <td class="num" data-v="1951435">$2M</td>
     <td class="num" data-v="0.006280383513748924">0.6%</td>
   </tr><tr>
     <td><a href="../hedge/funds/1520601.html">AFFINITY INVESTMENT ADVISORS, LLC</a></td>
-    <td class="num pos" data-v="0.2156">+22%</td>
+    <td class="num pos" data-v="0.215">+22%</td>
     <td class="num" data-v="1491487">$1M</td>
     <td class="num" data-v="0.009329246126729397">0.9%</td>
   </tr><tr>
     <td><a href="../hedge/funds/62061.html">V. M. MANNING &amp; CO., INC.</a></td>
-    <td class="num pos" data-v="0.0392">+4%</td>
+    <td class="num pos" data-v="0.0639">+6%</td>
     <td class="num" data-v="1173703">$1M</td>
     <td class="num" data-v="0.011838702314508297">1.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/869179.html">MONETTA FINANCIAL SERVICES INC</a></td>
-    <td class="num pos" data-v="0.0712">+7%</td>
+    <td class="num pos" data-v="0.0808">+8%</td>
     <td class="num" data-v="1030200">$1M</td>
     <td class="num" data-v="0.007987512932316093">0.8%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2010854.html">BOCHK Asset Management Ltd</a></td>
-    <td class="num pos" data-v="0.5209">+52%</td>
+    <td class="num pos" data-v="0.527">+53%</td>
     <td class="num" data-v="848400">$1M</td>
     <td class="num" data-v="0.0017555447294204918">0.2%</td>
   </tr><tr>
     <td><a href="../hedge/funds/357301.html">TRUSTCO BANK CORP N Y</a></td>
-    <td class="num pos" data-v="0.1151">+12%</td>
+    <td class="num pos" data-v="0.0916">+9%</td>
     <td class="num" data-v="642481">$1M</td>
     <td class="num" data-v="0.005705481746540726">0.6%</td>
   </tr><tr>
     <td><a href="../hedge/funds/2134841.html">First Nebraska Trust Co</a></td>
-    <td class="num pos" data-v="0.0561">+6%</td>
+    <td class="num pos" data-v="0.0429">+4%</td>
     <td class="num" data-v="565470">$1M</td>
     <td class="num" data-v="0.0010456061188972886">0.1%</td>
-  </tr><tr>
-    <td><a href="../hedge/funds/1998000.html">Park Capital Management, LLC / WI</a></td>
-    <td class="num pos" data-v="0.0116">+1%</td>
-    <td class="num" data-v="547808">$1M</td>
-    <td class="num" data-v="0.00533444770181609">0.5%</td>
   </tr>
   </tbody>
 </table>
