@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-15",
-  "n_total": 138,
-  "n_matched": 136,
+  "generated": "2026-07-18",
+  "n_total": 139,
+  "n_matched": 137,
   "match_rate": 98.6,
   "members": {
     "aderholt-robert-b": {
@@ -8823,6 +8823,72 @@
         "Capital Goods",
         "Energy",
         "Materials",
+        "Utilities"
+      ]
+    },
+    "crenshaw-daniel": {
+      "bioguide": "C001120",
+      "match_method": "state+district",
+      "matched_name": "Dan Crenshaw",
+      "committees": [
+        {
+          "id": "HSIF",
+          "name": "House Committee on Energy and Commerce",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HLIG",
+          "name": "House Permanent Select Committee on Intelligence",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSIF02",
+          "name": "House Committee on Energy and Commerce: Oversight and Investigations",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSIF18",
+          "name": "House Committee on Energy and Commerce: Environment",
+          "type": "house",
+          "is_sub": true,
+          "title": "Vice Chair"
+        },
+        {
+          "id": "HSIF14",
+          "name": "House Committee on Energy and Commerce: Health",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HLIG01",
+          "name": "House Permanent Select Committee on Intelligence: Central Intelligence Agency",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HLIG04",
+          "name": "House Permanent Select Committee on Intelligence: Defense Intelligence and Overhead Architecture",
+          "type": "house",
+          "is_sub": true,
+          "title": "Chairman"
+        }
+      ],
+      "industries": [
+        "Capital Goods",
+        "Energy",
+        "Health Care Equipment & Services",
+        "Materials",
+        "Media & Entertainment",
+        "Pharmaceuticals & Biotech",
+        "Telecommunication Services",
         "Utilities"
       ]
     }

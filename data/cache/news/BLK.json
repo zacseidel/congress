@@ -1,206 +1,365 @@
 [
   {
-    "id": "3310e9be4225ffcc9c723f2920b7d201678196c9c4b96a425d838658acbdc127",
+    "id": "079267830903dd7de0eaa17306366eb9300fa01b93b908cee64f480043c1beee",
     "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Syensqo - Participation notification by BlackRock Inc.",
-    "author": "Syensqo",
-    "published_utc": "2026-06-30T06:45:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/30/3319406/0/en/Syensqo-Participation-notification-by-BlackRock-Inc.html",
+    "title": "Coinbase Just Joined a 140-Company Stablecoin Alliance. Here's What It Means for the Stock.",
+    "author": "Leo Sun",
+    "published_utc": "2026-07-16T12:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/16/coinbase-just-joined-a-140-company-stablecoin-alli/?source=iedfolrf0000001",
     "tickers": [
+      "COIN",
+      "CRCL",
+      "V",
+      "MA",
+      "GOOG",
+      "GOOGM",
+      "GOOGN",
+      "SHOP",
       "BLK",
-      "DIVB",
-      "SYNSY"
+      "DIVB"
     ],
-    "image_url": "https://ml-eu.globenewswire.com/Resource/Download/580c265c-48dc-4c96-b0d2-782304bfb832",
-    "description": "BlackRock Inc. has notified Syensqo that it crossed the 3% threshold for direct voting rights on June 19, 2026, holding 3.07% in direct voting rights and 0.97% in equivalent financial instruments, for a total of 4.04%. The notification was made in accordance with Belgian transparency legislation.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877631%2Fgettyimages-1477137177.jpg&w=1200&op=resize",
+    "description": "Coinbase joined a coalition of 140+ companies to back the new Open USD (OUSD) stablecoin, signaling a shift away from its exclusive partnership with Circle's USDC. This move is bullish for Coinbase as it diversifies stablecoin exposure and positions the company to benefit from growing stablecoin adoption, which now represents 19% of its revenue. However, it threatens Circle's business model as the new coalition will jointly manage OUSD and split reserve income.",
     "keywords": [
-      "BlackRock",
-      "Syensqo",
-      "voting rights",
-      "3% threshold",
-      "transparency notification",
-      "shareholding",
-      "Belgian law"
+      "stablecoin",
+      "OUSD",
+      "USDC",
+      "cryptocurrency exchange",
+      "reserve income",
+      "CLARITY Act",
+      "crypto adoption"
     ],
     "insights": [
       {
+        "ticker": "COIN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Joining the OUSD alliance diversifies Coinbase's stablecoin exposure beyond USDC, reduces dependence on volatile crypto cycles, and positions it to benefit from growing stablecoin adoption which already accounts for 19% of revenue and grew 48% YoY."
+      },
+      {
+        "ticker": "CRCL",
+        "sentiment": "negative",
+        "sentiment_reasoning": "The OUSD coalition directly threatens Circle's monopoly on USDC minting and management. The decentralized revenue-sharing model of OUSD undermines Circle's primary revenue source from reserve income, and Coinbase's partnership expiration on Aug. 18 signals reduced reliance on USDC."
+      },
+      {
+        "ticker": "V",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Visa's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Visa's business or stock outlook."
+      },
+      {
+        "ticker": "MA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mastercard's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Mastercard's business or stock outlook."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Google's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Google's business or stock outlook."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Google's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Google's business or stock outlook."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Google's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Google's business or stock outlook."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Google's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Google's business or stock outlook."
+      },
+      {
+        "ticker": "SHOP",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Shopify's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Shopify's business or stock outlook."
+      },
+      {
         "ticker": "BLK",
         "sentiment": "neutral",
-        "sentiment_reasoning": "BlackRock's acquisition of a 4.04% stake in Syensqo is a routine regulatory disclosure with no indication of hostile intent or strategic concern. The notification is a standard compliance requirement under Belgian transparency law, representing a straightforward investment position."
+        "sentiment_reasoning": "BlackRock's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts BlackRock's business or stock outlook."
       },
       {
         "ticker": "DIVB",
         "sentiment": "neutral",
-        "sentiment_reasoning": "BlackRock's acquisition of a 4.04% stake in Syensqo is a routine regulatory disclosure with no indication of hostile intent or strategic concern. The notification is a standard compliance requirement under Belgian transparency law, representing a straightforward investment position."
-      },
-      {
-        "ticker": "SYNSY",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "The notification of BlackRock's stake crossing the 3% threshold is a neutral regulatory event. There is no indication of negative or positive implications for Syensqo's operations or strategy. This is a standard disclosure of a significant shareholder position."
+        "sentiment_reasoning": "BlackRock's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts BlackRock's business or stock outlook."
       }
     ]
   },
   {
-    "id": "73bb9edd6d601dc94763df38afb699a5a24603da893d3eb8c5b93a71ac8c70d6",
+    "id": "01a8fe1dc2f13cd1cae32e73ae20c56b1e6721f4714f5a36d0b7114ce43216fc",
     "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
     },
-    "title": "BlackRock\u00ae Canada Announces Final June Cash Distributions for the iShares\u00ae Premium Money Market ETF",
-    "author": "Sydney Punchard",
-    "published_utc": "2026-06-24T21:30:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/24/3317201/0/en/BlackRock-Canada-Announces-Final-June-Cash-Distributions-for-the-iShares-Premium-Money-Market-ETF.html",
+    "title": "Nasdaq Forecast: NDX Extends Gains After Cooler PPI",
+    "author": "Fiona Cincotta",
+    "published_utc": "2026-07-15T13:35:00Z",
+    "article_url": "https://www.investing.com/analysis/nasdaq-forecast-ndx-extends-gains-after-cooler-ppi-200683982",
     "tickers": [
+      "ASML",
+      "IBM",
+      "MS",
+      "MSpA",
+      "MSpE",
+      "MSpF",
+      "MSpI",
+      "MSpK",
+      "MSpL",
+      "MSpO",
+      "MSpP",
+      "MSpQ",
+      "JNJ",
       "BLK",
       "DIVB"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/d8e03598-4c47-4766-99ee-349982dc8a59",
-    "description": "BlackRock Asset Management Canada Limited announced the final June 2026 cash distribution for the iShares Premium Money Market ETF (CMR) at $0.113 per unit, payable on June 30, 2026 to unitholders of record on June 25, 2026.",
+    "amp_url": "https://m.investing.com/analysis/nasdaq-forecast-ndx-extends-gains-after-cooler-ppi-200683982?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "U.S. stocks extended gains following cooler-than-expected producer price inflation data, with PPI falling 0.3% monthly and 5.5% year-over-year. The Nasdaq futures rose 0.68% as markets scaled back Fed rate hike expectations. However, rising oil prices due to U.S.-Iran tensions pose inflation risks. Key movers included ASML gaining 3% on strong earnings, IBM tumbling 25% on profit warnings, Morgan Stanley up 1.5% on record results, and BlackRock rising 4% on better-than-expected earnings.",
     "keywords": [
-      "cash distribution",
-      "iShares Premium Money Market ETF",
-      "CMR",
-      "June 2026",
-      "BlackRock Canada"
+      "producer price inflation",
+      "PPI",
+      "Nasdaq",
+      "Federal Reserve",
+      "oil prices",
+      "U.S.-Iran tensions",
+      "earnings",
+      "inflation cooling"
     ],
     "insights": [
       {
-        "ticker": "BLK",
+        "ticker": "ASML",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock rose 3% after posting quarterly results that beat expectations and raising full-year guidance, supported by continued strength in AI-related demand."
+      },
+      {
+        "ticker": "IBM",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock tumbled 25% in one of its worst sessions on record following a profit warning, as customers redirected spending away from software towards AI infrastructure and memory hardware."
+      },
+      {
+        "ticker": "MS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
+      },
+      {
+        "ticker": "MSpA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
+      },
+      {
+        "ticker": "MSpE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
+      },
+      {
+        "ticker": "MSpF",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
+      },
+      {
+        "ticker": "MSpI",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
+      },
+      {
+        "ticker": "MSpK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
+      },
+      {
+        "ticker": "MSpL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
+      },
+      {
+        "ticker": "MSpO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
+      },
+      {
+        "ticker": "MSpP",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
+      },
+      {
+        "ticker": "MSpQ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
+      },
+      {
+        "ticker": "JNJ",
         "sentiment": "neutral",
-        "sentiment_reasoning": "The article is a routine announcement of scheduled cash distributions with no indication of positive or negative business developments. It is a standard operational disclosure."
+        "sentiment_reasoning": "Stock slipped 1% despite beating forecasts with EPS of $2.90 ahead of $2.85 consensus and revenue exceeding expectations, indicating mixed market reaction."
+      },
+      {
+        "ticker": "BLK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock rose more than 4% after reporting stronger-than-expected earnings with EPS of $13.91 well above the $12.59 forecast and revenue exceeding forecasts."
       },
       {
         "ticker": "DIVB",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "The article is a routine announcement of scheduled cash distributions with no indication of positive or negative business developments. It is a standard operational disclosure."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock rose more than 4% after reporting stronger-than-expected earnings with EPS of $13.91 well above the $12.59 forecast and revenue exceeding forecasts."
       }
     ]
   },
   {
-    "id": "495d0c33e5cbc9c9fe7e86c2f1f2d0c4e754bcc428dcb21fd518ee1c83d089cb",
+    "id": "1528e97022f7c2ae3f60c8420033c7f0e866627d798a505db783a523b428d86f",
     "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Bitcoin Income Revolution: From BlackRock\u2019s Monthly ETF to AIXAlpha\u2019s Daily AI Strategy Contracts",
-    "author": "Unknown",
-    "published_utc": "2026-06-20T15:45:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/20/3314952/0/en/Bitcoin-Income-Revolution-From-BlackRock-s-Monthly-ETF-to-AIXAlpha-s-Daily-AI-Strategy-Contracts.html",
+    "title": "Global REITs or U.S. Only: Which iShares ETF Is the Better Buy, REET or ICF?",
+    "author": "Sara Appino",
+    "published_utc": "2026-07-14T23:32:45Z",
+    "article_url": "https://www.fool.com/coverage/etfs/2026/07/14/global-reits-or-u-s-only-which-ishares-etf-is-the-better-buy-reet-or-icf/?source=iedfolrf0000001",
     "tickers": [
+      "REET",
+      "ICF",
       "BLK",
       "DIVB"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/1b080250-19c1-4161-b802-2277408dbac0",
-    "description": "Bitcoin volatility has intensified with BTC/USD falling to $63,000-$64,000 levels. AIXAlpha has launched AI-powered automated BTC strategy contracts with daily settlement cycles as an alternative to traditional investment vehicles like BlackRock's Bitcoin income ETF, which operates on a monthly distribution model. The platform offers automated trading across multiple cryptocurrencies without requiring manual trading experience.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F4db1f9dc6b521047b90577456a50b49560e87c49-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "The article compares two iShares REIT ETFs: REET, which offers global diversification across 350+ holdings with a lower 0.14% expense ratio and 3.3% yield, versus ICF, which concentrates on 34 large U.S. REITs with a 0.32% expense ratio and 2.4% yield. REET is recommended for most long-term investors due to its lower costs, higher yield, and broader diversification, while ICF suits those seeking concentrated domestic REIT exposure.",
     "keywords": [
-      "Bitcoin volatility",
-      "AI-powered trading",
-      "automated strategy contracts",
-      "daily settlement",
-      "cryptocurrency markets",
-      "BTC/USD",
-      "quantitative strategies"
+      "REIT ETF comparison",
+      "global real estate",
+      "U.S. real estate",
+      "expense ratio",
+      "dividend yield",
+      "portfolio diversification",
+      "iShares"
     ],
     "insights": [
       {
+        "ticker": "REET",
+        "sentiment": "positive",
+        "sentiment_reasoning": "REET is presented as the stronger choice for most investors, offering significantly lower expense ratio (0.14%), higher dividend yield (3.3%), broader diversification across 350+ global holdings, and larger AUM ($4.9B). The article explicitly recommends it as 'the stronger starting point' for long-term investors."
+      },
+      {
+        "ticker": "ICF",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "ICF is presented as a viable but less optimal choice. While it delivered stronger 5-year returns and offers concentrated domestic exposure, it has higher costs (0.32% expense ratio), lower yield (2.4%), and smaller AUM ($2.1B). It's recommended only for investors specifically seeking concentrated U.S. REIT exposure."
+      },
+      {
         "ticker": "BLK",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitor with a newly launched Bitcoin income ETF, but the article positions it as slower (monthly payouts) compared to AIXAlpha's daily settlement model. No negative or positive judgment is made about BlackRock itself."
+        "sentiment_reasoning": "BlackRock is mentioned only as the issuer of both ETFs being compared. No performance evaluation or sentiment is expressed regarding the company itself."
       },
       {
         "ticker": "DIVB",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitor with a newly launched Bitcoin income ETF, but the article positions it as slower (monthly payouts) compared to AIXAlpha's daily settlement model. No negative or positive judgment is made about BlackRock itself."
+        "sentiment_reasoning": "BlackRock is mentioned only as the issuer of both ETFs being compared. No performance evaluation or sentiment is expressed regarding the company itself."
       }
     ]
   },
   {
-    "id": "e3a1e73e4628156fd7b1ba4175df7f2616e44e886edd602704a063e059943436",
+    "id": "25808ccc32e6d706cd56e28ea69b3c01f8798c381efb9615a76c972eb428e240",
     "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "BlackRock\u1d39\u1d30 Canada annonce des modifications du niveau de risque de certains FNB iShares et le changement du nom du iShares Core Canadian Short-Mid Term Universe Bond Index ETF",
-    "author": "Na",
-    "published_utc": "2026-06-20T00:48:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/20/3314914/0/fr/BlackRock%E1%B4%B9%E1%B4%B0-Canada-annonce-des-modifications-du-niveau-de-risque-de-certains-FNB-iShares-et-le-changement-du-nom-du-iShares-Core-Canadian-Short-Mid-Term-Universe-Bond-Index-ETF.html",
+    "title": "Is The Oil Crisis Over? Or Is It Just Beginning?",
+    "author": "Motley Fool Staff",
+    "published_utc": "2026-07-13T04:06:18Z",
+    "article_url": "https://www.fool.com/investing/2026/07/13/is-the-oil-crisis-over-or-is-it-just-beginning/?source=iedfolrf0000001",
     "tickers": [
+      "NKE",
+      "V",
+      "MA",
       "BLK",
       "DIVB"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/d37bbeeb-195f-44b1-b3eb-39f09f2dd089",
-    "description": "BlackRock Canada announced updates to risk levels for three iShares ETFs effective June 19, 2026: iShares India Index ETF (XIDM) downgraded from medium-high to medium risk, iShares 20+ Year U.S. Treasury Bond Index ETF (XTLT in CAD) downgraded from medium-high to medium risk, and iShares Global Electric and Autonomous Vehicles Index ETF (XDRV) upgraded from medium-high to high risk. Additionally, the iShares Core Canadian Short-Mid Term Universe Bond Index ETF will be renamed to iShares Core Canadian 1-10 Year Bond Index ETF effective June 30, 2026.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F5b580dbccc2f82b9f71a18cda16f833aad4291af-1280x720.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Oil prices have dropped to ~$70/barrel despite predictions of $200 oil following the Strait of Hormuz closure. Strategic petroleum reserve releases, reduced Chinese demand, and potential pipeline circumvention projects have mitigated the crisis. However, sustainability beyond six months remains uncertain. Additionally, the new OpenUSD stablecoin backed by major institutions may entrench existing payment processors rather than disrupt them. Nike reported mixed earnings with tariff-driven gains masking underlying sales declines, particularly in China, raising questions about its turnaround prospects.",
     "keywords": [
-      "risk level adjustment",
-      "ETF rebranding",
-      "iShares",
-      "BlackRock Canada",
-      "bond index",
-      "equity index"
+      "oil prices",
+      "Strait of Hormuz",
+      "strategic petroleum reserves",
+      "stablecoins",
+      "OpenUSD",
+      "payment processing",
+      "Nike earnings",
+      "China market decline"
     ],
     "insights": [
       {
+        "ticker": "NKE",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Despite beating expectations and stock being up 2%, underlying fundamentals are weak. Revenue flat, direct-to-consumer sales down 7%, China sales down 17% quarter-over-quarter and 30% over five years. Earnings heavily dependent on tariff recovery (52 of 72 cents per share). Lost Steph Curry endorsement to Chinese competitor Li-Ning. Stock down 35% for the year with uncertain turnaround prospects."
+      },
+      {
+        "ticker": "V",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "OpenUSD stablecoin adoption by major institutions could improve payment efficiency and lower fees, but Visa is implementing the technology itself rather than being disrupted by it. Incumbents likely to strengthen position and maintain margins despite potential fee reductions. No existential threat identified."
+      },
+      {
+        "ticker": "MA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Similar to Visa, Mastercard is adopting OpenUSD technology rather than being disrupted by it. As an incumbent player, likely to maintain competitive position and margins. Technology may improve efficiency but not fundamentally threaten the business model."
+      },
+      {
         "ticker": "BLK",
         "sentiment": "neutral",
-        "sentiment_reasoning": "The announcement involves routine administrative changes to ETF risk classifications and a name change. These are standard portfolio management adjustments with no indication of performance issues or strategic concerns. The changes reflect market conditions and index methodology updates rather than negative or positive developments."
+        "sentiment_reasoning": "Supporting OpenUSD stablecoin consortium as a major institutional backer. Involvement suggests confidence in the technology but no specific business impact discussed. Neutral positioning as part of broader institutional adoption."
       },
       {
         "ticker": "DIVB",
         "sentiment": "neutral",
-        "sentiment_reasoning": "The announcement involves routine administrative changes to ETF risk classifications and a name change. These are standard portfolio management adjustments with no indication of performance issues or strategic concerns. The changes reflect market conditions and index methodology updates rather than negative or positive developments."
+        "sentiment_reasoning": "Supporting OpenUSD stablecoin consortium as a major institutional backer. Involvement suggests confidence in the technology but no specific business impact discussed. Neutral positioning as part of broader institutional adoption."
       }
     ]
   },
   {
-    "id": "59495a690b0b67f9e73292ccd98760288c09cd71313ac96c181d9175499e1184",
+    "id": "eb3866f91f86dba1e8ff578259fd2eada32f91f33ea0e5dccaa08e7266860b88",
     "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "BlackRock\u00ae Canada Announces June Cash Distributions for the iShares\u00ae ETFs",
-    "author": "Na",
-    "published_utc": "2026-06-18T09:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/18/3313976/0/en/BlackRock-Canada-Announces-June-Cash-Distributions-for-the-iShares-ETFs.html",
+    "title": "Is the \"Solana Summer\" Finally Here?",
+    "author": "Alex Carchidi",
+    "published_utc": "2026-07-12T22:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/12/is-the-solana-summer-finally-here/?source=iedfolrf0000001",
     "tickers": [
       "BLK",
       "DIVB"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/d8e03598-4c47-4766-99ee-349982dc8a59",
-    "description": "BlackRock Canada announced June 2026 cash distributions for numerous iShares ETFs listed on TSX or Cboe Canada, with distributions payable on June 30, 2026 to unitholders of record as of June 25, 2026. The announcement includes per-unit distribution amounts for over 200 ETFs across various asset classes including bonds, equities, and balanced portfolios.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878330%2Finvestor-looks-out-window-while-pondering-and-holding-phone.jpg&w=1200&op=resize",
+    "description": "Solana is experiencing a surge in network activity with over 1 billion weekly transactions and active wallet addresses jumping to 29.7 million. The launch of Open USD (OUSD) stablecoin backed by 140+ financial institutions including BlackRock on Solana could bring billions in capital inflows. However, Solana's inflationary tokenomics with minimal coin burning limit upside for holders despite strong on-chain activity.",
     "keywords": [
-      "iShares ETFs",
-      "cash distributions",
-      "June 2026",
-      "BlackRock Canada",
-      "TSX",
-      "Cboe Canada",
-      "dividend",
-      "bond index",
-      "equity index"
+      "Solana Summer",
+      "tokenized assets",
+      "stablecoin",
+      "network activity",
+      "tokenomics",
+      "Open USD",
+      "on-chain metrics"
     ],
     "insights": [
       {
         "ticker": "BLK",
         "sentiment": "neutral",
-        "sentiment_reasoning": "The article is a routine corporate announcement of scheduled cash distributions for ETF unitholders. It contains factual information about distribution amounts with no indication of positive or negative business developments, performance changes, or strategic shifts."
+        "sentiment_reasoning": "Mentioned as one of 140+ financial institutions backing the Open USD stablecoin launching on Solana. Participation indicates institutional confidence but no direct impact on BlackRock's business highlighted."
       },
       {
         "ticker": "DIVB",
         "sentiment": "neutral",
-        "sentiment_reasoning": "The article is a routine corporate announcement of scheduled cash distributions for ETF unitholders. It contains factual information about distribution amounts with no indication of positive or negative business developments, performance changes, or strategic shifts."
+        "sentiment_reasoning": "Mentioned as one of 140+ financial institutions backing the Open USD stablecoin launching on Solana. Participation indicates institutional confidence but no direct impact on BlackRock's business highlighted."
       }
     ]
   }

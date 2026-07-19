@@ -1,199 +1,284 @@
 [
   {
-    "id": "e06fc1498ddc9c121d16c3bf88aa097d7bd08b6baa49abfc1086943bbead675a",
+    "id": "fb59dca0ce4e2cbff628c7b2b521dcae52a9343c5f1c995c7b0f1ef9f42a2143",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "Why Penguin Solutions May Be the Smartest AI Infrastructure Stock",
+    "author": "Thomas Hughes",
+    "published_utc": "2026-07-09T16:38:00Z",
+    "article_url": "https://www.investing.com/analysis/why-penguin-solutions-may-be-the-smartest-ai-infrastructure-stock-200683654",
+    "tickers": [
+      "PENG",
+      "NBIS",
+      "IREN",
+      "APLD",
+      "NVDA"
+    ],
+    "amp_url": "https://m.investing.com/analysis/why-penguin-solutions-may-be-the-smartest-ai-infrastructure-stock-200683654?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "Penguin Solutions is positioned as a lower-risk AI infrastructure play compared to competitors like Nebius, Iren, and Applied Digital. The company reported Q3 fiscal 2026 revenue growth of 48% to $479 million, beating consensus by $55 million, with strong margin expansion and record operating income. Guidance was raised significantly with full-year revenue growth now expected at 22%. Strong institutional ownership (97%) and bullish analyst sentiment support the stock, though valuation at 35x earnings is elevated.",
+    "keywords": [
+      "AI infrastructure",
+      "GPU-as-a-Service",
+      "data center operations",
+      "HPC capacity",
+      "margin expansion",
+      "institutional ownership"
+    ],
+    "insights": [
+      {
+        "ticker": "PENG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong Q3 earnings beat with 48% YoY revenue growth, record operating income, improved guidance, 97% institutional ownership, and bullish analyst ratings (Moderate Buy consensus). Business model offers lower risk than competitors by focusing on services rather than owning infrastructure."
+      },
+      {
+        "ticker": "NBIS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in GPU-as-a-Service space but characterized as taking on 'significant risk' by owning GPUs and data centers, contrasting unfavorably with Penguin Solutions' asset-light model."
+      },
+      {
+        "ticker": "IREN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in the neocloud/GPU-as-a-Service sector but similarly noted as taking on significant infrastructure ownership risk compared to Penguin Solutions."
+      },
+      {
+        "ticker": "APLD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a competitor in AI infrastructure but characterized as bearing significant risk through ownership of GPUs and data center infrastructure."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned only as a comparative benchmark for Penguin Solutions' impressive Q3 results relative to company size; no direct sentiment expressed."
+      }
+    ]
+  },
+  {
+    "id": "2e1eb2697a6c16ed9ccb701fc2ba430b663faeea249f09b5ee54b7dbe908248d",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "An Ex-OpenAI Researcher With $20 Billion Just Built a Neocloud Trifecta: Here Are the 3 Stocks He's Buying.",
-    "author": "Leo Sun",
-    "published_utc": "2026-06-18T19:12:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/18/an-ex-openai-researcher-with-20-billion-just-built/?source=iedfolrf0000001",
+    "title": "Can Meta Platforms Become a Neocloud? Don't Hold Your Breath.",
+    "author": "Marc Guberti",
+    "published_utc": "2026-07-08T16:01:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/08/can-meta-platforms-become-a-neocloud-dont-hold-you/?source=iedfolrf0000001",
     "tickers": [
+      "META",
       "NBIS",
-      "CRWV",
-      "IREN",
-      "NVDA"
+      "IREN"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875025%2Fillustration-of-an-ai-chip-on-a-board.jpg&w=1200&op=resize",
-    "description": "Leopold Aschenbrenner's Situational Awareness hedge fund, which has returned over 1,000% since September 2024 and manages $20 billion, is investing heavily in three neocloud companies: Nebius, CoreWeave, and IREN. These specialized AI infrastructure providers are positioned to benefit from the neocloud market's projected 58% CAGR growth through 2031, as they offer faster and cheaper AI processing than traditional hyperscalers. Despite explosive growth potential, all three trade at surprisingly low valuations relative to next year's sales.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877644%2Fgettyimages-1420039843-1200x646-155feec.jpg&w=1200&op=resize",
+    "description": "Meta Platforms announced plans to explore a neocloud business by renting excess compute capacity, but the company is years away from having surplus capacity. Meta and other hyperscalers are currently scrambling to secure computing power for their own AI initiatives, meaning they won't have available capacity to lease to external customers anytime soon. Dedicated neocloud companies like Nebius and Iren are better positioned to capture market share in this emerging industry.",
     "keywords": [
       "neocloud",
-      "AI infrastructure",
-      "data centers",
-      "GPU",
-      "Leopold Aschenbrenner",
-      "Situational Awareness hedge fund",
+      "AI data centers",
+      "compute capacity",
+      "hyperscalers",
+      "artificial intelligence",
       "cloud computing"
     ],
     "insights": [
       {
+        "ticker": "META",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Meta's neocloud ambitions are constrained by its own massive AI compute demands. The company is still signing deals to secure additional capacity and won't have surplus capacity to lease for years, limiting its near-term neocloud viability."
+      },
+      {
         "ticker": "NBIS",
         "sentiment": "positive",
-        "sentiment_reasoning": "Rapidly growing neocloud company providing customized AI infrastructure with 684% revenue growth mentioned in related articles. Trading at 6x next year's sales, which is considered undervalued given long-term growth potential and backing from major investors like Nvidia."
-      },
-      {
-        "ticker": "CRWV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Leading neocloud provider specializing in GPU-intensive remote computing tasks. Trading at only 3x next year's sales with explosive growth expected. Backed by Nvidia and positioned to benefit from AI infrastructure expansion."
+        "sentiment_reasoning": "As a dedicated neocloud pure-play company, Nebius is better positioned than Meta to capture market share. The company is rapidly expanding its gigawatt pipeline and has a clearer path to serving hyperscalers and enterprises."
       },
       {
         "ticker": "IREN",
         "sentiment": "positive",
-        "sentiment_reasoning": "Vertically integrated AI cloud data center company using renewable energy exclusively. Trading at 7x next year's sales with strong growth prospects. Nvidia has an option to buy a major stake, indicating confidence in the company's potential."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "World's largest data center GPU producer with major stakes in Nebius and CoreWeave, plus an option to buy into IREN. Benefits from the growth of neocloud companies and validates their investment thesis through significant capital commitments."
+        "sentiment_reasoning": "Similar to Nebius, Iren is a neocloud specialist with better prospects than Meta for gaining market share. By the time Meta enters the neocloud market meaningfully, Iren may have doubled its existing capacity."
       }
     ]
   },
   {
-    "id": "774cca6f03168bdd03b7b21ed68a079ca746e707a5b48ae090f16be39567fae3",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "IREN Completes Acquisition of Nostrum Group Expanding AI Cloud Platform to Europe",
-    "author": "Globe Newswire",
-    "published_utc": "2026-06-15T11:00:54Z",
-    "article_url": "https://www.benzinga.com/pressreleases/26/06/g53189802/iren-completes-acquisition-of-nostrum-group-expanding-ai-cloud-platform-to-europe?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "IREN"
-    ],
-    "image_url": "https://cdn.benzinga.com/files/imagecache/bz2_opengraph_meta_image_400x300/sites/all/themes/bz2/images/bz-icon.png",
-    "description": "IREN Limited (NASDAQ:IREN) has completed its acquisition of Nostrum Group, a Spain-based developer of grid-connected AI data centers. The deal adds approximately 490MW of secured power capacity and a team of 50+ professionals, marking IREN's entry into the European AI infrastructure market. The acquisition positions IREN to capitalize on rapidly growing AI Cloud demand across Europe.",
-    "keywords": [
-      "AI data centers",
-      "acquisition",
-      "Europe expansion",
-      "grid-connected power",
-      "AI infrastructure",
-      "Spain",
-      "renewable energy"
-    ],
-    "insights": [
-      {
-        "ticker": "IREN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The acquisition expands IREN's geographic footprint into Europe, adds 490MW of secured power capacity, brings an experienced team of 50+ professionals, and positions the company to serve one of the largest and fastest-growing AI infrastructure markets. This strategic move demonstrates growth execution and market diversification."
-      }
-    ]
-  },
-  {
-    "id": "463ecc03c9b0cf66f8ca5561017c0856586a7d1c3f88d73df65e160d2b1975a7",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "IREN Completes Acquisition of Nostrum Group Expanding AI Cloud Platform to Europe",
-    "author": "Na",
-    "published_utc": "2026-06-15T11:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/15/3311680/0/en/IREN-Completes-Acquisition-of-Nostrum-Group-Expanding-AI-Cloud-Platform-to-Europe.html",
-    "tickers": [
-      "IREN"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/21eaa957-63b1-4e8e-ac88-ee562c8f0827",
-    "description": "IREN Limited has completed its acquisition of Ingenostrum (Nostrum Group), a Spain-based AI data center developer, marking the company's entry into the European market. The deal brings approximately 490MW of secured grid-connected power in Spain, a development pipeline, and a team of 50+ professionals. This acquisition positions IREN to capitalize on rapidly growing AI infrastructure demand in Europe.",
-    "keywords": [
-      "AI data centers",
-      "acquisition",
-      "European expansion",
-      "grid-connected power",
-      "Spain",
-      "AI infrastructure",
-      "renewable energy"
-    ],
-    "insights": [
-      {
-        "ticker": "IREN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The company successfully completed a strategic acquisition that expands its geographic footprint into Europe, secures 490MW of power capacity, and provides immediate operational capabilities through an experienced team. This represents significant growth and market diversification for the AI data center provider."
-      }
-    ]
-  },
-  {
-    "id": "a30a02bdff90330cc2d1da8ada2583043d9cd35a2681d8ef7c20e9f18320e885",
+    "id": "92a00081f021a7e8492055f1ac0f9459f039f0f1ac571cf872a3cd57cef4f8f2",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Iren's Ability to Rapidly Scale Its Data Center Footprint Makes It a Long-Term Winner",
-    "author": "Marc Guberti",
-    "published_utc": "2026-06-10T22:13:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/10/irens-ability-to-rapidly-scale-its-data-center-foo/?source=iedfolrf0000001",
+    "title": "Why TeraWulf, IREN, and Other Data Center Stocks Jumped Today",
+    "author": "Joe Tenebruso",
+    "published_utc": "2026-07-07T02:14:13Z",
+    "article_url": "https://www.fool.com/investing/2026/07/06/why-terawulf-iren-data-center-stocks-up-today/?source=iedfolrf0000001",
     "tickers": [
-      "IREN",
-      "NVDA"
+      "WULF",
+      "IREN"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F873678%2Fgettyimages-1422925468-1200x646-155feec.jpg&w=1200&op=resize",
-    "description": "Data center operator Iren has doubled its gigawatt pipeline to 5.8 GW in less than six months through major acquisitions and deals, including a $3.4 billion contract with Nvidia. The company's $11.33 million per megawatt annual rate suggests potential for $65.7 billion in recurring revenue, though significant execution risks remain in converting capacity into operating, profitable data centers.",
-    "keywords": [
-      "data centers",
-      "AI infrastructure",
-      "gigawatts",
-      "cloud computing",
-      "energy capacity",
-      "recurring revenue",
-      "capital expenditure"
-    ],
-    "insights": [
-      {
-        "ticker": "IREN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company is rapidly scaling its data center footprint, securing major long-term contracts with tech giants like Nvidia, and doubling its gigawatt pipeline. Strong demand for AI compute capacity and financial institutions' confidence in lending support growth trajectory, though execution risks exist."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major customer securing a $3.4 billion deal with Iren for computing capacity. While this demonstrates strong demand for AI infrastructure, the article focuses on Iren's perspective rather than Nvidia's business impact."
-      }
-    ]
-  },
-  {
-    "id": "d328c10eda193ae8057f44d8f4728799317202050b17748e90aadaee74b41df5",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Massive News: Iren's $4.4 Billion AI Target Could Change Everything",
-    "author": "Rick Orford",
-    "published_utc": "2026-06-09T14:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/09/massive-news-irens-44-billion-ai-target-could-chan/?source=iedfolrf0000001",
-    "tickers": [
-      "IREN",
-      "NVDA"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F873664%2F888-iren.png&w=1200&op=resize",
-    "description": "Iren is positioning itself as a major AI infrastructure player with Blackwell systems and data center capacity, targeting multibillion-dollar revenue. While execution could deliver powerful upside, the stock's current valuation already reflects high expectations for success, leaving limited margin for error.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877696%2Fdata-center-gettyimages-1294874384.jpg&w=1200&op=resize",
+    "description": "TeraWulf surged after securing a blockbuster 20-year, $19 billion deal with AI company Anthropic for 401 megawatts of computing capacity at its Kentucky data center. IREN also jumped on reports it could secure a similar lucrative agreement with Anthropic for up to 1.4 gigawatts of Australian data center capacity valued at $15 billion. Both stocks benefited from strong demand for AI infrastructure.",
     "keywords": [
       "AI infrastructure",
-      "Blackwell systems",
       "data center capacity",
-      "valuation risk",
-      "execution risk"
+      "Anthropic",
+      "computing power",
+      "long-term contracts",
+      "AI model makers"
     ],
     "insights": [
       {
+        "ticker": "WULF",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Secured a major 20-year, $19 billion contract with Anthropic for 401 megawatts of computing capacity, validating its strategy and providing long-duration revenue streams. Stock rose 4.84%."
+      },
+      {
         "ticker": "IREN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "The article presents a balanced view of Iren's AI ambitions and growth potential, but tempers optimism with concerns about current valuation already pricing in success and execution risks. The stock has rallied significantly (500% mentioned in related articles), suggesting upside may already be reflected in the price."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Positioned as a leading candidate for Anthropic's Australian data center project valued up to $15 billion. Analyst upgraded stock to buy with $58 price target and projects revenue growth from $717 million to $8.5 billion by 2028. Stock rose 12.89%."
+      }
+    ]
+  },
+  {
+    "id": "a42f580e89e0b7906602a60782f7d57b814480dc59df9ec5510276b783348037",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "3 No-Brainer Stocks to Buy on the Latest Sell-Off",
+    "author": "Marc Guberti",
+    "published_utc": "2026-07-06T15:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/06/3-no-brainer-stocks-to-buy-on-the-latest-sell-off/?source=iedfolrf0000001",
+    "tickers": [
+      "META",
+      "NVDA",
+      "IREN",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "INTC",
+      "NBIS"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F838876%2Fgettyimages-494278925-1201x795-11e462d.jpg&w=1200&op=resize",
+    "description": "The article recommends three growth stocks that have recently declined but offer strong long-term potential: Meta Platforms benefits from solid fundamentals and new AI cloud business opportunities; Nvidia continues to lead the AI boom with strong revenue growth and a new revenue-sharing model with AI startups; and Iren, despite short-term challenges and dilution concerns, has significant compute capacity and potential for major deals similar to competitors.",
+    "keywords": [
+      "AI infrastructure",
+      "stock market sell-off",
+      "growth stocks",
+      "GPU chips",
+      "AI cloud computing",
+      "revenue growth",
+      "market correction"
+    ],
+    "insights": [
+      {
+        "ticker": "META",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong Q1 fundamentals with 33% YoY revenue growth and 30% YoY net operating income growth. Attractive 22 P/E ratio. Diversifying into AI cloud business and AI glasses presents new revenue streams and potential stock rerating."
       },
       {
         "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned in context of Iren competing in Nvidia's 'Neocloud spending spree,' indicating strong demand for AI infrastructure and positioning Nvidia as a beneficiary of the broader AI infrastructure buildout."
+        "sentiment_reasoning": "Leading the AI boom with 85% YoY revenue growth. Stock down 20% from highs making it attractive at 30 P/E ratio. New revenue-sharing model with AI startups creates additional growth opportunities and profitable stakes in other AI companies."
+      },
+      {
+        "ticker": "IREN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Despite short-term headwinds including 30% monthly decline, dilution concerns, and slower deal announcements than competitors, the company has strong long-term fundamentals with doubled gigawatt pipeline approaching 6 gigawatts, recent revenue run rate increase to $4.4B, and significant expansion opportunities in Europe and Australia."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as limiting Meta's access to Gemini AI models, indicating competitive dynamics in AI space but no direct investment recommendation provided."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as limiting Meta's access to Gemini AI models, indicating competitive dynamics in AI space but no direct investment recommendation provided."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as limiting Meta's access to Gemini AI models, indicating competitive dynamics in AI space but no direct investment recommendation provided."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as limiting Meta's access to Gemini AI models, indicating competitive dynamics in AI space but no direct investment recommendation provided."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as one of Nvidia's profitable stakes but not recommended as a primary investment in this article."
+      },
+      {
+        "ticker": "NBIS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor to Iren with faster deal announcements and stronger performance year-to-date, but not recommended as a buy in this article."
+      }
+    ]
+  },
+  {
+    "id": "5525966482cce919b8795b5427dba6dba019f43b5d9c01a6edc1bc6f38052cd2",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "3 Artificial Intelligence (AI) Stocks I'd Buy Now and Never Sell",
+    "author": "John Ballard",
+    "published_utc": "2026-06-28T04:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/06/28/3-artificial-intelligence-ai-stocks-id-buy-now-and/?source=iedfolrf0000001",
+    "tickers": [
+      "ARM",
+      "IREN",
+      "NVDA",
+      "MSFT",
+      "INTC"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F870084%2Fblocks-with-arrows-pointing-up-building-growth.png&w=1200&op=resize",
+    "description": "The article recommends three AI stocks for long-term investment: Arm Holdings for its energy-efficient chip architecture dominating data centers, IREN for its data center capacity expansion with major contracts from Microsoft and Nvidia, and Nvidia for its leadership in AI hardware and diversified revenue streams. With Morgan Stanley projecting $3 trillion in global data center construction costs through 2028, these companies are positioned to benefit from sustained AI infrastructure growth.",
+    "keywords": [
+      "artificial intelligence",
+      "data centers",
+      "semiconductor chips",
+      "AI infrastructure",
+      "long-term investment",
+      "energy efficiency",
+      "GPU",
+      "CPU"
+    ],
+    "insights": [
+      {
+        "ticker": "ARM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Record revenue growth of 20% YoY, dominant position in smartphone chips, expanding data center opportunity with superior energy efficiency, expected to hold largest share of data center CPUs by 2030, and potential to join trillion-dollar market cap club."
+      },
+      {
+        "ticker": "IREN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock surged 385% over past year, secured long-term contracts with Microsoft and Nvidia, expanding globally with plans in Spain and Australia, on track to bring 480 megawatts of new capacity online, and management expects $4.4 billion in annualized revenue by end of 2026."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Data center revenue nearly doubled last quarter, new Vera CPU business on track for $20 billion revenue, visionary CEO Jensen Huang with proven track record of identifying new markets, expected 81% revenue growth this year to $391 billion, and attractive valuation at 22x earnings."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a major customer signing long-term contracts with IREN for data center capacity, indicating strong AI infrastructure investment but not the primary focus of the article."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Referenced only as a comparison point for Nvidia's new Vera CPU business revenue, not analyzed as an investment recommendation."
       }
     ]
   }
