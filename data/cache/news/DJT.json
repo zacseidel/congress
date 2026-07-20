@@ -1,5 +1,43 @@
 [
   {
+    "id": "355b1a6aa2eb14d5992316241dbf2069c160524940379190f870d84a8b41f8cb",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Trump Media Settles Legal Disputes",
+    "author": "Na",
+    "published_utc": "2026-07-19T22:00:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/19/3329401/0/en/Trump-Media-Settles-Legal-Disputes.html",
+    "tickers": [
+      "DJT",
+      "DJTWW"
+    ],
+    "image_url": "https://www.globenewswire.com/news-release/2026/07/19/3329401/0/en/Trump-Media-Settles-Legal-Disputes.html",
+    "description": "Trump Media and Technology Group Corp. (DJT) announced the mutual resolution of all claims between the company, Patrick Orlando, and ARC Global Investments II LLC through a confidential settlement agreement. The resolution concludes disputes among these parties.",
+    "keywords": [
+      "settlement",
+      "dispute resolution",
+      "Trump Media",
+      "Patrick Orlando",
+      "ARC Global Investments"
+    ],
+    "insights": [
+      {
+        "ticker": "DJT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "The settlement represents a resolution of legal disputes, which eliminates uncertainty and potential liabilities. However, the confidential nature of the agreement and lack of financial details prevents a more positive assessment. The resolution is a neutral development that removes a potential overhang."
+      },
+      {
+        "ticker": "DJTWW",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "The settlement represents a resolution of legal disputes, which eliminates uncertainty and potential liabilities. However, the confidential nature of the agreement and lack of financial details prevents a more positive assessment. The resolution is a neutral development that removes a potential overhang."
+      }
+    ]
+  },
+  {
     "id": "4a9b0ffac7b3d21303e04ef1e382b395e5fb1720751e11cd9837e9e9f7e01ba2",
     "publisher": {
       "name": "Benzinga",
@@ -192,58 +230,6 @@
         "ticker": "DJTWW",
         "sentiment": "negative",
         "sentiment_reasoning": "The company generated minimal revenue ($3.7M annually), posted a $712M net loss, and its stock significantly underperformed the broader market in March (-13.3% vs S&P 500's -5.1%). While April shows recovery, the fundamental business metrics remain weak with unproven scaling initiatives and heavy reliance on speculative future ventures."
-      }
-    ]
-  },
-  {
-    "id": "76cbb24f90d126c941f4d4d9bfa34052a7c21624210aac2e3108f8d6751da11b",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "What I'm Watching With Trump Media To See If They Beat The Market",
-    "author": "Leo Sun",
-    "published_utc": "2026-03-24T18:29:41Z",
-    "article_url": "https://www.fool.com/investing/2026/03/24/what-im-watching-with-digital-world-acquisition-to/?source=iedfolrf0000001",
-    "tickers": [
-      "DJT",
-      "DJTWW",
-      "RUM",
-      "RUMBW"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F860967%2Fgettyimages-637822740.jpg&w=1200&op=resize",
-    "description": "Trump Media's stock has plummeted from its $70.90 debut to under $9, with the company struggling due to stagnant core business, minimal user base for Truth Social (6.3M MAUs), and failed streaming platform. Despite crypto investments and meme-stock valuations exceeding 1,000x sales, analyst Leo Sun concludes the stock is unlikely to beat the market this year.",
-    "keywords": [
-      "Trump Media",
-      "Truth Social",
-      "meme stock",
-      "social media",
-      "cryptocurrency",
-      "valuation",
-      "market performance"
-    ],
-    "insights": [
-      {
-        "ticker": "DJT",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock has collapsed 87% from debut, core business is stagnant with only 6.3M MAUs, massive losses, overvalued at 1,000x sales, and unlikely to beat the market. Analyst explicitly recommends avoiding in favor of better-run alternatives."
-      },
-      {
-        "ticker": "DJTWW",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock has collapsed 87% from debut, core business is stagnant with only 6.3M MAUs, massive losses, overvalued at 1,000x sales, and unlikely to beat the market. Analyst explicitly recommends avoiding in favor of better-run alternatives."
-      },
-      {
-        "ticker": "RUM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Used as a comparison point showing stronger fundamentals (52M MAUs, 4x sales valuation) than Trump Media, but not the focus of analysis. Mentioned to highlight Trump Media's relative weakness."
-      },
-      {
-        "ticker": "RUMBW",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Used as a comparison point showing stronger fundamentals (52M MAUs, 4x sales valuation) than Trump Media, but not the focus of analysis. Mentioned to highlight Trump Media's relative weakness."
       }
     ]
   }

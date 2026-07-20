@@ -1,5 +1,47 @@
 [
   {
+    "id": "e1f6802b64befa583422891017bdbcd745f96cb69a76f034a65a599eb1926c34",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "Sell in May? We\u2019d Rather Buy in July With 2 Tickers on Our List",
+    "author": "Brett Owens",
+    "published_utc": "2026-06-30T09:18:00Z",
+    "article_url": "https://www.investing.com/analysis/sell-in-may-wed-rather-buy-in-july-with-2-tickers-on-our-list-200683029",
+    "tickers": [
+      "ITW",
+      "DE"
+    ],
+    "amp_url": "https://m.investing.com/analysis/sell-in-may-wed-rather-buy-in-july-with-2-tickers-on-our-list-200683029?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "The article argues July is the strongest month for stocks historically, with the S&P 500 rising 2.3% on average over 20 years. The author recommends buying two dividend-growth stocks: Illinois Tool Works (ITW) and Deere (DE). ITW is highlighted for its high operating margins, consistent dividend growth, and share buybacks despite analyst neglect. Deere is positioned to benefit from a construction boom while the agricultural segment is at a cycle bottom, with corn and wheat prices showing signs of recovery.",
+    "keywords": [
+      "dividend growth",
+      "summer buying opportunity",
+      "construction equipment",
+      "agricultural cycle",
+      "share buybacks",
+      "operating margins",
+      "inflation decline",
+      "midterm elections"
+    ],
+    "insights": [
+      {
+        "ticker": "ITW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company demonstrates strong fundamentals with 5% revenue growth, 12% EPS gains, raised guidance, high operating margins (25.4%), nearly tripled dividend over a decade, and 17% share buybacks. Analyst neglect creates upside potential as expectations are beaten."
+      },
+      {
+        "ticker": "DE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Positioned in a 'sweet spot' with booming construction-equipment segment forecasting 20% sales gains and 10-12% margin expansion in 2026. Agricultural segment at cycle bottom with corn/wheat prices firming. Low payout ratio (47%) supports future dividend growth. Benefits from expected fuel cost declines and infrastructure spending."
+      }
+    ]
+  },
+  {
     "id": "648660be4f3cc2610ba2810e457a25217b68968831daf9d15f3e6f20f4739c67",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -145,38 +187,6 @@
         "ticker": "DE",
         "sentiment": "neutral",
         "sentiment_reasoning": "Mentioned as a manufacturer of equipment that United Rentals leases, but no specific analysis or sentiment is provided about the company itself."
-      }
-    ]
-  },
-  {
-    "id": "65e58906b5ad857c62d3e460132d60972e746e832faa58db6d12b710c2497f64",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "Deere & Company Announces Quarterly Dividend",
-    "author": "Prnewswire",
-    "published_utc": "2026-05-27T15:58:00Z",
-    "article_url": "https://www.benzinga.com/pressreleases/26/05/n52814637/deere-company-announces-quarterly-dividend?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "DE"
-    ],
-    "image_url": "https://cdn.benzinga.com/files/imagecache/bz2_opengraph_meta_image_400x300/sites/all/themes/bz2/images/bz-icon.png",
-    "description": "Deere & Company's Board of Directors declared a quarterly dividend of $1.62 per share, payable on August 10, 2026, to shareholders of record as of June 30, 2026.",
-    "keywords": [
-      "dividend",
-      "quarterly",
-      "Deere & Company",
-      "shareholder returns",
-      "board declaration"
-    ],
-    "insights": [
-      {
-        "ticker": "DE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The announcement of a quarterly dividend demonstrates the company's financial health and commitment to returning capital to shareholders. Dividend declarations are typically viewed positively as they indicate management confidence in the company's cash flow and profitability."
       }
     ]
   }

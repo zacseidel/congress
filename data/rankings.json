@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-17",
+  "generated": "2026-07-20",
   "benchmark": "SPY",
   "leaderboard": [
     {
@@ -168,14 +168,14 @@
       "chamber": "house",
       "state": "WA",
       "party": "",
-      "n_positions": 24,
-      "n_open": 23,
-      "n_closed": 1,
-      "total_dollars": 192012,
-      "dw_return_pct": 25.84,
-      "ew_return_pct": 25.84,
-      "dw_alpha": 15.64,
-      "win_rate": 58.3,
+      "n_positions": 35,
+      "n_open": 30,
+      "n_closed": 5,
+      "total_dollars": 280018,
+      "dw_return_pct": 17.72,
+      "ew_return_pct": 17.72,
+      "dw_alpha": 10.73,
+      "win_rate": 40.0,
       "rankable": true
     },
     {
@@ -1153,7 +1153,7 @@
       "industry": "Semiconductors",
       "cap": "mega",
       "score": 184.6,
-      "n_outperformers": 4,
+      "n_outperformers": 5,
       "top_contributor": "Ashley Moody",
       "contributors": [
         {
@@ -1172,6 +1172,11 @@
           "contribution": 0.8
         },
         {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "contribution": 0.0
+        },
+        {
           "member": "Sheldon Whitehouse",
           "member_id": "whitehouse-sheldon",
           "contribution": -0.6
@@ -1183,7 +1188,7 @@
       "name": "Applied Materials Inc",
       "industry": "Semiconductors",
       "cap": "mega",
-      "score": 119.4,
+      "score": 117.0,
       "n_outperformers": 4,
       "top_contributor": "Ashley Moody",
       "contributors": [
@@ -1200,7 +1205,7 @@
         {
           "member": "Dan Newhouse",
           "member_id": "newhouse-dan",
-          "contribution": 7.7
+          "contribution": 5.3
         },
         {
           "member": "Marjorie Taylor Greene",
@@ -1338,7 +1343,7 @@
       "name": "Advanced Micro Devices",
       "industry": "Other",
       "cap": "mega",
-      "score": 25.2,
+      "score": 22.6,
       "n_outperformers": 4,
       "top_contributor": "Marjorie Taylor Greene",
       "contributors": [
@@ -1348,45 +1353,19 @@
           "contribution": 8.4
         },
         {
-          "member": "Dan Newhouse",
-          "member_id": "newhouse-dan",
-          "contribution": 8.3
-        },
-        {
           "member": "Angus S King, Jr.",
           "member_id": "king-jr-angus-s",
           "contribution": 7.2
         },
         {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "contribution": 5.7
+        },
+        {
           "member": "Cleo Fields",
           "member_id": "fields-cleo",
           "contribution": 1.3
-        }
-      ]
-    },
-    {
-      "ticker": "PANW",
-      "name": "Palo Alto Networks, Inc. Common Stock",
-      "industry": "Technology Hardware",
-      "cap": "mega",
-      "score": 20.4,
-      "n_outperformers": 3,
-      "top_contributor": "Nancy Pelosi",
-      "contributors": [
-        {
-          "member": "Nancy Pelosi",
-          "member_id": "pelosi-nancy",
-          "contribution": 15.8
-        },
-        {
-          "member": "Dan Newhouse",
-          "member_id": "newhouse-dan",
-          "contribution": 3.5
-        },
-        {
-          "member": "Marjorie Taylor Greene",
-          "member_id": "greene-marjorie-taylor",
-          "contribution": 1.1
         }
       ]
     },
@@ -1475,6 +1454,32 @@
           "member": "Morgan McGarvey",
           "member_id": "mcgarvey-morgan",
           "contribution": 0.0
+        }
+      ]
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc. Common Stock",
+      "industry": "Technology Hardware",
+      "cap": "mega",
+      "score": 19.3,
+      "n_outperformers": 3,
+      "top_contributor": "Nancy Pelosi",
+      "contributors": [
+        {
+          "member": "Nancy Pelosi",
+          "member_id": "pelosi-nancy",
+          "contribution": 15.8
+        },
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "contribution": 2.4
+        },
+        {
+          "member": "Marjorie Taylor Greene",
+          "member_id": "greene-marjorie-taylor",
+          "contribution": 1.1
         }
       ]
     },
@@ -1828,22 +1833,6 @@
       ]
     },
     {
-      "ticker": "ROST",
-      "name": "Ross Stores Inc",
-      "industry": "Retailing",
-      "cap": "large",
-      "score": 1.9,
-      "n_outperformers": 1,
-      "top_contributor": "Dan Newhouse",
-      "contributors": [
-        {
-          "member": "Dan Newhouse",
-          "member_id": "newhouse-dan",
-          "contribution": 1.9
-        }
-      ]
-    },
-    {
       "ticker": "GNPX",
       "name": "Genprex, Inc. Common Stock",
       "industry": "Pharmaceuticals & Biotech",
@@ -1881,22 +1870,6 @@
       ]
     },
     {
-      "ticker": "TGT",
-      "name": "Target Corporation",
-      "industry": "Retailing",
-      "cap": "large",
-      "score": 1.8,
-      "n_outperformers": 1,
-      "top_contributor": "Dan Newhouse",
-      "contributors": [
-        {
-          "member": "Dan Newhouse",
-          "member_id": "newhouse-dan",
-          "contribution": 1.8
-        }
-      ]
-    },
-    {
       "ticker": "ASML",
       "name": "ASML Holding NV",
       "industry": "Other",
@@ -1913,48 +1886,6 @@
       ]
     },
     {
-      "ticker": "XOM",
-      "name": "Exxon Mobil Corporation",
-      "industry": "Other",
-      "cap": "mega",
-      "score": 1.6,
-      "n_outperformers": 2,
-      "top_contributor": "Angus S King, Jr.",
-      "contributors": [
-        {
-          "member": "Angus S King, Jr.",
-          "member_id": "king-jr-angus-s",
-          "contribution": 1.0
-        },
-        {
-          "member": "Dan Newhouse",
-          "member_id": "newhouse-dan",
-          "contribution": 0.6
-        }
-      ]
-    },
-    {
-      "ticker": "PLD",
-      "name": "PROLOGIS, INC.",
-      "industry": "Diversified Financials",
-      "cap": "large",
-      "score": 1.6,
-      "n_outperformers": 2,
-      "top_contributor": "Dan Newhouse",
-      "contributors": [
-        {
-          "member": "Dan Newhouse",
-          "member_id": "newhouse-dan",
-          "contribution": 0.8
-        },
-        {
-          "member": "Shelley M Capito",
-          "member_id": "capito-shelley-m",
-          "contribution": 0.8
-        }
-      ]
-    },
-    {
       "ticker": "KEX",
       "name": "Kirby Corporation",
       "industry": "Transportation",
@@ -1967,6 +1898,80 @@
           "member": "Angus S King, Jr.",
           "member_id": "king-jr-angus-s",
           "contribution": 1.5
+        }
+      ]
+    },
+    {
+      "ticker": "XOM",
+      "name": "Exxon Mobil Corporation",
+      "industry": "Other",
+      "cap": "mega",
+      "score": 1.4,
+      "n_outperformers": 2,
+      "top_contributor": "Angus S King, Jr.",
+      "contributors": [
+        {
+          "member": "Angus S King, Jr.",
+          "member_id": "king-jr-angus-s",
+          "contribution": 1.0
+        },
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "contribution": 0.4
+        }
+      ]
+    },
+    {
+      "ticker": "PLD",
+      "name": "PROLOGIS, INC.",
+      "industry": "Diversified Financials",
+      "cap": "large",
+      "score": 1.3,
+      "n_outperformers": 2,
+      "top_contributor": "Shelley M Capito",
+      "contributors": [
+        {
+          "member": "Shelley M Capito",
+          "member_id": "capito-shelley-m",
+          "contribution": 0.8
+        },
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "contribution": 0.5
+        }
+      ]
+    },
+    {
+      "ticker": "ROST",
+      "name": "Ross Stores Inc",
+      "industry": "Retailing",
+      "cap": "large",
+      "score": 1.3,
+      "n_outperformers": 1,
+      "top_contributor": "Dan Newhouse",
+      "contributors": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "contribution": 1.3
+        }
+      ]
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "industry": "Retailing",
+      "cap": "large",
+      "score": 1.3,
+      "n_outperformers": 1,
+      "top_contributor": "Dan Newhouse",
+      "contributors": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "contribution": 1.3
         }
       ]
     },
@@ -2033,9 +2038,9 @@
       "name": "Micron Technology, Inc.",
       "industry": "Semiconductors",
       "cap": "mega",
-      "score_pct": 6.2,
-      "n_outperformers": 1,
-      "latest": "2026-07-08",
+      "score_pct": 9.1,
+      "n_outperformers": 2,
+      "latest": "2026-07-17",
       "buyers": [
         {
           "member": "Sheldon Whitehouse",
@@ -2044,6 +2049,223 @@
           "dollars": 8000,
           "latest": "2026-07-08",
           "alloc_pct": 6.2
+        },
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "alloc": 0.02857137755430008,
+          "dollars": 8000,
+          "latest": "2026-07-17",
+          "alloc_pct": 2.9
+        }
+      ]
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture PLC",
+      "industry": "Other",
+      "cap": "large",
+      "score_pct": 2.9,
+      "n_outperformers": 1,
+      "latest": "2026-07-17",
+      "buyers": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "alloc": 0.02857137755430008,
+          "dollars": 8000,
+          "latest": "2026-07-17",
+          "alloc_pct": 2.9
+        }
+      ]
+    },
+    {
+      "ticker": "HON",
+      "name": "Honeywell International, Inc.",
+      "industry": "Other",
+      "cap": "large",
+      "score_pct": 2.9,
+      "n_outperformers": 1,
+      "latest": "2026-07-17",
+      "buyers": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "alloc": 0.02857137755430008,
+          "dollars": 8000,
+          "latest": "2026-07-17",
+          "alloc_pct": 2.9
+        }
+      ]
+    },
+    {
+      "ticker": "AMCR",
+      "name": "Amcor plc Ordinary Shares",
+      "industry": "Consumer Durables & Apparel",
+      "cap": "large",
+      "score_pct": 2.9,
+      "n_outperformers": 1,
+      "latest": "2026-07-17",
+      "buyers": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "alloc": 0.02857137755430008,
+          "dollars": 8000,
+          "latest": "2026-07-17",
+          "alloc_pct": 2.9
+        }
+      ]
+    },
+    {
+      "ticker": "APH",
+      "name": "Amphenol Corporation",
+      "industry": "Technology Hardware",
+      "cap": "large",
+      "score_pct": 2.9,
+      "n_outperformers": 1,
+      "latest": "2026-07-17",
+      "buyers": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "alloc": 0.02857137755430008,
+          "dollars": 8000,
+          "latest": "2026-07-17",
+          "alloc_pct": 2.9
+        }
+      ]
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks",
+      "industry": "Technology Hardware",
+      "cap": "mega",
+      "score_pct": 2.9,
+      "n_outperformers": 1,
+      "latest": "2026-07-17",
+      "buyers": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "alloc": 0.02857137755430008,
+          "dollars": 8000,
+          "latest": "2026-07-17",
+          "alloc_pct": 2.9
+        }
+      ]
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco Wholesale Corp",
+      "industry": "Retailing",
+      "cap": "mega",
+      "score_pct": 2.9,
+      "n_outperformers": 1,
+      "latest": "2026-07-17",
+      "buyers": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "alloc": 0.02857137755430008,
+          "dollars": 8000,
+          "latest": "2026-07-17",
+          "alloc_pct": 2.9
+        }
+      ]
+    },
+    {
+      "ticker": "DUK",
+      "name": "Duke Energy Corporation",
+      "industry": "Utilities",
+      "cap": "large",
+      "score_pct": 2.9,
+      "n_outperformers": 1,
+      "latest": "2026-07-17",
+      "buyers": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "alloc": 0.02857137755430008,
+          "dollars": 8000,
+          "latest": "2026-07-17",
+          "alloc_pct": 2.9
+        }
+      ]
+    },
+    {
+      "ticker": "FIS",
+      "name": "Fidelity National Information Services, Inc.",
+      "industry": "Software & Services",
+      "cap": "large",
+      "score_pct": 2.9,
+      "n_outperformers": 1,
+      "latest": "2026-07-17",
+      "buyers": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "alloc": 0.02857137755430008,
+          "dollars": 8000,
+          "latest": "2026-07-17",
+          "alloc_pct": 2.9
+        }
+      ]
+    },
+    {
+      "ticker": "FE",
+      "name": null,
+      "industry": "Other",
+      "cap": "unknown",
+      "score_pct": 2.9,
+      "n_outperformers": 1,
+      "latest": "2026-07-17",
+      "buyers": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "alloc": 0.02857137755430008,
+          "dollars": 8000,
+          "latest": "2026-07-17",
+          "alloc_pct": 2.9
+        }
+      ]
+    },
+    {
+      "ticker": "MS",
+      "name": "Morgan Stanley",
+      "industry": "Diversified Financials",
+      "cap": "mega",
+      "score_pct": 2.9,
+      "n_outperformers": 1,
+      "latest": "2026-07-17",
+      "buyers": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "alloc": 0.02857137755430008,
+          "dollars": 8000,
+          "latest": "2026-07-17",
+          "alloc_pct": 2.9
+        }
+      ]
+    },
+    {
+      "ticker": "UBER",
+      "name": "Uber Technologies, Inc.",
+      "industry": "Software & Services",
+      "cap": "large",
+      "score_pct": 2.9,
+      "n_outperformers": 1,
+      "latest": "2026-07-17",
+      "buyers": [
+        {
+          "member": "Dan Newhouse",
+          "member_id": "newhouse-dan",
+          "alloc": 0.02857137755430008,
+          "dollars": 8000,
+          "latest": "2026-07-17",
+          "alloc_pct": 2.9
         }
       ]
     },
@@ -6665,10 +6887,10 @@
     "UBER": {
       "ticker": "UBER",
       "name": "Uber Technologies, Inc.",
-      "n_buyers": 15,
-      "n_outperformer_buyers": 3,
-      "total_buy_dollars": 529012,
-      "outperformer_dollars": 56501,
+      "n_buyers": 16,
+      "n_outperformer_buyers": 4,
+      "total_buy_dollars": 537012,
+      "outperformer_dollars": 64501,
       "buyers": [
         {
           "member_id": "hickenlooper-john-w",
@@ -6789,6 +7011,14 @@
           "dollars": 8000,
           "is_outperformer": true,
           "return_pct": 13.94
+        },
+        {
+          "member_id": "newhouse-dan",
+          "member": "Dan Newhouse",
+          "chamber": "house",
+          "dollars": 8000,
+          "is_outperformer": true,
+          "return_pct": 0.0
         }
       ],
       "has_detail": true
@@ -7494,10 +7724,10 @@
     "APH": {
       "ticker": "APH",
       "name": "Amphenol Corporation",
-      "n_buyers": 6,
-      "n_outperformer_buyers": 0,
-      "total_buy_dollars": 64002,
-      "outperformer_dollars": 0,
+      "n_buyers": 7,
+      "n_outperformer_buyers": 1,
+      "total_buy_dollars": 72002,
+      "outperformer_dollars": 8000,
       "buyers": [
         {
           "member_id": "donalds-byron",
@@ -7546,6 +7776,14 @@
           "dollars": 8000,
           "is_outperformer": false,
           "return_pct": -4.94
+        },
+        {
+          "member_id": "newhouse-dan",
+          "member": "Dan Newhouse",
+          "chamber": "house",
+          "dollars": 8000,
+          "is_outperformer": true,
+          "return_pct": 0.0
         }
       ],
       "has_detail": true
@@ -11313,10 +11551,10 @@
     "AMCR": {
       "ticker": "AMCR",
       "name": "Amcor plc Ordinary Shares",
-      "n_buyers": 4,
-      "n_outperformer_buyers": 0,
-      "total_buy_dollars": 64004,
-      "outperformer_dollars": 0,
+      "n_buyers": 5,
+      "n_outperformer_buyers": 1,
+      "total_buy_dollars": 72004,
+      "outperformer_dollars": 8000,
       "buyers": [
         {
           "member_id": "kean-thomas-h",
@@ -11349,6 +11587,14 @@
           "dollars": 8000,
           "is_outperformer": false,
           "return_pct": 4.36
+        },
+        {
+          "member_id": "newhouse-dan",
+          "member": "Dan Newhouse",
+          "chamber": "house",
+          "dollars": 8000,
+          "is_outperformer": true,
+          "return_pct": 0.0
         }
       ],
       "has_detail": true
@@ -13522,10 +13768,10 @@
     "ACN": {
       "ticker": "ACN",
       "name": "Accenture PLC",
-      "n_buyers": 9,
-      "n_outperformer_buyers": 0,
-      "total_buy_dollars": 391013,
-      "outperformer_dollars": 0,
+      "n_buyers": 10,
+      "n_outperformer_buyers": 1,
+      "total_buy_dollars": 399013,
+      "outperformer_dollars": 8000,
       "buyers": [
         {
           "member_id": "khanna-rohit",
@@ -13598,6 +13844,14 @@
           "dollars": 8000,
           "is_outperformer": false,
           "return_pct": -41.56
+        },
+        {
+          "member_id": "newhouse-dan",
+          "member": "Dan Newhouse",
+          "chamber": "house",
+          "dollars": 8000,
+          "is_outperformer": true,
+          "return_pct": 0.0
         }
       ],
       "has_detail": true
@@ -16476,10 +16730,10 @@
     "COST": {
       "ticker": "COST",
       "name": "Costco Wholesale Corp",
-      "n_buyers": 14,
-      "n_outperformer_buyers": 1,
-      "total_buy_dollars": 273012,
-      "outperformer_dollars": 24002,
+      "n_buyers": 15,
+      "n_outperformer_buyers": 2,
+      "total_buy_dollars": 281012,
+      "outperformer_dollars": 32002,
       "buyers": [
         {
           "member_id": "khanna-rohit",
@@ -16592,6 +16846,14 @@
           "dollars": 8000,
           "is_outperformer": false,
           "return_pct": 5.0
+        },
+        {
+          "member_id": "newhouse-dan",
+          "member": "Dan Newhouse",
+          "chamber": "house",
+          "dollars": 8000,
+          "is_outperformer": true,
+          "return_pct": 0.0
         }
       ],
       "has_detail": true
@@ -16789,10 +17051,10 @@
     "DUK": {
       "ticker": "DUK",
       "name": "Duke Energy Corporation",
-      "n_buyers": 4,
-      "n_outperformer_buyers": 1,
-      "total_buy_dollars": 80004,
-      "outperformer_dollars": 48003,
+      "n_buyers": 5,
+      "n_outperformer_buyers": 2,
+      "total_buy_dollars": 88004,
+      "outperformer_dollars": 56003,
       "buyers": [
         {
           "member_id": "greene-marjorie-taylor",
@@ -16825,6 +17087,14 @@
           "dollars": 8000,
           "is_outperformer": false,
           "return_pct": 17.52
+        },
+        {
+          "member_id": "newhouse-dan",
+          "member": "Dan Newhouse",
+          "chamber": "house",
+          "dollars": 8000,
+          "is_outperformer": true,
+          "return_pct": 0.0
         }
       ],
       "has_detail": true
@@ -19555,10 +19825,10 @@
     "HON": {
       "ticker": "HON",
       "name": "Honeywell International, Inc.",
-      "n_buyers": 7,
-      "n_outperformer_buyers": 1,
-      "total_buy_dollars": 80500,
-      "outperformer_dollars": 8000,
+      "n_buyers": 8,
+      "n_outperformer_buyers": 2,
+      "total_buy_dollars": 88500,
+      "outperformer_dollars": 16000,
       "buyers": [
         {
           "member_id": "salazar-maria-elvira",
@@ -19615,6 +19885,14 @@
           "dollars": 8000,
           "is_outperformer": false,
           "return_pct": 12.07
+        },
+        {
+          "member_id": "newhouse-dan",
+          "member": "Dan Newhouse",
+          "chamber": "house",
+          "dollars": 8000,
+          "is_outperformer": true,
+          "return_pct": 0.0
         }
       ],
       "has_detail": true
@@ -19947,10 +20225,10 @@
     "MU": {
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
-      "n_buyers": 11,
-      "n_outperformer_buyers": 4,
-      "total_buy_dollars": 547511,
-      "outperformer_dollars": 266000,
+      "n_buyers": 12,
+      "n_outperformer_buyers": 5,
+      "total_buy_dollars": 555511,
+      "outperformer_dollars": 274000,
       "buyers": [
         {
           "member_id": "khanna-rohit",
@@ -20039,6 +20317,14 @@
           "dollars": 8000,
           "is_outperformer": true,
           "return_pct": -10.52
+        },
+        {
+          "member_id": "newhouse-dan",
+          "member": "Dan Newhouse",
+          "chamber": "house",
+          "dollars": 8000,
+          "is_outperformer": true,
+          "return_pct": 0.0
         }
       ],
       "has_detail": true
@@ -20097,10 +20383,10 @@
     "MS": {
       "ticker": "MS",
       "name": "Morgan Stanley",
-      "n_buyers": 7,
-      "n_outperformer_buyers": 1,
-      "total_buy_dollars": 233009,
-      "outperformer_dollars": 32002,
+      "n_buyers": 8,
+      "n_outperformer_buyers": 2,
+      "total_buy_dollars": 241009,
+      "outperformer_dollars": 40002,
       "buyers": [
         {
           "member_id": "khanna-rohit",
@@ -20157,6 +20443,14 @@
           "dollars": 8000,
           "is_outperformer": false,
           "return_pct": 17.8
+        },
+        {
+          "member_id": "newhouse-dan",
+          "member": "Dan Newhouse",
+          "chamber": "house",
+          "dollars": 8000,
+          "is_outperformer": true,
+          "return_pct": 0.0
         }
       ],
       "has_detail": true
@@ -21561,10 +21855,10 @@
     "ANET": {
       "ticker": "ANET",
       "name": "Arista Networks",
-      "n_buyers": 12,
-      "n_outperformer_buyers": 2,
-      "total_buy_dollars": 233010,
-      "outperformer_dollars": 16000,
+      "n_buyers": 13,
+      "n_outperformer_buyers": 3,
+      "total_buy_dollars": 241010,
+      "outperformer_dollars": 24000,
       "buyers": [
         {
           "member_id": "landsman-greg",
@@ -21661,6 +21955,14 @@
           "dollars": 8000,
           "is_outperformer": false,
           "return_pct": 11.1
+        },
+        {
+          "member_id": "newhouse-dan",
+          "member": "Dan Newhouse",
+          "chamber": "house",
+          "dollars": 8000,
+          "is_outperformer": true,
+          "return_pct": 0.0
         }
       ],
       "has_detail": true
@@ -23204,10 +23506,10 @@
     "FIS": {
       "ticker": "FIS",
       "name": "Fidelity National Information Services, Inc.",
-      "n_buyers": 3,
-      "n_outperformer_buyers": 1,
-      "total_buy_dollars": 121005,
-      "outperformer_dollars": 24002,
+      "n_buyers": 4,
+      "n_outperformer_buyers": 2,
+      "total_buy_dollars": 129005,
+      "outperformer_dollars": 32002,
       "buyers": [
         {
           "member_id": "shreve-jefferson",
@@ -23232,6 +23534,14 @@
           "dollars": 24002,
           "is_outperformer": true,
           "return_pct": -13.72
+        },
+        {
+          "member_id": "newhouse-dan",
+          "member": "Dan Newhouse",
+          "chamber": "house",
+          "dollars": 8000,
+          "is_outperformer": true,
+          "return_pct": 0.0
         }
       ],
       "has_detail": true
@@ -41129,7 +41439,7 @@
     },
     "ESAB": {
       "ticker": "ESAB",
-      "name": null,
+      "name": "ESAB Corporation",
       "n_buyers": 1,
       "n_outperformer_buyers": 0,
       "total_buy_dollars": 16001,
@@ -41142,6 +41452,25 @@
           "dollars": 16001,
           "is_outperformer": false,
           "return_pct": 2.99
+        }
+      ],
+      "has_detail": true
+    },
+    "FE": {
+      "ticker": "FE",
+      "name": null,
+      "n_buyers": 1,
+      "n_outperformer_buyers": 1,
+      "total_buy_dollars": 8000,
+      "outperformer_dollars": 8000,
+      "buyers": [
+        {
+          "member_id": "newhouse-dan",
+          "member": "Dan Newhouse",
+          "chamber": "house",
+          "dollars": 8000,
+          "is_outperformer": true,
+          "return_pct": null
         }
       ],
       "has_detail": false

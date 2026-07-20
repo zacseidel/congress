@@ -1,5 +1,41 @@
 [
   {
+    "id": "b3c69611b97f58be02b030f60f85bbbfc65257a513f3efcb600c196cf65eb222",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Enphase Energy Highlights Safety and Reliability of the IQ EV Charger 2 Across Europe",
+    "author": "Enphase Energy, Inc.",
+    "published_utc": "2026-07-16T12:00:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/16/3328381/20176/en/Enphase-Energy-Highlights-Safety-and-Reliability-of-the-IQ-EV-Charger-2-Across-Europe.html",
+    "tickers": [
+      "ENPH"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/8b2a199d-ee69-4421-a9b9-ab23fddce0d4",
+    "description": "Enphase Energy announced the availability of its IQ EV Charger 2 across European markets, emphasizing robust thermal engineering, independent safety certifications, and built-in protections. The charger is engineered to minimize thermal derating across varied climates, operates in temperatures from -40\u00b0C to 55\u00b0C, and is backed by a five-year warranty and 24/7 customer support.",
+    "keywords": [
+      "EV charger",
+      "thermal engineering",
+      "safety certifications",
+      "European markets",
+      "home charging",
+      "thermal derating",
+      "IP55 rating",
+      "T\u00dcV Rheinland",
+      "warranty"
+    ],
+    "insights": [
+      {
+        "ticker": "ENPH",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The company is expanding its product portfolio into the growing EV charging market with a well-engineered solution featuring multiple independent certifications, robust safety features, and strong warranty support. The product launch demonstrates technological advancement and market confidence, with endorsements from partners like 1KOMMA5\u00b0."
+      }
+    ]
+  },
+  {
     "id": "1e2c125310157246fc0aef1ed84ef315cbfc8ca7896260c6943743ad1dbde894",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -203,65 +239,6 @@
         "ticker": "ICLN",
         "sentiment": "positive",
         "sentiment_reasoning": "Surged roughly 25% year-to-date, benefiting from dual catalysts of July 4 deadline and AI data center electricity demand."
-      }
-    ]
-  },
-  {
-    "id": "4cca5f1e055d0e54d023a470504a18f1639fe1175bc903bbbfe1885d5138c9bd",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "iShares Clean Energy or Invesco Solar: Which Energy ETF Is a Better Bet?",
-    "author": "Neha Chamaria",
-    "published_utc": "2026-06-02T14:12:17Z",
-    "article_url": "https://www.fool.com/coverage/etfs/2026/06/02/ishares-clean-energy-or-invesco-solar-which-energy-etf-is-a-better-bet/?source=iedfolrf0000001",
-    "tickers": [
-      "ICLN",
-      "TAN",
-      "BE",
-      "FSLR",
-      "ENPH"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fe2a7a839652ce1e4b5e887767e5794b4ba7e66f4-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "The article compares two clean energy ETFs: iShares Global Clean Energy ETF (ICLN) offers broad diversification across renewable energy sectors with a lower 0.39% expense ratio and 1.20% dividend yield, while Invesco Solar ETF (TAN) provides concentrated exposure to solar companies with a higher 0.70% expense ratio. ICLN delivered better 5-year returns ($1,021 vs $806 on $1,000 invested) and lower volatility, making it suitable for broad clean energy exposure, while TAN appeals to investors bullish specifically on solar driven by AI data centers and electrification trends.",
-    "keywords": [
-      "clean energy ETF",
-      "renewable energy",
-      "solar energy",
-      "expense ratio",
-      "ETF comparison",
-      "energy transition",
-      "dividend yield",
-      "portfolio diversification"
-    ],
-    "insights": [
-      {
-        "ticker": "ICLN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Lower expense ratio (0.39%), higher 5-year returns, lower volatility (beta 1.05), dividend yield of 1.20%, broader diversification across multiple renewable energy sectors, and better risk-adjusted performance make it favorable for long-term investors seeking broad clean energy exposure."
-      },
-      {
-        "ticker": "TAN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Higher expense ratio (0.70%) and greater volatility (beta 1.30) with larger drawdowns (-74% vs -57%), but offers concentrated solar exposure which may appeal to investors with strong conviction in solar specifically. Higher 1-year returns (82.50%) but lower 5-year returns suggest cyclical performance."
-      },
-      {
-        "ticker": "BE",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as top holding in ICLN at 12.1% with no specific performance commentary provided in the article."
-      },
-      {
-        "ticker": "FSLR",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Major holding in both ETFs (9.5% in ICLN, 11.7% in TAN) with no specific performance commentary provided."
-      },
-      {
-        "ticker": "ENPH",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Significant holding in TAN at 8.7% with no specific performance commentary provided."
       }
     ]
   }

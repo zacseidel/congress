@@ -1,5 +1,39 @@
 [
   {
+    "id": "c27a2dcf7d2e67c2e11907a04b3d36ffe0df0b3744de7f660a3a3b89567ccd50",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Momentum Cyber Mid-Year 2026 Review: Cybersecurity M&A on Track for Highest Deal Count Ever Tracked",
+    "author": "Momentum Cyber",
+    "published_utc": "2026-07-01T17:56:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/01/3320930/0/en/Momentum-Cyber-Mid-Year-2026-Review-Cybersecurity-M-A-on-Track-for-Highest-Deal-Count-Ever-Tracked.html",
+    "tickers": [
+      "ACN"
+    ],
+    "image_url": "https://www.globenewswire.com/news-release/2026/07/01/3320930/0/en/Momentum-Cyber-Mid-Year-2026-Review-Cybersecurity-M-A-on-Track-for-Highest-Deal-Count-Ever-Tracked.html",
+    "description": "The cybersecurity market experienced a historic first half of 2026 with 219 M&A transactions totaling $9.1B in disclosed deal value. AI Security has matured into a dominant M&A reality, driving enterprise platform consolidation. Accenture's $4.175B acquisition of Dragos, NetRise, and runZero marked the year's first mega-deal, signaling aggressive strategic restructuring where scaled platform vendors command premiums while point solutions struggle.",
+    "keywords": [
+      "cybersecurity M&A",
+      "AI Security",
+      "platform consolidation",
+      "mega-deals",
+      "enterprise security",
+      "strategic acquisitions",
+      "market maturity"
+    ],
+    "insights": [
+      {
+        "ticker": "ACN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Accenture executed a landmark $4.175B acquisition of three cybersecurity companies (Dragos, NetRise, runZero), demonstrating aggressive strategic positioning and confidence in the cybersecurity market consolidation trend."
+      }
+    ]
+  },
+  {
     "id": "d6e2cc31cc17b755a0c55524ea7e8e875395c4556bb7520c995952851e460138",
     "publisher": {
       "name": "The Motley Fool",
@@ -296,82 +330,6 @@
         "ticker": "ORCLpD",
         "sentiment": "neutral",
         "sentiment_reasoning": "Oracle is identified as a key player but lacks specific recent developments or achievements in the citizen services AI market mentioned in the article."
-      }
-    ]
-  },
-  {
-    "id": "26f7d1b4535014f3b0f0274f3abf4c5153529c3bb9328d3e1098792870b93b0b",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "S&P 500 Bounces Back; Dow Largely Sits This One Out",
-    "author": "Anders Bylund",
-    "published_utc": "2026-06-18T17:18:26Z",
-    "article_url": "https://www.fool.com/investing/2026/06/18/sp-500-bounces-back-dow-largely-sits-this-one-out/?source=iedfolrf0000001",
-    "tickers": [
-      "INTC",
-      "AAPL",
-      "MU",
-      "AVGO",
-      "SPCX",
-      "CAT",
-      "IBM",
-      "ACN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875286%2Fintel-flag-waving-in-sky-with-intel-logo_intel.jpg&w=1200&op=resize",
-    "description": "The S&P 500 rebounded 1% on Thursday after Wednesday's Fed-induced decline, driven by two major catalysts: President Trump's interim Iran peace deal that temporarily reopened the Strait of Hormuz, and an announced Apple-Intel chip partnership. While semiconductor stocks surged, the Dow lagged with only 0.4% gains. SpaceX declined 9.9%, offsetting broader tech strength.",
-    "keywords": [
-      "S&P 500",
-      "Iran peace deal",
-      "semiconductor stocks",
-      "Apple-Intel partnership",
-      "oil prices",
-      "Strait of Hormuz",
-      "tech rally"
-    ],
-    "insights": [
-      {
-        "ticker": "INTC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock surged 10.4% following Trump's announcement of an Apple partnership to build chips in America, despite lack of official corporate confirmation."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Announced partnership with Intel to build chips domestically, though modest 0.56% gain suggests market is cautious pending official confirmation."
-      },
-      {
-        "ticker": "MU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Jumped 7.9% as semiconductor sector benefited from bullish chip manufacturing news and domestic production initiatives."
-      },
-      {
-        "ticker": "AVGO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Gained 3.9% as part of broader semiconductor rally driven by domestic chip production announcements."
-      },
-      {
-        "ticker": "SPCX",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Declined 9.9%, erasing Tuesday's gains and weighing on the Nasdaq Composite index performance."
-      },
-      {
-        "ticker": "CAT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Gained 3.3% as stabilizing macroeconomic conditions from the Iran deal benefited industrial stocks."
-      },
-      {
-        "ticker": "IBM",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Fell 5% following tech consulting peer Accenture's decline, indicating weakness in the tech services sector."
-      },
-      {
-        "ticker": "ACN",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Declined 18.51%, dragging down related tech consulting stocks like IBM."
       }
     ]
   }
