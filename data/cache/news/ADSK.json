@@ -1,5 +1,45 @@
 [
   {
+    "id": "75dfa049278f2592054e733225fda610bb54f83a051238cd43e96490883f7b51",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Adobe vs. Autodesk: What Revenue Trends Reveal About These Software Stocks",
+    "author": "Robert Izquierdo",
+    "published_utc": "2026-07-17T17:28:01Z",
+    "article_url": "https://www.fool.com/coverage/charts/2026/07/17/adobe-vs-autodesk-what-revenue-trends-reveal-about-these-software-stocks/?source=iedfolrf0000001",
+    "tickers": [
+      "ADBE",
+      "ADSK"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Fcharts%2Fproduction%2Fprocessed%2Fadbe-adsk%2Fquarter%2Frevenue%2Fbar%2Fprimary%2Fstandard%2Flimit-8%2Flatest%2Fadbe-adsk_quarter_revenue_bar_primary_standard_limit8.png&w=1200&op=resize",
+    "description": "Adobe demonstrates stronger revenue momentum with eight consecutive quarters of growth, reaching $6.6 billion in Q2 2026, while Autodesk recorded its first revenue decline to $1.9 billion in Q2 2026 due to sales team reorganization. Despite leadership transitions at Adobe and market concerns about AI impact, the company maintains its competitive advantage with broader market reach compared to Autodesk's niche industry focus.",
+    "keywords": [
+      "revenue growth",
+      "software stocks",
+      "quarterly earnings",
+      "market comparison",
+      "artificial intelligence",
+      "leadership transition",
+      "sales performance"
+    ],
+    "insights": [
+      {
+        "ticker": "ADBE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Adobe shows consistent revenue expansion with eight straight quarters of growth, strong net income margins (26%), and demonstrated ability to attract customer spending despite AI concerns and executive transitions. The article suggests it's a good buying opportunity at current valuations."
+      },
+      {
+        "ticker": "ADSK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Autodesk recorded its first revenue decline in Q2 2026 due to sales team reorganization, but management raised full-year guidance to $8.5 billion, indicating confidence in recovery. The company maintains solid fundamentals with 25% net income margins and strategic partnerships, though recent performance shows weakness."
+      }
+    ]
+  },
+  {
     "id": "1fc7968a917819f1c91e2cc347ba4d56c3621fa32f392fa939505eee4f4ab89e",
     "publisher": {
       "name": "Benzinga",
@@ -533,39 +573,6 @@
         "ticker": "SIEGY",
         "sentiment": "positive",
         "sentiment_reasoning": "Identified as a global industrial automation leader with comprehensive digital twin capabilities across manufacturing, energy, and smart infrastructure"
-      }
-    ]
-  },
-  {
-    "id": "627beb897280be4314c7d87a487d4a6bc4ad7f892d43eea1b444a35f14bd10d6",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "Autodesk Stock Sinks Despite Q1 Earnings Beat",
-    "author": "Erica Kollmann",
-    "published_utc": "2026-05-28T20:28:31Z",
-    "article_url": "https://www.benzinga.com/markets/earnings/26/05/52858422/autodesk-stock-sinks-despite-q1-earnings-beat?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "ADSK"
-    ],
-    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/05/28/Autodesk--Konskie--Poland---November-18-_0.jpeg",
-    "description": "Autodesk reported Q1 earnings of $2.99 per share, beating consensus estimates of $2.84, with revenue of $1.93 billion exceeding the $1.89 billion estimate. The company also raised its fiscal 2027 guidance for both EPS and revenue. However, the stock declined 3.84% to $231.70 in after-hours trading despite the positive results.",
-    "keywords": [
-      "earnings beat",
-      "Q1 results",
-      "guidance raise",
-      "stock decline",
-      "AI technology",
-      "revenue growth"
-    ],
-    "insights": [
-      {
-        "ticker": "ADSK",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Despite beating earnings estimates on both top and bottom lines and raising full-year guidance, the stock fell 3.84% in after-hours trading. This disconnect between strong financial results and negative price action suggests investor disappointment, possibly due to expectations not being met or concerns about future growth prospects despite the positive guidance."
       }
     ]
   }

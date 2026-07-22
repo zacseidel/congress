@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-20",
-  "n_total": 139,
-  "n_matched": 137,
+  "generated": "2026-07-22",
+  "n_total": 141,
+  "n_matched": 139,
   "match_rate": 98.6,
   "members": {
     "aderholt-robert-b": {
@@ -8890,6 +8890,72 @@
         "Pharmaceuticals & Biotech",
         "Telecommunication Services",
         "Utilities"
+      ]
+    },
+    "himes-james-a": {
+      "bioguide": "H001047",
+      "match_method": "state+district",
+      "matched_name": "James A. Himes",
+      "committees": [
+        {
+          "id": "HLIG",
+          "name": "House Permanent Select Committee on Intelligence",
+          "type": "house",
+          "is_sub": false,
+          "title": "Ranking Member"
+        },
+        {
+          "id": "HSBA",
+          "name": "House Committee on Financial Services",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        }
+      ],
+      "industries": [
+        "Banks",
+        "Diversified Financials",
+        "Insurance",
+        "Real Estate"
+      ]
+    },
+    "armstrong-alan": {
+      "bioguide": "A000383",
+      "match_method": "last_name",
+      "matched_name": "Alan Armstrong",
+      "committees": [
+        {
+          "id": "SSHR",
+          "name": "Senate Committee on Health, Education, Labor, and Pensions",
+          "type": "senate",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "SSHR11",
+          "name": "Senate Committee on Health, Education, Labor, and Pensions: Employment and Workplace Safety",
+          "type": "senate",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "SSHR12",
+          "name": "Senate Committee on Health, Education, Labor, and Pensions: Primary Health and Retirement Security",
+          "type": "senate",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "SLIA",
+          "name": "Senate Committee on Indian Affairs",
+          "type": "senate",
+          "is_sub": false,
+          "title": null
+        }
+      ],
+      "industries": [
+        "Health Care Equipment & Services",
+        "Pharmaceuticals & Biotech"
       ]
     }
   },

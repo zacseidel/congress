@@ -1,5 +1,58 @@
 [
   {
+    "id": "1c58e8207729a177e01e8e439c329e39889c8f494ad2070fa7de562d7af75b06",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Hewlett Packard Enterprise's Backlog of Nearly $6 Billion Is Fueled by a New Wave of AI Spending",
+    "author": "Bryan White",
+    "published_utc": "2026-07-09T07:13:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/09/hewlett-packard-enterprises-backlog-of-nearly-6-bi/?source=iedfolrf0000001",
+    "tickers": [
+      "HPE",
+      "HPEpC",
+      "CSCO",
+      "ANET"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877909%2Fgettyimages-1498981428.jpg&w=1200&op=resize",
+    "description": "HPE has transformed into an AI infrastructure player with an 81% year-to-date stock gain, driven by enterprise demand for on-premises AI capabilities. The company's acquisition of Juniper Networks enables it to offer integrated compute, networking, and storage solutions. HPE exited Q2 with a record $5.9 billion backlog as traditional server orders tripled, though the stock is less attractive at current valuations compared to months ago.",
+    "keywords": [
+      "AI infrastructure",
+      "on-premises AI",
+      "enterprise spending",
+      "GPU clusters",
+      "server orders",
+      "backlog",
+      "networking solutions",
+      "supply chain"
+    ],
+    "insights": [
+      {
+        "ticker": "HPE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong Q2 earnings beat, 81% YTD stock gain, record $5.9B backlog, successful Juniper integration enabling integrated AI infrastructure sales, and growing enterprise demand for on-premises AI solutions position HPE well in early-stage AI buildout phase."
+      },
+      {
+        "ticker": "HPEpC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong Q2 earnings beat, 81% YTD stock gain, record $5.9B backlog, successful Juniper integration enabling integrated AI infrastructure sales, and growing enterprise demand for on-premises AI solutions position HPE well in early-stage AI buildout phase."
+      },
+      {
+        "ticker": "CSCO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a larger competitor to HPE in the networking space, but no specific performance data provided; faces competition from HPE's integrated approach."
+      },
+      {
+        "ticker": "ANET",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in networking solutions, but no specific performance data provided; faces competition from HPE's integrated approach."
+      }
+    ]
+  },
+  {
     "id": "fbbe4dcc4d84206f55fda745df8e920cab3d86073f51ca9c6a35e4abdfedcd03",
     "publisher": {
       "name": "The Motley Fool",
@@ -199,44 +252,6 @@
         "ticker": "SNDK",
         "sentiment": "positive",
         "sentiment_reasoning": "Highlighted as outperforming Arista with better growth rates and more attractive valuations. CEO described recent quarter as a 'fundamental inflection point' with potential for substantial long-term value creation."
-      }
-    ]
-  },
-  {
-    "id": "744c075723f654bb53d1e3f431e3bfff08e89def082501a5b6effdab73254a38",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Better AI Stock to Buy: Vertiv or Arista Networks?",
-    "author": "Parkev Tatevosian, Cfa",
-    "published_utc": "2026-05-23T01:23:12Z",
-    "article_url": "https://www.fool.com/investing/2026/05/22/better-ai-stock-to-buy-vertiv-or-arista-networks/?source=iedfolrf0000001",
-    "tickers": [
-      "VRT",
-      "ANET"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F871453%2Fai-artificial-intelligence-neural-network-technology.jpg&w=1200&op=resize",
-    "description": "The article compares two AI stocks\u2014Vertiv and Arista Networks\u2014as potential investments, highlighting that datacenter demand is surging and creating opportunities for companies in this space. Both stocks are positioned to benefit from the growing AI infrastructure buildout.",
-    "keywords": [
-      "AI stocks",
-      "datacenter demand",
-      "infrastructure",
-      "investment comparison",
-      "technology sector"
-    ],
-    "insights": [
-      {
-        "ticker": "VRT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Vertiv is highlighted as a potential AI stock to buy, positioned to benefit from surging datacenter demand driven by AI infrastructure expansion."
-      },
-      {
-        "ticker": "ANET",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Arista Networks is presented as a comparable investment opportunity in the AI space, with the article noting recent stock volatility but maintaining it as a viable option given strong datacenter demand trends."
       }
     ]
   }

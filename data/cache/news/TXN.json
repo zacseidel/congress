@@ -1,422 +1,294 @@
 [
   {
-    "id": "30f850e41070e4ba10d99f2b473a611d8270a0a0d53fb11437ae5b431dcc6443",
+    "id": "a3d4ebe77dee1b34d9d66647ae7e0401979b686c6e28f91749f89dad7ec3c950",
     "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
     },
-    "title": "The Best Dividend ETF to Buy With $1,000 Right Now -- Up 18% This Year",
-    "author": "David Dierking",
-    "published_utc": "2026-06-30T15:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/best-dividend-etf-to-buy-with-1000-right-now/?source=iedfolrf0000001",
+    "title": "Nvidia Is Finally Cheap: Here\u2019s How to Buy It and Get a 7.4% Dividend",
+    "author": "Michael Foster",
+    "published_utc": "2026-07-16T10:39:00Z",
+    "article_url": "https://www.investing.com/analysis/nvidia-is-finally-cheap-heres-how-to-buy-it-and-get-a-74-dividend-200684038",
     "tickers": [
-      "SCHD",
-      "VOO",
-      "QCOM",
-      "TXN"
+      "NVDA",
+      "MU",
+      "AVGO",
+      "ASML",
+      "TXN",
+      "SMH"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874067%2F95252467620f93cb6ca6da270d3babb8982e3f31_schwab.png&w=1200&op=resize",
-    "description": "The Schwab U.S. Dividend Equity ETF (SCHD) has rebounded strongly, gaining 16% year-to-date and outperforming the S&P 500. The fund focuses on quality dividend-paying companies and has increased dividends annually since inception. Recent market rotation back to value stocks and the Fed's hawkish stance support continued performance, though tech exposure was trimmed during rebalancing.",
+    "amp_url": "https://m.investing.com/analysis/nvidia-is-finally-cheap-heres-how-to-buy-it-and-get-a-74-dividend-200684038?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "The article argues that semiconductor stocks, particularly NVIDIA and Micron, have been unfairly sold off despite strong underlying demand and reasonable valuations. The author recommends the BlackRock Technology and Private Equity Term Trust (BTX), a closed-end fund yielding 7.4% that holds these undervalued semiconductor stocks and is trading at a 13.7% discount to NAV that is narrowing, presenting an attractive opportunity for dividend income and capital appreciation.",
     "keywords": [
-      "dividend ETF",
-      "SCHD",
-      "value stocks",
-      "dividend growth",
-      "market rotation",
-      "portfolio rebalancing",
-      "defensive stocks"
+      "semiconductors",
+      "AI demand",
+      "valuation",
+      "dividend yield",
+      "closed-end fund",
+      "profit-taking",
+      "tech stocks",
+      "NAV discount"
     ],
     "insights": [
       {
-        "ticker": "SCHD",
+        "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strong year-to-date performance of 16%, outperforming S&P 500, consistent dividend growth since inception, and positioned to benefit from value rotation and higher rate environment"
+        "sentiment_reasoning": "Trading at 32.3 P/E ratio, cheaper than S&P 500 average (32.6), with skyrocketing sales growth. Recent selloff is characterized as overblown despite strong AI demand fundamentals."
       },
       {
-        "ticker": "VOO",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Used as a performance comparison benchmark; underperforming SCHD year-to-date but no specific commentary on its outlook"
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Trading at 22.2 P/E ratio, significantly cheaper than broader market, with exceptional revenue growth. Positioned as undervalued despite recent semiconductor sector decline."
       },
       {
-        "ticker": "QCOM",
+        "ticker": "TSM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Reported 67.9% year-over-year sales increase with sold-out capacity on advanced nodes, demonstrating strong AI chip demand and market strength."
+      },
+      {
+        "ticker": "AVGO",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a top holding that rallied significantly, but position was trimmed during rebalancing; no forward-looking sentiment provided"
+        "sentiment_reasoning": "Trading at expensive 67x P/E ratio, indicating overvaluation relative to growth peers despite being a semiconductor industry player."
+      },
+      {
+        "ticker": "ASML",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Trading at elevated 59.9x P/E ratio, considered pricey compared to faster-growing semiconductor companies like NVIDIA and Micron."
       },
       {
         "ticker": "TXN",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a top holding that rallied significantly, but position was trimmed during rebalancing; no forward-looking sentiment provided"
+        "sentiment_reasoning": "Trading at 53.3x P/E ratio with 78.2% YTD returns, indicating expensive valuation despite strong performance, suggesting limited upside."
+      },
+      {
+        "ticker": "SMH",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Passive index tracking forces holding of both overvalued and undervalued semiconductor stocks, offers only 0.2% dividend yield, and lacks active management to optimize portfolio."
       }
     ]
   },
   {
-    "id": "0e8c2f879963a259766c105ef4a257394459f8cc411694bfc8cc496b761ed117",
+    "id": "c9c1145e1d46cc1e4cd3d3694d4fb7150f6f14eee5c28c7e34c223478c3c9500",
     "publisher": {
       "name": "GlobeNewswire Inc.",
       "homepage_url": "https://www.globenewswire.com",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
     },
-    "title": "Application Specific Integrated Circuit Market Size to Grow $38.47 Billion by 2035 | SNS Insider",
+    "title": "Automotive Microcontrollers Market Size to Worth USD 34.31 Billion by 2035 | SNS Insider",
     "author": "Sns Insider",
-    "published_utc": "2026-06-24T07:30:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/24/3316606/0/en/Application-Specific-Integrated-Circuit-Market-Size-to-Grow-38-47-Billion-by-2035-SNS-Insider.html",
+    "published_utc": "2026-07-16T07:30:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/16/3328249/0/en/Automotive-Microcontrollers-Market-Size-to-Worth-USD-34-31-Billion-by-2035-SNS-Insider.html",
     "tickers": [
-      "AVGO",
-      "INTC",
-      "QCOM",
-      "TSM",
-      "TXN",
-      "STM",
       "IFNNY",
-      "MRVL",
-      "AMD",
-      "LSCC",
+      "NXPI",
+      "STM",
+      "TXN",
       "MCHP",
-      "MCHPP",
-      "ON",
-      "AAPL",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "AMZN",
-      "MSFT",
-      "META"
+      "MCHPP"
     ],
     "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
-    "description": "The global Application-Specific Integrated Circuit (ASIC) market is projected to grow from $20.95 billion in 2025 to $38.47 billion by 2035 at a 6.30% CAGR, driven by surging AI accelerator demand from hyperscalers and rising custom silicon adoption in automotive and industrial sectors. Full custom ASICs are the fastest-growing segment, while consumer electronics and industrial applications lead market demand.",
+    "description": "The global automotive microcontrollers market, valued at $15.49 billion in 2025, is expected to grow to $34.31 billion by 2035 at a CAGR of 8.28%. Growth is driven by ADAS adoption, vehicle electrification, and software-defined vehicle architectures. Asia Pacific leads with 46% market share, while North America is expected to register the highest growth rate.",
     "keywords": [
-      "ASIC market",
-      "AI accelerators",
-      "custom silicon",
-      "hyperscalers",
-      "semiconductor",
-      "full custom ASIC",
-      "semi-custom ASIC",
-      "consumer electronics",
-      "industrial IoT",
-      "foundry"
+      "automotive microcontrollers",
+      "ADAS",
+      "vehicle electrification",
+      "software-defined vehicles",
+      "32-bit microcontrollers",
+      "electric vehicles",
+      "semiconductor manufacturing"
     ],
     "insights": [
       {
-        "ticker": "AVGO",
+        "ticker": "IFNNY",
         "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a leading ASIC market player with growing demand for custom silicon in AI and industrial applications"
+        "sentiment_reasoning": "Acquiring Marvell Technology's automotive Ethernet business for $2.5 billion strengthens its portfolio for software-defined vehicle networking and positions it well in the growing automotive semiconductor market."
       },
       {
-        "ticker": "INTC",
+        "ticker": "NXPI",
         "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as key player developing ASIC accelerators for emerging applications like homomorphic encryption in secure computing"
+        "sentiment_reasoning": "Introduced advanced S32K5 automotive microcontroller family with industry-first 16nm FinFET MCU and embedded magnetic RAM, demonstrating innovation leadership in software-defined vehicle architectures."
       },
       {
-        "ticker": "QCOM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Leading player in consumer electronics ASICs with strong demand from smartphone and smart home device markets"
+        "ticker": "STM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a leading market player but no specific recent developments or strategic initiatives mentioned in the article."
       },
       {
-        "ticker": "TSM",
+        "ticker": "TXN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a leading market player but no specific recent developments or strategic initiatives mentioned in the article."
+      },
+      {
+        "ticker": "MCHP",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a leading market player but no specific recent developments or strategic initiatives mentioned in the article."
+      },
+      {
+        "ticker": "MCHPP",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a leading market player but no specific recent developments or strategic initiatives mentioned in the article."
+      }
+    ]
+  },
+  {
+    "id": "18d471f1c31dabcf740945f898d6a70d6467e74630257f5e6ca4677b4817b580",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Logic Analyzer Market Size to Worth USD 3.73 Billion by 2035 | Research by SNS Insider",
+    "author": "Sns Insider",
+    "published_utc": "2026-07-13T11:30:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/13/3326100/0/en/Logic-Analyzer-Market-Size-to-Worth-USD-3-73-Billion-by-2035-Research-by-SNS-Insider.html",
+    "tickers": [
+      "KEYS",
+      "ADI",
+      "TXN"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
+    "description": "The global logic analyzer market is projected to grow at a CAGR of 4.97% from 2026 to 2035, driven by rising semiconductor design complexity, automotive multi-protocol validation, cloud-based solutions, and 5G protocol validation. Digital logic analyzers currently dominate with 52% market share, while mixed signal analyzers are expected to see the highest growth. North America leads the market, with Asia-Pacific emerging as the fastest-growing region.",
+    "keywords": [
+      "logic analyzer market",
+      "semiconductor design",
+      "5G protocol validation",
+      "automotive electronics",
+      "cloud-based instruments",
+      "mixed signal analyzers",
+      "digital logic analyzers",
+      "market growth forecast"
+    ],
+    "insights": [
+      {
+        "ticker": "KEYS",
         "sentiment": "positive",
-        "sentiment_reasoning": "Dominates ASIC manufacturing with 90% of latest generation ASICs, benefiting from hyperscaler custom silicon demand"
+        "sentiment_reasoning": "Identified as a leading market player and dominant company in North America. Recently launched enhanced 34-channel Logic Analyzer Series with advanced protocol decode libraries, demonstrating innovation and market leadership."
+      },
+      {
+        "ticker": "ADI",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed among leading market players but no specific developments or market positioning details mentioned in the article."
+      },
+      {
+        "ticker": "TXN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Included in the list of leading market players but lacks specific information about market performance or recent product launches."
+      }
+    ]
+  },
+  {
+    "id": "9f23c5cf47f44ffb35b2359e3427333d87cc661b27c3a225a89e602d725b65cc",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Advanced Micro Devices vs. Texas Instruments: Which Technology Stock Is a Better Buy in 2026?",
+    "author": "Pamela Kock",
+    "published_utc": "2026-07-11T03:16:12Z",
+    "article_url": "https://www.fool.com/coverage/better-buy/2026/07/10/advanced-micro-devices-vs-texas-instruments-which-technology-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
+    "tickers": [
+      "AMD",
+      "TXN",
+      "NVDA",
+      "INTC",
+      "TSM"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F232304ef0caa6d6d9809b270afde92b613c990f1-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "AMD and Texas Instruments represent two different semiconductor investment approaches. AMD offers higher growth potential through AI and data center expansion but trades at a rich valuation with concentrated customer risk. Texas Instruments provides steadier returns with diversified customers, lower valuation, and dividend income, but faces cyclical industrial/automotive exposure. The author recommends a diversified tech ETF over either individual stock.",
+    "keywords": [
+      "semiconductors",
+      "artificial intelligence",
+      "data center",
+      "valuation comparison",
+      "growth vs. stability",
+      "customer concentration",
+      "dividend yield"
+    ],
+    "insights": [
+      {
+        "ticker": "AMD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong 34.3% revenue growth in FY2025, expanding AI accelerator business, solid balance sheet with low debt (0.1x), and good free cash flow ($6.7B). However, positive sentiment is tempered by high valuation (P/E 179.43) and customer concentration risk."
       },
       {
         "ticker": "TXN",
         "sentiment": "positive",
-        "sentiment_reasoning": "Key player in industrial and automotive ASIC segments, which are among the fastest-growing application areas"
+        "sentiment_reasoning": "Attractive valuation (P/E 52.78), excellent net margin (28.3%), diversified customer base (100,000+ customers), dividend yield (1.82%), and strong current ratio (4.4x). Lower growth rate (13%) compared to AMD but more stable and conservative."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a fierce competitor to AMD in AI accelerators and processors, but no detailed analysis provided in the article."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor to AMD in processor markets, but no detailed analysis provided."
+      },
+      {
+        "ticker": "TSM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as AMD's third-party foundry partner, representing supply chain risk, but not analyzed in detail."
+      }
+    ]
+  },
+  {
+    "id": "f6f6faf5852547b7fcdb92d8d390f65204399c59c10fe696bb7b6d7cd2919393",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "TPMS Tire Pressure Sensor Chip Market Forecast: Navigating Growth Trends and Regulatory Demands",
+    "author": "Researchandmarkets.Com",
+    "published_utc": "2026-07-08T08:31:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/08/3323871/28124/en/TPMS-Tire-Pressure-Sensor-Chip-Market-Forecast-Navigating-Growth-Trends-and-Regulatory-Demands.html",
+    "tickers": [
+      "ADI",
+      "NXPI",
+      "STM",
+      "TXN"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/f2828000-0320-4375-9558-f2b0021bde7e",
+    "description": "The global TPMS tire pressure sensor chip market is expected to grow from USD 2.68 billion in 2025 to USD 5.08 billion by 2032, driven by regulatory mandates, electric vehicle adoption, and advanced connectivity requirements. The market will expand at a CAGR of 9.55%, with key opportunities in supply chain resilience, regional compliance, and cybersecurity integration across vehicle classes.",
+    "keywords": [
+      "TPMS",
+      "tire pressure sensor",
+      "automotive semiconductors",
+      "regulatory compliance",
+      "electric vehicles",
+      "supply chain resilience",
+      "cybersecurity",
+      "market forecast"
+    ],
+    "insights": [
+      {
+        "ticker": "ADI",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a key company in the growing TPMS chip market with strong projected growth at 9.55% CAGR through 2032, benefiting from regulatory mandates and EV electrification trends."
+      },
+      {
+        "ticker": "NXPI",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Featured as a major company in the TPMS market, positioned to capitalize on growing demand for cyber-resilient sensors and connected vehicle platforms."
       },
       {
         "ticker": "STM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Leading ASIC manufacturer with exposure to automotive and industrial segments driving above-baseline growth"
-      },
-      {
-        "ticker": "IFNNY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major player in automotive and industrial ASICs, benefiting from Industry 4.0 and EV powertrain control demand"
-      },
-      {
-        "ticker": "MRVL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as leading ASIC player with exposure to data center and AI accelerator markets"
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Programmable ASIC player benefiting from AI and high-performance computing demand"
-      },
-      {
-        "ticker": "LSCC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Programmable ASIC provider with exposure to growing industrial and automotive markets"
-      },
-      {
-        "ticker": "MCHP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ASIC player with presence in industrial and automotive segments driving market growth"
-      },
-      {
-        "ticker": "MCHPP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ASIC player with presence in industrial and automotive segments driving market growth"
-      },
-      {
-        "ticker": "ON",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Key player in automotive and industrial ASICs, benefiting from EV and Industry 4.0 trends"
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Highlighted as major custom ASIC investor with M4 Ultra chip demonstrating advanced full-custom ASIC design capabilities"
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Hyperscaler driving strong custom silicon investment with proprietary AI ASICs (TPU) at sub-3nm nodes"
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Hyperscaler driving strong custom silicon investment with proprietary AI ASICs (TPU) at sub-3nm nodes"
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Hyperscaler driving strong custom silicon investment with proprietary AI ASICs (TPU) at sub-3nm nodes"
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Hyperscaler driving strong custom silicon investment with proprietary AI ASICs (TPU) at sub-3nm nodes"
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Hyperscaler investing heavily in custom AI ASICs (Trainium and Inferentia) for cloud infrastructure"
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Hyperscaler developing custom AI ASICs (Maia) driving demand for application-specific semiconductors"
-      },
-      {
-        "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Hyperscaler investing in custom AI ASICs, contributing to surging demand for proprietary silicon"
-      }
-    ]
-  },
-  {
-    "id": "496638d13cc75d1d8985e355192beacacf7a0dbc64f7c7b7d72a6c7663d5fd71",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Wall Street Tuesday: Dow Green, Nasdaq Bleeding, SpaceX Wild",
-    "author": "Anders Bylund",
-    "published_utc": "2026-06-23T18:13:57Z",
-    "article_url": "https://www.fool.com/investing/2026/06/23/on-tuesday-dow-green-nasdaq-bleeds-spacex-wild/?source=iedfolrf0000001",
-    "tickers": [
-      "MU",
-      "ARM",
-      "MRVL",
-      "TXN",
-      "IBM"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875899%2Fburning-semiconductor-cpu.jpg&w=1200&op=resize",
-    "description": "The Nasdaq fell sharply on Tuesday due to a semiconductor sector selloff triggered by South Korean regulators warning about leveraged ETFs. Micron Technology plummeted 11%, while ARM Holdings, Marvell Technology, and Texas Instruments dropped roughly 9%. SpaceX reversed early losses to gain 8% after announcing its new Starfall cargo delivery service. IBM gained 4.8% on analyst upgrades and an OpenAI partnership. The Dow Jones rose for the third consecutive day relative to other major indexes.",
-    "keywords": [
-      "semiconductor selloff",
-      "leveraged ETFs",
-      "South Korea",
-      "memory chips",
-      "SpaceX Starfall",
-      "cargo delivery",
-      "IBM partnership",
-      "OpenAI",
-      "market volatility"
-    ],
-    "insights": [
-      {
-        "ticker": "MU",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock fell 11.2% due to broader semiconductor sector panic triggered by South Korean regulators warning about leveraged ETFs tracking rival memory-chip makers. Decline occurred on no company-specific news."
-      },
-      {
-        "ticker": "ARM",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Fell approximately 9% as part of the semiconductor sector selloff following South Korean regulatory warnings about leveraged ETFs."
-      },
-      {
-        "ticker": "MRVL",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Declined roughly 9% alongside other semiconductor industry giants affected by the memory-chip sector panic originating from South Korea."
-      },
-      {
-        "ticker": "TXN",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Dropped approximately 9% as part of the broader semiconductor sector downturn triggered by South Korean regulatory concerns."
-      },
-      {
-        "ticker": "IBM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Gained 4.8% on multiple positive catalysts: bullish analyst reviews from JPMorgan and Morgan Stanley on data center prospects, plus a multi-year partnership with OpenAI to integrate AI models in cybersecurity tools."
-      }
-    ]
-  },
-  {
-    "id": "1bcc87cbb1fd9f8def9da132d6e490e505555cf53f85e740d5ae5ab211645fd2",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "2 Top-Tier Dividend ETFs that Complement Each Other Well to Invest in Right Now",
-    "author": "Stefon Walters",
-    "published_utc": "2026-06-21T14:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/21/2-top-dividend-etfs-that-complement-each-other/?source=iedfolrf0000001",
-    "tickers": [
-      "SCHD",
-      "VIG",
-      "AAPL",
-      "MSFT",
-      "AVGO",
-      "TXN",
-      "QCOM",
-      "UNH"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875044%2Fgettyimages-1324119709-1.jpg&w=1200&op=resize",
-    "description": "The Schwab U.S. Dividend Equity ETF (SCHD) and Vanguard Dividend Appreciation ETF (VIG) are complementary dividend ETFs that together offer both high income and growth potential. SCHD focuses on high-quality dividend-paying companies and offers higher yields, while VIG emphasizes dividend growth and has greater exposure to tech stocks like Apple and Microsoft, providing better stock price appreciation.",
-    "keywords": [
-      "dividend ETFs",
-      "SCHD",
-      "VIG",
-      "dividend yield",
-      "dividend growth",
-      "portfolio diversification",
-      "tech stocks"
-    ],
-    "insights": [
-      {
-        "ticker": "SCHD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Highlighted for consistently offering higher dividend yields, impressive 143% dividend increase over a decade, and strict quality screening criteria for company selection."
-      },
-      {
-        "ticker": "VIG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Praised for strong stock price appreciation due to tech concentration, with top holdings (Apple, Microsoft, Broadcom) showing impressive growth records and dividend consistency."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a top holding in VIG with noted impressive growth over the years."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a top holding in VIG with noted impressive growth over the years."
-      },
-      {
-        "ticker": "AVGO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a top holding in VIG with noted impressive growth over the years."
-      },
-      {
-        "ticker": "TXN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a top holding in SCHD but noted to have grown at a less consistent rate compared to major tech stocks."
-      },
-      {
-        "ticker": "QCOM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a top holding in SCHD but noted to have grown at a less consistent rate compared to major tech stocks."
-      },
-      {
-        "ticker": "UNH",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a top holding in SCHD but noted to have grown at a less consistent rate compared to major tech stocks."
-      }
-    ]
-  },
-  {
-    "id": "88792b4deef3a443e27067eaf56e4e281c724f38b641316e44355fe2e2366121",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "Nvidia And Other 6 Chip Stocks Set For A 'Secular Upside,' Analyst Says",
-    "author": "Piero Cingari",
-    "published_utc": "2026-06-08T16:25:11Z",
-    "article_url": "https://www.benzinga.com/news/26/06/53065410/bofa-nvidia-chip-stocks-secular-upside-ai-scarcity?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "NVDA",
-      "MCHP",
-      "MCHPP",
-      "TXN",
-      "CRDO",
-      "ADI",
-      "KLAC",
-      "CDNS"
-    ],
-    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/06/08/The-modern-Nvidia-logo-and-company-name-.jpeg",
-    "description": "Bank of America analyst Vivek Arya identifies seven semiconductor stocks positioned for sustained outperformance in the AI era, driven by surging demand for AI chips and data center infrastructure. With AI data center equipment market projected to reach $1.7 trillion by 2030 (up from $264 billion in 2025), the key constraint is supply scarcity rather than demand. All seven stocks are rated Buy, with Nvidia offering the most upside at 71% to BofA's $350 price target.",
-    "keywords": [
-      "artificial intelligence",
-      "semiconductor stocks",
-      "data center spending",
-      "chip demand",
-      "secular growth",
-      "AI chips",
-      "hyperscaler investment"
-    ],
-    "insights": [
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "BofA rates Buy with $350 price target implying 71% upside; identified as top sector pick with strongest growth potential among the seven stocks"
-      },
-      {
-        "ticker": "MCHP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Rated Buy by BofA with approximately 38% upside potential; positioned to benefit from semiconductor scarcity and AI infrastructure buildout"
-      },
-      {
-        "ticker": "MCHPP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Rated Buy by BofA with approximately 38% upside potential; positioned to benefit from semiconductor scarcity and AI infrastructure buildout"
+        "sentiment_reasoning": "Key semiconductor manufacturer in TPMS chip market positioned to benefit from market expansion and technological advancements in microcontroller and RF technologies."
       },
       {
         "ticker": "TXN",
         "sentiment": "positive",
-        "sentiment_reasoning": "Rated Buy by BofA with approximately 30% upside potential; included in analyst's secular upside thesis for chip stocks"
-      },
-      {
-        "ticker": "CRDO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Rated Buy by BofA with approximately 22% upside potential; positioned to capture AI data center demand growth"
-      },
-      {
-        "ticker": "ADI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Rated Buy by BofA with approximately 15% upside potential; included in semiconductor scarcity play thesis"
-      },
-      {
-        "ticker": "KLAC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Rated Buy by BofA with approximately 9% upside potential; benefits from increased semiconductor manufacturing capacity needs"
-      },
-      {
-        "ticker": "CDNS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Rated Buy by BofA with approximately 6% upside potential; positioned to benefit from AI chip design and semiconductor growth"
+        "sentiment_reasoning": "Listed as a major player in TPMS chip market with opportunities in microcontroller solutions supporting the market's projected growth through 2032."
       }
     ]
   }

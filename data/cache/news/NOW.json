@@ -1,262 +1,231 @@
 [
   {
-    "id": "c7f47f74b460cd3a6fcc885af46235f234944c644c0d5d070c9a27b25a979009",
+    "id": "89d60f148990d757cf6653c7f3e1886b6c669ee11fe06fb7dc37009454ce1b1c",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Is ServiceNow Stock a Buy After Its Brutal First Half?",
+    "title": "ServiceNow Is Down 51% as Wall Street Bets AI Will Gut Its Business. July 22 Will Show Who's Right.",
     "author": "Daniel Sparks",
-    "published_utc": "2026-07-02T00:03:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/01/is-servicenow-stock-a-buy-after-its-brutal-first-h/?source=iedfolrf0000001",
+    "published_utc": "2026-07-20T19:26:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/20/servicenow-is-down-51-as-wall-street-bets-ai-will/?source=iedfolrf0000001",
+    "tickers": [
+      "NOW",
+      "CRM"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879816%2Fnow.png&w=1200&op=resize",
+    "description": "ServiceNow stock has plummeted 51% from its 52-week high amid fears that AI will disrupt its enterprise software business. However, Q1 results show strong subscription revenue growth of 22% YoY and robust contract metrics, contradicting the disruption thesis. The company's July 22 earnings report will be a critical test of whether the market's pessimism is justified or represents an overreaction.",
+    "keywords": [
+      "ServiceNow",
+      "AI disruption",
+      "enterprise software",
+      "subscription revenue",
+      "earnings report",
+      "valuation",
+      "growth stocks"
+    ],
+    "insights": [
+      {
+        "ticker": "NOW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Despite the 51% stock decline, Q1 results show strong fundamentals: 22% YoY subscription revenue growth beating guidance, 22.5% cRPO growth, 80% increase in large deals, and 130% YoY growth in AI product customers. The author argues the market's fear is running ahead of facts, and the stock appears undervalued at 24x forward earnings for a 20%+ grower with 44% free cash flow margin."
+      },
+      {
+        "ticker": "CRM",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Mentioned as another software stock dragged down by AI-disruption concerns, trading 40% below its 52-week high. The article uses it as a comparable example of how broad AI anxiety has affected enterprise software valuations."
+      }
+    ]
+  },
+  {
+    "id": "5e4d1315d5ff7f748a0d0a4e56bdda5c5e6223b93d1d6e6de49c93a6c359e58f",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "ServiceNow Could Be a Great Long-Term Buy. Here's the Bull Case.",
+    "author": "Rick Orford",
+    "published_utc": "2026-07-20T16:11:29Z",
+    "article_url": "https://www.fool.com/investing/2026/07/20/servicenow-could-be-a-great-long-term-buy-heres-th/?source=iedfolrf0000001",
     "tickers": [
       "NOW"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877125%2Fservicenow-stock-now.jpg&w=1200&op=resize",
-    "description": "ServiceNow shares fell 50% from their 52-week high due to AI disruption fears in the software sector, but the company's strong Q1 2026 results and successful AI monetization through Now Assist suggest the concerns may be overblown. With subscription revenue growing 22% year-over-year and Now Assist tracking toward $1.5 billion in annual contract value, the stock has rebounded 30% off its lows. However, at a forward P/E of 24 and P/S of 7, the stock remains fairly valued rather than cheap, making a small position reasonable for risk-tolerant investors but not an easy buy.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879813%2F1047-now.png&w=1200&op=resize",
+    "description": "ServiceNow is positioning itself as an enterprise productivity engine by turning AI from buzzword into practical execution through its workflow platform that connects systems, approvals, and data across large organizations. While the upside case is compelling due to the sticky nature of its automation solutions, valuation risk remains a consideration for investors.",
     "keywords": [
-      "AI disruption",
-      "software stocks",
-      "enterprise workflow",
+      "ServiceNow",
+      "AI",
+      "enterprise automation",
+      "workflow platform",
+      "long-term investment",
+      "valuation risk"
+    ],
+    "insights": [
+      {
+        "ticker": "NOW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The article presents a bullish case for ServiceNow, highlighting its AI-driven workflow platform as a competitive advantage that creates sticky customer relationships through enterprise automation. The company is praised for executing on AI rather than just using it as marketing hype, though the author acknowledges valuation risk as a caveat."
+      }
+    ]
+  },
+  {
+    "id": "563b470f6b145091689590173bbac0048c1a9cb930e1371a5a1cc9aa77f47102",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "UiPath Vs. ServiceNow: Which Agentic AI Stock Is the Better Buy?",
+    "author": "Marc Guberti",
+    "published_utc": "2026-07-17T21:24:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/17/uipath-vs-servicenow-which-agentic-ai-stock-is-the/?source=iedfolrf0000001",
+    "tickers": [
+      "NOW",
+      "PATH"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879230%2Fgettyimages-2226339419-1201x743-b29a47e.jpg&w=1200&op=resize",
+    "description": "ServiceNow and UiPath are both positioned to capitalize on the growing agentic AI market, which is forecasted to grow at 46.2% CAGR through 2030. ServiceNow has faster revenue growth (22% YoY) and higher-paying customers, while UiPath recently achieved profitability and has better margin expansion potential. Both trade at similar P/E ratios, but UiPath offers better value for investors focused on margin improvement.",
+    "keywords": [
+      "agentic AI",
+      "enterprise automation",
+      "recurring revenue growth",
+      "profitability",
+      "margin expansion",
+      "valuation"
+    ],
+    "insights": [
+      {
+        "ticker": "NOW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "ServiceNow demonstrates stronger revenue growth (22% YoY subscription growth), larger customer base with higher spending capacity (630 customers spending $5M+ annually), and established profitability with double-digit net margins. However, recent net income growth has been disappointing."
+      },
+      {
+        "ticker": "PATH",
+        "sentiment": "positive",
+        "sentiment_reasoning": "UiPath recently achieved GAAP profitability for the first time in Q1, positioning it well for margin expansion. With a higher gross margin (82.71% vs ServiceNow's 76.56%) and lower current net margins, the company has significant upside potential to improve valuation and P/E ratio attractiveness."
+      }
+    ]
+  },
+  {
+    "id": "615145d6692d8671ed475acf1479387c72bddc7bd2b9e1be7109ef63c1d77c50",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Why ServiceNow Stock Plunged 36% in the First Half of the Year",
+    "author": "Jennifer Saibil",
+    "published_utc": "2026-07-09T11:13:05Z",
+    "article_url": "https://www.fool.com/investing/2026/07/09/why-servicenow-stock-plunged-36-in-the-first-half/?source=iedfolrf0000001",
+    "tickers": [
+      "NOW"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877531%2Fpeople-working-at-a-desk-with-many-screens.jpg&w=1200&op=resize",
+    "description": "ServiceNow stock dropped 36% in the first half of 2026 due to market concerns about agentic AI's impact on SaaS companies. However, ServiceNow has launched its Control Tower product to manage AI agents and continues reporting strong 22% year-over-year subscription revenue growth. While the stock trades at a 64 P/E ratio\u2014lower than historical levels\u2014it remains expensive but could serve as a defensive play in the evolving AI landscape.",
+    "keywords": [
+      "agentic AI",
+      "SaaS stocks",
+      "Control Tower",
+      "workflow automation",
+      "AI agents",
       "subscription revenue",
-      "Now Assist",
-      "generative AI",
       "valuation",
-      "market recovery"
+      "market concerns"
     ],
     "insights": [
       {
         "ticker": "NOW",
         "sentiment": "neutral",
-        "sentiment_reasoning": "While the company demonstrates strong fundamentals with 22% subscription revenue growth and successful AI monetization exceeding targets, the stock valuation remains elevated at 24x forward P/E and 7x P/S. The analyst recommends only a small position due to persistent AI uncertainty risks and lack of significant discount despite the 50% decline from highs."
+        "sentiment_reasoning": "Mixed signals: significant stock decline (36%) reflects market concerns about AI disruption to SaaS business models, but strong fundamentals (22% YoY subscription revenue growth, successful Control Tower product launch, no business disruption) and lower valuation multiples suggest the sell-off may be overdone. The company appears well-positioned to adapt to agentic AI trends."
       }
     ]
   },
   {
-    "id": "8de7a04421dd714ebf6cb9ab7da24a28e868d788e53ffded5b3f98f04d52c05c",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "These 3 Stocks Were Once Hot Buys. Now They're Down More Than 50% From Their Highs. Can They Bounce Back?",
-    "author": "David Jagielski, Cpa",
-    "published_utc": "2026-06-30T18:10:15Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/these-3-stocks-were-once-hot-buys-now-theyre-down/?source=iedfolrf0000001",
-    "tickers": [
-      "NOW",
-      "ORCL",
-      "ORCLpD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876698%2Fconcerned-investor-looking-at-a-stock-chart-on-a-computer.jpg&w=1200&op=resize",
-    "description": "Three previously popular tech stocks\u2014ServiceNow, MicroStrategy, and Oracle\u2014have experienced significant declines this year. ServiceNow (down 36%) faces AI disruption concerns but shows strong fundamentals; MicroStrategy (down 44%) is heavily dependent on Bitcoin volatility; Oracle (down 25%) struggles with rising debt loads and interest expenses despite strong cloud growth projections.",
-    "keywords": [
-      "stock decline",
-      "artificial intelligence",
-      "cryptocurrency",
-      "debt concerns",
-      "valuation",
-      "cloud computing",
-      "tech stocks"
-    ],
-    "insights": [
-      {
-        "ticker": "NOW",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Stock down 36% YTD and 50% from highs due to AI disruption fears, but strong revenue growth (22%), beat guidance, and raised outlook suggest fundamentals remain solid. Trading at reasonable 24x forward earnings multiple indicates potential buying opportunity despite risks."
-      },
-      {
-        "ticker": "ORCL",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Down 25% YTD and 60% from highs. Despite strong cloud growth projections (57%+), rising debt load ($43B raised last year, $40B projected this year) and $1.4B quarterly interest expense create investor concerns. Author recommends steering clear due to debt risks and potential interest rate increases."
-      },
-      {
-        "ticker": "ORCLpD",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Down 25% YTD and 60% from highs. Despite strong cloud growth projections (57%+), rising debt load ($43B raised last year, $40B projected this year) and $1.4B quarterly interest expense create investor concerns. Author recommends steering clear due to debt risks and potential interest rate increases."
-      }
-    ]
-  },
-  {
-    "id": "98e83b54dfa5b57539e98bdaa8d3aa2ca46b2e86541d08b0da5649e61508be4b",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Salesforce vs. ServiceNow: What Do Their Revenue Trends Tell Investors?",
-    "author": "Robert Izquierdo",
-    "published_utc": "2026-06-25T12:32:01Z",
-    "article_url": "https://www.fool.com/coverage/charts/2026/06/25/salesforce-vs-servicenow-what-do-their-revenue-trends-tell-investors/?source=iedfolrf0000001",
-    "tickers": [
-      "CRM",
-      "NOW",
-      "AMZN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Fcharts%2Fproduction%2Fprocessed%2Fcrm-now%2Fquarter%2Frevenue%2Fbar%2Fprimary%2Fstandard%2Flimit-8%2Flatest%2Fcrm-now_quarter_revenue_bar_primary_standard_limit8.png&w=1200&op=resize",
-    "description": "Salesforce and ServiceNow demonstrate strong revenue growth despite 2026 SaaS sector concerns about AI disruption. Salesforce maintains a larger revenue base with 13% year-over-year growth in Q1 2026, while ServiceNow shows faster growth at 22% year-over-year. Both companies' expanding revenues suggest AI is acting as a growth catalyst rather than a threat to their business models.",
-    "keywords": [
-      "SaaS",
-      "cloud-based software",
-      "revenue growth",
-      "artificial intelligence",
-      "enterprise software",
-      "customer spending"
-    ],
-    "insights": [
-      {
-        "ticker": "CRM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Salesforce reported record revenue and record deals in Q1 2026 with 13% year-over-year sales growth. The company maintains a significantly larger revenue base ($11.1 billion in Q2 2026) and demonstrates consistent quarter-over-quarter increases, indicating healthy business momentum despite sector-wide AI concerns."
-      },
-      {
-        "ticker": "NOW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ServiceNow exhibits faster growth than Salesforce with 22% year-over-year revenue increase in Q1 2026. The company crossed $1 billion in Amazon cloud infrastructure spending due to increased customer demand for AI systems, demonstrating strong market traction and AI-driven growth acceleration."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Amazon benefits from ServiceNow's increased cloud infrastructure spending, which crossed $1 billion as customer demand for AI systems grows, indicating strong enterprise cloud adoption and revenue opportunities for AWS."
-      }
-    ]
-  },
-  {
-    "id": "eeab143f492e114afe25369913fb639e91d60bac51f11a2f521b55c33d79e35d",
+    "id": "761e29e139be7e8f14073b88daceac9d750884e4cb48e3c8dd9245d4bf487b95",
     "publisher": {
       "name": "GlobeNewswire Inc.",
       "homepage_url": "https://www.globenewswire.com",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
     },
-    "title": "Cloud Discovery Market Size to Surpass $9.77 Billion by 2035 as Multi-Cloud Adoption and Shadow IT Challenges Drive Enterprise Demand | Report by SNS Insider",
+    "title": "Workflow Automation Market Size to Hit $64.88 Billion by 2035 | SNS Insider",
     "author": "Sns Insider",
-    "published_utc": "2026-06-25T08:44:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/25/3317319/0/en/Cloud-Discovery-Market-Size-to-Surpass-9-77-Billion-by-2035-as-Multi-Cloud-Adoption-and-Shadow-IT-Challenges-Drive-Enterprise-Demand-Report-by-SNS-Insider.html",
+    "published_utc": "2026-07-09T06:34:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/09/3324558/0/en/Workflow-Automation-Market-Size-to-Hit-64-88-Billion-by-2035-SNS-Insider.html",
     "tickers": [
-      "AMZN",
-      "MSFT",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "IBM",
-      "CSCO",
-      "NOW",
       "ORCL",
-      "ORCLpD"
+      "ORCLpD",
+      "IBM",
+      "APPN",
+      "PEGA",
+      "MSFT",
+      "NOW",
+      "PATH",
+      "CRM"
     ],
     "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
-    "description": "The global cloud discovery market is projected to grow from $1.92 billion in 2025 to $9.77 billion by 2035 at a CAGR of 17.24%. Growth is driven by multi-cloud complexity, shadow IT risks, and regulatory requirements. North America leads with 43% market share, while Asia-Pacific is the fastest-growing region. Public cloud and security/compliance applications dominate current segments.",
+    "description": "The global workflow automation market is projected to grow from $24.81 billion in 2025 to $64.88 billion by 2035 at a 10.09% CAGR. Cloud-based platforms and generative AI integration are driving expansion, with BFSI and healthcare as dominant sectors. Europe shows the strongest growth potential at 18.70% CAGR, while Asia Pacific follows at 12.11% CAGR.",
     "keywords": [
-      "cloud discovery",
-      "multi-cloud",
-      "shadow IT",
-      "cloud security",
-      "cloud governance",
-      "compliance",
-      "FinOps",
-      "cloud visibility"
+      "workflow automation",
+      "generative AI",
+      "cloud deployment",
+      "low-code platforms",
+      "BFSI",
+      "healthcare automation",
+      "digital transformation",
+      "business process automation"
     ],
     "insights": [
       {
-        "ticker": "AMZN",
+        "ticker": "ORCL",
         "sentiment": "positive",
-        "sentiment_reasoning": "AWS is listed as a key player and recently launched Amazon API Gateway with Developer Portal functionality for cloud governance and discoverability, demonstrating active innovation in the growing cloud discovery market."
+        "sentiment_reasoning": "Listed as a key market player with heavy investments in workflow automation technology development in North America, benefiting from market growth projections."
       },
       {
-        "ticker": "MSFT",
+        "ticker": "ORCLpD",
         "sentiment": "positive",
-        "sentiment_reasoning": "Microsoft is a major key player and expanded Azure Arc capabilities in 2024 with automated inventory and configuration assessment for Kubernetes, showing strong product development in cloud discovery solutions."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google is identified as a major cloud technology provider and key player in the expanding cloud discovery market, benefiting from growing enterprise cloud adoption."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google is identified as a major cloud technology provider and key player in the expanding cloud discovery market, benefiting from growing enterprise cloud adoption."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google is identified as a major cloud technology provider and key player in the expanding cloud discovery market, benefiting from growing enterprise cloud adoption."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google is identified as a major cloud technology provider and key player in the expanding cloud discovery market, benefiting from growing enterprise cloud adoption."
+        "sentiment_reasoning": "Listed as a key market player with heavy investments in workflow automation technology development in North America, benefiting from market growth projections."
       },
       {
         "ticker": "IBM",
         "sentiment": "positive",
-        "sentiment_reasoning": "IBM is listed as a major technology vendor and key player in the cloud discovery market, positioned to benefit from enterprise investments in cloud visibility and governance solutions."
+        "sentiment_reasoning": "Identified as a major investor and developer in workflow automation technologies, positioned to capitalize on the expanding market."
       },
       {
-        "ticker": "CSCO",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Cisco is mentioned as a key player in cloud discovery but no specific recent developments or market activities are highlighted in the article."
+        "ticker": "APPN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Named as a key company with significant investments in workflow automation platform development in North America."
+      },
+      {
+        "ticker": "PEGA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recognized for launching Pega Smart Dispute Enterprise Edition with generative AI capabilities, directly addressing high-growth BFSI sector needs."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed among key market players positioned to benefit from cloud-based workflow automation growth and generative AI integration trends."
       },
       {
         "ticker": "NOW",
         "sentiment": "positive",
-        "sentiment_reasoning": "ServiceNow is identified as a major technology vendor and key player in the cloud discovery market, positioned to benefit from enterprise cloud governance and compliance investments."
+        "sentiment_reasoning": "Identified as a key company in the expanding workflow automation market with cloud-based solutions."
       },
       {
-        "ticker": "ORCL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Oracle is listed as a key player in cloud discovery but no specific recent developments or market activities are highlighted in the article."
+        "ticker": "PATH",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Named as a leading player in the rapidly growing robotic process automation and workflow automation sector."
       },
-      {
-        "ticker": "ORCLpD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Oracle is listed as a key player in cloud discovery but no specific recent developments or market activities are highlighted in the article."
-      }
-    ]
-  },
-  {
-    "id": "7f7d1f2b81f3b2a47803bff70dc04b0a7b537074ff34e797ac759fae5074c983",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Salesforce or ServiceNow: Who Will Lead AI in Business?",
-    "author": "Rick Orford",
-    "published_utc": "2026-06-23T14:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/23/salesforce-or-servicenow-who-will-lead-ai-in-busin/?source=iedfolrf0000001",
-    "tickers": [
-      "CRM",
-      "NOW"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875794%2F919-crm-vs-now.png&w=1200&op=resize",
-    "description": "Salesforce and ServiceNow are competing enterprise software platforms positioning themselves as AI leaders. Salesforce embeds AI agents into its CRM through Agentforce, while ServiceNow automates IT and business processes. The article examines which company is better positioned to benefit as AI transitions from infrastructure to real enterprise productivity applications.",
-    "keywords": [
-      "AI",
-      "enterprise software",
-      "CRM",
-      "workflow automation",
-      "business processes",
-      "AI agents",
-      "productivity"
-    ],
-    "insights": [
       {
         "ticker": "CRM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Salesforce is highlighted as a key player embedding AI agents into its CRM platform via Agentforce, positioning it as a leader in AI-driven enterprise workflows."
-      },
-      {
-        "ticker": "NOW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ServiceNow is presented as a competitive AI leader automating IT and business processes, with the article suggesting it could be a significant AI winner in enterprise software."
+        "sentiment_reasoning": "Listed among key market players benefiting from cloud-based workflow automation and digital transformation trends."
       }
     ]
   }

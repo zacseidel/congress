@@ -1,318 +1,416 @@
 [
   {
-    "id": "22c55703b5e7b7a0522988f33a174d3b5925dd33716afbde73990dcd76031847",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "SBA Celebrates Success of Detroit Supplier Matchmaking Expo",
-    "author": "U.S. Small Business Administration",
-    "published_utc": "2026-06-18T13:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/18/3314204/0/en/SBA-Celebrates-Success-of-Detroit-Supplier-Matchmaking-Expo.html",
-    "tickers": [
-      "GM",
-      "F",
-      "FpB",
-      "FpC",
-      "FpD",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "HON",
-      "TM"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/5eb01cc6-51bc-456e-9992-5efbaee78885",
-    "description": "The SBA held its 2026 Detroit Supplier Matchmaking Expo on May 5, 2026, bringing together over 600 small business suppliers and three dozen large industrial buyers including the U.S. Army Corps of Engineers, NASA, Ford, Google, Honeywell, Toyota, and Siemens. The event resulted in 140 successful matches, with 48% of participants expecting over $250,000 in new business opportunities and 82% reporting satisfaction with the networking outcomes.",
-    "keywords": [
-      "supplier matchmaking",
-      "small business",
-      "domestic supply chains",
-      "Made in America",
-      "manufacturing",
-      "onshoring",
-      "procurement networking"
-    ],
-    "insights": [
-      {
-        "ticker": "GM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Co-hosted the Expo event, demonstrating commitment to sourcing from domestic small suppliers and supporting the Made in America agenda."
-      },
-      {
-        "ticker": "F",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Participated as a large industrial buyer at the Expo, actively seeking to connect with small domestic suppliers to expand production capacity."
-      },
-      {
-        "ticker": "FpB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Participated as a large industrial buyer at the Expo, actively seeking to connect with small domestic suppliers to expand production capacity."
-      },
-      {
-        "ticker": "FpC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Participated as a large industrial buyer at the Expo, actively seeking to connect with small domestic suppliers to expand production capacity."
-      },
-      {
-        "ticker": "FpD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Participated as a large industrial buyer at the Expo, actively seeking to connect with small domestic suppliers to expand production capacity."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a participating buyer but no specific details provided about their engagement or outcomes at the event."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a participating buyer but no specific details provided about their engagement or outcomes at the event."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a participating buyer but no specific details provided about their engagement or outcomes at the event."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a participating buyer but no specific details provided about their engagement or outcomes at the event."
-      },
-      {
-        "ticker": "HON",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a participating buyer but no specific details provided about their engagement or outcomes at the event."
-      },
-      {
-        "ticker": "TM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a participating buyer but no specific details provided about their engagement or outcomes at the event."
-      }
-    ]
-  },
-  {
-    "id": "ef4aef29ed634a9e71a6af1c2a3ba62e4bd65a4d199fe9141f3f355f15a89e6a",
+    "id": "75f41e252e51b403a45dccc8368e2e731619de37b6af81e1b464e89c903d62f5",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "A Little Good News for Ford Motor Company",
-    "author": "Daniel Miller",
-    "published_utc": "2026-06-17T17:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/17/a-little-good-news-for-ford-motor-company/?source=iedfolrf0000001",
+    "title": "Stock Market Today, July 21: Micron Surges 12% as Semiconductor Strength Lifts Nasdaq",
+    "author": "Emma Newbery",
+    "published_utc": "2026-07-21T21:03:44Z",
+    "article_url": "https://www.fool.com/coverage/stock-market-today/2026/07/21/stock-market-today-july-21-micron-surges-12-as-semiconductor-strength-lifts-nasdaq/?source=iedfolrf0000001",
     "tickers": [
+      "MU",
+      "SNDK",
+      "AMD",
+      "MSFT",
+      "GM",
+      "AVAV",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "TSLA"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fe3bcbb36c955ac33b4d67641805fcca8e9fca941-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Major stock indices gained on July 21, 2026, with the Nasdaq rising 1.29%, S&P 500 up 0.89%, and Dow Jones adding 0.74%. Semiconductor stocks led the rally, with Micron surging 12% and SanDisk soaring 14%. AMD gained 8% following its AI deal with Microsoft, while General Motors and AeroVironment also posted gains. The rally occurred despite geopolitical tensions and tariff concerns, with strong AI demand from South Korea supporting chip stocks.",
+    "keywords": [
+      "semiconductor stocks",
+      "Nasdaq rally",
+      "AI demand",
+      "memory chips",
+      "geopolitical tensions",
+      "tariff uncertainty"
+    ],
+    "insights": [
+      {
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock surged 12% as part of a memory-chip led technology rally, demonstrating strong investor confidence in semiconductor sector"
+      },
+      {
+        "ticker": "SNDK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Shares soared 14% in the memory-led technology rally, showing strong performance in the semiconductor sector"
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock gained 8%, extending previous day's gains following an AI deal with Microsoft, indicating positive market sentiment"
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "AI deal with AMD demonstrates continued heavy investment in artificial intelligence, supporting long-term growth prospects"
+      },
+      {
+        "ticker": "GM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Shares lifted on strong quarterly results, indicating solid financial performance"
+      },
+      {
+        "ticker": "AVAV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock pushed upwards on news of a new U.S. Army contract, providing revenue growth catalyst"
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Upcoming earnings results expected to provide insight into AI spending correlation with earnings; no current performance data provided"
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Upcoming earnings results expected to provide insight into AI spending correlation with earnings; no current performance data provided"
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Upcoming earnings results expected to provide insight into AI spending correlation with earnings; no current performance data provided"
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Upcoming earnings results expected to provide insight into AI spending correlation with earnings; no current performance data provided"
+      },
+      {
+        "ticker": "TSLA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Upcoming earnings results expected to provide insight into AI spending correlation with earnings; no current performance data provided"
+      }
+    ]
+  },
+  {
+    "id": "e2db79643895061d0595d64a253bf24f534922037f3f3ce445d1b1f69c40b491",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "SpaceX Stock Is Down 40% From Its Post-IPO Peak. Here's What History Says Happens to Mega-IPOs After a Drop Like This.",
+    "author": "Jennifer Saibil",
+    "published_utc": "2026-07-21T20:29:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/21/spacex-stock-is-down-40-from-its-post-ipo-peak-her/?source=iedfolrf0000001",
+    "tickers": [
+      "SPCX",
+      "V",
+      "META",
+      "GM",
+      "RIVN"
+    ],
+    "image_url": "https://www.fool.com/investing/2026/07/21/spacex-stock-is-down-40-from-its-post-ipo-peak-her/?source=iedfolrf0000001",
+    "description": "SpaceX stock has fallen 40% from its post-IPO peak and trades below its $135 IPO price. Historical analysis of mega-IPOs like Visa, Meta, General Motors, and Rivian shows mixed results, with most experiencing early declines before recovering over time. However, few mega-IPOs have delivered exceptional returns, suggesting investors may find better opportunities in lower-profile IPOs with strong fundamentals.",
+    "keywords": [
+      "mega-IPO",
+      "SpaceX",
+      "IPO performance",
+      "stock decline",
+      "investment history",
+      "market recovery"
+    ],
+    "insights": [
+      {
+        "ticker": "SPCX",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock is down 40% from post-IPO peak and trading below both its $135 IPO price and $150 opening price, indicating poor near-term performance despite being the largest IPO ever."
+      },
+      {
+        "ticker": "V",
+        "sentiment": "positive",
+        "sentiment_reasoning": "One of the few mega-IPOs that became a megacap company (16th most valuable in U.S.), with IPO value of $18 billion growing to $676 billion, demonstrating exceptional long-term value creation."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Mega-IPO that became a megacap company (7th most valuable in U.S.), with IPO value of $16 billion growing to $1.6 trillion, showing strong long-term performance despite initial 18% decline after one month."
+      },
+      {
+        "ticker": "GM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Large historical IPO with mixed results; IPO value of $23 billion grew modestly to $69 billion, with flat performance after one month but significant 36% decline after one year."
+      },
+      {
+        "ticker": "RIVN",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Large IPO that underperformed significantly with 70% decline after one year, illustrating the risks of mega-IPOs despite initial 15% gain after one month."
+      }
+    ]
+  },
+  {
+    "id": "a81878b4f089bb54b73c8a8566deee7376c9132952c97078958ddb94320ff95d",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "This Detroit Auto Stock Has Soared, but There's Still One Nagging Problem: China",
+    "author": "Daniel Miller",
+    "published_utc": "2026-07-17T09:10:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/17/this-detroit-auto-stock-has-soared-but-theres-stil/?source=iedfolrf0000001",
+    "tickers": [
+      "GM",
       "F",
       "FpB",
       "FpC",
       "FpD",
-      "GM",
       "STLA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874759%2F2023-f-150-raptor-r_media-drive_11.jpg&w=1200&op=resize",
-    "description": "Ford Motor Company is receiving positive news as aluminum supplier Novelis has restarted production at its New York facility after two factory fires disrupted supply chains. The fires cost Ford up to $2 billion in lost sales and inventory of its critical F-Series trucks. Ford expects to recover roughly half of the losses by the end of 2026 as production normalizes, with F-Series inventory down 16% year-over-year but poised for recovery during the popular selling season.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879052%2F0703-buick-electra-e7_china.jpg&w=1200&op=resize",
+    "description": "General Motors has significantly outperformed rivals Ford and Stellantis due to strong cash flow and buybacks, but faces a major challenge in China where operations have deteriorated from a profit engine to a financial liability. GM has taken $5+ billion in charges and restructuring costs since 2024, with sales declining 20% in Q2 2026. The company is attempting a turnaround with new EV strategies and export hub development, with a critical joint venture contract expiring in 2027.",
     "keywords": [
-      "aluminum supply disruption",
-      "F-Series trucks",
-      "factory fires",
-      "inventory recovery",
-      "2026 earnings forecast",
-      "automotive supply chain"
+      "General Motors",
+      "China operations",
+      "automotive sales decline",
+      "joint venture restructuring",
+      "electric vehicles",
+      "financial charges",
+      "market turnaround"
     ],
     "insights": [
       {
+        "ticker": "GM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While GM has outperformed peers and maintains strong fundamentals in North America, its China operations represent a significant ongoing problem with repeated restructuring charges, declining sales, and uncertain recovery prospects despite turnaround attempts."
+      },
+      {
         "ticker": "F",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Novelis has restarted production, addressing the critical supply bottleneck that cost Ford $2 billion. Ford expects to recover approximately half of lost EBIT in 2026, with Bank of America projecting adjusted EBIT of $8.5bn-$10.5bn for 2026. The timing is favorable as Ford enters peak selling season."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Ford is mentioned as using a more successful capital-light joint venture strategy in China and leveraging it as an export hub, positioning it better than GM in the region, though the article does not provide detailed performance metrics."
       },
       {
         "ticker": "FpB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Novelis has restarted production, addressing the critical supply bottleneck that cost Ford $2 billion. Ford expects to recover approximately half of lost EBIT in 2026, with Bank of America projecting adjusted EBIT of $8.5bn-$10.5bn for 2026. The timing is favorable as Ford enters peak selling season."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Ford is mentioned as using a more successful capital-light joint venture strategy in China and leveraging it as an export hub, positioning it better than GM in the region, though the article does not provide detailed performance metrics."
       },
       {
         "ticker": "FpC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Novelis has restarted production, addressing the critical supply bottleneck that cost Ford $2 billion. Ford expects to recover approximately half of lost EBIT in 2026, with Bank of America projecting adjusted EBIT of $8.5bn-$10.5bn for 2026. The timing is favorable as Ford enters peak selling season."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Ford is mentioned as using a more successful capital-light joint venture strategy in China and leveraging it as an export hub, positioning it better than GM in the region, though the article does not provide detailed performance metrics."
       },
       {
         "ticker": "FpD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Novelis has restarted production, addressing the critical supply bottleneck that cost Ford $2 billion. Ford expects to recover approximately half of lost EBIT in 2026, with Bank of America projecting adjusted EBIT of $8.5bn-$10.5bn for 2026. The timing is favorable as Ford enters peak selling season."
-      },
-      {
-        "ticker": "GM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "As a customer of Novelis aluminum products, General Motors will benefit from the resumed production and normalized supply chain, though the article focuses primarily on Ford's impact."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Ford is mentioned as using a more successful capital-light joint venture strategy in China and leveraging it as an export hub, positioning it better than GM in the region, though the article does not provide detailed performance metrics."
       },
       {
         "ticker": "STLA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Like General Motors, Stellantis is a major customer of Novelis aluminum products and will benefit from the restoration of normal supply following the factory fires."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Stellantis is mentioned as part of the Detroit auto trio with similar strategies to GM and Ford, but the article provides no specific performance data or China-related challenges for the company."
       }
     ]
   },
   {
-    "id": "8942749b498197009a515a3597ade0374baa72cf1e3dfc227819662b023abd87",
+    "id": "0e1dbecdbc1a11d98437ad3fd7767cbb56c49140e953dd6d86e106bac6ee92fc",
     "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Chemico Named a 2025 Supplier of the Year by General Motors",
-    "author": "Na",
-    "published_utc": "2026-06-16T22:51:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/16/3313131/0/en/Chemico-Named-a-2025-Supplier-of-the-Year-by-General-Motors.html",
+    "title": "Investors Should Stop Overlooking the World's Top 3 Auto Stocks",
+    "author": "Daniel Miller",
+    "published_utc": "2026-07-16T13:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/16/investors-should-stop-overlooking-the-worlds-top-3/?source=iedfolrf0000001",
     "tickers": [
-      "GM"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/cbb30f33-55bd-497e-9d3c-7f2d608b473d",
-    "description": "Chemico received General Motors' 2025 Supplier of the Year award in the Industrialization category at GM's 34th annual awards event. This marks Chemico's 16th such award from GM during its 37-year tenure as a supplier. The recognition highlights Chemico's performance in safety, innovation, execution, and resilience across GM's global operations.",
-    "keywords": [
-      "supplier of the year",
-      "General Motors",
-      "chemical management services",
-      "supply chain",
-      "automotive industry",
-      "industrialization"
-    ],
-    "insights": [
-      {
-        "ticker": "GM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "GM is highlighted as recognizing strong supplier partnerships and operational excellence. The company's procurement leadership emphasizes the importance of supplier collaboration in delivering world-class vehicles, reflecting confidence in their supply chain strategy."
-      }
-    ]
-  },
-  {
-    "id": "2f3a63d36e2166b5f106ac39b1ecdb4aa53e0871b7bb15011ecaf3cdef62907d",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "General Motors Eyes Defense Expansion, In Talks With Lockheed Martin To Build Weapon Parts: Report",
-    "author": "Namrata Sen",
-    "published_utc": "2026-06-16T12:25:12Z",
-    "article_url": "https://www.benzinga.com/markets/large-cap/26/06/53219792/general-motors-eyes-defense-expansion-in-talks-with-lockheed-martin-to-build-weapon-parts-repor?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
+      "RACE",
+      "BYDDY",
       "GM",
-      "LMT",
+      "TSLA",
       "F",
       "FpB",
       "FpC",
       "FpD"
     ],
-    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/06/16/Detroit-May-10--2021-General-Motors-Buil.jpeg",
-    "description": "General Motors is in negotiations with Lockheed Martin to manufacture weapon components and parts, as the Pentagon seeks to expand domestic weapons production capacity amid global conflicts. GM CEO Mary Barra has engaged with Trump administration officials about expanding the automaker's defense business through its GM Defense subsidiary. Ford is also exploring military-related projects with the U.S. government.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878768%2Fferrari_luce2.png&w=1200&op=resize",
+    "description": "The article highlights three automotive stocks positioned to outperform the market: Ferrari, known for luxury brand status and 50%+ gross margins; BYD, which surpassed Tesla in EV sales through vertical integration and cost efficiency; and General Motors, leveraging full-size truck/SUV dominance and high-margin subscription services like OnStar and Super Cruise.",
     "keywords": [
-      "defense manufacturing",
-      "weapons production",
-      "Pentagon capacity",
-      "military contracts",
-      "automaker diversification",
-      "munitions",
-      "domestic production"
-    ],
-    "insights": [
-      {
-        "ticker": "GM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "GM is expanding into defense manufacturing with Lockheed Martin, creating new revenue opportunities and leveraging underutilized manufacturing capacity. This diversification addresses Pentagon needs and aligns with government priorities."
-      },
-      {
-        "ticker": "LMT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Lockheed Martin is expanding production capacity and securing partnerships with major manufacturers like GM to increase munitions and weapons production, supporting its growth objectives and meeting Pentagon demand."
-      },
-      {
-        "ticker": "F",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ford is also in discussions with the U.S. government about military-related projects, positioning itself similarly to GM to diversify revenue streams and utilize manufacturing capacity."
-      },
-      {
-        "ticker": "FpB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ford is also in discussions with the U.S. government about military-related projects, positioning itself similarly to GM to diversify revenue streams and utilize manufacturing capacity."
-      },
-      {
-        "ticker": "FpC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ford is also in discussions with the U.S. government about military-related projects, positioning itself similarly to GM to diversify revenue streams and utilize manufacturing capacity."
-      },
-      {
-        "ticker": "FpD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ford is also in discussions with the U.S. government about military-related projects, positioning itself similarly to GM to diversify revenue streams and utilize manufacturing capacity."
-      }
-    ]
-  },
-  {
-    "id": "b44b64bf485edc95c01ec220795bc3911e724b1f9cc96757e7c54cf7a48dbf55",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Why GM's Newest Strategy Could Top Rival Ford",
-    "author": "Daniel Miller",
-    "published_utc": "2026-06-16T12:20:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/16/why-gms-newest-strategy-could-top-rival-ford/?source=iedfolrf0000001",
-    "tickers": [
-      "GM",
-      "F",
-      "FpB",
-      "FpC",
-      "FpD",
-      "TSLA"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874666%2Fford_energy.png&w=1200&op=resize",
-    "description": "General Motors and Ford are both entering the battery energy storage systems market. GM's partnership with Peak Energy to develop sodium-ion batteries offers potential cost advantages over lithium-iron phosphate alternatives, with potential 20% cost reductions and no cooling system requirements. Both automakers are targeting significant deployment capacity, with Ford aiming for 20 GWh annually by late 2027. Tesla Energy demonstrates the market's profitability, generating $12.7 billion in revenue with ~30% margins.",
-    "keywords": [
-      "battery energy storage systems",
-      "sodium-ion batteries",
+      "automotive stocks",
       "electric vehicles",
-      "energy storage market",
-      "revenue streams",
-      "grid-scale storage"
+      "luxury brands",
+      "vertical integration",
+      "subscription services",
+      "shareholder returns",
+      "EV market leadership"
     ],
     "insights": [
       {
+        "ticker": "RACE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company flips automotive industry stereotypes with 50%+ gross margins, 2-3x higher EBITDA/operating margins than competitors, resistance to economic downturns due to exclusivity and ultra-wealthy consumer base, and current valuation cheaper than 5-year average despite internet backlash over EV design."
+      },
+      {
+        "ticker": "BYDDY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Surpassed Tesla in global EV sales (2.26M vs 1.64M), maintains low costs through unparalleled vertical integration and battery/semiconductor manufacturing, export business growing rapidly with 95% year-over-year jump in overseas sales, and well-positioned for future growth when Chinese market stabilizes."
+      },
+      {
         "ticker": "GM",
         "sentiment": "positive",
-        "sentiment_reasoning": "GM's partnership with Peak Energy to develop sodium-ion batteries positions it with a potential cost advantage over competitors. The technology eliminates cooling requirements and could reduce storage costs by ~20%, providing a differentiated approach to entering the high-margin energy storage market."
-      },
-      {
-        "ticker": "F",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ford's entry into energy storage through Ford Energy subsidiary represents a new revenue stream opportunity. The company has set ambitious deployment targets of 20 GWh annually beginning late 2027, positioning it to capture market share in the growing energy storage sector."
-      },
-      {
-        "ticker": "FpB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ford's entry into energy storage through Ford Energy subsidiary represents a new revenue stream opportunity. The company has set ambitious deployment targets of 20 GWh annually beginning late 2027, positioning it to capture market share in the growing energy storage sector."
-      },
-      {
-        "ticker": "FpC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ford's entry into energy storage through Ford Energy subsidiary represents a new revenue stream opportunity. The company has set ambitious deployment targets of 20 GWh annually beginning late 2027, positioning it to capture market share in the growing energy storage sector."
-      },
-      {
-        "ticker": "FpD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ford's entry into energy storage through Ford Energy subsidiary represents a new revenue stream opportunity. The company has set ambitious deployment targets of 20 GWh annually beginning late 2027, positioning it to capture market share in the growing energy storage sector."
+        "sentiment_reasoning": "Co-dominates lucrative full-size truck/SUV market with high margins, spent tens of billions on share buybacks when P/E was in single digits, valuation tripled by end of 2025, and expanding high-margin subscription services (OnStar, Super Cruise) with 30-40% attach rates after prepaid periods."
       },
       {
         "ticker": "TSLA",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Tesla is mentioned as a successful precedent demonstrating the profitability of energy storage business (Tesla Energy achieved $12.7B revenue with 30% margins). However, the article frames GM and Ford as potential competitors entering this market, which could dilute Tesla's market position."
+        "sentiment_reasoning": "Mentioned as comparison point for BYD's EV sales leadership (1.64M vs BYD's 2.26M), but no direct investment recommendation or analysis provided in the article."
+      },
+      {
+        "ticker": "F",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-dominant competitor with GM in full-size trucks/SUVs and noted for lucrative dividend yields, but not recommended as a primary investment choice compared to the three featured stocks."
+      },
+      {
+        "ticker": "FpB",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-dominant competitor with GM in full-size trucks/SUVs and noted for lucrative dividend yields, but not recommended as a primary investment choice compared to the three featured stocks."
+      },
+      {
+        "ticker": "FpC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-dominant competitor with GM in full-size trucks/SUVs and noted for lucrative dividend yields, but not recommended as a primary investment choice compared to the three featured stocks."
+      },
+      {
+        "ticker": "FpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-dominant competitor with GM in full-size trucks/SUVs and noted for lucrative dividend yields, but not recommended as a primary investment choice compared to the three featured stocks."
+      }
+    ]
+  },
+  {
+    "id": "ee1525fadb953bf6bb3653dfd607e4046885a7411e762c641251ed486c544d7f",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Global Electric Vehicle Market to Reach US$2.74 Trillion in 2026 as Charging and Battery Investment Accelerates",
+    "author": "Researchandmarkets.Com",
+    "published_utc": "2026-07-14T16:00:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/14/3327152/28124/en/Global-Electric-Vehicle-Market-to-Reach-US-2-74-Trillion-in-2026-as-Charging-and-Battery-Investment-Accelerates.html",
+    "tickers": [
+      "TSLA",
+      "STLA",
+      "GM",
+      "CRAUY",
+      "ZGJLY",
+      "NIO",
+      "VFS",
+      "VFSWW",
+      "BYDDY",
+      "VWAGY",
+      "MBGYY",
+      "HMC",
+      "RNLSY",
+      "NSANY",
+      "GELHY",
+      "XPEV"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/908fb457-7f8e-4a08-9081-5565e3dfb3d7",
+    "description": "The global EV market is projected to reach US$2.74 trillion in 2026, growing at 9.0% annually, driven by regulatory changes, charging infrastructure investment, and battery supply-chain development. Chinese automakers are intensifying international competition, while battery sourcing and regional manufacturing become strategic priorities. Major players are forming strategic alliances to compete on affordable EVs, software capabilities, and charging networks.",
+    "keywords": [
+      "electric vehicles",
+      "EV market growth",
+      "charging infrastructure",
+      "battery supply chain",
+      "Chinese automakers",
+      "regulatory policy",
+      "vehicle-to-grid services",
+      "fleet electrification"
+    ],
+    "insights": [
+      {
+        "ticker": "TSLA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed among major participants competing on affordable EVs, software capabilities, and battery access, with established charging networks and regional production strategies."
+      },
+      {
+        "ticker": "STLA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Major participant advancing European partnership with Leapmotor toward local production in Spain and backing IONNA charging venture."
+      },
+      {
+        "ticker": "GM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Backing the IONNA charging venture, demonstrating strategic positioning in the competitive EV charging infrastructure market."
+      },
+      {
+        "ticker": "CRAUY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Chinese automaker reshaping global competition through integrated supply chains and export expansion across multiple regions."
+      },
+      {
+        "ticker": "ZGJLY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Challenger pursuing partnership-based growth with Stellantis advancing European partnership toward local production in Spain."
+      },
+      {
+        "ticker": "NIO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a challenger but no specific strategic initiatives or competitive advantages highlighted in the article."
+      },
+      {
+        "ticker": "VFS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a challenger pursuing partnership-based growth but no specific strategic initiatives highlighted in the article."
+      },
+      {
+        "ticker": "VFSWW",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a challenger pursuing partnership-based growth but no specific strategic initiatives highlighted in the article."
+      },
+      {
+        "ticker": "BYDDY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Highlighted as a leading Chinese EV manufacturer reshaping global competition through integrated battery supply chains, competitive pricing, and rapid model development with expanding international presence."
+      },
+      {
+        "ticker": "VWAGY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a major participant expanding regional manufacturing and sourcing strategies, with Volkswagen and Elli preparing vehicle-to-grid services in Germany."
+      },
+      {
+        "ticker": "MBGYY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Major participant and IONNA venture backer, positioning itself in the competitive EV landscape with shared infrastructure initiatives."
+      },
+      {
+        "ticker": "HMC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Participating in IONNA charging venture, indicating strategic involvement in shared EV charging infrastructure development."
+      },
+      {
+        "ticker": "RNLSY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed among major participants but no specific strategic initiatives or competitive advantages highlighted in the article."
+      },
+      {
+        "ticker": "NSANY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed among major participants but no specific strategic initiatives or competitive advantages highlighted in the article."
+      },
+      {
+        "ticker": "GELHY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a Chinese automaker increasing international presence across Europe, Southeast Asia, Latin America and Middle East with competitive pricing."
+      },
+      {
+        "ticker": "XPEV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Chinese automaker increasing international presence and listed among challengers pursuing technology-led, export-focused growth strategies."
       }
     ]
   }

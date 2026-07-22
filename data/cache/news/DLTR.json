@@ -1,5 +1,60 @@
 [
   {
+    "id": "82558bf1ffe76cfaea261246392b530417ed7990be98b66b2e9d1a630b18c776",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "Dollar Tree\u2019s Turnaround Is Starting to Take Root",
+    "author": "Jeffrey Neal Johnson",
+    "published_utc": "2026-07-10T07:27:00Z",
+    "article_url": "https://www.investing.com/analysis/dollar-trees-turnaround-is-starting-to-take-root-200683692",
+    "tickers": [
+      "DLTR",
+      "DG",
+      "WMT",
+      "TGT"
+    ],
+    "amp_url": "https://m.investing.com/analysis/dollar-trees-turnaround-is-starting-to-take-root-200683692?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "Dollar Tree is showing signs of recovery with a 120-basis point gross margin expansion, a $2.5 billion share buyback authorization, and $110 million in tariff refunds. Activist investor Mantle Ridge exited its position, signaling the end of the restructuring phase. Recent analyst upgrades from Raymond James and Goldman Sachs highlight improving consumer value perception among low-income households, though negative foot traffic remains a near-term headwind.",
+    "keywords": [
+      "discount retail",
+      "margin expansion",
+      "share buyback",
+      "tariff refunds",
+      "activist investor exit",
+      "analyst upgrades",
+      "consumer sentiment",
+      "foot traffic",
+      "valuation recovery"
+    ],
+    "insights": [
+      {
+        "ticker": "DLTR",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company demonstrates structural improvements with 120-bps gross margin expansion, $2.5B buyback program, $110M tariff refunds, and easing logistics costs. Recent analyst upgrades from Raymond James (to Outperform, $140 PT) and Goldman Sachs (to Neutral from Sell, $125 PT) signal improving outlook. Leading indicators show stabilizing consumer value perception, suggesting foot traffic recovery ahead."
+      },
+      {
+        "ticker": "DG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitive threat aggressively expanding store footprint in rural America, creating pressure on Dollar Tree's market position. No specific financial data or sentiment indicators provided about the company itself."
+      },
+      {
+        "ticker": "WMT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Referenced as a big-box competitor using deep price rollbacks to defend market share against discount retailers. Mentioned as competitive pressure but no specific company-focused analysis provided."
+      },
+      {
+        "ticker": "TGT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a big-box competitor defending market share through aggressive pricing. No specific financial data or sentiment indicators provided about the company itself."
+      }
+    ]
+  },
+  {
     "id": "f1628723f842f7852ad2f21fd8141f020427de42811b260c947fe2b8be2dd293",
     "publisher": {
       "name": "The Motley Fool",
@@ -209,83 +264,6 @@
         "ticker": "DLTR",
         "sentiment": "positive",
         "sentiment_reasoning": "Strong quarterly performance with 7.2% net sales growth, 3.5% comparable store sales growth, 22% jump in adjusted operating income, 38% increase in adjusted EPS, aggressive store expansion plans (325 net new stores), and positive forward guidance for fiscal 2026 with projected EPS of $6.70-$7.10. Stock surged 20% on the results."
-      }
-    ]
-  },
-  {
-    "id": "1e4aeb0f5316de1c161f5704eb09c354e8244fcd3f9e962d4400aa7fa82ed923",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Stock Market Today, May 28: Tech Stocks Rise as Snowflake Surges After $6 Billion Amazon Deal and Strong Earnings",
-    "author": "Josh Kohn-Lindquist",
-    "published_utc": "2026-05-28T18:06:10Z",
-    "article_url": "https://www.fool.com/coverage/stock-market-today/2026/05/28/stock-market-today-may-28-tech-stocks-rise-as-snowflake-surges-after-usd6-billion-amazon-deal-and-strong-earnings/?source=iedfolrf0000001",
-    "tickers": [
-      "SNOW",
-      "AMZN",
-      "MSFT",
-      "LLY",
-      "DLTR",
-      "BBY",
-      "HRL",
-      "SNPS"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fe3bcbb36c955ac33b4d67641805fcca8e9fca941-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Tech stocks led market gains on May 28, 2026, with Snowflake surging 38% following strong Q1 earnings and a $6 billion Amazon partnership. The S&P 500 rose 0.49% while the Nasdaq gained 0.65%. Consumer stocks also performed well with Dollar Tree, Best Buy, and Hormel posting significant gains after earnings reports, signaling economic resilience. Synopsys declined 9% despite beating earnings expectations.",
-    "keywords": [
-      "tech stocks",
-      "Snowflake",
-      "Amazon partnership",
-      "Q1 earnings",
-      "S&P 500",
-      "Nasdaq",
-      "consumer stocks",
-      "market movers"
-    ],
-    "insights": [
-      {
-        "ticker": "SNOW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Surged 38% after reporting strong Q1 earnings with 33% sales growth, securing a $6 billion Amazon deal, and expanding customer base to 813 Forbes Global 2000 companies. AI boom provides major tailwind."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Announced $6 billion partnership with Snowflake, demonstrating strategic investment in cloud-based data platforms and AI capabilities."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Advanced on plans to deploy in-house coding AI models, showing progress in AI development and market positioning."
-      },
-      {
-        "ticker": "LLY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Gained as CVS restored coverage for obesity drug Zepbound, expanding market access and revenue potential."
-      },
-      {
-        "ticker": "DLTR",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Up 19% after earnings report, indicating strong consumer spending and economic resilience."
-      },
-      {
-        "ticker": "BBY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Up 18% after earnings report, demonstrating consumer strength and retail sector health."
-      },
-      {
-        "ticker": "HRL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Up 13% after earnings report, reflecting positive consumer demand and company performance."
-      },
-      {
-        "ticker": "SNPS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Declined 9% despite beating earnings and raising guidance, suggesting market volatility unrelated to fundamentals. Long-term performance remains strong as a 9-bagger over the past decade."
       }
     ]
   }

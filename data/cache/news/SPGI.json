@@ -1,5 +1,91 @@
 [
   {
+    "id": "1c68e61a6ea931e6c480bb3388f0704290ff7251feddb723b09bf0d938bad2d8",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "S&P Global Spun Off Its Mobility Business on July 1. Here's What the Leaner Ratings Giant Looks Like Now.",
+    "author": "James Brumley",
+    "published_utc": "2026-07-17T14:23:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/17/sp-global-spun-off-its-mobility-business-on-july-1/?source=iedfolrf0000001",
+    "tickers": [
+      "SPGI"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878010%2Finvestment-analysts-using-ai-to-pick-stocks.jpg&w=1200&op=resize",
+    "description": "S&P Global completed a spinoff of its Mobility division (now Mobility Global) on July 1, 2026, creating a leaner, more focused company. The mobility business was S&P Global's smallest and lowest-margin operation (22% margins vs. 40% company average), so the separation should improve overall profitability and allow management to focus on core strengths in ratings and market intelligence. The company's 53-year dividend growth streak remains intact.",
+    "keywords": [
+      "spinoff",
+      "S&P Global",
+      "Mobility Global",
+      "business separation",
+      "operating margins",
+      "dividend growth",
+      "market intelligence",
+      "ratings business"
+    ],
+    "insights": [
+      {
+        "ticker": "SPGI",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The spinoff removes a low-margin business, improving overall profitability margins from the company average. Management can now focus on higher-margin core businesses (ratings and market intelligence). The company maintains its 53-year dividend growth streak with no threats on the horizon."
+      }
+    ]
+  },
+  {
+    "id": "da1813363157cd63be90566882b23fc0b6661ecf2fc95fa92cb82b766d3a9c39",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Here's Why Oracle Stock Slumped Today",
+    "author": "Lee Samaha",
+    "published_utc": "2026-07-13T22:00:44Z",
+    "article_url": "https://www.fool.com/investing/2026/07/13/heres-why-oracle-stock-slumped-today/?source=iedfolrf0000001",
+    "tickers": [
+      "ORCL",
+      "ORCLpD",
+      "AAPL",
+      "SPGI"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878716%2Fgetty-high-risk-risky-danger-investing-mistakes-penny-stocks-margin-1200x798-36b7a2e.jpg&w=1200&op=resize",
+    "description": "Oracle stock declined over 6% following Apple's lawsuit against OpenAI, raising concerns about Oracle's $300 billion AI infrastructure deal with OpenAI. S&P Global's recent credit rating downgrade to BBB- highlighted risks, noting that OpenAI represents half of Oracle's remaining performance obligations. If OpenAI faces legal or financial difficulties, Oracle could be left with costly data center leases it cannot exit or must lease under unfavorable terms.",
+    "keywords": [
+      "Oracle stock decline",
+      "Apple lawsuit against OpenAI",
+      "AI infrastructure investment",
+      "credit rating downgrade",
+      "business risk",
+      "data center leases"
+    ],
+    "insights": [
+      {
+        "ticker": "ORCL",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock declined 6.29% due to credit rating downgrade to BBB-, Apple's lawsuit against OpenAI creating uncertainty around Oracle's $300 billion partnership, and concerns about OpenAI's ability to meet contractual obligations. S&P Global notes rising business risk and potential exposure to costly data center leases if OpenAI defaults."
+      },
+      {
+        "ticker": "ORCLpD",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock declined 6.29% due to credit rating downgrade to BBB-, Apple's lawsuit against OpenAI creating uncertainty around Oracle's $300 billion partnership, and concerns about OpenAI's ability to meet contractual obligations. S&P Global notes rising business risk and potential exposure to costly data center leases if OpenAI defaults."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Apple filed a lawsuit against OpenAI alleging theft of trade secrets. While this is a significant legal action, the article's focus is on the indirect negative impact to Oracle rather than Apple itself, and Apple's stock showed minimal movement (+0.74%)."
+      },
+      {
+        "ticker": "SPGI",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "S&P Global is the credit rating agency that downgraded Oracle and identified the risks. The company itself is not directly impacted by the news; it is merely reporting on market conditions."
+      }
+    ]
+  },
+  {
     "id": "bb1edfe1e38601a9ea4f62b7e614b38d44a8678bbaeb4c867b31d27c5e20ea5e",
     "publisher": {
       "name": "The Motley Fool",
@@ -124,92 +210,6 @@
         "ticker": "SPGI",
         "sentiment": "neutral",
         "sentiment_reasoning": "S&P Global is mentioned only as the source of ratings analysis regarding SpaceX's cash flow projections. No direct investment thesis or performance commentary is provided about the company itself."
-      }
-    ]
-  },
-  {
-    "id": "6fffc16b155104bf385123b87dfdd03a58af22417022ff127d06c46e5b0b4d5b",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Millions of Investors Are About to Own SpaceX Stock Indirectly -- Whether They Want to or Not",
-    "author": "Daniel Sparks",
-    "published_utc": "2026-06-28T01:32:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/27/millions-of-investors-are-about-to-own-spacex-stoc/?source=iedfolrf0000001",
-    "tickers": [
-      "SPCX",
-      "SPGI"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876665%2Fspacex-stock-analysis.jpeg&w=1200&op=resize",
-    "description": "SpaceX has been added to the Russell 1000 and will join the Nasdaq-100, forcing millions of index fund investors to own the stock automatically. However, the company remains unprofitable and trades at over 100x revenue, while the S&P 500 is keeping it out due to lack of profitability. The addition reflects index rules rather than investment merit.",
-    "keywords": [
-      "SpaceX IPO",
-      "index funds",
-      "Russell 1000",
-      "Nasdaq-100",
-      "S&P 500",
-      "profitability",
-      "Starlink",
-      "valuation"
-    ],
-    "insights": [
-      {
-        "ticker": "SPCX",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Company is unprofitable (lost $4.9B in 2025), trades at extreme valuation (100x+ revenue with no P/E ratio), and is being added to indexes mechanically rather than on merit. Stock has already declined 33% from post-IPO highs."
-      },
-      {
-        "ticker": "SPGI",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as maintaining stricter profitability standards for index inclusion, which is presented as a prudent screening mechanism rather than a positive or negative development for the company itself."
-      }
-    ]
-  },
-  {
-    "id": "81c8248a12a4b83c2c69278937eb52eb73555da7005714bb5cdeeb7f0574d1e5",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "3 Top Stocks to Buy With $3,000 Right Now",
-    "author": "James Brumley",
-    "published_utc": "2026-06-25T19:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/25/3-top-stocks-to-buy-with-3000-right-now/?source=iedfolrf0000001",
-    "tickers": [
-      "SPGI",
-      "QCOM",
-      "CHWY"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874032%2Fwoman-thinking-brainstorming-ideas.jpg&w=1200&op=resize",
-    "description": "The article recommends three stocks as buying opportunities amid recent market weakness: S&P Global, which is undergoing strategic divestitures to focus on core high-demand businesses; Qualcomm, positioned to benefit from the growing edge AI computing market; and Chewy, an online pet supplies retailer with strong recurring revenue despite near-term consumer headwinds.",
-    "keywords": [
-      "stock recommendations",
-      "market weakness",
-      "artificial intelligence",
-      "edge computing",
-      "divestitures",
-      "recurring revenue"
-    ],
-    "insights": [
-      {
-        "ticker": "SPGI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock has declined 24% from peak due to disappointing guidance and AI concerns, but the company is executing strategic divestitures (spinoff of mobility arm, sale of energy software) to focus on high-demand ratings and data services. Q1 showed 13% YoY improvement in ratings revenue, and the restructuring is expected to unlock hidden value not yet reflected in the stock price."
-      },
-      {
-        "ticker": "QCOM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Recent profit-taking has created a buying opportunity for a company well-positioned in edge AI computing across mobile devices, automobiles, wearables, and medical equipment. The mobile AI market is projected to grow 26% annually through 2035 to $325 billion. CEO's vision is sound, though investors should be prepared for volatility."
-      },
-      {
-        "ticker": "CHWY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Despite recent revenue guidance reduction due to consumer headwinds, the company maintains strong fundamentals: 7.7% YoY revenue growth and 84.4% of revenue from high-retention autoship customers. Analyst consensus price target of $30.82 is 70% above current price, and the company is well-positioned as a digital player to capitalize on evolving consumer shopping trends."
       }
     ]
   }
