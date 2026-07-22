@@ -24,15 +24,20 @@ past the deadline even once the wave is ingested — so late/new filers get pick
 same wave rather than waiting a quarter. The full fetch is incremental, so these re-runs
 only pull what's new.
 
+Committing: the run commits + pushes docs/ and data/ by default. Because that's the last step
+of a run that can take an hour, push credentials are verified UP FRONT (see _preflight_push)
+so an auth problem fails in seconds instead of after all the work is done.
+
 Usage:
   python src/update.py                  # auto: reprice normally, full after a new 13F wave
-  python src/update.py --push           # ...and commit + push when done
+  python src/update.py --no-push        # ...but leave the results uncommitted
   python src/update.py --force-full     # force the full 13F fetch regardless
   python src/update.py --force-reprice  # force the light path regardless
   python src/update.py --dry-run        # print the decision, run nothing
 """
 
 import argparse
+import os
 import subprocess
 import sys
 from datetime import date, timedelta
@@ -101,9 +106,32 @@ def decide(today: date, force_full: bool, force_reprice: bool) -> tuple[bool, st
     return False, f"no new 13F wave since last run (current {have})"
 
 
+def _preflight_push() -> None:
+    """Confirm we can actually push, before spending an hour building what we'd push.
+
+    `git push --dry-run` is the real check — it authenticates against the remote and verifies
+    write access — but it stops short of sending anything. GIT_TERMINAL_PROMPT=0 makes a missing
+    credential fail immediately rather than hanging on a username prompt in an unattended run.
+    """
+    log.info("=== Preflight: push credentials ===")
+    result = subprocess.run(
+        ["git", "push", "--dry-run", "origin", "HEAD"],
+        cwd=str(ROOT), env={**os.environ, "GIT_TERMINAL_PROMPT": "0"},
+        capture_output=True, text=True,
+    )
+    if result.returncode == 0:
+        log.info("Push credentials OK.")
+        return
+    log.error("Cannot push to origin:\n%s", (result.stderr or result.stdout).strip())
+    log.error("Fix with a one-time login, then re-run:  gh auth login && gh auth setup-git")
+    log.error("(or run with --no-push to build the reports without committing)")
+    raise SystemExit(1)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Run the appropriate refresh; full after a new 13F wave.")
-    ap.add_argument("--push", action="store_true", help="commit + push docs/ and data/ when done")
+    ap.add_argument("--no-push", dest="push", action="store_false",
+                    help="skip the commit + push of docs/ and data/ (on by default)")
     ap.add_argument("--force-full", action="store_true", help="force the full 13F fetch")
     ap.add_argument("--force-reprice", action="store_true", help="force the light reprice path")
     ap.add_argument("--dry-run", action="store_true", help="log the decision, run nothing")
@@ -120,6 +148,8 @@ def main() -> None:
     if args.dry_run:
         log.info("[dry-run] would run: %s", " ".join(cmd[1:]))
         return
+    if args.push:
+        _preflight_push()
     raise SystemExit(subprocess.run(cmd, cwd=str(ROOT)).returncode)
 
 

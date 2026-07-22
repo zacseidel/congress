@@ -64,11 +64,19 @@ def _push() -> None:
         log.info("Nothing to commit.")
         return
     from datetime import date
-    subprocess.run(["git", "commit", "-m", f"Refresh reports {date.today().isoformat()}"], cwd=str(ROOT))
-    # Merge (NOT rebase): rebase swaps ours/theirs, which would invert merge=ours and keep
-    # the remote copies. A plain merge keeps local for every generated/data file.
-    subprocess.run(["git", "pull", "--no-rebase", "origin", "main"], cwd=str(ROOT))
-    subprocess.run(["git", "push"], cwd=str(ROOT))
+    # Check each step: a failed pull/push used to pass silently, leaving the run "successful"
+    # with nothing published. Stop at the first failure so the log shows what needs fixing.
+    for label, cmd in [
+        ("commit", ["git", "commit", "-m", f"Refresh reports {date.today().isoformat()}"]),
+        # Merge (NOT rebase): rebase swaps ours/theirs, which would invert merge=ours and keep
+        # the remote copies. A plain merge keeps local for every generated/data file.
+        ("pull", ["git", "pull", "--no-rebase", "origin", "main"]),
+        ("push", ["git", "push"]),
+    ]:
+        if subprocess.run(cmd, cwd=str(ROOT)).returncode != 0:
+            log.error("git %s failed — results are built but NOT published.", label)
+            sys.exit(1)
+    log.info("Pushed.")
 
 
 def main() -> None:
