@@ -7,7 +7,19 @@ purchase markers and red sale markers on each member's disclosure date.
 Reads cached daily bars (data/cache/aggs/{ticker}.json) written by enrich.py —
 makes no Polygon calls itself. Charts for tickers without cached bars are skipped.
 
-Output: docs/assets/charts/{ticker}.png
+Output: docs/assets/charts/{ticker}.svg
+
+SVG, not PNG, on purpose: these are regenerated every run and committed. The bars are
+a rolling 2-year window, so nearly every chart changes daily. PNG is already
+DEFLATE-compressed, so git can neither delta nor pack it — 1,400 raster charts added
+~44MB of permanently incompressible objects to history per refresh. SVG is text: it
+compresses in the packfile, cutting the published push roughly 3x.
+
+Full daily resolution is kept deliberately. Thinning the series to shrink the SVG
+further was measured and rejected: even extrema-preserving decimation moved the drawn
+line up to ~49px on a 345px-tall chart, because daily gaps exceed the per-point pixel
+spacing — and the worst distortion lands on the biggest movers, which are the
+out-performers these charts exist to show.
 
 Usage:
   python src/fetch_charts.py
@@ -22,6 +34,14 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
+
+# Byte-for-byte reproducible SVG, so a chart whose data didn't move produces no git
+# diff at all. `svg.hashsalt` pins the clip-path element ids (otherwise they're salted
+# per process); `svg.fonttype="none"` emits <text> referencing the font by name instead
+# of embedding glyph outlines, which is both smaller and stable across machines.
+# The remaining source of nondeterminism, the <dc:date> stamp, is dropped at savefig.
+matplotlib.rcParams["svg.hashsalt"] = "congress-charts"
+matplotlib.rcParams["svg.fonttype"] = "none"
 
 sys.path.insert(0, str(Path(__file__).parent))
 from utils import AGGS_CACHE, DATA_DIR, ROOT, load_json, load_json_gz, parse_date, setup_logging
@@ -85,9 +105,10 @@ def make_chart(ticker: str, bars: list[dict], buys: list, sells: list,
     fig.tight_layout()
 
     CHARTS_DIR.mkdir(parents=True, exist_ok=True)
-    # Decorative charts — modest DPI + optimized PNG keeps files small.
-    fig.savefig(CHARTS_DIR / f"{ticker}.png", facecolor="white", dpi=90,
-                pil_kwargs={"optimize": True})
+    # metadata Date=None strips the generation timestamp; without it every chart would
+    # differ every run even when the underlying bars are unchanged.
+    fig.savefig(CHARTS_DIR / f"{ticker}.svg", facecolor="white",
+                metadata={"Date": None})
     plt.close(fig)
     return True
 

@@ -382,7 +382,7 @@ def run(today: date | None = None) -> None:
         s = stocks.get(ticker) or {"ticker": ticker, "name": hedge_holders.get(ticker, {}).get("issuer", ""),
                                    "buyers": []}
         ci = info.get(ticker, {})
-        has_chart = (CHARTS_DIR / f"{ticker}.png").exists()
+        has_chart = (CHARTS_DIR / f"{ticker}.svg").exists()
         tcls = ticker_class.get(ticker)
         jur_buyers = set()
         if tcls:

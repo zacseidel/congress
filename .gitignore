@@ -2,6 +2,11 @@
 __pycache__/
 *.pyc
 data/cache/ptr_pdfs/
+# Per-ticker 2yr bars. Rebuilt wholesale from data/cache/grouped/ by fetch_prices.py
+# with zero API calls, but the rolling window means ~1,300 of 1,430 files change every
+# run — ~5MB of git objects per refresh to store something derivable in seconds.
+# grouped/ (its source) stays committed and is append-only: ~5 new files per run.
+data/cache/aggs/
 # Hedge (13F) machine caches — regenerable, thousands of files. Kept out of git to
 # avoid repo bloat + merge conflicts; persisted across CI runs via actions/cache.
 data/cache/cusip/
