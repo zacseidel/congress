@@ -1,5 +1,60 @@
 [
   {
+    "id": "82558bf1ffe76cfaea261246392b530417ed7990be98b66b2e9d1a630b18c776",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "Dollar Tree\u2019s Turnaround Is Starting to Take Root",
+    "author": "Jeffrey Neal Johnson",
+    "published_utc": "2026-07-10T07:27:00Z",
+    "article_url": "https://www.investing.com/analysis/dollar-trees-turnaround-is-starting-to-take-root-200683692",
+    "tickers": [
+      "DLTR",
+      "DG",
+      "WMT",
+      "TGT"
+    ],
+    "amp_url": "https://m.investing.com/analysis/dollar-trees-turnaround-is-starting-to-take-root-200683692?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "Dollar Tree is showing signs of recovery with a 120-basis point gross margin expansion, a $2.5 billion share buyback authorization, and $110 million in tariff refunds. Activist investor Mantle Ridge exited its position, signaling the end of the restructuring phase. Recent analyst upgrades from Raymond James and Goldman Sachs highlight improving consumer value perception among low-income households, though negative foot traffic remains a near-term headwind.",
+    "keywords": [
+      "discount retail",
+      "margin expansion",
+      "share buyback",
+      "tariff refunds",
+      "activist investor exit",
+      "analyst upgrades",
+      "consumer sentiment",
+      "foot traffic",
+      "valuation recovery"
+    ],
+    "insights": [
+      {
+        "ticker": "DLTR",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company demonstrates structural improvements with 120-bps gross margin expansion, $2.5B buyback program, $110M tariff refunds, and easing logistics costs. Recent analyst upgrades from Raymond James (to Outperform, $140 PT) and Goldman Sachs (to Neutral from Sell, $125 PT) signal improving outlook. Leading indicators show stabilizing consumer value perception, suggesting foot traffic recovery ahead."
+      },
+      {
+        "ticker": "DG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitive threat aggressively expanding store footprint in rural America, creating pressure on Dollar Tree's market position. No specific financial data or sentiment indicators provided about the company itself."
+      },
+      {
+        "ticker": "WMT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Referenced as a big-box competitor using deep price rollbacks to defend market share against discount retailers. Mentioned as competitive pressure but no specific company-focused analysis provided."
+      },
+      {
+        "ticker": "TGT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a big-box competitor defending market share through aggressive pricing. No specific financial data or sentiment indicators provided about the company itself."
+      }
+    ]
+  },
+  {
     "id": "dd2388c5d4708862ce271641f767ba00b43f28f53482662cf563e93c4461f7b0",
     "publisher": {
       "name": "The Motley Fool",
@@ -235,60 +290,6 @@
         "ticker": "WMT",
         "sentiment": "neutral",
         "sentiment_reasoning": "Mentioned as a competitor benefiting from middle-income consumers trading down during inflationary periods, but no specific performance data or investment recommendation provided."
-      }
-    ]
-  },
-  {
-    "id": "3b210583c248db60220d54e3484765310fa325a763fdc977a160e97ba71aa6e4",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "Five Below Down 12% Post Earnings\u2014Is the Selloff Overdone?",
-    "author": "Chris Markoch",
-    "published_utc": "2026-06-05T15:29:00Z",
-    "article_url": "https://www.investing.com/analysis/five-below-down-12-post-earningsis-the-selloff-overdone-200681618",
-    "tickers": [
-      "FIVE",
-      "DG",
-      "DLTR",
-      "OLLI"
-    ],
-    "amp_url": "https://m.investing.com/analysis/five-below-down-12-post-earningsis-the-selloff-overdone-200681618?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "Five Below stock fell over 12% despite reporting strong Q1 2026 earnings with $1.29B revenue (beating $1.23B expectations) and $2.22 EPS (beating $1.77 expectations). The selloff was driven by management's cautious guidance for the second half due to consumer health concerns and tariff uncertainties, despite raising full-year guidance. Analysts remain divided on the stock's outlook, with some viewing the decline as overdone given oversold technical levels, while valuation concerns persist at 30x earnings.",
-    "keywords": [
-      "earnings report",
-      "discount retail",
-      "consumer spending",
-      "tariff impacts",
-      "guidance",
-      "valuation",
-      "oversold",
-      "tax refunds"
-    ],
-    "insights": [
-      {
-        "ticker": "FIVE",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock declined 12% post-earnings despite beating revenue and EPS expectations. Management expressed concerns about second-half consumer health and tariff impacts. Valuation remains elevated at 30x earnings, trading at a significant premium to peers. However, some analysts view the selloff as overdone given strong fundamentals and oversold technical levels."
-      },
-      {
-        "ticker": "DG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a peer comparison point. Five Below trades at 2x the P/E ratio of Dollar General, highlighting relative valuation concerns for Five Below rather than indicating specific sentiment about Dollar General itself."
-      },
-      {
-        "ticker": "DLTR",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Referenced as a comparable discount retailer for valuation comparison. Five Below trades at 2x the P/E of Dollar Tree, used to contextualize Five Below's premium valuation rather than indicating specific sentiment about the company."
-      },
-      {
-        "ticker": "OLLI",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a peer in the discount retail space for valuation comparison purposes. Five Below's 2x P/E premium to Ollie's is noted but no specific sentiment is indicated about the company itself."
       }
     ]
   }

@@ -1,5 +1,51 @@
 [
   {
+    "id": "92246a8e7ba0350a6aaad61407fa6504970ad0c2d378bb34b6b4d08651bd99ca",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "New iSeatz Research Reveals Travelers Are More Strategic Than Ever About Rewards Programs",
+    "author": "Iseatz",
+    "published_utc": "2026-07-15T15:00:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/15/3327912/0/en/New-iSeatz-Research-Reveals-Travelers-Are-More-Strategic-Than-Ever-About-Rewards-Programs.html",
+    "tickers": [
+      "AXP",
+      "IHG",
+      "QABSY"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/b863667f-1a11-48e3-80f4-251cbc57ed3a",
+    "description": "A survey of 2,000 U.S. travelers reveals that while loyalty program enrollment remains strong, consumers are increasingly willing to switch programs based on value delivery. The research identifies the 'Strategic Traveler' segment that treats rewards programs as financial optimization tools, with 40% comparing benefits across brands. However, 73% of travelers report difficulty obtaining real value, and 73% encounter obstacles when redeeming rewards, indicating a significant gap between program promises and actual delivery.",
+    "keywords": [
+      "travel loyalty programs",
+      "rewards redemption",
+      "consumer behavior",
+      "travel industry",
+      "customer retention",
+      "value proposition",
+      "strategic travelers"
+    ],
+    "insights": [
+      {
+        "ticker": "AXP",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "American Express is mentioned as a client of iSeatz but receives no specific commentary regarding its loyalty program performance. The broader survey findings suggest challenges in the rewards industry generally, but no company-specific insights are provided."
+      },
+      {
+        "ticker": "IHG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "IHG is mentioned as a client of iSeatz but receives no specific evaluation. The survey's findings about redemption difficulties and stagnant value could apply to hotel loyalty programs, but no direct assessment of IHG's program is provided."
+      },
+      {
+        "ticker": "QABSY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Qantas is mentioned as a client of iSeatz but receives no specific commentary. While airline loyalty programs are part of the travel rewards ecosystem discussed, no direct insights about Qantas's program performance are included."
+      }
+    ]
+  },
+  {
     "id": "40aac73e040db9a9e22b70bc93fe68eb95b420fa0a5dc325af84770bdc19b55d",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -212,52 +258,6 @@
         "ticker": "IHG",
         "sentiment": "neutral",
         "sentiment_reasoning": "Minimal impact on IHG; mentioned only as the previous employer of the new CarMax CEO; stock showed negligible movement (+0.28%)."
-      }
-    ]
-  },
-  {
-    "id": "6dc356d34a3fb97f291aa0e9aeaf52680c505e1c1ad0f36761e9d0289e9ac2f3",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Can InterContinental Hotels Be the Leader of the Pack?",
-    "author": "Dan Caplinger",
-    "published_utc": "2026-01-31T17:01:00Z",
-    "article_url": "https://www.fool.com/investing/2026/01/31/can-intercontinental-hotels-be-the-leader-of-the-p/?source=iedfolrf0000001",
-    "tickers": [
-      "IHG",
-      "MAR",
-      "HLT"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F854068%2Fchina-city-getty.jpg&w=1200&op=resize",
-    "description": "InterContinental Hotels Group has rebounded strongly from the COVID-19 pandemic and is pursuing aggressive expansion strategies, particularly in China and through its Holiday Inn brand. The company is also investing in AI capabilities and upgrading its luxury portfolio in the Americas to compete more effectively with rivals Marriott and Hilton. Despite strong recovery, IHG still lags behind competitors in stock performance, presenting potential upside for investors.",
-    "keywords": [
-      "hotel industry",
-      "expansion strategy",
-      "China market",
-      "artificial intelligence",
-      "luxury properties",
-      "competitive positioning",
-      "post-pandemic recovery"
-    ],
-    "insights": [
-      {
-        "ticker": "IHG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company has successfully rebounded from COVID-19, is expanding aggressively in high-growth markets like China with 1,400+ hotels planned, investing in AI leadership, and upgrading luxury portfolio. Stock still lags competitors despite strong fundamentals, suggesting upside potential."
-      },
-      {
-        "ticker": "MAR",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a strong competitor with extensive market coverage across all hotel tiers. No specific negative or positive developments highlighted; positioned as a benchmark for competitive comparison."
-      },
-      {
-        "ticker": "HLT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Noted as a competitive rival with strong market presence and diverse portfolio. No specific developments or concerns mentioned; serves as a competitive reference point."
       }
     ]
   }

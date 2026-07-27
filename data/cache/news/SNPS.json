@@ -1,5 +1,100 @@
 [
   {
+    "id": "3cbf958fb8a3903d85d4d84dba58ec475d9579a248c7be443fa9b70a37ae4fd9",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "NVIDIA Expands NVIDIA Agent Toolkit With NVIDIA PhysicsNeMo and CUDA-X Libraries to Transform How the World Engineers, Designs and Builds",
+    "author": "Nvidia",
+    "published_utc": "2026-07-27T00:45:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/27/3333237/0/en/NVIDIA-Expands-NVIDIA-Agent-Toolkit-With-NVIDIA-PhysicsNeMo-and-CUDA-X-Libraries-to-Transform-How-the-World-Engineers-Designs-and-Builds.html",
+    "tickers": [
+      "NVDA",
+      "CDNS",
+      "SNPS"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/8cc7fd5d-80e0-4960-9176-41e04d3909a0",
+    "description": "NVIDIA expanded its Agent Toolkit with re-architected PhysicsNeMo libraries and updated CUDA-X libraries, enabling developers to build autonomous AI engineers with physics simulation and quantum chemistry capabilities. The Nemotron 3 Ultra model leads in agentic RTL coding for chip design. Industry leaders including Cadence, Siemens, Synopsys, Samsung, and others are deploying these technologies to accelerate chip design, verification, and engineering workflows with significant performance improvements.",
+    "keywords": [
+      "AI agents",
+      "chip design",
+      "physics simulation",
+      "CUDA-X libraries",
+      "PhysicsNeMo",
+      "Nemotron 3 Ultra",
+      "autonomous engineering",
+      "quantum chemistry",
+      "EDA tools",
+      "accelerated computing"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "NVIDIA announced significant expansion of its Agent Toolkit with new capabilities in physics simulation and quantum chemistry. The company is positioning itself as a leader in autonomous AI engineering with strong adoption from major industry partners, demonstrating market validation and revenue growth potential."
+      },
+      {
+        "ticker": "CDNS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Cadence is actively integrating NVIDIA technologies into its AuraStack AI Super Agent and Millennium M2000 platform, achieving up to 20x faster multiphysics performance. The partnership demonstrates Cadence's commitment to AI-driven design automation and competitive positioning in the EDA market."
+      },
+      {
+        "ticker": "SNPS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Synopsys is leveraging NVIDIA Agent Toolkit and Nemotron models to build AgentEngineer for chip and system design workflows. The company is optimizing its VCS verification solution for NVIDIA Vera CPU and developing cuISS use cases, indicating strong collaboration and product advancement."
+      }
+    ]
+  },
+  {
+    "id": "8bd41a2db63d9c9221e109774adbdc0dff047de377078c0a33f97a033911049c",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Cadence Design Systems vs. Synopsys: Which Technology Stock Is a Better Buy in 2026?",
+    "author": "Sara Appino",
+    "published_utc": "2026-07-14T23:19:03Z",
+    "article_url": "https://www.fool.com/coverage/better-buy/2026/07/14/cadence-design-systems-vs-synopsys-which-technology-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
+    "tickers": [
+      "CDNS",
+      "SNPS",
+      "INTC"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F8cd6be858db5e4ce4620efa120c8f078af15d22a-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Both Cadence Design Systems and Synopsys are leaders in chip design software, benefiting from strong semiconductor demand. Cadence offers a cleaner growth story with record backlogs and strong profitability, while Synopsys provides broader capabilities through its Ansys acquisition but faces integration complexity and higher valuation multiples. The article recommends Cadence as the better 2026 buy due to its simpler execution and stronger balance sheet.",
+    "keywords": [
+      "chip design software",
+      "semiconductor industry",
+      "2nm chip design",
+      "acquisition integration",
+      "valuation comparison",
+      "free cash flow",
+      "AI-powered design tools"
+    ],
+    "insights": [
+      {
+        "ticker": "CDNS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong revenue growth (14.1% YoY), record backlog, raised full-year outlook, excellent balance sheet (0.5x debt-to-equity, 2.9x current ratio), higher gross margins (85.15%), and cleaner execution story without major integration risks. Recommended as the better buy."
+      },
+      {
+        "ticker": "SNPS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Solid revenue growth (15.1% YoY) and larger scale ($7.1B revenue), but faces significant headwinds including massive Ansys acquisition integration complexity, higher debt load, lower gross margins (64.88%), pending class action lawsuits, and higher valuation multiples (30.0x forward P/E vs. 48.6x for Cadence). Long-term potential exists but near-term execution risks are substantial."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a Cadence partnership customer for multi-year collaboration on chip design, indicating continued reliance on design software providers. No specific performance data provided in the article."
+      }
+    ]
+  },
+  {
     "id": "e50748c377ffd8a43039626d5e490b4193721c517b5e18b9635eaafb955bef0e",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -170,275 +265,6 @@
         "ticker": "MSFT",
         "sentiment": "positive",
         "sentiment_reasoning": "Microsoft is collaborating with NVIDIA to deliver native Windows experience for personal agents with new security primitives and OpenShell integration."
-      }
-    ]
-  },
-  {
-    "id": "1fc7968a917819f1c91e2cc347ba4d56c3621fa32f392fa939505eee4f4ab89e",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "Consumer Tech News (May 25-29): Dell, IBM, CrowdStrike, Meta Lead Big Tech AI Push",
-    "author": "Lekha Gupta",
-    "published_utc": "2026-05-31T13:53:24Z",
-    "article_url": "https://www.benzinga.com/markets/tech/26/05/52894213/consumer-tech-news-may-25-29-dell-ibm-crowdstrike-meta-lead-big-tech-ai-push?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "DELL",
-      "IBM",
-      "CRWD",
-      "META",
-      "ADSK",
-      "CRM",
-      "MDB",
-      "INTC",
-      "NVDA",
-      "CRWV",
-      "OKTA",
-      "HPQ",
-      "SNPS",
-      "MRVL",
-      "PATH",
-      "WB",
-      "LI",
-      "XPEV",
-      "PLAB",
-      "S",
-      "TSLA",
-      "SPCE",
-      "RKLB",
-      "GM",
-      "HOOD",
-      "KC",
-      "INFY",
-      "NBIS",
-      "SMCI",
-      "TSM",
-      "QCOM"
-    ],
-    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/05/31/Tech-Bubble-Risk-And-Economic-Technology.jpeg",
-    "description": "Major tech companies drove AI innovation this week with strong earnings and strategic initiatives. Dell reported record Q1 revenue of $43.84B, significantly beating estimates, while IBM and Red Hat launched a $5B open-source security initiative. Meta expanded into paid subscriptions across its platforms, and CrowdStrike expanded its cybersecurity initiatives. Anthropic surpassed OpenAI as the world's most valuable startup at $965B valuation. Japanese banks gained access to OpenAI's GPT-5.5 model for cybersecurity defense.",
-    "keywords": [
-      "AI infrastructure",
-      "earnings beat",
-      "cybersecurity",
-      "cloud computing",
-      "AI monetization",
-      "semiconductor demand",
-      "startup valuation"
-    ],
-    "insights": [
-      {
-        "ticker": "DELL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Reported Q1 revenue of $43.84B, significantly exceeding analyst estimates of $35.45B, with adjusted EPS of $4.86 vs. expected $2.94. Secured a $9.7B Pentagon contract for Microsoft software licensing management."
-      },
-      {
-        "ticker": "IBM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Launched Project Lightwell, a $5B initiative to secure open-source software against AI-driven cyber threats, demonstrating strategic investment in emerging security needs."
-      },
-      {
-        "ticker": "CRWD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Expanding Project QuiltWorks initiative with major cyber insurance industry players, strengthening market position in cybersecurity solutions."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Introducing paid subscriptions across Instagram, Facebook, WhatsApp, and Meta AI to unlock new AI-driven revenue streams and deepen monetization."
-      },
-      {
-        "ticker": "ADSK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Reported Q1 earnings of $2.99 per share beating consensus of $2.84, and revenue of $1.93B exceeding estimates of $1.89B."
-      },
-      {
-        "ticker": "CRM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Q1 revenue of $11.13B beat consensus of $11.05B, with adjusted EPS of $3.88 significantly exceeding estimates of $3.12."
-      },
-      {
-        "ticker": "MDB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Q1 revenue of $687.62M beat estimates of $667.82M, with adjusted EPS of $1.32 exceeding consensus of $1.18."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Launched new Arc G-series processors for Windows handheld gaming PCs, expanding product portfolio in competitive gaming market."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "CEO announced plans to spend approximately $150B annually in Taiwan, demonstrating strong commitment to AI infrastructure expansion."
-      },
-      {
-        "ticker": "CRWV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Launched unified agentic AI capabilities for developing reliable AI agents, positioning itself in growing AI infrastructure market."
-      },
-      {
-        "ticker": "OKTA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Q1 earnings of 91 cents per share beat consensus of 85 cents, with revenue of $765M exceeding Street estimate of $751.88M."
-      },
-      {
-        "ticker": "HPQ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Q1 earnings of 86 cents beat consensus of 71 cents, with revenue of $14.41B exceeding estimate of $14.04B."
-      },
-      {
-        "ticker": "SNPS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Q1 earnings of $3.35 per share beat estimate of $3.15, with revenue of $2.28B exceeding consensus of $2.25B."
-      },
-      {
-        "ticker": "MRVL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Q1 results narrowly topped estimates with earnings of 80 cents vs. consensus of 79 cents, and issued upbeat long-term growth projections tied to AI infrastructure demand."
-      },
-      {
-        "ticker": "PATH",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Q1 earnings of 15 cents missed Street estimate of 16 cents, though revenue of $418.38M beat consensus of $397.81M."
-      },
-      {
-        "ticker": "WB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Q1 revenue of $421.3M exceeded analyst consensus estimate of $417.9M."
-      },
-      {
-        "ticker": "LI",
-        "sentiment": "mixed",
-        "sentiment_reasoning": "Q1 revenue of $3.33B exceeded consensus of $3.14B, but adjusted net loss of 30 cents per ADS missed profit expectations of 7 cents."
-      },
-      {
-        "ticker": "XPEV",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Q1 revenue of $1.89B declined 17.6% year-over-year and fell significantly below analyst consensus estimate of $3.13B."
-      },
-      {
-        "ticker": "PLAB",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Non-GAAP net income of 42 cents per diluted share missed estimated 54 cents per share."
-      },
-      {
-        "ticker": "S",
-        "sentiment": "mixed",
-        "sentiment_reasoning": "Q1 adjusted earnings of 4 cents beat Street estimate of 2 cents, but revenue of $276.66M fell short of $277.31M consensus."
-      },
-      {
-        "ticker": "TSLA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Reclaimed top spot in global BEV market during Q1 2026 according to Counterpoint Research, despite modest overall industry growth."
-      },
-      {
-        "ticker": "SPCE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Federal court granted preliminary approval of settlement resolving two longstanding shareholder derivative lawsuits."
-      },
-      {
-        "ticker": "RKLB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Successfully passed System Requirements Review for Space Development Agency's Tracking Layer Tranche 3 constellation contract worth approximately $816M."
-      },
-      {
-        "ticker": "GM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Defense unit will supply battery-electric propulsion for new lunar terrain vehicle as part of NASA's Moonbase goals."
-      },
-      {
-        "ticker": "HOOD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Launched new AI-powered finance tools enabling autonomous agents to trade stocks and make purchases on behalf of users."
-      },
-      {
-        "ticker": "KC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Q1 fiscal 2026 revenue rose year-over-year and topped analyst estimates as demand for AI-related cloud services accelerated."
-      },
-      {
-        "ticker": "INFY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Announced lineup of new AI-powered digital experiences for tennis fans in partnership with Roland-Garros, expanding AI applications."
-      },
-      {
-        "ticker": "NBIS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Shares rising in extended trading after Situational Awareness reported a 5.6% stake in the neocloud company."
-      },
-      {
-        "ticker": "SMCI",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Collaborating with Taiwanese authorities to prevent illicit diversion of server technology, addressing supply chain security concerns."
-      },
-      {
-        "ticker": "TSM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Senior VP indicated rising electricity demand from AI is making energy efficiency a central priority for future chip development, positioning for AI growth."
-      },
-      {
-        "ticker": "QCOM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Reached deal to supply TikTok parent ByteDance with ASICs for AI data centers, expanding AI infrastructure business."
-      }
-    ]
-  },
-  {
-    "id": "b3258eed79d4ad873df7ceb03a1466b7217a8317fb593abe064bef0ccd2ee231",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "Synopsys Faces a Split Verdict as Shares Drop and Targets Climb",
-    "author": "Leo Miller",
-    "published_utc": "2026-05-29T19:21:00Z",
-    "article_url": "https://www.investing.com/analysis/synopsys-faces-a-split-verdict-as-shares-drop-and-targets-climb-200681202",
-    "tickers": [
-      "SNPS",
-      "CDNS",
-      "NVDA",
-      "SOXX"
-    ],
-    "amp_url": "https://m.investing.com/analysis/synopsys-faces-a-split-verdict-as-shares-drop-and-targets-climb-200681202?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "Synopsys shares fell 8.6% following earnings despite beating revenue and EPS estimates, as most growth came from the Ansys acquisition rather than organic growth. Analyst price targets moved higher with an average of $538 implying 10% upside, but the stock remains flat since 2025 while semiconductor peers surged. The company plans to unveil new monetization strategies at its September Investor Day.",
-    "keywords": [
-      "electronic design automation",
-      "EDA software",
-      "semiconductor",
-      "Ansys acquisition",
-      "organic growth",
-      "earnings",
-      "analyst targets",
-      "monetization strategy",
-      "Investor Day"
-    ],
-    "insights": [
-      {
-        "ticker": "SNPS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mixed signals: stock declined 8.6% post-earnings due to weak organic growth (3-4% excluding Ansys), but analyst targets increased ~7% and the company maintains critical importance in semiconductor ecosystem. Near-term headwinds from Ansys integration and Intel issues offset by long-term potential if new monetization strategies succeed."
-      },
-      {
-        "ticker": "CDNS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "As the other leading EDA player, Cadence shares are up only ~25% since start of 2025 despite semiconductor industry boom, indicating sector-wide underperformance and similar challenges in capturing value despite essential role in chip design."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Invested $2 billion in Synopsys and benefits from AI boom driving semiconductor demand. Mentioned as part of the broader AI-driven semiconductor surge that has lifted the iShares Semiconductor ETF over 150% since start of 2025."
-      },
-      {
-        "ticker": "SOXX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Up more than 150% since start of 2025, significantly outperforming S&P 500's 25% return, reflecting strong semiconductor industry performance driven by AI boom."
       }
     ]
   }

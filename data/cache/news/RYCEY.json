@@ -1,5 +1,70 @@
 [
   {
+    "id": "69af46276f33a2318a33b3cc1f34f540bec44cac16464554698701d1122771c3",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "GE Aerospace vs. StandardAero: Which Industrials Stock Is a Better Buy in 2026?",
+    "author": "Erin Kennedy",
+    "published_utc": "2026-07-10T12:10:01Z",
+    "article_url": "https://www.fool.com/coverage/better-buy/2026/07/10/ge-aerospace-vs-standardaero-which-industrials-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
+    "tickers": [
+      "GE",
+      "SARO",
+      "RTX",
+      "SAFRY",
+      "RYCEY",
+      "HON"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F1c43c7ea2a115de06def5b60d05cbbe789d96aa5-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "GE Aerospace and StandardAero both benefit from growing aerospace demand but operate at different stages of the aircraft lifecycle. GE Aerospace manufactures engines with a massive installed base and strong profitability (19% net margin), while StandardAero provides maintenance and repair services with lower valuation but higher risk due to customer concentration and internal control issues. The author favors GE Aerospace for conservative investors despite its higher valuation, citing its scale, history, and stability.",
+    "keywords": [
+      "aerospace",
+      "engine manufacturing",
+      "maintenance and repair services",
+      "aviation",
+      "valuation comparison",
+      "industrial stocks",
+      "free cash flow",
+      "customer concentration risk"
+    ],
+    "insights": [
+      {
+        "ticker": "GE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong financial performance with 18.5% revenue growth, 19% net margin, $7.3B free cash flow, massive installed base of 44,000+ engines, 100+ year history in aviation, and dividend payment. Author recommends it for conservative investors despite higher valuation."
+      },
+      {
+        "ticker": "SARO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Shows improvement with 15.8% revenue growth and positive profitability turnaround, but faces significant risks including $2.247B debt, high customer concentration (36% from top 4 customers), material weaknesses in internal controls, and lower profitability (4.6% net margin). Valuation is attractive but risks are notable."
+      },
+      {
+        "ticker": "RTX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitive threat to GE Aerospace in the engine manufacturing market."
+      },
+      {
+        "ticker": "SAFRY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitive threat to GE Aerospace in the engine manufacturing market."
+      },
+      {
+        "ticker": "RYCEY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a manufacturer whose authorization StandardAero depends on for repair services, representing a dependency risk."
+      },
+      {
+        "ticker": "HON",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a manufacturer whose authorization StandardAero depends on for repair services, representing a dependency risk."
+      }
+    ]
+  },
+  {
     "id": "89f7cf2c38133c063f024dc376d2203e7102c8d5f677afcdafb1e36a2286aba8",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -173,44 +238,6 @@
         "ticker": "BWXT",
         "sentiment": "positive",
         "sentiment_reasoning": "Identified as long-lead component supplier with significant capacity, positioned to benefit from 700 GW SMR transformation"
-      }
-    ]
-  },
-  {
-    "id": "d87fc63b9a0b1f77e10efb2fc784ac102e8a3338cff3dbf971bcdcc7d5dc0790",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "The 2 Best Nuclear Energy Stocks to Buy Right Now",
-    "author": "James Hires",
-    "published_utc": "2026-05-03T00:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/05/02/the-2-best-nuclear-energy-stocks-to-buy-right-now/?source=iedfolrf0000001",
-    "tickers": [
-      "BWXT",
-      "RYCEY"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F865024%2Fgettyimages-22159216293.jpg&w=1200&op=resize",
-    "description": "The nuclear energy renaissance is being driven by AI data center demand, with small modular reactors (SMRs) emerging as the next frontier. BWX Technologies and Rolls-Royce are highlighted as the best-positioned companies to capitalize on this trend, as they combine SMR development with stable revenue streams from existing operations, unlike cash-strapped SMR-focused startups.",
-    "keywords": [
-      "nuclear energy",
-      "small modular reactors (SMRs)",
-      "AI data centers",
-      "clean energy",
-      "nuclear renaissance"
-    ],
-    "insights": [
-      {
-        "ticker": "BWXT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company has 70+ years of naval nuclear propulsion expertise, strong financial metrics (10.31% net profit margin, 18% revenue growth, 20% EPS growth in 2025), and is developing the BANR SMR specifically for data center applications with advanced TRISO-coated fuel technology."
-      },
-      {
-        "ticker": "RYCEY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Established aerospace and defense company with nuclear propulsion expertise, developing a larger 470 MW SMR selected for UK's Great British Nuclear competition and adopted by Czech power company \u010cEZ. Strong financials with 27.52% net profit margin, 12.15% revenue growth, and EPS more than doubling in 2025."
       }
     ]
   }

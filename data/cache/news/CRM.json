@@ -1,319 +1,250 @@
 [
   {
-    "id": "98e83b54dfa5b57539e98bdaa8d3aa2ca46b2e86541d08b0da5649e61508be4b",
+    "id": "13a105274c353112c5501163e4219e88be89c239f026482d3d155f4b9fd9ad23",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Salesforce vs. ServiceNow: What Do Their Revenue Trends Tell Investors?",
-    "author": "Robert Izquierdo",
-    "published_utc": "2026-06-25T12:32:01Z",
-    "article_url": "https://www.fool.com/coverage/charts/2026/06/25/salesforce-vs-servicenow-what-do-their-revenue-trends-tell-investors/?source=iedfolrf0000001",
-    "tickers": [
-      "CRM",
-      "NOW",
-      "AMZN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Fcharts%2Fproduction%2Fprocessed%2Fcrm-now%2Fquarter%2Frevenue%2Fbar%2Fprimary%2Fstandard%2Flimit-8%2Flatest%2Fcrm-now_quarter_revenue_bar_primary_standard_limit8.png&w=1200&op=resize",
-    "description": "Salesforce and ServiceNow demonstrate strong revenue growth despite 2026 SaaS sector concerns about AI disruption. Salesforce maintains a larger revenue base with 13% year-over-year growth in Q1 2026, while ServiceNow shows faster growth at 22% year-over-year. Both companies' expanding revenues suggest AI is acting as a growth catalyst rather than a threat to their business models.",
-    "keywords": [
-      "SaaS",
-      "cloud-based software",
-      "revenue growth",
-      "artificial intelligence",
-      "enterprise software",
-      "customer spending"
-    ],
-    "insights": [
-      {
-        "ticker": "CRM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Salesforce reported record revenue and record deals in Q1 2026 with 13% year-over-year sales growth. The company maintains a significantly larger revenue base ($11.1 billion in Q2 2026) and demonstrates consistent quarter-over-quarter increases, indicating healthy business momentum despite sector-wide AI concerns."
-      },
-      {
-        "ticker": "NOW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ServiceNow exhibits faster growth than Salesforce with 22% year-over-year revenue increase in Q1 2026. The company crossed $1 billion in Amazon cloud infrastructure spending due to increased customer demand for AI systems, demonstrating strong market traction and AI-driven growth acceleration."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Amazon benefits from ServiceNow's increased cloud infrastructure spending, which crossed $1 billion as customer demand for AI systems grows, indicating strong enterprise cloud adoption and revenue opportunities for AWS."
-      }
-    ]
-  },
-  {
-    "id": "7f7d1f2b81f3b2a47803bff70dc04b0a7b537074ff34e797ac759fae5074c983",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Salesforce or ServiceNow: Who Will Lead AI in Business?",
-    "author": "Rick Orford",
-    "published_utc": "2026-06-23T14:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/23/salesforce-or-servicenow-who-will-lead-ai-in-busin/?source=iedfolrf0000001",
+    "title": "Salesforce vs. ServiceNow: Which Agentic AI Stock Is Actually the Better Buy Right Now?",
+    "author": "Justin Pope",
+    "published_utc": "2026-07-26T11:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/26/salesforce-vs-servicenow-which-agentic-ai-stock-is/?source=iedfolrf0000001",
     "tickers": [
       "CRM",
       "NOW"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875794%2F919-crm-vs-now.png&w=1200&op=resize",
-    "description": "Salesforce and ServiceNow are competing enterprise software platforms positioning themselves as AI leaders. Salesforce embeds AI agents into its CRM through Agentforce, while ServiceNow automates IT and business processes. The article examines which company is better positioned to benefit as AI transitions from infrastructure to real enterprise productivity applications.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880147%2Fsalesforce-versus-servicenow-graphic.png&w=1200&op=resize",
+    "description": "Both Salesforce and ServiceNow are leveraging agentic AI to transform their enterprise software businesses amid AI-driven market volatility. While ServiceNow shows faster growth (24.6% annually) with ambitious revenue targets, it trades at a steep 56x earnings multiple. Salesforce, growing at 16.1% annually, offers better value at 18x earnings and represents the safer investment given valuation and margin of safety considerations.",
     "keywords": [
-      "AI",
+      "agentic AI",
       "enterprise software",
-      "CRM",
+      "SaaS",
       "workflow automation",
-      "business processes",
       "AI agents",
-      "productivity"
+      "valuation",
+      "margin of safety"
     ],
     "insights": [
       {
         "ticker": "CRM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Salesforce is highlighted as a key player embedding AI agents into its CRM platform via Agentforce, positioning it as a leader in AI-driven enterprise workflows."
+        "sentiment_reasoning": "Recommended as the better buy due to attractive valuation (18x earnings), sticky ecosystem product, strong Agentforce adoption (3.8 billion tasks, 111% quarterly growth), and adequate margin of safety despite slower growth rate of 16.1% annually."
       },
       {
         "ticker": "NOW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ServiceNow is presented as a competitive AI leader automating IT and business processes, with the article suggesting it could be a significant AI winner in enterprise software."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While showing impressive growth prospects (24.6% annually, $30B subscription revenue target by 2030, 30% AI contribution), the stock is considered overvalued at 56x earnings with significant downside risk if AI adoption doesn't materialize as expected."
       }
     ]
   },
   {
-    "id": "e7f0ce5684bae2d13b25a1bbd78db1a0005b3f58b7b61b06e56a49b35a47b475",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "Identifying a Bullish Reversal Area for Salesforce Stock",
-    "author": "Aleksandar Vichev",
-    "published_utc": "2026-06-23T11:06:00Z",
-    "article_url": "https://www.investing.com/analysis/identifying-a-bullish-reversal-area-for-salesforce-stock-200682619",
-    "tickers": [
-      "CRM",
-      "FDS",
-      "ADBE",
-      "INTU"
-    ],
-    "amp_url": "https://m.investing.com/analysis/identifying-a-bullish-reversal-area-for-salesforce-stock-200682619?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "Salesforce stock has crashed 59% from its late-2024 peak of $369 to $150, despite healthy business growth and a single-digit P/E ratio. Using Elliott Wave analysis, the author suggests the stock is likely to fall further to around $100 before a bullish reversal occurs, as the current decline is part of a larger A-B-C flat correction pattern.",
-    "keywords": [
-      "Salesforce",
-      "Elliott Wave analysis",
-      "stock reversal",
-      "SaaS sector",
-      "technical analysis",
-      "bullish reversal area"
-    ],
-    "insights": [
-      {
-        "ticker": "CRM",
-        "sentiment": "negative",
-        "sentiment_reasoning": "The stock has declined 59% from its peak and is expected to fall further to around $100 according to the Elliott Wave analysis presented. The article identifies an ongoing downtrend with no immediate bottom in sight, despite the company's strong fundamentals and attractive valuation metrics."
-      },
-      {
-        "ticker": "FDS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only as a comparison point for contrarian bullish views on software companies; no specific analysis or sentiment is provided about the company itself."
-      },
-      {
-        "ticker": "ADBE",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only as a comparison point for contrarian bullish views on software companies; no specific analysis or sentiment is provided about the company itself."
-      },
-      {
-        "ticker": "INTU",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only as a comparison point for contrarian bullish views on software companies; no specific analysis or sentiment is provided about the company itself."
-      }
-    ]
-  },
-  {
-    "id": "3929967140d9b61e4298e90d55d889c1a296cb2bd7149177c97a98430d2056b6",
+    "id": "81d3addc099f143a0b79932ccf05065f638f28ba475ccb907651d8734bb65c98",
     "publisher": {
       "name": "GlobeNewswire Inc.",
       "homepage_url": "https://www.globenewswire.com",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
     },
-    "title": "Citizen Services AI Market Size to Hit USD 601.18 Billion by 2035 | SNS Insider",
-    "author": "Sns Insider",
-    "published_utc": "2026-06-19T09:31:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/19/3314663/0/en/Citizen-Services-AI-Market-Size-to-Hit-USD-601-18-Billion-by-2035-SNS-Insider.html",
+    "title": "Navatar Launches Claude-Native Deal Engine for Private Equity and M&A Advisory Firms on Salesforce CRM",
+    "author": "Not Specified",
+    "published_utc": "2026-07-23T05:27:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/23/3331871/0/en/Navatar-Launches-Claude-Native-Deal-Engine-for-Private-Equity-and-M-A-Advisory-Firms-on-Salesforce-CRM.html",
     "tickers": [
-      "MSFT",
-      "NOW",
-      "IBM",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "AMZN",
-      "CRM",
-      "ACN",
-      "ORCL",
-      "ORCLpD"
+      "CRM"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
-    "description": "The global Citizen Services AI Market is expected to grow from $19.24 billion in 2025 to $601.18 billion by 2035 at a 41.13% CAGR. Growth is driven by digital government transformation mandates, demand for personalized citizen services, and AI-powered solutions for public service delivery. The U.S. market leads globally, projected to reach $256.42 billion by 2035, while Europe is expected to grow to $144.86 billion. Key applications include AI chatbots, fraud detection, and smart governance platforms.",
+    "image_url": "https://ml.globenewswire.com/Resource/Download/c8bb825e-8cf0-4fd0-95a5-3df664823313",
+    "description": "Navatar announced a new Claude-native deal engine that integrates Navatar CRM, Navatar AI, Salesforce Agentforce, and Claude to provide private equity and M&A firms with a governed, secure operating system for deal origination, relationship intelligence, and investment workflows. The platform combines structured operational AI with Claude's reasoning capabilities while maintaining data security and governance controls.",
     "keywords": [
-      "Citizen Services AI",
-      "Digital Government Transformation",
-      "AI Chatbots",
-      "Public Service Delivery",
-      "Smart Governance",
-      "Fraud Detection",
-      "Cloud Deployment",
-      "Generative AI",
-      "Government AI Investment"
+      "AI-powered CRM",
+      "private equity",
+      "M&A advisory",
+      "deal engine",
+      "Salesforce integration",
+      "Claude AI",
+      "data governance",
+      "workflow automation"
     ],
     "insights": [
       {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Microsoft is highlighted for expanding Azure Government AI services with FedRAMP High-certified generative AI capabilities, enabling federal agencies to deploy secure citizen service applications. This positions the company as a key beneficiary of government AI spending."
-      },
-      {
-        "ticker": "NOW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ServiceNow is recognized for expanding its AI-powered Government Service Delivery platform with enhanced generative AI capabilities, reducing processing time by up to 60% for benefit eligibility and permit processing. This demonstrates strong market traction in the growing segment."
-      },
-      {
-        "ticker": "IBM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "IBM is listed as a key player in the market but no specific recent developments or achievements are mentioned in the article, warranting a neutral stance."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Google is identified as a key market player but lacks specific recent developments or market achievements detailed in the article."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Google is identified as a key market player but lacks specific recent developments or market achievements detailed in the article."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Google is identified as a key market player but lacks specific recent developments or market achievements detailed in the article."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Google is identified as a key market player but lacks specific recent developments or market achievements detailed in the article."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "AWS is listed among key players but no specific initiatives or developments in the citizen services AI market are mentioned."
-      },
-      {
         "ticker": "CRM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Salesforce is identified as a key player but lacks specific recent developments or achievements in the citizen services AI space mentioned in the article."
-      },
-      {
-        "ticker": "ACN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Accenture is listed as a key player but no specific recent developments or market achievements are detailed in the article."
-      },
-      {
-        "ticker": "ORCL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Oracle is identified as a key player but lacks specific recent developments or achievements in the citizen services AI market mentioned in the article."
-      },
-      {
-        "ticker": "ORCLpD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Oracle is identified as a key player but lacks specific recent developments or achievements in the citizen services AI market mentioned in the article."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Salesforce's Agentforce is featured as a core component of the new deal engine, demonstrating enterprise adoption of its AI agent platform in the financial services sector."
       }
     ]
   },
   {
-    "id": "64b9cc31ae89fa6e5b144f2a5162adf3762a6bc192104e52579351beab9c1989",
+    "id": "a7b1ade62ca0c1e1e40a289d4bfa38a376d53f1fd16d4383006923dd9cc84a2b",
     "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Deal Dispatch: Yum! Brands Sells Pizza Hut, Fox Corp. Buys Roku For $22 Billion, Salesforce Acquires Fin",
-    "author": "Caroline Ryan",
-    "published_utc": "2026-06-18T18:05:05Z",
-    "article_url": "https://www.benzinga.com/m-a/26/06/53287115/deal-dispatch-yum-brands-sells-pizza-hut-fox-corp-buys-roku-for-22-billion-salesforce-acquires-fin?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+    "title": "Prediction: U.S. Value Stocks Will Outperform for 10 Years. Which ETFs Should You Buy?",
+    "author": "Ben Gran",
+    "published_utc": "2026-07-21T18:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/21/prediction-us-value-stocks-will-outperform-for-10/?source=iedfolrf0000001",
     "tickers": [
-      "FOX",
-      "FOXA",
-      "ROKU",
+      "VBR",
+      "VFVA",
+      "BMY",
+      "CELGr",
+      "EOG",
       "CRM",
-      "YUM",
-      "DOMO",
-      "DLX",
-      "SLP"
+      "INTU",
+      "CI"
     ],
-    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/06/18/benzinga-deal-dispatch2.jpeg",
-    "description": "Major M&A activity includes Fox Corp acquiring Roku for $22 billion, Salesforce buying Fin for $3.6 billion, Yum! Brands selling Pizza Hut to LongRange Capital for $1.5 billion, and Nuvei acquiring Payoneer for $2.75 billion. Additionally, Domo is pursuing a strategic transaction, and two companies filed for Chapter 11 bankruptcy.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878356%2Fgettyimages-1429168394-1200x798-36b7a2e.jpg&w=1200&op=resize",
+    "description": "Vanguard research forecasts that U.S. value stocks and small-cap stocks will outperform growth stocks over the next 10 years. The article compares two Vanguard ETFs for value stock exposure: the Vanguard Small-Cap Value ETF (VBR), a passively managed fund with ultra-low fees, and the Vanguard U.S. Value Factor ETF (VFVA), an actively managed alternative with broader market-cap exposure. Both funds have recently outperformed the S&P 500 and Nasdaq-100.",
     "keywords": [
-      "M&A",
-      "acquisitions",
-      "Fox Corp",
-      "Roku",
-      "Salesforce",
-      "Yum! Brands",
-      "Pizza Hut",
-      "Nuvei",
-      "Payoneer",
-      "bankruptcy"
+      "value stocks",
+      "small-cap stocks",
+      "ETF comparison",
+      "Vanguard research",
+      "long-term investment",
+      "market forecast"
     ],
     "insights": [
       {
-        "ticker": "FOX",
+        "ticker": "VBR",
         "sentiment": "positive",
-        "sentiment_reasoning": "Acquiring Roku for $22 billion strengthens Fox's position in connected TV advertising and streaming, combining live entertainment, news, sports portfolios with the top U.S. television streaming platform."
+        "sentiment_reasoning": "The fund has delivered 9.51% average annual returns since inception, 27% annualized returns over the past year, and charges an ultra-low 0.05% expense ratio. It combines small-cap and value investing strategies aligned with Vanguard's bullish research forecast."
       },
       {
-        "ticker": "FOXA",
+        "ticker": "VFVA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Acquiring Roku for $22 billion strengthens Fox's position in connected TV advertising and streaming, combining live entertainment, news, sports portfolios with the top U.S. television streaming platform."
+        "sentiment_reasoning": "The actively managed fund has delivered 10.96% annualized returns since inception and 16.9% over the past three years. It offers broader diversification across market caps with a lower P/E ratio (11.4) and has outperformed VBR since inception, though it charges a slightly higher 0.13% expense ratio."
       },
       {
-        "ticker": "ROKU",
+        "ticker": "BMY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a top holding in VFVA with 0.83% of the fund. Included as an example of recognizable healthcare stocks in the actively managed value fund, with no specific performance commentary."
+      },
+      {
+        "ticker": "CELGr",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a top holding in VFVA with 0.83% of the fund. Included as an example of recognizable healthcare stocks in the actively managed value fund, with no specific performance commentary."
+      },
+      {
+        "ticker": "EOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as the top holding in VFVA (1.05% of fund) representing the energy sector. Included as an example of value stock holdings with no specific performance analysis provided."
+      },
+      {
+        "ticker": "CRM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a top holding in VFVA (0.80% of fund) representing technology sector exposure. Included as an example of recognizable company names in the value fund with no specific commentary."
+      },
+      {
+        "ticker": "INTU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding in VFVA (0.76% of fund) representing technology sector. Included as an example of familiar tech stocks in the value fund with no specific analysis."
+      },
+      {
+        "ticker": "CI",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a top holding in VFVA (0.78% of fund) representing healthcare sector. Included as an example of recognizable healthcare stocks with no specific performance commentary."
+      }
+    ]
+  },
+  {
+    "id": "4d57048e2e2cfd277a313b30310bbdd8b3778a1b413e6b579666abd20f66ff53",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Global Enterprise Carbon Management Software Market Size/Share Worth USD 42.2 Billion by 2034 at a 9.73% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth, Growth Rate, Value)",
+    "author": "Custom Market Insights",
+    "published_utc": "2026-07-21T04:30:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/21/3330181/0/en/Global-Enterprise-Carbon-Management-Software-Market-Size-Share-Worth-USD-42-2-Billion-by-2034-at-a-9-73-CAGR-Custom-Market-Insights-Analysis-Outlook-Leaders-Report-Trends-Forecast-.html",
+    "tickers": [
+      "SAP",
+      "IBM",
+      "MSFT",
+      "CRM",
+      "WTKWY"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/74609d89-5437-4826-b7b8-31238ea2e65c",
+    "description": "The global enterprise carbon management software market is projected to grow from USD 16.7 billion in 2024 to USD 42.2 billion by 2034, at a CAGR of 9.73%. Growth is driven by rising corporate net-zero commitments, mandatory ESG reporting requirements, and the need for accurate emissions tracking across complex supply chains. Key players include SAP SE, IBM, Microsoft, Salesforce, and Wolters Kluwer Enablon.",
+    "keywords": [
+      "carbon management software",
+      "ESG reporting",
+      "net-zero commitments",
+      "emissions tracking",
+      "sustainability",
+      "climate disclosure",
+      "enterprise software",
+      "regulatory compliance"
+    ],
+    "insights": [
+      {
+        "ticker": "SAP",
         "sentiment": "positive",
-        "sentiment_reasoning": "Being acquired by Fox at $160 per share provides liquidity and strategic partnership; founder Anthony Wood continues leadership and joins Fox board."
+        "sentiment_reasoning": "Listed as a key market player in the rapidly growing enterprise carbon management software market, which is projected to reach USD 42.2 billion by 2034 with a 9.73% CAGR. Strong market tailwinds from regulatory requirements and corporate sustainability commitments benefit established enterprise software vendors."
+      },
+      {
+        "ticker": "IBM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "IBM Environmental Intelligence Suite is identified as a key player in the expanding carbon management software market. The company is positioned to benefit from increasing demand for emissions tracking and ESG reporting solutions driven by regulatory mandates and corporate net-zero targets."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Microsoft Sustainability Manager is highlighted as a key offering in the high-growth enterprise carbon management software market. The company benefits from strong market drivers including mandatory ESG reporting frameworks and corporate sustainability pressures."
       },
       {
         "ticker": "CRM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Acquiring Fin for $3.6 billion expands AI agent solutions capabilities, enabling rapid deployment for smaller organizations and customized enterprise-scale integrations."
+        "sentiment_reasoning": "Salesforce Net Zero Cloud is listed among key market players in the enterprise carbon management software sector, which is experiencing significant growth due to regulatory requirements and corporate climate commitments. The company is well-positioned in this expanding market segment."
       },
       {
-        "ticker": "YUM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Divesting Pizza Hut for $1.5 billion allows focus on core brands; transaction is strategic but represents a reduction in portfolio rather than growth."
-      },
-      {
-        "ticker": "DOMO",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Pursuing strategic transaction to maximize shareholder value, but company is in forbearance agreement with lender after failing covenant compliance, indicating financial stress."
-      },
-      {
-        "ticker": "DLX",
+        "ticker": "WTKWY",
         "sentiment": "positive",
-        "sentiment_reasoning": "Acquiring Celero Commerce for $625 million expands payment solutions offerings for small to mid-sized businesses and strengthens distribution reach."
+        "sentiment_reasoning": "Wolters Kluwer Enablon is identified as a key player in the enterprise carbon management software market. The company benefits from strong market growth drivers including mandatory ESG reporting directives and increasing corporate sustainability obligations."
+      }
+    ]
+  },
+  {
+    "id": "89d60f148990d757cf6653c7f3e1886b6c669ee11fe06fb7dc37009454ce1b1c",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "ServiceNow Is Down 51% as Wall Street Bets AI Will Gut Its Business. July 22 Will Show Who's Right.",
+    "author": "Daniel Sparks",
+    "published_utc": "2026-07-20T19:26:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/20/servicenow-is-down-51-as-wall-street-bets-ai-will/?source=iedfolrf0000001",
+    "tickers": [
+      "NOW",
+      "CRM"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879816%2Fnow.png&w=1200&op=resize",
+    "description": "ServiceNow stock has plummeted 51% from its 52-week high amid fears that AI will disrupt its enterprise software business. However, Q1 results show strong subscription revenue growth of 22% YoY and robust contract metrics, contradicting the disruption thesis. The company's July 22 earnings report will be a critical test of whether the market's pessimism is justified or represents an overreaction.",
+    "keywords": [
+      "ServiceNow",
+      "AI disruption",
+      "enterprise software",
+      "subscription revenue",
+      "earnings report",
+      "valuation",
+      "growth stocks"
+    ],
+    "insights": [
+      {
+        "ticker": "NOW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Despite the 51% stock decline, Q1 results show strong fundamentals: 22% YoY subscription revenue growth beating guidance, 22.5% cRPO growth, 80% increase in large deals, and 130% YoY growth in AI product customers. The author argues the market's fear is running ahead of facts, and the stock appears undervalued at 24x forward earnings for a 20%+ grower with 44% free cash flow margin."
       },
       {
-        "ticker": "SLP",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Being acquired by Altaris for $18.50 per share provides exit for shareholders but results in delisting from Nasdaq and loss of public company status."
+        "ticker": "CRM",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Mentioned as another software stock dragged down by AI-disruption concerns, trading 40% below its 52-week high. The article uses it as a comparable example of how broad AI anxiety has affected enterprise software valuations."
       }
     ]
   }

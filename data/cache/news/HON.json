@@ -1,359 +1,310 @@
 [
   {
-    "id": "5c5d743a15c265d144f100ac1020dc6ddba8a03b9b80dc446829b16283fc85ad",
+    "id": "92ff05e9898be3cad5ced147c63cb8499ba13f69a1cf290215216a71a7180a05",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "The Nasdaq's Rough Day: When Good News Is Bad News for Market Indexes",
-    "author": "Anders Bylund",
-    "published_utc": "2026-07-07T16:17:55Z",
-    "article_url": "https://www.fool.com/investing/2026/07/07/the-nasdaqs-rough-day-when-good-news-is-bad-news/?source=iedfolrf0000001",
+    "title": "Where Will Quantinuum Stock Be in 1 Year?",
+    "author": "Manali Pradhan, Cfa",
+    "published_utc": "2026-07-27T10:03:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/27/where-will-quantinuum-stock-be-in-1-year/?source=iedfolrf0000001",
     "tickers": [
-      "MU",
-      "INTC",
-      "LRCX",
-      "CAT",
-      "HON",
-      "SPCX",
-      "QQQ"
+      "QNT",
+      "IONQ",
+      "IONQ.WS",
+      "HON"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877745%2Fred-and-blue-neon-lights-over-piles-of-money.jpg&w=1200&op=resize",
-    "description": "Samsung Electronics reported impressive earnings with 129% revenue growth and a 19-fold profit surge, but investors treated the results as a peak signal for AI demand, triggering a broad semiconductor sector selloff. The Nasdaq Composite fell 1.3% as major chip stocks declined sharply, while the S&P 500 and Dow showed more resilience. SpaceX also fell on its debut as a Nasdaq-100 component, and oil prices rallied following a tanker incident in the Strait of Hormuz.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879494%2Fprofessional_thinking_in_an_office.jpg&w=1200&op=resize",
+    "description": "Quantinuum, a quantum computing company, is trading at a steep valuation of 512x its 2026 revenue estimate despite generating only $30.9 million in 2025 revenue. Analysts project the stock could fall 67% to around $17 per share within one year under base case assumptions, with potential downside to $7 in bear case scenarios. The company's success depends on translating technical progress in logical qubits into commercial revenue growth.",
     "keywords": [
-      "semiconductor sector",
-      "AI hardware demand",
-      "profit-taking",
-      "chip valuations",
-      "market volatility",
-      "earnings guidance"
-    ],
-    "insights": [
-      {
-        "ticker": "MU",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Memory-chip rival fell 7.2% due to Samsung's earnings disappointing investor expectations and triggering broad semiconductor sector selloff."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Microchip veteran fell 10.6% as part of the semiconductor sector decline following Samsung's earnings-driven market reaction."
-      },
-      {
-        "ticker": "LRCX",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Chip-making equipment provider dropped 7.7% due to broader semiconductor sector weakness triggered by Samsung earnings."
-      },
-      {
-        "ticker": "CAT",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Industrial titan fell 5.8%, with losses connected to AI data center construction exposure and broader market weakness."
-      },
-      {
-        "ticker": "HON",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Industrial company declined 8.5%, with losses linked to AI data center construction exposure similar to Caterpillar."
-      },
-      {
-        "ticker": "SPCX",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Fell 5.4% on its first day as a Nasdaq-100 component, adding to tech-heavy index losses during the semiconductor sector selloff."
-      },
-      {
-        "ticker": "QQQ",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Nasdaq-100 tracking ETF fell 1.8% due to heavy weighting in semiconductor stocks that declined sharply following Samsung earnings."
-      }
-    ]
-  },
-  {
-    "id": "b2f6199d61fd7acd2b98ff0822ac361126e42033a1601326243cb0268af8833c",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "There Are Now 4 Honeywell Stocks After This Latest Spin-Off. Which Is the Better Buy Today?",
-    "author": "Thomas Niel",
-    "published_utc": "2026-07-07T15:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/07/there-are-now-4-honeywell-stocks-after-this-latest/?source=iedfolrf0000001",
-    "tickers": [
-      "HON",
-      "HONA",
-      "SOLS",
-      "QNT"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876817%2Fgettyimages-1465056863-1200x675-128554e.jpg&w=1200&op=resize",
-    "description": "Following Honeywell's breakup into four separate public entities, the article analyzes each spinoff's investment potential. Honeywell Technologies (industrial automation core) and Honeywell Aerospace trade at 27-28x forward earnings with high growth expectations already priced in. Solstice Advanced Materials emerges as the strongest candidate, trading at 30x forward earnings with over 20% forecasted growth and exposure to AI and nuclear energy trends. Quantinuum, the quantum computing venture, remains speculative with no material revenue.",
-    "keywords": [
-      "Honeywell spinoff",
-      "industrial automation",
-      "aerospace",
       "quantum computing",
-      "specialty chemicals",
+      "IPO",
       "valuation",
-      "earnings growth",
-      "AI exposure",
-      "nuclear energy"
+      "logical qubits",
+      "revenue growth",
+      "stock forecast"
     ],
     "insights": [
-      {
-        "ticker": "HON",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Trading at 28x forward earnings with 3.5% revenue growth and 7% EPS growth. While management guides for potential double-digit earnings growth, current valuation appears stretched. Author recommends waiting for weakness before entering a position."
-      },
-      {
-        "ticker": "HONA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Trading at 27x forward earnings with high growth expectations already factored in. While cheaper than peers like GE Aerospace and Boeing, any earnings disappointment could trigger significant losses. Author advises caution despite aerospace sector strength."
-      },
-      {
-        "ticker": "SOLS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Trading at 30x forward earnings with forecasted growth exceeding 20%. Offers dual exposure to AI-related tailwinds (data center cooling, semiconductor materials) and nuclear energy (uranium hexafluoride production). Author identifies it as the best positioned to outperform among the spinoffs."
-      },
       {
         "ticker": "QNT",
         "sentiment": "negative",
-        "sentiment_reasoning": "Valuation based entirely on future potential with no material revenue and heavy losses forecasted. Author suggests investors bullish on quantum computing should own Honeywell Technologies instead for indirect exposure with lower risk."
-      }
-    ]
-  },
-  {
-    "id": "01cd921d1360db777485162e535dce7992bd6725a681b1e8aa1228d181273e26",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "The Dow Couldn't Keep Up With Chip Stocks on Monday",
-    "author": "Anders Bylund",
-    "published_utc": "2026-07-06T18:29:06Z",
-    "article_url": "https://www.fool.com/investing/2026/07/06/the-dow-couldnt-keep-up-with-chip-stocks-on-monday/?source=iedfolrf0000001",
-    "tickers": [
-      "AVGO",
-      "AMD",
-      "AAPL",
-      "NVDA",
-      "TSLA",
-      "MSFT",
-      "HON",
-      "AMGN",
-      "GS",
-      "GSpA",
-      "GSpC",
-      "GSpD",
-      "IBM",
-      "SOXX"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877626%2Ferasing-question-marks.jpg&w=1200&op=resize",
-    "description": "Chip stocks led a Monday rally, with the Nasdaq Composite gaining 1.3% and the S&P 500 rising 0.7%, while the Dow Jones remained flat. Broadcom surged 4.4% after extending its Apple chip supply deal through 2031, and AMD jumped 8% on autonomous driving adoption. However, Microsoft fell 1.4% following announcements of 4,800 job cuts, and the Dow was weighed down by declines in Honeywell and Amgen.",
-    "keywords": [
-      "chip stocks",
-      "semiconductor rally",
-      "Broadcom",
-      "AMD",
-      "Apple deal",
-      "Microsoft layoffs",
-      "Nasdaq",
-      "Dow Jones"
-    ],
-    "insights": [
-      {
-        "ticker": "AVGO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose 4.4% after announcing a chip supply deal extension with Apple through 2031, securing five more years of custom silicon revenue and adding $78 billion in market capitalization."
+        "sentiment_reasoning": "Trading 13% below IPO price at $52.29 with a $14B market cap on minimal revenues ($30.9M in 2025). Analysts project 67% downside to $17 in base case and potential decline to $7 in bear case. Valuation is extremely stretched at 512x 2026 revenue estimates compared to competitor IonQ at 48x, with significant execution risk required to justify current price."
       },
       {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock surged 8% after Japanese autonomous driving startup Turing announced it is using AMD graphics processors for AI training, positioning AMD as a budget-friendly alternative in self-driving tech."
+        "ticker": "IONQ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Used as a valuation benchmark in the article. Trading at approximately 48x 2026 revenue estimate with $268.33 million in projected revenue, representing a more reasonable valuation multiple than Quantinuum, though no direct investment recommendation is made."
       },
       {
-        "ticker": "AAPL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose 1.49% as part of the broader tech rally, benefiting from the extended chip supply deal with Broadcom through 2031."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose 1.8% despite AMD's gains, maintaining its position as an AI hardware leader and showing resilience in the competitive chip market."
-      },
-      {
-        "ticker": "TSLA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock jumped 5.8% and added $91 billion in market value to become the Nasdaq's largest contributor on a bullish day, though no major news was cited."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock fell 1.4% after announcing 4,800 job cuts and a smaller Xbox gaming division, with investors uncertain whether prioritizing AI infrastructure spending over headcount is the right strategy."
+        "ticker": "IONQ.WS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Used as a valuation benchmark in the article. Trading at approximately 48x 2026 revenue estimate with $268.33 million in projected revenue, representing a more reasonable valuation multiple than Quantinuum, though no direct investment recommendation is made."
       },
       {
         "ticker": "HON",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock declined 7.2% post-spinoff, subtracting 104 points from the Dow Jones Industrial Average due to its price-weighted structure."
-      },
-      {
-        "ticker": "AMGN",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock declined 2.6%, contributing a 58-point drag on the Dow Jones Industrial Average."
-      },
-      {
-        "ticker": "GS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose 2.9%, contributing to the broader market rally on Monday."
-      },
-      {
-        "ticker": "GSpA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose 2.9%, contributing to the broader market rally on Monday."
-      },
-      {
-        "ticker": "GSpC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose 2.9%, contributing to the broader market rally on Monday."
-      },
-      {
-        "ticker": "GSpD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose 2.9%, contributing to the broader market rally on Monday."
-      },
-      {
-        "ticker": "IBM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock gained 3.4%, participating in the tech-driven market rally."
-      },
-      {
-        "ticker": "SOXX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ETF gained 4.1%, bouncing back from a two-week losing streak and reflecting strong momentum in the semiconductor sector."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as strategic backer of Quantinuum, providing some credibility to the company's technical progress. However, no specific analysis or recommendation regarding Honeywell stock itself is provided in the article."
       }
     ]
   },
   {
-    "id": "9d001899564a067e8f78da163581fcab3e255bbb0f87c35be4e80671eff01e66",
+    "id": "39c8933e1b4c7973203de38c706fcecd0ec38241989478c872b5162f2e842b86",
     "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
     },
-    "title": "Vertical Aerospace Just Secured a Critical Supplier Agreement for Its Valo Fleet: Time to Buy?",
-    "author": "Lee Samaha",
-    "published_utc": "2026-07-04T19:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/04/vertical-aerospace-just-secured-a-critical-supplie/?source=iedfolrf0000001",
-    "tickers": [
-      "EVTL",
-      "ATRO",
-      "HON",
-      "JOBY",
-      "JOBY.WS",
-      "ACHR",
-      "ACHR.WS"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876830%2Fgetty-high-risk-risky-danger-investing-mistakes-penny-stocks-margin-1200x798-36b7a2e.jpg&w=1200&op=resize",
-    "description": "Vertical Aerospace signed a long-term supplier agreement with Astronics for power distribution systems for its Valo eVTOL, reducing execution risk. However, the company remains unprofitable with significant cash burn and won't generate earnings until 2032. Substantial shareholder dilution is expected as the company raises capital, with share count projected to rise from 157 million to 373 million by 2032.",
-    "keywords": [
-      "eVTOL",
-      "electric vertical take-off and landing",
-      "supply chain",
-      "shareholder dilution",
-      "cash burn",
-      "preorders",
-      "aerospace suppliers"
-    ],
-    "insights": [
-      {
-        "ticker": "EVTL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While the Astronics supplier deal reduces execution risk and the company has 1,500 preorders, significant headwinds remain including cash burn, no profitability until 2032, and substantial expected shareholder dilution. The deal is positive but doesn't offset fundamental financial challenges."
-      },
-      {
-        "ticker": "ATRO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Secured a long-term supply agreement with Vertical Aerospace for power distribution systems, providing stable revenue stream from the growing eVTOL market."
-      },
-      {
-        "ticker": "HON",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Already has an existing supplier agreement with Vertical Aerospace for flight control and management systems, positioning it to benefit from eVTOL market growth."
-      },
-      {
-        "ticker": "JOBY",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as pursuing a vertically integrated model with its own technology development, differentiating it from competitors like Vertical Aerospace but facing similar market and regulatory uncertainties."
-      },
-      {
-        "ticker": "JOBY.WS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as pursuing a vertically integrated model with its own technology development, differentiating it from competitors like Vertical Aerospace but facing similar market and regulatory uncertainties."
-      },
-      {
-        "ticker": "ACHR",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Noted as relying heavily on external suppliers similar to Vertical Aerospace, facing comparable execution and funding risks in the competitive eVTOL market."
-      },
-      {
-        "ticker": "ACHR.WS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Noted as relying heavily on external suppliers similar to Vertical Aerospace, facing comparable execution and funding risks in the competitive eVTOL market."
-      }
-    ]
-  },
-  {
-    "id": "10f5132aa7b89def78abb5c684789f27daef99dde38b6b9dde8abf2317f2af4d",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Is Honeywell Stock a Buy After Its Latest Structural Shakeup?",
-    "author": "James Halley",
-    "published_utc": "2026-07-03T23:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/03/is-honeywell-stock-a-buy-after-its-latest-structur/?source=iedfolrf0000001",
+    "title": "Blowing Agent Market Size to Reach USD 2.94 Billion by 2035 on Rising Demand for Low-GWP Insulation Solutions | SNS Insider",
+    "author": "Sns Insider",
+    "published_utc": "2026-07-27T09:30:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/27/3333318/0/en/Blowing-Agent-Market-Size-to-Reach-USD-2-94-Billion-by-2035-on-Rising-Demand-for-Low-GWP-Insulation-Solutions-SNS-Insider.html",
     "tickers": [
       "HON",
-      "HONA",
-      "SOLS",
-      "QNT"
+      "CC",
+      "ARKAY",
+      "DOW",
+      "BASFY",
+      "DKILY",
+      "SLVYY",
+      "COVTY"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876816%2Frobot-robotics-machine-manufacture-technology-engineering-1.jpg&w=1200&op=resize",
-    "description": "Honeywell completed its spinoff of its aerospace division on June 29, 2026, transforming into a pure-play industrial automation company focused on building, process, and industrial automation. The restructuring allows the company to capitalize on secular megatrends like warehouse automation and AI-driven energy efficiency. With a 49.1% stake in quantum computing leader Quantinuum and management targeting 4-6% organic growth with double-digit earnings growth over three years, analysts set an average price target of $474.75, representing 114% upside from current levels.",
+    "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
+    "description": "The global blowing agent market is projected to grow from USD 1.79 billion in 2025 to USD 2.94 billion by 2035, driven by increasing demand for eco-friendly foam insulation, regulatory requirements to ban high-GWP compounds, and energy-efficient building construction. Chemical blowing agents dominate with 51.8% market share, while HFO technology is the fastest-growing segment. North America leads with 32.5% market share, with the U.S. market expected to reach USD 0.56 billion by 2035, while Europe is projected to reach USD 0.66 billion.",
     "keywords": [
-      "spinoff",
-      "industrial automation",
-      "aerospace division",
-      "quantum computing",
-      "conglomerate restructuring",
-      "organic growth",
-      "ESG funds"
+      "blowing agents",
+      "low-GWP insulation",
+      "HFO technology",
+      "foam insulation",
+      "energy-efficient buildings",
+      "EPA regulations",
+      "EU F-Gas regulations",
+      "polyurethane foam",
+      "green building",
+      "automotive lightweighting"
     ],
     "insights": [
       {
         "ticker": "HON",
         "sentiment": "positive",
-        "sentiment_reasoning": "The company's focused strategy on high-growth automation segments, strong Q1 growth (11% in building/industrial automation), strategic stake in quantum computing leader Quantinuum, and analyst price targets suggesting 114% upside support a positive outlook. Management's guidance for 4-6% organic growth and double-digit earnings growth over three years is encouraging."
+        "sentiment_reasoning": "Honeywell is highlighted as a major player with commercial presence in North America and recently expanded production capacity for Solstice HFO blowing agents to meet growing global demand, positioning it well for market growth."
       },
       {
-        "ticker": "HONA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While the aerospace division showed solid fundamentals with a $19 billion defense and commercial backlog, it was spun off as a separate entity. The article focuses on Honeywell Technologies post-spinoff, making the aerospace company a secondary consideration with neither clear bullish nor bearish indicators in this context."
-      },
-      {
-        "ticker": "SOLS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Solstice was spun off in October and is mentioned only briefly as part of the portfolio transformation. The article provides minimal analysis of this company's prospects, warranting a neutral stance."
-      },
-      {
-        "ticker": "QNT",
+        "ticker": "CC",
         "sentiment": "positive",
-        "sentiment_reasoning": "Described as the world leader in full-stack quantum computing with the industry benchmark for quantum volume. Honeywell's 49.1% stake provides exposure to this high-growth technology, and the company's recent IPO (June 4) positions it as a strategic asset that could appreciate and lift Honeywell's equity value."
+        "sentiment_reasoning": "Chemours is identified as a key market player in North America and recently introduced advanced Opteon HFO-based blowing agent formulations, demonstrating innovation aligned with regulatory compliance and market trends."
+      },
+      {
+        "ticker": "ARKAY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Arkema is listed as a major player with commercial presence in the growing blowing agent market, benefiting from the shift toward low-GWP solutions and regulatory-driven demand."
+      },
+      {
+        "ticker": "DOW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Dow is identified as a significant market player with presence in North America, positioned to benefit from growing demand for eco-friendly foam insulation and energy-efficient building materials."
+      },
+      {
+        "ticker": "BASFY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "BASF is listed among major players in the blowing agent market, well-positioned to capitalize on the growing demand for low-GWP insulation solutions across construction and automotive sectors."
+      },
+      {
+        "ticker": "DKILY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Daikin is listed as a key player in the blowing agent market, positioned to benefit from growing demand for HFO-based solutions and energy-efficient insulation applications."
+      },
+      {
+        "ticker": "SLVYY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Solvay is identified as a major player in the expanding blowing agent market, benefiting from regulatory drivers and the shift toward sustainable foam insulation solutions."
+      },
+      {
+        "ticker": "COVTY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Covestro is identified as a major player in the market, well-positioned to benefit from the growing demand for polyurethane foam insulation driven by energy efficiency requirements."
+      }
+    ]
+  },
+  {
+    "id": "b1d241e340faaf6eb86bd110ed8e132855591eec7d279904d13388fd91fc25e3",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Warehouse Shuttle Software Market to Reach $2.66 Billion by 2030 as AI and Automation Transform Logistics",
+    "author": "Researchandmarkets.Com",
+    "published_utc": "2026-07-15T10:42:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/15/3327564/28124/en/Warehouse-Shuttle-Software-Market-to-Reach-2-66-Billion-by-2030-as-AI-and-Automation-Transform-Logistics.html",
+    "tickers": [
+      "HON",
+      "SAP",
+      "DFKCY"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/8d0b0b4c-d5da-45ac-af7f-30098e3ff810",
+    "description": "The global warehouse shuttle software market is projected to grow from $1.38 billion in 2025 to $2.66 billion by 2030, with a CAGR of 14.1%. Growth is driven by increased e-commerce volumes, labor costs, AI-powered orchestration, robotic material handling, and cloud-based control systems. Key trends include digital twins, predictive maintenance, and autonomous multi-shuttle coordination, with North America leading and Asia-Pacific showing fastest growth potential.",
+    "keywords": [
+      "warehouse automation",
+      "shuttle software",
+      "AI orchestration",
+      "logistics technology",
+      "e-commerce fulfillment",
+      "robotic material handling",
+      "cloud-based control",
+      "digital twins",
+      "supply chain visibility"
+    ],
+    "insights": [
+      {
+        "ticker": "HON",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a leading company in the warehouse shuttle software market, positioned to benefit from the projected 14.1% CAGR growth through 2030."
+      },
+      {
+        "ticker": "SAP",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Named as a key market participant with enterprise software capabilities; well-positioned to capitalize on unified WMS-enterprise platform integration trends."
+      },
+      {
+        "ticker": "DFKCY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed among leading companies in the growing warehouse automation software market with strong positioning in material handling solutions."
+      }
+    ]
+  },
+  {
+    "id": "cef2390964ea0bfb129f3f5150fb52e7118af23b7b56922f2df0a19e6534fbfc",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Health and Safety Management Market Forecast to Reach $2.87 Billion by 2030 as AI and Connected Safety Adoption Accelerate",
+    "author": "Researchandmarkets.Com",
+    "published_utc": "2026-07-15T08:13:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/15/3327499/28124/en/Health-and-Safety-Management-Market-Forecast-to-Reach-2-87-Billion-by-2030-as-AI-and-Connected-Safety-Adoption-Accelerate.html",
+    "tickers": [
+      "HON",
+      "MMM",
+      "DD",
+      "FTV",
+      "WTKWY"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/7ec5e2fb-96ee-4f04-bc38-a89cc6b330ce",
+    "description": "The global health and safety management market is projected to grow from $2.07 billion in 2026 to $2.87 billion by 2030, with a compound annual growth rate of 8.5%. Growth is driven by rising workplace accidents, regulatory pressure, and adoption of AI-powered risk prediction, IoT monitoring, cloud-based compliance platforms, and automated safety auditing. Asia-Pacific presents significant expansion opportunities.",
+    "keywords": [
+      "health and safety management",
+      "AI risk prediction",
+      "IoT monitoring",
+      "cloud compliance",
+      "safety wearables",
+      "workplace safety",
+      "regulatory compliance",
+      "digital transformation",
+      "Asia-Pacific expansion"
+    ],
+    "insights": [
+      {
+        "ticker": "HON",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a leading company in the health and safety management market, positioned to benefit from the projected 8.5% CAGR growth through 2030 and increasing demand for AI and IoT-enabled safety solutions."
+      },
+      {
+        "ticker": "MMM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Featured as a major competitor in the market, well-positioned to capitalize on growing demand for safety wearables and connected safety solutions in the expanding health and safety management sector."
+      },
+      {
+        "ticker": "DD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a key player in the health and safety management market, positioned to benefit from rising regulatory pressure and increased workplace safety investments across industrial and manufacturing sectors."
+      },
+      {
+        "ticker": "FTV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a major competitor positioned to gain from increasing adoption of cloud-based compliance platforms and automated safety auditing systems in the growing market."
+      },
+      {
+        "ticker": "WTKWY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Included among leading companies in the market, likely to benefit from growth in compliance management software and digital transformation initiatives driving the market expansion."
+      }
+    ]
+  },
+  {
+    "id": "80e38f5abfef485a3fb0546b9209ea3738632f027b33028f79d63f55a5487d9a",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Hazardous Area Equipment Market Size to Hit USD 25.28 Billion by 2035 | Research by SNS Insider",
+    "author": "Sns Insider",
+    "published_utc": "2026-07-15T07:30:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/15/3327484/0/en/Hazardous-Area-Equipment-Market-Size-to-Hit-USD-25-28-Billion-by-2035-Research-by-SNS-Insider.html",
+    "tickers": [
+      "HON",
+      "EMR",
+      "ETN",
+      "ROK",
+      "ABBNY",
+      "SIEGY",
+      "SBGSY"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
+    "description": "The global Hazardous Area Equipment Market, valued at USD 13.50 Billion in 2025, is expected to grow to USD 25.28 Billion by 2035 at a CAGR of 6.48%. Growth is driven by stringent industrial safety regulations (ATEX, IECEx, OSHA), adoption of explosion-proof equipment, and smart monitoring technologies. Asia Pacific leads with 39% market share, while North America is expected to witness the highest growth rate during the forecast period.",
+    "keywords": [
+      "Hazardous Area Equipment",
+      "Industrial Safety",
+      "Explosion-Proof Equipment",
+      "ATEX Regulations",
+      "IIoT",
+      "Market Growth",
+      "Oil & Gas",
+      "Asia Pacific"
+    ],
+    "insights": [
+      {
+        "ticker": "HON",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Expanded portfolio of explosion-proof and intrinsically safe solutions with IoT connectivity integration in 2024, showing strategic positioning in emerging smart monitoring and predictive maintenance trends within the market."
+      },
+      {
+        "ticker": "EMR",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a leading market player but no specific recent developments or innovations mentioned in the article."
+      },
+      {
+        "ticker": "ETN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a leading market player through its Crouse-Hinds division but no specific recent developments or innovations mentioned in the article."
+      },
+      {
+        "ticker": "ROK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a leading market player but no specific recent developments or innovations mentioned in the article."
+      },
+      {
+        "ticker": "ABBNY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company introduced new low-voltage flameproof motors in 2024 with improved energy efficiency and reliability, demonstrating active product innovation and market engagement in the growing hazardous area equipment sector."
+      },
+      {
+        "ticker": "SIEGY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a leading market player but no specific recent developments or innovations mentioned in the article."
+      },
+      {
+        "ticker": "SBGSY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a leading market player but no specific recent developments or innovations mentioned in the article."
       }
     ]
   }
