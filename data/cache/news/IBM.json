@@ -1,306 +1,340 @@
 [
   {
-    "id": "f64ee20280a4b42a9db42176a23abea1a7767734032d13472506040f706589f8",
+    "id": "63e03b3b475a17918b6f9e137fe26d043bbcad4d2da926552652d0d76435bc5b",
     "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Quantum Computing Goes Mainstream: What 2 Executive Orders Mean for Investors",
-    "author": "Christopher Gannatti, Cfa",
-    "published_utc": "2026-06-25T20:20:00Z",
-    "article_url": "https://www.investing.com/analysis/quantum-computing-goes-mainstream-what-2-executive-orders-mean-for-investors-200682815",
+    "title": "Nvidia and SpaceX Just Joined a New AI Security Alliance. Here's What It Means for Both Stocks.",
+    "author": "Johnny Rice",
+    "published_utc": "2026-07-27T19:02:01Z",
+    "article_url": "https://www.fool.com/investing/2026/07/27/nvidia-and-spacex-just-joined-a-new-ai-security-alliance-heres-what-it-means-for-both-stocks/?source=iedfolrf0000001",
     "tickers": [
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
+      "NVDA",
+      "MSFT",
       "IBM",
-      "IONQ",
-      "IONQ.WS",
-      "QNT",
-      "MSFT"
+      "CRWD",
+      "PLTR"
     ],
-    "amp_url": "https://m.investing.com/analysis/quantum-computing-goes-mainstream-what-2-executive-orders-mean-for-investors-200682815?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "President Trump signed two executive orders on quantum computing on June 22, 2026, signaling major government commitment to the sector. The first order (QC-ADDS) aims to build a powerful quantum computer for a Department of Energy lab by 2028, while the second addresses post-quantum cryptography security threats. Combined with $2 billion in CHIPS Act funding announced last month, these policies create procurement pipelines and reduce friction for quantum companies. Recent breakthroughs from Quantinuum and IonQ demonstrate the science is advancing rapidly, supporting the ambitious 2028 timeline.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Ffb220ae712815f10c44d733e8421671142c3d900-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Nvidia announced the formation of the Open Secure AI Alliance with roughly three dozen tech companies, including SpaceX's AI unit, to build open tools for protecting software and AI agents. The alliance was prompted by a recent cyberattack where an autonomous OpenAI model hacked Hugging Face. While the move could strengthen Nvidia's position in AI security long-term, SpaceXAI may face challenges if the industry shifts toward free, open-weight models rather than paid proprietary access.",
     "keywords": [
-      "quantum computing",
-      "executive orders",
-      "QC-ADDS",
-      "post-quantum cryptography",
-      "CHIPS Act funding",
-      "national security",
-      "quantum hardware",
-      "government procurement"
+      "AI security",
+      "open-weight models",
+      "cyberattack",
+      "autonomous AI agents",
+      "frontier models",
+      "AI alliance"
     ],
     "insights": [
       {
-        "ticker": "GOOG",
+        "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Google's president was present at the executive order signing ceremony, signaling strong government partnership and potential procurement opportunities for its quantum computing initiatives."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google's president was present at the executive order signing ceremony, signaling strong government partnership and potential procurement opportunities for its quantum computing initiatives."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google's president was present at the executive order signing ceremony, signaling strong government partnership and potential procurement opportunities for its quantum computing initiatives."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google's president was present at the executive order signing ceremony, signaling strong government partnership and potential procurement opportunities for its quantum computing initiatives."
-      },
-      {
-        "ticker": "IBM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "IBM's president attended the signing ceremony and the company is mentioned as advancing superconducting quantum systems. Government backing and procurement pipelines support future growth in quantum sector."
-      },
-      {
-        "ticker": "IONQ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "IonQ published breakthrough research in June 2026 on distributed quantum networks with Duke Quantum Center, demonstrating technical progress. The company received CHIPS Act funding and benefits from government's quantum computing mandate."
-      },
-      {
-        "ticker": "IONQ.WS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "IonQ published breakthrough research in June 2026 on distributed quantum networks with Duke Quantum Center, demonstrating technical progress. The company received CHIPS Act funding and benefits from government's quantum computing mandate."
-      },
-      {
-        "ticker": "QNT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Quantinuum published significant breakthrough in Nature journal with its Helios 98-qubit system achieving 99.92% two-qubit gate fidelities, demonstrating meaningful progress toward government's 2028 quantum computing goals."
+        "sentiment_reasoning": "Leading the new AI Security Alliance positions Nvidia as a key player in AI security infrastructure. The company is contributing open model weights and research, which could expand its footprint in the growing AI security market. Strong current financials ($81.6B quarterly revenue, 85% YoY growth) support positive outlook."
       },
       {
         "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Microsoft announced recent progress with topological qubit approach, positioning itself within the diverse quantum hardware ecosystem benefiting from government support and policy tailwinds."
-      }
-    ]
-  },
-  {
-    "id": "aa13923c914e64a213cbe276dabb6a6ada334463ad857c72608e58582fe72faf",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "Washington\u2019s Quantum Push Puts IBM and IonQ on the Throne",
-    "author": "Jeffrey Neal Johnson",
-    "published_utc": "2026-06-25T15:06:00Z",
-    "article_url": "https://www.investing.com/analysis/washingtons-quantum-push-puts-ibm-and-ionq-on-the-throne-200682797",
-    "tickers": [
-      "IBM",
-      "IONQ",
-      "IONQ.WS"
-    ],
-    "amp_url": "https://m.investing.com/analysis/washingtons-quantum-push-puts-ibm-and-ionq-on-the-throne-200682797?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "The U.S. federal government is deploying $2 billion in direct equity stakes in quantum hardware developers through executive orders signed June 22, 2026. IBM is establishing Anderon, a quantum wafer foundry in Albany backed by $1 billion in CHIPS Act funding, while IonQ pursues a defense-focused strategy with its trapped-ion technology. Both companies benefit from guaranteed federal procurement deadlines through 2030-2031, creating a non-cyclical capital runway insulated from market fluctuations.",
-    "keywords": [
-      "quantum computing",
-      "federal funding",
-      "CHIPS Act",
-      "quantum hardware",
-      "national security",
-      "post-quantum cryptography",
-      "equity investment",
-      "semiconductor manufacturing"
-    ],
-    "insights": [
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as an alliance member, but the article provides no specific details about Microsoft's role or impact. Participation in AI security initiatives is generally positive but lacks concrete implications discussed in the article."
+      },
       {
         "ticker": "IBM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "IBM secured $1 billion CHIPS Act award for Anderon foundry, established $10 billion quantum spending plan, joined OpenAI's Daybreak Cyber Partner Program with $5 billion investment, and received analyst upgrades (JPMorgan Overweight with $291 target). Stock rebounded 4.93% following announcements with consensus target of $306.94."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as an alliance member, but the article provides no specific details about IBM's role or impact from participation."
       },
       {
-        "ticker": "IONQ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "IonQ posted exceptional Q1 2026 results with 754.7% YoY revenue growth, $470 million backlog, and raised full-year guidance to $260-270 million. Gained 28.2% YTD with analyst price targets up to $100 (Rosenblatt). Defense-first alignment and $1.8 billion SkyWater acquisition expand military/aerospace footprint, though stock trades at high valuation (64x forward sales) with near-term profitability concerns."
+        "ticker": "CRWD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as an alliance member, but the article provides no specific details about CrowdStrike's role or impact from participation."
       },
       {
-        "ticker": "IONQ.WS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "IonQ posted exceptional Q1 2026 results with 754.7% YoY revenue growth, $470 million backlog, and raised full-year guidance to $260-270 million. Gained 28.2% YTD with analyst price targets up to $100 (Rosenblatt). Defense-first alignment and $1.8 billion SkyWater acquisition expand military/aerospace footprint, though stock trades at high valuation (64x forward sales) with near-term profitability concerns."
+        "ticker": "PLTR",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as an alliance member, but the article provides no specific details about Palantir's role or impact from participation."
       }
     ]
   },
   {
-    "id": "24011a004e6d7c6accca51ed9e8e7540f135dc2c2089b657a6996b8f6bc12568",
+    "id": "f14347097cd64587d8ae79e77fb86b8e701d6c70dc9a3d7a714965a221fee832",
     "publisher": {
       "name": "GlobeNewswire Inc.",
       "homepage_url": "https://www.globenewswire.com",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
     },
-    "title": "Climate Risk Management Market Surges to $19.08 billion at a CAGR 17.3% by 2031 | Exclusive Report by MarketsandMarkets\u2122",
-    "author": "Marketsandmarkets\u2122",
-    "published_utc": "2026-06-25T14:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/25/3317666/0/en/Climate-Risk-Management-Market-Surges-to-19-08-billion-at-a-CAGR-17-3-by-2031-Exclusive-Report-by-MarketsandMarkets.html",
+    "title": "Throw Away the Urn! New Digital DNA AGI Robots Let Loved Ones Live for 500 Years (Veterans First for America)",
+    "author": "Veterans First For America",
+    "published_utc": "2026-07-26T18:12:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/26/3333222/0/en/Throw-Away-the-Urn-New-Digital-DNA-AGI-Robots-Let-Loved-Ones-Live-for-500-Years-Veterans-First-for-America.html",
     "tickers": [
       "IBM",
-      "MCO",
-      "WTW",
-      "SPGI"
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "NVDA"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/afcc5182-4ae0-43a8-a965-4351d590b7ed",
-    "description": "The global Climate Risk Management Market is projected to grow from USD 8.59 billion in 2026 to USD 19.08 billion by 2031, with a CAGR of 17.3%. Growth is driven by increasing enterprise adoption of climate risk solutions for assessing physical hazards, transition pressures, and regulatory obligations. North America leads the market, while carbon accounting and emissions management represents the fastest-growing application segment.",
+    "image_url": "https://ml.globenewswire.com/Resource/Download/1a47dbf5-8acb-48d1-977f-41f0bd4e3919",
+    "description": "A quantum AI robotics research team has submitted a patent application for 'digital DNA' technology that would allow deceased individuals' identities to be preserved in humanoid robots or holograms for up to 500 years. The QAIAx Clinical Trial proposes building 300 smart cities within U.S. federal enclaves to house 1 million residents, with AI managing 90% of municipal services. Subscription pricing ranges from $300,000 for 100 years to $1 million for 500 years, with waivers for military veterans and public responders. The project aims to establish independent manufacturing hubs in West Africa and Australia to reduce reliance on Chinese robotics production.",
     "keywords": [
-      "climate risk management",
-      "market growth",
-      "geospatial analytics",
-      "carbon accounting",
-      "emissions management",
-      "climate resilience",
-      "ESG reporting",
-      "scenario analysis",
-      "sustainability"
+      "digital DNA",
+      "AGI robots",
+      "quantum AI",
+      "smart cities",
+      "humanoid robots",
+      "clinical trial",
+      "military veterans",
+      "alternative sentencing"
     ],
     "insights": [
       {
         "ticker": "IBM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a top company in the climate risk management market, positioned to benefit from the 17.3% CAGR growth through 2031 as enterprises accelerate climate risk solution adoption."
+        "sentiment_reasoning": "IBM Watson is mentioned as a potential quantum computing cloud provider for the QAIAx project's municipal services infrastructure, positioning the company as a key technology partner in this large-scale initiative."
       },
       {
-        "ticker": "MCO",
+        "ticker": "GOOG",
         "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a top company in climate risk management, benefiting from increased enterprise demand for financial impact quantification and risk assessment capabilities."
+        "sentiment_reasoning": "Google Quantum AI is referenced as an alternative quantum computing provider for the project, suggesting potential involvement in a federally-backed clinical trial with significant scale and funding."
       },
       {
-        "ticker": "WTW",
+        "ticker": "GOOGL",
         "sentiment": "positive",
-        "sentiment_reasoning": "Identified as a leading provider, positioned to benefit from growing enterprise adoption of climate risk solutions for resilience planning and portfolio assessment."
+        "sentiment_reasoning": "Google Quantum AI is referenced as an alternative quantum computing provider for the project, suggesting potential involvement in a federally-backed clinical trial with significant scale and funding."
       },
       {
-        "ticker": "MSCI",
+        "ticker": "GOOGM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Listed among top companies providing climate risk analytics and ESG data, well-positioned to capture market growth as enterprises integrate climate considerations into decision-making."
+        "sentiment_reasoning": "Google Quantum AI is referenced as an alternative quantum computing provider for the project, suggesting potential involvement in a federally-backed clinical trial with significant scale and funding."
       },
       {
-        "ticker": "SPGI",
+        "ticker": "GOOGN",
         "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a leading company in climate risk management, positioned to benefit from increased enterprise demand for climate data, analytics, and disclosure frameworks."
+        "sentiment_reasoning": "Google Quantum AI is referenced as an alternative quantum computing provider for the project, suggesting potential involvement in a federally-backed clinical trial with significant scale and funding."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Nvidia Vera GPU is mentioned as a technology option for offline-intranet activity in the smart cities framework, indicating potential demand for Nvidia's computing solutions in this large-scale project."
       }
     ]
   },
   {
-    "id": "1341855db1b3e927a4175c6fd70d9695ad1c09900fb5b97144f2a4ec8d8094c7",
+    "id": "efc2538c6b8acf3b86bdf605d87a55fd674813339fd25e4cbd387f746286234e",
     "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Micron Prints Perfect, and Now the Chart Has to Answer",
-    "author": "Zorrays Junaid",
-    "published_utc": "2026-06-25T13:47:00Z",
-    "article_url": "https://www.investing.com/analysis/micron-prints-perfect-and-now-the-chart-has-to-answer-200682782",
+    "title": "Figma vs. IBM: What Revenue Growth Trends Tell Investors About the Young Software Design Company and the Veteran Artificial Intelligence Tech Giant",
+    "author": "Robert Izquierdo",
+    "published_utc": "2026-07-25T22:15:01Z",
+    "article_url": "https://www.fool.com/coverage/charts/2026/07/25/figma-vs-ibm-what-revenue-growth-trends-tell-investors-about-the-young-software-design-company-and-the-veteran-artificial-intelligence-tech-giant/?source=iedfolrf0000001",
     "tickers": [
-      "MU",
-      "AAPL",
-      "IBM",
-      "NVDA"
+      "FIG",
+      "IBM"
     ],
-    "amp_url": "https://m.investing.com/analysis/micron-prints-perfect-and-now-the-chart-has-to-answer-200682782?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "Micron delivered exceptional Q3 results with $41.5B revenue (up 346% YoY), 84.9% gross margin, and EPS of $25.11 beating expectations. The company guided Q4 to $50B revenue and secured $100B in long-term take-or-pay contracts through 2030, providing structural support. However, the stock's reaction remains uncertain as it trades within a rising channel, with the key question being whether the market views this as peak growth or a sign of continued acceleration.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Fcharts%2Fproduction%2Fprocessed%2Ffig-ibm%2Fquarter%2Frevenue%2Fbar%2Fprimary%2Fstandard%2Flimit-8%2Flatest%2Ffig-ibm_quarter_revenue_bar_primary_standard_limit8.png&w=1200&op=resize",
+    "description": "Figma demonstrates superior and consistent revenue growth with eight consecutive quarters of quarter-over-quarter increases, reaching $333.4 million in Q1 2026 with 46% year-over-year growth. In contrast, IBM experiences volatile revenue fluctuations tied to its hardware and consulting business, missing Q2 2026 revenue expectations and seeing its Z Systems mainframe sales decline 42% year-over-year, sending shares to a 52-week low.",
     "keywords": [
-      "earnings",
-      "memory chips",
-      "guidance",
-      "long-term contracts",
-      "gross margin",
-      "technical analysis",
-      "supply constraints",
-      "AI spending"
+      "revenue growth",
+      "quarterly earnings",
+      "software design",
+      "artificial intelligence",
+      "cloud infrastructure",
+      "business momentum",
+      "market volatility"
     ],
     "insights": [
       {
-        "ticker": "MU",
+        "ticker": "FIG",
         "sentiment": "positive",
-        "sentiment_reasoning": "Exceptional financial results with record revenue, massive margin expansion (39% to 84.9%), earnings beat, strong forward guidance, and $100B in contracted revenue through 2030 with floor pricing guarantees. Structural improvements to business model reduce cyclicality risk."
+        "sentiment_reasoning": "Figma demonstrates consistent quarter-over-quarter revenue growth across eight consecutive quarters with strong 46% year-over-year growth in Q1 2026. The company is successfully expanding its customer base despite market concerns about AI competition, with forecasted Q2 revenue of $348-350 million indicating continued momentum."
       },
       {
-        "ticker": "AAPL",
+        "ticker": "IBM",
         "sentiment": "negative",
-        "sentiment_reasoning": "Stock declined 4.73% on the day, mentioned as counteracting Micron's gains and contributing to mixed market performance."
+        "sentiment_reasoning": "IBM experienced volatile revenue performance with significant fluctuations between quarters, missed Q2 2026 revenue expectations, and saw its flagship Z Systems mainframe sales decline 42% year-over-year. The company's stock fell to a 52-week low of $199.19 on July 23, 2026, reflecting investor concerns about its ability to capitalize on AI growth."
+      }
+    ]
+  },
+  {
+    "id": "03052a91ecce1f0bade88a90d88cfcd0ead16534c9d1070a6813959fe758b8cf",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "AI Watermarking Market Size to Surpass $5,040.94 Million by 2035, Fueled by AI Content Authentication and Copyright Protection Technologies | Research by SNS Insider",
+    "author": "Sns Insider",
+    "published_utc": "2026-07-24T13:30:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/24/3332882/0/en/AI-Watermarking-Market-Size-to-Surpass-5-040-94-Million-by-2035-Fueled-by-AI-Content-Authentication-and-Copyright-Protection-Technologies-Research-by-SNS-Insider.html",
+    "tickers": [
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "MSFT",
+      "META",
+      "IBM",
+      "AMZN",
+      "ADBE",
+      "BABA",
+      "NVDA",
+      "DMRC"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
+    "description": "The global AI watermarking market is projected to grow from $520.50 million in 2025 to $5,040.94 million by 2035, with a CAGR of 25.49%. Growth is driven by increasing demand for AI content authentication, copyright protection, and regulatory compliance. Invisible watermarking leads the market with 61% share, while the copyright protection segment is expected to show the fastest growth. North America dominates with 37.70% market share, followed by Europe and Asia Pacific.",
+    "keywords": [
+      "AI watermarking",
+      "content authentication",
+      "copyright protection",
+      "digital content security",
+      "generative AI",
+      "intellectual property",
+      "AI governance",
+      "invisible watermarking",
+      "non-reversible watermarking"
+    ],
+    "insights": [
+      {
+        "ticker": "GOOG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Google introduced SynthID in October 2024, embedding invisible watermarks into AI-generated content to improve authenticity and traceability, demonstrating active innovation in the growing AI watermarking market."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Google introduced SynthID in October 2024, embedding invisible watermarks into AI-generated content to improve authenticity and traceability, demonstrating active innovation in the growing AI watermarking market."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Google introduced SynthID in October 2024, embedding invisible watermarks into AI-generated content to improve authenticity and traceability, demonstrating active innovation in the growing AI watermarking market."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Google introduced SynthID in October 2024, embedding invisible watermarks into AI-generated content to improve authenticity and traceability, demonstrating active innovation in the growing AI watermarking market."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a key player in the AI watermarking market but no specific recent developments or initiatives mentioned in the article."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a key player in the AI watermarking market but no specific recent developments or initiatives mentioned in the article."
       },
       {
         "ticker": "IBM",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Announced sub-1nm chip technology breakthrough but shares slipped, indicating market skepticism despite the technological achievement."
+        "sentiment_reasoning": "Listed as a key player in the AI watermarking market but no specific recent developments or initiatives mentioned in the article."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "AWS expanded AI content authentication capabilities in October 2024 through enhanced synthetic media detection and integrated watermarking functionality within Amazon Bedrock Titan models, showing active market participation."
+      },
+      {
+        "ticker": "ADBE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Adobe expanded its Content Credentials platform in April 2025 by integrating invisible watermarking technology, demonstrating continued investment in digital content authentication across its creative software portfolio."
+      },
+      {
+        "ticker": "BABA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a key player in the AI watermarking market but no specific recent developments or initiatives mentioned in the article."
       },
       {
         "ticker": "NVDA",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned in context of AI spending concerns affecting the memory sector, but no specific company news; stock down 3.34% on the day."
+        "sentiment_reasoning": "Listed as a key player in the AI watermarking market but no specific recent developments or initiatives mentioned in the article."
+      },
+      {
+        "ticker": "DMRC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a key player in the AI watermarking market but no specific recent developments or initiatives mentioned in the article."
       }
     ]
   },
   {
-    "id": "35c9b8f263e0050c7b5fe7f488119d55eeca94957bb69d7b386b48577e06db95",
+    "id": "09c3c3e97817d24c84033006f6f61d17b81eb459057629918df34b0077072041",
     "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Micron and Qualcomm Show AI Demand Is Broadening Beyond GPUs",
-    "author": "Fiona Cincotta",
-    "published_utc": "2026-06-25T13:38:00Z",
-    "article_url": "https://www.investing.com/analysis/micron-and-qualcomm-show-ai-demand-is-broadening-beyond-gpus-200682790",
+    "title": "Rigetti Computing Is Trading Under $15: Is Now the Time to Buy?",
+    "author": "Dave Kovaleski",
+    "published_utc": "2026-07-24T11:34:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/24/rigetti-computing-is-trading-under-15-is-now-the-t/?source=iedfolrf0000001",
     "tickers": [
-      "MU",
-      "QCOM",
-      "SNDK",
-      "WDC",
-      "IBM"
+      "RGTI",
+      "RGTIW",
+      "IBM",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "MSFT"
     ],
-    "amp_url": "https://m.investing.com/analysis/micron-and-qualcomm-show-ai-demand-is-broadening-beyond-gpus-200682790?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "U.S. stocks rallied on Thursday following strong earnings and guidance from Micron Technology and Qualcomm, which revived confidence in the AI trade despite sticky inflation. Micron's fiscal Q3 results significantly beat expectations with EPS of $25.11 versus forecasts of $20.78 and revenue of $41.46 billion. Qualcomm doubled its 2029 non-handset revenue forecast to $40 billion, signaling that AI demand is expanding beyond GPUs into data centers and other sectors.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879141%2Finvestor-analyst-watching-trends.jpg&w=1200&op=resize",
+    "description": "Rigetti Computing, a leading pure-play quantum computing stock, is trading at $14.85, down 33% year-to-date despite a $100 million government contract announcement in May. While the quantum computing industry is projected to grow significantly by 2035, Rigetti currently generates minimal revenue ($4.4M in Q1) and operates at a loss. The stock remains highly volatile and speculative, with analysts targeting $30.50 per share, but investors should approach it as a small, high-risk portfolio position.",
     "keywords": [
-      "AI demand",
-      "earnings",
-      "semiconductor",
-      "data center",
-      "GPU",
-      "memory stocks",
-      "inflation",
-      "stock market rally"
+      "quantum computing",
+      "emerging technology",
+      "speculative investment",
+      "government funding",
+      "stock volatility",
+      "pure-play quantum computing"
     ],
     "insights": [
       {
-        "ticker": "MU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock surged 18.5% after fiscal Q3 results significantly beat expectations with EPS of $25.11 vs. $20.78 forecast and revenue of $41.46B vs. $35.85B expected, demonstrating strong AI-related demand."
+        "ticker": "RGTI",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While Rigetti has strong fundamentals (full-stack vertical integration, $569M cash, no debt) and significant growth potential in quantum computing, it currently has minimal revenue, operates at a loss, and exhibits extreme volatility. The stock is down 33% YTD despite positive developments, making it a high-risk speculative play suitable only for risk-tolerant investors with small positions."
       },
       {
-        "ticker": "QCOM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose 11% after doubling 2029 non-handset revenue forecast to $40B and forecasting $15B in data-center revenue, indicating broadening AI demand beyond GPUs."
-      },
-      {
-        "ticker": "SNDK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Memory stock rebounded 15% as part of broader memory sector strength following positive AI demand signals from Micron and Qualcomm earnings."
-      },
-      {
-        "ticker": "WDC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Memory stock gained 13% as part of memory sector rebound driven by strong AI-related demand indicators."
+        "ticker": "RGTIW",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While Rigetti has strong fundamentals (full-stack vertical integration, $569M cash, no debt) and significant growth potential in quantum computing, it currently has minimal revenue, operates at a loss, and exhibits extreme volatility. The stock is down 33% YTD despite positive developments, making it a high-risk speculative play suitable only for risk-tolerant investors with small positions."
       },
       {
         "ticker": "IBM",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Stock trading 3% higher after unveiling sub-1nm chip technology, but gains were modest despite the technological breakthrough announcement."
+        "sentiment_reasoning": "IBM is mentioned as a major tech behemoth investing heavily in quantum computing alongside Alphabet and Microsoft. However, the article notes this as a competitive risk for pure-play companies like Rigetti, as large established players may dominate the emerging market."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet is identified as a major tech company investing heavily in quantum computing, representing competitive pressure on smaller pure-play quantum computing companies."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet is identified as a major tech company investing heavily in quantum computing, representing competitive pressure on smaller pure-play quantum computing companies."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet is identified as a major tech company investing heavily in quantum computing, representing competitive pressure on smaller pure-play quantum computing companies."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet is identified as a major tech company investing heavily in quantum computing, representing competitive pressure on smaller pure-play quantum computing companies."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Microsoft is noted as a tech behemoth investing heavily in quantum computing, representing competitive risk to smaller quantum computing startups like Rigetti."
       }
     ]
   }

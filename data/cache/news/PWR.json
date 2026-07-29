@@ -1,5 +1,50 @@
 [
   {
+    "id": "f51777cce94511d553c9f422aeefd70d575d11e109f2b7245fbb5b9b9ef95c52",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "AI Capex Crosses $1 Trillion Next Year. Here Are 2 Industrial Stocks That Will Benefit",
+    "author": "Leo Sun",
+    "published_utc": "2026-07-15T11:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/15/ai-capex-crosses-1-trillion-next-year-heres-x-indu/?source=iedfolrf0000001",
+    "tickers": [
+      "VRT",
+      "PWR",
+      "NVDA"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878697%2Fgettyimages-2078917109.jpg&w=1200&op=resize",
+    "description": "As AI spending by U.S. hyperscalers is projected to reach $1 trillion in 2027, industrial companies supporting data center infrastructure are positioned for significant growth. Vertiv Holdings and Quanta Services are highlighted as key beneficiaries, with Vertiv providing thermal management and power systems for AI chips, while Quanta builds transmission infrastructure to support power-hungry data centers.",
+    "keywords": [
+      "AI capex",
+      "data center infrastructure",
+      "thermal management",
+      "power transmission",
+      "hyperscaler spending",
+      "industrial stocks"
+    ],
+    "insights": [
+      {
+        "ticker": "VRT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Revenue more than doubled from 2021-2025, adjusted EBITDA tripled, backlog doubled year-over-year to $15B, and analysts expect 28% revenue and 38% EBITDA CAGRs through 2028. Strong partnership with Nvidia positions it well for AI infrastructure growth."
+      },
+      {
+        "ticker": "PWR",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Year-end backlog more than doubled from $19.3B to $44B (2021-2025), driven by cloud and AI market expansion. Analysts expect 17% revenue and 19% EBITDA CAGRs through 2028. Positioned to benefit from grid upgrades and renewable energy infrastructure buildout."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a partner to Vertiv and driver of demand for infrastructure upgrades due to power-hungry AI chips, but not the primary focus of the investment thesis."
+      }
+    ]
+  },
+  {
     "id": "3fecb355ef759e80612fac342777d03e1233756939c9fffbac8cb052bd00afa7",
     "publisher": {
       "name": "The Motley Fool",
@@ -302,54 +347,6 @@
         "ticker": "PWR",
         "sentiment": "positive",
         "sentiment_reasoning": "The announcement of a quarterly dividend and a substantial $1 billion stock repurchase program demonstrates strong capital allocation and confidence in the company's financial position. These actions signal management's commitment to returning value to shareholders and suggest healthy cash flows and business performance."
-      }
-    ]
-  },
-  {
-    "id": "5b1fb4276e38f0331cd1e7e497f403520ff42c33adcb64f8c8bd3ddd2375f00b",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "3 Infrastructure Stocks Fueling the Data Center Building Boom",
-    "author": "Dan Schmidt",
-    "published_utc": "2026-05-18T14:21:00Z",
-    "article_url": "https://www.investing.com/analysis/3-infrastructure-stocks-fueling-the-data-center-building-boom-200680492",
-    "tickers": [
-      "STRL",
-      "PWR",
-      "FIX"
-    ],
-    "amp_url": "https://m.investing.com/analysis/3-infrastructure-stocks-fueling-the-data-center-building-boom-200680492?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "As AI demand drives data center expansion, three infrastructure companies are capitalizing on the need for electrical systems, power grid connections, and cooling solutions. Sterling Infrastructure, Quanta Services, and Comfort Systems USA are benefiting from massive backlogs and strong earnings beats, with electricity consumption expected to grow 1.6% annually over the next 25 years.",
-    "keywords": [
-      "data centers",
-      "AI infrastructure",
-      "electrical systems",
-      "power grid",
-      "HVAC cooling",
-      "construction",
-      "backlogs",
-      "earnings growth"
-    ],
-    "insights": [
-      {
-        "ticker": "STRL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company reported massive Q1 2026 beats (90% YoY sales growth, 174% E-Infrastructure segment acceleration), raised full-year guidance by 20%, has $3.8B signed backlog plus $6.5B pipeline, and stock up 170% YTD. Main headwind is labor shortage."
-      },
-      {
-        "ticker": "PWR",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Reported strong Q1 2026 results with $7.87B revenue and EPS of $2.68 above expectations. Increased full-year guidance to $34.7-35.2B and maintains record $48.5B backlog. Technical chart shows clean consolidation with positive momentum."
-      },
-      {
-        "ticker": "FIX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 300% in last 12 months with record $12.5B backlog and record 26.3% gross margins in Q1 2026. Technical indicators show strong uptrend with no overbought signals, suggesting continued upside potential."
       }
     ]
   }

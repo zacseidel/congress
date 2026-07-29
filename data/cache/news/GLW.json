@@ -1,5 +1,53 @@
 [
   {
+    "id": "dc446b5ca26e829ffe19cfa0bb7df0c9cf0383fdf8a8ea17a43a1bb7e1b3db55",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "The AI Boom Has a Second Act\u2014And It\u2019s Playing Out in Optics",
+    "author": "Bridget Bennett",
+    "published_utc": "2026-06-30T15:32:00Z",
+    "article_url": "https://www.investing.com/analysis/the-ai-boom-has-a-second-actand-its-playing-out-in-optics-200683060",
+    "tickers": [
+      "APH",
+      "GLW",
+      "CIEN"
+    ],
+    "amp_url": "https://m.investing.com/analysis/the-ai-boom-has-a-second-actand-its-playing-out-in-optics-200683060?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "While AI infrastructure investment focuses on chips, the real opportunity lies in optical networking components. Companies manufacturing fiber, connectors, and routing systems are landing multi-billion-dollar contracts with hyperscalers and facing supply bottlenecks. Three key players\u2014Amphenol, Corning, and Ciena\u2014are positioned to benefit from the $1 trillion AI infrastructure buildout, with analyst estimates expected to be revised higher as demand accelerates through 2030.",
+    "keywords": [
+      "AI infrastructure",
+      "optical networking",
+      "fiber optics",
+      "data centers",
+      "hyperscalers",
+      "supply bottleneck",
+      "connectivity",
+      "capital expenditure"
+    ],
+    "insights": [
+      {
+        "ticker": "APH",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong recent earnings beat with revenue of $7.62B vs. $7.08B estimate, double-digit growth projections through 2028, and positioned as core supplier of connectors/interconnects for AI data centers with $200B market cap."
+      },
+      {
+        "ticker": "GLW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Secured major deals with NVIDIA and Amazon for optical fiber manufacturing, projecting sales growth from current levels to $20B by year-end, $30B by 2028, and $40B by 2030, with EPS accelerating significantly through 2028."
+      },
+      {
+        "ticker": "CIEN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recent earnings beat with EPS of $1.64 vs. $1.46 estimate, raised full-year guidance to $6.3B, margin expansion expected, and positioned as intelligent routing layer with strong growth projections to $14.28 EPS by 2028."
+      }
+    ]
+  },
+  {
     "id": "de3d49571c60a16922ce466fd4fe2859f08c2f196186f8dc6721d46642796dc3",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -203,58 +251,6 @@
         "ticker": "GLW",
         "sentiment": "positive",
         "sentiment_reasoning": "Corning secured a multibillion-dollar deal with Amazon to supply fiber for U.S. data centers, benefiting from Amazon's massive AI infrastructure build-out and ongoing capex expansion."
-      }
-    ]
-  },
-  {
-    "id": "fa64e700f71107a22cd2dc783e43a59a4a469881a58d52e396d9d10879dd3c5c",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Forget the Big Chipmakers for a Minute: This Overlooked AI Stock Is Up 114% and Just Landed Deals With Nvidia and Amazon",
-    "author": "Daniel Sparks",
-    "published_utc": "2026-06-09T03:12:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/08/forget-the-big-chipmakers-for-a-minute-this-overlo/?source=iedfolrf0000001",
-    "tickers": [
-      "GLW",
-      "AMZN",
-      "NVDA",
-      "META"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F873615%2Fglw-stock.jpg&w=1200&op=resize",
-    "description": "Corning, a 175-year-old glassmaker, has emerged as a quiet beneficiary of AI infrastructure spending, with its stock up 114% in 2026. The company secured major multibillion-dollar deals with Amazon, Meta, and Nvidia for optical fiber connectivity in data centers. Corning's optical communications sales grew 36% year-over-year in Q1, and the company targets $40 billion in annualized sales by 2030. However, the stock trades at a rich P/E ratio of 90, and investors should be cautious about concentration risk tied to hyperscaler AI spending.",
-    "keywords": [
-      "optical fiber",
-      "AI infrastructure",
-      "data centers",
-      "Multicore Fiber",
-      "hyperscalers",
-      "connectivity",
-      "manufacturing expansion"
-    ],
-    "insights": [
-      {
-        "ticker": "GLW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong revenue growth (36% YoY in optical communications), major deals with tech giants, expanding manufacturing capacity, and ambitious 2030 sales targets demonstrate solid business momentum in the AI build-out."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a customer securing multibillion-dollar fiber agreements with Corning for data center expansion, indicating continued AI infrastructure investment, but no direct impact on Amazon's core business highlighted."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Named Corning as optical partner for next-generation AI infrastructure with $500 million investment and potential $3.2 billion total commitment, demonstrating strategic commitment to AI ecosystem development."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Agreed to purchase up to $6 billion in optical solutions from Corning for AI data centers, showing continued infrastructure investment but no direct business impact highlighted."
       }
     ]
   }

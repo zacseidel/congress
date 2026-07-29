@@ -1,303 +1,353 @@
 [
   {
-    "id": "15ffc80b13442d0d0c967713d4e35292bce3ac285a87a9f6562446f0f15f611a",
+    "id": "edca9e8b8e88afce947660257969d7d1a26e94b4ee505d9d0c1ebffde33b0b2c",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "This Tech ETF Has More than Doubled in 2026. Is It a Good Buy for the Back Half of the Year?",
-    "author": "Stefon Walters",
-    "published_utc": "2026-06-25T12:35:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/25/this-tech-etf-has-more-than-doubled-in-2026-is-it/?source=iedfolrf0000001",
+    "title": "Got $100? 1 Artificial Intelligence (AI) Memory ETF to Buy Right Now.",
+    "author": "Manali Pradhan, Cfa",
+    "published_utc": "2026-07-25T17:11:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/25/got-100-1-artificial-intelligence-ai-memory-etf-to/?source=iedfolrf0000001",
     "tickers": [
       "SOXX",
       "NVDA",
       "AMD",
-      "AVGO",
-      "TSM",
-      "INTC",
-      "QCOM",
+      "MU",
+      "LRCX",
       "AMAT",
-      "MU"
+      "KLAC"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875705%2Fgettyimages-1131198259.jpg&w=1200&op=resize",
-    "description": "The iShares Semiconductor ETF (SOXX) has surged 108% year-to-date, significantly outperforming the S&P 500's 9% gain. While the ETF provides diversified exposure to the semiconductor supply chain through 30 major companies, the article cautions that current growth rates are unsustainable long-term. The main drawback is its 0.34% expense ratio, which is 10 times higher than typical S&P 500 ETFs. The article recommends SOXX as a buy for those seeking semiconductor industry exposure during the AI boom, but warns against expecting similar returns in the future.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879501%2Fprofessional_smiling_in_the_office.jpg&w=1200&op=resize",
+    "description": "The iShares Semiconductor ETF (SOXX) offers diversified exposure to the AI memory supply chain, including memory producers, chip designers, and equipment suppliers. Growing demand for high-bandwidth memory in AI accelerators is creating supply shortages expected to persist beyond 2027. While the recent semiconductor sell-off has improved entry points, the ETF trades at a premium valuation (66x earnings) with concentrated holdings, presenting downside risks if AI spending slows or memory supply increases faster than expected.",
     "keywords": [
+      "high-bandwidth memory (HBM)",
+      "AI accelerators",
+      "semiconductor supply chain",
+      "memory shortage",
       "semiconductor ETF",
-      "SOXX",
-      "AI boom",
-      "chip stocks",
-      "expense ratio",
-      "tech stocks",
-      "investment strategy"
+      "chip manufacturing equipment"
     ],
     "insights": [
       {
         "ticker": "SOXX",
         "sentiment": "positive",
-        "sentiment_reasoning": "The ETF is praised for its 108% year-to-date returns, strong 3-year and 5-year performance, and comprehensive exposure to the semiconductor supply chain. It's recommended as a good buy for those seeking semiconductor industry exposure during the AI boom."
+        "sentiment_reasoning": "Positioned to benefit from sustained HBM demand and memory supply constraints through 2027; offers diversified exposure across the AI memory ecosystem; recent sell-off improved valuation entry point."
       },
       {
         "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a top holding and pure-play chip designer in SOXX with significant growth potential in the AI ecosystem."
+        "sentiment_reasoning": "Driving HBM demand with new Rubin GPU requiring 288GB of HBM4; major component of SOXX portfolio (8.26%); benefits from memory supply constraints."
       },
       {
         "ticker": "AMD",
         "sentiment": "positive",
-        "sentiment_reasoning": "Identified as a major pure-play chip designer within SOXX with exposure to the growing AI market."
-      },
-      {
-        "ticker": "AVGO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a top semiconductor company holding in SOXX with growth potential in the AI ecosystem."
-      },
-      {
-        "ticker": "TSM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Described as the 'go-to chip foundry' and a major holding in SOXX, positioned to benefit from AI demand."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hybrid manufacturer in SOXX but without specific positive or negative commentary regarding its prospects."
-      },
-      {
-        "ticker": "QCOM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a pure-play chip designer within SOXX with exposure to the semiconductor supply chain."
-      },
-      {
-        "ticker": "AMAT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Identified as a major equipment maker in SOXX, benefiting from semiconductor industry growth."
+        "sentiment_reasoning": "MI400 series accelerators designed to use up to 432GB of HBM4; significant SOXX holding (8.74%); competing in high-demand AI accelerator market."
       },
       {
         "ticker": "MU",
         "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a hybrid manufacturer in SOXX with exposure to the growing semiconductor demand."
-      }
-    ]
-  },
-  {
-    "id": "33c5aa93949bcd82666e90a604e60cb98355cf63271301bc151a45cc7c9497a2",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Sputtering Equipment Market Size to Hit USD 4.19 Billion by 2035 | Research by SNS Insider",
-    "author": "Sns Insider",
-    "published_utc": "2026-06-19T11:30:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/19/3314708/0/en/Sputtering-Equipment-Market-Size-to-Hit-USD-4-19-Billion-by-2035-Research-by-SNS-Insider.html",
-    "tickers": [
-      "AMAT",
-      "LRCX",
-      "TOELY",
-      "VECO"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
-    "description": "The global sputtering equipment market, valued at USD 2.41 billion in 2025, is projected to reach USD 4.19 billion by 2035, growing at a CAGR of 5.83%. Growth is driven by rising semiconductor fabrication demand, thin-film deposition applications, and expanding solar photovoltaic manufacturing. Magnetron sputtering equipment leads the market with 42.25% share, while Asia-Pacific dominates regionally with 45.35% market share.",
-    "keywords": [
-      "sputtering equipment",
-      "semiconductor fabrication",
-      "thin-film deposition",
-      "magnetron sputtering",
-      "PVD technology",
-      "solar photovoltaics",
-      "semiconductor manufacturing",
-      "Asia-Pacific market"
-    ],
-    "insights": [
-      {
-        "ticker": "AMAT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company expanded its advanced PVD portfolio with next-generation deposition platforms for sub-5nm semiconductor nodes in September 2025, demonstrating innovation and market leadership in sputtering equipment technology."
+        "sentiment_reasoning": "Direct exposure to HBM, DRAM, and NAND memory markets; 8.33% of SOXX portfolio; benefits from tight memory supply and high demand through 2027."
       },
       {
         "ticker": "LRCX",
         "sentiment": "positive",
-        "sentiment_reasoning": "Company introduced upgraded plasma deposition platforms with enhanced uniformity control in August 2025, supporting advanced-node semiconductor fabrication and positioning itself well in the growing market."
+        "sentiment_reasoning": "Supplies etching and deposition tools for advanced memory production; benefits from foundry expansion investments needed to address memory shortages."
       },
       {
-        "ticker": "TOELY",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a leading market player but no specific recent developments or performance metrics provided in the article."
+        "ticker": "AMAT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Provides equipment for DRAM manufacturing and HBM packaging; positioned to benefit from increased capital expenditure in memory production."
       },
       {
-        "ticker": "VECO",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a leading market player but no specific recent developments or performance metrics provided in the article."
+        "ticker": "KLAC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Inspection tools help chipmakers detect defects and improve yields; benefits from increased memory production and advanced manufacturing investments."
       }
     ]
   },
   {
-    "id": "cadcd6c068878acdd605f95c8f7b3c6dd354f78dcd1f0eada1e84a6b0d95e565",
+    "id": "e338f4763f8c4356e9b0da537621fca054e65893b87cb37c4c028c3a60301ae0",
     "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Small Caps Near Record Highs, Robinhood Rallies 12%: Stock Market Today",
-    "author": "Piero Cingari",
-    "published_utc": "2026-06-17T17:33:03Z",
-    "article_url": "https://www.benzinga.com/markets/equities/26/06/53258383/russell-2000-small-caps-near-records-ahead-fed-meeting-robinhood-jumps-deutsche-bank-upgrad?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+    "title": "QQQ vs. VGT: Where Should You Invest $1,000 Right Now?",
+    "author": "David Dierking",
+    "published_utc": "2026-07-24T18:33:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/24/qqq-vs-vgt-where-should-you-invest-1000-right-now/?source=iedfolrf0000001",
+    "tickers": [
+      "QQQ",
+      "VGT",
+      "NVDA",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "MU",
+      "LRCX",
+      "AMAT",
+      "INTC"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879514%2Fnetwork-data-connection-satellite.jpg&w=1200&op=resize",
+    "description": "The article compares two tech-focused ETFs: Invesco QQQ (tracking Nasdaq-100) and Vanguard Information Technology ETF (VGT). QQQ offers better diversification with ~30% non-tech holdings providing downside protection, while VGT is a pure tech play with lower expenses (0.09% vs 0.10%). The author recommends QQQ for its balance amid inflation concerns and geopolitical risks, though both ETFs remain viable for those bullish on AI-driven earnings growth.",
+    "keywords": [
+      "ETF comparison",
+      "tech stocks",
+      "AI rally",
+      "diversification",
+      "inflation",
+      "geopolitical risks",
+      "Nasdaq-100",
+      "expense ratios"
+    ],
+    "insights": [
+      {
+        "ticker": "QQQ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recommended as the better choice due to sector diversification (30% non-tech), exposure to semiconductor leaders (Micron, Lam Research, Applied Materials), and downside protection against tech-focused market tumbles amid inflation and geopolitical concerns."
+      },
+      {
+        "ticker": "VGT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Positioned as a pure tech play suitable for those confident in AI rally continuation and double-digit earnings growth. Advantages include lower expense ratio (0.09%) and concentrated exposure to tech sector gains."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Mentioned as a megacap leader during the initial AI rally wave, though noted to have slipped from peak prices in 2026."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a Magnificent Seven megacap that led the market during the first wave of the AI rally."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a Magnificent Seven megacap that led the market during the first wave of the AI rally."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a Magnificent Seven megacap that led the market during the first wave of the AI rally."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a Magnificent Seven megacap that led the market during the first wave of the AI rally."
+      },
+      {
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Highlighted as an emerging top performer in 2026 replacing some Magnificent Seven names, with higher allocation in QQQ than VGT."
+      },
+      {
+        "ticker": "LRCX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Noted as a strong performer in the semiconductor space with higher allocation in QQQ, offering diversification benefits."
+      },
+      {
+        "ticker": "AMAT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as an emerging top performer in 2026 with higher allocation in QQQ than VGT."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as an emerging performer with higher allocation in QQQ, though context suggests it has also declined from highs."
+      }
+    ]
+  },
+  {
+    "id": "7e95fe1af40930dfd5ca01f6c7592e8dd16a07bbe6e65d6014ad6b1f7bbebb29",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Applied Materials vs. Amkor Technology: Which Artificial Intelligence Stock Is a Better Buy in 2026?",
+    "author": "Robert Izquierdo",
+    "published_utc": "2026-07-13T12:04:01Z",
+    "article_url": "https://www.fool.com/coverage/better-buy/2026/07/13/applied-materials-vs-amkor-technology-which-artificial-intelligence-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
     "tickers": [
       "AMAT",
-      "HOOD",
-      "FRMI",
-      "CBOE",
-      "CME",
-      "CVNA",
-      "KMX"
+      "AMKR",
+      "TSM",
+      "AAPL",
+      "QCOM"
     ],
-    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/06/17/Robinhood-Robinhood-Mobile-Icon-App-On-A.jpeg",
-    "description": "U.S. stocks traded higher midday Wednesday with semiconductor equipment names and small caps leading gains ahead of Fed Chair Kevin Warsh's first interest-rate decision. The Russell 2000 jumped 1.2% to a record high. Applied Materials surged 7% after Citi raised its price target, while Robinhood rallied 12.2% on strong trading volumes. Exchange operators fell sharply after Kalshi's Bitcoin futures approval raised competitive concerns.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fbf1840c3c19f65b476307d856544619881ecb92d-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "The article compares two semiconductor industry leaders positioned to benefit from AI growth. Applied Materials manufactures chip-making equipment with strong margins (24.7%) but faces export control risks and higher valuation multiples. Amkor Technology provides assembly and testing services with lower valuation metrics but concentrated customer risk. The author recommends Amkor as the better value despite acknowledging both companies are ideal investments given their critical roles in the AI ecosystem.",
     "keywords": [
-      "stock market",
-      "Federal Reserve",
-      "semiconductor",
-      "small caps",
-      "interest rates",
-      "Bitcoin futures",
-      "trading volumes"
+      "semiconductor equipment",
+      "AI demand",
+      "chip manufacturing",
+      "valuation comparison",
+      "export controls",
+      "customer concentration",
+      "free cash flow"
     ],
     "insights": [
       {
         "ticker": "AMAT",
         "sentiment": "positive",
-        "sentiment_reasoning": "Surged 7% after Citi raised price target to $710 from $550 and reiterated Buy rating, citing durable AI-driven demand for wafer-fab equipment"
+        "sentiment_reasoning": "Strong financial metrics with 24.7% net margins, $5.7B free cash flow, and robust AI-driven demand with 11% YoY sales growth. However, sentiment is tempered by export control violations, regulatory risks, and higher valuation multiples (Forward P/E 49.5x) compared to sector benchmark."
       },
       {
-        "ticker": "HOOD",
+        "ticker": "AMKR",
         "sentiment": "positive",
-        "sentiment_reasoning": "Jumped 12.2% after Deutsche Bank raised price target to $105 from $98, citing record June trading volumes and workforce optimization"
+        "sentiment_reasoning": "Recommended as the better buy with attractive valuation (P/S 2.7x vs sector 17.0x, Forward P/E 34.7x), strong 27% YoY revenue growth, and long-term growth projections ($6.7B to $11B by 2030). Sentiment is moderated by high customer concentration risk (72% from top 10 customers) and CHIPS Act funding uncertainties."
       },
       {
-        "ticker": "FRMI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Surged 13.3% on reports that OpenAI is evaluating capacity at the company's Project Matador AI power campus with potential for major commercial agreement"
+        "ticker": "TSM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a strategic partner with Applied Materials through a new 10-year partnership for advanced AI packaging, indicating positive business relationship but no independent analysis provided."
       },
       {
-        "ticker": "CBOE",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Dropped 5.8% after analysts flagged Kalshi's approval to offer Bitcoin perpetual futures as a competitive threat to incumbent venues"
+        "ticker": "AAPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as Amkor's largest customer (29.8% of revenue), indicating significant business relationship but also highlighting customer concentration risk for Amkor."
       },
       {
-        "ticker": "CME",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Fell 4.4% due to competitive concerns from Kalshi's Bitcoin futures approval affecting exchange operators"
-      },
-      {
-        "ticker": "CVNA",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Dropped 7.6% as peer exchange operators were hammered by competitive threats from Kalshi's Bitcoin futures approval"
-      },
-      {
-        "ticker": "KMX",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Fell 7.0% despite beating earnings expectations, as profit slipped year-over-year from $1.38 to $1.31 adjusted EPS"
+        "ticker": "QCOM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as Amkor's second-largest customer (11.1% of revenue), contributing to customer concentration risk analysis."
       }
     ]
   },
   {
-    "id": "7ad27bacec8a147c0e72b78678591e32ea70029df36377716eaf9f3b9ded6cbc",
+    "id": "8fac28d6060a8d277e517dcc4719f2039aa1f649bfd8b76d0d891270725d999e",
     "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Applied Materials Advances AI Wearables With SENZ Platform",
-    "author": "Lekha Gupta",
-    "published_utc": "2026-06-17T17:17:01Z",
-    "article_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53257837/applied-materials-advances-ai-wearables-with-senz-platform?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+    "title": "Does \"The Big Short's\" Michael Burry Know Something Wall Street Doesn't? He Just Placed Bets Against AI and Sees the \"Beginning of the End.\"",
+    "author": "Adria Cimino",
+    "published_utc": "2026-07-13T08:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/13/does-the-big-shorts-michael-burry-know-something-w/?source=iedfolrf0000001",
     "tickers": [
       "AMAT",
-      "ESLOY",
-      "XLK"
+      "TSLA",
+      "CAT",
+      "MU",
+      "SOXX",
+      "NVDA",
+      "AMD",
+      "PLTR"
     ],
-    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/06/17/Santa-Clara--California---April-26--2018.jpeg",
-    "description": "Applied Materials launched SENZ, an integrated ambient visual platform for AI-powered smart glasses that combines waveguide optics and light engine technology. The company also signed a long-term joint development agreement with EssilorLuxottica to advance next-generation intelligent optical systems for AR and AI-powered smart eyewear. AMAT shares rose 7.58% to $611.30 on the announcement.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878243%2Fgettyimages-1355632574-1200x675-128554e.jpg&w=1200&op=resize",
+    "description": "Contrarian investor Michael Burry, famous for predicting the 2008 financial crisis, has placed significant bearish bets against AI stocks and semiconductor companies. He recently shorted Applied Materials, Tesla, Caterpillar, Micron Technology, and the iShares Semiconductor ETF, signaling concerns that massive AI investments may not match long-term revenue opportunities. Burry views Samsung and SK Hynix's $500 billion chip hub investment as 'the beginning of the end' for the AI boom.",
     "keywords": [
-      "SENZ platform",
-      "AI smart glasses",
-      "waveguide optics",
-      "EssilorLuxottica partnership",
-      "AR technology",
-      "semiconductor equipment"
+      "Michael Burry",
+      "AI stocks",
+      "short positions",
+      "semiconductor industry",
+      "market correction",
+      "contrarian investing"
     ],
     "insights": [
       {
         "ticker": "AMAT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company launched innovative SENZ platform addressing fragmented smart glasses market, secured strategic partnership with major eyewear company EssilorLuxottica, and stock surged 7.58% on announcement. Technical indicators show strong momentum with stock trading 26% above 20-day SMA, though RSI at 70.72 suggests overbought conditions."
+        "sentiment": "negative",
+        "sentiment_reasoning": "Burry placed bearish bets against the company, citing concerns about overinvestment in AI relative to long-term revenue potential."
       },
       {
-        "ticker": "ESLOY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Secured long-term joint development agreement with Applied Materials to advance next-generation intelligent optical systems for AR and AI-powered smart eyewear, combining their eyewear expertise with AMAT's materials engineering and waveguide technology."
+        "ticker": "TSLA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Included in Burry's bearish AI-related positions, suggesting concerns about the company's valuation in the current market cycle."
       },
       {
-        "ticker": "XLK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Broader technology sector performing well with XLK gaining approximately 1.38% on the day of the announcement, benefiting from positive sentiment in the AI and semiconductor equipment space."
+        "ticker": "CAT",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Part of Burry's recent short positions, indicating skepticism about the company's prospects amid AI market concerns."
+      },
+      {
+        "ticker": "MU",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Burry specifically shorted Micron, citing its cyclical nature and 'historically extreme' rally levels, suggesting overvaluation."
+      },
+      {
+        "ticker": "SOXX",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Burry placed a broad bearish bet against this ETF, which holds major AI chip companies, signaling concerns about the entire semiconductor sector's valuation."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Burry opened bearish positions on Nvidia last year, viewing the AI chip leader as overvalued despite its strong performance."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Major holding in the iShares Semiconductor ETF that Burry is shorting, indicating skepticism about the company's valuation."
+      },
+      {
+        "ticker": "PLTR",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Burry opened bearish positions on Palantir last year, viewing it as overvalued despite being one of the biggest AI growth story winners."
       }
     ]
   },
   {
-    "id": "ec9f0ab84750b1d0f1c6c03f61d2ece7cafb3a6f6f8d2dd8cee442f2dd5c3d0e",
+    "id": "24b13e1c1d03577250ad4b24d419a9b5e0ca41ab55f1d95750b43a7043018c1b",
     "publisher": {
       "name": "GlobeNewswire Inc.",
       "homepage_url": "https://www.globenewswire.com",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
     },
-    "title": "Applied Materials Unveils SENZ\u2122, a Fully Integrated Visual System for Next-Gen Smart Glasses",
-    "author": "Na",
-    "published_utc": "2026-06-17T14:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/17/3313572/0/en/Applied-Materials-Unveils-SENZ-a-Fully-Integrated-Visual-System-for-Next-Gen-Smart-Glasses.html",
+    "title": "Global Chemical Vapor Deposition Market Soars: Expected to Reach $69.19 Billion by 2030",
+    "author": "Researchandmarkets.Com",
+    "published_utc": "2026-07-07T08:48:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/07/3322950/28124/en/Global-Chemical-Vapor-Deposition-Market-Soars-Expected-to-Reach-69-19-Billion-by-2030.html",
     "tickers": [
+      "CVV",
+      "VECO",
       "AMAT",
-      "GFS",
-      "QCOM",
-      "ESLOY"
+      "TOELY"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/12357a3d-3179-4848-b581-ee752d531ba8",
-    "description": "Applied Materials unveiled SENZ\u2122, an integrated ambient visual platform combining waveguide optics, light engine, sensing, and vision correction technology for next-generation smart glasses. The solution aims to reduce time-to-market and manufacturing complexity through strategic partnerships with GlobalFoundries, Qualcomm Technologies, and EssilorLuxottica.",
+    "image_url": "https://ml.globenewswire.com/Resource/Download/cd64157c-6fa3-4f2f-b685-c4577cc87cfd",
+    "description": "The Chemical Vapor Deposition (CVD) market is experiencing significant growth with a projected CAGR of 10.2% through 2030, driven by semiconductor capacity expansion, advanced electronics production, solar technology investments, and medical device demand. Key trends include increased adoption of plasma-enhanced CVD systems, atomic layer deposition techniques, and thin-film coating technologies. Asia-Pacific leads the market while North America is positioned as the fastest-growing region.",
     "keywords": [
-      "augmented reality",
-      "smart glasses",
-      "waveguide optics",
-      "integrated platform",
-      "display technology",
-      "AI-powered",
-      "manufacturing"
+      "chemical vapor deposition",
+      "semiconductor manufacturing",
+      "thin-film deposition",
+      "plasma-enhanced CVD",
+      "solar energy",
+      "medical devices",
+      "atomic layer deposition",
+      "market growth",
+      "Asia-Pacific",
+      "North America"
     ],
     "insights": [
       {
+        "ticker": "CVV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a prominent CVD market player and featured in the report's company profiles, indicating significant market presence and relevance in the growing CVD sector."
+      },
+      {
+        "ticker": "VECO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Highlighted for strategic acquisition of Epiluvac AB in February 2023 for $30 million, demonstrating active expansion and capability enhancement in silicon carbide applications for electric vehicle markets."
+      },
+      {
         "ticker": "AMAT",
         "sentiment": "positive",
-        "sentiment_reasoning": "Company announced a groundbreaking integrated technology platform addressing market constraints, establishing strategic partnerships with major industry players, and positioning itself as a leader in next-generation smart glasses display solutions."
+        "sentiment_reasoning": "Identified as a major company in the CVD market, positioned to benefit from semiconductor manufacturing expansion and advanced coating technology adoption."
       },
       {
-        "ticker": "GFS",
+        "ticker": "TOELY",
         "sentiment": "positive",
-        "sentiment_reasoning": "Selected as strategic manufacturing partner to produce waveguides at scale using their high-volume fabrication facility in Singapore, indicating confidence in their capabilities and potential revenue opportunity."
-      },
-      {
-        "ticker": "QCOM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Collaborating through Snapdragon START program to support AI-powered next-generation smart glasses, positioning the company in the emerging augmented reality ecosystem."
-      },
-      {
-        "ticker": "ESLOY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Entered joint development program to accelerate commercialization of next-generation intelligent optical systems for AR and smart eyewear, leveraging their optical expertise in the growing market."
+        "sentiment_reasoning": "Identified as a key industry player in the CVD market with strong market positioning, benefiting from the projected 10.2% CAGR growth through 2030."
       }
     ]
   }

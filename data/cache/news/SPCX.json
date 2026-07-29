@@ -1,104 +1,203 @@
 [
   {
-    "id": "1301a9592dec54d6f2c0884c2a001a063a77d9daf87cdcc7045ba47d794b5214",
+    "id": "3346e72fbfab484237c8803597b88ff54597fbef6b126056de4228da00850f62",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "SpaceX's Massive AI Deal Could Create a Powerful New Growth Engine",
-    "author": "Rick Orford",
-    "published_utc": "2026-07-06T13:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/06/spacexs-massive-ai-deal-could-create-a-powerful-ne/?source=iedfolrf0000001",
+    "title": "Prediction: 3 Unstoppable Artificial Intelligence (AI) Stocks That Will Join the $2 Trillion Club by 2027 (Hint: Not SpaceX)",
+    "author": "Keithen Drury",
+    "published_utc": "2026-07-29T09:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/29/prediction-3-unstoppable-artificial-intelligence-a/?source=iedfolrf0000001",
+    "tickers": [
+      "AVGO",
+      "MU",
+      "META",
+      "SPCX"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880644%2Fperson-analyzing-data-on-a-screen.jpg&w=1200&op=resize",
+    "description": "An analyst predicts that Broadcom, Micron, and Meta Platforms will each reach $2 trillion market valuations by 2027. Broadcom is positioned to cross $2 trillion by end of 2026 driven by custom AI chip demand with expected $100B+ AI semiconductor revenue in 2027. Micron, currently at $940B valuation, could double based on strong memory chip demand and projected 84% revenue growth. Meta, at $1.5T, is expected to surge as its advertising business benefits from AI tools and potential cloud computing expansion.",
+    "keywords": [
+      "artificial intelligence",
+      "AI chips",
+      "semiconductor",
+      "$2 trillion valuation",
+      "market cap",
+      "custom AI chips",
+      "memory chips",
+      "cloud computing",
+      "hyperscalers"
+    ],
+    "insights": [
+      {
+        "ticker": "AVGO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong growth trajectory in custom AI chips with orders ramping up; management expects $100B+ AI semiconductor revenue in 2027 vs. $43.2B annualized in Q2; positioned to reach $2T valuation by end of 2026; currently at $1.8T market cap"
+      },
+      {
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Memory chip shortage driving strong revenue and profit growth; Wall Street projects 84% revenue growth and EPS more than doubling in fiscal 2027; trading at attractive 5.8x forward earnings; analyst believes stock could easily double in next 1.5 years"
+      },
+      {
+        "ticker": "META",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Core advertising business benefiting from AI tools; potential cloud computing business unit launch; trading at attractive 19x forward earnings with room for valuation expansion; analyst believes path to $2T valuation is achievable despite current AI investment skepticism"
+      },
+      {
+        "ticker": "SPCX",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Recently fell out of $2 trillion club after previous membership; analyst explicitly states it lacks what it takes to return above $2T threshold for a while; excluded from the three recommended picks"
+      }
+    ]
+  },
+  {
+    "id": "3815597ce57bd2c35994ca88d86d3fa6466b1f690cb341fe163cb2d94a1277f1",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "\"Hope Is Not an Investment Strategy,\" Says the Lone Wall Street Analyst Who Hasn't Been Wrong About SpaceX",
+    "author": "Sean Williams",
+    "published_utc": "2026-07-29T09:06:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/29/hope-not-investment-strategy-wall-st-analyst-spcx/?source=iedfolrf0000001",
+    "tickers": [
+      "SPCX",
+      "TSLA",
+      "GS",
+      "GSpA",
+      "GSpC",
+      "GSpD"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880618%2Finvestor-pressing-sell-button-getty.jpg&w=1200&op=resize",
+    "description": "SpaceX stock has fallen 15% below its IPO price and 50% from its all-time high, with 37 of 38 Wall Street analysts rating it a buy or hold. However, CFRA analyst Keith Snyder's sell rating and $115 price target have proven prescient. Snyder argues that SpaceX's $28.5 trillion addressable market claim is questionable, the company lacks recurring profits despite positive adjusted EBITDA, and Elon Musk's history of unfulfilled promises (Tesla's Level 5 autonomy, robotaxis) suggests investors shouldn't rely on hope when valuing the stock.",
+    "keywords": [
+      "SpaceX IPO",
+      "stock valuation",
+      "analyst ratings",
+      "Elon Musk",
+      "investment strategy",
+      "addressable market",
+      "capital-intensive business"
+    ],
+    "insights": [
+      {
+        "ticker": "SPCX",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock trading 15% below IPO price and 50% off all-time high. Only analyst with sell rating has been correct. Company lacks recurring profits, is capital-intensive, prone to delays, and CEO has history of unfulfilled promises. Valuation not justified by fundamentals."
+      },
+      {
+        "ticker": "TSLA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Used as example of Elon Musk's pattern of broken promises, including Level 5 full self-driving promised annually for over a decade without materialization and unfulfilled robotaxi commitments by 2020."
+      },
+      {
+        "ticker": "GS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as lead underwriter of SpaceX IPO. No direct criticism or praise; role is factual and standard for IPO underwriting."
+      },
+      {
+        "ticker": "GSpA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as lead underwriter of SpaceX IPO. No direct criticism or praise; role is factual and standard for IPO underwriting."
+      },
+      {
+        "ticker": "GSpC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as lead underwriter of SpaceX IPO. No direct criticism or praise; role is factual and standard for IPO underwriting."
+      },
+      {
+        "ticker": "GSpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as lead underwriter of SpaceX IPO. No direct criticism or praise; role is factual and standard for IPO underwriting."
+      }
+    ]
+  },
+  {
+    "id": "80819a0ba2440206a4ddea8ae423b31cfc0c5e2fc4b78fe4beb21fc1995b53fe",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "SpaceX Stock Reaches All-Time Low. Here's the Case for Buying Before Aug. 4 Earnings.",
+    "author": "Ryan Vanzo",
+    "published_utc": "2026-07-29T06:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/29/spacex-stock-reaches-all-time-low-heres-the-case-f/?source=iedfolrf0000001",
     "tickers": [
       "SPCX"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877568%2Fspacex.png&w=1200&op=resize",
-    "description": "SpaceX is making a strategic move into AI with a $60 billion deal with Cursor. The company could create a new infrastructure ecosystem combining rockets, Starlink, Grok, Cursor, and orbital compute. However, analysts caution that with expectations already high, investors should consider whether the stock is pricing in too much growth too soon.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880699%2Fgettyimages-143176214-1200x800-5b2df79.jpg&w=1200&op=resize",
+    "description": "SpaceX stock has declined over 10% from its IPO price despite raising $87.5 billion in the offering plus $25 billion in bonds. While the company remains unprofitable and faces $350 billion in planned capital expenditures through 2030, analysts argue the lower valuation (now $1.5 trillion vs. $1.77 trillion at IPO) makes it more attractive. Recent successful Starship test flights validate the company's growth strategy, though significant financing will still be needed.",
     "keywords": [
-      "SpaceX",
-      "AI deal",
-      "Cursor",
-      "Starlink",
-      "Grok",
-      "orbital compute",
-      "infrastructure ecosystem",
+      "SpaceX IPO",
+      "stock decline",
       "valuation",
-      "growth engine"
+      "Starship",
+      "capital expenditures",
+      "earnings",
+      "growth initiatives"
     ],
     "insights": [
       {
         "ticker": "SPCX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The $60 billion AI deal with Cursor represents a significant growth opportunity and could create a powerful new infrastructure ecosystem. The company is expanding beyond space exploration into AI and computing, which positions it for future revenue streams."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mixed outlook: negative near-term factors include stock decline, unprofitability, and massive capital needs ($350B through 2030), but positive factors include successful IPO fundraising ($112.5B total), validated Starship technology, and intact growth vision. The article presents a cautiously optimistic case for buying at lower valuations before earnings, but acknowledges significant execution risks and volatility."
       }
     ]
   },
   {
-    "id": "54c80cbf9c8da9daf38243149ff8621f9849937d074938fe87fc484fa8ff0675",
+    "id": "ee3b3aff6a64322e3036a9a84de2a3fe0f13e1fb607818cef23788e5e1e73ba6",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "SpaceX Joins the Nasdaq-100 on July 7. Here Is What This Means for QQQ and QQQM Investors.",
-    "author": "David Dierking",
-    "published_utc": "2026-07-06T13:10:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/06/spacex-joins-the-nasdaq-100-on-july-7-here-is-what/?source=iedfolrf0000001",
+    "title": "Should You Buy SpaceX Stock Below $120?",
+    "author": "Brett Schafer",
+    "published_utc": "2026-07-28T17:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/28/should-you-buy-spacex-stock-below-120/?source=iedfolrf0000001",
     "tickers": [
-      "SPCX",
-      "QQQ",
-      "QQQM",
-      "AMZN"
+      "SPCX"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876964%2Fgettyimages-1076049888.jpg&w=1200&op=resize",
-    "description": "SpaceX will be added to the Nasdaq-100 index on July 7, 2026, under new fast-track eligibility criteria for mega IPOs. This means QQQ and QQQM ETF investors will automatically own SpaceX shares. JPMorgan estimates $4.3 billion in buying pressure from index-tracking funds, which could create stock volatility. SpaceX will have approximately 1% weighting in the index due to limited free float market capitalization.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880365%2Frocket-in-hand.jpg&w=1200&op=resize",
+    "description": "SpaceX stock has fallen 43% from its IPO highs to around $120, but the article argues it remains overvalued. With a $1.5 trillion market cap and P/S ratio of 80 based on $18.7 billion in 2025 revenue, the stock would need massive revenue growth into the hundreds of billions to justify current valuations. The company's future depends heavily on AI data center infrastructure investments, which carry significant execution risk. Additional selling pressure is expected from post-IPO lock-up expirations.",
     "keywords": [
-      "Nasdaq-100",
-      "IPO",
-      "index inclusion",
-      "ETF",
-      "fast-track eligibility",
-      "free float market capitalization",
-      "stock volatility"
+      "SpaceX IPO",
+      "stock valuation",
+      "AI infrastructure",
+      "Starlink",
+      "data centers",
+      "capital expenditures",
+      "market cap",
+      "price-to-sales ratio"
     ],
     "insights": [
       {
         "ticker": "SPCX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "SpaceX achieved a major milestone by going public and being added to the Nasdaq-100 index, providing increased liquidity and market exposure. However, the expected $4.3 billion in buying pressure may create near-term volatility."
-      },
-      {
-        "ticker": "QQQ",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "QQQ will gain SpaceX exposure through index inclusion, which is a mechanical adjustment. The impact is neutral as it simply tracks the index methodology without inherent positive or negative implications."
-      },
-      {
-        "ticker": "QQQM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "QQQM will similarly gain SpaceX exposure through index inclusion as a tracking mechanism. This is a neutral structural change with no inherent positive or negative valuation impact."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Amazon is mentioned only as a comparison point for market cap and index weighting, with no news or developments affecting the company."
+        "sentiment": "negative",
+        "sentiment_reasoning": "Despite the 43% decline from IPO highs, the article maintains that SpaceX stock is not a buy at $120. The company trades at an 80x P/S ratio on $18.7B revenue, requiring unrealistic revenue growth to justify valuations. The business model is heavily dependent on speculative AI infrastructure demand, with massive capital expenditures ($10B+ quarterly) that could result in idle assets if demand doesn't materialize. Additional downside pressure expected from insider lock-up expirations."
       }
     ]
   },
   {
-    "id": "e0a46efd1d3ce529f7ac6a67126abd4e49162d5832bf85371636725d3a6d299e",
+    "id": "c963b3468c09fe798bf614ddcea46d7d5f88e1b4437b4f8751ee14b30e935a28",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Here's What a $17,000 Investment in SpaceX Could Be Worth Over the Next 12 Months, According to Wall Street AI Bull Dan Ives",
-    "author": "Bram Berkowitz",
-    "published_utc": "2026-07-06T12:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/06/what-investment-spacex-worth-ai-dan-ives/?source=iedfolrf0000001",
+    "title": "SpaceX Has Nosedived 50% From Its All-Time High, and It May Realistically Lose Another 50% Before Its Valuation Makes Any Sense",
+    "author": "Sean Williams",
+    "published_utc": "2026-07-28T11:06:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/28/spacex-nosedived-50-history-says-lose-another-50/?source=iedfolrf0000001",
     "tickers": [
       "SPCX",
       "GOOG",
@@ -106,131 +205,42 @@
       "GOOGM",
       "GOOGN"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877127%2Fday-trader-getty.jpg&w=1200&op=resize",
-    "description": "Dan Ives initiated coverage of SpaceX with an outperform rating and $190 price target, implying 17.3% upside. A $16,500 investment could reach ~$20,000 in 12 months. Ives views SpaceX as a differentiated tech asset with Starlink as a profit engine and potential in AI infrastructure. However, the analyst's modest price target and the company's high valuation\u2014which already prices in Starship success and orbital data centers\u2014raise concerns about risk-reward dynamics.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880575%2Fstock-market-crash-plunge-dollar-newspaper-invest-dow-sp-500-getty.jpg&w=1200&op=resize",
+    "description": "SpaceX shares have plummeted 50% from their post-IPO peak of $225.64 to $113.37, with analyst concerns that the stock could fall another 50% before valuation becomes reasonable. The company trades at 38x forecast sales despite lacking recurring profits and sustainable operations. With xAI representing 93% of its addressable market, SpaceX faces significant risk if the AI bubble bursts, similar to historical tech bubbles.",
     "keywords": [
       "SpaceX IPO",
-      "Dan Ives",
-      "price target",
-      "Starlink",
-      "AI infrastructure",
-      "Starship",
-      "orbital data centers",
-      "valuation",
-      "tech stocks"
+      "stock decline",
+      "valuation concerns",
+      "AI bubble",
+      "tech stocks",
+      "insider selling",
+      "price-to-sales ratio"
     ],
     "insights": [
       {
         "ticker": "SPCX",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While Ives is bullish with an outperform rating and 17.3% upside target, the article's author expresses skepticism about the modest price target relative to Ives' typical bullish stance on AI/tech, and concerns that the high valuation already prices in uncertain future successes like Starship operationalization and orbital data centers, making the risk-reward unfavorable."
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock has declined 50% from IPO peak with analyst projections of another 50% decline. Company lacks recurring profits, sustainable operations, and trades at unsustainable 38x sales multiple. Heavy dependence on xAI (93% of addressable market) creates vulnerability to AI bubble burst. Insider unlock schedule poses additional downside risk."
       },
       {
         "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as one of the large AI players that has signed massive data center deals with SpaceX, indicating business expansion and partnership opportunities in the growing AI infrastructure space."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a customer securing compute deals with SpaceX's xAI division, demonstrating AI adoption. However, no direct operational or financial impact discussed in the article. Relationship is noted as positive for AI adoption but not material to investment thesis."
       },
       {
         "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as one of the large AI players that has signed massive data center deals with SpaceX, indicating business expansion and partnership opportunities in the growing AI infrastructure space."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a customer securing compute deals with SpaceX's xAI division, demonstrating AI adoption. However, no direct operational or financial impact discussed in the article. Relationship is noted as positive for AI adoption but not material to investment thesis."
       },
       {
         "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as one of the large AI players that has signed massive data center deals with SpaceX, indicating business expansion and partnership opportunities in the growing AI infrastructure space."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a customer securing compute deals with SpaceX's xAI division, demonstrating AI adoption. However, no direct operational or financial impact discussed in the article. Relationship is noted as positive for AI adoption but not material to investment thesis."
       },
       {
         "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as one of the large AI players that has signed massive data center deals with SpaceX, indicating business expansion and partnership opportunities in the growing AI infrastructure space."
-      }
-    ]
-  },
-  {
-    "id": "1298673f780d9c56d0e78ba1219db5042cec906fa9eb4b2218da480d7187025c",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "2 Space Stocks to Buy in July (Hint: Not SpaceX)",
-    "author": "Patrick Sanders",
-    "published_utc": "2026-07-06T11:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/06/2-space-stocks-to-buy-in-july-not-spacex/?source=iedfolrf0000001",
-    "tickers": [
-      "RKLB",
-      "RDW",
-      "SPCX"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876486%2Fgettyimages-597931174.jpg&w=1200&op=resize",
-    "description": "The article recommends Rocket Lab and Redwire as better investment alternatives to SpaceX, which recently completed a record $86 billion IPO but carries an extreme valuation. Rocket Lab has surged 1,680% over three years with its launch services and upcoming Iridium acquisition, while Redwire offers exposure to space infrastructure and defense with more modest valuations and strong growth in defense contracts.",
-    "keywords": [
-      "space stocks",
-      "SpaceX IPO",
-      "Rocket Lab",
-      "Redwire",
-      "satellite launches",
-      "space defense",
-      "valuation comparison",
-      "investment opportunity"
-    ],
-    "insights": [
-      {
-        "ticker": "RKLB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong 1,680% three-year performance, up 50% year-to-date, completed 90+ launches, secured NASA and government contracts, announced major $8 billion Iridium acquisition to create integrated space company, though P/S ratio of 85.5 is elevated."
-      },
-      {
-        "ticker": "RDW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Up 400% over three years and 65% year-to-date, involved in NASA's Artemis II mission, emerging defense contractor selected for Space Force's Andromeda program, defense tech revenue jumped 380% year-over-year, most attractive valuation with P/S ratio of only 5."
-      },
-      {
-        "ticker": "SPCX",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Recently completed IPO with extreme valuation (P/S ratio of 115), expected volatility from staggered lockup period allowing institutional investor exits, priced to perfection with limited upside potential compared to alternatives."
-      }
-    ]
-  },
-  {
-    "id": "8c30992fde1c6fd3465c8b7f1e6c5d69f533b57b6848508f39bab656c970a449",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Why Redwire Stock Plummeted 50.2% Last Month and Has Kept Falling in July",
-    "author": "Keith Noonan",
-    "published_utc": "2026-07-06T11:20:29Z",
-    "article_url": "https://www.fool.com/investing/2026/07/06/why-redwire-stock-plummeted-last-month-but-is-surg/?source=iedfolrf0000001",
-    "tickers": [
-      "RDW",
-      "SPCX"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877399%2Fgettyimages-2188805651-1.jpg&w=1200&op=resize",
-    "description": "Redwire stock fell 50.2% in June and continued declining in July following the company's announcement of a $500 million at-the-market stock offering, which caused shareholder dilution concerns. SpaceX's IPO also negatively impacted space stocks as investors rotated positions. Despite winning new contracts with Astrobiome Space and Taiwan Color Optics, investor sentiment remains weak due to valuation concerns and broader weakness in speculative growth stocks.",
-    "keywords": [
-      "stock decline",
-      "at-the-market offering",
-      "shareholder dilution",
-      "space stocks",
-      "IPO impact",
-      "contract wins",
-      "valuation concerns"
-    ],
-    "insights": [
-      {
-        "ticker": "RDW",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock plummeted 50.2% in June and continued falling in July due to shareholder dilution concerns from the $500 million at-the-market offering, SpaceX IPO competition, and investor concerns about near-term return potential relative to other space stocks."
-      },
-      {
-        "ticker": "SPCX",
-        "sentiment": "negative",
-        "sentiment_reasoning": "While SpaceX's IPO itself was successful, it negatively impacted other space stocks like Redwire as investors rotated positions into SpaceX and hype shifted away from other space-tech companies."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a customer securing compute deals with SpaceX's xAI division, demonstrating AI adoption. However, no direct operational or financial impact discussed in the article. Relationship is noted as positive for AI adoption but not material to investment thesis."
       }
     ]
   }

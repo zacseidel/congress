@@ -1,332 +1,255 @@
 [
   {
-    "id": "d5d896000390855faadd1e7a31e34833a1c268db5c3a77dcf6900e95c02f5d7d",
+    "id": "fb2486c949189e30099c934aefdf8efcdcfbbd32a357228aa433a5312514f6b5",
     "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "ASML reports transactions under its current share buyback program",
-    "author": "Na",
-    "published_utc": "2026-06-22T12:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/22/3315211/0/en/ASML-reports-transactions-under-its-current-share-buyback-program.html",
+    "title": "Prediction: Nvidia-SK Hynix Partnership Will Make Both Stocks Big Winners",
+    "author": "Geoffrey Seiler",
+    "published_utc": "2026-07-28T17:27:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/28/predict-nvidia-sk-hynix-partnership-makes-winner/?source=iedfolrf0000001",
+    "tickers": [
+      "NVDA",
+      "SKHY",
+      "ASML",
+      "AVGO"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880687%2Fnvdaskhy.png&w=1200&op=resize",
+    "description": "Nvidia and SK Hynix announced a major partnership involving HBM supply and AI data center development. The deal positions Nvidia to secure its dominance in AI infrastructure with guaranteed high-bandwidth memory supply, while SK Hynix gains long-term revenue visibility and potential stock multiple expansion. Both companies are expected to benefit significantly from this strategic alliance.",
+    "keywords": [
+      "HBM supply",
+      "AI infrastructure",
+      "memory bottleneck",
+      "SK Telecom data center",
+      "inference market",
+      "supply chain advantage",
+      "long-term contracts"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Securing massive HBM supply strengthens its AI infrastructure dominance, provides competitive moat in inference market, and trading at attractive forward P/E of 15x for fiscal 2028. Partnership de-risks supply chain and positions company for continued growth."
+      },
+      {
+        "ticker": "SKHY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Major partnership provides significant revenue growth driver, increases business visibility through long-term contracts, and de-risks capital expenditure expansion. Stock trading at low forward P/E under 6 with potential for multiple expansion."
+      },
+      {
+        "ticker": "ASML",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as the sole supplier of EUV lithography machines critical to HBM and GPU manufacturing, but no direct impact analysis provided in the article."
+      },
+      {
+        "ticker": "AVGO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as securing HBM supply with Samsung in response to competitive pressures, but no detailed sentiment analysis provided."
+      }
+    ]
+  },
+  {
+    "id": "d7841b4a5946e5a226b686af7838c511b79460a6aae489210cee80234128e4c9",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "History Says Memory Stocks Like Micron and Sandisk Rarely Stay This Profitable for Long. Here's the Case for Why It's Different This Time.",
+    "author": "Geoffrey Seiler",
+    "published_utc": "2026-07-28T08:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/28/history-memory-stocks-micron-sandisk-profit/?source=iedfolrf0000001",
+    "tickers": [
+      "MU",
+      "SNDK",
+      "SKHY",
+      "ASML"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879000%2Fmusndk.png&w=1200&op=resize",
+    "description": "Memory chip stocks Micron and Sandisk are experiencing exceptional profitability driven by AI infrastructure demand. Unlike historical boom-and-bust cycles, structural constraints in HBM production and long-term contracts suggest this cycle could be more sustained, potentially offering significant upside for memory stocks.",
+    "keywords": [
+      "memory chips",
+      "DRAM",
+      "NAND flash memory",
+      "AI infrastructure",
+      "high-bandwidth memory (HBM)",
+      "supply constraints",
+      "semiconductor cycles"
+    ],
+    "insights": [
+      {
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong revenue growth and record profits driven by AI demand. HBM supply constraints and long-term contracts provide visibility and reduce cyclicality. Current valuations may not reflect elongated cycle potential."
+      },
+      {
+        "ticker": "SNDK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Pure-play flash memory maker benefiting from constrained NAND supply amid soaring AI data center demand. Emerging high-bandwidth flash technology offers additional growth catalyst."
+      },
+      {
+        "ticker": "SKHY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "One of the big three DRAM makers positioned to benefit from sustained HBM demand and supply constraints driven by AI infrastructure build-out and long-term contracts."
+      },
+      {
+        "ticker": "ASML",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Sole manufacturer of EUV lithography machines critical for HBM and GPU production, creating a bottleneck that supports sustained supply constraints and pricing power."
+      }
+    ]
+  },
+  {
+    "id": "e83fd243f47d245d6e0eb8c4f5e1982a333f9317002cf45ca8cc104d0bfc1285",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Why ASML Holdings Plunged Today",
+    "author": "Billy Duberstein",
+    "published_utc": "2026-07-27T19:32:50Z",
+    "article_url": "https://www.fool.com/investing/2026/07/27/why-asml-holdings-plunged-today/?source=iedfolrf0000001",
     "tickers": [
       "ASML"
     ],
-    "image_url": "https://ml-eu.globenewswire.com/Resource/Download/0e922787-0d4f-4763-99ed-f3c70bdc20b1",
-    "description": "ASML Holding N.V. reported its share buyback transactions conducted between June 15-19, 2026, under its current buyback program announced on January 28, 2026. The company repurchased approximately 48,335 shares across five trading days at weighted average prices ranging from \u20ac1,613.96 to \u20ac1,677.07 per share, totaling approximately \u20ac79.36 million.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880745%2Fasml1.jpg&w=1200&op=resize",
+    "description": "ASML stock fell 5.75% after reports that China is manufacturing its own deep-ultraviolet (DUV) lithography machines. However, analysts argue the threat is overstated given ASML's dominance, China's production capacity (5-20 machines annually vs ASML's 130+), and ASML's shift toward higher-margin EUV technology. The sell-off may present a buying opportunity for long-term investors.",
     "keywords": [
-      "share buyback",
-      "ASML",
-      "stock repurchase",
-      "Market Abuse Regulation",
-      "investor relations"
-    ],
-    "insights": [
-      {
-        "ticker": "ASML",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "The article is a routine regulatory disclosure of share buyback transactions. While buybacks can indicate management confidence in the stock's valuation and provide shareholder returns, this is a standard procedural announcement with no material news or strategic implications disclosed. The consistent repurchase activity and stable pricing suggest normal program execution without notable positive or negative developments."
-      }
-    ]
-  },
-  {
-    "id": "7b671d56211e776222a2140c2b27bc440014f79675527bf32bc6813f67e59a0b",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Elon Musk Just Delivered Fantastic News for ASML Stock Investors",
-    "author": "Lee Samaha",
-    "published_utc": "2026-06-16T20:19:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/16/elon-musk-delivered-fantastic-news-asml-stock/?source=iedfolrf0000001",
-    "tickers": [
-      "ASML",
-      "TSLA"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874007%2Fasml-machine.jpg&w=1200&op=resize",
-    "description": "Elon Musk addressed ASML employees about the Terafab initiative, a joint venture between Tesla and SpaceX to build a massive semiconductor manufacturing complex with a proposed $55-119 billion investment. This signals strong future demand for ASML's essential EUV lithography machines used in AI chip production, validating the company's strategic importance to both companies' supply chains.",
-    "keywords": [
-      "Terafab initiative",
-      "semiconductor manufacturing",
-      "EUV lithography",
-      "AI chips",
-      "supply chain",
-      "joint venture"
-    ],
-    "insights": [
-      {
-        "ticker": "ASML",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ASML is positioned as the indispensable supplier of EUV lithography machines for the massive Terafab project. Musk's engagement with ASML employees and the $55-119 billion investment commitment signals strong long-term demand for ASML's equipment and validates its strategic importance."
-      },
-      {
-        "ticker": "TSLA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While Terafab helps secure Tesla's chip supply chain for Optimus and future EVs, the article raises concerns about the scale of Tesla's investment commitment and potential opportunity costs if merged with SpaceX, making the outlook mixed rather than clearly positive."
-      }
-    ]
-  },
-  {
-    "id": "084c6f4d99e1df71fb3c29d26524df3ccecfe0a9ad59738862554a0816fa1e00",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Semiconductor Equipment Market Size to Hit USD 329.73 Billion by 2035 | Research by SNS Insider",
-    "author": "Sns Insider",
-    "published_utc": "2026-06-16T07:30:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/16/3312295/0/en/Semiconductor-Equipment-Market-Size-to-Hit-USD-329-73-Billion-by-2035-Research-by-SNS-Insider.html",
-    "tickers": [
-      "ASML",
-      "LRCX",
-      "AMAT",
-      "KLAC",
-      "TOELY"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
-    "description": "The global semiconductor equipment market is valued at $138.64 billion in 2025 and is expected to grow to $329.73 billion by 2035, with a CAGR of 9.05%. Growth is driven by rising AI and 5G adoption, government-backed fab investments, and increasing demand across consumer electronics, automotive, and telecommunications sectors. Wafer fabrication equipment dominates the market, while testing equipment and inspection & metrology segments show the fastest growth rates.",
-    "keywords": [
-      "semiconductor equipment",
-      "market growth",
-      "AI adoption",
-      "5G technology",
-      "wafer fabrication",
       "lithography",
-      "government investment",
-      "foundry expansion",
-      "advanced chip manufacturing"
+      "semiconductor equipment",
+      "China competition",
+      "DUV machines",
+      "EUV technology",
+      "AI demand",
+      "stock pullback"
     ],
     "insights": [
       {
         "ticker": "ASML",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ASML is highlighted for expanding EUV lithography system capabilities in October 2025, supporting advanced node semiconductor manufacturing and enhancing chip performance across leading foundries and IDMs, positioning it well for market growth."
-      },
-      {
-        "ticker": "LRCX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a leading market player in semiconductor equipment manufacturing, positioned to benefit from the projected 9.05% CAGR growth in the global semiconductor equipment market through 2035."
-      },
-      {
-        "ticker": "AMAT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a leading market player in semiconductor equipment, well-positioned to capitalize on growing demand for wafer fabrication equipment and advanced manufacturing technologies."
-      },
-      {
-        "ticker": "KLAC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a leading market player, positioned to benefit from fastest-growing inspection & metrology segment driven by increasing precision requirements in next-generation semiconductor manufacturing."
-      },
-      {
-        "ticker": "TOELY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Tokyo Electron introduced advanced etching and deposition equipment in August 2025 designed for next-generation semiconductor manufacturing and sub-3nm node production, demonstrating innovation aligned with market demand."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While the stock experienced a significant intraday decline (5.75%) due to competitive concerns from China, the article's analysis suggests the threat is minimal. ASML maintains dominant market position, declining China sales exposure (14% last quarter vs 41% in 2024), and strong demand from AI-driven growth. The author characterizes the sell-off as a potential buying opportunity, indicating underlying fundamentals remain sound despite short-term negative sentiment."
       }
     ]
   },
   {
-    "id": "3fecb355ef759e80612fac342777d03e1233756939c9fffbac8cb052bd00afa7",
+    "id": "b39d91d799340e10845c528eb1903bd037a751f18bd1fed75d0c4aee798162a3",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Are There Opportunities in Europe\u2019s \u201cDigital Sovereignty\u201d?",
-    "author": "Motley Fool Staff",
-    "published_utc": "2026-06-15T21:19:02Z",
-    "article_url": "https://www.fool.com/investing/2026/06/15/are-there-opportunities-in-europe-s-digital-sovereignty/?source=iedfolrf0000001",
+    "title": "3 Top AI Bargain Stocks to Buy Today",
+    "author": "Geoffrey Seiler",
+    "published_utc": "2026-07-26T00:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/25/3-top-ai-bargain-stocks-to-buy-today/?source=iedfolrf0000001",
     "tickers": [
-      "AAPL",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "META",
-      "AMZN",
-      "ASML",
-      "AMAT",
-      "VRT",
-      "PWR",
-      "CSCO",
-      "SBGSY",
-      "WM",
-      "NEE",
-      "NEEpN",
-      "NEEpS",
-      "NEEpT",
-      "NEEpU",
-      "NEEpV",
-      "NEEpW",
-      "BRK.A",
-      "BRK.B"
+      "NVDA",
+      "MU",
+      "TSM",
+      "ASML"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fee0de704b7f4a9f48f2fa2fc588f70a5e67c1b12-1280x720.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Europe is pursuing digital sovereignty by building its own tech infrastructure in AI, semiconductors, and payment systems, creating regulatory challenges for U.S. tech giants like Apple while potentially opening opportunities for infrastructure and equipment suppliers. The discussion also covers elevated market valuations (CAPE ratio at 38) and cash management strategies for investors.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880107%2Fnvda.png&w=1200&op=resize",
+    "description": "Nvidia, Micron Technology, and Taiwan Semiconductor Manufacturing are identified as undervalued AI infrastructure stocks with strong growth potential. Despite their critical roles in the AI boom, all three trade at attractive valuations with forward P/E ratios of 16x, 6x, and below 20x respectively, supported by supply constraints and increasing demand for AI chips.",
     "keywords": [
-      "digital sovereignty",
-      "Europe",
       "AI infrastructure",
-      "semiconductor manufacturing",
-      "CAPE ratio",
+      "semiconductor stocks",
+      "GPU manufacturing",
+      "DRAM memory",
+      "chip supply constraints",
       "valuation",
-      "defensive stocks",
-      "money market funds",
-      "geopolitical risk"
+      "growth stocks"
     ],
     "insights": [
       {
-        "ticker": "AAPL",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Facing regulatory challenges from EU over Siri AI and digital privacy rules; Apple Intelligence features delayed/limited in EU; revenue exposure of 20-30% to Europe at risk"
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Trading at attractive forward P/E of 16x with dominant position in AI model training, secure CUDA ecosystem, and strategic acquisition of Groq to expand into inference and agentic AI capabilities."
       },
       {
-        "ticker": "GOOG",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Dealing with EU digital sovereignty regulations similar to Apple; 20-30% revenue exposure to Europe potentially impacted"
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Exceptional growth story with revenue quadrupling and gross margins expanding to 84.6%, trading at only 6x forward P/E. Benefits from HBM supercycle driven by AI demand and supply constraints from limited EUV lithography capacity."
       },
       {
-        "ticker": "GOOGL",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Dealing with EU digital sovereignty regulations similar to Apple; 20-30% revenue exposure to Europe potentially impacted"
+        "ticker": "TSM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Virtual monopoly on advanced chip manufacturing with strong pricing power and customer relationships. Trading below 20x forward P/E while benefiting from surging demand for GPUs, AI ASICs, and CPUs with aggressive capacity expansion plans."
       },
       {
-        "ticker": "GOOGM",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Dealing with EU digital sovereignty regulations similar to Apple; 20-30% revenue exposure to Europe potentially impacted"
+        "ticker": "ASML",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as the sole supplier of EUV lithography machines creating supply constraints that benefit other semiconductor companies, but not directly analyzed as an investment opportunity in the article."
+      }
+    ]
+  },
+  {
+    "id": "e3bb59a30664b6cad77d1d476213c09d982ef559c041c66e521c727a41655fa5",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "My 3 Favorite AI Stocks to Buy Right Now",
+    "author": "Patrick Sanders",
+    "published_utc": "2026-07-23T17:23:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/23/my-3-favorite-ai-stocks-to-buy-right-now/?source=iedfolrf0000001",
+    "tickers": [
+      "TSM",
+      "MU",
+      "NBIS",
+      "ASML",
+      "META",
+      "NVDA"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879871%2Fgettyimages-1207054027-1.jpg&w=1200&op=resize",
+    "description": "The article highlights three AI stocks positioned to benefit from the growing AI infrastructure boom: Taiwan Semiconductor Manufacturing (TSMC), which is investing $100 billion in Arizona facilities for advanced chip production; Micron Technology, which saw net income surge 1,400% with strong DRAM demand from data centers; and Nebius Group, an AI cloud services company backed by Nvidia with $2 billion in investment and major partnerships with Meta.",
+    "keywords": [
+      "artificial intelligence",
+      "semiconductor manufacturing",
+      "memory and storage",
+      "cloud computing",
+      "AI infrastructure",
+      "chip foundry",
+      "data centers"
+    ],
+    "insights": [
+      {
+        "ticker": "TSM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "TSMC dominates 73% of the global chip foundry market, is launching advanced 2-nanometer technology, and committing an additional $100 billion to Arizona facilities, positioning it as a critical player in AI chip production."
       },
       {
-        "ticker": "GOOGN",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Dealing with EU digital sovereignty regulations similar to Apple; 20-30% revenue exposure to Europe potentially impacted"
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Micron posted a 240% stock gain year-to-date, with revenue up 345% and net income surging 1,400% in the most recent quarter, driven by strong demand for DRAM memory used in AI data centers."
+      },
+      {
+        "ticker": "NBIS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Nebius secured a $2 billion Nvidia investment and a $12-15 billion Meta infrastructure agreement, demonstrating strong demand for its AI cloud computing capacity and positioning it as a key AI infrastructure provider."
+      },
+      {
+        "ticker": "ASML",
+        "sentiment": "positive",
+        "sentiment_reasoning": "ASML's solid earnings and plan to increase capacity by 30% in 2027 is cited as a positive catalyst for memory and storage stocks."
       },
       {
         "ticker": "META",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Subject to EU digital regulations; 20-30% revenue exposure to Europe at risk from sovereignty initiatives"
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Meta is mentioned as a major customer signing infrastructure agreements with Nebius, indicating significant AI investment but without direct sentiment commentary."
       },
       {
-        "ticker": "AMZN",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Exposed to EU digital sovereignty regulations; 20-30% revenue exposure to Europe potentially affected"
-      },
-      {
-        "ticker": "ASML",
+        "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Sole maker of lithography machines for chip manufacturing; positioned to benefit from Europe's digital sovereignty build-out; currently only 1% of sales to Europe, indicating significant growth opportunity"
-      },
-      {
-        "ticker": "AMAT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Produces unique semiconductor equipment with no equivalent; benefits from duplicate infrastructure build-out across regions pursuing digital sovereignty"
-      },
-      {
-        "ticker": "VRT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Data center infrastructure company positioned to benefit from hundreds of billions in new data center investments across Europe"
-      },
-      {
-        "ticker": "PWR",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Provides electrical work for data centers; clear beneficiary of European digital sovereignty infrastructure spending"
-      },
-      {
-        "ticker": "CSCO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Networking company providing switches and routers needed regardless of regional digital sovereignty; benefits from infrastructure build-out"
-      },
-      {
-        "ticker": "SBGSY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "European champion well-positioned to benefit from regional digital infrastructure spending; already doing business in U.S. due to capacity constraints"
-      },
-      {
-        "ticker": "WM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as defensive stock option in elevated valuation environment; trades at high multiples relative to history, limiting upside"
-      },
-      {
-        "ticker": "NEE",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as defensive stock option; trades at elevated multiples relative to history, limiting defensive benefit"
-      },
-      {
-        "ticker": "NEEpN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as defensive stock option; trades at elevated multiples relative to history, limiting defensive benefit"
-      },
-      {
-        "ticker": "NEEpS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as defensive stock option; trades at elevated multiples relative to history, limiting defensive benefit"
-      },
-      {
-        "ticker": "NEEpT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as defensive stock option; trades at elevated multiples relative to history, limiting defensive benefit"
-      },
-      {
-        "ticker": "NEEpU",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as defensive stock option; trades at elevated multiples relative to history, limiting defensive benefit"
-      },
-      {
-        "ticker": "NEEpV",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as defensive stock option; trades at elevated multiples relative to history, limiting defensive benefit"
-      },
-      {
-        "ticker": "NEEpW",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as defensive stock option; trades at elevated multiples relative to history, limiting defensive benefit"
-      },
-      {
-        "ticker": "BRK.A",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as defensive stock option in elevated valuation environment; no specific thesis change indicated"
-      },
-      {
-        "ticker": "BRK.B",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as defensive stock option in elevated valuation environment; no specific thesis change indicated"
-      }
-    ]
-  },
-  {
-    "id": "8ef5303665cb474e4c85315c62892849f53e9ff0e3c879ba1ef92f3c05d92d71",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "ASML reports transactions under its current share buyback program",
-    "author": "Na",
-    "published_utc": "2026-06-15T12:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/06/15/3311710/0/en/ASML-reports-transactions-under-its-current-share-buyback-program.html",
-    "tickers": [
-      "ASML"
-    ],
-    "image_url": "https://ml-eu.globenewswire.com/Resource/Download/0e922787-0d4f-4763-99ed-f3c70bdc20b1",
-    "description": "ASML Holding N.V. reports share buyback transactions conducted between June 8-12, 2026, under its current buyback program announced on January 28, 2026. The company repurchased approximately 51,566 shares across five trading days at weighted average prices ranging from \u20ac1,481.52 to \u20ac1,601.76 per share, totaling approximately \u20ac79.36 million.",
-    "keywords": [
-      "share buyback",
-      "ASML",
-      "share repurchase",
-      "Market Abuse Regulation",
-      "investor relations"
-    ],
-    "insights": [
-      {
-        "ticker": "ASML",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "The article is a routine regulatory disclosure of share buyback transactions. Share buybacks are generally viewed as a neutral to slightly positive signal (returning capital to shareholders), but this is a standard operational update with no material news or strategic implications mentioned. The consistent repurchase activity and stable pricing indicate normal program execution."
+        "sentiment_reasoning": "Nvidia is referenced as a key AI chip designer and strategic partner investing in Nebius, central to the AI infrastructure ecosystem."
       }
     ]
   }
