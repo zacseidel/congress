@@ -1,5 +1,208 @@
 [
   {
+    "id": "fca6350c07a089b77f3b4602504b9260531e15067335ce87deaf5c20c08e8106",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Oil Pulls the Market Lower Again",
+    "author": "Motley Fool Staff",
+    "published_utc": "2026-07-19T23:15:01Z",
+    "article_url": "https://www.fool.com/investing/2026/07/19/oil-pulls-the-market-lower-again/?source=iedfolrf0000001",
+    "tickers": [
+      "MU",
+      "SNDK",
+      "F",
+      "FpB",
+      "FpC",
+      "FpD",
+      "STLA",
+      "AMT",
+      "VZ",
+      "T",
+      "TBB",
+      "TpA",
+      "TpC",
+      "TMUS",
+      "TMUSI",
+      "TMUSL",
+      "TMUSZ",
+      "ASTS",
+      "RIVN",
+      "AMZN"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F6464a95ef5b0c7eed43707092d73f742f795a40a-1280x720.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Oil prices surged 5% following the U.S. cancellation of Iran sanctions waivers and ceasefire declaration, triggering a market pullback with the Nasdaq down 5%. However, analysts suggest this may be overblown volatility driven by algorithmic trading rather than fundamental concerns. The market remains up 9% year-to-date despite sector rotation, with tech stocks experiencing significant swings. The podcast also discusses emerging low-cost EV options like Fiat's Topolino and Slate's $25,000 truck, questioning whether Americans will embrace practical, affordable vehicles. American Tower's debt is deemed manageable due to sticky telecom contracts, while satellite technology is unlikely to disrupt traditional tower infrastructure in the near term.",
+    "keywords": [
+      "oil prices",
+      "market volatility",
+      "inflation concerns",
+      "electric vehicles",
+      "tech stocks",
+      "interest rates",
+      "sector rotation",
+      "satellite technology",
+      "telecom infrastructure"
+    ],
+    "insights": [
+      {
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Despite recent 21% decline from highs, stock is up 200% year-to-date, demonstrating strong long-term performance despite short-term volatility"
+      },
+      {
+        "ticker": "SNDK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Down 31% from highs but part of memory/chip sector that has seen significant gains; volatility reflects sector momentum shifts"
+      },
+      {
+        "ticker": "F",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Ford Maverick positioned as competitive alternative to emerging low-cost EVs; established production and features provide advantage over startups"
+      },
+      {
+        "ticker": "FpB",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Ford Maverick positioned as competitive alternative to emerging low-cost EVs; established production and features provide advantage over startups"
+      },
+      {
+        "ticker": "FpC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Ford Maverick positioned as competitive alternative to emerging low-cost EVs; established production and features provide advantage over startups"
+      },
+      {
+        "ticker": "FpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Ford Maverick positioned as competitive alternative to emerging low-cost EVs; established production and features provide advantage over startups"
+      },
+      {
+        "ticker": "STLA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Topolino positioned as golf cart/micromobility vehicle rather than practical EV; limited market appeal for actual transportation needs"
+      },
+      {
+        "ticker": "AMT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Debt of $45 billion is manageable due to sticky multi-year telecom contracts providing predictable cash flows; satellite technology unlikely to disrupt core business"
+      },
+      {
+        "ticker": "VZ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Long-term telecom partnerships with tower REITs remain stable; satellite technology will supplement rather than replace terrestrial networks"
+      },
+      {
+        "ticker": "T",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Core telecom business supported by tower infrastructure partnerships; satellite technology poses minimal disruption threat"
+      },
+      {
+        "ticker": "TBB",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Core telecom business supported by tower infrastructure partnerships; satellite technology poses minimal disruption threat"
+      },
+      {
+        "ticker": "TpA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Core telecom business supported by tower infrastructure partnerships; satellite technology poses minimal disruption threat"
+      },
+      {
+        "ticker": "TpC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Core telecom business supported by tower infrastructure partnerships; satellite technology poses minimal disruption threat"
+      },
+      {
+        "ticker": "TMUS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Telecom partnerships with tower operators remain valuable; satellite technology unlikely to replace terrestrial network economics"
+      },
+      {
+        "ticker": "TMUSI",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Telecom partnerships with tower operators remain valuable; satellite technology unlikely to replace terrestrial network economics"
+      },
+      {
+        "ticker": "TMUSL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Telecom partnerships with tower operators remain valuable; satellite technology unlikely to replace terrestrial network economics"
+      },
+      {
+        "ticker": "TMUSZ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Telecom partnerships with tower operators remain valuable; satellite technology unlikely to replace terrestrial network economics"
+      },
+      {
+        "ticker": "ASTS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Satellite technology faces physics limitations and spectrum licensing constraints; unlikely to replace terrestrial networks for primary phone connectivity"
+      },
+      {
+        "ticker": "RIVN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "EV startup mentioned in context of Amazon investments; faces challenges in competitive low-cost EV market"
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Invested in Rivian and Slate through CEO Bezos; diversifying into EV infrastructure but outcomes remain uncertain"
+      }
+    ]
+  },
+  {
+    "id": "0c61edb915872ce975dd5a3a6741c55eb5bc3b91691706f45daf5e8b98438cd4",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "AI Is Starting to Scare Wall Street -  We\u2019re Calmly Buying Dividends Up to 12.3%",
+    "author": "Michael Foster",
+    "published_utc": "2026-07-02T09:09:00Z",
+    "article_url": "https://www.investing.com/analysis/ai-is-starting-to-scare-wall-street---were-calmly-buying-dividends-up-to-123-200683196",
+    "tickers": [
+      "WELL",
+      "PLD",
+      "EQIX",
+      "AMT"
+    ],
+    "amp_url": "https://m.investing.com/analysis/ai-is-starting-to-scare-wall-street---were-calmly-buying-dividends-up-to-123-200683196?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "While AI concerns create market volatility and the S&P 500 trades at a pricey 25x P/E ratio, the article recommends three closed-end funds offering attractive dividend yields and trading at discounts to their net asset values. These funds provide exposure to bonds, real estate, and regional banks while benefiting indirectly from AI growth.",
+    "keywords": [
+      "AI investment",
+      "dividend yields",
+      "closed-end funds",
+      "market valuation",
+      "bond funds",
+      "REIT funds",
+      "regional banks"
+    ],
+    "insights": [
+      {
+        "ticker": "WELL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as top holding in NRO fund; senior-care REIT benefiting from AI-driven efficiencies, but no independent analysis provided."
+      },
+      {
+        "ticker": "PLD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as major warehouse REIT holding in NRO; benefits from AI boom through data center and logistics demand, but no independent assessment."
+      },
+      {
+        "ticker": "EQIX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Data-center giant held in NRO; directly benefits from AI infrastructure needs, but presented only as portfolio component without independent analysis."
+      },
+      {
+        "ticker": "AMT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cell-tower landlord held in NRO; indirectly benefits from AI growth, but no independent commentary provided."
+      }
+    ]
+  },
+  {
     "id": "deb001f559ad4fff2d695f926fa8ba647a766a275cf1d0be5a0ea59c1dd0135a",
     "publisher": {
       "name": "The Motley Fool",
@@ -171,120 +374,6 @@
         "ticker": "AMT",
         "sentiment": "neutral",
         "sentiment_reasoning": "Mentioned as a strategic partnership with AST SpaceMobile, but no material impact or developments disclosed."
-      }
-    ]
-  },
-  {
-    "id": "e28105c0c307c780fa67bd7a23add60c3170b4a7d47f35f6523bef46f0cc671c",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "4 Dividend Stocks to Hold for the Next 10 Years",
-    "author": "Patrick Sanders",
-    "published_utc": "2026-03-20T08:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/03/20/4-dividend-stocks-to-hold-for-the-next-10-years/?source=iedfolrf0000001",
-    "tickers": [
-      "WMT",
-      "AMT",
-      "O",
-      "SCHD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F859475%2Fgettyimages-1780035607.jpg&w=1200&op=resize",
-    "description": "The article recommends four dividend stocks and one ETF for long-term investors seeking reliable income and wealth growth. Walmart stands out for strong e-commerce growth and consistent dividend increases, while American Tower and Realty Income offer attractive yields as REITs. The Schwab U.S. Dividend Equity ETF provides diversified exposure to 100 high-quality dividend-paying stocks with low fees.",
-    "keywords": [
-      "dividend stocks",
-      "long-term investing",
-      "REITs",
-      "income investing",
-      "dividend yield",
-      "portfolio diversification"
-    ],
-    "insights": [
-      {
-        "ticker": "WMT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong sales growth ($713.2B in 2025), impressive 24% e-commerce growth, 30% dividend increase over 5 years, and 44% stock price appreciation over 12 months demonstrate solid business fundamentals and shareholder returns."
-      },
-      {
-        "ticker": "AMT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Owns 150,000+ communications sites with growing importance in 5G, edge computing, and cloud infrastructure. Q4 revenue grew 7.5% YoY, strong 3.7% dividend yield, and active share buyback program indicate healthy financial performance."
-      },
-      {
-        "ticker": "O",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Unique monthly dividend structure with 50+ years of consistent payments, 5% yield, owns 15,500+ diversified properties across 92 industries and 1,700+ clients, providing strong downside protection and reliable income."
-      },
-      {
-        "ticker": "SCHD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Tracks 100 high-quality dividend stocks with consistent payout records, low 0.06% expense ratio, 3.3% yield, and diversified holdings with no single stock exceeding 5% weighting, reducing concentration risk."
-      }
-    ]
-  },
-  {
-    "id": "30b788f23c60e5586e2da6e404f9abbde415b0e4d2d77059d8ed00daaf84589a",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Broad REIT Exposure or Concentration in Sector Leaders? VNQ vs. ICF",
-    "author": "Eric Trie",
-    "published_utc": "2026-03-19T15:20:59Z",
-    "article_url": "https://www.fool.com/coverage/etfs/2026/03/19/broad-reit-exposure-or-concentration-in-sector-leaders-vnq-vs-icf/?source=iedfolrf0000001",
-    "tickers": [
-      "VNQ",
-      "ICF",
-      "EQIX",
-      "WELL",
-      "AMT",
-      "PLD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F68e88b35844c8ea3f09f6b0350420ee30bed3518-1401x1251.png%3Frect%3D76%2C0%2C1251%2C1251%26w%3D384%26h%3D384%26q%3D75%26fit%3Dcrop%26auto%3Dformat&w=1200&op=resize",
-    "description": "The Vanguard Real Estate ETF (VNQ) offers broad exposure across 158 U.S. REITs with a lower expense ratio (0.13%) and higher dividend yield (3.63%), while the iShares Select U.S. REIT ETF (ICF) concentrates on 30 large-cap REITs with a higher expense ratio (0.32%) and lower yield (2.6%). Despite higher costs, ICF has outperformed VNQ over five years, with $1,117 vs. $1,003 growth on a $1,000 investment, driven by its focus on sector leaders in data centers, cell towers, and healthcare properties.",
-    "keywords": [
-      "REIT ETFs",
-      "real estate investment trusts",
-      "broad diversification vs. concentration",
-      "dividend yield",
-      "expense ratio",
-      "sector performance"
-    ],
-    "insights": [
-      {
-        "ticker": "VNQ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "VNQ offers lower costs (0.13% expense ratio), higher dividend yield (3.63%), and broader diversification across 158 REITs, making it attractive for cost-conscious and income-focused investors seeking balanced real estate exposure."
-      },
-      {
-        "ticker": "ICF",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ICF has delivered stronger recent performance (4.2% 1-yr return vs. 1.3% for VNQ) and $1,117 growth over 5 years, outperforming through concentrated exposure to sector-leading large-cap REITs, though at higher costs."
-      },
-      {
-        "ticker": "EQIX",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Equinix is mentioned as a top holding in both funds, indicating its significance in the REIT sector, but no specific performance commentary is provided."
-      },
-      {
-        "ticker": "WELL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Welltower is listed as a top holding in both VNQ and ICF, reflecting its importance as a sector leader, but no distinct performance analysis is provided."
-      },
-      {
-        "ticker": "AMT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "American Tower is mentioned as a top ICF holding, representing the cell tower REIT segment, but receives no specific performance evaluation."
-      },
-      {
-        "ticker": "PLD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Prologis is noted as a top VNQ holding, but no specific performance commentary is provided in the article."
       }
     ]
   }

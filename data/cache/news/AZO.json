@@ -1,5 +1,95 @@
 [
   {
+    "id": "1d731375b660b72c43ee5d241f520b76006bbd8f518f7710da66ef8f9ae37603",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Why AutoZone Stock Plunged by More Than 6% Today",
+    "author": "Eric Volkman",
+    "published_utc": "2026-07-06T22:30:23Z",
+    "article_url": "https://www.fool.com/investing/2026/07/06/why-autozone-stock-plunged-by-more-than-6-today/?source=iedfolrf0000001",
+    "tickers": [
+      "AZO",
+      "ORLY",
+      "GPC"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877682%2Fperson-putting-hands-together-in-the-drivers-seat-of-a-car.jpg&w=1200&op=resize",
+    "description": "AutoZone stock fell over 6% after a Bloomberg report indicated that O'Reilly Automotive made a $10+ billion all-cash buyout offer for Genuine Parts' auto parts distribution arm (Napa), which operates 10,000 retail locations with over $15 billion in annual sales. The potential deal could be announced by end of summer, though antitrust concerns may pose legal obstacles.",
+    "keywords": [
+      "auto parts retail",
+      "acquisition",
+      "merger speculation",
+      "Napa distribution",
+      "antitrust concerns"
+    ],
+    "insights": [
+      {
+        "ticker": "AZO",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock plunged 6.38% due to concerns that a major competitor (O'Reilly) acquiring Genuine Parts' Napa distribution business would strengthen O'Reilly's market position and competitive advantage in the auto parts industry."
+      },
+      {
+        "ticker": "ORLY",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock declined 6.66%, likely due to market concerns about the feasibility of the $10+ billion acquisition and potential antitrust regulatory hurdles that could block or delay the deal."
+      },
+      {
+        "ticker": "GPC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Stock fell 2.95%, a modest decline. While the acquisition offer could provide value, the company retains the option to reject the deal and keep the Napa distribution business, creating uncertainty about the outcome."
+      }
+    ]
+  },
+  {
+    "id": "09363ef49ed4120073b6336016c140275f41b1c1780d202a1c53428983135558",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "Top Consumer Discretionary Brands Add Buyback Capacity Amid Weakness",
+    "author": "Leo Miller",
+    "published_utc": "2026-06-25T16:02:00Z",
+    "article_url": "https://www.investing.com/analysis/top-consumer-discretionary-brands-add-buyback-capacity-amid-weakness-200682802",
+    "tickers": [
+      "YUM",
+      "AZO",
+      "BIRK"
+    ],
+    "amp_url": "https://m.investing.com/analysis/top-consumer-discretionary-brands-add-buyback-capacity-amid-weakness-200682802?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "Three major consumer discretionary companies\u2014Yum! Brands, AutoZone, and Birkenstock\u2014are significantly expanding their share buyback programs despite recent stock weakness. Yum! announced a $4 billion buyback after selling Pizza Hut for $2.7 billion, AutoZone added $1.5 billion in buyback capacity amid a 10% decline, and Birkenstock launched a $500 million buyback following debt refinancing. These moves signal management confidence in their valuations, though each company faces distinct challenges.",
+    "keywords": [
+      "share buybacks",
+      "consumer discretionary",
+      "stock weakness",
+      "capital allocation",
+      "management confidence",
+      "valuation"
+    ],
+    "insights": [
+      {
+        "ticker": "YUM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company divesting underperforming Pizza Hut asset and announcing substantial $4 billion buyback (9.5% of market cap) with $2.4 billion in proceeds from the sale. Management signaling confidence in core franchises (KFC, Taco Bell) and commitment to shareholder value creation."
+      },
+      {
+        "ticker": "AZO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Despite 10% decline in 2026 and sales miss, company proactively added $1.5 billion to buyback authorization (4.8% of market cap), indicating management believes shares are undervalued. Strong free cash flow of $1.6 billion supports the program. Analysts project 30%+ upside as oil-driven concerns ease."
+      },
+      {
+        "ticker": "BIRK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Company announced $500 million buyback (5.9% of market cap) after debt refinancing and expressed confidence in fundamentals versus share price. However, recent earnings miss on sales and EPS, with tariffs and currency headwinds cited. Concern that buyback is funded through borrowing rather than organic cash flow, which is less prudent."
+      }
+    ]
+  },
+  {
     "id": "b9487ef9f4c293ff931f4635268726979b5905406899ab4fc7e6f336651294ae",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -101,125 +191,6 @@
         "ticker": "AZO",
         "sentiment": "positive",
         "sentiment_reasoning": "AutoZone demonstrated strong vendor relationships and business performance through recognition of top suppliers, indicating healthy supply chain partnerships and operational excellence."
-      }
-    ]
-  },
-  {
-    "id": "ca2909ab2dfd9b53078c91242913d8577a2003330898c6dd34c12818adb36d50",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "Zscaler, AutoZone, And Regencell Are Among Top 10 Large-Cap Losers Last Week (May 25-May 29): Are The Others In Your Portfolio?",
-    "author": "Nabaparna Bhattacharya",
-    "published_utc": "2026-05-31T13:49:20Z",
-    "article_url": "https://www.benzinga.com/markets/equities/26/05/52894204/zscaler-autozone-and-regencell-are-among-top-10-large-cap-losers-last-week-may-25-may-29-are-the?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "ZS",
-      "CBRS",
-      "BSX",
-      "AZO",
-      "FRVO",
-      "PDD",
-      "RGC",
-      "LITE",
-      "IMO",
-      "VG"
-    ],
-    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/05/31/Autozone-Image-by-refrina-via-Shuttersto.jpeg",
-    "description": "Ten large-cap stocks experienced significant declines during the week of May 25-29, 2026. Zscaler led losses with a 20.06% drop following disappointing Q3 results and weak Q4 guidance. Other major losers included Boston Scientific (16.95%), AutoZone (14.21%), Regencell Bioscience (12.61%), and Venture Global (10.87%). Declines were attributed to earnings misses, analyst downgrades, and energy sector weakness following geopolitical developments.",
-    "keywords": [
-      "large-cap losers",
-      "stock decline",
-      "earnings miss",
-      "analyst downgrade",
-      "energy sector",
-      "market movers"
-    ],
-    "insights": [
-      {
-        "ticker": "ZS",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Largest decline at 20.06% due to disappointing Q3 financial results and Q4 guidance below analyst estimates"
-      },
-      {
-        "ticker": "CBRS",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Declined 16.83% last week with no specific catalyst mentioned"
-      },
-      {
-        "ticker": "BSX",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Fell 16.95% following multiple analyst price target reductions"
-      },
-      {
-        "ticker": "AZO",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Decreased 14.21% after Q3 earnings report with multiple analyst downgrades"
-      },
-      {
-        "ticker": "FRVO",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Fell 13.09% last week with no specific catalyst mentioned"
-      },
-      {
-        "ticker": "PDD",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Decreased 9.14% due to multiple analyst price forecast reductions"
-      },
-      {
-        "ticker": "RGC",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Decreased 12.61% last week with no specific catalyst mentioned"
-      },
-      {
-        "ticker": "LITE",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Slumped 0.87% last week"
-      },
-      {
-        "ticker": "IMO",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Declined 11.53% as oil and gas stocks traded lower following energy price pullback and geopolitical developments"
-      },
-      {
-        "ticker": "VG",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Decreased 10.87% as energy sector weakness followed Trump's Iran negotiations announcement"
-      }
-    ]
-  },
-  {
-    "id": "a5ae2127e8f969cdac881e53b96e672ac0f232891569fb0c8579a7862394af20",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "AutoZone Fell Short of Wall Street's Expectations. Should You Buy the Dip?",
-    "author": "Catie Hogan",
-    "published_utc": "2026-05-28T08:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/05/28/autozone-fell-short-of-wall-streets-expectations-s/?source=iedfolrf0000001",
-    "tickers": [
-      "AZO"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F871865%2Ffather-and-son-repair-car.jpg&w=1200&op=resize",
-    "description": "AutoZone's Q3 2026 earnings missed analyst expectations with $4.84B in sales versus $4.87B forecast, causing an initial 9% stock dip. However, the company showed strong fundamentals with 5.5% same-store sales growth, $38.07 EPS, and expansion to 7,856 locations. Analysts view the miss as an overreaction, with a forward P/E of 17 and average price target of $4,100, suggesting the stock remains a solid long-term buy despite slowing international growth.",
-    "keywords": [
-      "earnings miss",
-      "same-store sales growth",
-      "retail expansion",
-      "valuation metrics",
-      "long-term investment"
-    ],
-    "insights": [
-      {
-        "ticker": "AZO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Despite missing revenue estimates by $30M, AutoZone demonstrated strong operational performance with 5.5% same-store sales growth, solid EPS of $38.07, and continued expansion plans (355-365 new stores). The stock's attractive valuation (P/E 17, PEG 1.42) and analyst price target of $4,100 suggest the market overreacted to the modest miss, making it a buying opportunity for long-term investors."
       }
     ]
   }

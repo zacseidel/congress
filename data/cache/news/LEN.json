@@ -1,5 +1,58 @@
 [
   {
+    "id": "ae9af8fb5319081dcca601621e26e29ffe6b4ec4703904161a3c5292d271b9a3",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "This Homebuilder's Average Selling Price Just Hit a 9-Year Low. Here's Why That's Great News for Home Depot",
+    "author": "Lawrence Rothman, Cfa",
+    "published_utc": "2026-06-22T11:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/06/22/this-homebuilders-average-selling-price-just-hit-a/?source=iedfolrf0000001",
+    "tickers": [
+      "LEN",
+      "LEN.B",
+      "HD",
+      "LOW"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874491%2Fgettyimages-1657566602-1200x800-5b2df79.jpg&w=1200&op=resize",
+    "description": "Lennar reported lower average home selling prices ($371,000) to boost demand amid affordability challenges. Lower home prices should increase existing home sales and lead to more major renovation projects, benefiting Home Depot, the largest home-improvement retailer. Despite short-term economic concerns, Home Depot's stock trades at an attractive valuation with positive long-term outlook.",
+    "keywords": [
+      "homebuilder",
+      "average selling price",
+      "home affordability",
+      "home improvement",
+      "housing market",
+      "renovation demand",
+      "mortgage rates",
+      "retail valuation"
+    ],
+    "insights": [
+      {
+        "ticker": "LEN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Lennar reported lower average selling prices and increased incentives to drive demand, indicating market challenges. While home deliveries increased 2%, the lower pricing reflects affordability pressures rather than strong underlying demand."
+      },
+      {
+        "ticker": "LEN.B",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Lennar reported lower average selling prices and increased incentives to drive demand, indicating market challenges. While home deliveries increased 2%, the lower pricing reflects affordability pressures rather than strong underlying demand."
+      },
+      {
+        "ticker": "HD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Expected to benefit from increased home sales and renovation projects as lower home prices improve affordability. Stock trades at attractive P/E ratio of 24 versus 28 earlier in the year, with positive long-term outlook despite near-term economic headwinds."
+      },
+      {
+        "ticker": "LOW",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as Home Depot's nearest competitor in the home-improvement retail sector. Would benefit similarly from increased renovation demand, but no specific company performance data provided."
+      }
+    ]
+  },
+  {
     "id": "dfa560f909ea7fc3383679edd1ffa5b4ee087eb330e5334099dd401cdb8b8d63",
     "publisher": {
       "name": "The Motley Fool",
@@ -254,59 +307,6 @@
         "ticker": "LEN.B",
         "sentiment": "negative",
         "sentiment_reasoning": "While earnings per share beat expectations, revenue missed analyst estimates and the stock declined in after-hours trading. CEO commentary highlights ongoing market headwinds including elevated mortgage rates, constrained affordability, and cautious consumer sentiment, indicating challenging operating conditions ahead."
-      }
-    ]
-  },
-  {
-    "id": "3a518a84b550c7954fdb7006cfacbde5b9b32ac2e4b47abbea68a179de8124c2",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "The Lock-In Effect Is Real\u2014These 3 Homebuilders Are Betting on It",
-    "author": "Chris Markoch",
-    "published_utc": "2026-06-08T11:09:00Z",
-    "article_url": "https://www.investing.com/analysis/the-lockin-effect-is-realthese-3-homebuilders-are-betting-on-it-200681715",
-    "tickers": [
-      "DHI",
-      "LEN",
-      "LEN.B",
-      "PHM"
-    ],
-    "amp_url": "https://m.investing.com/analysis/the-lockin-effect-is-realthese-3-homebuilders-are-betting-on-it-200681715?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "With seniors reluctant to sell homes due to high mortgage rates, new construction is critical to meet housing demand. Three homebuilders\u2014D.R. Horton, Lennar, and PulteGroup\u2014are positioned to benefit if interest rates decline even modestly in fall 2026, each with distinct strategic advantages and strong balance sheets.",
-    "keywords": [
-      "homebuilders",
-      "lock-in effect",
-      "mortgage rates",
-      "housing supply",
-      "interest rate cuts",
-      "new construction",
-      "senior homeowners"
-    ],
-    "insights": [
-      {
-        "ticker": "DHI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Largest homebuilder by volume with strong order growth (11% rise in net sales orders to 25,000 homes). Trading near historic average P/E of 13.6x. Strategic focus on first-time buyers (65% of closings) who are most sensitive to rate changes, positioning it to capitalize quickly on any rate cuts."
-      },
-      {
-        "ticker": "LEN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Despite recent revenue decline and weak Q1 earnings report, company is operationally improving with 7% reduction in direct construction costs and improved inventory turns (2.5x vs 1.7x). Strong balance sheet with $2.1B cash and 15.7% debt-to-capital ratio. Trading at 13x P/E well below historical median with analyst consensus price target of $100."
-      },
-      {
-        "ticker": "LEN.B",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Despite recent revenue decline and weak Q1 earnings report, company is operationally improving with 7% reduction in direct construction costs and improved inventory turns (2.5x vs 1.7x). Strong balance sheet with $2.1B cash and 15.7% debt-to-capital ratio. Trading at 13x P/E well below historical median with analyst consensus price target of $100."
-      },
-      {
-        "ticker": "PHM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Focused on higher-margin move-up and active adult buyers with strong equity to spend. Q1 showed 3% growth in move-up orders and 14% surge in active adult buyers. Excellent balance sheet with $1.84B cash and 12.3% debt-to-capital ratio. Management expects margin recovery in H2 2026 and authorized $1.5B share repurchase, signaling confidence in valuation."
       }
     ]
   }

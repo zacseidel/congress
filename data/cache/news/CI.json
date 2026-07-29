@@ -1,5 +1,139 @@
 [
   {
+    "id": "5b5b7899e5e95ac652e9f43fb5dcc1df48195766080156f14260503f0daa516f",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Sale Proposal for The Dolphin Company to Grupo Xcaret Threatens 90% Monopoly and Violates Court Rulings",
+    "author": "Isabella Farromeque",
+    "published_utc": "2026-07-28T02:02:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/28/3333963/0/en/Sale-Proposal-for-The-Dolphin-Company-to-Grupo-Xcaret-Threatens-90-Monopoly-and-Violates-Court-Rulings.html",
+    "tickers": [
+      "PFH",
+      "PRH",
+      "PRS",
+      "PRU",
+      "CI"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/6d438538-1e86-4b4f-a2dd-05bb1bedace8",
+    "description": "The Dolphin Company's management has proposed selling its Mexican assets to Delphinus Blue Planet (Grupo Xcaret subsidiary) for $20 million, a deal that would violate Mexican Supreme Court rulings and create a 90% monopoly in dolphin habitat tourism. The proposal was filed in U.S. Bankruptcy Court despite an active judicial stay from Mexico's highest court prohibiting asset sales without authorization.",
+    "keywords": [
+      "monopoly",
+      "asset sale",
+      "bankruptcy",
+      "court ruling violation",
+      "corporate governance",
+      "marine mammal habitat",
+      "Mexico",
+      "Delaware bankruptcy"
+    ],
+    "insights": [
+      {
+        "ticker": "PFH",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Financial creditor involved in questionable transaction facilitated by CiBanco, which is undergoing liquidation for money laundering charges"
+      },
+      {
+        "ticker": "PRH",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Financial creditor involved in questionable transaction facilitated by CiBanco, which is undergoing liquidation for money laundering charges"
+      },
+      {
+        "ticker": "PRS",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Financial creditor involved in questionable transaction facilitated by CiBanco, which is undergoing liquidation for money laundering charges"
+      },
+      {
+        "ticker": "PRU",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Financial creditor involved in questionable transaction facilitated by CiBanco, which is undergoing liquidation for money laundering charges"
+      },
+      {
+        "ticker": "CI",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Financial creditor associated with transaction that violates court rulings and involves a trustee entity under liquidation for severe legal violations"
+      }
+    ]
+  },
+  {
+    "id": "a7b1ade62ca0c1e1e40a289d4bfa38a376d53f1fd16d4383006923dd9cc84a2b",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Prediction: U.S. Value Stocks Will Outperform for 10 Years. Which ETFs Should You Buy?",
+    "author": "Ben Gran",
+    "published_utc": "2026-07-21T18:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/21/prediction-us-value-stocks-will-outperform-for-10/?source=iedfolrf0000001",
+    "tickers": [
+      "VBR",
+      "VFVA",
+      "BMY",
+      "CELGr",
+      "EOG",
+      "CRM",
+      "INTU",
+      "CI"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878356%2Fgettyimages-1429168394-1200x798-36b7a2e.jpg&w=1200&op=resize",
+    "description": "Vanguard research forecasts that U.S. value stocks and small-cap stocks will outperform growth stocks over the next 10 years. The article compares two Vanguard ETFs for value stock exposure: the Vanguard Small-Cap Value ETF (VBR), a passively managed fund with ultra-low fees, and the Vanguard U.S. Value Factor ETF (VFVA), an actively managed alternative with broader market-cap exposure. Both funds have recently outperformed the S&P 500 and Nasdaq-100.",
+    "keywords": [
+      "value stocks",
+      "small-cap stocks",
+      "ETF comparison",
+      "Vanguard research",
+      "long-term investment",
+      "market forecast"
+    ],
+    "insights": [
+      {
+        "ticker": "VBR",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The fund has delivered 9.51% average annual returns since inception, 27% annualized returns over the past year, and charges an ultra-low 0.05% expense ratio. It combines small-cap and value investing strategies aligned with Vanguard's bullish research forecast."
+      },
+      {
+        "ticker": "VFVA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The actively managed fund has delivered 10.96% annualized returns since inception and 16.9% over the past three years. It offers broader diversification across market caps with a lower P/E ratio (11.4) and has outperformed VBR since inception, though it charges a slightly higher 0.13% expense ratio."
+      },
+      {
+        "ticker": "BMY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a top holding in VFVA with 0.83% of the fund. Included as an example of recognizable healthcare stocks in the actively managed value fund, with no specific performance commentary."
+      },
+      {
+        "ticker": "CELGr",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a top holding in VFVA with 0.83% of the fund. Included as an example of recognizable healthcare stocks in the actively managed value fund, with no specific performance commentary."
+      },
+      {
+        "ticker": "EOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as the top holding in VFVA (1.05% of fund) representing the energy sector. Included as an example of value stock holdings with no specific performance analysis provided."
+      },
+      {
+        "ticker": "CRM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a top holding in VFVA (0.80% of fund) representing technology sector exposure. Included as an example of recognizable company names in the value fund with no specific commentary."
+      },
+      {
+        "ticker": "INTU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding in VFVA (0.76% of fund) representing technology sector. Included as an example of familiar tech stocks in the value fund with no specific analysis."
+      },
+      {
+        "ticker": "CI",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a top holding in VFVA (0.78% of fund) representing healthcare sector. Included as an example of recognizable healthcare stocks with no specific performance commentary."
+      }
+    ]
+  },
+  {
     "id": "f67155af7b9903b9976616d7cac5af905ac6d0ef51c6b67ff06cf5474416de02",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -105,108 +239,6 @@
         "ticker": "CI",
         "sentiment": "positive",
         "sentiment_reasoning": "Company beat earnings expectations ($7.79 vs $7.61 consensus), exceeded revenue guidance ($68.52B vs $66.37B consensus), and raised full-year EPS outlook. Strong growth in Evernorth Health Services and positive momentum offset concerns about individual exchange exit and eviCore review."
-      }
-    ]
-  },
-  {
-    "id": "1a47b69dd3584b402cbd8244fd89a7dc9d0b7c9ba2a8d17683e0303a39ef0fae",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "The Cigna Group Declares Quarterly Dividend",
-    "author": "Prnewswire",
-    "published_utc": "2026-04-22T20:30:00Z",
-    "article_url": "https://www.benzinga.com/pressreleases/26/04/n51985098/the-cigna-group-declares-quarterly-dividend?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "CI"
-    ],
-    "image_url": "https://cdn.benzinga.com/files/imagecache/bz2_opengraph_meta_image_400x300/sites/all/themes/bz2/images/bz-icon.png",
-    "description": "The Cigna Group's Board of Directors declared a quarterly cash dividend of $1.56 per share, payable on June 18, 2026, to shareholders of record as of June 4, 2026.",
-    "keywords": [
-      "dividend",
-      "cash dividend",
-      "shareholder returns",
-      "quarterly dividend",
-      "Cigna Group"
-    ],
-    "insights": [
-      {
-        "ticker": "CI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The declaration of a quarterly dividend demonstrates the company's financial strength and commitment to returning capital to shareholders. Dividend declarations are generally viewed positively as they indicate confidence in the company's cash flow generation and financial stability."
-      }
-    ]
-  },
-  {
-    "id": "8dbd8323fcebced0827370968b8e4ec622188d7d90ec949c4d0ffca826ba5dc5",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Biotech Stock Up 372% Gets Sold as New Pick Rises 40% in 2026",
-    "author": "Jonathan Ponciano",
-    "published_utc": "2026-03-20T16:07:58Z",
-    "article_url": "https://www.fool.com/coverage/filings/2026/03/20/biotech-stock-up-372-gets-sold-as-new-pick-rises-40-in-2026/?source=iedfolrf0000001",
-    "tickers": [
-      "COGT",
-      "TYRA",
-      "MDT",
-      "MIRM",
-      "IONS",
-      "CI",
-      "BMRN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F0fe050b5d35dffd742b195c313bda291f30dfea0-1401x1251.png%3Frect%3D76%2C0%2C1251%2C1251%26w%3D384%26h%3D384%26q%3D75%26fit%3Dcrop%26auto%3Dformat&w=1200&op=resize",
-    "description": "Boone Capital Management liquidated its entire $13.57 million stake in Cogent Biosciences (945,042 shares) in Q4 2026, despite the stock surging 372% over the past year. The fund reallocated capital to earlier-stage biotech opportunities like TYRA, which has gained 40% in 2026, suggesting a strategic shift toward higher-risk, higher-upside clinical-stage investments.",
-    "keywords": [
-      "biotech",
-      "portfolio reallocation",
-      "clinical-stage",
-      "precision medicine",
-      "rare diseases",
-      "fund management",
-      "stock liquidation"
-    ],
-    "insights": [
-      {
-        "ticker": "COGT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While the stock has appreciated 372% and the company is in a strong financial position with $900M in cash and clear commercialization path, the fund's complete exit suggests valuation concerns. The article notes much near-term upside may already be reflected in the price, and shares have declined 3% since quarter-end."
-      },
-      {
-        "ticker": "TYRA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The fund's new position has gained over 40% in 2026 and is positioned earlier in its clinical and valuation curve, representing the fund's deliberate shift toward higher-upside, earlier-stage biotech opportunities."
-      },
-      {
-        "ticker": "MDT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a top holding (12.9% of AUM, $41.19M) in the fund's portfolio, indicating it is a core established biotech/medical device position."
-      },
-      {
-        "ticker": "MIRM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a top holding (10.4% of AUM, $33.27M) in the fund's portfolio, representing a significant established position."
-      },
-      {
-        "ticker": "IONS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a top holding (10.4% of AUM, $33.05M) in the fund's portfolio, representing a significant established position."
-      },
-      {
-        "ticker": "CI",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a top holding (8.3% of AUM, $26.55M) in the fund's portfolio."
-      },
-      {
-        "ticker": "BMRN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a top holding (7.7% of AUM, $24.48M) in the fund's portfolio, representing an established biotech position."
       }
     ]
   }

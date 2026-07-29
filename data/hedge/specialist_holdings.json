@@ -1,0 +1,1458 @@
+{
+  "generated": "2026-07-29 16:12 UTC",
+  "n_specialists": 5,
+  "specialists": [
+    {
+      "cik": 1224962,
+      "label": "Perceptive Advisors",
+      "category": "Healthcare"
+    },
+    {
+      "cik": 1595855,
+      "label": "Opaleye",
+      "category": "Healthcare"
+    },
+    {
+      "cik": 1727492,
+      "label": "Caligan Partners",
+      "category": "Healthcare"
+    },
+    {
+      "cik": 1907884,
+      "label": "Kynam",
+      "category": "Healthcare"
+    },
+    {
+      "cik": 1802630,
+      "label": "Soleus Capital",
+      "category": "Healthcare"
+    }
+  ],
+  "overlap": [
+    {
+      "ticker": "MBX",
+      "issuer": "MBX BIOSCIENCES INC",
+      "n_funds": 4,
+      "combined_value": 66335237.0,
+      "combined_weight": 0.04801,
+      "avg_weight": 0.012,
+      "funds": [
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 25330412.0,
+          "weight": 0.01792
+        },
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 27903750.0,
+          "weight": 0.01771
+        },
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 7761000.0,
+          "weight": 0.01022
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 5340075.0,
+          "weight": 0.00216
+        }
+      ]
+    },
+    {
+      "ticker": "PCVX",
+      "issuer": "VAXCYTE INC",
+      "n_funds": 3,
+      "combined_value": 311965046.0,
+      "combined_weight": 0.20155,
+      "avg_weight": 0.06718,
+      "funds": [
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 169816887.0,
+          "weight": 0.10778
+        },
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 119748381.0,
+          "weight": 0.0847
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 22399778.0,
+          "weight": 0.00907
+        }
+      ]
+    },
+    {
+      "ticker": "RVMD",
+      "issuer": "REVOLUTION MEDICINES INC",
+      "n_funds": 3,
+      "combined_value": 195609428.0,
+      "combined_weight": 0.13147,
+      "avg_weight": 0.04382,
+      "funds": [
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 160735578.0,
+          "weight": 0.11369
+        },
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 9725000.0,
+          "weight": 0.01281
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 25148850.0,
+          "weight": 0.00497
+        }
+      ]
+    },
+    {
+      "ticker": "COGT",
+      "issuer": "COGENT BIOSCIENCES INC",
+      "n_funds": 3,
+      "combined_value": 160442216.0,
+      "combined_weight": 0.09971,
+      "avg_weight": 0.03324,
+      "funds": [
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 155396870.0,
+          "weight": 0.09863
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 4660446.0,
+          "weight": 0.00092
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 384900.0,
+          "weight": 0.00016
+        }
+      ]
+    },
+    {
+      "ticker": "EWTX",
+      "issuer": "EDGEWISE THERAPEUTICS INC",
+      "n_funds": 3,
+      "combined_value": 200777504.0,
+      "combined_weight": 0.06677,
+      "avg_weight": 0.02226,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 139355181.0,
+          "weight": 0.02753
+        },
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 15750000.0,
+          "weight": 0.02074
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 45672323.0,
+          "weight": 0.0185
+        }
+      ]
+    },
+    {
+      "ticker": "TVTX",
+      "issuer": "TRAVERE THERAPEUTICS INC",
+      "n_funds": 3,
+      "combined_value": 185912375.0,
+      "combined_weight": 0.06047,
+      "avg_weight": 0.02016,
+      "funds": [
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 46615525.0,
+          "weight": 0.02959
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 123075190.0,
+          "weight": 0.02431
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 16221660.0,
+          "weight": 0.00657
+        }
+      ]
+    },
+    {
+      "ticker": "CTMX",
+      "issuer": "CYTOMX THERAPEUTICS INC",
+      "n_funds": 3,
+      "combined_value": 119436010.0,
+      "combined_weight": 0.05474,
+      "avg_weight": 0.01825,
+      "funds": [
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 70561537.0,
+          "weight": 0.04479
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 47464473.0,
+          "weight": 0.00938
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 1410000.0,
+          "weight": 0.00057
+        }
+      ]
+    },
+    {
+      "ticker": "TNGX",
+      "issuer": "TANGO THERAPEUTICS INC",
+      "n_funds": 3,
+      "combined_value": 76712615.0,
+      "combined_weight": 0.04279,
+      "avg_weight": 0.01426,
+      "funds": [
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 50392054.0,
+          "weight": 0.03564
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 9414000.0,
+          "weight": 0.00381
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 16906561.0,
+          "weight": 0.00334
+        }
+      ]
+    },
+    {
+      "ticker": "NRIX",
+      "issuer": "NURIX THERAPEUTICS INC",
+      "n_funds": 3,
+      "combined_value": 90578855.0,
+      "combined_weight": 0.029,
+      "avg_weight": 0.00967,
+      "funds": [
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 18518734.0,
+          "weight": 0.01175
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 57518594.0,
+          "weight": 0.01136
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 14541527.0,
+          "weight": 0.00589
+        }
+      ]
+    },
+    {
+      "ticker": "SABS",
+      "issuer": "SAB BIOTHERAPEUTICS INC",
+      "n_funds": 3,
+      "combined_value": 59169479.0,
+      "combined_weight": 0.02808,
+      "avg_weight": 0.00936,
+      "funds": [
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 30514403.0,
+          "weight": 0.02158
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 24633576.0,
+          "weight": 0.00487
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 4021500.0,
+          "weight": 0.00163
+        }
+      ]
+    },
+    {
+      "ticker": "LBRX",
+      "issuer": "LB PHARMACEUTICALS INC",
+      "n_funds": 3,
+      "combined_value": 35233044.0,
+      "combined_weight": 0.02506,
+      "avg_weight": 0.00835,
+      "funds": [
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 34628726.0,
+          "weight": 0.02449
+        },
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 357718.0,
+          "weight": 0.00047
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 246600.0,
+          "weight": 0.0001
+        }
+      ]
+    },
+    {
+      "ticker": "IRD",
+      "issuer": "OPUS GENETICS INC",
+      "n_funds": 3,
+      "combined_value": 38245658.0,
+      "combined_weight": 0.02417,
+      "avg_weight": 0.00806,
+      "funds": [
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 27641377.0,
+          "weight": 0.01955
+        },
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 2251200.0,
+          "weight": 0.00297
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 8353081.0,
+          "weight": 0.00165
+        }
+      ]
+    },
+    {
+      "ticker": "STRO",
+      "issuer": "SUTRO BIOPHARMA INC",
+      "n_funds": 3,
+      "combined_value": 44303332.0,
+      "combined_weight": 0.02358,
+      "avg_weight": 0.00786,
+      "funds": [
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 21735420.0,
+          "weight": 0.0138
+        },
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 4749615.0,
+          "weight": 0.00626
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 17818297.0,
+          "weight": 0.00352
+        }
+      ]
+    },
+    {
+      "ticker": "AVTX",
+      "issuer": "AVALO THERAPEUTICS INC",
+      "n_funds": 3,
+      "combined_value": 33094853.0,
+      "combined_weight": 0.02035,
+      "avg_weight": 0.00678,
+      "funds": [
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 24410893.0,
+          "weight": 0.01727
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 6598732.0,
+          "weight": 0.00267
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 2085228.0,
+          "weight": 0.00041
+        }
+      ]
+    },
+    {
+      "ticker": "LQDA",
+      "issuer": "LIQUIDIA CORPORATION",
+      "n_funds": 2,
+      "combined_value": 395227484.0,
+      "combined_weight": 0.33371,
+      "avg_weight": 0.16686,
+      "funds": [
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 306406984.0,
+          "weight": 0.21672
+        },
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 88820500.0,
+          "weight": 0.11699
+        }
+      ]
+    },
+    {
+      "ticker": "PRAX",
+      "issuer": "PRAXIS PRECISION MEDICINES I",
+      "n_funds": 2,
+      "combined_value": 762463601.0,
+      "combined_weight": 0.1727,
+      "avg_weight": 0.08635,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 655974329.0,
+          "weight": 0.12957
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 106489272.0,
+          "weight": 0.04313
+        }
+      ]
+    },
+    {
+      "ticker": "SNDX",
+      "issuer": "SYNDAX PHARMACEUTICALS INC",
+      "n_funds": 2,
+      "combined_value": 228410973.0,
+      "combined_weight": 0.13571,
+      "avg_weight": 0.06785,
+      "funds": [
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 188070402.0,
+          "weight": 0.11937
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 40340571.0,
+          "weight": 0.01634
+        }
+      ]
+    },
+    {
+      "ticker": "CELC",
+      "issuer": "CELCUITY INC",
+      "n_funds": 2,
+      "combined_value": 503537513.0,
+      "combined_weight": 0.12988,
+      "avg_weight": 0.06494,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 356938608.0,
+          "weight": 0.07051
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 146598905.0,
+          "weight": 0.05937
+        }
+      ]
+    },
+    {
+      "ticker": "ABVX",
+      "issuer": "ABIVAX SA",
+      "n_funds": 2,
+      "combined_value": 199406470.0,
+      "combined_weight": 0.12237,
+      "avg_weight": 0.06119,
+      "funds": [
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 162785237.0,
+          "weight": 0.11514
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 36621233.0,
+          "weight": 0.00723
+        }
+      ]
+    },
+    {
+      "ticker": "ETON",
+      "issuer": "ETON PHARMACEUTICALS INC",
+      "n_funds": 2,
+      "combined_value": 74691083.0,
+      "combined_weight": 0.09463,
+      "avg_weight": 0.04731,
+      "funds": [
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 70584800.0,
+          "weight": 0.09297
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 4106283.0,
+          "weight": 0.00166
+        }
+      ]
+    },
+    {
+      "ticker": "RYTM",
+      "issuer": "RHYTHM PHARMACEUTICALS INC",
+      "n_funds": 2,
+      "combined_value": 241772151.0,
+      "combined_weight": 0.08731,
+      "avg_weight": 0.04365,
+      "funds": [
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 35323200.0,
+          "weight": 0.04653
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 206448951.0,
+          "weight": 0.04078
+        }
+      ]
+    },
+    {
+      "ticker": "TGTX",
+      "issuer": "TG THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 151626677.0,
+      "combined_weight": 0.07762,
+      "avg_weight": 0.03881,
+      "funds": [
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 133853977.0,
+          "weight": 0.05421
+        },
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 17772700.0,
+          "weight": 0.02341
+        }
+      ]
+    },
+    {
+      "ticker": "SYRE",
+      "issuer": "SPYRE THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 235118595.0,
+      "combined_weight": 0.06902,
+      "avg_weight": 0.03451,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 190825869.0,
+          "weight": 0.03769
+        },
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 44292726.0,
+          "weight": 0.03133
+        }
+      ]
+    },
+    {
+      "ticker": "APGE",
+      "issuer": "APOGEE THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 162480421.0,
+      "combined_weight": 0.06885,
+      "avg_weight": 0.03442,
+      "funds": [
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 32826300.0,
+          "weight": 0.04324
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 129654121.0,
+          "weight": 0.02561
+        }
+      ]
+    },
+    {
+      "ticker": "XENE",
+      "issuer": "XENON PHARMACEUTICALS INC",
+      "n_funds": 2,
+      "combined_value": 97984320.0,
+      "combined_weight": 0.06417,
+      "avg_weight": 0.03209,
+      "funds": [
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 81004520.0,
+          "weight": 0.05729
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 16979800.0,
+          "weight": 0.00688
+        }
+      ]
+    },
+    {
+      "ticker": "BCRX",
+      "issuer": "BIOCRYST PHARMACEUTICALS INC",
+      "n_funds": 2,
+      "combined_value": 124853162.0,
+      "combined_weight": 0.04831,
+      "avg_weight": 0.02415,
+      "funds": [
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 54081168.0,
+          "weight": 0.03433
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 70771994.0,
+          "weight": 0.01398
+        }
+      ]
+    },
+    {
+      "ticker": "PTGX",
+      "issuer": "PROTAGONIST THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 140274647.0,
+      "combined_weight": 0.03951,
+      "avg_weight": 0.01976,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 129734647.0,
+          "weight": 0.02563
+        },
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 10540000.0,
+          "weight": 0.01388
+        }
+      ]
+    },
+    {
+      "ticker": "TYRA",
+      "issuer": "TYRA BIOSCIENCE INC",
+      "n_funds": 2,
+      "combined_value": 49290874.0,
+      "combined_weight": 0.03475,
+      "avg_weight": 0.01738,
+      "funds": [
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 48907874.0,
+          "weight": 0.03459
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 383000.0,
+          "weight": 0.00016
+        }
+      ]
+    },
+    {
+      "ticker": "VRDN",
+      "issuer": "VIRIDIAN THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 68704128.0,
+      "combined_weight": 0.03359,
+      "avg_weight": 0.01679,
+      "funds": [
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 45802713.0,
+          "weight": 0.02907
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 22901415.0,
+          "weight": 0.00452
+        }
+      ]
+    },
+    {
+      "ticker": "GERN",
+      "issuer": "GERON CORP",
+      "n_funds": 2,
+      "combined_value": 72034016.0,
+      "combined_weight": 0.03152,
+      "avg_weight": 0.01576,
+      "funds": [
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 61847902.0,
+          "weight": 0.02505
+        },
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 10186114.0,
+          "weight": 0.00647
+        }
+      ]
+    },
+    {
+      "ticker": "ADMA",
+      "issuer": "ADMA BIOLOGICS INC",
+      "n_funds": 2,
+      "combined_value": 47065933.0,
+      "combined_weight": 0.03114,
+      "avg_weight": 0.01557,
+      "funds": [
+        {
+          "cik": 1727492,
+          "label": "Caligan Partners",
+          "name": "Caligan Partners LP",
+          "value": 42856164.0,
+          "weight": 0.03031
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 4209769.0,
+          "weight": 0.00083
+        }
+      ]
+    },
+    {
+      "ticker": "CGEM",
+      "issuer": "CULLINAN THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 50080758.0,
+      "combined_weight": 0.03045,
+      "avg_weight": 0.01523,
+      "funds": [
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 44251816.0,
+          "weight": 0.02809
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 5828942.0,
+          "weight": 0.00236
+        }
+      ]
+    },
+    {
+      "ticker": "RLAY",
+      "issuer": "RELAY THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 111195230.0,
+      "combined_weight": 0.02816,
+      "avg_weight": 0.01408,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 97023853.0,
+          "weight": 0.01917
+        },
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 14171377.0,
+          "weight": 0.00899
+        }
+      ]
+    },
+    {
+      "ticker": "TWST",
+      "issuer": "TWIST BIOSCIENCE CORP",
+      "n_funds": 2,
+      "combined_value": 65417410.0,
+      "combined_weight": 0.02502,
+      "avg_weight": 0.01251,
+      "funds": [
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 58289410.0,
+          "weight": 0.02361
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 7128000.0,
+          "weight": 0.00141
+        }
+      ]
+    },
+    {
+      "ticker": "INBX",
+      "issuer": "INHIBRX BIOSCIENCES INC",
+      "n_funds": 2,
+      "combined_value": 105800322.0,
+      "combined_weight": 0.02273,
+      "avg_weight": 0.01137,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 96993192.0,
+          "weight": 0.01916
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 8807130.0,
+          "weight": 0.00357
+        }
+      ]
+    },
+    {
+      "ticker": "BBNX",
+      "issuer": "BETA BIONICS INC",
+      "n_funds": 2,
+      "combined_value": 52078399.0,
+      "combined_weight": 0.01934,
+      "avg_weight": 0.00967,
+      "funds": [
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 43632100.0,
+          "weight": 0.01767
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 8446299.0,
+          "weight": 0.00167
+        }
+      ]
+    },
+    {
+      "ticker": "ZYME",
+      "issuer": "ZYMEWORKS INC",
+      "n_funds": 2,
+      "combined_value": 88142753.0,
+      "combined_weight": 0.01746,
+      "avg_weight": 0.00873,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 87892353.0,
+          "weight": 0.01736
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 250400.0,
+          "weight": 0.0001
+        }
+      ]
+    },
+    {
+      "ticker": "AXGN",
+      "issuer": "AXOGEN INC",
+      "n_funds": 2,
+      "combined_value": 45602849.0,
+      "combined_weight": 0.01367,
+      "avg_weight": 0.00683,
+      "funds": [
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 22500902.0,
+          "weight": 0.00911
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 23101947.0,
+          "weight": 0.00456
+        }
+      ]
+    },
+    {
+      "ticker": "ORKA",
+      "issuer": "ORUKA THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 68694574.0,
+      "combined_weight": 0.01362,
+      "avg_weight": 0.00681,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 68449324.0,
+          "weight": 0.01352
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 245250.0,
+          "weight": 0.0001
+        }
+      ]
+    },
+    {
+      "ticker": "TRVI",
+      "issuer": "TREVI THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 23443643.0,
+      "combined_weight": 0.01325,
+      "avg_weight": 0.00663,
+      "funds": [
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 19326600.0,
+          "weight": 0.00783
+        },
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 4117043.0,
+          "weight": 0.00542
+        }
+      ]
+    },
+    {
+      "ticker": "JBIO",
+      "issuer": "Jade Biosciences, Inc.",
+      "n_funds": 2,
+      "combined_value": 17202145.0,
+      "combined_weight": 0.01244,
+      "avg_weight": 0.00622,
+      "funds": [
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 6007892.0,
+          "weight": 0.00791
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 11194253.0,
+          "weight": 0.00453
+        }
+      ]
+    },
+    {
+      "ticker": "EVMN",
+      "issuer": "Evommune, Inc.",
+      "n_funds": 2,
+      "combined_value": 24687720.0,
+      "combined_weight": 0.01117,
+      "avg_weight": 0.00558,
+      "funds": [
+        {
+          "cik": 1907884,
+          "label": "Kynam",
+          "name": "Kynam Capital Management, LP",
+          "value": 14380153.0,
+          "weight": 0.00913
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 10307567.0,
+          "weight": 0.00204
+        }
+      ]
+    },
+    {
+      "ticker": "RLMD",
+      "issuer": "RELMADA THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 12368658.0,
+      "combined_weight": 0.01094,
+      "avg_weight": 0.00547,
+      "funds": [
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 6507600.0,
+          "weight": 0.00857
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 5861058.0,
+          "weight": 0.00237
+        }
+      ]
+    },
+    {
+      "ticker": "IMVT",
+      "issuer": "IMMUNOVANT INC",
+      "n_funds": 2,
+      "combined_value": 45392194.0,
+      "combined_weight": 0.01015,
+      "avg_weight": 0.00507,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 39678994.0,
+          "weight": 0.00784
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 5713200.0,
+          "weight": 0.00231
+        }
+      ]
+    },
+    {
+      "ticker": "SION",
+      "issuer": "SIONNA THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 38163235.0,
+      "combined_weight": 0.00998,
+      "avg_weight": 0.00499,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 26396820.0,
+          "weight": 0.00521
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 11766415.0,
+          "weight": 0.00477
+        }
+      ]
+    },
+    {
+      "ticker": "IVVD",
+      "issuer": "INVIVYD INC",
+      "n_funds": 2,
+      "combined_value": 37138439.0,
+      "combined_weight": 0.00942,
+      "avg_weight": 0.00471,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 27117094.0,
+          "weight": 0.00536
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 10021345.0,
+          "weight": 0.00406
+        }
+      ]
+    },
+    {
+      "ticker": "CGON",
+      "issuer": "CG ONCOLOGY INC",
+      "n_funds": 2,
+      "combined_value": 7769664.0,
+      "combined_weight": 0.009,
+      "avg_weight": 0.0045,
+      "funds": [
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 6416064.0,
+          "weight": 0.00845
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 1353600.0,
+          "weight": 0.00055
+        }
+      ]
+    },
+    {
+      "ticker": "IKT",
+      "issuer": "INHIBIKASE THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 22159200.0,
+      "combined_weight": 0.00817,
+      "avg_weight": 0.00409,
+      "funds": [
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 18270000.0,
+          "weight": 0.0074
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 3889200.0,
+          "weight": 0.00077
+        }
+      ]
+    },
+    {
+      "ticker": "BDSX",
+      "issuer": "BIODESIX",
+      "n_funds": 2,
+      "combined_value": 9492368.0,
+      "combined_weight": 0.007,
+      "avg_weight": 0.0035,
+      "funds": [
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 3451682.0,
+          "weight": 0.00455
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 6040686.0,
+          "weight": 0.00245
+        }
+      ]
+    },
+    {
+      "ticker": "TECX",
+      "issuer": "Tectonic Therapeutic, Inc.",
+      "n_funds": 2,
+      "combined_value": 7563182.0,
+      "combined_weight": 0.00653,
+      "avg_weight": 0.00326,
+      "funds": [
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 3801930.0,
+          "weight": 0.00501
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 3761252.0,
+          "weight": 0.00152
+        }
+      ]
+    },
+    {
+      "ticker": "CORT",
+      "issuer": "CORCEPT THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 13525255.0,
+      "combined_weight": 0.00506,
+      "avg_weight": 0.00253,
+      "funds": [
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 11509755.0,
+          "weight": 0.00466
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 2015500.0,
+          "weight": 0.0004
+        }
+      ]
+    },
+    {
+      "ticker": "EOLS",
+      "issuer": "EVOLUS INC",
+      "n_funds": 2,
+      "combined_value": 14517433.0,
+      "combined_weight": 0.00478,
+      "avg_weight": 0.00239,
+      "funds": [
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 9228430.0,
+          "weight": 0.00374
+        },
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 5289003.0,
+          "weight": 0.00104
+        }
+      ]
+    },
+    {
+      "ticker": "RAPP",
+      "issuer": "RAPPORT THERAPEUTICS INC",
+      "n_funds": 2,
+      "combined_value": 21399951.0,
+      "combined_weight": 0.0043,
+      "avg_weight": 0.00215,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 21087051.0,
+          "weight": 0.00417
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 312900.0,
+          "weight": 0.00013
+        }
+      ]
+    },
+    {
+      "ticker": "RIGL",
+      "issuer": "RIGEL PHARMACEUTICALS INC",
+      "n_funds": 2,
+      "combined_value": 2163200.0,
+      "combined_weight": 0.0026,
+      "avg_weight": 0.0013,
+      "funds": [
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 1892800.0,
+          "weight": 0.00249
+        },
+        {
+          "cik": 1802630,
+          "label": "Soleus Capital",
+          "name": "Soleus Capital Management, L.P.",
+          "value": 270400.0,
+          "weight": 0.00011
+        }
+      ]
+    },
+    {
+      "ticker": "ADGM",
+      "issuer": "ADAGIO MED HLDGS INC",
+      "n_funds": 2,
+      "combined_value": 11033593.0,
+      "combined_weight": 0.00221,
+      "avg_weight": 0.00111,
+      "funds": [
+        {
+          "cik": 1224962,
+          "label": "Perceptive Advisors",
+          "name": "PERCEPTIVE ADVISORS LLC",
+          "value": 11012382.0,
+          "weight": 0.00218
+        },
+        {
+          "cik": 1595855,
+          "label": "Opaleye",
+          "name": "Opaleye Management Inc.",
+          "value": 21211.0,
+          "weight": 3e-05
+        }
+      ]
+    }
+  ]
+}

@@ -17,6 +17,7 @@
  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;} tr:last-child td{border-bottom:none;}
  tbody tr:hover{background:#f6f8fa;} .pos{color:var(--green);} .neg{color:var(--red);}
  .pill{display:inline-block;font-size:11px;padding:1px 7px;border-radius:10px;background:#dafbe1;color:var(--green);}
+ .pill.warn{background:#fff8c5;color:#7d4e00;}
  .ctrack{display:inline-block;width:56px;height:9px;background:#eaeef2;border-radius:2px;vertical-align:middle;overflow:hidden;margin-right:7px;}
  .cbar{display:block;height:100%;background:var(--green);border-radius:2px;}
  .wave{background:#ddf4ff;border:1px solid #54aeff;color:#0a3069;border-radius:8px;padding:10px 14px;font-size:14px;margin:14px 0 4px;}
@@ -30,12 +31,253 @@
 <div class="wrap">
 <p class="wave">📅 Latest 13F filing wave: <b>2026Q2</b>
   <span class="muted small">— the New buys &amp; Conviction below reflect this quarter&rsquo;s filings. Prior waves are archived at the bottom.</span></p>
-<p class="muted small">Generated 2026-07-29 10:37 UTC · 661 ranked of 5189 funds ·
+<p class="muted small">Generated 2026-07-29 16:13 UTC · 661 ranked of 5189 funds ·
   &ldquo;Mirror the disclosed book, buy at each 13F&rsquo;s public filing date, rebalance at the next filing.&rdquo;
   Alpha = cumulative fund return &minus; SPY over the same windows.</p>
 <div class="disclaimer">Coverage = share of book value we could price. Funds that beat SPY in &le;50% of their
-  quarters, or with too few filings / low coverage, are gated out (kept in the data, not shown).
+  quarters, or with too few filings / low coverage, are gated out of leaderboard ranking.
+  Curated specialists may still be shown separately with an unranked label.
   Educational use only — not investment advice.</div>
+
+
+
+<h2 id="specialists">📌 Pinned specialists <span class="muted small">curated funds remain visible even when performance data is not rankable</span></h2>
+<table><thead><tr><th>Specialty</th><th>Fund</th><th class="num">Alpha*</th>
+  <th class="num">Beat SPY</th><th class="num">Book</th><th class="num">Cov</th><th>Status</th></tr></thead><tbody>
+<tr><td>Healthcare</td>
+  <td><a href="funds/1224962.html">Perceptive Advisors</a>
+    <span class="small muted">· PERCEPTIVE ADVISORS LLC</span></td>
+  <td class="num pos">+28.4%</td>
+  <td class="num">83%</td>
+  <td class="num">$5.1B</td>
+  <td class="num">64%</td>
+  <td><span class="pill warn">unranked</span> <span class="small muted">coverage 64%</span></td>
+</tr><tr><td>Healthcare</td>
+  <td><a href="funds/1595855.html">Opaleye</a>
+    <span class="small muted">· Opaleye Management Inc.</span></td>
+  <td class="num pos">+56.6%</td>
+  <td class="num">70%</td>
+  <td class="num">$0.8B</td>
+  <td class="num">92%</td>
+  <td><span class="pill">ranked</span>
+    </td>
+</tr><tr><td>Healthcare</td>
+  <td><a href="funds/1727492.html">Caligan Partners</a>
+    <span class="small muted">· Caligan Partners LP</span></td>
+  <td class="num pos">+175.7%</td>
+  <td class="num">88%</td>
+  <td class="num">$1.4B</td>
+  <td class="num">87%</td>
+  <td><span class="pill warn">unranked</span> <span class="small muted">coverage 87%</span></td>
+</tr><tr><td>Healthcare</td>
+  <td><a href="funds/1907884.html">Kynam</a>
+    <span class="small muted">· Kynam Capital Management, LP</span></td>
+  <td class="num pos">+40.6%</td>
+  <td class="num">62%</td>
+  <td class="num">$1.6B</td>
+  <td class="num">88%</td>
+  <td><span class="pill warn">unranked</span> <span class="small muted">coverage 88%</span></td>
+</tr><tr><td>Healthcare</td>
+  <td><a href="funds/1802630.html">Soleus Capital</a>
+    <span class="small muted">· Soleus Capital Management, L.P.</span></td>
+  <td class="num pos">+31.7%</td>
+  <td class="num">62%</td>
+  <td class="num">$2.5B</td>
+  <td class="num">86%</td>
+  <td><span class="pill warn">unranked</span> <span class="small muted">coverage 86%</span></td>
+</tr>
+</tbody></table>
+<p class="small muted">*Modeled results for unranked specialists are provisional and do not affect the leaderboard.</p>
+
+
+
+<h2>🧬 Shared holdings among pinned specialists
+  <span class="muted small">latest disclosed long positions; showing 30 of 55, ordered by fund count then combined conviction</span></h2>
+<table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Funds</th><th>Held by</th>
+  <th class="num">Combined value</th><th class="num">Avg wt</th></tr></thead><tbody>
+<tr>
+  <td><a href="../stocks/MBX.html">MBX</a></td><td class="small">MBX BIOSCIENCES INC</td>
+  <td class="num">4/5</td>
+  <td class="small"><a href="funds/1727492.html">Caligan Partners</a>, <a href="funds/1907884.html">Kynam</a>, <a href="funds/1595855.html">Opaleye</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$66M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">1.2%</td>
+</tr><tr>
+  <td><a href="../stocks/PCVX.html">PCVX</a></td><td class="small">VAXCYTE INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1907884.html">Kynam</a>, <a href="funds/1727492.html">Caligan Partners</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$312M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">6.7%</td>
+</tr><tr>
+  <td><a href="../stocks/RVMD.html">RVMD</a></td><td class="small">REVOLUTION MEDICINES INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1727492.html">Caligan Partners</a>, <a href="funds/1595855.html">Opaleye</a>, <a href="funds/1224962.html">Perceptive Advisors</a></td>
+  <td class="num">$196M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">4.4%</td>
+</tr><tr>
+  <td>COGT</td><td class="small">COGENT BIOSCIENCES INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1907884.html">Kynam</a>, <a href="funds/1224962.html">Perceptive Advisors</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$160M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">3.3%</td>
+</tr><tr>
+  <td>EWTX</td><td class="small">EDGEWISE THERAPEUTICS INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1224962.html">Perceptive Advisors</a>, <a href="funds/1595855.html">Opaleye</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$201M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">2.2%</td>
+</tr><tr>
+  <td>TVTX</td><td class="small">TRAVERE THERAPEUTICS INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1907884.html">Kynam</a>, <a href="funds/1224962.html">Perceptive Advisors</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$186M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">2.0%</td>
+</tr><tr>
+  <td><a href="../stocks/CTMX.html">CTMX</a></td><td class="small">CYTOMX THERAPEUTICS INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1907884.html">Kynam</a>, <a href="funds/1224962.html">Perceptive Advisors</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$119M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">1.8%</td>
+</tr><tr>
+  <td><a href="../stocks/TNGX.html">TNGX</a></td><td class="small">TANGO THERAPEUTICS INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1727492.html">Caligan Partners</a>, <a href="funds/1802630.html">Soleus Capital</a>, <a href="funds/1224962.html">Perceptive Advisors</a></td>
+  <td class="num">$77M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">1.4%</td>
+</tr><tr>
+  <td>NRIX</td><td class="small">NURIX THERAPEUTICS INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1907884.html">Kynam</a>, <a href="funds/1224962.html">Perceptive Advisors</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$91M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">1.0%</td>
+</tr><tr>
+  <td>SABS</td><td class="small">SAB BIOTHERAPEUTICS INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1727492.html">Caligan Partners</a>, <a href="funds/1224962.html">Perceptive Advisors</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$59M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">0.9%</td>
+</tr><tr>
+  <td>LBRX</td><td class="small">LB PHARMACEUTICALS INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1727492.html">Caligan Partners</a>, <a href="funds/1595855.html">Opaleye</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$35M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">0.8%</td>
+</tr><tr>
+  <td>IRD</td><td class="small">OPUS GENETICS INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1727492.html">Caligan Partners</a>, <a href="funds/1595855.html">Opaleye</a>, <a href="funds/1224962.html">Perceptive Advisors</a></td>
+  <td class="num">$38M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">0.8%</td>
+</tr><tr>
+  <td>STRO</td><td class="small">SUTRO BIOPHARMA INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1907884.html">Kynam</a>, <a href="funds/1595855.html">Opaleye</a>, <a href="funds/1224962.html">Perceptive Advisors</a></td>
+  <td class="num">$44M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">0.8%</td>
+</tr><tr>
+  <td>AVTX</td><td class="small">AVALO THERAPEUTICS INC</td>
+  <td class="num">3/5</td>
+  <td class="small"><a href="funds/1727492.html">Caligan Partners</a>, <a href="funds/1802630.html">Soleus Capital</a>, <a href="funds/1224962.html">Perceptive Advisors</a></td>
+  <td class="num">$33M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">0.7%</td>
+</tr><tr>
+  <td><a href="../stocks/LQDA.html">LQDA</a></td><td class="small">LIQUIDIA CORPORATION</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1727492.html">Caligan Partners</a>, <a href="funds/1595855.html">Opaleye</a></td>
+  <td class="num">$395M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">16.7%</td>
+</tr><tr>
+  <td>PRAX</td><td class="small">PRAXIS PRECISION MEDICINES I</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1224962.html">Perceptive Advisors</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$762M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">8.6%</td>
+</tr><tr>
+  <td>SNDX</td><td class="small">SYNDAX PHARMACEUTICALS INC</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1907884.html">Kynam</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$228M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">6.8%</td>
+</tr><tr>
+  <td>CELC</td><td class="small">CELCUITY INC</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1224962.html">Perceptive Advisors</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$504M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">6.5%</td>
+</tr><tr>
+  <td>ABVX</td><td class="small">ABIVAX SA</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1727492.html">Caligan Partners</a>, <a href="funds/1224962.html">Perceptive Advisors</a></td>
+  <td class="num">$199M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">6.1%</td>
+</tr><tr>
+  <td>ETON</td><td class="small">ETON PHARMACEUTICALS INC</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1595855.html">Opaleye</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$75M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">4.7%</td>
+</tr><tr>
+  <td>RYTM</td><td class="small">RHYTHM PHARMACEUTICALS INC</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1595855.html">Opaleye</a>, <a href="funds/1224962.html">Perceptive Advisors</a></td>
+  <td class="num">$242M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">4.4%</td>
+</tr><tr>
+  <td>TGTX</td><td class="small">TG THERAPEUTICS INC</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1802630.html">Soleus Capital</a>, <a href="funds/1595855.html">Opaleye</a></td>
+  <td class="num">$152M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">3.9%</td>
+</tr><tr>
+  <td><a href="../stocks/SYRE.html">SYRE</a></td><td class="small">SPYRE THERAPEUTICS INC</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1224962.html">Perceptive Advisors</a>, <a href="funds/1727492.html">Caligan Partners</a></td>
+  <td class="num">$235M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">3.5%</td>
+</tr><tr>
+  <td><a href="../stocks/APGE.html">APGE</a></td><td class="small">APOGEE THERAPEUTICS INC</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1595855.html">Opaleye</a>, <a href="funds/1224962.html">Perceptive Advisors</a></td>
+  <td class="num">$162M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">3.4%</td>
+</tr><tr>
+  <td>XENE</td><td class="small">XENON PHARMACEUTICALS INC</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1727492.html">Caligan Partners</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$98M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">3.2%</td>
+</tr><tr>
+  <td><a href="../stocks/BCRX.html">BCRX</a></td><td class="small">BIOCRYST PHARMACEUTICALS INC</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1907884.html">Kynam</a>, <a href="funds/1224962.html">Perceptive Advisors</a></td>
+  <td class="num">$125M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">2.4%</td>
+</tr><tr>
+  <td>PTGX</td><td class="small">PROTAGONIST THERAPEUTICS INC</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1224962.html">Perceptive Advisors</a>, <a href="funds/1595855.html">Opaleye</a></td>
+  <td class="num">$140M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">2.0%</td>
+</tr><tr>
+  <td>TYRA</td><td class="small">TYRA BIOSCIENCE INC</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1727492.html">Caligan Partners</a>, <a href="funds/1802630.html">Soleus Capital</a></td>
+  <td class="num">$49M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">1.7%</td>
+</tr><tr>
+  <td>VRDN</td><td class="small">VIRIDIAN THERAPEUTICS INC</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1907884.html">Kynam</a>, <a href="funds/1224962.html">Perceptive Advisors</a></td>
+  <td class="num">$69M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">1.7%</td>
+</tr><tr>
+  <td>GERN</td><td class="small">GERON CORP</td>
+  <td class="num">2/5</td>
+  <td class="small"><a href="funds/1802630.html">Soleus Capital</a>, <a href="funds/1907884.html">Kynam</a></td>
+  <td class="num">$72M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">1.6%</td>
+</tr>
+</tbody></table>
+<p class="small muted">Combined value sums reported 13F values; average weight is calculated only across pinned funds holding the stock. Unresolved CUSIPs are omitted.</p>
 
 
 <h2>📊 Stocks that drove out-performance <span class="muted small">share of the 661 ranked funds&rsquo; total alpha</span></h2>
@@ -5631,7 +5873,7 @@
 </tr>
 </tbody></table>
 <details style="margin-top:24px"><summary style="cursor:pointer"><b>Gated out (4528)</b>
-  <span class="muted small">&mdash; beat-rate &le; 50%, too few filings, or coverage &lt; 90%; kept in the data, not clickable. Showing first 60.</span></summary>
+  <span class="muted small">&mdash; beat-rate &le; 50%, too few filings, or coverage &lt; 90%; kept in the data. Showing first 60.</span></summary>
 <table style="margin-top:10px"><thead><tr><th>Fund</th><th class="num">Alpha*</th><th class="num">Cov</th><th class="num">Qtrs</th><th>Reason</th></tr></thead><tbody>
 <tr><td>Orion Resource Partners LP</td>
   <td class="num">+331.8%</td>
@@ -5820,7 +6062,7 @@
 <tr><td><a href="reports/2026Q2.html">2026Q2</a></td>
   <td class="num">661</td><td class="small">Nextech Invest, Ltd.</td>
   <td class="num pos">+302.1%</td>
-  <td class="small muted">2026-07-29 10:37 UTC</td></tr>
+  <td class="small muted">2026-07-29 16:13 UTC</td></tr>
 </tbody></table>
 <footer>13F holdings: SEC EDGAR · Prices: Polygon.io grouped-daily · Benchmark SPY.
   Options positions excluded; entry at each filing&rsquo;s public date.</footer>

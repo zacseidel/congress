@@ -1,5 +1,52 @@
 [
   {
+    "id": "523d06679602f24e3fe29354ee4f5a3c257ef6511b03017669b1952f36651a3d",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Don't Buy SpaceX Until You Consider These 2 Aerospace and Defense Stocks With 10% EPS Growth",
+    "author": "James Halley",
+    "published_utc": "2026-06-28T16:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/06/28/dont-buy-spacex-until-you-consider-these-2-stocks/?source=iedfolrf0000001",
+    "tickers": [
+      "HWM",
+      "TDG",
+      "SPCX"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875884%2Fpartially-disassembled-turbine-engine-of-a-passenger-jet-aircraft.jpg&w=1200&op=resize",
+    "description": "The article argues that Howmet Aerospace and TransDigm Group are more attractive aerospace and defense investments than SpaceX, citing their strong EPS growth profiles, high-margin aftermarket businesses, and disciplined acquisition strategies. Both companies benefit from aging aircraft fleets requiring maintenance and possess significant pricing power through proprietary products and sole-source supplier relationships.",
+    "keywords": [
+      "aerospace and defense stocks",
+      "EPS growth",
+      "aftermarket business",
+      "acquisition strategy",
+      "proprietary products",
+      "sole-source supplier",
+      "data center demand",
+      "aircraft maintenance"
+    ],
+    "insights": [
+      {
+        "ticker": "HWM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company demonstrates 540% EPS growth over five years, 71% YoY EPS growth in Q1, strong aftermarket business expansion (48% YoY growth in spare parts), emerging AI/data center opportunity with 39% gas turbine revenue growth, and aggressive acquisition strategy with $1.8B CAM acquisition expected to add $275M revenue and $60M EBITDA."
+      },
+      {
+        "ticker": "TDG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company shows 270% EPS growth over five years, 11.6% YoY EPS growth in Q2, exceptional pricing power with 80% sole-source supplier status and 90% proprietary products, industry-leading 52.6% EBITDA margins, strong aftermarket growth (16% YoY), and aggressive capital deployment with $905M in buybacks and $960M acquisition of Stellant Systems."
+      },
+      {
+        "ticker": "SPCX",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock declined from opening day closing price of $160.95 to $147.11 shortly after IPO, suggesting weak post-IPO performance and investor disappointment despite initial hype around Elon Musk becoming a trillionaire."
+      }
+    ]
+  },
+  {
     "id": "9e4adb4b0ae3be5f78d05525c5f792ef7702aa115821f20ab69312d5b898dfd3",
     "publisher": {
       "name": "The Motley Fool",
@@ -222,52 +269,6 @@
         "ticker": "TDG",
         "sentiment": "positive",
         "sentiment_reasoning": "The acquisition of Stellant Systems expands TransDigm's defense electronics portfolio with proprietary products and strong aftermarket revenue potential. The deal aligns with the company's long-term value creation strategy, and the stock gained 1.05% on the announcement, reflecting investor approval."
-      }
-    ]
-  },
-  {
-    "id": "de2d0d0aeef06c5c56762e4f2cbf88a452fa9fcbfbfb6d96c06c8f4188577492",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "Insiders are Selling These 3 Space Stocks",
-    "author": "Leo Miller",
-    "published_utc": "2025-12-23T17:48:00Z",
-    "article_url": "https://www.investing.com/analysis/insiders-are-selling-these-3-space-stocks-200672277",
-    "tickers": [
-      "RKLB",
-      "ASTS",
-      "TDG"
-    ],
-    "amp_url": "https://m.investing.com/analysis/insiders-are-selling-these-3-space-stocks-200672277?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "Insider selling activity has increased at three space and aerospace stocks. Rocket Lab saw $141 million in sales from CEO Peter Beck under a pre-planned 10b5-1 arrangement, which carries less bearish implications. AST SpaceMobile experienced a significant $160 million sale by majority shareholder American Tower, reducing its stake by 49% without a predetermined plan\u2014raising the most concern. Transdigm saw $157 million in insider sales, primarily from board member Robert Small, though this appears isolated to one individual.",
-    "keywords": [
-      "insider selling",
-      "space stocks",
-      "aerospace industry",
-      "10b5-1 plan",
-      "shareholder reduction",
-      "telecommunications infrastructure"
-    ],
-    "insights": [
-      {
-        "ticker": "RKLB",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While $141 million in insider sales by CEO Peter Beck appears significant, nearly all sales were conducted under a predetermined 10b5-1 plan, which does not signal near-term bearish sentiment as timing is determined well in advance. Additional sales from Lead Independent Director were minimal at $1.7 million."
-      },
-      {
-        "ticker": "ASTS",
-        "sentiment": "negative",
-        "sentiment_reasoning": "American Tower's $160 million discretionary sale reducing its stake by 49% without a predetermined plan raises the most concern. Given American Tower's deep expertise in telecommunications infrastructure and the scale of the reduction after the stock's 250% gain in 2025, this informed strategic investor's material reduction of exposure suggests a more cautious outlook."
-      },
-      {
-        "ticker": "TDG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While $157 million in insider sales occurred in December, approximately $127 million came from a single board member (Robert Small) and appears isolated. CEO Michael Lissman made only a small $2.6 million sale in November, suggesting the selling is concentrated rather than company-wide, making it only a slightly bearish signal."
       }
     ]
   }

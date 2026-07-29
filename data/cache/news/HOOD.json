@@ -1,237 +1,207 @@
 [
   {
-    "id": "d8f44a0d8d1d9b7e3dd903172babaacfc17df0ee6569adf48da744abe502f494",
+    "id": "5e8ecb6019e21d38eecdf07f6abaa3eb7c1ed1879a9a6220b767dd71ebd7e533",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Better Crypto Buy: Lighter vs. Hyperliquid",
+    "title": "American Express Just Reported Its Second Quarter. Here's What the Card-Fee Line Says About the Premium Consumer.",
+    "author": "Justin Pope",
+    "published_utc": "2026-07-27T12:10:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/27/american-express-just-reported-its-second-quarter/?source=iedfolrf0000001",
+    "tickers": [
+      "AXP",
+      "HOOD"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880149%2Famerican-express-graphic.png&w=1200&op=resize",
+    "description": "American Express reported Q2 2026 earnings with EPS beating expectations but revenue slightly missing. Despite a 4% stock drop, the company's fee revenue grew 15% year-over-year, driven by strong customer acceptance of the Platinum Card's $200 annual fee increase to $895. The premium cardholder base remains resilient with low delinquency rates, and Millennials/Gen Z represent 65% of new accounts, supporting long-term growth.",
+    "keywords": [
+      "American Express Q2 earnings",
+      "premium credit cards",
+      "Platinum Card fee increase",
+      "fee revenue growth",
+      "affluent consumers",
+      "credit card competition",
+      "Millennials and Gen Z cardholders"
+    ],
+    "insights": [
+      {
+        "ticker": "AXP",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Despite initial stock decline, the company demonstrated strong pricing power with 15% fee revenue growth and customer acceptance of significant fee increases. Premium cardholder base shows resilience with low delinquency rates (2% write-off rate, 1.2% past due), and strong acquisition of younger demographics (65% of new accounts) positions the company well for long-term growth at an estimated 14% annual earnings growth."
+      },
+      {
+        "ticker": "HOOD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned only as a competitive threat in the premium credit card space. No specific performance data or analysis provided regarding Robinhood Markets itself."
+      }
+    ]
+  },
+  {
+    "id": "1382c5584db75fb51a4934157b1f256ab6bc803fd49e20943c4004bde70bf970",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Here's Why Hyperliquid Is Now a Threat to Robinhood, Kalshi, and Polymarket",
     "author": "Alex Carchidi",
-    "published_utc": "2026-07-08T11:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/08/better-crypto-buy-lighter-vs-hyperliquid/?source=iedfolrf0000001",
+    "published_utc": "2026-07-24T11:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/24/heres-why-hyperliquid-is-now-a-threat-to-robinhood/?source=iedfolrf0000001",
     "tickers": [
       "HOOD",
-      "COIN",
-      "CRCL",
       "PURR"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877622%2Fstanding-investors-consider-documents.jpg&w=1200&op=resize",
-    "description": "Robinhood's partnership with Lighter to route perpetual futures trading through its platform presents a competitive challenge to market leader Hyperliquid. While Lighter benefits from the Robinhood deal and favorable tokenomics, Hyperliquid maintains a stronger market position with 61.5% market share, a lucrative stablecoin deal with Coinbase and Circle generating $137-160 million annually in buyback fuel, and superior revenue generation. The article concludes Hyperliquid is the better buy despite both coins carrying significant risk.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879875%2Finvestors-ponders-crypto-chart-at-desk.jpg&w=1200&op=resize",
+    "description": "Hyperliquid's new HIP-4 upgrade allows anyone staking 500,000 HYPE tokens to create permissionless prediction markets, directly challenging established competitors Robinhood, Kalshi, and Polymarket. The decentralized exchange's lower fees and automated token buyback mechanism position it as a significant threat, though U.S. regulatory restrictions and high staking requirements limit its immediate impact.",
     "keywords": [
-      "decentralized perpetuals exchange",
-      "perpetual futures",
-      "token buybacks",
-      "market competition",
-      "stablecoin integration",
-      "cryptocurrency trading"
+      "prediction markets",
+      "decentralized exchange",
+      "HIP-4 upgrade",
+      "outcome markets",
+      "permissionless markets",
+      "cryptocurrency",
+      "market competition"
     ],
     "insights": [
       {
         "ticker": "HOOD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Robinhood's strategic partnership with Lighter demonstrates its influence in shaping the decentralized perpetuals market and expanding its crypto offerings to 28 million customers, positioning it as a significant player in the evolving crypto infrastructure."
-      },
-      {
-        "ticker": "COIN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Coinbase's partnership with Circle to integrate USDC stablecoin on Hyperliquid generates substantial revenue through Treasury interest payments, demonstrating strategic positioning in the growing decentralized finance ecosystem."
-      },
-      {
-        "ticker": "CRCL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Circle's USDC stablecoin deal with Hyperliquid creates a significant revenue stream from Treasury interest payments, establishing Circle as a key infrastructure provider in decentralized perpetuals trading."
+        "sentiment": "negative",
+        "sentiment_reasoning": "Robinhood faces competitive pressure from Hyperliquid across multiple niches including derivatives trading and prediction markets. Hyperliquid offers lower fees and doesn't require regulatory approval like Robinhood's partners, making it a direct threat to Robinhood's market share."
       },
       {
         "ticker": "PURR",
         "sentiment": "positive",
-        "sentiment_reasoning": "Hyperliquid dominates with 61.5% market share, generates substantially higher revenue ($202M in Q2 alone), benefits from a major Coinbase/Circle stablecoin deal providing $137-160M annual buyback fuel, and maintains strong holder-friendly tokenomics. The article explicitly recommends it as the better buy."
+        "sentiment_reasoning": "Hyperliquid is presented as an innovative disruptor with a new capability that competitors lack. The HIP-4 upgrade enables permissionless market creation, lower fees, and automated token buybacks that create upside pressure on HYPE price. The article positions it as a growing threat to incumbents."
       }
     ]
   },
   {
-    "id": "1353a25681f8c8822a7dd06a125ab252a72b13a8bc3cf695e24f0e5a8715787f",
+    "id": "debf7bddf9d270efc7dda3f46114c1219855b8e000f380bada363d816f20247d",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Robinhood Is Making a Comeback. Should You Buy the Stock?",
-    "author": "Marc Guberti",
-    "published_utc": "2026-07-07T21:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/07/robinhood-is-making-a-comeback-should-you-buy-the/?source=iedfolrf0000001",
+    "title": "Interactive Brokers Grew Its Customer Accounts 34% in a Year. Here's the Bull Case Before Q2 Earnings.",
+    "author": "Reuben Gregg Brewer",
+    "published_utc": "2026-07-19T14:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/19/interactive-brokers-grew-its-customer-accounts-34/?source=iedfolrf0000001",
     "tickers": [
-      "HOOD",
-      "COIN"
+      "IBKR",
+      "SCHW",
+      "SCHWpD",
+      "SCHWpJ",
+      "HOOD"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877612%2Fgettyimages-1435877497-1200x800-5b2df79.jpg&w=1200&op=resize",
-    "description": "Robinhood stock has surged over 80% from its 52-week low after declining 40% year-to-date earlier. Despite disappointing 15% Q1 revenue growth, the company is diversifying beyond crypto, which now represents less than 10% of revenue. High-growth segments including prediction markets, options trading, and margin interest are offsetting crypto's 47% year-over-year decline, positioning the company for stronger growth comparables in 2027.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878007%2F26_07_15-flags-that-say-buy-and-sell-on-them-_gettyimages-2264644356-1200x800-5b2df79.jpg&w=1200&op=resize",
+    "description": "Interactive Brokers reported strong June 2026 metrics with 34% year-over-year growth in customer accounts to 5.185 million, 40% increase in client equity to $930.3 billion, and 53% surge in trading volume. The company also saw margin loan balances jump 67% to $108.5 billion. Q1 2026 revenues grew 17% to $1.67 billion with adjusted earnings up 28% to $0.60 per share. However, the stock trades at valuations roughly twice its five-year averages, suggesting high market expectations that could lead to disappointment if Q2 results don't exceed forecasts.",
     "keywords": [
-      "fintech",
-      "crypto revenue decline",
-      "business diversification",
-      "prediction markets",
-      "options trading",
-      "margin interest",
-      "stock comeback",
-      "year-over-year growth"
+      "discount brokerage",
+      "customer growth",
+      "trading volume",
+      "margin loans",
+      "earnings expectations",
+      "valuation concerns"
+    ],
+    "insights": [
+      {
+        "ticker": "IBKR",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong fundamental growth across all key metrics (34% account growth, 40% equity growth, 53% trading increase, 67% margin loan growth) and solid Q1 earnings performance (17% revenue growth, 28% earnings growth) indicate robust business momentum heading into Q2 earnings."
+      },
+      {
+        "ticker": "SCHW",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in the discount brokerage space but no specific performance data or analysis provided in the article."
+      },
+      {
+        "ticker": "SCHWpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in the discount brokerage space but no specific performance data or analysis provided in the article."
+      },
+      {
+        "ticker": "SCHWpJ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in the discount brokerage space but no specific performance data or analysis provided in the article."
+      },
+      {
+        "ticker": "HOOD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in the discount brokerage space but no specific performance data or analysis provided in the article."
+      }
+    ]
+  },
+  {
+    "id": "78f747e22b4ac0780fd684dd0a5d6de92c5867482a1dd2de7a73588c4c721c09",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Down 62% From Its High, Is Ethereum a Value Play or a Classic Value Trap?",
+    "author": "Dominic Basulto",
+    "published_utc": "2026-07-19T05:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/19/down-62-from-its-high-is-ethereum-a-value-play-or/?source=iedfolrf0000001",
+    "tickers": [
+      "HOOD"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879381%2Fsurprised-person-using-phone-on-the-street-in-city.jpg&w=1200&op=resize",
+    "description": "Ethereum has fallen 62% from its all-time high of $4,954 and released a new 'Lean Ethereum' roadmap promising upgrades including quantum resistance, faster transactions, and improved privacy by 2029. However, the author remains bearish, arguing that value is flowing to Layer-2 blockchains rather than Ethereum itself, and competitors like Solana are outpacing it in transaction speeds. Despite institutional efforts and foundation changes, these improvements may be too little, too late.",
+    "keywords": [
+      "Ethereum",
+      "cryptocurrency",
+      "blockchain upgrades",
+      "Layer-2 solutions",
+      "quantum cryptography",
+      "value trap",
+      "institutional adoption",
+      "transaction speeds"
     ],
     "insights": [
       {
         "ticker": "HOOD",
         "sentiment": "positive",
-        "sentiment_reasoning": "Stock has recovered significantly with 80% surge from 52-week low. Company is successfully diversifying revenue streams beyond crypto, with prediction markets quadrupling and options revenue growing. Crypto headwind is diminishing as a percentage of total revenue, enabling sustainable growth trajectory and easier year-over-year comparables in 2027."
-      },
-      {
-        "ticker": "COIN",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Company remains heavily dependent on crypto with limited diversification, resulting in 30%+ revenue declines in recent quarters. While attempting to diversify into stock trading and prediction markets, Coinbase is playing catch-up to Robinhood's established multi-vertical business model, making it harder to break out of its crypto-focused perception."
+        "sentiment_reasoning": "Robinhood's launch of Robinhood Chain, a Layer-2 solution on Ethereum, is described as 'bullish for Robinhood' as it allows the company to leverage Ethereum's security and scalability while offering advanced trading functionality without reinventing the wheel."
       }
     ]
   },
   {
-    "id": "f9efb4378945149156d013b0459b6e95dffd8a58ff14266a423555c46b068c43",
+    "id": "793d76b908ca9e6129554ec94c072c8ace0b16a030cbb915f7a76556a0405a63",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "3 Breakout Growth Stocks You Can Buy and Hold for the Next Decade",
-    "author": "Marc Guberti",
-    "published_utc": "2026-07-07T14:20:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/07/3-breakout-growth-stocks-you-can-buy-and-hold-for/?source=iedfolrf0000001",
+    "title": "Robinhood CFO Shiv Verma Sells 3,982 Shares for $457,000 -- Here's What it Signals for the Stock",
+    "author": "Josh Kohn-Lindquist",
+    "published_utc": "2026-07-18T20:10:47Z",
+    "article_url": "https://www.fool.com/coverage/filings/2026/07/18/robinhood-cfo-shiv-verma-sells-3-982-shares-for-usd457-000-here-s-what-it-signals-for-the-stock/?source=iedfolrf0000001",
     "tickers": [
-      "DELL",
-      "HOOD",
-      "NBIS",
-      "META"
+      "HOOD"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F840999%2Fnew-marketing-ideas-technology-growth-innovation-1200x915-184fc2b.jpg&w=1200&op=resize",
-    "description": "The article highlights three growth stocks positioned for long-term gains: Dell Technologies, benefiting from 757% year-over-year growth in AI-optimized servers with $60 billion guidance; Robinhood Markets, showing strong growth outside crypto with event contracts surging 320% YoY; and Nebius, a neocloud provider with 684% revenue growth and major contracts with Meta worth $27 billion.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F6b2b2fe4ef558fb532dbb69b4b7c6a7470069583-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Robinhood Markets CFO Shiv Verma sold 3,982 shares worth approximately $457,000 on July 15, 2026, under a pre-arranged Rule 10b5-1 trading plan. The sale reduced his direct stake by 7%, leaving him with 55,945 shares valued at $6.5 million. The analyst notes this modest disposal should not concern investors, as the company's operations remain strong with 39% growth in platform assets, 15% revenue increase, and expanding product offerings.",
     "keywords": [
-      "AI servers",
-      "growth stocks",
-      "long-term investing",
-      "data centers",
-      "fintech",
-      "AI infrastructure",
+      "insider trading",
+      "stock sale",
+      "Rule 10b5-1 trading plan",
+      "retail investing platform",
+      "financial services",
+      "market capitalization",
       "revenue growth"
     ],
     "insights": [
       {
-        "ticker": "DELL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Exceptional 757% YoY growth in AI-optimized servers, net income tripled, raised AI server revenue guidance to $60 billion, and management indicates momentum shows no signs of slowing."
-      },
-      {
         "ticker": "HOOD",
         "sentiment": "positive",
-        "sentiment_reasoning": "15% YoY revenue growth with strong underlying business momentum; crypto headwinds masking stronger performance in other segments (options +8%, equity +46%, event contracts +320%), positioning for higher growth comparables in 2027."
-      },
-      {
-        "ticker": "NBIS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "684% YoY revenue growth, major $27 billion Meta contracts, improving unit economics with operating expenses declining relative to revenue growth, and on track to reach 4+ gigawatts of contracted power by end of 2026."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a customer signing major AI infrastructure deals with Nebius; no direct analysis of Meta's business provided in the article."
-      }
-    ]
-  },
-  {
-    "id": "c006b6c4248c32fc17f18fe2cda9e5017c41ee4384220bdfdd7494ebcb837c61",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "The Retail Trading Boom Is Back. Charles Schwab Is Quietly Cashing In.",
-    "author": "Reuben Gregg Brewer",
-    "published_utc": "2026-07-06T03:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/05/the-retail-trading-boom-is-back-charles-schwab-is/?source=iedfolrf0000001",
-    "tickers": [
-      "SCHW",
-      "SCHWpD",
-      "SCHWpJ",
-      "HOOD",
-      "SPCX"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F874090%2F24_04_09-a-pink-rocket-ship-flying-above-a-rising-bar-graph-_gettyimages-1305098938-1201x720-06227a7.jpg&w=1200&op=resize",
-    "description": "Charles Schwab is benefiting significantly from the retail trading boom despite being an established player in the discount brokerage industry. The company reported $13.1 trillion in customer assets in May 2026, with 27% year-over-year growth, 461,000 new accounts (up 37%), and record daily trading volumes of 11.8 million trades. With a P/E ratio of 19x compared to Robinhood's 54x, Schwab offers attractive valuation while capturing growth from increased trading activity and margin loans.",
-    "keywords": [
-      "retail trading boom",
-      "discount brokers",
-      "customer assets",
-      "new accounts",
-      "trading volume",
-      "margin loans",
-      "valuation comparison"
-    ],
-    "insights": [
-      {
-        "ticker": "SCHW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong growth metrics including 27% YoY increase in customer assets, 37% increase in new accounts, record trading volumes, and 38% growth in margin loans. Attractive valuation at 19x P/E ratio provides upside potential while capturing retail trading boom benefits."
-      },
-      {
-        "ticker": "SCHWpD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong growth metrics including 27% YoY increase in customer assets, 37% increase in new accounts, record trading volumes, and 38% growth in margin loans. Attractive valuation at 19x P/E ratio provides upside potential while capturing retail trading boom benefits."
-      },
-      {
-        "ticker": "SCHWpJ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong growth metrics including 27% YoY increase in customer assets, 37% increase in new accounts, record trading volumes, and 38% growth in margin loans. Attractive valuation at 19x P/E ratio provides upside potential while capturing retail trading boom benefits."
-      },
-      {
-        "ticker": "HOOD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While recognized as a growth story with impressive achievements for a younger company, Robinhood's valuation is stretched at 54x P/E ratio. The article acknowledges growth opportunity but suggests investors may be overvaluing the company relative to its fundamentals."
-      },
-      {
-        "ticker": "SPCX",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only as a historical example of a company Schwab helped take public; no performance data or analysis provided in the article."
-      }
-    ]
-  },
-  {
-    "id": "ae8c5fc14f9dc561e5e90339e742092107c4a40c4ca104d77024af09ec69027a",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Why Robinhood Stock Jumped This Week",
-    "author": "Joe Tenebruso",
-    "published_utc": "2026-07-05T23:12:09Z",
-    "article_url": "https://www.fool.com/investing/2026/07/05/why-robinhood-stock-jumped-this-week/?source=iedfolrf0000001",
-    "tickers": [
-      "HOOD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877550%2Fhood-stock.png&w=1200&op=resize",
-    "description": "Robinhood Markets stock climbed 14% this week following announcements of major product innovations. The company is expanding internationally through acquisitions and new market launches, introducing tokenized stock products tradable 24/7, and planning to integrate AI-powered features enabling customers to use AI agents for trading. These developments are supported by Robinhood's new blockchain platform built on Arbitrum.",
-    "keywords": [
-      "Robinhood expansion",
-      "AI trading agents",
-      "blockchain platform",
-      "stock tokens",
-      "international markets",
-      "crypto trading",
-      "perpetual futures"
-    ],
-    "insights": [
-      {
-        "ticker": "HOOD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock jumped 14% following announcements of significant product innovations including international expansion, AI-powered trading features, tokenized securities, and new blockchain platform launch. These developments demonstrate growth initiatives and technological advancement."
+        "sentiment_reasoning": "Despite the CFO's share sale, the article emphasizes strong operational performance including 39% platform asset growth, 15% revenue increase, 14% adjusted EBITDA jump, and successful expansion into banking and prediction markets. The analyst expresses confidence in long-term growth potential alongside the company's young customer base, though noting the stock trades at a premium valuation of 44x forward earnings."
       }
     ]
   }

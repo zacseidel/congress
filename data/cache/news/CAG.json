@@ -1,5 +1,98 @@
 [
   {
+    "id": "7dccfe9361f168e7353d99c4f9e0c958df36b6747b1e99ce7a3a080d174251a2",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Americans Are Cutting Back on Spending. Here's Why That Might Not Matter for SpaceX Investors.",
+    "author": "Manali Pradhan, Cfa",
+    "published_utc": "2026-07-02T14:35:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/02/americans-are-cutting-back-on-spending-heres-why-t/?source=iedfolrf0000001",
+    "tickers": [
+      "SPCX",
+      "AMZN",
+      "COST",
+      "BYND",
+      "CAG"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875739%2Fanalyst_studying_multiple_stock_charts_on_multiple_desktop_screens_in_an_office_at_night.jpg&w=1200&op=resize",
+    "description": "While American consumers are becoming more cautious with spending, SpaceX investors should focus on different risks. The article argues that consumer weakness is not the primary concern for SpaceX since Starlink's demand is tied to connectivity needs rather than discretionary spending. Instead, investors should monitor SpaceX's premium valuation (110x trailing sales), declining Starlink pricing power (ARPU fell from $86 to $66), Starship execution risks, and heavy AI infrastructure spending.",
+    "keywords": [
+      "consumer spending",
+      "SpaceX",
+      "Starlink",
+      "valuation risk",
+      "pricing pressure",
+      "Starship",
+      "execution risk"
+    ],
+    "insights": [
+      {
+        "ticker": "SPCX",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Despite consumer spending concerns being less relevant, SpaceX faces significant headwinds including premium valuation at 110x trailing sales with little room for error, declining Starlink ARPU ($86 to $66), pricing power pressures, execution risks with Starship development, and substantial AI infrastructure spending. The company also posted a $4.9 billion net loss on $18.7 billion revenue in 2025."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Amazon's Prime Day event drove strong online spending growth of 5.3% year-over-year to $8.3 billion on the first day, with expectations for $26.3 billion across the four-day event, demonstrating resilience in consumer spending."
+      },
+      {
+        "ticker": "COST",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Costco's May sales rose 14.5% year-over-year to $20.95 billion, demonstrating that value-oriented retailers continue to perform well even as consumers become more cautious and deal-focused."
+      },
+      {
+        "ticker": "BYND",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Beyond Meat's first-quarter revenue fell 15.3% year-over-year to $58.2 million due to weak demand and reduced distribution in certain channels, indicating consumer pressure on discretionary food products."
+      },
+      {
+        "ticker": "CAG",
+        "sentiment": "negative",
+        "sentiment_reasoning": "In Q3 fiscal 2026, Conagra's sales dropped 1.9% and adjusted earnings per share fell 23.5%, showing that certain food categories are experiencing weakness amid consumer spending pressures."
+      }
+    ]
+  },
+  {
+    "id": "ba75bba10ba56aab666985d60bd50c7b982f24535085e874223cf8e3c63eb027",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Meet the Highest-Yielding Stock in the S&P 500. Does Its 10.2% Yield Make It a No-Brainer Buy for Dividend Investors?",
+    "author": "Reuben Gregg Brewer",
+    "published_utc": "2026-06-27T00:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/06/26/meet-the-highest-yielding-stock-in-the-sp-500-does/?source=iedfolrf0000001",
+    "tickers": [
+      "CAG"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876163%2F24_06_03-an-hourglass-with-white-sand-against-a-blue-background-_mf-dload-wait-1190x800-36c2708.jpg&w=1200&op=resize",
+    "description": "Conagra Brands offers the highest dividend yield in the S&P 500 at 10.2%, but this ultra-high yield signals significant risk. The company faces declining earnings (down 20% YoY), substantial debt obligations, industry headwinds, and a newly appointed CEO who may cut the dividend to focus on debt reduction. Conservative dividend investors should be cautious despite the attractive yield.",
+    "keywords": [
+      "dividend yield",
+      "Conagra Brands",
+      "consumer staples",
+      "dividend cut risk",
+      "debt obligations",
+      "new CEO",
+      "earnings decline",
+      "S&P 500"
+    ],
+    "insights": [
+      {
+        "ticker": "CAG",
+        "sentiment": "negative",
+        "sentiment_reasoning": "The company faces multiple red flags including a 10.2% yield suggesting market expectations of a 50%+ dividend cut, adjusted earnings down 20% YoY, $4.5 billion in debt due 2026-2029, weak brand portfolio, and a newly appointed CEO likely to reset operations including potential dividend cuts. These factors indicate significant financial stress and downside risk for dividend investors."
+      }
+    ]
+  },
+  {
     "id": "f691841516fdb70ff9e1d19a8138a4db974dfc4a048bc84e20ad86491f58f5ae",
     "publisher": {
       "name": "The Motley Fool",
@@ -122,107 +215,6 @@
         "ticker": "CAG",
         "sentiment": "negative",
         "sentiment_reasoning": "While offering a higher 9.9% yield, Conagra is less attractive due to material one-time charges, lower interest coverage ratio (3.5x), weaker brand portfolio of secondary brands, previous dividend cut in 2006, and lower gross margins (24.25%), making its dividend less secure despite adequate current coverage."
-      }
-    ]
-  },
-  {
-    "id": "d16517873ca93506c31d5e31df774b5d63b4896df438da4e2ce91d274f678147",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "From Kleenex to Fish Fingers: A 5-Pack of Staples Stocks Yielding up to 11%",
-    "author": "Brett Owens",
-    "published_utc": "2026-04-24T15:32:00Z",
-    "article_url": "https://www.investing.com/analysis/from-kleenex-to-fish-fingers-a-5pack-of-staples-stocks-yielding-up-to-11-200679102",
-    "tickers": [
-      "KMB",
-      "NOMD",
-      "CAG",
-      "CALM",
-      "FLO"
-    ],
-    "amp_url": "https://m.investing.com/analysis/from-kleenex-to-fish-fingers-a-5pack-of-staples-stocks-yielding-up-to-11-200679102?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "The article examines five consumer staples stocks offering high dividend yields (up to 11%) despite sector challenges. While staples traditionally provide defensive value, recent inflation concerns and private-label competition have pressured these stocks. The five highlighted companies\u2014Kimberly-Clark, Nomad Foods, Conagra Brands, Cal-Maine Foods, and Flowers Foods\u2014offer attractive yields but face headwinds including input cost inflation, GLP-1 adoption impacts, and earnings pressures that could threaten dividend sustainability.",
-    "keywords": [
-      "consumer staples",
-      "dividend stocks",
-      "high yield",
-      "inflation",
-      "private-label competition",
-      "earnings pressure",
-      "dividend sustainability"
-    ],
-    "insights": [
-      {
-        "ticker": "KMB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Trading at attractive valuation (13x forward P/E vs sector 22x), yielding 5% with 54-year dividend growth history. Recent stock dive due to Kenvue acquisition creates opportunity, though share dilution is a concern. Dividend appears safe at <70% payout ratio."
-      },
-      {
-        "ticker": "NOMD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "New CEO and operational efficiency program provide reset opportunity. Dividend secure at 45% payout ratio with 7% yield. However, company faces volume declines and input-cost inflation headwinds. Trading at attractive 6x 2027 earnings but earnings expected to decline 10% in 2026."
-      },
-      {
-        "ticker": "CAG",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Extremely cheap valuation (9x forward P/E) and 9%+ yield are offset by significant structural challenges: GLP-1 adoption, SNAP cuts, private-label competition, and input costs. Dividend payout exceeds 80% of profits with little room to maneuver. New CEO appointment suggests management change needed, with precedent for dividend cuts (34% cut in 2006)."
-      },
-      {
-        "ticker": "CALM",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Highly volatile stock tethered to egg prices. Earnings expected to crater 70% in fiscal 2026 and another 45% in 2027. Variable dividend closely tied to earnings, making it unreliable for income. Potential DOJ antitrust lawsuit regarding price-fixing allegations poses significant overhang."
-      },
-      {
-        "ticker": "FLO",
-        "sentiment": "negative",
-        "sentiment_reasoning": "High yield (nearly 11%) masks serious underlying problems. Profits expected to plunge 20%+ this year, threatening dividend sustainability. High debt ($1.3B) relative to market cap ($1.9B), dwindling cash, and pending Supreme Court case create additional risks. Dividend coverage deteriorating (earned $1.09 in 2025, expected $0.84 in 2026)."
-      }
-    ]
-  },
-  {
-    "id": "733800af533673884d8984585bcfdf46f8124a362ed7832ffa0cf6beff83b4e3",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Forget This 9.4% Yielding Dividend Stock: 1 Rock\u2011Solid Income Stock That's Much Safer",
-    "author": "Rick Munarriz",
-    "published_utc": "2026-04-22T11:12:00Z",
-    "article_url": "https://www.fool.com/investing/2026/04/22/forget-this-94-yielding-dividend-stock-1-rocksolid/?source=iedfolrf0000001",
-    "tickers": [
-      "CAG",
-      "TGT"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F866549%2Fgettyimages-104212737.jpg&w=1200&op=resize",
-    "description": "While Conagra Brands offers an attractive 9.4% dividend yield, the stock has plummeted 42% over the past year amid declining revenue, falling operating profits, and goodwill impairments. Target, with a lower 3.5% yield, presents a safer alternative with a new CEO driving a 35% stock gain, improving margins, and an impressive 54-year dividend increase streak. The article recommends Target over Conagra for income investors seeking stability.",
-    "keywords": [
-      "dividend stocks",
-      "income investing",
-      "Conagra Brands",
-      "Target",
-      "dividend yield",
-      "stock performance",
-      "consumer defensive",
-      "GLP-1 drugs",
-      "dividend kings"
-    ],
-    "insights": [
-      {
-        "ticker": "CAG",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock down 42% in one year, hit 17-year low, declining revenue for three consecutive fiscal years, falling operating profits, multiple goodwill impairments, trailing gross margin at 14-year low, stopped dividend increases in 2023, payout ratio unsustainable at 82%, and facing headwinds from GLP-1 weight loss drugs reducing consumer demand."
-      },
-      {
-        "ticker": "TGT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 35% this year with new CEO driving enthusiasm, improved gross margins in two of last three fiscal years, sustainable payout ratio of 58%, Dividend King status with 54 consecutive years of dividend increases, 3.5% yield comparable to money market funds, and positioned to benefit from consumer wardrobe updates in the GLP-1 era."
       }
     ]
   }
