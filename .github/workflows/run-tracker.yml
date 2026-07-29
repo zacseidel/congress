@@ -1,16 +1,12 @@
 name: Congressional Trades Tracker (standard)
 
-# Standard, frequently-run pipeline. Prices + performance are cheap (grouped-daily),
-# so the leaderboard always refreshes; the expensive Polygon profile/news work is
-# focused on OUT-PERFORMER companies only. Use the "full refresh" workflow to
+# Standard manual CI pipeline. Prices + performance are cheap (grouped-daily), while
+# expensive Polygon profile/news work is focused on OUT-PERFORMER companies. The
+# normal operating path is `python src/update.py` locally; dispatch this workflow
+# from the Actions tab only when an online run is desired. Use "full refresh" to
 # (re)enrich every ticker.
 
 on:
-  schedule:
-    # Mondays at 08:23 UTC = ~2am MDT (summer) / ~1am MST (winter).
-    # GitHub cron is fixed UTC and doesn't follow DST, so the local time drifts 1h.
-    # Off the top of the hour on purpose: GitHub delays/drops :00 crons under load.
-    # - cron: '23 8 * * 1'
   workflow_dispatch:
     inputs:
       enrich_max:
@@ -55,9 +51,9 @@ jobs:
           HTTP_USER_AGENT: ${{ secrets.HTTP_USER_AGENT }}
 
       # OCR of scanned House PTRs is slow (~2 min/filing) and used to dominate this
-      # run. It now lives in its own schedule (.github/workflows/ocr.yml) so the
-      # leaderboard/report refresh stays fast; OCR'd rows land in the ledger via that
-      # workflow's commit and are picked up on the next run here.
+      # run. It now lives in its own manual workflow (.github/workflows/ocr.yml) so
+      # the leaderboard/report refresh stays fast; OCR'd rows land in the ledger via
+      # that workflow's commit and are picked up on the next run here.
 
       - name: Refresh prices (grouped-daily → per-ticker close bars)
         run: python src/fetch_prices.py

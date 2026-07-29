@@ -389,10 +389,10 @@ class PolygonClient:
         {TICKER: close} for `day`. Permanently cached; empty file marks a known
         non-trading day. Falls back up to 4 prior days if `day` isn't a trading day.
 
-        `keep`: if given, the saved snapshot is pruned to these tickers (we only
-                ever read congress-traded tickers + the benchmark). Tickers missing
-                from a pruned snapshot are priced from their own `aggs` history by
-                the caller, so no grouped re-fetch is ever needed for new names.
+        `keep`: if given, the saved snapshot is pruned to the page/performance ticker
+                universe plus the benchmark. Tickers missing from a pruned snapshot
+                are priced from their own `aggs` history by the caller, so no grouped
+                re-fetch is ever needed for newly featured names.
         `force`: re-fetch `day` even if it's already cached, overwriting the snapshot
                 (used to backfill volume onto older close-only snapshots). Only the
                 exact `day` is forced; if that fetch fails the existing snapshot is

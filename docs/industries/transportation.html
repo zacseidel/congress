@@ -4,98 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Transportation · Congressional Trades</title>
-<style>
-  :root {
-    --bg:#f6f8fa; --card:#ffffff; --ink:#1f2328; --muted:#57606a; --line:#d0d7de;
-    --green:#1a7f37; --red:#cf222e; --blue:#0969da; --accent:#0a3069;
-  }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink);
-         font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
-  a { color:var(--blue); text-decoration:none; }
-  a:hover { text-decoration:underline; }
-  .wrap { max-width:1080px; margin:0 auto; padding:24px 20px 60px; }
-  header.site { border-bottom:1px solid var(--line); background:var(--card); }
-  header.site .wrap { padding:16px 20px; display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; }
-  header.site h1 { font-size:18px; margin:0; }
-  header.site nav a { color:var(--muted); font-size:14px; margin-right:14px; }
-  h2 { font-size:20px; margin:34px 0 12px; }
-  h3 { font-size:16px; margin:22px 0 8px; }
-  .muted { color:var(--muted); }
-  .small { font-size:13px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:18px 20px; margin:14px 0; }
-  .stat-row { display:flex; gap:26px; flex-wrap:wrap; margin:8px 0 4px; }
-  .stat { }
-  .stat .n { font-size:22px; font-weight:600; }
-  .stat .l { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
-  table { width:100%; border-collapse:collapse; font-size:14px; background:var(--card);
-          border:1px solid var(--line); border-radius:8px; overflow:hidden; }
-  th, td { padding:8px 11px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap; }
-  th { background:#f0f3f6; font-size:12px; text-transform:uppercase; letter-spacing:.03em;
-       color:var(--muted); cursor:pointer; user-select:none; }
-  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
-  tr:last-child td { border-bottom:none; }
-  tbody tr:hover { background:#f6f8fa; }
-  .pos { color:var(--green); } .neg { color:var(--red); }
-  .pill { display:inline-block; font-size:11px; padding:1px 7px; border-radius:10px;
-          background:#eef2f6; color:var(--muted); }
-  .pill.op { background:#dafbe1; color:var(--green); }
-  .pill.house { background:#ddf4ff; color:#0969da; } .pill.senate { background:#fbefff; color:#8250df; }
-  .chart img { width:100%; height:auto; border:1px solid var(--line); border-radius:6px; }
-  .news li { margin:4px 0; }
-  .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
-                padding:12px 16px; font-size:13px; color:#54470f; }
-  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
-  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
-  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
-  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
-  footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
-  /* heatmap */
-  .heat { font-size:12px; }
-  .heat th.rot { white-space:nowrap; }
-  .heat td.cell { text-align:center; min-width:62px; font-variant-numeric:tabular-nums; position:relative; }
-  .heat td.cell a { color:inherit; display:block; padding:2px 0; }
-  .heat td.member { text-align:left; white-space:nowrap; position:sticky; left:0; background:var(--card); }
-  .heat .star { color:#9a6700; }
-  .scroll { overflow-x:auto; border:1px solid var(--line); border-radius:8px; }
-  .scroll table { border:none; border-radius:0; }
-  /* cap + signal pills */
-  .cap { font-size:11px; padding:1px 6px; border-radius:10px; background:#eef2f6; color:var(--muted); }
-  .cap.small,.cap.micro { background:#fff1e5; color:#bc4c00; font-weight:600; }
-  .cap.mega,.cap.large { background:#eef2f6; color:var(--muted); }
-  .sig { font-weight:700; font-variant-numeric:tabular-nums; }
-  .aligned-row { background:#fffbe6; }
-  /* collapsible report sections */
-  details.fold { margin:30px 0 0; }
-  details.fold > summary { cursor:pointer; list-style:none; outline:none; }
-  details.fold > summary::-webkit-details-marker { display:none; }
-  details.fold > summary h2 { display:inline-block; margin:0; }
-  details.fold > summary::before { content:"\25B8"; color:var(--muted); margin-right:9px; font-size:13px; }
-  details.fold[open] > summary::before { content:"\25BE"; }
-  details.fold > summary:hover h2 { color:var(--accent); }
-  .legend { font-size:12px; color:var(--muted); display:flex; gap:16px; flex-wrap:wrap; margin:6px 0 14px; }
-  .swatch { display:inline-block; width:12px; height:12px; border-radius:2px; vertical-align:middle; margin-right:4px; }
-  #net { height:640px; border:1px solid var(--line); border-radius:8px; background:#fbfcfd; }
-  .ndot { display:inline-block; border-radius:50%; vertical-align:middle; margin-right:5px; }
-  .chip { display:inline-block; font-size:12px; padding:2px 9px; margin:2px 3px 2px 0; border-radius:12px;
-          background:#eef2f6; color:var(--accent); border:1px solid var(--line); }
-  .chip:hover { background:#dbe6f2; text-decoration:none; }
-  .controls { margin:10px 0; font-size:14px; }
-  /* momentum dots */
-  .mdots { white-space:nowrap; margin-left:6px; }
-  .mdot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-left:2px;
-          vertical-align:middle; border:1px solid rgba(0,0,0,.08); }
-  .mdot.bull { background:#1a7f37; } .mdot.bear { background:#cf222e; } .mdot.na { background:#d0d7de; }
-  .graph-wrap { display:flex; gap:16px; align-items:flex-start; }
-  .graph-wrap #net { flex:1 1 auto; }
-  .sidebar { flex:0 0 360px; max-height:640px; overflow-y:auto; border:1px solid var(--line);
-             border-radius:8px; background:var(--card); padding:14px 16px; }
-  .sidebar h3 { margin-top:0; }
-  .sidebar .hint { color:var(--muted); font-size:13px; }
-  .sidebar table { font-size:13px; }
-  .sidebar td, .sidebar th { padding:5px 7px; }
-  @media (max-width:820px){ .graph-wrap{ flex-direction:column; } .sidebar{ flex-basis:auto; width:100%; } }
-</style>
+<link rel="stylesheet" href="../assets/site.css">
+<script defer src="../assets/site.js"></script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -104,7 +14,7 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-29.html">Leaderboard</a>
+    <a href="../reports/latest.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
@@ -112,12 +22,10 @@
   </nav>
 </div></header>
 <div class="wrap">
-
 <p class="small"><a href="../map.html">← Skill map</a></p>
 <h2>Transportation</h2>
 <p class="muted">27 members traded in this industry;
    10 sit on a committee with jurisdiction over it.</p>
-
 
 <h3>Members ranked by return in Transportation</h3>
 <table class="sortable">
@@ -126,7 +34,6 @@
     <th class="num">Dollar-wtd return</th><th class="num">Positions</th><th class="num">Disclosed $</th>
   </tr></thead>
   <tbody>
-  
     <tr class="">
       <td><a href="../members/king-jr-angus-s.html">Angus S King, Jr.</a></td>
       <td><span class="pill senate">senate</span></td>
@@ -135,7 +42,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/manning-kathy.html">Kathy Manning</a></td>
       <td><span class="pill house">house</span></td>
@@ -144,7 +50,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/bresnahan-rob.html">Rob Bresnahan</a></td>
       <td><span class="pill house">house</span></td>
@@ -153,7 +58,6 @@
       <td class="num" data-v="5">5</td>
       <td class="num" data-v="40002">$40K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/newhouse-dan.html">Dan Newhouse</a></td>
       <td><span class="pill house">house</span></td>
@@ -162,7 +66,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/torres-ritchie-john.html">Ritchie John Torres</a></td>
       <td><span class="pill house">house</span></td>
@@ -171,7 +74,6 @@
       <td class="num" data-v="4">4</td>
       <td class="num" data-v="32002">$32K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/greene-marjorie-taylor.html">Marjorie Taylor Greene</a></td>
       <td><span class="pill house">house</span></td>
@@ -180,7 +82,6 @@
       <td class="num" data-v="31">31</td>
       <td class="num" data-v="272516">$273K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/hoyle-valerie.html">Valerie Hoyle</a></td>
       <td><span class="pill house">house</span></td>
@@ -189,7 +90,6 @@
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="24002">$24K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/kean-thomas-h.html">Thomas H. Kean</a></td>
       <td><span class="pill house">house</span></td>
@@ -198,7 +98,6 @@
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="24002">$24K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/franklin-scott-scott.html">Scott Scott Franklin</a></td>
       <td><span class="pill house">house</span></td>
@@ -207,7 +106,6 @@
       <td class="num" data-v="7">7</td>
       <td class="num" data-v="147504">$148K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/mullin-markwayne.html">Markwayne Mullin</a></td>
       <td><span class="pill senate">senate</span></td>
@@ -216,7 +114,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="32500">$32K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/khanna-rohit.html">Rohit Khanna</a></td>
       <td><span class="pill house">house</span></td>
@@ -225,7 +122,6 @@
       <td class="num" data-v="61">61</td>
       <td class="num" data-v="537030">$537K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/donalds-byron.html">Byron Donalds</a></td>
       <td><span class="pill house">house</span></td>
@@ -234,7 +130,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/letlow-julia.html">Julia Letlow</a></td>
       <td><span class="pill house">house</span></td>
@@ -243,7 +138,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/cisneros-gilbert.html">Gilbert Cisneros</a></td>
       <td><span class="pill house">house</span></td>
@@ -252,7 +146,6 @@
       <td class="num" data-v="16">16</td>
       <td class="num" data-v="152508">$153K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/moore-tim.html">Tim Moore</a></td>
       <td><span class="pill house">house</span></td>
@@ -261,7 +154,6 @@
       <td class="num" data-v="11">11</td>
       <td class="num" data-v="585006">$585K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/mcclain-lisa.html">Lisa McClain</a></td>
       <td><span class="pill house">house</span></td>
@@ -270,7 +162,6 @@
       <td class="num" data-v="15">15</td>
       <td class="num" data-v="120008">$120K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/westerman-bruce.html">Bruce Westerman</a></td>
       <td><span class="pill house">house</span></td>
@@ -279,7 +170,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/armstrong-alan.html">Alan Armstrong</a></td>
       <td><span class="pill senate">senate</span></td>
@@ -288,7 +178,6 @@
       <td class="num" data-v="9">9</td>
       <td class="num" data-v="96504">$97K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/shreve-jefferson.html">Jefferson Shreve</a></td>
       <td><span class="pill house">house</span></td>
@@ -297,7 +186,6 @@
       <td class="num" data-v="8">8</td>
       <td class="num" data-v="302504">$303K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/gottheimer-josh.html">Josh Gottheimer</a></td>
       <td><span class="pill house">house</span></td>
@@ -306,7 +194,6 @@
       <td class="num" data-v="6">6</td>
       <td class="num" data-v="48003">$48K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/britt-katie.html">Katie Britt</a></td>
       <td><span class="pill senate">senate</span></td>
@@ -315,7 +202,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/james-john.html">John James</a></td>
       <td><span class="pill house">house</span></td>
@@ -324,7 +210,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/delaney-april-mcclain.html">April McClain Delaney</a></td>
       <td><span class="pill house">house</span></td>
@@ -333,7 +218,6 @@
       <td class="num" data-v="6">6</td>
       <td class="num" data-v="72503">$73K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/johnson-julie.html">Julie Johnson</a></td>
       <td><span class="pill house">house</span></td>
@@ -342,7 +226,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/mcgarvey-morgan.html">Morgan McGarvey</a></td>
       <td><span class="pill house">house</span></td>
@@ -351,7 +234,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/salazar-maria-elvira.html">Maria Elvira Salazar</a></td>
       <td><span class="pill house">house</span></td>
@@ -360,7 +242,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="40501">$41K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/larsen-rick.html">Rick Larsen</a></td>
       <td><span class="pill house">house</span></td>
@@ -369,7 +250,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
   </tbody>
 </table>
 
@@ -377,7 +257,6 @@
 <table class="sortable">
   <thead><tr><th>Ticker</th><th>Company</th><th>Cap</th><th class="num">Buyers</th><th class="num">Disclosed $</th></tr></thead>
   <tbody>
-  
     <tr>
       <td><a href="../stocks/AAL.html">AAL</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 15.36 vs SMA10 14.98"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 14.98 vs SMA50 15.25"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 15.25 vs SMA200 13.68"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 960,187,735 vs down-vol 1,744,037,313"></span></span></td>
       <td>American Airlines Group Inc.</td>
@@ -385,7 +264,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="593006">$593K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 105.53 vs SMA10 114.05"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 114.05 vs SMA50 108.27"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 108.27 vs SMA200 103.00"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 48,273,524 vs down-vol 50,426,018"></span></span></td>
       <td>United Parcel Service, Inc. Class B</td>
@@ -393,7 +271,6 @@
       <td class="num" data-v="11">11</td>
       <td class="num" data-v="395519">$396K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UNP.html">UNP</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 294.45 vs SMA10 297.69"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 297.69 vs SMA50 276.22"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 276.22 vs SMA200 249.75"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 35,970,266 vs down-vol 25,553,129"></span></span></td>
       <td>Union Pacific Corp.</td>
@@ -401,7 +278,6 @@
       <td class="num" data-v="11">11</td>
       <td class="num" data-v="308510">$309K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/FDX.html">FDX</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 312.64 vs SMA10 314.10"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 314.10 vs SMA50 335.26"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 335.26 vs SMA200 325.04"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 13,686,846 vs down-vol 19,867,255"></span></span></td>
       <td>FedEx Corporation</td>
@@ -409,7 +285,6 @@
       <td class="num" data-v="6">6</td>
       <td class="num" data-v="201010">$201K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BKNG.html">BKNG</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 199.31 vs SMA10 182.22"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 182.22 vs SMA50 172.45"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 172.45 vs SMA200 185.62"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 67,681,155 vs down-vol 54,171,774"></span></span></td>
       <td>Booking Holdings Inc. Common Stock</td>
@@ -417,7 +292,6 @@
       <td class="num" data-v="6">6</td>
       <td class="num" data-v="145006">$145K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NSC.html">NSC</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 338.84 vs SMA10 338.54"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 338.54 vs SMA50 318.61"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 318.61 vs SMA200 301.32"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 12,376,994 vs down-vol 9,471,147"></span></span></td>
       <td>Norfolk Southern Corp.</td>
@@ -425,7 +299,6 @@
       <td class="num" data-v="4">4</td>
       <td class="num" data-v="144508">$145K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ODFL.html">ODFL</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 226.28 vs SMA10 231.23"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 231.23 vs SMA50 225.63"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 225.63 vs SMA200 187.01"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 13,880,063 vs down-vol 16,246,930"></span></span></td>
       <td>Old Dominion Freight Line</td>
@@ -433,7 +306,6 @@
       <td class="num" data-v="5">5</td>
       <td class="num" data-v="128008">$128K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CSX.html">CSX</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 50.84 vs SMA10 50.97"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 50.97 vs SMA50 47.87"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 47.87 vs SMA200 41.08"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 149,661,117 vs down-vol 118,315,030"></span></span></td>
       <td>CSX Corporation</td>
@@ -441,7 +313,6 @@
       <td class="num" data-v="5">5</td>
       <td class="num" data-v="121004">$121K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DAL.html">DAL</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 89.37 vs SMA10 85.26"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 85.26 vs SMA50 83.66"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 83.66 vs SMA200 70.49"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 60,692,631 vs down-vol 81,513,387"></span></span></td>
       <td>Delta Air Lines, Inc.</td>
@@ -449,7 +320,6 @@
       <td class="num" data-v="5">5</td>
       <td class="num" data-v="88504">$89K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CHRW.html">CHRW</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 169.34 vs SMA10 197.01"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 197.01 vs SMA50 186.68"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 186.68 vs SMA200 171.38"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 17,493,666 vs down-vol 18,480,821"></span></span></td>
       <td>C.H. Robinson Worldwide, Inc.</td>
@@ -457,7 +327,6 @@
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="88504">$89K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CP.html">CP</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 91.70 vs SMA10 91.90"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 91.90 vs SMA50 89.00"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 89.00 vs SMA200 80.52"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 30,476,173 vs down-vol 15,361,620"></span></span></td>
       <td>Canadian Pacific Kansas City Limited</td>
@@ -465,7 +334,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="80504">$81K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CCL.html">CCL</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 28.23 vs SMA10 26.51"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 26.51 vs SMA50 27.42"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 27.42 vs SMA200 27.96"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 149,720,818 vs down-vol 222,324,040"></span></span></td>
       <td>Carnival Corporation Ltd.</td>
@@ -473,7 +341,6 @@
       <td class="num" data-v="4">4</td>
       <td class="num" data-v="64502">$65K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SNDR.html">SNDR</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 36.18 vs SMA10 37.56"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 37.56 vs SMA50 36.22"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 36.22 vs SMA200 28.96"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 5,712,587 vs down-vol 13,534,471"></span></span></td>
       <td>Schneider National, Inc.</td>
@@ -481,7 +348,6 @@
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="48502">$49K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/EXPD.html">EXPD</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 171.42 vs SMA10 177.01"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 177.01 vs SMA50 165.71"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 165.71 vs SMA200 150.65"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 17,113,580 vs down-vol 7,790,286"></span></span></td>
       <td>Expeditors International of Washington, Inc.</td>
@@ -489,7 +355,6 @@
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="40002">$40K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LUV.html">LUV</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 46.31 vs SMA10 47.29"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 47.29 vs SMA50 45.83"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 45.83 vs SMA200 41.57"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 50,774,767 vs down-vol 62,214,145"></span></span></td>
       <td>Southwest Airlines Co.</td>
@@ -497,7 +362,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="40002">$40K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/RCL.html">RCL</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 322.50 vs SMA10 293.75"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 293.75 vs SMA50 289.61"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 289.61 vs SMA200 286.12"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 21,011,947 vs down-vol 28,672,004"></span></span></td>
       <td>Royal Caribbean Group</td>
@@ -505,7 +369,6 @@
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="24002">$24K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UAL.html">UAL</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 123.77 vs SMA10 118.56"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 118.56 vs SMA50 116.52"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 116.52 vs SMA200 105.22"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 35,863,009 vs down-vol 58,638,034"></span></span></td>
       <td>United Airlines Holdings, Inc. Common Stock</td>
@@ -513,7 +376,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="24002">$24K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NCLH.html">NCLH</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 21.22 vs SMA10 19.64"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 19.64 vs SMA50 19.04"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 19.04 vs SMA200 20.34"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 107,212,514 vs down-vol 158,405,782"></span></span></td>
       <td>Norwegian Cruise Line Holdings Ltd. Ordinary Shares</td>
@@ -521,7 +383,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="24002">$24K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BCO.html">BCO</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 118.23 vs SMA10 119.45"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 119.45 vs SMA50 105.24"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 105.24 vs SMA200 112.67"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 7,713,382 vs down-vol 4,196,731"></span></span></td>
       <td>The Brink&#39;s Company</td>
@@ -529,7 +390,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DINO.html">DINO</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 89.30 vs SMA10 88.98"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 88.98 vs SMA50 74.64"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 74.64 vs SMA200 59.99"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 35,452,616 vs down-vol 21,811,024"></span></span></td>
       <td>HF Sinclair Corporation</td>
@@ -537,7 +397,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SAIA.html">SAIA</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 409.99 vs SMA10 425.99"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 425.99 vs SMA50 444.61"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 444.61 vs SMA200 375.29"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 2,295,475 vs down-vol 5,608,109"></span></span></td>
       <td>Saia, Inc.</td>
@@ -545,7 +404,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/KEX.html">KEX</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 145.39 vs SMA10 146.01"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 146.01 vs SMA50 142.02"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 142.02 vs SMA200 126.54"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 8,226,630 vs down-vol 4,381,891"></span></span></td>
       <td>Kirby Corporation</td>
@@ -553,7 +411,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/KNX.html">KNX</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 70.16 vs SMA10 74.17"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 74.17 vs SMA50 75.40"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 75.40 vs SMA200 59.82"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 22,428,038 vs down-vol 57,330,938"></span></span></td>
       <td>Knight-Swift Transportation Holdings Inc. Class A Common Stock</td>
@@ -561,7 +418,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ALK.html">ALK</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 48.61 vs SMA10 46.39"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 46.39 vs SMA50 46.34"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 46.34 vs SMA200 45.80"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 28,894,740 vs down-vol 36,819,586"></span></span></td>
       <td>Alaska Air Group, Inc.</td>
@@ -569,7 +425,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GATX.html">GATX</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 185.80 vs SMA10 181.17"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 181.17 vs SMA50 175.53"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 175.53 vs SMA200 175.77"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 2,342,897 vs down-vol 2,114,087"></span></span></td>
       <td>GATX Corporation</td>
@@ -577,7 +432,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LSTR.html">LSTR</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 185.32 vs SMA10 205.19"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 205.19 vs SMA50 207.04"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 207.04 vs SMA200 164.59"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 3,129,014 vs down-vol 5,434,839"></span></span></td>
       <td>Landstar System Inc</td>
@@ -585,7 +439,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/XPO.html">XPO</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 204.73 vs SMA10 211.82"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 211.82 vs SMA50 210.52"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 210.52 vs SMA200 179.84"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 8,297,925 vs down-vol 10,226,824"></span></span></td>
       <td>XPO, Inc.</td>
@@ -593,7 +446,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ENB.html">ENB</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 55.25 vs SMA10 56.06"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 56.06 vs SMA50 55.71"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 55.71 vs SMA200 51.59"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 38,768,557 vs down-vol 30,494,787"></span></span></td>
       <td>Enbridge, Inc</td>
@@ -601,7 +453,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PAGP.html">PAGP</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 26.27 vs SMA10 25.96"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 25.96 vs SMA50 24.79"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 24.79 vs SMA200 21.74"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 16,393,087 vs down-vol 6,453,164"></span></span></td>
       <td>Plains GP Holdings, L.P. Class A Units representing Limited Partner Interests</td>
@@ -609,30 +460,8 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
   </tbody>
 </table>
-
-<script>
-// Click a header to sort its table. data-sort="num" cells sort numerically.
-document.querySelectorAll('table.sortable').forEach(function(tbl){
-  tbl.querySelectorAll('th').forEach(function(th, idx){
-    th.addEventListener('click', function(){
-      var body = tbl.tBodies[0], rows = Array.prototype.slice.call(body.rows);
-      var asc = th.dataset.asc !== 'true'; th.dataset.asc = asc;
-      rows.sort(function(a,b){
-        var x=a.cells[idx], y=b.cells[idx];
-        var nx=parseFloat((x.dataset.v||x.textContent).replace(/[^0-9.\-]/g,''));
-        var ny=parseFloat((y.dataset.v||y.textContent).replace(/[^0-9.\-]/g,''));
-        if(!isNaN(nx)&&!isNaN(ny)) return asc?nx-ny:ny-nx;
-        return asc ? x.textContent.localeCompare(y.textContent)
-                   : y.textContent.localeCompare(x.textContent);
-      });
-      rows.forEach(function(r){ body.appendChild(r); });
-    });
-  });
-});
-</script>
 <footer>
   Trades: U.S. House Clerk &amp; Senate eFD disclosures · Market data: Polygon.io ·
   Returns assume buying at the close on/after each disclosure date, benchmarked vs SPY.

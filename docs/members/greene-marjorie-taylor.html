@@ -4,98 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Marjorie Taylor Greene · Congressional Trades</title>
-<style>
-  :root {
-    --bg:#f6f8fa; --card:#ffffff; --ink:#1f2328; --muted:#57606a; --line:#d0d7de;
-    --green:#1a7f37; --red:#cf222e; --blue:#0969da; --accent:#0a3069;
-  }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink);
-         font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
-  a { color:var(--blue); text-decoration:none; }
-  a:hover { text-decoration:underline; }
-  .wrap { max-width:1080px; margin:0 auto; padding:24px 20px 60px; }
-  header.site { border-bottom:1px solid var(--line); background:var(--card); }
-  header.site .wrap { padding:16px 20px; display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; }
-  header.site h1 { font-size:18px; margin:0; }
-  header.site nav a { color:var(--muted); font-size:14px; margin-right:14px; }
-  h2 { font-size:20px; margin:34px 0 12px; }
-  h3 { font-size:16px; margin:22px 0 8px; }
-  .muted { color:var(--muted); }
-  .small { font-size:13px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:18px 20px; margin:14px 0; }
-  .stat-row { display:flex; gap:26px; flex-wrap:wrap; margin:8px 0 4px; }
-  .stat { }
-  .stat .n { font-size:22px; font-weight:600; }
-  .stat .l { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
-  table { width:100%; border-collapse:collapse; font-size:14px; background:var(--card);
-          border:1px solid var(--line); border-radius:8px; overflow:hidden; }
-  th, td { padding:8px 11px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap; }
-  th { background:#f0f3f6; font-size:12px; text-transform:uppercase; letter-spacing:.03em;
-       color:var(--muted); cursor:pointer; user-select:none; }
-  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
-  tr:last-child td { border-bottom:none; }
-  tbody tr:hover { background:#f6f8fa; }
-  .pos { color:var(--green); } .neg { color:var(--red); }
-  .pill { display:inline-block; font-size:11px; padding:1px 7px; border-radius:10px;
-          background:#eef2f6; color:var(--muted); }
-  .pill.op { background:#dafbe1; color:var(--green); }
-  .pill.house { background:#ddf4ff; color:#0969da; } .pill.senate { background:#fbefff; color:#8250df; }
-  .chart img { width:100%; height:auto; border:1px solid var(--line); border-radius:6px; }
-  .news li { margin:4px 0; }
-  .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
-                padding:12px 16px; font-size:13px; color:#54470f; }
-  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
-  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
-  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
-  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
-  footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
-  /* heatmap */
-  .heat { font-size:12px; }
-  .heat th.rot { white-space:nowrap; }
-  .heat td.cell { text-align:center; min-width:62px; font-variant-numeric:tabular-nums; position:relative; }
-  .heat td.cell a { color:inherit; display:block; padding:2px 0; }
-  .heat td.member { text-align:left; white-space:nowrap; position:sticky; left:0; background:var(--card); }
-  .heat .star { color:#9a6700; }
-  .scroll { overflow-x:auto; border:1px solid var(--line); border-radius:8px; }
-  .scroll table { border:none; border-radius:0; }
-  /* cap + signal pills */
-  .cap { font-size:11px; padding:1px 6px; border-radius:10px; background:#eef2f6; color:var(--muted); }
-  .cap.small,.cap.micro { background:#fff1e5; color:#bc4c00; font-weight:600; }
-  .cap.mega,.cap.large { background:#eef2f6; color:var(--muted); }
-  .sig { font-weight:700; font-variant-numeric:tabular-nums; }
-  .aligned-row { background:#fffbe6; }
-  /* collapsible report sections */
-  details.fold { margin:30px 0 0; }
-  details.fold > summary { cursor:pointer; list-style:none; outline:none; }
-  details.fold > summary::-webkit-details-marker { display:none; }
-  details.fold > summary h2 { display:inline-block; margin:0; }
-  details.fold > summary::before { content:"\25B8"; color:var(--muted); margin-right:9px; font-size:13px; }
-  details.fold[open] > summary::before { content:"\25BE"; }
-  details.fold > summary:hover h2 { color:var(--accent); }
-  .legend { font-size:12px; color:var(--muted); display:flex; gap:16px; flex-wrap:wrap; margin:6px 0 14px; }
-  .swatch { display:inline-block; width:12px; height:12px; border-radius:2px; vertical-align:middle; margin-right:4px; }
-  #net { height:640px; border:1px solid var(--line); border-radius:8px; background:#fbfcfd; }
-  .ndot { display:inline-block; border-radius:50%; vertical-align:middle; margin-right:5px; }
-  .chip { display:inline-block; font-size:12px; padding:2px 9px; margin:2px 3px 2px 0; border-radius:12px;
-          background:#eef2f6; color:var(--accent); border:1px solid var(--line); }
-  .chip:hover { background:#dbe6f2; text-decoration:none; }
-  .controls { margin:10px 0; font-size:14px; }
-  /* momentum dots */
-  .mdots { white-space:nowrap; margin-left:6px; }
-  .mdot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-left:2px;
-          vertical-align:middle; border:1px solid rgba(0,0,0,.08); }
-  .mdot.bull { background:#1a7f37; } .mdot.bear { background:#cf222e; } .mdot.na { background:#d0d7de; }
-  .graph-wrap { display:flex; gap:16px; align-items:flex-start; }
-  .graph-wrap #net { flex:1 1 auto; }
-  .sidebar { flex:0 0 360px; max-height:640px; overflow-y:auto; border:1px solid var(--line);
-             border-radius:8px; background:var(--card); padding:14px 16px; }
-  .sidebar h3 { margin-top:0; }
-  .sidebar .hint { color:var(--muted); font-size:13px; }
-  .sidebar table { font-size:13px; }
-  .sidebar td, .sidebar th { padding:5px 7px; }
-  @media (max-width:820px){ .graph-wrap{ flex-direction:column; } .sidebar{ flex-basis:auto; width:100%; } }
-</style>
+<link rel="stylesheet" href="../assets/site.css">
+<script defer src="../assets/site.js"></script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -104,7 +14,7 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-29.html">Leaderboard</a>
+    <a href="../reports/latest.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
@@ -112,10 +22,9 @@
   </nav>
 </div></header>
 <div class="wrap">
-
 <p class="small"><a href="../reports/2026-07-29.html">← Back to leaderboard</a></p>
 <h2>Marjorie Taylor Greene <span class="pill house">house</span>
-    <span class="pill op">out-performer</span></h2>
+<span class="pill op">out-performer</span></h2>
 
 <div class="stat-row card">
   <div class="stat"><div class="n pos">+48.3%</div><div class="l">Dollar-wtd return</div></div>
@@ -125,22 +34,17 @@
   <div class="stat"><div class="n">$3.3M</div><div class="l">Disclosed $</div></div>
 </div>
 
-
 <h3>Committee assignments</h3>
 <p class="small muted">Industries under their jurisdiction:
-  <a href="../industries/capital-goods.html">Capital Goods</a> · <a href="../industries/transportation.html">Transportation</a></p>
+<a href="../industries/capital-goods.html">Capital Goods</a> · <a href="../industries/transportation.html">Transportation</a></p>
 <ul class="small">
-  <li>House Committee on Transportation and Infrastructure</li><li>House Committee on Small Business</li><li>House Committee on Small Business: Innovation, Entrepreneurship, and Workforce Development</li><li>House Committee on Small Business: Oversight, Investigations, and Regulations</li>
-</ul>
-
-
+<li>House Committee on Transportation and Infrastructure</li><li>House Committee on Small Business</li><li>House Committee on Small Business: Innovation, Entrepreneurship, and Workforce Development</li><li>House Committee on Small Business: Oversight, Investigations, and Regulations</li></ul>
 
 <h3>Notable bets <span class="muted small">(by interestingness signal; ★ = in their committee's jurisdiction)</span></h3>
 <table class="sortable">
   <thead><tr><th class="num">Signal</th><th>Ticker</th><th>Industry</th><th>Cap</th>
     <th class="num">Return</th><th class="num">$</th><th>Aligned</th></tr></thead>
   <tbody>
-  
     <tr class="aligned-row">
       <td class="num sig" data-v="9223.29">9223.29</td>
       <td><a href="../stocks/LRCX.html">LRCX</a></td>
@@ -150,7 +54,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td><span class="star">★</span> House Committee on Transportation and Infrastructure</td>
     </tr>
-  
     <tr class="aligned-row">
       <td class="num sig" data-v="8142.52">8142.52</td>
       <td><a href="../stocks/LRCX.html">LRCX</a></td>
@@ -160,7 +63,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td><span class="star">★</span> House Committee on Transportation and Infrastructure</td>
     </tr>
-  
     <tr class="aligned-row">
       <td class="num sig" data-v="6881.18">6881.18</td>
       <td><a href="../stocks/LRCX.html">LRCX</a></td>
@@ -170,7 +72,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td><span class="star">★</span> House Committee on Transportation and Infrastructure</td>
     </tr>
-  
     <tr class="aligned-row">
       <td class="num sig" data-v="6551.28">6551.28</td>
       <td><a href="../stocks/LRCX.html">LRCX</a></td>
@@ -180,7 +81,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td><span class="star">★</span> House Committee on Transportation and Infrastructure</td>
     </tr>
-  
     <tr class="">
       <td class="num sig" data-v="4594.91">4594.91</td>
       <td><a href="../stocks/AMD.html">AMD</a></td>
@@ -190,7 +90,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td>—</td>
     </tr>
-  
     <tr class="">
       <td class="num sig" data-v="4594.91">4594.91</td>
       <td><a href="../stocks/AMD.html">AMD</a></td>
@@ -200,7 +99,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td>—</td>
     </tr>
-  
     <tr class="">
       <td class="num sig" data-v="4336.24">4336.24</td>
       <td><a href="../stocks/AMD.html">AMD</a></td>
@@ -210,7 +108,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td>—</td>
     </tr>
-  
     <tr class="aligned-row">
       <td class="num sig" data-v="4176.27">4176.27</td>
       <td><a href="../stocks/CAT.html">CAT</a></td>
@@ -220,7 +117,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td><span class="star">★</span> House Committee on Transportation and Infrastructure</td>
     </tr>
-  
     <tr class="">
       <td class="num sig" data-v="3587.31">3587.31</td>
       <td><a href="../stocks/AMD.html">AMD</a></td>
@@ -230,7 +126,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td>—</td>
     </tr>
-  
     <tr class="">
       <td class="num sig" data-v="3587.31">3587.31</td>
       <td><a href="../stocks/AMD.html">AMD</a></td>
@@ -240,7 +135,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td>—</td>
     </tr>
-  
     <tr class="">
       <td class="num sig" data-v="3587.31">3587.31</td>
       <td><a href="../stocks/AMD.html">AMD</a></td>
@@ -250,7 +144,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td>—</td>
     </tr>
-  
     <tr class="">
       <td class="num sig" data-v="3587.31">3587.31</td>
       <td><a href="../stocks/AMD.html">AMD</a></td>
@@ -260,7 +153,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td>—</td>
     </tr>
-  
     <tr class="">
       <td class="num sig" data-v="3587.31">3587.31</td>
       <td><a href="../stocks/AMD.html">AMD</a></td>
@@ -270,7 +162,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td>—</td>
     </tr>
-  
     <tr class="">
       <td class="num sig" data-v="3587.17">3587.17</td>
       <td><a href="../stocks/AMD.html">AMD</a></td>
@@ -280,7 +171,6 @@
       <td class="num" data-v="8000">$8K</td>
       <td>—</td>
     </tr>
-  
     <tr class="aligned-row">
       <td class="num sig" data-v="3525.66">3525.66</td>
       <td><a href="../stocks/CAT.html">CAT</a></td>
@@ -290,10 +180,8 @@
       <td class="num" data-v="8000">$8K</td>
       <td><span class="star">★</span> House Committee on Transportation and Infrastructure</td>
     </tr>
-  
   </tbody>
 </table>
-
 
 <h3>Positions</h3>
 <table class="sortable">
@@ -303,7 +191,6 @@
     <th class="num">Return</th><th class="num">vs SPY</th><th class="num">Disclosed $</th>
   </tr></thead>
   <tbody>
-  
     <tr>
       <td><a href="../stocks/IBIT.html">IBIT</a></td>
       <td>open</td>
@@ -315,7 +202,6 @@
       <td class="num neg" data-v="-38.76">-38.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PAYX.html">PAYX</a></td>
       <td>open</td>
@@ -327,7 +213,6 @@
       <td class="num neg" data-v="-3.92">-3.9%</td>
       <td class="num" data-v="32500.5">$33K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ADP.html">ADP</a></td>
       <td>open</td>
@@ -339,7 +224,6 @@
       <td class="num neg" data-v="-6.49">-6.5%</td>
       <td class="num" data-v="32500.5">$33K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PG.html">PG</a></td>
       <td>open</td>
@@ -351,7 +235,6 @@
       <td class="num neg" data-v="-9.12">-9.1%</td>
       <td class="num" data-v="32500.5">$33K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -363,7 +246,6 @@
       <td class="num neg" data-v="-7.13">-7.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/KMI.html">KMI</a></td>
       <td>open</td>
@@ -375,7 +257,6 @@
       <td class="num pos" data-v="13.37">+13.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PANW.html">PANW</a></td>
       <td>open</td>
@@ -387,7 +268,6 @@
       <td class="num pos" data-v="36.27">+36.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BRKB.html">BRKB</a></td>
       <td>open</td>
@@ -399,7 +279,6 @@
       <td class="num neg" data-v="-3.3">-3.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BX.html">BX</a></td>
       <td>open</td>
@@ -411,7 +290,6 @@
       <td class="num neg" data-v="-19.56">-19.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAH.html">CAH</a></td>
       <td>open</td>
@@ -423,7 +301,6 @@
       <td class="num pos" data-v="35.0">+35.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/HD.html">HD</a></td>
       <td>open</td>
@@ -435,7 +312,6 @@
       <td class="num neg" data-v="-18.53">-18.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MSFT.html">MSFT</a></td>
       <td>open</td>
@@ -447,7 +323,6 @@
       <td class="num neg" data-v="-35.27">-35.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/OXY.html">OXY</a></td>
       <td>open</td>
@@ -459,7 +334,6 @@
       <td class="num pos" data-v="24.25">+24.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/IBIT.html">IBIT</a></td>
       <td>open</td>
@@ -471,7 +345,6 @@
       <td class="num neg" data-v="-51.79">-51.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMGN.html">AMGN</a></td>
       <td>open</td>
@@ -483,7 +356,6 @@
       <td class="num pos" data-v="26.75">+26.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CVX.html">CVX</a></td>
       <td>open</td>
@@ -495,7 +367,6 @@
       <td class="num pos" data-v="13.87">+13.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MELI.html">MELI</a></td>
       <td>open</td>
@@ -507,7 +378,6 @@
       <td class="num neg" data-v="-26.5">-26.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NFLX.html">NFLX</a></td>
       <td>open</td>
@@ -519,7 +389,6 @@
       <td class="num neg" data-v="-42.17">-42.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -531,7 +400,6 @@
       <td class="num pos" data-v="11.06">+11.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -543,7 +411,6 @@
       <td class="num neg" data-v="-3.72">-3.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -555,7 +422,6 @@
       <td class="num neg" data-v="-3.72">-3.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -567,7 +433,6 @@
       <td class="num neg" data-v="-41.65">-41.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ADBE.html">ADBE</a></td>
       <td>open</td>
@@ -579,7 +444,6 @@
       <td class="num neg" data-v="-37.8">-37.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/IBIT.html">IBIT</a></td>
       <td>open</td>
@@ -591,7 +455,6 @@
       <td class="num neg" data-v="-52.93">-52.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/IBIT.html">IBIT</a></td>
       <td>open</td>
@@ -603,7 +466,6 @@
       <td class="num neg" data-v="-52.93">-52.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVO.html">NVO</a></td>
       <td>open</td>
@@ -615,7 +477,6 @@
       <td class="num neg" data-v="-18.94">-18.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/EXC.html">EXC</a></td>
       <td>open</td>
@@ -627,7 +488,6 @@
       <td class="num neg" data-v="-12.29">-12.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ASML.html">ASML</a></td>
       <td>open</td>
@@ -639,7 +499,6 @@
       <td class="num pos" data-v="54.42">+54.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CRWD.html">CRWD</a></td>
       <td>open</td>
@@ -651,7 +510,6 @@
       <td class="num neg" data-v="-74.18">-74.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DUK.html">DUK</a></td>
       <td>open</td>
@@ -663,7 +521,6 @@
       <td class="num neg" data-v="-6.89">-6.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GOOG.html">GOOG</a></td>
       <td>open</td>
@@ -675,7 +532,6 @@
       <td class="num pos" data-v="22.61">+22.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DLR.html">DLR</a></td>
       <td>open</td>
@@ -687,7 +543,6 @@
       <td class="num pos" data-v="0.72">+0.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GS.html">GS</a></td>
       <td>open</td>
@@ -699,7 +554,6 @@
       <td class="num pos" data-v="16.82">+16.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ADBE.html">ADBE</a></td>
       <td>open</td>
@@ -711,7 +565,6 @@
       <td class="num neg" data-v="-42.8">-42.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/IBIT.html">IBIT</a></td>
       <td>open</td>
@@ -723,7 +576,6 @@
       <td class="num neg" data-v="-53.6">-53.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMGN.html">AMGN</a></td>
       <td>open</td>
@@ -735,7 +587,6 @@
       <td class="num pos" data-v="32.06">+32.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MS.html">MS</a></td>
       <td>open</td>
@@ -747,7 +598,6 @@
       <td class="num pos" data-v="20.2">+20.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/FDX.html">FDX</a></td>
       <td>open</td>
@@ -759,7 +609,6 @@
       <td class="num pos" data-v="20.45">+20.4%</td>
       <td class="num" data-v="32500.5">$33K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/EXC.html">EXC</a></td>
       <td>open</td>
@@ -771,7 +620,6 @@
       <td class="num neg" data-v="-6.54">-6.5%</td>
       <td class="num" data-v="32500.5">$33K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/RHP.html">RHP</a></td>
       <td>open</td>
@@ -783,7 +631,6 @@
       <td class="num pos" data-v="22.8">+22.8%</td>
       <td class="num" data-v="32500.5">$33K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -795,7 +642,6 @@
       <td class="num pos" data-v="5.84">+5.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GOOG.html">GOOG</a></td>
       <td>open</td>
@@ -807,7 +653,6 @@
       <td class="num pos" data-v="40.91">+40.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SO.html">SO</a></td>
       <td>open</td>
@@ -819,7 +664,6 @@
       <td class="num neg" data-v="-10.0">-10.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MRK.html">MRK</a></td>
       <td>open</td>
@@ -831,7 +675,6 @@
       <td class="num pos" data-v="41.85">+41.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MELI.html">MELI</a></td>
       <td>open</td>
@@ -843,7 +686,6 @@
       <td class="num neg" data-v="-39.54">-39.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MS.html">MS</a></td>
       <td>open</td>
@@ -855,7 +697,6 @@
       <td class="num pos" data-v="25.75">+25.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UNH.html">UNH</a></td>
       <td>open</td>
@@ -867,7 +708,6 @@
       <td class="num pos" data-v="23.52">+23.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PEP.html">PEP</a></td>
       <td>open</td>
@@ -879,7 +719,6 @@
       <td class="num neg" data-v="-18.75">-18.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVO.html">NVO</a></td>
       <td>open</td>
@@ -891,7 +730,6 @@
       <td class="num neg" data-v="-24.59">-24.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVO.html">NVO</a></td>
       <td>open</td>
@@ -903,7 +741,6 @@
       <td class="num neg" data-v="-22.25">-22.2%</td>
       <td class="num" data-v="32500.5">$33K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -915,7 +752,6 @@
       <td class="num pos" data-v="4.13">+4.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ABBV.html">ABBV</a></td>
       <td>open</td>
@@ -927,7 +763,6 @@
       <td class="num pos" data-v="12.2">+12.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UNH.html">UNH</a></td>
       <td>open</td>
@@ -939,7 +774,6 @@
       <td class="num pos" data-v="25.9">+25.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PLTR.html">PLTR</a></td>
       <td>open</td>
@@ -951,7 +785,6 @@
       <td class="num neg" data-v="-34.94">-34.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PEP.html">PEP</a></td>
       <td>open</td>
@@ -963,7 +796,6 @@
       <td class="num neg" data-v="-19.99">-20.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSCO.html">TSCO</a></td>
       <td>open</td>
@@ -975,7 +807,6 @@
       <td class="num neg" data-v="-64.82">-64.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SNOW.html">SNOW</a></td>
       <td>open</td>
@@ -987,7 +818,6 @@
       <td class="num pos" data-v="3.06">+3.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NEE.html">NEE</a></td>
       <td>open</td>
@@ -999,7 +829,6 @@
       <td class="num pos" data-v="0.74">+0.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMAT.html">AMAT</a></td>
       <td>open</td>
@@ -1011,7 +840,6 @@
       <td class="num pos" data-v="151.66">+151.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NOW.html">NOW</a></td>
       <td>open</td>
@@ -1023,7 +851,6 @@
       <td class="num neg" data-v="-67.69">-67.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ADBE.html">ADBE</a></td>
       <td>open</td>
@@ -1035,7 +862,6 @@
       <td class="num neg" data-v="-58.09">-58.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GILD.html">GILD</a></td>
       <td>open</td>
@@ -1047,7 +873,6 @@
       <td class="num pos" data-v="0.36">+0.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NFLX.html">NFLX</a></td>
       <td>open</td>
@@ -1059,7 +884,6 @@
       <td class="num neg" data-v="-64.78">-64.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SNOW.html">SNOW</a></td>
       <td>open</td>
@@ -1071,7 +895,6 @@
       <td class="num pos" data-v="3.47">+3.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MELI.html">MELI</a></td>
       <td>open</td>
@@ -1083,7 +906,6 @@
       <td class="num neg" data-v="-52.31">-52.3%</td>
       <td class="num" data-v="32500.5">$33K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UNH.html">UNH</a></td>
       <td>open</td>
@@ -1095,7 +917,6 @@
       <td class="num pos" data-v="11.19">+11.2%</td>
       <td class="num" data-v="32500.5">$33K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GLW.html">GLW</a></td>
       <td>open</td>
@@ -1107,7 +928,6 @@
       <td class="num pos" data-v="137.27">+137.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GOOG.html">GOOG</a></td>
       <td>open</td>
@@ -1119,7 +939,6 @@
       <td class="num pos" data-v="73.58">+73.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVDA.html">NVDA</a></td>
       <td>open</td>
@@ -1131,7 +950,6 @@
       <td class="num pos" data-v="20.77">+20.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -1143,7 +961,6 @@
       <td class="num neg" data-v="-34.67">-34.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BX.html">BX</a></td>
       <td>open</td>
@@ -1155,7 +972,6 @@
       <td class="num neg" data-v="-32.49">-32.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAH.html">CAH</a></td>
       <td>open</td>
@@ -1167,7 +983,6 @@
       <td class="num pos" data-v="26.57">+26.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMD.html">AMD</a></td>
       <td>open</td>
@@ -1179,7 +994,6 @@
       <td class="num pos" data-v="271.67">+271.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/META.html">META</a></td>
       <td>open</td>
@@ -1191,7 +1005,6 @@
       <td class="num neg" data-v="-31.89">-31.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/HSY.html">HSY</a></td>
       <td>open</td>
@@ -1203,7 +1016,6 @@
       <td class="num neg" data-v="-7.4">-7.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NOW.html">NOW</a></td>
       <td>open</td>
@@ -1215,7 +1027,6 @@
       <td class="num neg" data-v="-70.62">-70.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LLY.html">LLY</a></td>
       <td>open</td>
@@ -1227,7 +1038,6 @@
       <td class="num pos" data-v="37.11">+37.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PI.html">PI</a></td>
       <td>open</td>
@@ -1239,7 +1049,6 @@
       <td class="num neg" data-v="-16.67">-16.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMGN.html">AMGN</a></td>
       <td>open</td>
@@ -1251,7 +1060,6 @@
       <td class="num pos" data-v="17.96">+18.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CVX.html">CVX</a></td>
       <td>open</td>
@@ -1263,7 +1071,6 @@
       <td class="num pos" data-v="10.9">+10.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MS.html">MS</a></td>
       <td>open</td>
@@ -1275,7 +1082,6 @@
       <td class="num pos" data-v="37.16">+37.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NFLX.html">NFLX</a></td>
       <td>open</td>
@@ -1287,7 +1093,6 @@
       <td class="num neg" data-v="-63.8">-63.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UNH.html">UNH</a></td>
       <td>open</td>
@@ -1299,7 +1104,6 @@
       <td class="num pos" data-v="11.19">+11.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NEE.html">NEE</a></td>
       <td>open</td>
@@ -1311,7 +1115,6 @@
       <td class="num pos" data-v="1.59">+1.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMAT.html">AMAT</a></td>
       <td>open</td>
@@ -1323,7 +1126,6 @@
       <td class="num pos" data-v="178.77">+178.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GLW.html">GLW</a></td>
       <td>open</td>
@@ -1335,7 +1137,6 @@
       <td class="num pos" data-v="148.94">+148.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DELL.html">DELL</a></td>
       <td>open</td>
@@ -1347,7 +1148,6 @@
       <td class="num pos" data-v="284.77">+284.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DUK.html">DUK</a></td>
       <td>open</td>
@@ -1359,7 +1159,6 @@
       <td class="num neg" data-v="-27.46">-27.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JPM.html">JPM</a></td>
       <td>open</td>
@@ -1371,7 +1170,6 @@
       <td class="num pos" data-v="10.77">+10.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -1383,7 +1181,6 @@
       <td class="num neg" data-v="-20.09">-20.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GOOG.html">GOOG</a></td>
       <td>open</td>
@@ -1395,7 +1192,6 @@
       <td class="num pos" data-v="68.75">+68.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -1407,7 +1203,6 @@
       <td class="num neg" data-v="-7.8">-7.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/FDX.html">FDX</a></td>
       <td>open</td>
@@ -1419,7 +1214,6 @@
       <td class="num pos" data-v="13.92">+13.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/INTC.html">INTC</a></td>
       <td>open</td>
@@ -1431,7 +1225,6 @@
       <td class="num pos" data-v="300.22">+300.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/KMI.html">KMI</a></td>
       <td>open</td>
@@ -1443,7 +1236,6 @@
       <td class="num neg" data-v="-16.41">-16.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVDA.html">NVDA</a></td>
       <td>open</td>
@@ -1455,7 +1247,6 @@
       <td class="num pos" data-v="40.94">+40.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AAPL.html">AAPL</a></td>
       <td>open</td>
@@ -1467,7 +1258,6 @@
       <td class="num pos" data-v="38.74">+38.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SCHW.html">SCHW</a></td>
       <td>open</td>
@@ -1479,7 +1269,6 @@
       <td class="num neg" data-v="-4.64">-4.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DLR.html">DLR</a></td>
       <td>open</td>
@@ -1491,7 +1280,6 @@
       <td class="num neg" data-v="-16.65">-16.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PANW.html">PANW</a></td>
       <td>open</td>
@@ -1503,7 +1291,6 @@
       <td class="num pos" data-v="36.48">+36.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/QCOM.html">QCOM</a></td>
       <td>open</td>
@@ -1515,7 +1302,6 @@
       <td class="num neg" data-v="-16.15">-16.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -1527,7 +1313,6 @@
       <td class="num neg" data-v="-20.93">-20.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BRKB.html">BRKB</a></td>
       <td>open</td>
@@ -1539,7 +1324,6 @@
       <td class="num neg" data-v="-35.95">-36.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BX.html">BX</a></td>
       <td>open</td>
@@ -1551,7 +1335,6 @@
       <td class="num neg" data-v="-32.66">-32.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAH.html">CAH</a></td>
       <td>open</td>
@@ -1563,7 +1346,6 @@
       <td class="num pos" data-v="20.7">+20.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/V.html">V</a></td>
       <td>open</td>
@@ -1575,7 +1357,6 @@
       <td class="num neg" data-v="-27.15">-27.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAT.html">CAT</a></td>
       <td>open</td>
@@ -1587,7 +1368,6 @@
       <td class="num pos" data-v="129.46">+129.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/HD.html">HD</a></td>
       <td>open</td>
@@ -1599,7 +1379,6 @@
       <td class="num neg" data-v="-36.73">-36.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MSFT.html">MSFT</a></td>
       <td>open</td>
@@ -1611,7 +1390,6 @@
       <td class="num neg" data-v="-41.8">-41.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMD.html">AMD</a></td>
       <td>open</td>
@@ -1623,7 +1401,6 @@
       <td class="num pos" data-v="328.4">+328.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/META.html">META</a></td>
       <td>open</td>
@@ -1635,7 +1412,6 @@
       <td class="num neg" data-v="-31.54">-31.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/HSY.html">HSY</a></td>
       <td>open</td>
@@ -1647,7 +1423,6 @@
       <td class="num neg" data-v="-24.71">-24.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GS.html">GS</a></td>
       <td>open</td>
@@ -1659,7 +1434,6 @@
       <td class="num pos" data-v="55.52">+55.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NOW.html">NOW</a></td>
       <td>open</td>
@@ -1671,7 +1445,6 @@
       <td class="num neg" data-v="-75.28">-75.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ABBV.html">ABBV</a></td>
       <td>open</td>
@@ -1683,7 +1456,6 @@
       <td class="num pos" data-v="8.06">+8.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ADBE.html">ADBE</a></td>
       <td>open</td>
@@ -1695,7 +1467,6 @@
       <td class="num neg" data-v="-67.52">-67.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/OXY.html">OXY</a></td>
       <td>open</td>
@@ -1707,7 +1478,6 @@
       <td class="num pos" data-v="4.72">+4.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/OXY.html">OXY</a></td>
       <td>open</td>
@@ -1719,7 +1489,6 @@
       <td class="num pos" data-v="4.72">+4.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JNJ.html">JNJ</a></td>
       <td>open</td>
@@ -1731,7 +1500,6 @@
       <td class="num pos" data-v="40.09">+40.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LLY.html">LLY</a></td>
       <td>open</td>
@@ -1743,7 +1511,6 @@
       <td class="num pos" data-v="24.9">+24.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GILD.html">GILD</a></td>
       <td>open</td>
@@ -1755,7 +1522,6 @@
       <td class="num pos" data-v="4.65">+4.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GILD.html">GILD</a></td>
       <td>open</td>
@@ -1767,7 +1533,6 @@
       <td class="num pos" data-v="4.65">+4.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NSC.html">NSC</a></td>
       <td>open</td>
@@ -1779,7 +1544,6 @@
       <td class="num pos" data-v="22.4">+22.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NSC.html">NSC</a></td>
       <td>open</td>
@@ -1791,7 +1555,6 @@
       <td class="num pos" data-v="22.4">+22.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DVN.html">DVN</a></td>
       <td>open</td>
@@ -1803,7 +1566,6 @@
       <td class="num pos" data-v="6.88">+6.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ODFL.html">ODFL</a></td>
       <td>open</td>
@@ -1815,7 +1577,6 @@
       <td class="num pos" data-v="14.98">+15.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PI.html">PI</a></td>
       <td>open</td>
@@ -1827,7 +1588,6 @@
       <td class="num pos" data-v="5.26">+5.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CMI.html">CMI</a></td>
       <td>open</td>
@@ -1839,7 +1599,6 @@
       <td class="num pos" data-v="82.48">+82.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MRK.html">MRK</a></td>
       <td>open</td>
@@ -1851,7 +1610,6 @@
       <td class="num pos" data-v="34.2">+34.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AXP.html">AXP</a></td>
       <td>open</td>
@@ -1863,7 +1621,6 @@
       <td class="num neg" data-v="-10.33">-10.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMGN.html">AMGN</a></td>
       <td>open</td>
@@ -1875,7 +1632,6 @@
       <td class="num pos" data-v="12.78">+12.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BAC.html">BAC</a></td>
       <td>open</td>
@@ -1887,7 +1643,6 @@
       <td class="num pos" data-v="20.75">+20.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BHP.html">BHP</a></td>
       <td>open</td>
@@ -1899,7 +1654,6 @@
       <td class="num pos" data-v="39.01">+39.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BA.html">BA</a></td>
       <td>open</td>
@@ -1911,7 +1665,6 @@
       <td class="num neg" data-v="-13.44">-13.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BP.html">BP</a></td>
       <td>open</td>
@@ -1923,7 +1676,6 @@
       <td class="num pos" data-v="14.14">+14.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CVX.html">CVX</a></td>
       <td>open</td>
@@ -1935,7 +1687,6 @@
       <td class="num pos" data-v="5.75">+5.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/FRO.html">FRO</a></td>
       <td>open</td>
@@ -1947,7 +1698,6 @@
       <td class="num pos" data-v="88.14">+88.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MELI.html">MELI</a></td>
       <td>open</td>
@@ -1959,7 +1709,6 @@
       <td class="num neg" data-v="-49.02">-49.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MS.html">MS</a></td>
       <td>open</td>
@@ -1971,7 +1720,6 @@
       <td class="num pos" data-v="46.22">+46.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PAYX.html">PAYX</a></td>
       <td>open</td>
@@ -1983,7 +1731,6 @@
       <td class="num neg" data-v="-52.81">-52.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SBUX.html">SBUX</a></td>
       <td>open</td>
@@ -1995,7 +1742,6 @@
       <td class="num neg" data-v="-8.03">-8.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/WMT.html">WMT</a></td>
       <td>open</td>
@@ -2007,7 +1753,6 @@
       <td class="num neg" data-v="-17.82">-17.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ASML.html">ASML</a></td>
       <td>open</td>
@@ -2019,7 +1764,6 @@
       <td class="num pos" data-v="97.93">+97.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LULU.html">LULU</a></td>
       <td>closed</td>
@@ -2031,7 +1775,6 @@
       <td class="num neg" data-v="-25.99">-26.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMAT.html">AMAT</a></td>
       <td>open</td>
@@ -2043,7 +1786,6 @@
       <td class="num pos" data-v="189.98">+190.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JPM.html">JPM</a></td>
       <td>open</td>
@@ -2055,7 +1797,6 @@
       <td class="num pos" data-v="12.52">+12.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -2067,7 +1808,6 @@
       <td class="num neg" data-v="-13.88">-13.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/FDX.html">FDX</a></td>
       <td>open</td>
@@ -2079,7 +1819,6 @@
       <td class="num pos" data-v="11.72">+11.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVDA.html">NVDA</a></td>
       <td>open</td>
@@ -2091,7 +1830,6 @@
       <td class="num pos" data-v="38.85">+38.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AAPL.html">AAPL</a></td>
       <td>open</td>
@@ -2103,7 +1841,6 @@
       <td class="num pos" data-v="32.87">+32.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/QCOM.html">QCOM</a></td>
       <td>open</td>
@@ -2115,7 +1852,6 @@
       <td class="num neg" data-v="-21.78">-21.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -2127,7 +1863,6 @@
       <td class="num neg" data-v="-16.9">-16.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SCCO.html">SCCO</a></td>
       <td>open</td>
@@ -2139,7 +1874,6 @@
       <td class="num pos" data-v="82.84">+82.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMD.html">AMD</a></td>
       <td>open</td>
@@ -2151,7 +1885,6 @@
       <td class="num pos" data-v="347.99">+348.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMD.html">AMD</a></td>
       <td>open</td>
@@ -2163,7 +1896,6 @@
       <td class="num pos" data-v="347.99">+348.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ADBE.html">ADBE</a></td>
       <td>open</td>
@@ -2175,7 +1907,6 @@
       <td class="num neg" data-v="-68.06">-68.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DVN.html">DVN</a></td>
       <td>open</td>
@@ -2187,7 +1918,6 @@
       <td class="num pos" data-v="12.36">+12.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PLTR.html">PLTR</a></td>
       <td>open</td>
@@ -2199,7 +1929,6 @@
       <td class="num pos" data-v="0.75">+0.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PLTR.html">PLTR</a></td>
       <td>open</td>
@@ -2211,7 +1940,6 @@
       <td class="num pos" data-v="0.75">+0.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NKE.html">NKE</a></td>
       <td>open</td>
@@ -2223,7 +1951,6 @@
       <td class="num neg" data-v="-59.6">-59.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CMI.html">CMI</a></td>
       <td>open</td>
@@ -2235,7 +1962,6 @@
       <td class="num pos" data-v="85.68">+85.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MRK.html">MRK</a></td>
       <td>open</td>
@@ -2247,7 +1973,6 @@
       <td class="num pos" data-v="27.73">+27.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LULU.html">LULU</a></td>
       <td>closed</td>
@@ -2259,7 +1984,6 @@
       <td class="num neg" data-v="-33.87">-33.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DELL.html">DELL</a></td>
       <td>open</td>
@@ -2271,7 +1995,6 @@
       <td class="num pos" data-v="375.91">+375.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JPM.html">JPM</a></td>
       <td>open</td>
@@ -2283,7 +2006,6 @@
       <td class="num pos" data-v="19.74">+19.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -2295,7 +2017,6 @@
       <td class="num neg" data-v="-36.45">-36.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -2307,7 +2028,6 @@
       <td class="num neg" data-v="-15.16">-15.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/FDX.html">FDX</a></td>
       <td>open</td>
@@ -2319,7 +2039,6 @@
       <td class="num pos" data-v="5.45">+5.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/FDX.html">FDX</a></td>
       <td>open</td>
@@ -2331,7 +2050,6 @@
       <td class="num pos" data-v="5.45">+5.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AAPL.html">AAPL</a></td>
       <td>open</td>
@@ -2343,7 +2061,6 @@
       <td class="num pos" data-v="40.53">+40.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/QCOM.html">QCOM</a></td>
       <td>open</td>
@@ -2355,7 +2072,6 @@
       <td class="num neg" data-v="-21.32">-21.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BRKB.html">BRKB</a></td>
       <td>open</td>
@@ -2367,7 +2083,6 @@
       <td class="num neg" data-v="-50.75">-50.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LRCX.html">LRCX</a></td>
       <td>open</td>
@@ -2379,7 +2094,6 @@
       <td class="num pos" data-v="286.57">+286.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAT.html">CAT</a></td>
       <td>open</td>
@@ -2391,7 +2105,6 @@
       <td class="num pos" data-v="153.35">+153.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SO.html">SO</a></td>
       <td>open</td>
@@ -2403,7 +2116,6 @@
       <td class="num neg" data-v="-35.92">-35.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NSC.html">NSC</a></td>
       <td>open</td>
@@ -2415,7 +2127,6 @@
       <td class="num pos" data-v="15.98">+16.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ODFL.html">ODFL</a></td>
       <td>open</td>
@@ -2427,7 +2138,6 @@
       <td class="num pos" data-v="2.56">+2.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ODFL.html">ODFL</a></td>
       <td>open</td>
@@ -2439,7 +2149,6 @@
       <td class="num pos" data-v="2.56">+2.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NKE.html">NKE</a></td>
       <td>open</td>
@@ -2451,7 +2160,6 @@
       <td class="num neg" data-v="-69.47">-69.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/RH.html">RH</a></td>
       <td>open</td>
@@ -2463,7 +2171,6 @@
       <td class="num neg" data-v="-38.86">-38.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMAT.html">AMAT</a></td>
       <td>open</td>
@@ -2475,7 +2182,6 @@
       <td class="num pos" data-v="177.84">+177.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -2487,7 +2193,6 @@
       <td class="num neg" data-v="-40.8">-40.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GOOG.html">GOOG</a></td>
       <td>open</td>
@@ -2499,7 +2204,6 @@
       <td class="num pos" data-v="69.39">+69.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/KMI.html">KMI</a></td>
       <td>open</td>
@@ -2511,7 +2215,6 @@
       <td class="num neg" data-v="-17.13">-17.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVDA.html">NVDA</a></td>
       <td>open</td>
@@ -2523,7 +2226,6 @@
       <td class="num pos" data-v="37.01">+37.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AAPL.html">AAPL</a></td>
       <td>open</td>
@@ -2535,7 +2237,6 @@
       <td class="num pos" data-v="27.37">+27.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DLR.html">DLR</a></td>
       <td>open</td>
@@ -2547,7 +2248,6 @@
       <td class="num neg" data-v="-2.78">-2.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BX.html">BX</a></td>
       <td>open</td>
@@ -2559,7 +2259,6 @@
       <td class="num neg" data-v="-41.2">-41.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAH.html">CAH</a></td>
       <td>open</td>
@@ -2571,7 +2270,6 @@
       <td class="num pos" data-v="45.35">+45.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAT.html">CAT</a></td>
       <td>open</td>
@@ -2583,7 +2281,6 @@
       <td class="num pos" data-v="117.68">+117.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ABBV.html">ABBV</a></td>
       <td>open</td>
@@ -2595,7 +2292,6 @@
       <td class="num neg" data-v="-6.63">-6.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/IBIT.html">IBIT</a></td>
       <td>open</td>
@@ -2607,7 +2303,6 @@
       <td class="num neg" data-v="-55.53">-55.5%</td>
       <td class="num" data-v="32500.5">$33K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CRWD.html">CRWD</a></td>
       <td>open</td>
@@ -2619,7 +2314,6 @@
       <td class="num neg" data-v="-74.13">-74.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -2631,7 +2325,6 @@
       <td class="num neg" data-v="-11.6">-11.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GS.html">GS</a></td>
       <td>open</td>
@@ -2643,7 +2336,6 @@
       <td class="num pos" data-v="55.99">+56.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DG.html">DG</a></td>
       <td>open</td>
@@ -2655,7 +2347,6 @@
       <td class="num pos" data-v="25.28">+25.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DG.html">DG</a></td>
       <td>open</td>
@@ -2667,7 +2358,6 @@
       <td class="num pos" data-v="25.28">+25.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PI.html">PI</a></td>
       <td>open</td>
@@ -2679,7 +2369,6 @@
       <td class="num pos" data-v="3.79">+3.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -2691,7 +2380,6 @@
       <td class="num neg" data-v="-30.71">-30.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/INTC.html">INTC</a></td>
       <td>open</td>
@@ -2703,7 +2391,6 @@
       <td class="num pos" data-v="244.17">+244.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AAPL.html">AAPL</a></td>
       <td>open</td>
@@ -2715,7 +2402,6 @@
       <td class="num pos" data-v="17.52">+17.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MSFT.html">MSFT</a></td>
       <td>open</td>
@@ -2727,7 +2413,6 @@
       <td class="num neg" data-v="-25.2">-25.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/META.html">META</a></td>
       <td>open</td>
@@ -2739,7 +2424,6 @@
       <td class="num neg" data-v="-40.96">-41.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GS.html">GS</a></td>
       <td>open</td>
@@ -2751,7 +2435,6 @@
       <td class="num pos" data-v="34.92">+34.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ADBE.html">ADBE</a></td>
       <td>open</td>
@@ -2763,7 +2446,6 @@
       <td class="num neg" data-v="-67.36">-67.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NSC.html">NSC</a></td>
       <td>open</td>
@@ -2775,7 +2457,6 @@
       <td class="num pos" data-v="10.85">+10.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DVN.html">DVN</a></td>
       <td>open</td>
@@ -2787,7 +2468,6 @@
       <td class="num pos" data-v="1.64">+1.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PLTR.html">PLTR</a></td>
       <td>open</td>
@@ -2799,7 +2479,6 @@
       <td class="num neg" data-v="-17.84">-17.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ASML.html">ASML</a></td>
       <td>open</td>
@@ -2811,7 +2490,6 @@
       <td class="num pos" data-v="105.76">+105.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NEE.html">NEE</a></td>
       <td>open</td>
@@ -2823,7 +2501,6 @@
       <td class="num neg" data-v="-2.68">-2.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JPM.html">JPM</a></td>
       <td>open</td>
@@ -2835,7 +2512,6 @@
       <td class="num pos" data-v="10.8">+10.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JPM.html">JPM</a></td>
       <td>open</td>
@@ -2847,7 +2523,6 @@
       <td class="num pos" data-v="10.8">+10.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JPM.html">JPM</a></td>
       <td>open</td>
@@ -2859,7 +2534,6 @@
       <td class="num pos" data-v="10.8">+10.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JPM.html">JPM</a></td>
       <td>open</td>
@@ -2871,7 +2545,6 @@
       <td class="num pos" data-v="10.8">+10.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -2883,7 +2556,6 @@
       <td class="num neg" data-v="-46.16">-46.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -2895,7 +2567,6 @@
       <td class="num neg" data-v="-46.16">-46.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GOOG.html">GOOG</a></td>
       <td>open</td>
@@ -2907,7 +2578,6 @@
       <td class="num pos" data-v="48.04">+48.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GOOG.html">GOOG</a></td>
       <td>open</td>
@@ -2919,7 +2589,6 @@
       <td class="num pos" data-v="48.04">+48.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -2931,7 +2600,6 @@
       <td class="num neg" data-v="-25.54">-25.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -2943,7 +2611,6 @@
       <td class="num neg" data-v="-25.54">-25.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -2955,7 +2622,6 @@
       <td class="num neg" data-v="-25.54">-25.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -2967,7 +2633,6 @@
       <td class="num neg" data-v="-25.54">-25.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -2979,7 +2644,6 @@
       <td class="num neg" data-v="-25.54">-25.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/INTC.html">INTC</a></td>
       <td>open</td>
@@ -2991,7 +2655,6 @@
       <td class="num pos" data-v="301.73">+301.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/INTC.html">INTC</a></td>
       <td>open</td>
@@ -3003,7 +2666,6 @@
       <td class="num pos" data-v="301.73">+301.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/KMI.html">KMI</a></td>
       <td>open</td>
@@ -3015,7 +2677,6 @@
       <td class="num neg" data-v="-8.49">-8.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVDA.html">NVDA</a></td>
       <td>open</td>
@@ -3027,7 +2688,6 @@
       <td class="num pos" data-v="42.76">+42.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVDA.html">NVDA</a></td>
       <td>open</td>
@@ -3039,7 +2699,6 @@
       <td class="num pos" data-v="42.76">+42.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PANW.html">PANW</a></td>
       <td>open</td>
@@ -3051,7 +2710,6 @@
       <td class="num pos" data-v="44.91">+44.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PANW.html">PANW</a></td>
       <td>open</td>
@@ -3063,7 +2721,6 @@
       <td class="num pos" data-v="44.91">+44.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PANW.html">PANW</a></td>
       <td>open</td>
@@ -3075,7 +2732,6 @@
       <td class="num pos" data-v="44.91">+44.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -3087,7 +2743,6 @@
       <td class="num neg" data-v="-46.19">-46.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -3099,7 +2754,6 @@
       <td class="num neg" data-v="-46.19">-46.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -3111,7 +2765,6 @@
       <td class="num neg" data-v="-46.19">-46.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -3123,7 +2776,6 @@
       <td class="num neg" data-v="-46.19">-46.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BRKB.html">BRKB</a></td>
       <td>open</td>
@@ -3135,7 +2787,6 @@
       <td class="num neg" data-v="-12.18">-12.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BRKB.html">BRKB</a></td>
       <td>open</td>
@@ -3147,7 +2798,6 @@
       <td class="num neg" data-v="-12.18">-12.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BRKB.html">BRKB</a></td>
       <td>open</td>
@@ -3159,7 +2809,6 @@
       <td class="num neg" data-v="-12.18">-12.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAH.html">CAH</a></td>
       <td>open</td>
@@ -3171,7 +2820,6 @@
       <td class="num pos" data-v="54.25">+54.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SCCO.html">SCCO</a></td>
       <td>open</td>
@@ -3183,7 +2831,6 @@
       <td class="num pos" data-v="77.05">+77.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/V.html">V</a></td>
       <td>open</td>
@@ -3195,7 +2842,6 @@
       <td class="num neg" data-v="-14.03">-14.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAT.html">CAT</a></td>
       <td>open</td>
@@ -3207,7 +2853,6 @@
       <td class="num pos" data-v="89.28">+89.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAT.html">CAT</a></td>
       <td>open</td>
@@ -3219,7 +2864,6 @@
       <td class="num pos" data-v="89.28">+89.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAT.html">CAT</a></td>
       <td>open</td>
@@ -3231,7 +2875,6 @@
       <td class="num pos" data-v="89.28">+89.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/HD.html">HD</a></td>
       <td>open</td>
@@ -3243,7 +2886,6 @@
       <td class="num neg" data-v="-42.53">-42.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMD.html">AMD</a></td>
       <td>open</td>
@@ -3255,7 +2897,6 @@
       <td class="num pos" data-v="271.68">+271.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMD.html">AMD</a></td>
       <td>open</td>
@@ -3267,7 +2908,6 @@
       <td class="num pos" data-v="271.68">+271.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMD.html">AMD</a></td>
       <td>open</td>
@@ -3279,7 +2919,6 @@
       <td class="num pos" data-v="271.68">+271.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMD.html">AMD</a></td>
       <td>open</td>
@@ -3291,7 +2930,6 @@
       <td class="num pos" data-v="271.68">+271.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMD.html">AMD</a></td>
       <td>open</td>
@@ -3303,7 +2941,6 @@
       <td class="num pos" data-v="271.68">+271.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/META.html">META</a></td>
       <td>open</td>
@@ -3315,7 +2952,6 @@
       <td class="num neg" data-v="-33.68">-33.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/HSY.html">HSY</a></td>
       <td>open</td>
@@ -3327,7 +2963,6 @@
       <td class="num neg" data-v="-4.31">-4.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/OXY.html">OXY</a></td>
       <td>open</td>
@@ -3339,7 +2974,6 @@
       <td class="num neg" data-v="-14.79">-14.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JNJ.html">JNJ</a></td>
       <td>open</td>
@@ -3351,7 +2985,6 @@
       <td class="num pos" data-v="50.85">+50.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JNJ.html">JNJ</a></td>
       <td>open</td>
@@ -3363,7 +2996,6 @@
       <td class="num pos" data-v="50.85">+50.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JNJ.html">JNJ</a></td>
       <td>open</td>
@@ -3375,7 +3007,6 @@
       <td class="num pos" data-v="50.85">+50.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LLY.html">LLY</a></td>
       <td>open</td>
@@ -3387,7 +3018,6 @@
       <td class="num pos" data-v="27.43">+27.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NSC.html">NSC</a></td>
       <td>open</td>
@@ -3399,7 +3029,6 @@
       <td class="num pos" data-v="6.84">+6.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DVN.html">DVN</a></td>
       <td>open</td>
@@ -3411,7 +3040,6 @@
       <td class="num neg" data-v="-2.86">-2.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/IBIT.html">IBIT</a></td>
       <td>open</td>
@@ -3423,7 +3051,6 @@
       <td class="num neg" data-v="-60.94">-60.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ODFL.html">ODFL</a></td>
       <td>open</td>
@@ -3435,7 +3062,6 @@
       <td class="num neg" data-v="-7.39">-7.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMAT.html">AMAT</a></td>
       <td>open</td>
@@ -3447,7 +3073,6 @@
       <td class="num pos" data-v="161.08">+161.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DUK.html">DUK</a></td>
       <td>open</td>
@@ -3459,7 +3084,6 @@
       <td class="num neg" data-v="-5.22">-5.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -3471,7 +3095,6 @@
       <td class="num neg" data-v="-21.33">-21.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVDA.html">NVDA</a></td>
       <td>open</td>
@@ -3483,7 +3106,6 @@
       <td class="num pos" data-v="19.28">+19.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAT.html">CAT</a></td>
       <td>open</td>
@@ -3495,7 +3117,6 @@
       <td class="num pos" data-v="105.95">+106.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MSFT.html">MSFT</a></td>
       <td>open</td>
@@ -3507,7 +3128,6 @@
       <td class="num neg" data-v="-33.15">-33.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/META.html">META</a></td>
       <td>open</td>
@@ -3519,7 +3139,6 @@
       <td class="num neg" data-v="-25.58">-25.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/HSY.html">HSY</a></td>
       <td>open</td>
@@ -3531,7 +3150,6 @@
       <td class="num neg" data-v="-17.74">-17.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NOW.html">NOW</a></td>
       <td>open</td>
@@ -3543,7 +3161,6 @@
       <td class="num neg" data-v="-73.37">-73.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ADBE.html">ADBE</a></td>
       <td>open</td>
@@ -3555,7 +3172,6 @@
       <td class="num neg" data-v="-68.7">-68.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JNJ.html">JNJ</a></td>
       <td>open</td>
@@ -3567,7 +3183,6 @@
       <td class="num pos" data-v="59.38">+59.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LLY.html">LLY</a></td>
       <td>open</td>
@@ -3579,7 +3194,6 @@
       <td class="num pos" data-v="31.35">+31.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GILD.html">GILD</a></td>
       <td>open</td>
@@ -3591,7 +3205,6 @@
       <td class="num pos" data-v="18.21">+18.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NSC.html">NSC</a></td>
       <td>open</td>
@@ -3603,7 +3216,6 @@
       <td class="num pos" data-v="19.52">+19.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ASML.html">ASML</a></td>
       <td>open</td>
@@ -3615,7 +3227,6 @@
       <td class="num pos" data-v="112.37">+112.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/COST.html">COST</a></td>
       <td>open</td>
@@ -3627,7 +3238,6 @@
       <td class="num neg" data-v="-23.19">-23.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NSRGY.html">NSRGY</a></td>
       <td>open</td>
@@ -3639,7 +3249,6 @@
       <td class="num neg" data-v="-9.95">-9.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NEE.html">NEE</a></td>
       <td>open</td>
@@ -3651,7 +3260,6 @@
       <td class="num neg" data-v="-10.01">-10.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DUK.html">DUK</a></td>
       <td>open</td>
@@ -3663,7 +3271,6 @@
       <td class="num neg" data-v="-13.65">-13.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JPM.html">JPM</a></td>
       <td>open</td>
@@ -3675,7 +3282,6 @@
       <td class="num pos" data-v="19.33">+19.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -3687,7 +3293,6 @@
       <td class="num neg" data-v="-45.94">-45.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GOOG.html">GOOG</a></td>
       <td>open</td>
@@ -3699,7 +3304,6 @@
       <td class="num pos" data-v="70.99">+71.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVDA.html">NVDA</a></td>
       <td>open</td>
@@ -3711,7 +3315,6 @@
       <td class="num pos" data-v="21.85">+21.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SCHW.html">SCHW</a></td>
       <td>open</td>
@@ -3723,7 +3326,6 @@
       <td class="num pos" data-v="4.58">+4.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BRKB.html">BRKB</a></td>
       <td>open</td>
@@ -3735,7 +3337,6 @@
       <td class="num neg" data-v="-16.65">-16.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LRCX.html">LRCX</a></td>
       <td>open</td>
@@ -3747,7 +3348,6 @@
       <td class="num pos" data-v="252.99">+253.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/HD.html">HD</a></td>
       <td>open</td>
@@ -3759,7 +3359,6 @@
       <td class="num neg" data-v="-43.08">-43.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MSFT.html">MSFT</a></td>
       <td>open</td>
@@ -3771,7 +3370,6 @@
       <td class="num neg" data-v="-30.73">-30.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMD.html">AMD</a></td>
       <td>open</td>
@@ -3783,7 +3381,6 @@
       <td class="num pos" data-v="209.97">+210.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GSK.html">GSK</a></td>
       <td>open</td>
@@ -3795,7 +3392,6 @@
       <td class="num pos" data-v="32.73">+32.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JNJ.html">JNJ</a></td>
       <td>open</td>
@@ -3807,7 +3403,6 @@
       <td class="num pos" data-v="47.92">+47.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NSRGY.html">NSRGY</a></td>
       <td>open</td>
@@ -3819,7 +3414,6 @@
       <td class="num neg" data-v="-10.12">-10.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMAT.html">AMAT</a></td>
       <td>open</td>
@@ -3831,7 +3425,6 @@
       <td class="num pos" data-v="146.31">+146.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -3843,7 +3436,6 @@
       <td class="num neg" data-v="-8.42">-8.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/QCOM.html">QCOM</a></td>
       <td>open</td>
@@ -3855,7 +3447,6 @@
       <td class="num neg" data-v="-20.02">-20.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SCCO.html">SCCO</a></td>
       <td>open</td>
@@ -3867,7 +3458,6 @@
       <td class="num pos" data-v="62.83">+62.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ABBV.html">ABBV</a></td>
       <td>open</td>
@@ -3879,7 +3469,6 @@
       <td class="num pos" data-v="28.47">+28.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ADBE.html">ADBE</a></td>
       <td>open</td>
@@ -3891,7 +3480,6 @@
       <td class="num neg" data-v="-75.4">-75.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/OXY.html">OXY</a></td>
       <td>open</td>
@@ -3903,7 +3491,6 @@
       <td class="num neg" data-v="-20.16">-20.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NEE.html">NEE</a></td>
       <td>open</td>
@@ -3915,7 +3502,6 @@
       <td class="num neg" data-v="-7.86">-7.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DELL.html">DELL</a></td>
       <td>open</td>
@@ -3927,7 +3513,6 @@
       <td class="num pos" data-v="168.26">+168.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/FDX.html">FDX</a></td>
       <td>open</td>
@@ -3939,7 +3524,6 @@
       <td class="num neg" data-v="-14.64">-14.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PANW.html">PANW</a></td>
       <td>open</td>
@@ -3951,7 +3535,6 @@
       <td class="num pos" data-v="39.15">+39.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -3963,7 +3546,6 @@
       <td class="num neg" data-v="-28.14">-28.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BRKB.html">BRKB</a></td>
       <td>open</td>
@@ -3975,7 +3557,6 @@
       <td class="num neg" data-v="-10.22">-10.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BX.html">BX</a></td>
       <td>open</td>
@@ -3987,7 +3568,6 @@
       <td class="num neg" data-v="-48.4">-48.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/HSY.html">HSY</a></td>
       <td>open</td>
@@ -3999,7 +3579,6 @@
       <td class="num neg" data-v="-19.46">-19.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GS.html">GS</a></td>
       <td>open</td>
@@ -4011,7 +3590,6 @@
       <td class="num pos" data-v="51.51">+51.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NOW.html">NOW</a></td>
       <td>open</td>
@@ -4023,7 +3601,6 @@
       <td class="num neg" data-v="-68.98">-69.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SO.html">SO</a></td>
       <td>open</td>
@@ -4035,7 +3612,6 @@
       <td class="num neg" data-v="-14.67">-14.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSCO.html">TSCO</a></td>
       <td>open</td>
@@ -4047,7 +3623,6 @@
       <td class="num neg" data-v="-69.34">-69.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GLW.html">GLW</a></td>
       <td>open</td>
@@ -4059,7 +3634,6 @@
       <td class="num pos" data-v="137.97">+138.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DUK.html">DUK</a></td>
       <td>open</td>
@@ -4071,7 +3645,6 @@
       <td class="num neg" data-v="-15.16">-15.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/INTC.html">INTC</a></td>
       <td>open</td>
@@ -4083,7 +3656,6 @@
       <td class="num pos" data-v="253.2">+253.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AAPL.html">AAPL</a></td>
       <td>open</td>
@@ -4095,7 +3667,6 @@
       <td class="num pos" data-v="23.16">+23.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DLR.html">DLR</a></td>
       <td>open</td>
@@ -4107,7 +3678,6 @@
       <td class="num neg" data-v="-21.07">-21.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -4119,7 +3689,6 @@
       <td class="num neg" data-v="-3.42">-3.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BRKB.html">BRKB</a></td>
       <td>open</td>
@@ -4131,7 +3700,6 @@
       <td class="num neg" data-v="-16.39">-16.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMD.html">AMD</a></td>
       <td>open</td>
@@ -4143,7 +3711,6 @@
       <td class="num pos" data-v="193.07">+193.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/META.html">META</a></td>
       <td>open</td>
@@ -4155,7 +3722,6 @@
       <td class="num neg" data-v="-24.18">-24.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/HSY.html">HSY</a></td>
       <td>open</td>
@@ -4167,7 +3733,6 @@
       <td class="num neg" data-v="-27.57">-27.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ASML.html">ASML</a></td>
       <td>open</td>
@@ -4179,7 +3744,6 @@
       <td class="num pos" data-v="92.57">+92.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NSRGY.html">NSRGY</a></td>
       <td>open</td>
@@ -4191,7 +3755,6 @@
       <td class="num neg" data-v="-27.23">-27.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/INTC.html">INTC</a></td>
       <td>open</td>
@@ -4203,7 +3766,6 @@
       <td class="num pos" data-v="258.26">+258.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -4215,7 +3777,6 @@
       <td class="num pos" data-v="14.04">+14.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BRKB.html">BRKB</a></td>
       <td>open</td>
@@ -4227,7 +3788,6 @@
       <td class="num neg" data-v="-17.02">-17.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BX.html">BX</a></td>
       <td>open</td>
@@ -4239,7 +3799,6 @@
       <td class="num neg" data-v="-47.54">-47.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/V.html">V</a></td>
       <td>open</td>
@@ -4251,7 +3810,6 @@
       <td class="num pos" data-v="1.72">+1.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAT.html">CAT</a></td>
       <td>open</td>
@@ -4263,7 +3821,6 @@
       <td class="num pos" data-v="89.45">+89.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/HD.html">HD</a></td>
       <td>open</td>
@@ -4275,7 +3832,6 @@
       <td class="num neg" data-v="-41.29">-41.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MSFT.html">MSFT</a></td>
       <td>open</td>
@@ -4287,7 +3843,6 @@
       <td class="num neg" data-v="-35.0">-35.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ASML.html">ASML</a></td>
       <td>open</td>
@@ -4299,7 +3854,6 @@
       <td class="num pos" data-v="62.79">+62.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/COST.html">COST</a></td>
       <td>open</td>
@@ -4311,7 +3865,6 @@
       <td class="num neg" data-v="-20.7">-20.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMAT.html">AMAT</a></td>
       <td>open</td>
@@ -4323,7 +3876,6 @@
       <td class="num pos" data-v="107.93">+107.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DELL.html">DELL</a></td>
       <td>open</td>
@@ -4335,7 +3887,6 @@
       <td class="num pos" data-v="192.32">+192.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JPM.html">JPM</a></td>
       <td>open</td>
@@ -4347,7 +3898,6 @@
       <td class="num pos" data-v="40.29">+40.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/FDX.html">FDX</a></td>
       <td>open</td>
@@ -4359,7 +3909,6 @@
       <td class="num neg" data-v="-9.65">-9.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LRCX.html">LRCX</a></td>
       <td>open</td>
@@ -4371,7 +3920,6 @@
       <td class="num pos" data-v="203.55">+203.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/V.html">V</a></td>
       <td>open</td>
@@ -4383,7 +3931,6 @@
       <td class="num pos" data-v="4.07">+4.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CRWD.html">CRWD</a></td>
       <td>open</td>
@@ -4395,7 +3942,6 @@
       <td class="num neg" data-v="-68.03">-68.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -4407,7 +3953,6 @@
       <td class="num neg" data-v="-48.08">-48.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GOOG.html">GOOG</a></td>
       <td>open</td>
@@ -4419,7 +3964,6 @@
       <td class="num pos" data-v="73.91">+73.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/INTC.html">INTC</a></td>
       <td>open</td>
@@ -4431,7 +3975,6 @@
       <td class="num pos" data-v="252.48">+252.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BRKB.html">BRKB</a></td>
       <td>open</td>
@@ -4443,7 +3986,6 @@
       <td class="num neg" data-v="-17.84">-17.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/BX.html">BX</a></td>
       <td>open</td>
@@ -4455,7 +3997,6 @@
       <td class="num neg" data-v="-44.88">-44.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CAH.html">CAH</a></td>
       <td>open</td>
@@ -4467,7 +4008,6 @@
       <td class="num pos" data-v="77.84">+77.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LRCX.html">LRCX</a></td>
       <td>open</td>
@@ -4479,7 +4019,6 @@
       <td class="num pos" data-v="213.8">+213.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SCCO.html">SCCO</a></td>
       <td>open</td>
@@ -4491,7 +4030,6 @@
       <td class="num pos" data-v="49.16">+49.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CRWD.html">CRWD</a></td>
       <td>open</td>
@@ -4503,7 +4041,6 @@
       <td class="num neg" data-v="-64.36">-64.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LULU.html">LULU</a></td>
       <td>closed</td>
@@ -4515,7 +4052,6 @@
       <td class="num neg" data-v="-20.65">-20.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GLW.html">GLW</a></td>
       <td>open</td>
@@ -4527,7 +4063,6 @@
       <td class="num pos" data-v="171.08">+171.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -4539,7 +4074,6 @@
       <td class="num neg" data-v="-52.61">-52.6%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GOOG.html">GOOG</a></td>
       <td>open</td>
@@ -4551,7 +4085,6 @@
       <td class="num pos" data-v="76.29">+76.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -4563,7 +4096,6 @@
       <td class="num neg" data-v="-1.28">-1.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVDA.html">NVDA</a></td>
       <td>open</td>
@@ -4575,7 +4107,6 @@
       <td class="num pos" data-v="51.02">+51.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AAPL.html">AAPL</a></td>
       <td>open</td>
@@ -4587,7 +4118,6 @@
       <td class="num pos" data-v="19.52">+19.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SCHW.html">SCHW</a></td>
       <td>open</td>
@@ -4599,7 +4129,6 @@
       <td class="num pos" data-v="31.37">+31.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DLR.html">DLR</a></td>
       <td>open</td>
@@ -4611,7 +4140,6 @@
       <td class="num neg" data-v="-4.9">-4.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PANW.html">PANW</a></td>
       <td>open</td>
@@ -4623,7 +4151,6 @@
       <td class="num pos" data-v="49.84">+49.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/QCOM.html">QCOM</a></td>
       <td>open</td>
@@ -4635,7 +4162,6 @@
       <td class="num neg" data-v="-35.95">-36.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/TSLA.html">TSLA</a></td>
       <td>open</td>
@@ -4647,7 +4173,6 @@
       <td class="num pos" data-v="5.65">+5.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GOOG.html">GOOG</a></td>
       <td>open</td>
@@ -4659,7 +4184,6 @@
       <td class="num pos" data-v="67.78">+67.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMZN.html">AMZN</a></td>
       <td>open</td>
@@ -4671,7 +4195,6 @@
       <td class="num neg" data-v="-2.12">-2.1%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/FDX.html">FDX</a></td>
       <td>open</td>
@@ -4683,7 +4206,6 @@
       <td class="num neg" data-v="-26.96">-27.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/INTC.html">INTC</a></td>
       <td>open</td>
@@ -4695,7 +4217,6 @@
       <td class="num pos" data-v="296.16">+296.2%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/KMI.html">KMI</a></td>
       <td>open</td>
@@ -4707,7 +4228,6 @@
       <td class="num pos" data-v="17.33">+17.3%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NVDA.html">NVDA</a></td>
       <td>open</td>
@@ -4719,7 +4239,6 @@
       <td class="num pos" data-v="26.02">+26.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AMAT.html">AMAT</a></td>
       <td>open</td>
@@ -4731,7 +4250,6 @@
       <td class="num pos" data-v="93.81">+93.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GLW.html">GLW</a></td>
       <td>open</td>
@@ -4743,7 +4261,6 @@
       <td class="num pos" data-v="149.83">+149.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DELL.html">DELL</a></td>
       <td>open</td>
@@ -4755,7 +4272,6 @@
       <td class="num pos" data-v="200.78">+200.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DUK.html">DUK</a></td>
       <td>open</td>
@@ -4767,7 +4283,6 @@
       <td class="num neg" data-v="-17.88">-17.9%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/JPM.html">JPM</a></td>
       <td>open</td>
@@ -4779,7 +4294,6 @@
       <td class="num pos" data-v="34.41">+34.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/UPS.html">UPS</a></td>
       <td>open</td>
@@ -4791,7 +4305,6 @@
       <td class="num neg" data-v="-54.78">-54.8%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ASML.html">ASML</a></td>
       <td>open</td>
@@ -4803,7 +4316,6 @@
       <td class="num pos" data-v="18.39">+18.4%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/COST.html">COST</a></td>
       <td>open</td>
@@ -4815,7 +4327,6 @@
       <td class="num neg" data-v="-21.96">-22.0%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CRWD.html">CRWD</a></td>
       <td>open</td>
@@ -4827,7 +4338,6 @@
       <td class="num neg" data-v="-88.66">-88.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/LULU.html">LULU</a></td>
       <td>closed</td>
@@ -4839,7 +4349,6 @@
       <td class="num neg" data-v="-36.68">-36.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NSRGY.html">NSRGY</a></td>
       <td>open</td>
@@ -4851,7 +4360,6 @@
       <td class="num neg" data-v="-39.72">-39.7%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NEE.html">NEE</a></td>
       <td>open</td>
@@ -4863,32 +4371,10 @@
       <td class="num neg" data-v="-14.49">-14.5%</td>
       <td class="num" data-v="8000.5">$8K</td>
     </tr>
-  
   </tbody>
 </table>
 <p class="muted small">Disclosed $ figures are <em>bracket midpoints</em> — filings report ranges
    (e.g. $1,001–$15,000), not exact amounts.</p>
-
-<script>
-// Click a header to sort its table. data-sort="num" cells sort numerically.
-document.querySelectorAll('table.sortable').forEach(function(tbl){
-  tbl.querySelectorAll('th').forEach(function(th, idx){
-    th.addEventListener('click', function(){
-      var body = tbl.tBodies[0], rows = Array.prototype.slice.call(body.rows);
-      var asc = th.dataset.asc !== 'true'; th.dataset.asc = asc;
-      rows.sort(function(a,b){
-        var x=a.cells[idx], y=b.cells[idx];
-        var nx=parseFloat((x.dataset.v||x.textContent).replace(/[^0-9.\-]/g,''));
-        var ny=parseFloat((y.dataset.v||y.textContent).replace(/[^0-9.\-]/g,''));
-        if(!isNaN(nx)&&!isNaN(ny)) return asc?nx-ny:ny-nx;
-        return asc ? x.textContent.localeCompare(y.textContent)
-                   : y.textContent.localeCompare(x.textContent);
-      });
-      rows.forEach(function(r){ body.appendChild(r); });
-    });
-  });
-});
-</script>
 <footer>
   Trades: U.S. House Clerk &amp; Senate eFD disclosures · Market data: Polygon.io ·
   Returns assume buying at the close on/after each disclosure date, benchmarked vs SPY.

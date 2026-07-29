@@ -11,7 +11,7 @@ polygon:
   rate_limit_calls_per_min: 5   # free tier
   details_ttl_days: 180         # company description/profile — rarely changes, recheck ~every 6 months
   financials_ttl_days: 90       # annual financial statements — refresh more often than the description
-  aggregates_ttl_days: 7        # legacy per-ticker aggregates TTL (prices now come from grouped-daily via fetch_prices)
+  aggregates_ttl_days: 7        # retry interval for empty one-time history backfills
   news_limit: 5
   news_ttl_days: 14             # recent-news cache — headlines go stale after ~2 weeks
   news_refresh_max: 40          # max stale-news refreshes per run (relevant tickers only)
@@ -75,7 +75,6 @@ scoring:
 
 report:
   leaderboard_size: 40          # members shown on the leaderboard
-  top_stock_detail_count: 60    # stocks that get a full detail page
   description_max_chars: 600
   whats_new_window_days: 20     # "What's new"/digest shows trades disclosed within this many days
   drivers_size: 40              # stocks shown in "drove out-performance" (View A)

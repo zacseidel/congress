@@ -14,6 +14,7 @@ Usage:
 
 import argparse
 import json
+import shutil
 import sys
 from collections import defaultdict
 from datetime import date, timedelta
@@ -22,13 +23,15 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
 sys.path.insert(0, str(Path(__file__).parent))
-from taxonomy import committee_to_industries
+from taxonomy import cap_bucket, committee_to_industries, sic_to_industry
+from stock_universe import stock_page_tickers
 from utils import (DATA_DIR, OCR_STATE_PATH, ROOT, UNPARSED_PATH, load_config, load_json,
                    load_json_gz, parse_date, save_json, setup_logging, slugify)
 
 log = setup_logging("generate_report")
 
 TEMPLATES_DIR = ROOT / "templates"
+STATIC_DIR = ROOT / "static"
 DOCS = ROOT / "docs"
 CHARTS_DIR = DOCS / "assets" / "charts"
 REPORT_INDEX = DATA_DIR / "report_index.json"
@@ -187,8 +190,18 @@ def _prune_stale(dir_path, keep_stems) -> int:
     return removed
 
 
+def _copy_static_assets() -> None:
+    """Publish shared assets once instead of embedding them in every HTML page."""
+    dest = DOCS / "assets"
+    dest.mkdir(parents=True, exist_ok=True)
+    for name in ("site.css", "site.js"):
+        src = STATIC_DIR / name
+        shutil.copyfile(src, dest / name)
+
+
 def _env():
-    env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)), autoescape=True)
+    env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)), autoescape=True,
+                      trim_blocks=True, lstrip_blocks=True)
     env.globals.update(money=money, usd=usd, pct=pct, cls=cls, heatcolor=heatcolor, slug=slugify)
     return env
 
@@ -277,6 +290,7 @@ def run(today: date | None = None) -> None:
              unparsed_total, len(unparsed_members), ocr_pending, ocr_status["headline"])
 
     env = _env()
+    _copy_static_assets()
 
     from markupsafe import Markup, escape
 
@@ -311,6 +325,14 @@ def run(today: date | None = None) -> None:
         unparsed_members=unparsed_members, unparsed_total=unparsed_total,
         ocr_status=ocr_status, **common,
     ), encoding="utf-8")
+    # All site pages link this stable target. Only this tiny redirect changes when a
+    # new dated report is generated, rather than forcing every stock page to change.
+    (DOCS / "reports" / "latest.html").write_text(
+        f'<!doctype html><meta charset="utf-8">'
+        f'<meta http-equiv="refresh" content="0; url={report_date}.html">'
+        f'<link rel="canonical" href="{report_date}.html">'
+        f'<p>Latest leaderboard: <a href="{report_date}.html">{report_date}</a>.</p>',
+        encoding="utf-8")
 
     # "What's new" standalone page (docs root): out-performer trades first, then everyone else.
     digest_op = [d for d in digest if d["member_id"] in outperformer_ids]
@@ -373,17 +395,23 @@ def run(today: date | None = None) -> None:
     # tickers + hedge "featured" names (top alpha/new-buy stocks Congress never traded).
     hedge_holders = load_json_gz(DATA_DIR / "hedge" / "stock_holders.json.gz") \
         if (DATA_DIR / "hedge" / "stock_holders.json.gz").exists() else {}
-    hedge_featured = set(load_json(DATA_DIR / "hedge" / "stock_pages.json").get("tickers", [])) \
-        if (DATA_DIR / "hedge" / "stock_pages.json").exists() else set()
     stmpl = env.get_template("stock.html")
     (DOCS / "stocks").mkdir(parents=True, exist_ok=True)
-    all_tickers = set(stocks) | (hedge_featured & set(hedge_holders))
+    all_tickers = stock_page_tickers(ledger)
     for ticker in all_tickers:
         s = stocks.get(ticker) or {"ticker": ticker, "name": hedge_holders.get(ticker, {}).get("issuer", ""),
                                    "buyers": []}
         ci = info.get(ticker, {})
         has_chart = (CHARTS_DIR / f"{ticker}.svg").exists()
         tcls = ticker_class.get(ticker)
+        if not tcls and ci and (ci.get("sic_code") or ci.get("market_cap") is not None):
+            tcls = {
+                "industry": sic_to_industry(ci.get("sic_code")),
+                "cap": cap_bucket(ci.get("market_cap"),
+                                  cfg.get("graph", {}).get("cap_buckets")),
+                "market_cap": ci.get("market_cap"),
+                "name": ci.get("name") or ticker,
+            }
         jur_buyers = set()
         if tcls:
             for b in s.get("buyers", []):
@@ -392,6 +420,7 @@ def run(today: date | None = None) -> None:
         (DOCS / "stocks" / f"{ticker}.html").write_text(
             stmpl.render(s=s, info=ci, has_chart=has_chart, tclass=tcls,
                          tperf=ticker_perf.get(ticker), hedge=hedge_holders.get(ticker),
+                         has_momentum=ticker in momentum,
                          jurisdiction_buyer_ids=jur_buyers,
                          n_jurisdiction_buyers=len(jur_buyers), **common),
             encoding="utf-8")
@@ -455,7 +484,7 @@ def run(today: date | None = None) -> None:
     ), encoding="utf-8")
 
     log.info("Rendered report %s, %d member pages, %d stock pages",
-             report_date, len(set(ledger_meta) | set(members)), len(stocks))
+             report_date, len(set(ledger_meta) | set(members)), len(all_tickers))
 
 
 def main() -> None:

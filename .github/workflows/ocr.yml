@@ -5,13 +5,12 @@ name: OCR scanned House PTRs
 # to keep it off GitHub's runners. Run `python src/ocr_scanned.py` on your machine to
 # drain the queue; the report surfaces the remaining backlog (data/ocr_state.json).
 #
-# This workflow is kept as a MANUAL escape hatch (workflow_dispatch) in case you ever
-# want CI to catch up the queue. Each run drains a capped, resumable slice (config
-# ocr.max_filings_per_run) and commits the new ledger rows.
+# This workflow is kept as a MANUAL escape hatch (`workflow_dispatch`) in case you
+# ever want CI to catch up the queue. Each run drains a capped, resumable slice
+# (config ocr.max_filings_per_run) and commits the new ledger rows.
 
 on:
-  # No schedule: OCR runs locally. Trigger from the Actions tab only if you need CI to
-  # process the backlog. To re-enable automatic runs, restore a `schedule:` cron here.
+  # Trigger from the Actions tab only if you need CI to process the backlog.
   workflow_dispatch:
     inputs:
       max_filings:
@@ -57,6 +56,6 @@ jobs:
           git add data/
           git diff --staged --quiet && { echo "No OCR changes to commit."; exit 0; }
           git commit -m "OCR scanned House PTRs $(date +%Y-%m-%d)"
-          # Rebase onto any concurrent run-tracker push before pushing.
+          # Rebase onto any concurrent manually dispatched workflow before pushing.
           git pull --rebase --autostash origin main
           git push

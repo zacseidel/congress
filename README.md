@@ -34,8 +34,8 @@ disclosure date**, and surfaces the stocks that out-performing members are buyin
 | Fetch Senate PTRs | `src/fetch_senate.py` | eFD agreement + DataTables search → electronic PTR HTML |
 | Fetch committees | `src/fetch_committees.py` | unitedstates JSON → match members → committee jurisdiction |
 | OCR scanned PTRs | `src/ocr_scanned.py` | reads paper House PTRs (`ocr_ptr.py`: rotate + grid + fuzzy stock match) into the ledger |
-| Enrich | `src/enrich.py` | Polygon details / news / financials / 2yr bars (cached, capped) |
-| Charts | `src/fetch_charts.py` | matplotlib PNGs with buy/sell markers (no API calls) |
+| Enrich | `src/enrich.py` | Polygon details / news / financials for Congress + bounded hedge-feature pages |
+| Charts | `src/fetch_charts.py` | compact full-resolution SVGs with buy/sell markers (no API calls) |
 | Performance | `src/compute_performance.py` | position model + grouped-daily pricing + SPY alpha |
 | Rank | `src/score_and_rank.py` | leaderboard, out-performers, stock/consensus rollups |
 | Graph | `src/build_graph.py` | SIC→industry + cap classification, signal feed, skill map, network (no API) |
@@ -51,14 +51,17 @@ Output lives in `docs/` and is served by GitHub Pages.
    - `POLYGON_API_KEY` — a Polygon.io key (free tier works; the pipeline paces to 5 calls/min).
    - `HTTP_USER_AGENT` — a descriptive UA with contact info, e.g. `CongressTradesTracker/1.0 (you@example.com)`.
 2. **GitHub Pages:** Settings → Pages → Deploy from branch → `main` / `/docs`.
-3. **Schedule:** the workflow runs weekly (Mondays) and on manual dispatch.
+3. **GitHub Actions:** all workflows are manual-only (`workflow_dispatch`). Run one
+   explicitly from the Actions tab only when an online run is desired.
 
 ### Local run
 
 ```bash
 pip install -r requirements.txt
 cp .env.example .env   # add POLYGON_API_KEY and HTTP_USER_AGENT
-python src/backfill.py            # full build (run repeatedly on free tier until enrich reports 0 new)
+python src/update.py --no-push    # normal local refresh; build without publishing
+python src/update.py              # normal local refresh; commit + push generated data/docs
+python src/backfill.py            # Congress-only full build
 # or stage by stage:
 python src/fetch_house.py --year 2025 --limit 20   # quick test slice
 ```

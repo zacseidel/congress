@@ -2,14 +2,10 @@ name: Congressional Trades Tracker (full refresh)
 
 # Full rebuild via backfill.py: enriches EVERY traded ticker (descriptions,
 # financials, news) rather than only out-performer companies. Slow on the Polygon
-# free tier and resumable, so it runs monthly / on demand rather than every push.
-# The standard run-tracker workflow handles the frequent, out-performer-focused
-# refreshes in between.
+# free tier and resumable. This workflow is manual-only; the normal operating path
+# is `python src/update.py` on a local machine.
 
 on:
-  schedule:
-    # 1st of each month at 09:00 UTC
-    # - cron: '0 9 1 * *'
   workflow_dispatch:
     inputs:
       enrich_max:

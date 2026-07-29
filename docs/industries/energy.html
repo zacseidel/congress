@@ -4,98 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Energy · Congressional Trades</title>
-<style>
-  :root {
-    --bg:#f6f8fa; --card:#ffffff; --ink:#1f2328; --muted:#57606a; --line:#d0d7de;
-    --green:#1a7f37; --red:#cf222e; --blue:#0969da; --accent:#0a3069;
-  }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink);
-         font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
-  a { color:var(--blue); text-decoration:none; }
-  a:hover { text-decoration:underline; }
-  .wrap { max-width:1080px; margin:0 auto; padding:24px 20px 60px; }
-  header.site { border-bottom:1px solid var(--line); background:var(--card); }
-  header.site .wrap { padding:16px 20px; display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; }
-  header.site h1 { font-size:18px; margin:0; }
-  header.site nav a { color:var(--muted); font-size:14px; margin-right:14px; }
-  h2 { font-size:20px; margin:34px 0 12px; }
-  h3 { font-size:16px; margin:22px 0 8px; }
-  .muted { color:var(--muted); }
-  .small { font-size:13px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:18px 20px; margin:14px 0; }
-  .stat-row { display:flex; gap:26px; flex-wrap:wrap; margin:8px 0 4px; }
-  .stat { }
-  .stat .n { font-size:22px; font-weight:600; }
-  .stat .l { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
-  table { width:100%; border-collapse:collapse; font-size:14px; background:var(--card);
-          border:1px solid var(--line); border-radius:8px; overflow:hidden; }
-  th, td { padding:8px 11px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap; }
-  th { background:#f0f3f6; font-size:12px; text-transform:uppercase; letter-spacing:.03em;
-       color:var(--muted); cursor:pointer; user-select:none; }
-  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
-  tr:last-child td { border-bottom:none; }
-  tbody tr:hover { background:#f6f8fa; }
-  .pos { color:var(--green); } .neg { color:var(--red); }
-  .pill { display:inline-block; font-size:11px; padding:1px 7px; border-radius:10px;
-          background:#eef2f6; color:var(--muted); }
-  .pill.op { background:#dafbe1; color:var(--green); }
-  .pill.house { background:#ddf4ff; color:#0969da; } .pill.senate { background:#fbefff; color:#8250df; }
-  .chart img { width:100%; height:auto; border:1px solid var(--line); border-radius:6px; }
-  .news li { margin:4px 0; }
-  .disclaimer { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px;
-                padding:12px 16px; font-size:13px; color:#54470f; }
-  .banner { border-radius:8px; padding:10px 16px; font-size:13px; margin:14px 0; }
-  .banner.warn { background:#fff8c5; border:1px solid #d4a72c; color:#54470f; }
-  .banner.ok { background:#dafbe1; border:1px solid #8ac695; color:#1a7f37; }
-  .banner code { background:rgba(0,0,0,.06); padding:1px 5px; border-radius:4px; font-size:12px; }
-  footer { color:var(--muted); font-size:12px; margin-top:40px; border-top:1px solid var(--line); padding-top:14px; }
-  /* heatmap */
-  .heat { font-size:12px; }
-  .heat th.rot { white-space:nowrap; }
-  .heat td.cell { text-align:center; min-width:62px; font-variant-numeric:tabular-nums; position:relative; }
-  .heat td.cell a { color:inherit; display:block; padding:2px 0; }
-  .heat td.member { text-align:left; white-space:nowrap; position:sticky; left:0; background:var(--card); }
-  .heat .star { color:#9a6700; }
-  .scroll { overflow-x:auto; border:1px solid var(--line); border-radius:8px; }
-  .scroll table { border:none; border-radius:0; }
-  /* cap + signal pills */
-  .cap { font-size:11px; padding:1px 6px; border-radius:10px; background:#eef2f6; color:var(--muted); }
-  .cap.small,.cap.micro { background:#fff1e5; color:#bc4c00; font-weight:600; }
-  .cap.mega,.cap.large { background:#eef2f6; color:var(--muted); }
-  .sig { font-weight:700; font-variant-numeric:tabular-nums; }
-  .aligned-row { background:#fffbe6; }
-  /* collapsible report sections */
-  details.fold { margin:30px 0 0; }
-  details.fold > summary { cursor:pointer; list-style:none; outline:none; }
-  details.fold > summary::-webkit-details-marker { display:none; }
-  details.fold > summary h2 { display:inline-block; margin:0; }
-  details.fold > summary::before { content:"\25B8"; color:var(--muted); margin-right:9px; font-size:13px; }
-  details.fold[open] > summary::before { content:"\25BE"; }
-  details.fold > summary:hover h2 { color:var(--accent); }
-  .legend { font-size:12px; color:var(--muted); display:flex; gap:16px; flex-wrap:wrap; margin:6px 0 14px; }
-  .swatch { display:inline-block; width:12px; height:12px; border-radius:2px; vertical-align:middle; margin-right:4px; }
-  #net { height:640px; border:1px solid var(--line); border-radius:8px; background:#fbfcfd; }
-  .ndot { display:inline-block; border-radius:50%; vertical-align:middle; margin-right:5px; }
-  .chip { display:inline-block; font-size:12px; padding:2px 9px; margin:2px 3px 2px 0; border-radius:12px;
-          background:#eef2f6; color:var(--accent); border:1px solid var(--line); }
-  .chip:hover { background:#dbe6f2; text-decoration:none; }
-  .controls { margin:10px 0; font-size:14px; }
-  /* momentum dots */
-  .mdots { white-space:nowrap; margin-left:6px; }
-  .mdot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-left:2px;
-          vertical-align:middle; border:1px solid rgba(0,0,0,.08); }
-  .mdot.bull { background:#1a7f37; } .mdot.bear { background:#cf222e; } .mdot.na { background:#d0d7de; }
-  .graph-wrap { display:flex; gap:16px; align-items:flex-start; }
-  .graph-wrap #net { flex:1 1 auto; }
-  .sidebar { flex:0 0 360px; max-height:640px; overflow-y:auto; border:1px solid var(--line);
-             border-radius:8px; background:var(--card); padding:14px 16px; }
-  .sidebar h3 { margin-top:0; }
-  .sidebar .hint { color:var(--muted); font-size:13px; }
-  .sidebar table { font-size:13px; }
-  .sidebar td, .sidebar th { padding:5px 7px; }
-  @media (max-width:820px){ .graph-wrap{ flex-direction:column; } .sidebar{ flex-basis:auto; width:100%; } }
-</style>
+<link rel="stylesheet" href="../assets/site.css">
+<script defer src="../assets/site.js"></script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -104,7 +14,7 @@
     <a href="../index.html">💡 Dashboard</a>
     <a href="../congress.html">Reports</a>
     <a href="../latest.html">What's new</a>
-    <a href="../reports/2026-07-29.html">Leaderboard</a>
+    <a href="../reports/latest.html">Leaderboard</a>
     <a href="../map.html">Skill map</a>
     <a href="../graph.html">Network</a>
     <a href="../hedge/index.html">Hedge 13F</a>
@@ -112,12 +22,10 @@
   </nav>
 </div></header>
 <div class="wrap">
-
 <p class="small"><a href="../map.html">← Skill map</a></p>
 <h2>Energy</h2>
 <p class="muted">29 members traded in this industry;
    13 sit on a committee with jurisdiction over it.</p>
-
 
 <h3>Members ranked by return in Energy</h3>
 <table class="sortable">
@@ -126,7 +34,6 @@
     <th class="num">Dollar-wtd return</th><th class="num">Positions</th><th class="num">Disclosed $</th>
   </tr></thead>
   <tbody>
-  
     <tr class="">
       <td><a href="../members/mullin-markwayne.html">Markwayne Mullin</a></td>
       <td><span class="pill senate">senate</span></td>
@@ -135,7 +42,6 @@
       <td class="num" data-v="5">5</td>
       <td class="num" data-v="247502">$248K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/king-jr-angus-s.html">Angus S King, Jr.</a></td>
       <td><span class="pill senate">senate</span></td>
@@ -144,7 +50,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/greene-marjorie-taylor.html">Marjorie Taylor Greene</a></td>
       <td><span class="pill house">house</span></td>
@@ -153,7 +58,6 @@
       <td class="num" data-v="12">12</td>
       <td class="num" data-v="96006">$96K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/newhouse-dan.html">Dan Newhouse</a></td>
       <td><span class="pill house">house</span></td>
@@ -162,7 +66,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/cisneros-gilbert.html">Gilbert Cisneros</a></td>
       <td><span class="pill house">house</span></td>
@@ -171,7 +74,6 @@
       <td class="num" data-v="19">19</td>
       <td class="num" data-v="435010">$435K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/taylor-david-j.html">David J. Taylor</a></td>
       <td><span class="pill house">house</span></td>
@@ -180,7 +82,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/bresnahan-rob.html">Rob Bresnahan</a></td>
       <td><span class="pill house">house</span></td>
@@ -189,7 +90,6 @@
       <td class="num" data-v="12">12</td>
       <td class="num" data-v="145006">$145K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/britt-katie.html">Katie Britt</a></td>
       <td><span class="pill senate">senate</span></td>
@@ -198,7 +98,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/wasserman-schultz-debbie.html">Debbie Wasserman Schultz</a></td>
       <td><span class="pill house">house</span></td>
@@ -207,7 +106,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/hern-kevin.html">Kevin Hern</a></td>
       <td><span class="pill house">house</span></td>
@@ -216,7 +114,6 @@
       <td class="num" data-v="5">5</td>
       <td class="num" data-v="40002">$40K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/khanna-rohit.html">Rohit Khanna</a></td>
       <td><span class="pill house">house</span></td>
@@ -225,7 +122,6 @@
       <td class="num" data-v="11">11</td>
       <td class="num" data-v="271006">$271K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/salazar-maria-elvira.html">Maria Elvira Salazar</a></td>
       <td><span class="pill house">house</span></td>
@@ -234,7 +130,6 @@
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="48502">$49K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/letlow-julia.html">Julia Letlow</a></td>
       <td><span class="pill house">house</span></td>
@@ -243,7 +138,6 @@
       <td class="num" data-v="4">4</td>
       <td class="num" data-v="32002">$32K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/shreve-jefferson.html">Jefferson Shreve</a></td>
       <td><span class="pill house">house</span></td>
@@ -252,7 +146,6 @@
       <td class="num" data-v="14">14</td>
       <td class="num" data-v="497507">$498K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/mcclain-lisa.html">Lisa McClain</a></td>
       <td><span class="pill house">house</span></td>
@@ -261,7 +154,6 @@
       <td class="num" data-v="22">22</td>
       <td class="num" data-v="176011">$176K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/westerman-bruce.html">Bruce Westerman</a></td>
       <td><span class="pill house">house</span></td>
@@ -270,7 +162,6 @@
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="24002">$24K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/moskowitz-jared.html">Jared Moskowitz</a></td>
       <td><span class="pill house">house</span></td>
@@ -279,7 +170,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/kean-thomas-h.html">Thomas H. Kean</a></td>
       <td><span class="pill house">house</span></td>
@@ -288,7 +178,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/foxx-virginia.html">Virginia Foxx</a></td>
       <td><span class="pill house">house</span></td>
@@ -297,7 +186,6 @@
       <td class="num" data-v="9">9</td>
       <td class="num" data-v="72004">$72K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/james-john.html">John James</a></td>
       <td><span class="pill house">house</span></td>
@@ -306,7 +194,6 @@
       <td class="num" data-v="5">5</td>
       <td class="num" data-v="40002">$40K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/torres-ritchie-john.html">Ritchie John Torres</a></td>
       <td><span class="pill house">house</span></td>
@@ -315,7 +202,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/walberg-tim.html">Tim Walberg</a></td>
       <td><span class="pill house">house</span></td>
@@ -324,7 +210,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="32500">$32K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/boozman-john.html">John Boozman</a></td>
       <td><span class="pill senate">senate</span></td>
@@ -333,7 +218,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/johnson-julie.html">Julie Johnson</a></td>
       <td><span class="pill house">house</span></td>
@@ -342,7 +226,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/landsman-greg.html">Greg Landsman</a></td>
       <td><span class="pill house">house</span></td>
@@ -351,7 +234,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="40501">$41K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/pfluger-august-lee.html">August Lee Pfluger</a></td>
       <td><span class="pill house">house</span></td>
@@ -360,7 +242,6 @@
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="97502">$98K</td>
     </tr>
-  
     <tr class="aligned-row">
       <td><a href="../members/hoyle-valerie.html">Valerie Hoyle</a></td>
       <td><span class="pill house">house</span></td>
@@ -369,7 +250,6 @@
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="24002">$24K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/gottheimer-josh.html">Josh Gottheimer</a></td>
       <td><span class="pill house">house</span></td>
@@ -378,7 +258,6 @@
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="24002">$24K</td>
     </tr>
-  
     <tr class="">
       <td><a href="../members/mccaul-michael-t.html">Michael T. McCaul</a></td>
       <td><span class="pill house">house</span></td>
@@ -387,7 +266,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
   </tbody>
 </table>
 
@@ -395,7 +273,6 @@
 <table class="sortable">
   <thead><tr><th>Ticker</th><th>Company</th><th>Cap</th><th class="num">Buyers</th><th class="num">Disclosed $</th></tr></thead>
   <tbody>
-  
     <tr>
       <td><a href="../stocks/XOM.html">XOM</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 153.04 vs SMA10 151.40"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 151.40 vs SMA50 146.63"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 146.63 vs SMA200 138.49"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 201,859,117 vs down-vol 102,453,397"></span></span></td>
       <td>Exxon Mobil Corporation</td>
@@ -403,7 +280,6 @@
       <td class="num" data-v="15">15</td>
       <td class="num" data-v="466014">$466K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CVX.html">CVX</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 187.58 vs SMA10 189.34"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 189.34 vs SMA50 182.82"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 182.82 vs SMA200 174.74"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 91,884,201 vs down-vol 73,428,499"></span></span></td>
       <td>Chevron Corporation</td>
@@ -411,7 +287,6 @@
       <td class="num" data-v="13">13</td>
       <td class="num" data-v="341510">$342K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/COP.html">COP</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 114.10 vs SMA10 116.11"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 116.11 vs SMA50 113.90"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 113.90 vs SMA200 107.29"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 74,404,707 vs down-vol 55,422,972"></span></span></td>
       <td>ConocoPhillips</td>
@@ -419,7 +294,6 @@
       <td class="num" data-v="10">10</td>
       <td class="num" data-v="226506">$227K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/OXY.html">OXY</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 53.93 vs SMA10 55.52"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 55.52 vs SMA50 54.98"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 54.98 vs SMA200 50.04"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 100,504,777 vs down-vol 84,554,008"></span></span></td>
       <td>Occidental Petroleum Corporation</td>
@@ -427,7 +301,6 @@
       <td class="num" data-v="5">5</td>
       <td class="num" data-v="194006">$194K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/WBI.html">WBI</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 31.95 vs SMA10 34.63"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 34.63 vs SMA50 31.95"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 31.95 vs SMA200 26.18"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 8,893,072 vs down-vol 7,199,987"></span></span></td>
       <td>WaterBridge Infrastructure LLC</td>
@@ -435,7 +308,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="175000">$175K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DVN.html">DVN</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 42.66 vs SMA10 43.87"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 43.87 vs SMA50 44.19"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 44.19 vs SMA200 41.66"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 116,751,322 vs down-vol 119,397,768"></span></span></td>
       <td>Devon Energy Corporation</td>
@@ -443,7 +315,6 @@
       <td class="num" data-v="6">6</td>
       <td class="num" data-v="137006">$137K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/VLO.html">VLO</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 298.88 vs SMA10 305.32"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 305.32 vs SMA50 267.28"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 267.28 vs SMA200 216.35"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 28,260,768 vs down-vol 26,186,562"></span></span></td>
       <td>Valero Energy Corporation</td>
@@ -451,7 +322,6 @@
       <td class="num" data-v="4">4</td>
       <td class="num" data-v="123502">$124K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/EXE.html">EXE</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 88.52 vs SMA10 89.49"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 89.49 vs SMA50 90.70"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 90.70 vs SMA200 102.72"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 32,963,116 vs down-vol 52,170,999"></span></span></td>
       <td>Expand Energy Corporation Common Stock</td>
@@ -459,7 +329,6 @@
       <td class="num" data-v="4">4</td>
       <td class="num" data-v="115003">$115K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/SLB.html">SLB</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 49.98 vs SMA10 48.34"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 48.34 vs SMA50 51.29"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 51.29 vs SMA200 46.50"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 150,891,886 vs down-vol 110,782,556"></span></span></td>
       <td>SLB Limited</td>
@@ -467,7 +336,6 @@
       <td class="num" data-v="5">5</td>
       <td class="num" data-v="80504">$81K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/HAL.html">HAL</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 31.23 vs SMA10 33.63"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 33.63 vs SMA50 36.86"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 36.86 vs SMA200 33.60"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 80,549,680 vs down-vol 163,594,780"></span></span></td>
       <td>Halliburton Company</td>
@@ -475,7 +343,6 @@
       <td class="num" data-v="4">4</td>
       <td class="num" data-v="72503">$73K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/ARLP.html">ARLP</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 25.91 vs SMA10 24.85"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 24.85 vs SMA50 24.76"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 24.76 vs SMA200 25.11"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 2,894,889 vs down-vol 2,045,719"></span></span></td>
       <td>Alliance Resource Partners LP</td>
@@ -483,7 +350,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="72004">$72K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/EOG.html">EOG</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 139.64 vs SMA10 141.62"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 141.62 vs SMA50 137.10"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 137.10 vs SMA200 123.41"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 36,345,317 vs down-vol 24,902,714"></span></span></td>
       <td>EOG Resources, Inc.</td>
@@ -491,7 +357,6 @@
       <td class="num" data-v="4">4</td>
       <td class="num" data-v="56502">$57K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MPC.html">MPC</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 306.05 vs SMA10 310.84"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 310.84 vs SMA50 270.82"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 270.82 vs SMA200 219.86"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 26,069,414 vs down-vol 14,788,570"></span></span></td>
       <td>MARATHON PETROLEUM CORPORATION</td>
@@ -499,7 +364,6 @@
       <td class="num" data-v="3">3</td>
       <td class="num" data-v="48502">$49K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/FANG.html">FANG</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 190.31 vs SMA10 196.99"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 196.99 vs SMA50 192.09"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 192.09 vs SMA200 172.78"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 22,095,776 vs down-vol 19,196,921"></span></span></td>
       <td>Diamondback Energy, Inc.</td>
@@ -507,7 +371,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="48502">$49K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/EQT.html">EQT</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 51.66 vs SMA10 51.11"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 51.11 vs SMA50 52.83"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 52.83 vs SMA200 56.40"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 74,910,881 vs down-vol 86,761,865"></span></span></td>
       <td>EQT CORP</td>
@@ -515,7 +378,6 @@
       <td class="num" data-v="5">5</td>
       <td class="num" data-v="48003">$48K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/VNOM.html">VNOM</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 42.04 vs SMA10 44.16"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 44.16 vs SMA50 44.35"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 44.35 vs SMA200 42.45"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 13,860,429 vs down-vol 18,046,863"></span></span></td>
       <td>Viper Energy, Inc. Class A Common Stock</td>
@@ -523,7 +385,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="40501">$41K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/DMLP.html">DMLP</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 27.02 vs SMA10 27.29"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 27.29 vs SMA50 26.84"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 26.84 vs SMA200 25.47"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 2,861,739 vs down-vol 1,690,164"></span></span></td>
       <td>Dorchester Minerals LP</td>
@@ -531,7 +392,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="32500">$32K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/KRP.html">KRP</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 14.49 vs SMA10 14.90"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 14.90 vs SMA50 14.95"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 14.95 vs SMA200 13.89"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 6,330,193 vs down-vol 4,499,486"></span></span></td>
       <td>Kimbell Royalty Partners, LP Common Units representing Limited Partner Interests</td>
@@ -539,7 +399,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="32500">$32K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PSX.html">PSX</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 205.85 vs SMA10 206.42"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 206.42 vs SMA50 183.93"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 183.93 vs SMA200 158.92"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 32,527,494 vs down-vol 18,955,138"></span></span></td>
       <td>PHILLIPS 66</td>
@@ -547,7 +406,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="32500">$32K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CHRD.html">CHRD</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 128.80 vs SMA10 131.39"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 131.39 vs SMA50 129.95"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 129.95 vs SMA200 113.82"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 9,529,418 vs down-vol 6,256,813"></span></span></td>
       <td>Chord Energy Corporation Common Stock</td>
@@ -555,7 +413,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="24002">$24K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/AR.html">AR</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 33.88 vs SMA10 34.09"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 34.09 vs SMA50 35.12"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 35.12 vs SMA200 35.62"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 40,673,716 vs down-vol 49,138,176"></span></span></td>
       <td>ANTERO RESOURCES CORPORATION</td>
@@ -563,7 +420,6 @@
       <td class="num" data-v="2">2</td>
       <td class="num" data-v="24002">$24K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MGY.html">MGY</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 23.40 vs SMA10 25.56"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 25.56 vs SMA50 26.95"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 26.95 vs SMA200 26.02"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 51,720,042 vs down-vol 73,743,674"></span></span></td>
       <td>Magnolia Oil &amp; Gas Corporation Class A Common Stock</td>
@@ -571,7 +427,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="24002">$24K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/GPOR.html">GPOR</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 153.40 vs SMA10 154.57"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 154.57 vs SMA50 164.70"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 164.70 vs SMA200 189.72"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 5,770,747 vs down-vol 3,970,527"></span></span></td>
       <td>Gulfport Energy Corporation</td>
@@ -579,7 +434,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="16001">$16K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/PTEN.html">PTEN</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 9.17 vs SMA10 10.00"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 10.00 vs SMA50 10.61"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 10.61 vs SMA200 8.73"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 86,297,726 vs down-vol 103,497,634"></span></span></td>
       <td>Patterson-UTI Energy Inc</td>
@@ -587,7 +441,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/APA.html">APA</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 34.93 vs SMA10 35.28"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 35.28 vs SMA50 35.65"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 35.65 vs SMA200 31.13"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 61,784,705 vs down-vol 41,704,121"></span></span></td>
       <td>APA Corporation Common Stock</td>
@@ -595,7 +448,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/IMO.html">IMO</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 125.73 vs SMA10 124.42"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 124.42 vs SMA50 121.90"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 121.90 vs SMA200 111.02"></span><span class="mdot bear" title="Up vs down volume (20d): up-vol 4,933,345 vs down-vol 4,957,167"></span></span></td>
       <td>Imperial Oil Limited</td>
@@ -603,7 +455,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/CRGY.html">CRGY</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 10.42 vs SMA10 10.78"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 10.78 vs SMA50 11.07"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 11.07 vs SMA200 10.49"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 62,951,794 vs down-vol 55,474,619"></span></span></td>
       <td>Crescent Energy Company</td>
@@ -611,7 +462,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/NOG.html">NOG</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 19.84 vs SMA10 21.02"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 21.02 vs SMA50 20.74"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 20.74 vs SMA200 23.57"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 35,745,366 vs down-vol 27,784,157"></span></span></td>
       <td>Northern Oil and Gas, Inc.</td>
@@ -619,7 +469,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/OVV.html">OVV</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 59.15 vs SMA10 59.17"></span><span class="mdot bull" title="SMA10 vs SMA50: SMA10 59.17 vs SMA50 56.67"></span><span class="mdot bull" title="SMA50 vs SMA200: SMA50 56.67 vs SMA200 49.04"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 42,065,670 vs down-vol 24,026,200"></span></span></td>
       <td>Ovintiv Inc.</td>
@@ -627,7 +476,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/RRC.html">RRC</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bull" title="Price vs SMA10: price 38.26 vs SMA10 37.62"></span><span class="mdot bear" title="SMA10 vs SMA50: SMA10 37.62 vs SMA50 38.31"></span><span class="mdot bear" title="SMA50 vs SMA200: SMA50 38.31 vs SMA200 38.77"></span><span class="mdot bull" title="Up vs down volume (20d): up-vol 44,047,236 vs down-vol 23,059,742"></span></span></td>
       <td>Range Resources Corp</td>
@@ -635,7 +483,6 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
     <tr>
       <td><a href="../stocks/MUR.html">MUR</a><span class="mdots" title="momentum as of 2026-07-28"><span class="mdot bear" title="Price vs SMA10: price 36.64 vs SMA10 37.23"></span><span class="mdot na" title="SMA10 vs SMA50: need 50 sessions"></span><span class="mdot na" title="SMA50 vs SMA200: need 200 sessions"></span><span class="mdot na" title="Up vs down volume (20d): need 21 sessions"></span></span></td>
       <td>Murphy Oil Corp.</td>
@@ -643,30 +490,8 @@
       <td class="num" data-v="1">1</td>
       <td class="num" data-v="8000">$8K</td>
     </tr>
-  
   </tbody>
 </table>
-
-<script>
-// Click a header to sort its table. data-sort="num" cells sort numerically.
-document.querySelectorAll('table.sortable').forEach(function(tbl){
-  tbl.querySelectorAll('th').forEach(function(th, idx){
-    th.addEventListener('click', function(){
-      var body = tbl.tBodies[0], rows = Array.prototype.slice.call(body.rows);
-      var asc = th.dataset.asc !== 'true'; th.dataset.asc = asc;
-      rows.sort(function(a,b){
-        var x=a.cells[idx], y=b.cells[idx];
-        var nx=parseFloat((x.dataset.v||x.textContent).replace(/[^0-9.\-]/g,''));
-        var ny=parseFloat((y.dataset.v||y.textContent).replace(/[^0-9.\-]/g,''));
-        if(!isNaN(nx)&&!isNaN(ny)) return asc?nx-ny:ny-nx;
-        return asc ? x.textContent.localeCompare(y.textContent)
-                   : y.textContent.localeCompare(x.textContent);
-      });
-      rows.forEach(function(r){ body.appendChild(r); });
-    });
-  });
-});
-</script>
 <footer>
   Trades: U.S. House Clerk &amp; Senate eFD disclosures · Market data: Polygon.io ·
   Returns assume buying at the close on/after each disclosure date, benchmarked vs SPY.

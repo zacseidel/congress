@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 """
-Enrich traded tickers with Polygon company context:
+Enrich stock-page tickers with Polygon company context:
 description, sector, market cap, recent news, key financials, and a price summary.
 
 The price summary (current price, 52-week high/low) is derived for free from the
@@ -14,11 +14,12 @@ price call is ever made here. API budget is spent only on:
 
 --focus outperformers restricts this API-spending work to the outperformer companies
 in rankings.json (the standard, frequently-run pipeline); the default (all) is the
-full refresh used by backfill.py. Price fields are refreshed for every ticker either
-way, since that costs no API calls.
+full refresh used by backfill.py. The bounded hedge-feature set is included in the
+default so every rendered stock page can receive the same company context. Price
+fields are refreshed for every page ticker either way, since that costs no API calls.
 
 Usage:
-  python src/enrich.py [--max N] [--focus all|outperformers]
+  python src/enrich.py [--max N] [--focus all|outperformers] [--ticker TICKER]
 """
 
 import argparse
@@ -30,6 +31,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from utils import (AGGS_CACHE, DATA_DIR, FINANCIALS_CACHE, POLYGON_CACHE, Progress, PolygonClient,
                    fmt_duration, load_config, load_json, load_json_gz, save_json, setup_logging)
+from stock_universe import hedge_featured_tickers, stock_page_tickers
 
 log = setup_logging("enrich")
 
@@ -95,7 +97,8 @@ def _price_summary(ticker: str) -> dict:
     }
 
 
-def run(max_override: int | None = None, focus: str | None = None) -> None:
+def run(max_override: int | None = None, focus: str | None = None,
+        ticker_overrides: set[str] | None = None) -> None:
     cfg = load_config()
     pcfg = cfg["polygon"]
     max_new = max_override if max_override is not None else pcfg["max_enrichment_tickers"]
@@ -109,11 +112,18 @@ def run(max_override: int | None = None, focus: str | None = None) -> None:
     rows = list(ledger.values())
 
     # Unique tickers, ranked by total disclosed dollar volume (enrich the big ones first).
+    # Append the bounded hedge-feature set so hedge-only pages get profiles too.
     dollar = defaultdict(float)
     for r in rows:
         dollar[r["ticker"]] += r.get("amount_mid", 0) or 0
-    tickers = sorted(dollar, key=lambda t: dollar[t], reverse=True)
-    log.info("%d unique tickers in ledger", len(tickers))
+    page_tickers = stock_page_tickers(rows)
+    hedge_only = hedge_featured_tickers() - set(dollar)
+    tickers = sorted(page_tickers, key=lambda t: (dollar[t], t), reverse=True)
+    if ticker_overrides:
+        wanted = {ticker.upper() for ticker in ticker_overrides}
+        tickers = [ticker for ticker in tickers if ticker in wanted]
+    log.info("%d stock-page tickers in scope (%d hedge-only)",
+             len(tickers), len(set(tickers) & hedge_only))
 
     api_key = os.environ.get("POLYGON_API_KEY", "")
     company_info = load_json(COMPANY_INFO_PATH) if COMPANY_INFO_PATH.exists() else {}
@@ -206,8 +216,10 @@ def main() -> None:
     ap.add_argument("--max", type=int, default=None, help="override max new tickers this run")
     ap.add_argument("--focus", choices=["all", "outperformers"], default="all",
                     help="'outperformers' restricts API work to out-performer companies (standard pipeline)")
+    ap.add_argument("--ticker", action="append", default=[],
+                    help="enrich only this stock-page ticker; may be repeated")
     args = ap.parse_args()
-    run(args.max, focus=args.focus)
+    run(args.max, focus=args.focus, ticker_overrides=set(args.ticker))
 
 
 if __name__ == "__main__":
