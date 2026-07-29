@@ -1,247 +1,366 @@
 [
   {
-    "id": "c7a24df42abe6999d51e21d73737d9a00a956a636575b331d341ecc5f86fedaf",
+    "id": "f07ebe65618d218f2b75f015a9babe49d1f280d1cf816a471c218457d5e6a785",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "If You're Worried About a Market Crash, Here's the 1 Thing You Shouldn't Do, According to History.",
-    "author": "Jennifer Saibil",
-    "published_utc": "2026-07-15T13:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/15/if-youre-worried-about-a-market-crash-heres-the-1/?source=iedfolrf0000001",
+    "title": "Prediction: This Dividend ETF Will Thrive After 20 Years No Matter What the Market Does",
+    "author": "James Brumley",
+    "published_utc": "2026-07-28T10:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/28/prediction-dividend-etf-thrive-20-years-schd/?source=iedfolrf0000001",
     "tickers": [
-      "PG",
+      "SCHD",
+      "VIG",
+      "DGRO",
       "KO",
-      "COST",
-      "TJX"
+      "MRK",
+      "CVX",
+      "PG"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877998%2Fperson-with-hands-crossed.jpg&w=1200&op=resize",
-    "description": "With the S&P 500 facing valuation concerns and macroeconomic headwinds, the article advises investors not to sell during a market crash. Historical data shows that staying invested and holding through downturns leads to significant long-term gains. The article recommends building a defensive portfolio with dividend and stable stocks, and keeping cash reserves to buy at lower prices.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879524%2Fman-looking-in-the-distance-with-a-pair-of-binoculars.jpg&w=1200&op=resize",
+    "description": "The Schwab U.S. Dividend Equity ETF (SCHD) is recommended as the best dividend ETF for long-term investors seeking a 20-year income strategy. Unlike the Vanguard Dividend Appreciation ETF (VIG) and iShares Core Dividend Growth ETF (DGRO), SCHD maintains better sector balance and prioritizes dividend yield and fundamental value, with top holdings in stable consumer staples like Coca-Cola, Merck, Chevron, and Procter & Gamble that will remain relevant over decades.",
     "keywords": [
-      "market crash",
-      "S&P 500",
-      "CAPE ratio",
-      "defensive stocks",
-      "portfolio diversification",
-      "market recovery",
-      "investor psychology"
+      "dividend ETF",
+      "long-term investing",
+      "sector balance",
+      "dividend yield",
+      "consumer staples",
+      "portfolio diversification"
     ],
     "insights": [
       {
-        "ticker": "PG",
+        "ticker": "SCHD",
         "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as a defensive dividend stock that performs well during market downturns and provides passive income under all circumstances."
+        "sentiment_reasoning": "Recommended as the superior choice among dividend ETFs due to its balanced sector exposure, higher dividend yield (3.13%), low expense ratio (0.06%), and focus on fundamentally sound dividend-paying companies with predictable long-term demand."
+      },
+      {
+        "ticker": "VIG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Acknowledged as a solid option but criticized for excessive technology concentration (26% of portfolio) driven by AI hype, with top holdings (Broadcom, Apple, Microsoft) creating concentration risk and a lower trailing yield of 1.5%, making it more of a growth fund than income fund."
+      },
+      {
+        "ticker": "DGRO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Considered a solid option but flagged for poor sector balance with 21% in financials and 18% in healthcare during periods of potential secular headwinds in both industries, limiting its suitability for long-term stability."
       },
       {
         "ticker": "KO",
         "sentiment": "positive",
-        "sentiment_reasoning": "Cited as a defensive dividend stock suitable for protecting portfolios during market crashes."
+        "sentiment_reasoning": "Highlighted as a top holding in SCHD with proven dividend pedigree and a predictable business model that will remain in demand over 20 years."
+      },
+      {
+        "ticker": "MRK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a top holding in SCHD with established dividend history and fundamental strength, though healthcare sector faces some long-term cost challenges."
+      },
+      {
+        "ticker": "CVX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Included as a top holding in SCHD with proven dividend pedigree and a business model expected to remain relevant over the 20-year investment horizon."
+      },
+      {
+        "ticker": "PG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Featured as a top holding in SCHD with a strong dividend history and predictable consumer staples business model suitable for long-term income generation."
+      }
+    ]
+  },
+  {
+    "id": "67b3b6974cf98adfc12a3b11167c97336d92ea9345ba26d547fa1107cfd1eb5b",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "VDC vs. FTXG: Which Defensive ETF Is the Better Buy?",
+    "author": "Andy Gould",
+    "published_utc": "2026-07-28T10:28:52Z",
+    "article_url": "https://www.fool.com/coverage/etfs/2026/07/28/vdc-vs-ftxg-which-defensive-etf-is-the-better-buy/?source=iedfolrf0000001",
+    "tickers": [
+      "VDC",
+      "FTXG",
+      "WMT",
+      "COST",
+      "PG",
+      "KO",
+      "KHC"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F7669db1dbfa6e097df450be5b22faf5d854bd54d-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Vanguard's VDC and First Trust's FTXG are both defensive ETFs investing in consumer staples, but with different approaches. VDC offers broader diversification across 103 stocks with a lower 0.09% expense ratio and stronger 5-year returns, while FTXG concentrates on 30 food and beverage companies with a higher 2.59% dividend yield but higher 0.60% expense ratio. For most long-term investors, VDC is the more straightforward choice due to lower costs and better diversification.",
+    "keywords": [
+      "defensive ETF",
+      "consumer staples",
+      "expense ratio",
+      "dividend yield",
+      "diversification",
+      "food and beverage"
+    ],
+    "insights": [
+      {
+        "ticker": "VDC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "VDC is recommended as the better choice for most investors due to significantly lower expense ratio (0.09% vs 0.60%), broader diversification with 103 holdings, stronger 1-year (5.73% vs 3.23%) and 5-year returns, and lower volatility (beta 0.54 vs 0.48)."
+      },
+      {
+        "ticker": "FTXG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "FTXG offers a higher dividend yield (2.59% vs 2.13%) and provides concentrated exposure to food and beverage trends, but underperforms VDC in returns, carries higher expenses, and has greater concentration risk with only 30 holdings. Suitable only for investors with specific views on the food and beverage sector."
+      },
+      {
+        "ticker": "WMT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a major holding in VDC (14.0%) and described as a familiar retail name benefiting from steady foot traffic and everyday spending."
       },
       {
         "ticker": "COST",
         "sentiment": "positive",
-        "sentiment_reasoning": "Recommended as a defensive stock that performs well under market pressure and economic stress."
+        "sentiment_reasoning": "Second-largest holding in VDC (11.4%) and noted as a retail giant benefiting from steady foot traffic and everyday spending patterns."
       },
-      {
-        "ticker": "TJX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Suggested as a defensive stock that can perform well during challenging market conditions."
-      }
-    ]
-  },
-  {
-    "id": "84bcb7352453ce98b25c1d9500caa632f7403d0055212e0d3dbe5d0fe2b7d436",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Procter & Gamble Just Declared Its 70th Dividend Increase. Here's How Much $10,000 Invested Pays Annually.",
-    "author": "Jennifer Saibil",
-    "published_utc": "2026-07-14T13:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/14/procter-gamble-declared-70th-dividend-increase/?source=iedfolrf0000001",
-    "tickers": [
-      "PG"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878380%2Fperson-changing-a-babys-diaper.jpg&w=1200&op=resize",
-    "description": "Procter & Gamble has announced its 70th consecutive dividend increase, placing it in an elite tier above Dividend King stocks. With a current dividend yield of 2.9% and annual dividend of $4.26 per share, a $10,000 investment would generate approximately $289.68 annually, providing reliable passive income as part of a diversified portfolio.",
-    "keywords": [
-      "dividend increase",
-      "Dividend King",
-      "passive income",
-      "dividend yield",
-      "consumer staples",
-      "stock stability"
-    ],
-    "insights": [
       {
         "ticker": "PG",
         "sentiment": "positive",
-        "sentiment_reasoning": "The company has demonstrated exceptional dividend reliability with 70 consecutive years of dividend increases, maintaining growth through various economic challenges including inflation, pandemics, and wars. The current 2.9% yield and consistent annual increases make it an attractive option for income-focused investors seeking stability."
+        "sentiment_reasoning": "Third-largest holding in VDC (8.7%), representing a major consumer staples company in the diversified portfolio."
+      },
+      {
+        "ticker": "KO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Major holding in FTXG (8.5%), but subject to food and beverage industry headwinds including shifting consumer tastes toward healthier options."
+      },
+      {
+        "ticker": "KHC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Significant FTXG holding (8.2%), but exposed to packaged food industry challenges including input costs and shifting consumer preferences toward healthier snacking."
       }
     ]
   },
   {
-    "id": "cd95677afd6119be65da9b1ec43287bc449aa5612c7a0d9176f6063216037299",
+    "id": "211f88a5194bae7dc93eadd2e0a85f58609032f0045e5c30d7c4a3751e0f8180",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Church & Dwight vs. Kimberly-Clark: Which Consumer Goods Stock Is a Better Buy in 2026?",
-    "author": "Pamela Kock",
-    "published_utc": "2026-07-12T15:29:44Z",
-    "article_url": "https://www.fool.com/coverage/better-buy/2026/07/12/church-dwight-vs-kimberly-clark-which-consumer-goods-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
+    "title": "1 Reason to Buy This Dividend King Stock Before It Reports Earnings on July 29",
+    "author": "Todd Shriber",
+    "published_utc": "2026-07-27T17:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/27/1-reason-to-buy-this-dividend-king-stock-before-it/?source=iedfolrf0000001",
     "tickers": [
-      "CHD",
-      "KMB",
-      "WMT",
       "PG",
-      "KVUE",
-      "UL"
+      "AMJB",
+      "JPM",
+      "JPMpC",
+      "JPMpD",
+      "JPMpJ",
+      "JPMpK",
+      "JPMpL",
+      "JPMpM",
+      "VYLD"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fd145a4652a11e031c72b1d53bb647498c289e935-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "The article compares Church & Dwight and Kimberly-Clark as investment options in the consumer goods sector. Church & Dwight operates a lean portfolio of power brands with a strong balance sheet (0.6x debt-to-equity), while Kimberly-Clark is a larger global player undergoing transformation with higher leverage (4.9x debt-to-equity). The author recommends Church & Dwight for investors seeking a balance of growth and dividend income, citing its stronger financial position and focused strategy, despite Kimberly-Clark's larger scale and higher dividend yield.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880204%2Fgettyimages-2157944732.jpg&w=1200&op=resize",
+    "description": "Procter & Gamble, a Dividend King with 71 consecutive years of dividend increases, offers defensive portfolio diversification as an alternative to the AI and tech-heavy investments dominating retail investor portfolios. With a 2.91% dividend yield and a history of beating Wall Street estimates, P&G provides stable income and lower volatility ahead of its July 29 earnings report.",
     "keywords": [
-      "consumer goods",
-      "household products",
-      "dividend stocks",
-      "balance sheet strength",
-      "business transformation",
-      "valuation comparison",
-      "debt-to-equity ratio"
+      "dividend king",
+      "defensive stocks",
+      "portfolio diversification",
+      "consumer staples",
+      "dividend yield",
+      "earnings report",
+      "risk-adjusted returns"
     ],
     "insights": [
       {
-        "ticker": "CHD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong balance sheet with 0.6x debt-to-equity ratio, healthy 11.9% net margin, focused power brand strategy, and solid free cash flow of $1.1 billion. Author recommends it as the better buy for long-term growth with dividend income."
-      },
-      {
-        "ticker": "KMB",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Larger global player with reliable brands and higher dividend yield (4.52%), but facing headwinds from 14.2% revenue decline, significantly higher debt-to-equity ratio (4.9x), and integration risks from Kenvue acquisition. Suitable for dividend-focused investors but less attractive for growth."
-      },
-      {
-        "ticker": "WMT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major customer concentration risk for both companies (23% of CHD sales, 16% of KMB sales), indicating its importance to the supply chain but not directly evaluated as an investment."
-      },
-      {
         "ticker": "PG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitive threat to Church & Dwight in the consumer goods market, but not directly evaluated as an investment option."
+        "sentiment": "positive",
+        "sentiment_reasoning": "The article highlights P&G's 71-year dividend increase streak, defensive characteristics, lower volatility, safe payout with expected high-single-digit growth, and history of beating Wall Street estimates. These factors make it an attractive diversification play against tech-heavy portfolios."
       },
       {
-        "ticker": "KVUE",
+        "ticker": "AMJB",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a pending acquisition by Kimberly-Clark with integration risks related to cultural misalignment and increased debt load, but not directly evaluated as a standalone investment."
+        "sentiment_reasoning": "JPMorgan Chase is mentioned only as the source of a study about retail investor behavior in AI and semiconductor stocks, with no direct investment recommendation or sentiment expressed about the company itself."
       },
       {
-        "ticker": "UL",
+        "ticker": "JPM",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a global competitor forcing Kimberly-Clark to invest heavily in marketing and product development, but not directly evaluated as an investment option."
+        "sentiment_reasoning": "JPMorgan Chase is mentioned only as the source of a study about retail investor behavior in AI and semiconductor stocks, with no direct investment recommendation or sentiment expressed about the company itself."
+      },
+      {
+        "ticker": "JPMpC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "JPMorgan Chase is mentioned only as the source of a study about retail investor behavior in AI and semiconductor stocks, with no direct investment recommendation or sentiment expressed about the company itself."
+      },
+      {
+        "ticker": "JPMpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "JPMorgan Chase is mentioned only as the source of a study about retail investor behavior in AI and semiconductor stocks, with no direct investment recommendation or sentiment expressed about the company itself."
+      },
+      {
+        "ticker": "JPMpJ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "JPMorgan Chase is mentioned only as the source of a study about retail investor behavior in AI and semiconductor stocks, with no direct investment recommendation or sentiment expressed about the company itself."
+      },
+      {
+        "ticker": "JPMpK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "JPMorgan Chase is mentioned only as the source of a study about retail investor behavior in AI and semiconductor stocks, with no direct investment recommendation or sentiment expressed about the company itself."
+      },
+      {
+        "ticker": "JPMpL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "JPMorgan Chase is mentioned only as the source of a study about retail investor behavior in AI and semiconductor stocks, with no direct investment recommendation or sentiment expressed about the company itself."
+      },
+      {
+        "ticker": "JPMpM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "JPMorgan Chase is mentioned only as the source of a study about retail investor behavior in AI and semiconductor stocks, with no direct investment recommendation or sentiment expressed about the company itself."
+      },
+      {
+        "ticker": "VYLD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "JPMorgan Chase is mentioned only as the source of a study about retail investor behavior in AI and semiconductor stocks, with no direct investment recommendation or sentiment expressed about the company itself."
       }
     ]
   },
   {
-    "id": "549b918c26bb2c2fb8ec366d97037e5d3555e2dd45fbac8b814bbc30d81d88e8",
+    "id": "58e3511085df7f6dfa80983c406c258eb8e60fa1fe3fc2427aa4568144002690",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "If a Stock Market Crash Is Brewing, History Says Investors Who Do This 1 Thing Will Win Out",
-    "author": "Jack Delaney",
-    "published_utc": "2026-07-11T09:25:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/11/if-a-stock-market-crash-is-brewing-history-says-in/?source=iedfolrf0000001",
+    "title": "Should You Buy Procter & Gamble Stock Before July 29?",
+    "author": "Reuben Gregg Brewer",
+    "published_utc": "2026-07-26T15:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/26/should-you-buy-procter-gamble-stock-before-july-29/?source=iedfolrf0000001",
     "tickers": [
       "PG"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877804%2Fgettyimages-1167797024-1200x800-5b2df79.jpg&w=1200&op=resize",
-    "description": "Amid market volatility from U.S.-Iran tensions and tech stock sell-offs, the article advises against panic selling. Historical data shows that staying invested through downturns is more profitable than trying to time the market, as nearly half of the S&P 500's best days occur during bear markets. A $10,000 investment in 1965 would have grown to $192,000 by 2025 if held, but missing just the 10 best days would reduce returns by 56%.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880203%2F23_03_30-a-person-putting-their-hands-up-as-if-to-say-stop-or-slow-down-_mf-dload.jpg&w=1200&op=resize",
+    "description": "Procter & Gamble faces headwinds ahead of its July 29 earnings release, including higher commodity costs, tariffs, and interest rates. The company expects fiscal 2026 EPS toward the lower end of guidance. With stock down 7% over the past year versus S&P 500 up 16%, investors may want to wait for full-year results and fiscal 2027 guidance before buying, though the 2.9% dividend yield appeals to long-term income investors.",
     "keywords": [
-      "stock market crash",
-      "market volatility",
-      "buy and hold strategy",
+      "earnings report",
       "consumer staples",
-      "dividend stocks",
-      "market timing",
-      "bear market",
+      "commodity costs",
+      "tariffs",
+      "dividend yield",
+      "guidance",
+      "consumer spending"
+    ],
+    "insights": [
+      {
+        "ticker": "PG",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock underperforming S&P 500 by 23 percentage points over the past year. Company facing multiple headwinds including higher commodity costs, tariffs, and interest rates. Management expects fiscal 2026 EPS at lower end of guidance range. Concerns about cost-conscious consumers trading down from premium products. Article recommends waiting for earnings results before buying."
+      }
+    ]
+  },
+  {
+    "id": "a20e498195dbaaa5ddc706fac8151e2516c9057436ef872351457f1d3c7c9c45",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "1 Brilliant Dividend ETF to Build Long-Term Passive Income",
+    "author": "Justin Pope",
+    "published_utc": "2026-07-23T12:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/23/1-brilliant-dividend-etf-to-build-passive-income/?source=iedfolrf0000001",
+    "tickers": [
+      "FDVV",
+      "NVDA",
+      "AAPL",
+      "MSFT",
+      "KO",
+      "PG",
+      "HD",
+      "PM",
+      "AVGO",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879518%2Fdollar-bill-etf-graphic.jpg&w=1200&op=resize",
+    "description": "The Fidelity High Dividend ETF (FDVV) is highlighted as an excellent choice for building passive income, offering a 2.6% dividend yield and 13.3% annualized returns since 2016. The fund combines high-yield blue-chip stocks like Coca-Cola and Procter & Gamble with growth-oriented megacap tech holdings, while maintaining a low 0.15% expense ratio and affordable $62 share price.",
+    "keywords": [
+      "dividend ETF",
+      "passive income",
+      "high dividend yield",
+      "technology sector",
+      "blue chip stocks",
       "long-term investing"
     ],
     "insights": [
       {
+        "ticker": "FDVV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Praised for strong 13.3% annualized returns, above-average 2.6% dividend yield, low expense ratio of 0.15%, and well-balanced portfolio mixing dividend stocks with growth tech holdings."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Highlighted as the largest holding in FDVV, representing the growth component of the fund's strategy."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a top 10 holding in FDVV, contributing to the fund's growth element."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Included in FDVV's top 10 holdings, supporting the fund's technology growth strategy."
+      },
+      {
+        "ticker": "KO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Named as a blue-chip dividend-paying stock held in FDVV."
+      },
+      {
         "ticker": "PG",
         "sentiment": "positive",
-        "sentiment_reasoning": "Highlighted as a consumer staples company with essential products that maintain demand during market downturns, serving as a safe-haven investment example."
-      }
-    ]
-  },
-  {
-    "id": "a569408c4273144a06e2521c17728ae7dd395c65cce705d6bd13fe3985b911c4",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Alphabet Is the Dow's Newest Member. This One Has Been Raising Its Dividend Since Before Google Existed.",
-    "author": "Scott Levine",
-    "published_utc": "2026-07-10T16:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/10/alphabet-is-the-dows-newest-member-this-one-has-be/?source=iedfolrf0000001",
-    "tickers": [
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "PG",
-      "VZ"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876912%2Fsurprised-investor-looks-at-smartphone.jpg&w=1200&op=resize",
-    "description": "Alphabet has been added to the Dow Jones Industrial Average, replacing Verizon Communications, due to its large market capitalization and diversified tech portfolio. The article contrasts Alphabet's innovative but newer business model with Procter & Gamble, a long-tenured Dow component that has consistently raised its dividend for 70 consecutive years, demonstrating the value of both growth and dividend-focused stocks for portfolio diversification.",
-    "keywords": [
-      "Dow Jones Industrial Average",
-      "dividend growth",
-      "portfolio diversification",
-      "tech stocks",
-      "dividend kings"
-    ],
-    "insights": [
+        "sentiment_reasoning": "Cited as a blue-chip dividend-paying stock held in FDVV."
+      },
+      {
+        "ticker": "HD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Mentioned as a dividend-paying blue-chip stock in FDVV's portfolio."
+      },
+      {
+        "ticker": "PM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Named as a dividend-paying blue-chip stock held in FDVV."
+      },
+      {
+        "ticker": "AVGO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a top 10 holding in FDVV, contributing to the fund's growth component."
+      },
       {
         "ticker": "GOOG",
         "sentiment": "positive",
-        "sentiment_reasoning": "Newly admitted to the Dow due to its large market capitalization, diversified portfolio, and exposure to high-growth areas including AI, cloud infrastructure, and digital advertising. Recognized as a worthy addition that strengthens the index's exposure to dynamic tech sectors."
+        "sentiment_reasoning": "Included in FDVV's top 10 holdings, supporting the fund's technology growth strategy."
       },
       {
         "ticker": "GOOGL",
         "sentiment": "positive",
-        "sentiment_reasoning": "Newly admitted to the Dow due to its large market capitalization, diversified portfolio, and exposure to high-growth areas including AI, cloud infrastructure, and digital advertising. Recognized as a worthy addition that strengthens the index's exposure to dynamic tech sectors."
+        "sentiment_reasoning": "Included in FDVV's top 10 holdings, supporting the fund's technology growth strategy."
       },
       {
         "ticker": "GOOGM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Newly admitted to the Dow due to its large market capitalization, diversified portfolio, and exposure to high-growth areas including AI, cloud infrastructure, and digital advertising. Recognized as a worthy addition that strengthens the index's exposure to dynamic tech sectors."
+        "sentiment_reasoning": "Included in FDVV's top 10 holdings, supporting the fund's technology growth strategy."
       },
       {
         "ticker": "GOOGN",
         "sentiment": "positive",
-        "sentiment_reasoning": "Newly admitted to the Dow due to its large market capitalization, diversified portfolio, and exposure to high-growth areas including AI, cloud infrastructure, and digital advertising. Recognized as a worthy addition that strengthens the index's exposure to dynamic tech sectors."
-      },
-      {
-        "ticker": "PG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Highlighted as a long-tenured Dow component (since 1932) with an impressive 70-year consecutive dividend increase history. Praised for providing steady revenue, conservative financial management, and reliable passive income for shareholders with a 5.1% compound annual dividend growth rate."
-      },
-      {
-        "ticker": "VZ",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Replaced in the Dow by Alphabet. No negative commentary provided; the change reflects S&P Global's strategic decision to add broader tech exposure rather than any performance issues with Verizon."
+        "sentiment_reasoning": "Included in FDVV's top 10 holdings, supporting the fund's technology growth strategy."
       }
     ]
   }

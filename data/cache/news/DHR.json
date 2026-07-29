@@ -1,5 +1,41 @@
 [
   {
+    "id": "16912a4f306503f8be003d120c8c2eddc2bea8b19b3fa6bd919fd2053156eacd",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Here's Why the Slump in Danaher Stock This Week Looks Like a Buying Opportunity",
+    "author": "Lee Samaha",
+    "published_utc": "2026-07-24T14:13:38Z",
+    "article_url": "https://www.fool.com/investing/2026/07/24/heres-why-the-slump-in-danaher-stock-this-week-loo/?source=iedfolrf0000001",
+    "tickers": [
+      "DHR"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880464%2Fa-scientist-uses-a-pipette-to-work-with-medical-samples-1200x675-128554e.jpg&w=1200&op=resize",
+    "description": "Danaher stock declined 12.1% this week despite beating Q2 earnings estimates and raising full-year EPS guidance. The sell-off was triggered by the revelation that most of the guidance increase ($0.07-$0.08) comes from the Masimo acquisition rather than organic growth, and by reduced biotechnology sales growth expectations due to timing shifts in consumables shipments. The article suggests the market overreacted, as shipment delays in biotech are typically temporary.",
+    "keywords": [
+      "Danaher",
+      "Q2 earnings",
+      "stock decline",
+      "guidance raise",
+      "Masimo acquisition",
+      "biotechnology",
+      "consumables sales",
+      "shipment timing",
+      "buying opportunity"
+    ],
+    "insights": [
+      {
+        "ticker": "DHR",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mixed earnings report with positive guidance raise offset by concerns about acquisition-driven growth and biotech segment weakness. The article frames the stock decline as an overreaction to temporary shipment timing issues, suggesting the fundamentals remain sound but near-term sentiment is negative."
+      }
+    ]
+  },
+  {
     "id": "7c99eb23fb95a5d2da3e8da8970ee4a5ce8752443a2585c2187583de97898204",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -267,59 +303,6 @@
         "ticker": "A",
         "sentiment": "positive",
         "sentiment_reasoning": "Identified as a key company in the oxidative stress assay market, positioned to benefit from rising demand for advanced biomarker diagnostics and pharmaceutical research applications."
-      }
-    ]
-  },
-  {
-    "id": "7fab856b37fad7beea8a29366b8509ab009ef19f6289c50ef6989523e4233d95",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Stock Market Today, June 25: Bio-Techne Surges After Merck KGaA Announces $73-Per-Share Cash Acquisition Offer",
-    "author": "Josh Kohn-Lindquist",
-    "published_utc": "2026-06-25T21:23:42Z",
-    "article_url": "https://www.fool.com/coverage/stock-market-today/2026/06/25/stock-market-today-june-25-bio-techne-surges-after-merck-kgaa-announces-73-per-share-cash-acquisition-offer/?source=iedfolrf0000001",
-    "tickers": [
-      "MKKGY",
-      "TECH",
-      "DHR",
-      "RGEN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F77da40e1441423dea3c02d00c83ecbebd96a733e-1401x1250.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Bio-Techne shares surged 20% after Merck KGaA announced a $73-per-share cash acquisition offer. The deal comes one week after activist investor Ananym Capital Management built a stake and pushed for a sale. Trading volume reached 51.3M shares, significantly above average. Merck KGaA expects to achieve over $150 million in annual cost synergies within three years.",
-    "keywords": [
-      "acquisition",
-      "Bio-Techne",
-      "Merck KGaA",
-      "cash offer",
-      "life sciences",
-      "healthcare deals",
-      "activist investor",
-      "cost synergies"
-    ],
-    "insights": [
-      {
-        "ticker": "MKKGY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Acquiring Bio-Techne adds complementary strengths in research, bioprocessing, and advanced therapeutics to its pipeline. Expected to achieve $150+ million in annual cost synergies within three years, adding roughly 5% to bottom line, demonstrating strategic value creation."
-      },
-      {
-        "ticker": "TECH",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock surged 20% on the announcement of a $73-per-share acquisition offer from Merck KGaA. The deal represents a significant premium and validates the company's value, with strong trading volume indicating investor confidence in deal completion."
-      },
-      {
-        "ticker": "DHR",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Peer company in life sciences tools and instruments closed up 2.31%, benefiting from positive sentiment in the sector following the Bio-Techne acquisition announcement."
-      },
-      {
-        "ticker": "RGEN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Peer company in bioprocessing services closed up 4.93%, gaining from increased sector activity and positive momentum in the life sciences and healthcare M&A space."
       }
     ]
   }

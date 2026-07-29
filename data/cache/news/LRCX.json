@@ -1,5 +1,169 @@
 [
   {
+    "id": "edca9e8b8e88afce947660257969d7d1a26e94b4ee505d9d0c1ebffde33b0b2c",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Got $100? 1 Artificial Intelligence (AI) Memory ETF to Buy Right Now.",
+    "author": "Manali Pradhan, Cfa",
+    "published_utc": "2026-07-25T17:11:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/25/got-100-1-artificial-intelligence-ai-memory-etf-to/?source=iedfolrf0000001",
+    "tickers": [
+      "SOXX",
+      "NVDA",
+      "AMD",
+      "MU",
+      "LRCX",
+      "AMAT",
+      "KLAC"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879501%2Fprofessional_smiling_in_the_office.jpg&w=1200&op=resize",
+    "description": "The iShares Semiconductor ETF (SOXX) offers diversified exposure to the AI memory supply chain, including memory producers, chip designers, and equipment suppliers. Growing demand for high-bandwidth memory in AI accelerators is creating supply shortages expected to persist beyond 2027. While the recent semiconductor sell-off has improved entry points, the ETF trades at a premium valuation (66x earnings) with concentrated holdings, presenting downside risks if AI spending slows or memory supply increases faster than expected.",
+    "keywords": [
+      "high-bandwidth memory (HBM)",
+      "AI accelerators",
+      "semiconductor supply chain",
+      "memory shortage",
+      "semiconductor ETF",
+      "chip manufacturing equipment"
+    ],
+    "insights": [
+      {
+        "ticker": "SOXX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Positioned to benefit from sustained HBM demand and memory supply constraints through 2027; offers diversified exposure across the AI memory ecosystem; recent sell-off improved valuation entry point."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Driving HBM demand with new Rubin GPU requiring 288GB of HBM4; major component of SOXX portfolio (8.26%); benefits from memory supply constraints."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "MI400 series accelerators designed to use up to 432GB of HBM4; significant SOXX holding (8.74%); competing in high-demand AI accelerator market."
+      },
+      {
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Direct exposure to HBM, DRAM, and NAND memory markets; 8.33% of SOXX portfolio; benefits from tight memory supply and high demand through 2027."
+      },
+      {
+        "ticker": "LRCX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Supplies etching and deposition tools for advanced memory production; benefits from foundry expansion investments needed to address memory shortages."
+      },
+      {
+        "ticker": "AMAT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Provides equipment for DRAM manufacturing and HBM packaging; positioned to benefit from increased capital expenditure in memory production."
+      },
+      {
+        "ticker": "KLAC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Inspection tools help chipmakers detect defects and improve yields; benefits from increased memory production and advanced manufacturing investments."
+      }
+    ]
+  },
+  {
+    "id": "e338f4763f8c4356e9b0da537621fca054e65893b87cb37c4c028c3a60301ae0",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "QQQ vs. VGT: Where Should You Invest $1,000 Right Now?",
+    "author": "David Dierking",
+    "published_utc": "2026-07-24T18:33:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/24/qqq-vs-vgt-where-should-you-invest-1000-right-now/?source=iedfolrf0000001",
+    "tickers": [
+      "QQQ",
+      "VGT",
+      "NVDA",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "MU",
+      "LRCX",
+      "AMAT",
+      "INTC"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879514%2Fnetwork-data-connection-satellite.jpg&w=1200&op=resize",
+    "description": "The article compares two tech-focused ETFs: Invesco QQQ (tracking Nasdaq-100) and Vanguard Information Technology ETF (VGT). QQQ offers better diversification with ~30% non-tech holdings providing downside protection, while VGT is a pure tech play with lower expenses (0.09% vs 0.10%). The author recommends QQQ for its balance amid inflation concerns and geopolitical risks, though both ETFs remain viable for those bullish on AI-driven earnings growth.",
+    "keywords": [
+      "ETF comparison",
+      "tech stocks",
+      "AI rally",
+      "diversification",
+      "inflation",
+      "geopolitical risks",
+      "Nasdaq-100",
+      "expense ratios"
+    ],
+    "insights": [
+      {
+        "ticker": "QQQ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recommended as the better choice due to sector diversification (30% non-tech), exposure to semiconductor leaders (Micron, Lam Research, Applied Materials), and downside protection against tech-focused market tumbles amid inflation and geopolitical concerns."
+      },
+      {
+        "ticker": "VGT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Positioned as a pure tech play suitable for those confident in AI rally continuation and double-digit earnings growth. Advantages include lower expense ratio (0.09%) and concentrated exposure to tech sector gains."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Mentioned as a megacap leader during the initial AI rally wave, though noted to have slipped from peak prices in 2026."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a Magnificent Seven megacap that led the market during the first wave of the AI rally."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a Magnificent Seven megacap that led the market during the first wave of the AI rally."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a Magnificent Seven megacap that led the market during the first wave of the AI rally."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a Magnificent Seven megacap that led the market during the first wave of the AI rally."
+      },
+      {
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Highlighted as an emerging top performer in 2026 replacing some Magnificent Seven names, with higher allocation in QQQ than VGT."
+      },
+      {
+        "ticker": "LRCX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Noted as a strong performer in the semiconductor space with higher allocation in QQQ, offering diversification benefits."
+      },
+      {
+        "ticker": "AMAT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as an emerging top performer in 2026 with higher allocation in QQQ than VGT."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as an emerging performer with higher allocation in QQQ, though context suggests it has also declined from highs."
+      }
+    ]
+  },
+  {
     "id": "cebebcc3feaea916a3beefd142186454e8c0645c6cea9a9f439fdde28829c850",
     "publisher": {
       "name": "The Motley Fool",
@@ -229,132 +393,6 @@
         "ticker": "RIVN",
         "sentiment": "negative",
         "sentiment_reasoning": "Down approximately 9% after announcing plans to issue 75 million new shares through a secondary offering, with shareholder dilution concerns outweighing raised delivery guidance."
-      }
-    ]
-  },
-  {
-    "id": "b62cf127cf863b27b546ad0657eb224916ba2012dd39d76ec760a2cce8768c81",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Could Lam Research Be the Next $1 Trillion Company?",
-    "author": "Marc Guberti",
-    "published_utc": "2026-07-01T06:37:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/01/can-lam-research-be-the-next-1-trillion-company/?source=iedfolrf0000001",
-    "tickers": [
-      "LRCX",
-      "NVDA",
-      "AMD",
-      "INTC",
-      "MRVL",
-      "TSM",
-      "MU"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876304%2Fsemiconductor-wafer-fabrication-1440093250.jpg&w=1200&op=resize",
-    "description": "Lam Research, a wafer fabrication equipment supplier, is positioned to become the next trillion-dollar company due to its critical role in AI chip manufacturing. With market cap exceeding $500 billion and strong Q1 results showing 24% YoY revenue growth and expanding margins, the company benefits from increased capital expenditures by major semiconductor foundries ramping up production to meet soaring AI demand.",
-    "keywords": [
-      "AI infrastructure",
-      "wafer fabrication equipment",
-      "semiconductor manufacturing",
-      "trillion-dollar company",
-      "capital expenditure",
-      "sequential revenue growth"
-    ],
-    "insights": [
-      {
-        "ticker": "LRCX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q1 results with 24% YoY revenue growth, 31.2% net profit margins, and positive sequential growth trajectory. Company is well-positioned in AI infrastructure with major clients and guidance suggesting continued acceleration."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as a beneficiary of AI buildout and referenced as a comparable company experiencing strong demand for semiconductors."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a well-known semiconductor stock making progress toward trillion-dollar valuation milestone, benefiting from AI infrastructure demand."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as a semiconductor stock progressing toward trillion-dollar company status amid AI infrastructure buildout."
-      },
-      {
-        "ticker": "MRVL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Predicted by Nvidia CEO to be the next trillion-dollar company, indicating strong positioning in semiconductor market."
-      },
-      {
-        "ticker": "TSM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major client of Lam Research experiencing soaring demand for semiconductors and ramping up capital expenditures for new manufacturing capacity."
-      },
-      {
-        "ticker": "MU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Referenced as an AI hardware company that experienced stock rallies under similar sequential growth conditions."
-      }
-    ]
-  },
-  {
-    "id": "30178423c51bd3c46aabd1a7b29fb49286e0cd7d35105546267f828963bf32e6",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Is Axcelis Stock a Buy After Doubling This Year?",
-    "author": "Marc Guberti",
-    "published_utc": "2026-06-30T08:24:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/30/is-axcelis-stock-a-buy-after-doubling-this-year/?source=iedfolrf0000001",
-    "tickers": [
-      "ACLS",
-      "VECO",
-      "AMAT",
-      "LRCX",
-      "MU"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F876277%2Fmicrochip-wafer-robot-design-production-1200x800-5b2df79.jpg&w=1200&op=resize",
-    "description": "Axcelis Technologies, a pure-play ion implantation equipment manufacturer critical to AI chip production, has doubled year-to-date despite modest 3% YoY revenue growth in Q1. Strong sequential growth in memory demand is expected to drive future results, and an upcoming merger with Veeco Instruments will expand the company's AI infrastructure portfolio and create synergies. Analysts suggest the stock rally has room to extend as memory becomes a larger revenue share.",
-    "keywords": [
-      "ion implantation",
-      "AI chips",
-      "semiconductor equipment",
-      "memory demand",
-      "merger",
-      "wafer fabrication"
-    ],
-    "insights": [
-      {
-        "ticker": "ACLS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock has doubled YTD with strong sequential growth in memory segment expected to continue. Positioned as critical pure-play ion implantation supplier for AI infrastructure. Upcoming merger with Veeco creates synergies and growth catalysts for 2027."
-      },
-      {
-        "ticker": "VECO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock has more than doubled YTD with strong order growth ($250M announced in May). Laser annealing business is fastest-growing segment. Merger with Axcelis creates complementary synergies for AI infrastructure equipment."
-      },
-      {
-        "ticker": "AMAT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as competitor to Axcelis but with more diversified business model. No specific performance data provided in article."
-      },
-      {
-        "ticker": "LRCX",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as competitor to Axcelis but with more diversified business model. No specific performance data provided in article."
-      },
-      {
-        "ticker": "MU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Recent earnings demonstrate strong memory industry demand, which is expected to create positive tailwinds for Axcelis Technologies' Q2 results and beyond."
       }
     ]
   }

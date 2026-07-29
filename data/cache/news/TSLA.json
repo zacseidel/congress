@@ -1,209 +1,397 @@
 [
   {
-    "id": "13ac49ff255c6f4ce70ebbd238b093fa2dcf4d2daafb1e9ebbd2f0d314bedc85",
+    "id": "fda1c330edde014dca6652b0a8b164eec500a0e95409fec72f63d7b602030ac7",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Why Did Eos Energy Stock Jump Today?",
-    "author": "Howard Smith",
-    "published_utc": "2026-07-15T15:31:13Z",
-    "article_url": "https://www.fool.com/investing/2026/07/15/why-did-eos-energy-stock-jump-today/?source=iedfolrf0000001",
+    "title": "Ford Just Delivered Bad News for Tesla Investors",
+    "author": "Marc Guberti",
+    "published_utc": "2026-07-29T15:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/29/ford-just-delivered-bad-news-for-tesla-investors/?source=iedfolrf0000001",
     "tickers": [
-      "EOSE",
-      "EOSER",
-      "TSLA"
+      "TSLA",
+      "F",
+      "FpB",
+      "FpC",
+      "FpD",
+      "AAPL",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "UBER",
+      "NVDA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878966%2Fenergy-storage.jpg&w=1200&op=resize",
-    "description": "Eos Energy Enterprises stock surged approximately 10% after announcing preliminary Q2 results showing record revenue between $68-69 million and a record backlog of $807 million. The company's first-half 2026 revenue has already exceeded its entire 2025 annual revenue, demonstrating strong business momentum. The battery energy storage company has expanded production capacity with Battery Line 2 now in commercial operation and partnered with Cerberus to establish Frontier Power USA.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880677%2Fgettyimages-1441650317-1200x844-3b42050.jpg&w=1200&op=resize",
+    "description": "Ford announced it will achieve point-to-point autonomy by 2028 with Apple executives working on the technology, positioning itself to enter the robotaxi market. This threatens Tesla's dominance in robotaxis, one of the key growth drivers justifying Tesla's extremely high P/E ratio of ~300. As traditional automakers like Ford, Toyota, and Volkswagen enter the robotaxi space, competition will intensify and pressure Tesla's future margins and growth rates in this sector.",
     "keywords": [
-      "battery energy storage",
-      "record revenue",
-      "record backlog",
-      "business momentum",
-      "production capacity expansion",
-      "clean energy",
-      "long-duration battery storage"
+      "robotaxis",
+      "autonomous vehicles",
+      "electric vehicles",
+      "market competition",
+      "valuation risk",
+      "self-driving technology"
     ],
     "insights": [
       {
-        "ticker": "EOSE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company reported record quarterly revenue expectations and record backlog of $807 million. First-half 2026 revenue already exceeds full-year 2025 results, indicating strong business growth and market demand. Production capacity expansion and strategic partnership with Cerberus further support positive momentum."
-      },
-      {
-        "ticker": "EOSER",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company reported record quarterly revenue expectations and record backlog of $807 million. First-half 2026 revenue already exceeds full-year 2025 results, indicating strong business growth and market demand. Production capacity expansion and strategic partnership with Cerberus further support positive momentum."
-      },
-      {
         "ticker": "TSLA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Tesla faces increasing competition in robotaxis from Ford and other automakers. With a P/E ratio of ~300, Tesla has no margin for error and relies heavily on robotaxi and humanoid robot success. Rising competition threatens growth rates and profit margins in this critical segment."
+      },
+      {
+        "ticker": "F",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Ford is making strategic progress in autonomous vehicle technology with Apple executives involved, positioning itself to enter the high-margin robotaxi market by 2028. This represents a significant growth opportunity for the company."
+      },
+      {
+        "ticker": "FpB",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Ford is making strategic progress in autonomous vehicle technology with Apple executives involved, positioning itself to enter the high-margin robotaxi market by 2028. This represents a significant growth opportunity for the company."
+      },
+      {
+        "ticker": "FpC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Ford is making strategic progress in autonomous vehicle technology with Apple executives involved, positioning itself to enter the high-margin robotaxi market by 2028. This represents a significant growth opportunity for the company."
+      },
+      {
+        "ticker": "FpD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Ford is making strategic progress in autonomous vehicle technology with Apple executives involved, positioning itself to enter the high-margin robotaxi market by 2028. This represents a significant growth opportunity for the company."
+      },
+      {
+        "ticker": "AAPL",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Tesla is mentioned only as a competitor in the battery energy storage space. The article suggests room for multiple winners in the market, implying Tesla's dominance does not preclude Eos Energy's success. No specific Tesla news or performance data is discussed."
-      }
-    ]
-  },
-  {
-    "id": "d1c756e761b422c28c4f1bced3dfea9412b84f462ce7ab67244b995e7bdf01cb",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Hybrid Robots Market Projected to Reach $10.03 Billion by 2030 as Smart Manufacturing Accelerates",
-    "author": "Researchandmarkets.Com",
-    "published_utc": "2026-07-15T10:44:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/15/3327565/28124/en/Hybrid-Robots-Market-Projected-to-Reach-10-03-Billion-by-2030-as-Smart-Manufacturing-Accelerates.html",
-    "tickers": [
-      "AMZN",
-      "TSLA"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/6d85d1b5-92ef-4ef6-ae07-df1256bb27ef",
-    "description": "The global hybrid robots market is experiencing rapid expansion, forecast to grow from $4.93 billion in 2025 to $10.03 billion by 2030 at a CAGR of 15.3%. Growth is driven by advances in AI, autonomous operations, human-robot collaboration, and smart manufacturing adoption. North America leads the market while Asia-Pacific shows fastest growth potential. Key trends include electric humanoids, edge AI, and sensor fusion technologies.",
-    "keywords": [
-      "hybrid robots",
-      "smart manufacturing",
-      "autonomous systems",
-      "edge AI",
-      "human-robot collaboration",
-      "industrial automation",
-      "logistics",
-      "humanoid robots",
-      "Industry 4.0"
-    ],
-    "insights": [
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Acquired Fauna Robotics to expand capabilities in humanoid robotics and mobility/manipulation systems, strengthening competitive position in high-growth market"
+        "sentiment_reasoning": "Apple is mentioned as having executives working on Ford's autonomous technology, but the article provides no specific details about Apple's involvement, benefits, or strategic implications for Apple itself."
       },
       {
-        "ticker": "TSLA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as major company in hybrid robots market with focus on electric humanoid platforms for industrial and collaborative applications"
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Waymo is noted as already operating in more cities than Tesla's robotaxis, indicating competitive progress, but the article does not provide forward-looking analysis or sentiment about Alphabet's robotaxi prospects."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Waymo is noted as already operating in more cities than Tesla's robotaxis, indicating competitive progress, but the article does not provide forward-looking analysis or sentiment about Alphabet's robotaxi prospects."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Waymo is noted as already operating in more cities than Tesla's robotaxis, indicating competitive progress, but the article does not provide forward-looking analysis or sentiment about Alphabet's robotaxi prospects."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Waymo is noted as already operating in more cities than Tesla's robotaxis, indicating competitive progress, but the article does not provide forward-looking analysis or sentiment about Alphabet's robotaxi prospects."
+      },
+      {
+        "ticker": "UBER",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Uber's recent partnership with Nvidia to launch robotaxis across 28 cities is mentioned as competition to Tesla, but the article provides no specific analysis of Uber's prospects or implications."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Nvidia is mentioned as partnering with Uber on robotaxi deployment, but the article does not analyze the impact or implications for Nvidia's business."
       }
     ]
   },
   {
-    "id": "0c3b2df907c1abd2ce4de25a7c52018b3f0fa4def59a7610efcfde80f0aa5eb2",
+    "id": "d0c4fc93c5e00830eda82f9e1408e686aa592f1af1b68b876a38d8f1f055a016",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Want to Buy Tesla? 3 Reasons to Buy This Luxury Automaker's Stock Instead.",
-    "author": "Daniel Miller",
-    "published_utc": "2026-07-15T06:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/15/want-to-buy-tesla-3-reasons-to-buy-this-luxury-aut/?source=iedfolrf0000001",
+    "title": "Famous Investor Michael Burry Is Short Nvidia, Palantir, and Tesla. Why I'd Buy 1 of the Stocks, Hold Another, and Sell the Third.",
+    "author": "Geoffrey Seiler",
+    "published_utc": "2026-07-29T15:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/29/famous-investor-michael-burry-is-short-nvidia-pala/?source=iedfolrf0000001",
     "tickers": [
-      "RACE",
-      "TSLA"
+      "NVDA",
+      "PLTR",
+      "TSLA",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "TSM"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878622%2Fferrari-f80.jpeg&w=1200&op=resize",
-    "description": "The article argues that Ferrari is a superior investment alternative to Tesla for investors uncomfortable with Tesla's transition toward AI, robotics, and autonomous vehicles. Ferrari operates as a luxury goods company with superior margins (>50%), strong pricing power, brand exclusivity, and a loyal customer base, contrasting sharply with Tesla's mainstream automotive business model that relies on discounts and price wars.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880693%2Fnvdapltr.png&w=1200&op=resize",
+    "description": "Michael Burry is short on Nvidia, Palantir, and Tesla, but analyst Geoffrey Seiler disagrees with his bearish stance on all three. Despite Burry's concerns about AI spending slowdowns, Seiler recommends buying Nvidia due to strong capex trends and attractive valuation. Palantir is rated a hold despite high valuations, given its rapid growth and strong net dollar retention. Tesla is recommended as a sell due to loss of regulatory credits, weak auto sales, and execution risks in robotaxi and robotics ventures.",
     "keywords": [
-      "luxury automaker",
-      "pricing power",
-      "brand exclusivity",
-      "profit margins",
-      "investment alternative",
-      "luxury goods",
-      "recession-resilient"
+      "Michael Burry",
+      "short positions",
+      "AI infrastructure",
+      "GPU demand",
+      "valuation analysis",
+      "investment recommendation"
     ],
     "insights": [
       {
-        "ticker": "RACE",
+        "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Praised for superior EBITDA margins (>50%), strong brand image, pricing power without discounts, exclusive production model (under 15,000 units/year), loyal customer base, and recession-resilient business model. Positioned as an excellent investment alternative with stable and rising margins."
+        "sentiment_reasoning": "Attractive valuation at 15x fiscal 2028 earnings estimates; AI data center spending continuing to boom with hyperscalers increasing capex; TSMC investing in new fabs indicating sustained chip demand; positioned as biggest beneficiary of AI infrastructure spending."
+      },
+      {
+        "ticker": "PLTR",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Despite high forward P/S (39.5x) and P/E (86x) multiples, company shows tremendous accelerating revenue growth with 150% net dollar retention rate; AIP platform is critical for real-world AI applications; long runway of growth ahead with strong client investment."
       },
       {
         "ticker": "TSLA",
         "sentiment": "negative",
-        "sentiment_reasoning": "Criticized for transitioning into uncertain future with humanoid robots, driverless vehicles, and AI; operates in mainstream automotive industry with thin margins, price wars, and discounting pressures; lacks the brand exclusivity and pricing power of Ferrari; requires demand stimulation through price cuts and incentives."
-      }
-    ]
-  },
-  {
-    "id": "5d42f9b692492148ff435c1916929475ff6de551f81a6606590ef354e7b9442d",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Is SpaceX Stock a Millionaire Maker? There Are 2 Things That Will Define That Answer.",
-    "author": "Stefon Walters",
-    "published_utc": "2026-07-15T00:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/14/is-spacex-stock-a-millionaire-maker-there-are-2-th/?source=iedfolrf0000001",
-    "tickers": [
-      "SPCX",
-      "TSLA"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878594%2Fgettyimages-1254762604.jpg&w=1200&op=resize",
-    "description": "SpaceX's $1.82 trillion valuation makes it unlikely to be a millionaire-maker for average investors, despite the company's solid business fundamentals. While initial investment size and time horizon are critical factors for wealth creation, SpaceX would need to reach $36.4 trillion in value for a $50,000 investment to grow 20x. Unlike Tesla's IPO at $1.7 billion, SpaceX's massive starting valuation limits upside potential, though some investors with large lump sums or 30+ year horizons could still benefit.",
-    "keywords": [
-      "SpaceX IPO",
-      "stock valuation",
-      "millionaire maker",
-      "investment returns",
-      "total addressable market",
-      "Starlink",
-      "space launch company"
-    ],
-    "insights": [
-      {
-        "ticker": "SPCX",
-        "sentiment": "negative",
-        "sentiment_reasoning": "While SpaceX has solid business fundamentals (largest space launch company, AI infrastructure, Starlink), its $1.82 trillion valuation creates a significant headwind for average investors seeking millionaire-maker returns. The article argues it's unlikely to deliver the 20x returns needed for typical investors, unlike Tesla's early IPO performance."
+        "sentiment_reasoning": "High valuation (172x forward P/E) with struggling business fundamentals; loss of lucrative regulatory credits from U.S. emissions policy changes; auto sales slumped due to CEO's political involvement; robotaxi and robotics businesses face significant execution challenges and competition."
       },
       {
-        "ticker": "TSLA",
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as hyperscaler increasing capital expenditures for AI infrastructure; increasing 2026 forecast and planning significant 2027 spending, supporting continued AI investment thesis."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as hyperscaler increasing capital expenditures for AI infrastructure; increasing 2026 forecast and planning significant 2027 spending, supporting continued AI investment thesis."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as hyperscaler increasing capital expenditures for AI infrastructure; increasing 2026 forecast and planning significant 2027 spending, supporting continued AI investment thesis."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as hyperscaler increasing capital expenditures for AI infrastructure; increasing 2026 forecast and planning significant 2027 spending, supporting continued AI investment thesis."
+      },
+      {
+        "ticker": "TSM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Tesla is cited as a successful millionaire-maker example, with a $5,000 IPO investment in 2010 worth over $1.2 million today. Used as a positive comparison point to highlight how lower initial valuations enable greater percentage gains."
+        "sentiment_reasoning": "Increasing capex to build new fabs to meet chip demand; conservative company's investment decision signals confidence in sustained demand for AI chips."
       }
     ]
   },
   {
-    "id": "b647be954c8ea1b804653dd240d94450192f0107402e5aca3dff55834b210e7a",
+    "id": "aae5bf3af9d72ef2f550956500b27c52c936f739448686c74b498ba4b39c18bc",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Prediction: This Is What Rivian Stock Will Do if the R2 Is a Smashing Success",
-    "author": "Thomas Niel",
-    "published_utc": "2026-07-14T23:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/14/prediction-this-is-what-rivian-stock-will-do-if-th/?source=iedfolrf0000001",
+    "title": "Automotive Sales Driven by Growth in Hybrids in the Second Quarter of 2026",
+    "author": "Eric Volkman",
+    "published_utc": "2026-07-29T12:03:01Z",
+    "article_url": "https://www.fool.com/investing/2026/07/29/automotive-sales-driven-by-growth-in-hybrids-in-the-second-quarter-of-2026/?source=iedfolrf0000001",
     "tickers": [
+      "TM",
+      "TSLA",
       "RIVN",
-      "TSLA"
+      "LCID",
+      "F",
+      "FpB",
+      "FpC",
+      "FpD",
+      "STLA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878228%2Fgettyimages-1733213138-1200x675-128554e.jpg&w=1200&op=resize",
-    "description": "Rivian's launch of its lower-priced R2 vehicle line could represent an inflection point for the EV maker, with strong Q2 deliveries and raised production guidance. However, despite growth forecasts accelerating to 61.6% by 2027, the company is expected to remain unprofitable and plans significant share dilution through $8 billion in fundraising by 2028, which could limit stock gains even if the R2 succeeds.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fde97eefc5e9b9d2793d58e891f0e1f6b9d9a8748-2309x1299.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Hybrid vehicle sales surged 9% in H1 2026 while the overall automotive market declined 2%. EV sales dropped 24%, but the rate of decline is improving quarter-over-quarter. Niche EV makers like Rivian and Lucid gained market share, while traditional automakers and Tesla faced significant headwinds. Hybrids are emerging as the preferred choice for consumers seeking fuel convenience and efficiency.",
     "keywords": [
-      "Rivian R2 launch",
-      "EV market",
-      "share dilution",
-      "production guidance",
-      "vehicle deliveries",
-      "stock valuation",
-      "profitability concerns"
+      "hybrid vehicles",
+      "electric vehicles",
+      "automotive sales",
+      "Q2 2026",
+      "EV market decline",
+      "consumer preferences"
     ],
     "insights": [
+      {
+        "ticker": "TM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Toyota is highlighted as a pioneer and leader in hybrid-exclusive vehicle strategies, with multiple models (Camry, RAV4, Sienna) now offered as hybrids. The author explicitly recommends Toyota as the company most enthusiastically embracing hybrids and notes it is well-run and consistently profitable."
+      },
+      {
+        "ticker": "TSLA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Tesla's full lineup posted an 11% decline in H1 2026. While the Model Y showed resilience with only 1.5% decline, the Model 3 dropped 28%. The author explicitly states they would 'give that stock a miss' due to ineffective priority-setting."
+      },
       {
         "ticker": "RIVN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Rivian achieved 14% sales growth in H1 2026 (19,152 units) and saw gains in both Q2 and the half-year period. As a niche EV specialist, it is positioned to benefit from reduced competition as incumbents shift strategies away from pure EV development."
+      },
+      {
+        "ticker": "LCID",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Lucid achieved 2% sales growth in H1 2026 (5,103 units) and saw gains in both Q2 and the half-year period. As a high-end EV specialist, it is positioned to benefit from reduced competition and is highlighted as a niche player outperforming the broader EV market."
+      },
+      {
+        "ticker": "F",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Ford experienced a severe 57% decline in EV unit sales in H1 2026 (16,606 EVs), reflecting the struggles of traditional automakers that committed to EV development timelines but have since shifted strategies."
+      },
+      {
+        "ticker": "FpB",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Ford experienced a severe 57% decline in EV unit sales in H1 2026 (16,606 EVs), reflecting the struggles of traditional automakers that committed to EV development timelines but have since shifted strategies."
+      },
+      {
+        "ticker": "FpC",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Ford experienced a severe 57% decline in EV unit sales in H1 2026 (16,606 EVs), reflecting the struggles of traditional automakers that committed to EV development timelines but have since shifted strategies."
+      },
+      {
+        "ticker": "FpD",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Ford experienced a severe 57% decline in EV unit sales in H1 2026 (16,606 EVs), reflecting the struggles of traditional automakers that committed to EV development timelines but have since shifted strategies."
+      },
+      {
+        "ticker": "STLA",
         "sentiment": "neutral",
-        "sentiment_reasoning": "While the R2 launch and raised production guidance are positive developments, significant headwinds exist including continued losses, planned share dilution of $8 billion through 2028, and the stock's 82.5% decline since IPO. The article suggests growth may not translate to near-term stock gains."
+        "sentiment_reasoning": "Stellantis is mentioned as a manufacturer that shifted to hybrid-only versions of classic models (Jeep Cherokee), indicating strategic adaptation to market trends. However, no specific sales performance data is provided to determine positive or negative sentiment."
+      }
+    ]
+  },
+  {
+    "id": "b8009d73ed278263ad1e3708085f019aab53a7e3b77df6c70608dd45ef352930",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Elon Musk Thanked Micron Twice on Tesla's Earnings Call -- Here's Why That's Great News",
+    "author": "John Bromels",
+    "published_utc": "2026-07-29T10:16:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/29/elon-musk-thanked-micron-twice-on-tesla-earnings/?source=iedfolrf0000001",
+    "tickers": [
+      "MU",
+      "TSLA",
+      "TSM",
+      "AAPL"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880546%2Felon-musk_tesla_tsla_ceo_imagesource_the-white-house_2.jpeg&w=1200&op=resize",
+    "description": "Elon Musk publicly thanked Micron Technology twice during Tesla's Q2 earnings call for providing memory chip allocation on reasonable terms amid a global memory shortage. This suggests Micron is prioritizing long-term business relationships over short-term profit maximization, which is positive news for both companies as it demonstrates collaborative supply chain management in the competitive AI chip market.",
+    "keywords": [
+      "memory chips",
+      "supply chain",
+      "AI computing",
+      "HBM",
+      "DRAM",
+      "pricing strategy",
+      "business relationships",
+      "semiconductor shortage"
+    ],
+    "insights": [
+      {
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Musk's public thanks twice in one earnings call indicates Micron is securing long-term partnerships with major customers like Tesla by offering reasonable pricing terms despite industry-wide price increases. This demonstrates strategic business positioning and relationship-building that reduces future risk when memory capacity increases."
       },
       {
         "ticker": "TSLA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Tesla has secured favorable memory chip allocation and pricing from Micron despite global shortages and inflated prices, which is crucial for their AI and Optimus robot development. This supply chain advantage supports their operational needs and future growth plans."
+      },
+      {
+        "ticker": "TSM",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Tesla is mentioned as the EV market leader that Rivian and other competitors are trying to challenge. No specific sentiment is expressed about Tesla's performance or outlook in the article."
+        "sentiment_reasoning": "TSMC was thanked for support but without the emphasis given to Micron. Presented as a standard supplier meeting industry demands without special distinction."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Apple CEO Tim Cook publicly blamed memory suppliers for passing along huge price increases, contrasting sharply with Musk's praise of Micron. This positions Apple as a customer dissatisfied with pricing practices."
+      }
+    ]
+  },
+  {
+    "id": "bee9bdb8b3785978a179d6c85a99175513bd51da434484d172c86e02577f04a3",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Only 2 \"Magnificent Seven\" Stocks Are Beating the Market This Year. What's Going On?",
+    "author": "Jennifer Saibil",
+    "published_utc": "2026-07-29T10:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/29/only-2-magnificent-seven-stocks-are-beating-the-ma/?source=iedfolrf0000001",
+    "tickers": [
+      "AAPL",
+      "NVDA",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "AMZN",
+      "META",
+      "MSFT",
+      "TSLA"
+    ],
+    "image_url": "https://www.fool.com/investing/2026/07/29/only-2-magnificent-seven-stocks-are-beating-the-ma/?source=iedfolrf0000001",
+    "description": "Despite the S&P 500 gaining 8% year-to-date, only Apple and Nvidia from the 'Magnificent Seven' tech stocks are outperforming the broader market. Investor concerns about high oil prices, massive AI capital expenditures, and elevated market valuations (CAPE ratio at 41) have pressured most mega-cap tech stocks. Apple's cautious AI approach and focus on iPhone sales, combined with Nvidia's dominance in AI chips (90% market share), have positioned them as safer bets during market volatility.",
+    "keywords": [
+      "Magnificent Seven",
+      "AI spending",
+      "market valuation",
+      "oil prices",
+      "tech stocks",
+      "CAPE ratio",
+      "market volatility"
+    ],
+    "insights": [
+      {
+        "ticker": "AAPL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Apple is one of only two Magnificent Seven stocks beating the S&P 500. Its cautious approach to AI spending and focus on proven iPhone sales strategy is viewed favorably as a safer investment amid market volatility and high valuations."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Nvidia is the other Magnificent Seven stock outperforming the market. Its 90% control of the AI chip market and deep embedding in hyperscaler AI infrastructure positions it at the epicenter of AI spending, making it attractive to risk-conscious investors."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Alphabet's stock declined after announcing a $205 billion capital expenditure forecast, exceeding Amazon's outlook. This massive AI spending announcement spooked investors concerned about profitability and returns on AI investments."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Alphabet's stock declined after announcing a $205 billion capital expenditure forecast, exceeding Amazon's outlook. This massive AI spending announcement spooked investors concerned about profitability and returns on AI investments."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Alphabet's stock declined after announcing a $205 billion capital expenditure forecast, exceeding Amazon's outlook. This massive AI spending announcement spooked investors concerned about profitability and returns on AI investments."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Alphabet's stock declined after announcing a $205 billion capital expenditure forecast, exceeding Amazon's outlook. This massive AI spending announcement spooked investors concerned about profitability and returns on AI investments."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Amazon stock has borne the brunt of investor worries about AI spending for months. Its substantial capital expenditure plans have raised concerns about whether these investments will generate adequate returns."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "negative",
+        "sentiment_reasoning": "As a Magnificent Seven stock not beating the market, Meta is underperforming amid concerns about high AI spending and elevated market valuations relative to earnings growth."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "negative",
+        "sentiment_reasoning": "As a Magnificent Seven stock not beating the market, Microsoft is underperforming despite its involvement in AI. Investor concerns about AI spending and market valuations are pressuring the stock."
+      },
+      {
+        "ticker": "TSLA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Tesla is underperforming the market among the Magnificent Seven stocks. The article notes that Broadcom and Space Exploration Technologies are now larger by market cap, indicating relative weakness."
       }
     ]
   }

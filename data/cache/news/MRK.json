@@ -1,363 +1,286 @@
 [
   {
-    "id": "6d4179ce162a19c56cfbe331b4a3bb0a8e17c9e23f18fdf4558513c823ad51b7",
+    "id": "f07ebe65618d218f2b75f015a9babe49d1f280d1cf816a471c218457d5e6a785",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Prediction: This Dividend ETF Will Thrive After 20 Years No Matter What the Market Does",
+    "author": "James Brumley",
+    "published_utc": "2026-07-28T10:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/28/prediction-dividend-etf-thrive-20-years-schd/?source=iedfolrf0000001",
+    "tickers": [
+      "SCHD",
+      "VIG",
+      "DGRO",
+      "KO",
+      "MRK",
+      "CVX",
+      "PG"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879524%2Fman-looking-in-the-distance-with-a-pair-of-binoculars.jpg&w=1200&op=resize",
+    "description": "The Schwab U.S. Dividend Equity ETF (SCHD) is recommended as the best dividend ETF for long-term investors seeking a 20-year income strategy. Unlike the Vanguard Dividend Appreciation ETF (VIG) and iShares Core Dividend Growth ETF (DGRO), SCHD maintains better sector balance and prioritizes dividend yield and fundamental value, with top holdings in stable consumer staples like Coca-Cola, Merck, Chevron, and Procter & Gamble that will remain relevant over decades.",
+    "keywords": [
+      "dividend ETF",
+      "long-term investing",
+      "sector balance",
+      "dividend yield",
+      "consumer staples",
+      "portfolio diversification"
+    ],
+    "insights": [
+      {
+        "ticker": "SCHD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recommended as the superior choice among dividend ETFs due to its balanced sector exposure, higher dividend yield (3.13%), low expense ratio (0.06%), and focus on fundamentally sound dividend-paying companies with predictable long-term demand."
+      },
+      {
+        "ticker": "VIG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Acknowledged as a solid option but criticized for excessive technology concentration (26% of portfolio) driven by AI hype, with top holdings (Broadcom, Apple, Microsoft) creating concentration risk and a lower trailing yield of 1.5%, making it more of a growth fund than income fund."
+      },
+      {
+        "ticker": "DGRO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Considered a solid option but flagged for poor sector balance with 21% in financials and 18% in healthcare during periods of potential secular headwinds in both industries, limiting its suitability for long-term stability."
+      },
+      {
+        "ticker": "KO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Highlighted as a top holding in SCHD with proven dividend pedigree and a predictable business model that will remain in demand over 20 years."
+      },
+      {
+        "ticker": "MRK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a top holding in SCHD with established dividend history and fundamental strength, though healthcare sector faces some long-term cost challenges."
+      },
+      {
+        "ticker": "CVX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Included as a top holding in SCHD with proven dividend pedigree and a business model expected to remain relevant over the 20-year investment horizon."
+      },
+      {
+        "ticker": "PG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Featured as a top holding in SCHD with a strong dividend history and predictable consumer staples business model suitable for long-term income generation."
+      }
+    ]
+  },
+  {
+    "id": "b971884457588058681cdc8a8f193686131748dde91ad817e76cd5d07281b104",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "After Soaring Nearly 90% Thus Far in 2026, Is Moderna's Stock Still a Buy?",
+    "author": "David Jagielski, Cpa",
+    "published_utc": "2026-07-27T20:02:27Z",
+    "article_url": "https://www.fool.com/investing/2026/07/27/after-doubling-this-year-is-modernas-stock-still-a/?source=iedfolrf0000001",
+    "tickers": [
+      "MRNA",
+      "MRK"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880489%2Fa-doctor-looking-at-a-tablet-with-another-person.jpg&w=1200&op=resize",
+    "description": "Moderna's stock has surged nearly 90% in 2026, driven by positive FDA news about its flu vaccine mRNA-1010 in June. However, the rally appears unjustified as the vaccine is unlikely to generate significant revenue ($1B by 2028) and the company faces fundamental challenges including $3.4B in operating losses over the trailing 12 months, declining revenue, and dependence on COVID vaccine sales. With a $20B+ market cap and limited compelling growth catalysts beyond the experimental cancer vaccine mRNA-4157, the stock appears overvalued for its risk profile.",
+    "keywords": [
+      "Moderna stock",
+      "vaccine development",
+      "mRNA-1010 flu vaccine",
+      "mRNA-4157 cancer vaccine",
+      "operating losses",
+      "valuation concerns",
+      "COVID vaccine dependency"
+    ],
+    "insights": [
+      {
+        "ticker": "MRNA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Despite recent stock rally, the company faces significant headwinds including $3.4B in operating losses, declining revenue, limited near-term growth catalysts outside of flu/RSV vaccines, and overvaluation relative to risk. The FDA approval of mRNA-1010 does not justify the premium valuation given competitive market and modest revenue potential."
+      },
+      {
+        "ticker": "MRK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Merck is mentioned as a partner in developing mRNA-4157 (personalized cancer vaccine), which remains in development with no approval guarantee. The partnership represents potential upside but carries development risk and is not a primary focus of the article's analysis."
+      }
+    ]
+  },
+  {
+    "id": "cfc90c87ae8f97741bd8c21f09320bb03aae4a014cbc6df4ca14112c11778503",
     "publisher": {
       "name": "GlobeNewswire Inc.",
       "homepage_url": "https://www.globenewswire.com",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
     },
-    "title": "Autoimmune Disease Therapeutics Market Size to Reach USD 137.85 Billion by 2035 as Biologics and Precision Medicine Drive Growth | SNS Insider",
-    "author": "Sns Insider",
-    "published_utc": "2026-07-15T15:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/15/3327918/0/en/Autoimmune-Disease-Therapeutics-Market-Size-to-Reach-USD-137-85-Billion-by-2035-as-Biologics-and-Precision-Medicine-Drive-Growth-SNS-Insider.html",
+    "title": "Ascentage Pharma Chairman and CEO Dr. Dajun Yang Named to The Medicine Maker Power List 2026",
+    "author": "Ascentage Pharma Group International",
+    "published_utc": "2026-07-26T23:30:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/26/3333236/0/en/Ascentage-Pharma-Chairman-and-CEO-Dr-Dajun-Yang-Named-to-The-Medicine-Maker-Power-List-2026.html",
     "tickers": [
-      "ABBV",
-      "NVS",
-      "AMGN",
-      "JNJ",
-      "PFE",
-      "RHHBY",
-      "BMY",
-      "CELGr",
-      "MRK",
-      "GSK",
-      "LLY",
-      "BIIB",
-      "GILD",
+      "TAK",
       "AZN",
-      "REGN",
-      "SNY",
-      "TAK"
+      "MRK",
+      "PFE",
+      "AAPG"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
-    "description": "The global autoimmune disease therapeutics market is projected to grow from USD 80.54 billion in 2025 to USD 137.85 billion by 2035, with a CAGR of 5.52%. Growth is driven by rising prevalence of autoimmune diseases, adoption of biologics, JAK inhibitors, monoclonal antibodies, and precision medicine technologies. North America leads with 39.96% market share, while Asia-Pacific shows the fastest growth at 6.28% CAGR.",
+    "image_url": "https://ml.globenewswire.com/Resource/Download/b9623a51-a13b-4b80-8152-61d5014f4a0a",
+    "description": "Dr. Dajun Yang, Chairman and CEO of Ascentage Pharma, has been recognized in The Medicine Maker Power List 2026, ranking No. 3 in the Small Molecules category. The recognition highlights the company's achievements in advancing innovative cancer therapies, including the commercialization of olverembatinib and lisaftoclax, with multiple global Phase III clinical trials underway.",
     "keywords": [
-      "autoimmune disease therapeutics",
-      "biologics",
-      "JAK inhibitors",
-      "monoclonal antibodies",
-      "precision medicine",
-      "rheumatoid arthritis",
-      "multiple sclerosis",
-      "market growth",
-      "FDA approvals",
-      "biosimilars"
+      "oncology",
+      "small molecule inhibitors",
+      "BCR-ABL tyrosine kinase inhibitor",
+      "Bcl-2 inhibitor",
+      "clinical trials",
+      "drug development",
+      "cancer therapy",
+      "hematologic malignancies"
     ],
     "insights": [
-      {
-        "ticker": "ABBV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company is actively expanding its immunology pipeline with Phase III trials for next-generation JAK inhibitors targeting rheumatoid arthritis and psoriatic arthritis, demonstrating strong R&D investment in growing market segment."
-      },
-      {
-        "ticker": "NVS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Received FDA approval for new oral S1P receptor modulator for multiple sclerosis in 2024, strengthening its neurology portfolio and positioning it well in the fastest-growing indication segment."
-      },
-      {
-        "ticker": "AMGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as leading market player in growing autoimmune therapeutics market with strong presence in biologics segment, which is expected to comprise 42% of U.S. autoimmune disease prescription revenues."
-      },
-      {
-        "ticker": "JNJ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major player in autoimmune therapeutics market positioned to benefit from growing demand for biologics and targeted therapies across multiple indications."
-      },
-      {
-        "ticker": "PFE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Leading market player with significant presence in autoimmune disease therapeutics, well-positioned to capture market growth driven by biologics adoption and precision medicine."
-      },
-      {
-        "ticker": "RHHBY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major player in biologics and monoclonal antibodies segment, positioned to benefit from market expansion driven by increased biologic adoption and FDA/EMA approvals."
-      },
-      {
-        "ticker": "BMY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Leading market player with strong portfolio in autoimmune therapeutics, benefiting from growing demand for JAK inhibitors and biologics in the expanding market."
-      },
-      {
-        "ticker": "CELGr",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Leading market player with strong portfolio in autoimmune therapeutics, benefiting from growing demand for JAK inhibitors and biologics in the expanding market."
-      },
-      {
-        "ticker": "MRK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major pharmaceutical player positioned to benefit from market growth driven by increasing prevalence of autoimmune diseases and adoption of advanced therapeutics."
-      },
-      {
-        "ticker": "GSK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major player in autoimmune therapeutics market with portfolio positioned to benefit from growing demand for biologics and targeted therapies."
-      },
-      {
-        "ticker": "LLY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Leading market player with strong presence in immunology, positioned to benefit from market expansion driven by biologics adoption and precision medicine."
-      },
-      {
-        "ticker": "BIIB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Specialist in neurology and immunology with strong focus on multiple sclerosis, which is the fastest-growing indication at 6.34% CAGR in the market."
-      },
-      {
-        "ticker": "GILD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as leading market player with presence in autoimmune therapeutics, positioned to benefit from market growth and increasing adoption of targeted therapies."
-      },
-      {
-        "ticker": "AZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major pharmaceutical player positioned to benefit from growing autoimmune therapeutics market driven by biologics adoption and precision medicine innovations."
-      },
-      {
-        "ticker": "REGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Specialist in monoclonal antibodies and biologics, well-positioned to benefit from market expansion driven by increased adoption of biologic therapies."
-      },
-      {
-        "ticker": "SNY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed as leading market player with presence in autoimmune therapeutics, positioned to capture growth from biologics and precision medicine adoption."
-      },
       {
         "ticker": "TAK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Leading market player with presence in autoimmune disease therapeutics, positioned to capture market growth from increasing prevalence and treatment adoption."
-      }
-    ]
-  },
-  {
-    "id": "6098c5b6abfce14ec09d23a587c0ea379317776c8f2d03e026656e88cb33254f",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Slate Medicines Strengthens Board of Directors with Appointment of Mark W. Hahn",
-    "author": "Na",
-    "published_utc": "2026-07-15T12:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/15/3327632/0/en/Slate-Medicines-Strengthens-Board-of-Directors-with-Appointment-of-Mark-W-Hahn.html",
-    "tickers": [
-      "MRK"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/301a2f41-9e40-4e0c-b6f3-d143cd0a0f6b",
-    "description": "Slate Medicines, a biotech company developing migraine treatments, announced the appointment of Mark W. Hahn to its Board of Directors. Hahn brings over 25 years of life sciences leadership experience, including serving as CFO at Verona Pharma during its $10 billion acquisition by Merck in 2025. His appointment comes as Slate advances SLTE-1009, a PACAP-targeting therapeutic for migraine prevention.",
-    "keywords": [
-      "biotech",
-      "migraine treatment",
-      "board appointment",
-      "PACAP-targeting therapeutics",
-      "SLTE-1009",
-      "drug development",
-      "clinical trials"
-    ],
-    "insights": [
-      {
-        "ticker": "MRK",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Merck is mentioned only in the context of its 2025 acquisition of Verona Pharma, which is historical background information about the newly appointed board member. There is no direct news or developments regarding Merck itself."
-      }
-    ]
-  },
-  {
-    "id": "a7ef998b217af92f34b7a746c328a591e16e9f6dedfa61e35aa00e5b207d4b88",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Oral Obesity Therapies Market to Reach $6.32 Billion by 2030 as Demand for GLP-1 Treatments Accelerates",
-    "author": "Researchandmarkets.Com",
-    "published_utc": "2026-07-15T08:15:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/15/3327501/28124/en/Oral-Obesity-Therapies-Market-to-Reach-6-32-Billion-by-2030-as-Demand-for-GLP-1-Treatments-Accelerates.html",
-    "tickers": [
-      "NVO",
-      "LLY",
-      "PFE",
-      "MRK",
-      "AZN",
-      "RHHBY"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/16c46047-4157-4a5e-8c8a-9657181644ae",
-    "description": "The global oral obesity therapies market is projected to grow from $4.32 billion in 2026 to $6.32 billion by 2030, with a compound annual growth rate of 9.9%. The market expansion is driven by increasing demand for GLP-1 treatments, combination therapies, personalized metabolic treatments, and telehealth-enabled prescribing. Key opportunities include oral GLP-1 agonists, next-generation incretin drugs, and convenient non-injectable options for obesity management.",
-    "keywords": [
-      "oral obesity therapies",
-      "GLP-1 agonists",
-      "weight loss drugs",
-      "pharmaceutical market",
-      "combination therapies",
-      "telehealth prescribing",
-      "metabolic treatments",
-      "gut hormone modulators"
-    ],
-    "insights": [
-      {
-        "ticker": "NVO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "As a major pharmaceutical company specializing in GLP-1 therapies, Novo Nordisk is well-positioned to benefit from the accelerating demand for oral obesity treatments, which is the primary growth driver of the market through 2030."
-      },
-      {
-        "ticker": "LLY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Eli Lilly is prominently featured among leading companies in the oral obesity therapies market and has significant GLP-1 drug development initiatives, positioning it to capture market share in this rapidly expanding sector."
-      },
-      {
-        "ticker": "PFE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Pfizer is listed among the top companies profiled in the report, indicating its involvement in the oral obesity therapies market with potential opportunities in combination therapies and next-generation treatments."
-      },
-      {
-        "ticker": "MRK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Merck is highlighted as a major player in the oral obesity therapies market, with opportunities to develop and commercialize innovative oral obesity drugs across multiple therapeutic mechanisms."
+        "sentiment_reasoning": "Mentioned as a global partnership partner with Ascentage Pharma, but no specific details about the partnership or its impact are provided in the article."
       },
       {
         "ticker": "AZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "AstraZeneca is included among leading pharmaceutical companies in the market, with potential to benefit from the growing demand for oral obesity therapies and personalized metabolic treatments."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a global partnership partner with Ascentage Pharma, but no specific details about the partnership or its impact are provided in the article."
       },
       {
-        "ticker": "RHHBY",
+        "ticker": "MRK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a global partnership partner with Ascentage Pharma, but no specific details about the partnership or its impact are provided in the article."
+      },
+      {
+        "ticker": "PFE",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a global partnership partner with Ascentage Pharma, but no specific details about the partnership or its impact are provided in the article."
+      },
+      {
+        "ticker": "AAPG",
         "sentiment": "positive",
-        "sentiment_reasoning": "Roche is listed as a top company in the oral obesity therapies market, with opportunities to leverage its pharmaceutical expertise in developing innovative oral obesity treatments."
+        "sentiment_reasoning": "The company's CEO received industry recognition for leadership in drug discovery and innovation. The company has successfully commercialized two innovative therapies and is advancing multiple global Phase III clinical trials cleared by FDA and EMA, demonstrating strong pipeline progress and commercial success."
       }
     ]
   },
   {
-    "id": "9027ee620776f07c3ff686c15f38225a802cddb775ed69fe596edefb6c39f2c0",
+    "id": "589e1250ea7cf3e50043d7784e9f89a9e763c3965c556b884497107c28eb1b53",
     "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Head and Neck Squamous Cell Carcinoma Market is Projected to Boost at a CAGR of 10.5% During the Forecast Period (2026\u20132036) Due to the Launch of Emerging Novel Immunotherapies | DelveInsight",
-    "author": "Na",
-    "published_utc": "2026-07-13T17:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/13/3326387/0/en/Head-and-Neck-Squamous-Cell-Carcinoma-Market-is-Projected-to-Boost-at-a-CAGR-of-10-5-During-the-Forecast-Period-2026-2036-Due-to-the-Launch-of-Emerging-Novel-Immunotherapies-DelveI.html",
+    "title": "If I Were Starting My Portfolio From Scratch Today, This Is the First ETF I'd Buy",
+    "author": "Matt Dilallo",
+    "published_utc": "2026-07-26T12:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/26/if-i-were-starting-my-portfolio-from-scratch-today/?source=iedfolrf0000001",
     "tickers": [
-      "JNJ",
-      "BNTX",
-      "GMAB",
-      "IMMP",
-      "CUE",
-      "EDGE",
-      "PDSB",
+      "SCHD",
+      "ABT",
       "MRK",
-      "BMY",
-      "CELGr",
-      "INO"
+      "UNH"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/dbcddd65-71dd-4559-8875-ae89ac4f96db",
-    "description": "The head and neck squamous cell carcinoma (HNSCC) market is expected to grow at a CAGR of 10.5% from 2026-2036, driven by rising cancer incidence, increased adoption of immunotherapies, and the launch of emerging novel treatments. The market was valued at USD 850 million in 2025 across seven major markets, with KEYTRUDA currently generating the highest revenue. Multiple companies are advancing innovative therapies targeting HPV16-positive HNSCC and other molecular pathways.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879297%2Fa-person-looking-at-a-screen-with-the-word-etf-on-it-along-with-several-investing-diagrams.jpg&w=1200&op=resize",
+    "description": "An experienced investor recommends the Schwab U.S. Dividend Equity ETF (SCHD) as the foundational holding for a new portfolio. The ETF focuses on high-yielding dividend-growth stocks and has delivered over 12% average annualized returns over multiple periods, outperforming pure growth stocks and high-yield stocks with lower volatility.",
     "keywords": [
-      "head and neck squamous cell carcinoma",
-      "HNSCC market",
-      "immunotherapy",
-      "cancer treatment",
-      "HPV16-positive",
-      "targeted therapy",
-      "therapeutic vaccines",
-      "bispecific antibodies"
+      "dividend growth stocks",
+      "ETF",
+      "portfolio foundation",
+      "dividend equity",
+      "long-term investing",
+      "volatility",
+      "total returns"
     ],
     "insights": [
+      {
+        "ticker": "SCHD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The ETF is recommended as an ideal foundational holding with exceptional performance metrics including 12%+ average annualized returns, 11.2% compound annual payout growth since 2017, low expense ratio of 0.06%, and lower volatility compared to other stock categories. The author explicitly states it would be their first choice for a new portfolio."
+      },
+      {
+        "ticker": "ABT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding (4.54%) in SCHD but mentioned only as a portfolio component without specific commentary or analysis."
+      },
+      {
+        "ticker": "MRK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding (4.47%) in SCHD but mentioned only as a portfolio component without specific commentary or analysis."
+      },
+      {
+        "ticker": "UNH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding (4.41%) in SCHD but mentioned only as a portfolio component without specific commentary or analysis."
+      }
+    ]
+  },
+  {
+    "id": "1e80ef10f8ffc430632852f1c249ad5a76a0ee98e732ef177dacfc3761bc1ca3",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "2 Top Growth Stocks to Buy Right Now Without Any Hesitation",
+    "author": "Prosper Junior Bakiny",
+    "published_utc": "2026-07-24T04:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/24/2-top-growth-stocks-to-buy-right-now-without-any-h/?source=iedfolrf0000001",
+    "tickers": [
+      "LLY",
+      "ISRG",
+      "JNJ",
+      "NVO",
+      "MRK",
+      "ABBV"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880083%2Feli-lilly-and-intuitive-surgical-logos.png&w=1200&op=resize",
+    "description": "The article recommends Eli Lilly and Intuitive Surgical as outstanding healthcare stocks to buy. Eli Lilly is positioned as a leader in the rapidly growing weight management medicine market with approved drugs like Zepbound and Foundayo, plus promising pipeline candidates like retatrutide. Intuitive Surgical, despite recent underperformance and headwinds, is viewed as a buying opportunity due to the successful launch of its da Vinci 5 surgical system and strong long-term prospects driven by innovation and high switching costs.",
+    "keywords": [
+      "weight management",
+      "obesity epidemic",
+      "pharmaceutical",
+      "robotic-assisted surgery",
+      "healthcare stocks",
+      "pipeline",
+      "innovation",
+      "market opportunity"
+    ],
+    "insights": [
+      {
+        "ticker": "LLY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Leading position in rapidly growing weight management market with approved products (Zepbound, Foundayo) showing strong performance, deep pipeline with promising candidates like retatrutide demonstrating superior efficacy, and broader pharmaceutical portfolio positioning it as a top-performing pharma giant with continued growth potential."
+      },
+      {
+        "ticker": "ISRG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Despite recent 33% underperformance and near-term headwinds (competition, tariffs, lower margins), the company benefits from successful da Vinci 5 launch with advanced capabilities, strong competitive moat due to high switching costs, 20+ years of real-world outcomes, and significant long-term opportunities in robotic-assisted surgery adoption and AI-assisted procedures."
+      },
       {
         "ticker": "JNJ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Developing Amivantamab (RYBREVANT), which received FDA Breakthrough Therapy Designation in February 2026 for recurrent/metastatic HPV-unrelated HNSCC. The drug represents a significant advancement in treatment options and positions the company favorably in the growing HNSCC market."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned only in disclosure statements regarding analyst positions and Motley Fool recommendations; no substantive analysis or investment thesis provided in the article."
       },
       {
-        "ticker": "BNTX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Advancing BNT113, an emerging immunotherapy for HNSCC. The company is positioned to benefit from the growing adoption of novel immunotherapies and the expanding HNSCC treatment market."
-      },
-      {
-        "ticker": "GMAB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Developing Petosemtamab (MCLA-158), a bispecific antibody with Breakthrough Therapy Designation for second-line recurrent/metastatic HNSCC. The therapy has shown clinical potential with updated data anticipated in 2025 and represents a competitive advantage in the market."
-      },
-      {
-        "ticker": "IMMP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Developing Eftilagimod Alfa, a novel LAG-3 agonist granted FDA Fast Track designation for first-line HNSCC treatment. The innovative mechanism of action positions the company well in the emerging immunotherapy landscape."
-      },
-      {
-        "ticker": "CUE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Advancing CUE-101, a therapeutic cancer vaccine showing notable clinical potential and considered among the most promising investigational therapies for HNSCC moving toward regulatory approval."
-      },
-      {
-        "ticker": "EDGE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Developing Versamune HPV and PDS0101, therapeutic cancer vaccines with demonstrated clinical potential in HNSCC. The company is well-positioned in the growing therapeutic vaccine segment."
-      },
-      {
-        "ticker": "PDSB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Developing Versamune HPV and PDS0101, therapeutic cancer vaccines with demonstrated clinical potential in HNSCC. The company is well-positioned in the growing therapeutic vaccine segment."
+        "ticker": "NVO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor to Eli Lilly in the weight management market and in related lawsuit context; no detailed analysis or investment recommendation provided."
       },
       {
         "ticker": "MRK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "KEYTRUDA is the leading revenue-generating therapy for HNSCC in 2025. The company maintains a strong market position, though emerging competitors may challenge its dominance as new therapies launch."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned only in disclosure statements regarding Motley Fool recommendations; no substantive analysis provided in the article."
       },
       {
-        "ticker": "BMY",
+        "ticker": "ABBV",
         "sentiment": "neutral",
-        "sentiment_reasoning": "OPDIVO is an established PD-1 inhibitor for HNSCC but faces competition from KEYTRUDA and emerging therapies. The company maintains market presence but lacks significant growth catalysts mentioned in the article."
-      },
-      {
-        "ticker": "CELGr",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "OPDIVO is an established PD-1 inhibitor for HNSCC but faces competition from KEYTRUDA and emerging therapies. The company maintains market presence but lacks significant growth catalysts mentioned in the article."
-      },
-      {
-        "ticker": "INO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Developing INO-3112, an investigational therapy in the expanding HNSCC pipeline. The company is positioned to benefit from the growing market and emerging treatment paradigms."
-      }
-    ]
-  },
-  {
-    "id": "2b03e1344502d4e232030ebc6263fe80fddbe3a7faeab71305dc3717e875c9ec",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Cosmos Health Accelerates Prescription Medicine Strategy with Libytec Partnership to Commercialize DIABIT-IS X in Greece",
-    "author": "Na",
-    "published_utc": "2026-07-13T17:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/13/3326385/0/en/Cosmos-Health-Accelerates-Prescription-Medicine-Strategy-with-Libytec-Partnership-to-Commercialize-DIABIT-IS-X-in-Greece.html",
-    "tickers": [
-      "MRK"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/29681d62-58aa-4ccf-bad9-cb7ce8ae66e4",
-    "description": "Cosmos Health has partnered with Libytec Pharmaceutical to commercialize DIABIT-IS X (sitagliptin), a generic diabetes medication, in Greece. Under a five-year agreement, Cosmos will supply the drug while Libytec handles distribution and promotion. As a prescription medicine covered by Greece's national health insurance system, DIABIT-IS X is positioned to reach a broad patient population and contribute meaningfully to revenue and cash flow.",
-    "keywords": [
-      "type-2 diabetes medication",
-      "sitagliptin",
-      "generic alternative",
-      "Greece market",
-      "distribution partnership",
-      "prescription medicine",
-      "national health insurance",
-      "revenue growth"
-    ],
-    "insights": [
-      {
-        "ticker": "MRK",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Merck is mentioned only as the owner of the branded Januvia and Janumet drugs that generated $4.5 billion in combined global sales in 2022. DIABIT-IS X is a generic alternative that will compete in this market, but the article does not provide specific competitive impact analysis."
+        "sentiment_reasoning": "Mentioned only in disclosure statements regarding Motley Fool recommendations; no substantive analysis provided in the article."
       }
     ]
   }

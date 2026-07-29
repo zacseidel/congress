@@ -1,341 +1,334 @@
 [
   {
-    "id": "a25396945492fbad3272669e99c73aa79d6092460f2003ec1cbba5ce4ae08d9b",
+    "id": "fda1c330edde014dca6652b0a8b164eec500a0e95409fec72f63d7b602030ac7",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Why Lucid Stock Bounced Back Today",
-    "author": "Howard Smith",
-    "published_utc": "2026-07-15T14:30:18Z",
-    "article_url": "https://www.fool.com/investing/2026/07/15/why-lucid-stock-bounced-back-today/?source=iedfolrf0000001",
+    "title": "Ford Just Delivered Bad News for Tesla Investors",
+    "author": "Marc Guberti",
+    "published_utc": "2026-07-29T15:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/29/ford-just-delivered-bad-news-for-tesla-investors/?source=iedfolrf0000001",
     "tickers": [
-      "LCID",
-      "UBER"
+      "TSLA",
+      "F",
+      "FpB",
+      "FpC",
+      "FpD",
+      "AAPL",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "UBER",
+      "NVDA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878943%2Flucid-logo-the-motley-fool.png&w=1200&op=resize",
-    "description": "Lucid Group stock recovered 17% after the company strongly denied bankruptcy and going-private rumors that caused a 50% plunge the previous day. The company's chief legal officer issued a letter refuting the claims and threatened legal action against the publication. With $4.7 billion in liquidity but still unprofitable, investors will watch the Q2 earnings report on August 4 for signs of progress from the new Gravity SUV and Uber robotaxi partnership.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880677%2Fgettyimages-1441650317-1200x844-3b42050.jpg&w=1200&op=resize",
+    "description": "Ford announced it will achieve point-to-point autonomy by 2028 with Apple executives working on the technology, positioning itself to enter the robotaxi market. This threatens Tesla's dominance in robotaxis, one of the key growth drivers justifying Tesla's extremely high P/E ratio of ~300. As traditional automakers like Ford, Toyota, and Volkswagen enter the robotaxi space, competition will intensify and pressure Tesla's future margins and growth rates in this sector.",
     "keywords": [
-      "Lucid Group",
-      "bankruptcy denial",
-      "stock recovery",
+      "robotaxis",
+      "autonomous vehicles",
       "electric vehicles",
-      "Gravity SUV",
-      "Uber partnership",
-      "profitability concerns"
+      "market competition",
+      "valuation risk",
+      "self-driving technology"
     ],
     "insights": [
       {
-        "ticker": "LCID",
+        "ticker": "TSLA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Tesla faces increasing competition in robotaxis from Ford and other automakers. With a P/E ratio of ~300, Tesla has no margin for error and relies heavily on robotaxi and humanoid robot success. Rising competition threatens growth rates and profit margins in this critical segment."
+      },
+      {
+        "ticker": "F",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Ford is making strategic progress in autonomous vehicle technology with Apple executives involved, positioning itself to enter the high-margin robotaxi market by 2028. This represents a significant growth opportunity for the company."
+      },
+      {
+        "ticker": "FpB",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Ford is making strategic progress in autonomous vehicle technology with Apple executives involved, positioning itself to enter the high-margin robotaxi market by 2028. This represents a significant growth opportunity for the company."
+      },
+      {
+        "ticker": "FpC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Ford is making strategic progress in autonomous vehicle technology with Apple executives involved, positioning itself to enter the high-margin robotaxi market by 2028. This represents a significant growth opportunity for the company."
+      },
+      {
+        "ticker": "FpD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Ford is making strategic progress in autonomous vehicle technology with Apple executives involved, positioning itself to enter the high-margin robotaxi market by 2028. This represents a significant growth opportunity for the company."
+      },
+      {
+        "ticker": "AAPL",
         "sentiment": "neutral",
-        "sentiment_reasoning": "While the stock bounced back 17% on the denial and legal threat, the company remains unprofitable and faces significant financial challenges. The recovery is primarily a relief rally rather than positive fundamental news. Future performance depends on Q2 results and execution of new products."
+        "sentiment_reasoning": "Apple is mentioned as having executives working on Ford's autonomous technology, but the article provides no specific details about Apple's involvement, benefits, or strategic implications for Apple itself."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Waymo is noted as already operating in more cities than Tesla's robotaxis, indicating competitive progress, but the article does not provide forward-looking analysis or sentiment about Alphabet's robotaxi prospects."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Waymo is noted as already operating in more cities than Tesla's robotaxis, indicating competitive progress, but the article does not provide forward-looking analysis or sentiment about Alphabet's robotaxi prospects."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Waymo is noted as already operating in more cities than Tesla's robotaxis, indicating competitive progress, but the article does not provide forward-looking analysis or sentiment about Alphabet's robotaxi prospects."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Waymo is noted as already operating in more cities than Tesla's robotaxis, indicating competitive progress, but the article does not provide forward-looking analysis or sentiment about Alphabet's robotaxi prospects."
       },
       {
         "ticker": "UBER",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only in context of a partnership with Lucid for robotaxi fleet development. No specific news or impact on Uber is discussed in the article."
+        "sentiment_reasoning": "Uber's recent partnership with Nvidia to launch robotaxis across 28 cities is mentioned as competition to Tesla, but the article provides no specific analysis of Uber's prospects or implications."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Nvidia is mentioned as partnering with Uber on robotaxi deployment, but the article does not analyze the impact or implications for Nvidia's business."
       }
     ]
   },
   {
-    "id": "c498913b7b45aa20b0e4b91539390e16f44e0e4a4839da978650b3cc3ce88918",
+    "id": "358057610349146682c3f46b73d36a2028c0a2522b954b78cfd753ebdf1f2b8a",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "SpaceX Fell Below Its Debut Price. History Says a $10,000 Investment Will be Worth This Much in a Year.",
-    "author": "Adria Cimino",
-    "published_utc": "2026-07-15T08:02:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/15/spacex-fell-below-its-debut-price-history-says-a-1/?source=iedfolrf0000001",
+    "title": "Rivian Automotive's Next Earnings Report on July 30 Could Send the Stock Soaring. Here's Why.",
+    "author": "Ryan Vanzo",
+    "published_utc": "2026-07-27T20:20:01Z",
+    "article_url": "https://www.fool.com/investing/2026/07/27/rivian-automotives-next-earnings-report-on-july-30-could-send-the-stock-soaring-heres-why/?source=iedfolrf0000001",
     "tickers": [
-      "SPCX",
+      "RIVN",
       "UBER"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878618%2Fgettyimages-ab63034-1200x933-4de46e9-1.jpg&w=1200&op=resize",
-    "description": "SpaceX completed a historic $85 billion IPO and surged 50% to $225 in early trading, but has since fallen below its $150 debut price. Historical analysis of major IPOs shows that 8 out of 10 major IPOs declined in their first year, with an average drop of 12%. Applying this trend to SpaceX suggests a $10,000 investment could be worth approximately $8,800 after 12 months, though the company's ambitious growth businesses in rockets, satellite internet, and AI could potentially break this historical pattern.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fd6835bc976b163ac455cfcc34980f0c81820d9bf-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Rivian's July 30 earnings report could drive significant stock gains as investors focus on R2 SUV production and sales scaling. The company raised 2026 delivery forecasts to 65,000-70,000 vehicles and delivered 12,194 vehicles in Q2, exceeding guidance. Analyst Alexander Potter upgraded the stock to 'overweight' citing strong R2 ramp, avoided launch issues, and capital raise funding growth. The affordable R2 model targets mass market buyers and robotaxi operators, with Uber's $1.25 billion order for up to 50,000 units signaling strong demand.",
     "keywords": [
-      "IPO",
-      "SpaceX",
-      "stock performance",
-      "first-year returns",
-      "historical IPO trends",
-      "space exploration",
-      "satellite internet",
-      "artificial intelligence"
+      "earnings report",
+      "R2 SUV",
+      "production scaling",
+      "delivery guidance",
+      "robotaxi market",
+      "EV market",
+      "analyst upgrade",
+      "capital raise"
     ],
     "insights": [
       {
-        "ticker": "SPCX",
+        "ticker": "RIVN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong Q2 delivery beat (12,194 vs 9,000-11,000 guidance), raised 2026 delivery forecast, successful R2 launch without major issues, analyst upgrade to 'overweight' with price target increase from $18 to $20, and major Uber order of 50,000 R2s demonstrate positive momentum and growth catalysts."
+      },
+      {
+        "ticker": "UBER",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a customer placing a $1.25 billion order for up to 50,000 Rivian R2s for robotaxi operations, indicating strategic investment in autonomous vehicle capabilities, but the article does not provide direct sentiment about Uber's business or stock performance."
+      }
+    ]
+  },
+  {
+    "id": "5a9ec225954f3db7a1c27a55790b523e5d8b393dbd172a73757265cbdd5b709d",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Does PayPal Have a Buyer?",
+    "author": "Motley Fool Staff",
+    "published_utc": "2026-07-25T01:16:55Z",
+    "article_url": "https://www.fool.com/investing/2026/07/24/does-paypal-have-a-buyer/?source=iedfolrf0000001",
+    "tickers": [
+      "PYPL",
+      "JNJ",
+      "UBER"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fab7d7eca8634b0e50c42ea0389e3d94afc0d18ef-1280x720.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Stripe and private equity firm Advent International have submitted a joint proposal to acquire PayPal for $60.50 per share, valuing the company at over $53 billion\u2014a 28% premium. The deal would be structured as a 50/50 partnership to keep PayPal intact rather than break it up. While the offer highlights PayPal's fall from its $360 billion pandemic-era peak, analysts debate whether the price is sufficient and whether the partnership structure can work given inherent tensions between Stripe's growth ambitions and Advent's cash flow optimization goals.",
+    "keywords": [
+      "PayPal acquisition",
+      "Stripe",
+      "Advent International",
+      "fintech",
+      "private equity",
+      "payment infrastructure",
+      "Johnson & Johnson earnings",
+      "Uber autonomous vehicles",
+      "regulatory capture"
+    ],
+    "insights": [
+      {
+        "ticker": "PYPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While the acquisition offer represents a 28% premium and potential exit for shareholders, analysts question whether $60.50/share is sufficient given the company's $6 billion free cash flow and institutional ownership expectations. The deal structure also presents execution risks."
+      },
+      {
+        "ticker": "JNJ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company beat earnings expectations on both top and bottom lines, raised full-year guidance, and is on track to cross $100 billion in revenue for the first time. Long-term fundamentals remain strong despite short-term patent concerns."
+      },
+      {
+        "ticker": "UBER",
         "sentiment": "negative",
-        "sentiment_reasoning": "Stock has fallen below its $150 debut price after initial 50% surge. Historical IPO data suggests 12% average decline in first year. Company posted $4.9 billion loss despite 30% revenue growth, indicating heavy investment needs and near-term profitability challenges."
+        "sentiment_reasoning": "Uber is shifting from disruptor to defensive incumbent, lobbying against standalone autonomous vehicle regulations in Washington D.C. The company's scattered investments in autonomous vehicle partners (Lucid, Nuro) are not scaling, while competitor Waymo dominates with 500,000+ weekly commercial trips."
+      }
+    ]
+  },
+  {
+    "id": "d752880c56b9c207926553962052ae47a9af96fc45fdb49669bbca68c296349a",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "David Tepper Has 5% of His Portfolio in This Little-Known Energy Stock. Here's Why.",
+    "author": "Stefon Walters",
+    "published_utc": "2026-07-24T06:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/24/david-tepper-has-5-of-his-portfolio-in-this-little/?source=iedfolrf0000001",
+    "tickers": [
+      "VST",
+      "META",
+      "AMZN",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "MU",
+      "TSM",
+      "UBER",
+      "BABA"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879265%2Fdavid-tepper_appaloosa-management_founder_imagesource_getty-images.jpeg&w=1200&op=resize",
+    "description": "Billionaire investor David Tepper's hedge fund Appaloosa Management holds a significant 5.12% stake in Vistra, an energy company positioned to benefit from AI data center power demands. Vistra supplies electricity to millions of customers and has secured major long-term power purchase agreements with tech companies like Meta. The company showed dramatic improvement with Q1 2026 net income of $1.03 billion compared to a $268 million loss in Q1 2025, though its stock has underperformed other AI-adjacent stocks.",
+    "keywords": [
+      "AI data centers",
+      "power generation",
+      "energy stocks",
+      "power purchase agreements",
+      "hedge fund holdings",
+      "electricity demand"
+    ],
+    "insights": [
+      {
+        "ticker": "VST",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong positioning in AI power supply market with major long-term contracts (Meta 20-year agreement), significant profitability turnaround (Q1 2026: $1.03B net income vs Q1 2025: -$268M loss), and backing from prominent investor David Tepper. However, stock has underperformed recently, suggesting potential upside."
       },
       {
         "ticker": "META",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a comparable major IPO that declined in its first year of trading, used as historical reference point only."
-      },
-      {
-        "ticker": "UBER",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a comparable major IPO that declined in its first year of trading, used as historical reference point only."
-      }
-    ]
-  },
-  {
-    "id": "cebebcc3feaea916a3beefd142186454e8c0645c6cea9a9f439fdde28829c850",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Had You Bought This Magnificent Vanguard ETF at the Start of January, You'd Be Crushing the S&P 500 in 2026",
-    "author": "Anthony Di Pizio",
-    "published_utc": "2026-07-14T15:17:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/14/bought-vanguard-etf-january-crushing-sp-500-2026/?source=iedfolrf0000001",
-    "tickers": [
-      "VGT",
-      "NVDA",
-      "AAPL",
-      "MSFT",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "AMZN",
-      "AVGO",
-      "MU",
-      "AMD",
-      "INTC",
-      "LRCX",
-      "UBER"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878573%2Fa-digital-render-of-a-bull-pushing-money-up-the-slope-of-a-roller-coaster.jpg&w=1200&op=resize",
-    "description": "The Vanguard Information Technology ETF (VGT) has returned 23.3% in 2026, significantly outpacing the S&P 500's 10.3% return. The ETF's strong performance is driven by five trillion-dollar tech companies\u2014Nvidia, Apple, Microsoft, Alphabet, and Amazon\u2014which comprise 50.6% of its portfolio. While AI infrastructure demand remains strong, rising costs and customer concerns about spending sustainability present near-term risks.",
-    "keywords": [
-      "Vanguard Information Technology ETF",
-      "AI infrastructure boom",
-      "semiconductor demand",
-      "tech stocks outperformance",
-      "capital expenditure concerns"
-    ],
-    "insights": [
-      {
-        "ticker": "VGT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ETF significantly outperforming S&P 500 with 23.3% YTD return vs 10.3%, strong historical track record of 14.9% compound annual returns since 2004, and positioned to benefit from long-term AI and emerging technologies."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Largest holding in VGT at 16.79%, outperforming S&P 500, benefits from strong AI chip demand where supply significantly lags demand."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Second-largest holding at 15.27% of VGT portfolio, contributing to ETF's outperformance."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Third-largest holding at 9.88%, leader in AI software and cloud services; currently lagging but described as attractively valued with recovery expected."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Major VGT holding among top five trillion-dollar companies, but CEO reports customer complaints about AI spending costs, indicating potential demand headwinds."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Major VGT holding among top five trillion-dollar companies, but CEO reports customer complaints about AI spending costs, indicating potential demand headwinds."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Major VGT holding among top five trillion-dollar companies, but CEO reports customer complaints about AI spending costs, indicating potential demand headwinds."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Major VGT holding among top five trillion-dollar companies, but CEO reports customer complaints about AI spending costs, indicating potential demand headwinds."
+        "sentiment_reasoning": "Mentioned as a major customer securing long-term power agreements with Vistra, indicating significant AI infrastructure investment, but no direct investment recommendation or performance analysis provided."
       },
       {
         "ticker": "AMZN",
         "sentiment": "neutral",
-        "sentiment_reasoning": "One of five trillion-dollar tech companies in VGT portfolio, but no specific performance details provided in article."
+        "sentiment_reasoning": "Listed as Appaloosa's largest holding and AI stock, but article focuses on Vistra rather than Amazon's fundamentals or outlook."
       },
       {
-        "ticker": "AVGO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Outperforming S&P 500, benefits from strong demand for data center chips critical to AI infrastructure."
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as one of Appaloosa's top AI holdings, but no specific analysis or recommendation provided."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as one of Appaloosa's top AI holdings, but no specific analysis or recommendation provided."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as one of Appaloosa's top AI holdings, but no specific analysis or recommendation provided."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as one of Appaloosa's top AI holdings, but no specific analysis or recommendation provided."
       },
       {
         "ticker": "MU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Outperforming S&P 500, benefits from strong demand for data center components critical to AI development."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock more than doubled in 2026, central to AI infrastructure boom."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock more than doubled in 2026, central to AI infrastructure boom."
-      },
-      {
-        "ticker": "LRCX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock more than doubled in 2026, central to AI infrastructure boom."
-      },
-      {
-        "ticker": "UBER",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Burned through entire 2026 AI budget in four months, COO expressing difficulty justifying AI spending levels, indicating cost concerns."
-      }
-    ]
-  },
-  {
-    "id": "811555c4b7d2f9a1979eec0030aade6ffd8dc99f78cd5ad9eae8ae7ef3023529",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Got $500? 5 Ridiculously Cheap Stocks You Can Buy Now",
-    "author": "Parkev Tatevosian, Cfa",
-    "published_utc": "2026-07-14T05:25:22Z",
-    "article_url": "https://www.fool.com/investing/2026/07/14/got-500-5-ridiculously-cheap-stocks-you-can-buy-no/?source=iedfolrf0000001",
-    "tickers": [
-      "CELH",
-      "NFLX",
-      "UBER",
-      "PINS",
-      "DKNG"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878735%2Fimkh4j8hpmx_i.png&w=1200&op=resize",
-    "description": "The article identifies five undervalued stocks trading below $100 per share that appear cheap based on various valuation metrics. Stock prices referenced are from July 10, 2026.",
-    "keywords": [
-      "undervalued stocks",
-      "cheap stocks",
-      "stocks under $100",
-      "valuation metrics",
-      "stock picking"
-    ],
-    "insights": [
-      {
-        "ticker": "CELH",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as one of the five undervalued stocks identified in the article; The Motley Fool recommends it"
-      },
-      {
-        "ticker": "NFLX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Author has a position in the stock and it is recommended by The Motley Fool"
-      },
-      {
-        "ticker": "UBER",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Author has a position in the stock and it is recommended by The Motley Fool"
-      },
-      {
-        "ticker": "PINS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Author has a position in the stock and it is recommended by The Motley Fool"
-      },
-      {
-        "ticker": "DKNG",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned in the stocks list but no explicit recommendation or analysis provided in the article"
-      }
-    ]
-  },
-  {
-    "id": "6603ec70ee9b958b0590b9c4484a4fcb99494f16c05c91d780b7978778f357ec",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "56% of Billionaire David Tepper's Portfolio at Appaloosa Is Put to Work in 6 AI Trailblazers",
-    "author": "Sean Williams",
-    "published_utc": "2026-07-08T11:06:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/08/56-billionaire-david-tepper-portfolio-6-ai-stocks/?source=iedfolrf0000001",
-    "tickers": [
-      "TSM",
-      "MU",
-      "AMZN",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "BABA",
-      "UBER"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877510%2Fmoney-manager-stock-chart-market-level-2-data-invest-getty.jpg&w=1200&op=resize",
-    "description": "Billionaire investor David Tepper has concentrated 56% of Appaloosa's $5.9 billion portfolio into six AI-focused companies. Two holdings (TSMC and Micron) provide critical AI infrastructure with exceptional demand and pricing power, while three others (Amazon, Alphabet, and Alibaba) are leading in AI applications through their cloud services with accelerating high-margin sales growth. Uber rounds out the six positions as an AI integrator in ride-hailing.",
-    "keywords": [
-      "artificial intelligence",
-      "AI infrastructure",
-      "cloud services",
-      "data centers",
-      "high-bandwidth memory",
-      "billionaire investor",
-      "portfolio concentration"
-    ],
-    "insights": [
+        "sentiment_reasoning": "Listed among Appaloosa's top holdings as an AI-related stock, but not analyzed in the article."
+      },
       {
         "ticker": "TSM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "World's leading advanced chip fabricator producing GPUs at capacity with exceptional demand and pricing power for AI data center buildout"
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Included in Appaloosa's top holdings as an AI hardware company, but receives no specific commentary."
       },
       {
-        "ticker": "MU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Critical supplier of high-bandwidth memory for AI data centers with orders booked years in advance and strong pricing power"
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "AWS ranks first globally in cloud infrastructure with 28% sales growth in Q1 after integrating generative AI solutions"
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Cloud ranks third globally in cloud services with 63% revenue jump from AI integration in the March quarter"
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Cloud ranks third globally in cloud services with 63% revenue jump from AI integration in the March quarter"
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Cloud ranks third globally in cloud services with 63% revenue jump from AI integration in the March quarter"
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Cloud ranks third globally in cloud services with 63% revenue jump from AI integration in the March quarter"
+        "ticker": "UBER",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as one of Appaloosa's top holdings, but noted as an exception to the AI stock theme without further analysis."
       },
       {
         "ticker": "BABA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Leading cloud infrastructure provider in China with 38% sales growth from Cloud Intelligence Group after AI integration"
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed among Appaloosa's holdings but receives no specific analysis or commentary in the article."
+      }
+    ]
+  },
+  {
+    "id": "933357bb17fb4e615dbc2fbf3e8bd6238d46a32d96adcdbd28094ad20df56be3",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Is Tesla\u2019s Earnings Miss and Negative Free Cash Flow a Red Flag for Rivian and Lucid Investors?",
+    "author": "Ryan Vanzo",
+    "published_utc": "2026-07-23T23:20:01Z",
+    "article_url": "https://www.fool.com/investing/2026/07/23/is-teslas-earnings-miss-and-negative-free-cash-flow-a-red-flag-for-rivian-and-lucid-investors/?source=iedfolrf0000001",
+    "tickers": [
+      "TSLA",
+      "RIVN",
+      "LCID",
+      "UBER"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F0e0ab899e473d30f3bb6723d72b82e5df0e1c150-2000x1200.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Tesla's stock fell 15% after reporting earnings that missed expectations, with weak margins and negative free cash flow of $1.09 billion due to surging capital expenditures. The primary concern is Tesla's robotaxi division struggling to scale, with fleet numbers stuck in the dozens rather than hundreds as previously guided. This slowdown may signal broader challenges for the robotaxi industry, potentially impacting Rivian and Lucid, which have lucrative supply deals with Uber for robotaxi vehicles but may face delayed growth timelines.",
+    "keywords": [
+      "Tesla earnings miss",
+      "robotaxi",
+      "free cash flow",
+      "capital expenditures",
+      "EV stocks",
+      "Uber partnership",
+      "scaling challenges"
+    ],
+    "insights": [
+      {
+        "ticker": "TSLA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock fell 14.38% following earnings miss with EPS of $0.33 vs. consensus of $0.50, declining gross margins (16.3% vs. 19.2%), negative free cash flow of $1.09 billion, and most critically, robotaxi division failing to scale as promised with fleet stuck in dozens rather than hundreds."
+      },
+      {
+        "ticker": "RIVN",
+        "sentiment": "negative",
+        "sentiment_reasoning": "While Rivian has a $1.25 billion deal with Uber for 50,000 R2 SUVs, Tesla's robotaxi scaling struggles suggest the broader robotaxi industry may face challenges, potentially delaying growth catalysts and revenue realization for Rivian's robotaxi vehicle supply business."
+      },
+      {
+        "ticker": "LCID",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Similar to Rivian, Lucid has a $500 million deal with Uber for 35,000 vehicles, but Tesla's inability to scale its robotaxi fleet indicates the robotaxi market may experience slower-than-expected growth, potentially dampening near-term revenue prospects from this lucrative end market."
       },
       {
         "ticker": "UBER",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Integrating AI solutions into ride-hailing platform, positioned as an AI trailblazer in its sector"
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Uber is investing aggressively in robotaxi fleet scaling and has secured supply agreements with both Rivian and Lucid, but Tesla's struggles suggest the overall robotaxi market may face headwinds, which could impact Uber's expansion timeline without directly affecting its core ridesharing business."
       }
     ]
   }

@@ -492,6 +492,35 @@
       }
     ]
   },
+  "ACLX": {
+    "as_of": "2026-04-27",
+    "dots": [
+      {
+        "key": "p_sma10",
+        "label": "Price vs SMA10",
+        "state": "bull",
+        "detail": "price 115.07 vs SMA10 115.02"
+      },
+      {
+        "key": "sma10_50",
+        "label": "SMA10 vs SMA50",
+        "state": "bull",
+        "detail": "SMA10 115.02 vs SMA50 109.88"
+      },
+      {
+        "key": "sma50_200",
+        "label": "SMA50 vs SMA200",
+        "state": "bull",
+        "detail": "SMA50 109.88 vs SMA200 83.49"
+      },
+      {
+        "key": "vol",
+        "label": "Up vs down volume (20d)",
+        "state": "bull",
+        "detail": "up-vol 24,624,639 vs down-vol 6,597,021"
+      }
+    ]
+  },
   "ACM": {
     "as_of": "2026-07-28",
     "dots": [
@@ -15021,6 +15050,35 @@
       }
     ]
   },
+  "FOLD": {
+    "as_of": "2026-04-24",
+    "dots": [
+      {
+        "key": "p_sma10",
+        "label": "Price vs SMA10",
+        "state": "bull",
+        "detail": "price 14.49 vs SMA10 14.46"
+      },
+      {
+        "key": "sma10_50",
+        "label": "SMA10 vs SMA50",
+        "state": "bull",
+        "detail": "SMA10 14.46 vs SMA50 14.40"
+      },
+      {
+        "key": "sma50_200",
+        "label": "SMA50 vs SMA200",
+        "state": "bull",
+        "detail": "SMA50 14.40 vs SMA200 10.84"
+      },
+      {
+        "key": "vol",
+        "label": "Up vs down volume (20d)",
+        "state": "bull",
+        "detail": "up-vol 18,501,163 vs down-vol 14,406,847"
+      }
+    ]
+  },
   "FOX": {
     "as_of": "2026-07-28",
     "dots": [
@@ -20444,6 +20502,35 @@
       }
     ]
   },
+  "IRD": {
+    "as_of": "2026-07-28",
+    "dots": [
+      {
+        "key": "p_sma10",
+        "label": "Price vs SMA10",
+        "state": "bull",
+        "detail": "price 3.41 vs SMA10 3.19"
+      },
+      {
+        "key": "sma10_50",
+        "label": "SMA10 vs SMA50",
+        "state": "bear",
+        "detail": "SMA10 3.19 vs SMA50 3.92"
+      },
+      {
+        "key": "sma50_200",
+        "label": "SMA50 vs SMA200",
+        "state": "bull",
+        "detail": "SMA50 3.92 vs SMA200 3.43"
+      },
+      {
+        "key": "vol",
+        "label": "Up vs down volume (20d)",
+        "state": "bear",
+        "detail": "up-vol 6,376,405 vs down-vol 10,744,193"
+      }
+    ]
+  },
   "IREN": {
     "as_of": "2026-07-28",
     "dots": [
@@ -22239,6 +22326,35 @@
         "label": "Up vs down volume (20d)",
         "state": "bear",
         "detail": "up-vol 11,994,430 vs down-vol 21,513,908"
+      }
+    ]
+  },
+  "LBRX": {
+    "as_of": "2026-07-28",
+    "dots": [
+      {
+        "key": "p_sma10",
+        "label": "Price vs SMA10",
+        "state": "bull",
+        "detail": "price 34.94 vs SMA10 33.26"
+      },
+      {
+        "key": "sma10_50",
+        "label": "SMA10 vs SMA50",
+        "state": "bull",
+        "detail": "SMA10 33.26 vs SMA50 30.62"
+      },
+      {
+        "key": "sma50_200",
+        "label": "SMA50 vs SMA200",
+        "state": "bull",
+        "detail": "SMA50 30.62 vs SMA200 24.42"
+      },
+      {
+        "key": "vol",
+        "label": "Up vs down volume (20d)",
+        "state": "bear",
+        "detail": "up-vol 2,683,364 vs down-vol 3,057,300"
       }
     ]
   },
@@ -32392,6 +32508,35 @@
       }
     ]
   },
+  "SABS": {
+    "as_of": "2026-07-28",
+    "dots": [
+      {
+        "key": "p_sma10",
+        "label": "Price vs SMA10",
+        "state": "bear",
+        "detail": "price 3.45 vs SMA10 3.55"
+      },
+      {
+        "key": "sma10_50",
+        "label": "SMA10 vs SMA50",
+        "state": "bear",
+        "detail": "SMA10 3.55 vs SMA50 3.67"
+      },
+      {
+        "key": "sma50_200",
+        "label": "SMA50 vs SMA200",
+        "state": "bear",
+        "detail": "SMA50 3.67 vs SMA200 3.71"
+      },
+      {
+        "key": "vol",
+        "label": "Up vs down volume (20d)",
+        "state": "bear",
+        "detail": "up-vol 2,827,493 vs down-vol 5,640,680"
+      }
+    ]
+  },
   "SAFRY": {
     "as_of": "2026-06-18",
     "dots": [
@@ -40335,6 +40480,35 @@
         "label": "Up vs down volume (20d)",
         "state": "na",
         "detail": "no volume data"
+      }
+    ]
+  },
+  "VRNA": {
+    "as_of": "2025-10-06",
+    "dots": [
+      {
+        "key": "p_sma10",
+        "label": "Price vs SMA10",
+        "state": "bull",
+        "detail": "price 106.91 vs SMA10 106.67"
+      },
+      {
+        "key": "sma10_50",
+        "label": "SMA10 vs SMA50",
+        "state": "bull",
+        "detail": "SMA10 106.67 vs SMA50 105.93"
+      },
+      {
+        "key": "sma50_200",
+        "label": "SMA50 vs SMA200",
+        "state": "bull",
+        "detail": "SMA50 105.93 vs SMA200 78.66"
+      },
+      {
+        "key": "vol",
+        "label": "Up vs down volume (20d)",
+        "state": "bull",
+        "detail": "up-vol 16,450,824 vs down-vol 9,161,454"
       }
     ]
   },
