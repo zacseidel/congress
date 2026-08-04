@@ -1,5 +1,51 @@
 [
   {
+    "id": "6b2f111175ed2224d3fe23b5497df98fbc0d11c1493db87f22b84ccc75848bbd",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "A Supreme Court Ruling Against Trump's Tariffs Could Trigger Up to $175 Billion in Refunds, a Potential Tailwind for Import-Heavy Retailers",
+    "author": "Jeff Siegel",
+    "published_utc": "2026-07-31T20:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/31/a-supreme-court-ruling-against-trumps-tariffs-coul/?source=iedfolrf0000001",
+    "tickers": [
+      "WMT",
+      "COST",
+      "TGT"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880795%2Fgettyimages-2205487321.jpg&w=1200&op=resize",
+    "description": "The Supreme Court ruled that President Trump's tariffs under the IEEPA exceeded congressional authority, potentially triggering up to $175 billion in refunds to U.S. businesses. Import-heavy retailers like Walmart, Costco, and Target could benefit from stronger cash flow and improved margins, though the actual impact will vary by company based on how they handled tariff costs. However, additional tariffs under other trade authorities remain in place, and legal proceedings could delay payments.",
+    "keywords": [
+      "Supreme Court ruling",
+      "tariff refunds",
+      "import-heavy retailers",
+      "cash flow",
+      "trade policy",
+      "IEEPA",
+      "balance sheet strengthening"
+    ],
+    "insights": [
+      {
+        "ticker": "WMT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "As a major importer of merchandise, Walmart could receive substantial tariff refunds that would strengthen its balance sheet and free cash flow, supporting share repurchases, debt reduction, or new investments."
+      },
+      {
+        "ticker": "COST",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Costco's large import footprint positions it to benefit significantly from potential tariff refunds, which could improve profit margins and cash flow, though the actual benefit depends on how much tariff costs it absorbed."
+      },
+      {
+        "ticker": "TGT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Target imports billions in merchandise annually and could see improved financial metrics from tariff refunds, though benefits will depend on the extent to which it paid the duties versus passing costs to consumers."
+      }
+    ]
+  },
+  {
     "id": "82558bf1ffe76cfaea261246392b530417ed7990be98b66b2e9d1a630b18c776",
     "publisher": {
       "name": "Investing.com",
@@ -203,51 +249,6 @@
         "ticker": "PSMT",
         "sentiment": "neutral",
         "sentiment_reasoning": "PriceSmart is referenced as a discount retailer peer with lower valuation ratios than Costco, used only for comparative valuation analysis."
-      }
-    ]
-  },
-  {
-    "id": "ec760d616e5a4444c0093d1430ed0f191f3fe0123f7a0b4f45164da9331dbae4",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "3 Reasons to Buy Costco Right Now, and 1 Reason to Avoid It",
-    "author": "Stefon Walters",
-    "published_utc": "2026-06-25T06:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/25/3-reasons-to-buy-costco-right-now-and-1-reason-to/?source=iedfolrf0000001",
-    "tickers": [
-      "COST",
-      "AMZN",
-      "TGT"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F875639%2Fcost.png&w=1200&op=resize",
-    "description": "Costco presents strong investment opportunities through its membership-based business model with 92% renewal rates, expansion into non-traditional store formats, and a 22-year dividend growth streak. However, the stock's 46.1x forward P/E ratio\u2014higher than most tech stocks\u2014poses a valuation concern, with the stock down 13% from its May high. The article recommends dollar-cost averaging rather than lump-sum investing.",
-    "keywords": [
-      "membership retention",
-      "dividend growth",
-      "valuation",
-      "retail expansion",
-      "stock price",
-      "P/E ratio"
-    ],
-    "insights": [
-      {
-        "ticker": "COST",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "The article presents balanced analysis with three positive factors (membership model, store expansion, dividend growth) offset by one significant concern (high valuation at 46.1x forward earnings). The author recommends cautious entry via dollar-cost averaging rather than outright buy or avoid."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a go-to shopping destination alongside Walmart, used as a comparison point but not analyzed in detail."
-      },
-      {
-        "ticker": "TGT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a brick-and-mortar retailer comparable to Costco, used as a comparison point but not analyzed in detail."
       }
     ]
   }

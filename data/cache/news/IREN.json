@@ -1,5 +1,242 @@
 [
   {
+    "id": "ded5b8f77b54a1d39a06183311286766c8eeb9d6b23b23a0688e9d7c99db9355",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "3 Big Takeaways From Microsoft's Earnings",
+    "author": "Marc Guberti",
+    "published_utc": "2026-08-03T08:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/03/3-big-takeaways-from-microsofts-earnings/?source=iedfolrf0000001",
+    "tickers": [
+      "MSFT",
+      "AMD",
+      "INTC",
+      "NVDA",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "AMZN",
+      "IREN",
+      "NBIS"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F881322%2Fcloud-computing-microchip-technology-1200x750-7d59391.jpg&w=1200&op=resize",
+    "description": "Microsoft reported strong fiscal 2026 Q4 earnings with 18% revenue growth driven by cloud computing, causing shares to surge 16%. The company expects positive free cash flow in fiscal 2027 despite high AI infrastructure investments. Microsoft emphasized that CPUs are equally important as GPUs for agentic AI, signaling a shift in compute capacity ratios and benefiting CPU manufacturers.",
+    "keywords": [
+      "Microsoft earnings",
+      "cloud computing",
+      "AI infrastructure",
+      "free cash flow",
+      "compute capacity",
+      "CPUs vs GPUs",
+      "agentic AI",
+      "hyperscalers"
+    ],
+    "insights": [
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong Q4 earnings with 18% YoY revenue growth, Azure surpassing $100B in revenue, stock surged 16%, and company achieving positive free cash flow in 2027 demonstrates sustainable AI investment strategy without excessive debt."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Growing importance of CPUs relative to GPUs in agentic AI workloads, with enterprise agentic AI market projected to grow at 46.2% CAGR, positioning AMD as a beneficiary of this shift."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "As a major CPU manufacturer, Intel stands to benefit from the increasing CPU-to-GPU ratio in AI infrastructure, with enterprise agentic AI market expected to grow significantly."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While GPUs remain in high demand and Nvidia maintains largest GPU market share, the article highlights a shift toward higher CPU ratios in AI workloads, potentially moderating GPU demand growth."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a hyperscaler making significant AI infrastructure investments, but no specific positive or negative earnings impact discussed in the article."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a hyperscaler making significant AI infrastructure investments, but no specific positive or negative earnings impact discussed in the article."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a hyperscaler making significant AI infrastructure investments, but no specific positive or negative earnings impact discussed in the article."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a hyperscaler making significant AI infrastructure investments, but no specific positive or negative earnings impact discussed in the article."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a hyperscaler making significant AI infrastructure investments, but no specific positive or negative earnings impact discussed in the article."
+      },
+      {
+        "ticker": "IREN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Signed multi-year compute capacity deals with Microsoft, positioning it as a beneficiary of hyperscaler infrastructure investments."
+      },
+      {
+        "ticker": "NBIS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Signed multi-year compute capacity deals with Microsoft, positioning it as a beneficiary of hyperscaler infrastructure investments."
+      }
+    ]
+  },
+  {
+    "id": "7506312b87dd7e31473014605fee4aac65fca783dbb1b5d842e2235305db5725",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Better AI Infrastructure Stock: IREN or Nebius?",
+    "author": "Rick Orford",
+    "published_utc": "2026-07-25T15:32:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/25/better-ai-infrastructure-stock-iren-or-nebius/?source=iedfolrf0000001",
+    "tickers": [
+      "IREN",
+      "NBIS"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880573%2F937-iren-v-nbis.png&w=1200&op=resize",
+    "description": "The article compares two AI infrastructure stocks: IREN and Nebius. IREN offers more secured power capacity while Nebius has secured valuable hyperscaler contracts. The analysis examines whether IREN's upside potential justifies its dilution risk and whether Nebius's execution advantage warrants its higher valuation.",
+    "keywords": [
+      "AI infrastructure",
+      "power capacity",
+      "hyperscaler contracts",
+      "valuation",
+      "dilution risk",
+      "execution"
+    ],
+    "insights": [
+      {
+        "ticker": "IREN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "The article presents IREN as having a competitive advantage in secured power capacity, but raises concerns about dilution risk that could offset potential upside gains."
+      },
+      {
+        "ticker": "NBIS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Nebius is highlighted for securing valuable hyperscaler contracts and having an execution advantage, but the article questions whether its demanding valuation is justified by these strengths."
+      }
+    ]
+  },
+  {
+    "id": "e5a70b6d1a19dc93f16d9205a4d5a862ec624aa6dbdc91bfeaad55a669dc969e",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "2 Millionaire-Maker AI Stocks to Hold for the Next Decade",
+    "author": "Will Healy",
+    "published_utc": "2026-07-25T09:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/25/2-millionaire-maker-ai-stocks-to-hold-for-the-next/?source=iedfolrf0000001",
+    "tickers": [
+      "CRWV",
+      "IREN",
+      "NVDA",
+      "PLTR"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879477%2Fsitting-in-a-bathtub-as-it-rains-cash.jpg&w=1200&op=resize",
+    "description": "The article identifies CoreWeave and Iren as potential multibagger AI stocks in the emerging neocloud sector. CoreWeave leads with a $99 billion backlog and Nvidia partnership but faces high capex spending and $25 billion debt. Iren, a Bitcoin miner transitioning to neocloud, owns its facilities near clean energy sources with lower debt but lacks Nvidia partnership. Both stocks are positioned for significant growth with forecasted revenue increases of 147% and 302% respectively, though they carry execution risks.",
+    "keywords": [
+      "neocloud",
+      "AI infrastructure",
+      "multibagger stocks",
+      "capital expenditure",
+      "revenue growth",
+      "data centers",
+      "clean energy"
+    ],
+    "insights": [
+      {
+        "ticker": "CRWV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong $99 billion backlog, Nvidia partnership providing competitive advantage, 46% industry CAGR forecast, attractive P/S ratio of 6, and positioned for 147% revenue growth in 2026. However, risks include massive capex spending ($17 billion), $25 billion debt burden, and current net losses."
+      },
+      {
+        "ticker": "IREN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Transitioning from Bitcoin mining to neocloud with owned facilities near clean energy sources, lower debt ($4 billion), and strong growth forecasts (44% fiscal year increase, 302% in fiscal 2027). Valuation attractive at $14 billion market cap with forward P/S of 5. Disadvantage: lacks Nvidia partnership and is not a first-mover."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a successful early investment and as a strategic partner for CoreWeave, but not the focus of the article. Included for context regarding AI sector performance."
+      },
+      {
+        "ticker": "PLTR",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Referenced as an example of early AI investment success but not analyzed in the article."
+      }
+    ]
+  },
+  {
+    "id": "dd96a919fc294b7a9ad67590698a35f090f3a4fc5053edb6b1ced3703fe350dd",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "How the Potential $10 Billion Compute Lease Deal Between Meta Platforms and Anthropic Affects Neocloud Stocks",
+    "author": "Marc Guberti",
+    "published_utc": "2026-07-22T07:12:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/22/how-the-potential-10-billion-compute-lease-deal-be/?source=iedfolrf0000001",
+    "tickers": [
+      "META",
+      "NBIS",
+      "HUT",
+      "IREN"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879790%2Fgettyimages-1669453534-1200x637-9df96c7.jpg&w=1200&op=resize",
+    "description": "Meta Platforms is reportedly in early-stage talks with Anthropic for a $10 billion compute lease deal over 2 years, raising concerns among neocloud investors about potential competition. However, Meta's own massive compute needs and the strong demand from AI developers suggest neoclouds like Nebius, CoreWeave, and Iren can diversify their customer bases and secure long-term contracts ahead of potential hyperscaler competition.",
+    "keywords": [
+      "AI compute infrastructure",
+      "hyperscalers",
+      "neocloud providers",
+      "data centers",
+      "compute leasing",
+      "AI demand"
+    ],
+    "insights": [
+      {
+        "ticker": "META",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Meta's entry into cloud leasing presents both opportunity and uncertainty. While it signals confidence in AI infrastructure, the company's own massive compute needs (building tens of gigawatts this decade) mean it may not have significant excess capacity to sell for several years, limiting near-term competitive threat to neoclouds."
+      },
+      {
+        "ticker": "NBIS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Despite concerns about Meta competition, Nebius has a lucrative $27 billion five-year contract with Meta and can diversify its customer base. Strong AI developer demand provides multiple revenue opportunities beyond hyperscalers."
+      },
+      {
+        "ticker": "HUT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recently expanded a major contract worth $9.8 billion over 15 years with a high-investment-grade tenant, demonstrating strong demand for compute capacity and ability to secure long-term, profitable agreements."
+      },
+      {
+        "ticker": "IREN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Successfully diversified beyond hyperscalers by securing $2.8 billion in new contracts with leading AI developers. Raised 2026 revenue targets to over $4 billion, showing resilience and growing demand independent of hyperscaler dependency."
+      }
+    ]
+  },
+  {
     "id": "fb59dca0ce4e2cbff628c7b2b521dcae52a9343c5f1c995c7b0f1ef9f42a2143",
     "publisher": {
       "name": "Investing.com",
@@ -54,231 +291,6 @@
         "ticker": "NVDA",
         "sentiment": "neutral",
         "sentiment_reasoning": "Mentioned only as a comparative benchmark for Penguin Solutions' impressive Q3 results relative to company size; no direct sentiment expressed."
-      }
-    ]
-  },
-  {
-    "id": "2e1eb2697a6c16ed9ccb701fc2ba430b663faeea249f09b5ee54b7dbe908248d",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Can Meta Platforms Become a Neocloud? Don't Hold Your Breath.",
-    "author": "Marc Guberti",
-    "published_utc": "2026-07-08T16:01:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/08/can-meta-platforms-become-a-neocloud-dont-hold-you/?source=iedfolrf0000001",
-    "tickers": [
-      "META",
-      "NBIS",
-      "IREN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877644%2Fgettyimages-1420039843-1200x646-155feec.jpg&w=1200&op=resize",
-    "description": "Meta Platforms announced plans to explore a neocloud business by renting excess compute capacity, but the company is years away from having surplus capacity. Meta and other hyperscalers are currently scrambling to secure computing power for their own AI initiatives, meaning they won't have available capacity to lease to external customers anytime soon. Dedicated neocloud companies like Nebius and Iren are better positioned to capture market share in this emerging industry.",
-    "keywords": [
-      "neocloud",
-      "AI data centers",
-      "compute capacity",
-      "hyperscalers",
-      "artificial intelligence",
-      "cloud computing"
-    ],
-    "insights": [
-      {
-        "ticker": "META",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Meta's neocloud ambitions are constrained by its own massive AI compute demands. The company is still signing deals to secure additional capacity and won't have surplus capacity to lease for years, limiting its near-term neocloud viability."
-      },
-      {
-        "ticker": "NBIS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "As a dedicated neocloud pure-play company, Nebius is better positioned than Meta to capture market share. The company is rapidly expanding its gigawatt pipeline and has a clearer path to serving hyperscalers and enterprises."
-      },
-      {
-        "ticker": "IREN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Similar to Nebius, Iren is a neocloud specialist with better prospects than Meta for gaining market share. By the time Meta enters the neocloud market meaningfully, Iren may have doubled its existing capacity."
-      }
-    ]
-  },
-  {
-    "id": "92a00081f021a7e8492055f1ac0f9459f039f0f1ac571cf872a3cd57cef4f8f2",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Why TeraWulf, IREN, and Other Data Center Stocks Jumped Today",
-    "author": "Joe Tenebruso",
-    "published_utc": "2026-07-07T02:14:13Z",
-    "article_url": "https://www.fool.com/investing/2026/07/06/why-terawulf-iren-data-center-stocks-up-today/?source=iedfolrf0000001",
-    "tickers": [
-      "WULF",
-      "IREN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877696%2Fdata-center-gettyimages-1294874384.jpg&w=1200&op=resize",
-    "description": "TeraWulf surged after securing a blockbuster 20-year, $19 billion deal with AI company Anthropic for 401 megawatts of computing capacity at its Kentucky data center. IREN also jumped on reports it could secure a similar lucrative agreement with Anthropic for up to 1.4 gigawatts of Australian data center capacity valued at $15 billion. Both stocks benefited from strong demand for AI infrastructure.",
-    "keywords": [
-      "AI infrastructure",
-      "data center capacity",
-      "Anthropic",
-      "computing power",
-      "long-term contracts",
-      "AI model makers"
-    ],
-    "insights": [
-      {
-        "ticker": "WULF",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Secured a major 20-year, $19 billion contract with Anthropic for 401 megawatts of computing capacity, validating its strategy and providing long-duration revenue streams. Stock rose 4.84%."
-      },
-      {
-        "ticker": "IREN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Positioned as a leading candidate for Anthropic's Australian data center project valued up to $15 billion. Analyst upgraded stock to buy with $58 price target and projects revenue growth from $717 million to $8.5 billion by 2028. Stock rose 12.89%."
-      }
-    ]
-  },
-  {
-    "id": "a42f580e89e0b7906602a60782f7d57b814480dc59df9ec5510276b783348037",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "3 No-Brainer Stocks to Buy on the Latest Sell-Off",
-    "author": "Marc Guberti",
-    "published_utc": "2026-07-06T15:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/06/3-no-brainer-stocks-to-buy-on-the-latest-sell-off/?source=iedfolrf0000001",
-    "tickers": [
-      "META",
-      "NVDA",
-      "IREN",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "INTC",
-      "NBIS"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F838876%2Fgettyimages-494278925-1201x795-11e462d.jpg&w=1200&op=resize",
-    "description": "The article recommends three growth stocks that have recently declined but offer strong long-term potential: Meta Platforms benefits from solid fundamentals and new AI cloud business opportunities; Nvidia continues to lead the AI boom with strong revenue growth and a new revenue-sharing model with AI startups; and Iren, despite short-term challenges and dilution concerns, has significant compute capacity and potential for major deals similar to competitors.",
-    "keywords": [
-      "AI infrastructure",
-      "stock market sell-off",
-      "growth stocks",
-      "GPU chips",
-      "AI cloud computing",
-      "revenue growth",
-      "market correction"
-    ],
-    "insights": [
-      {
-        "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q1 fundamentals with 33% YoY revenue growth and 30% YoY net operating income growth. Attractive 22 P/E ratio. Diversifying into AI cloud business and AI glasses presents new revenue streams and potential stock rerating."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Leading the AI boom with 85% YoY revenue growth. Stock down 20% from highs making it attractive at 30 P/E ratio. New revenue-sharing model with AI startups creates additional growth opportunities and profitable stakes in other AI companies."
-      },
-      {
-        "ticker": "IREN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Despite short-term headwinds including 30% monthly decline, dilution concerns, and slower deal announcements than competitors, the company has strong long-term fundamentals with doubled gigawatt pipeline approaching 6 gigawatts, recent revenue run rate increase to $4.4B, and significant expansion opportunities in Europe and Australia."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as limiting Meta's access to Gemini AI models, indicating competitive dynamics in AI space but no direct investment recommendation provided."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as limiting Meta's access to Gemini AI models, indicating competitive dynamics in AI space but no direct investment recommendation provided."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as limiting Meta's access to Gemini AI models, indicating competitive dynamics in AI space but no direct investment recommendation provided."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as limiting Meta's access to Gemini AI models, indicating competitive dynamics in AI space but no direct investment recommendation provided."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as one of Nvidia's profitable stakes but not recommended as a primary investment in this article."
-      },
-      {
-        "ticker": "NBIS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitor to Iren with faster deal announcements and stronger performance year-to-date, but not recommended as a buy in this article."
-      }
-    ]
-  },
-  {
-    "id": "5525966482cce919b8795b5427dba6dba019f43b5d9c01a6edc1bc6f38052cd2",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "3 Artificial Intelligence (AI) Stocks I'd Buy Now and Never Sell",
-    "author": "John Ballard",
-    "published_utc": "2026-06-28T04:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/28/3-artificial-intelligence-ai-stocks-id-buy-now-and/?source=iedfolrf0000001",
-    "tickers": [
-      "ARM",
-      "IREN",
-      "NVDA",
-      "MSFT",
-      "INTC"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F870084%2Fblocks-with-arrows-pointing-up-building-growth.png&w=1200&op=resize",
-    "description": "The article recommends three AI stocks for long-term investment: Arm Holdings for its energy-efficient chip architecture dominating data centers, IREN for its data center capacity expansion with major contracts from Microsoft and Nvidia, and Nvidia for its leadership in AI hardware and diversified revenue streams. With Morgan Stanley projecting $3 trillion in global data center construction costs through 2028, these companies are positioned to benefit from sustained AI infrastructure growth.",
-    "keywords": [
-      "artificial intelligence",
-      "data centers",
-      "semiconductor chips",
-      "AI infrastructure",
-      "long-term investment",
-      "energy efficiency",
-      "GPU",
-      "CPU"
-    ],
-    "insights": [
-      {
-        "ticker": "ARM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Record revenue growth of 20% YoY, dominant position in smartphone chips, expanding data center opportunity with superior energy efficiency, expected to hold largest share of data center CPUs by 2030, and potential to join trillion-dollar market cap club."
-      },
-      {
-        "ticker": "IREN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock surged 385% over past year, secured long-term contracts with Microsoft and Nvidia, expanding globally with plans in Spain and Australia, on track to bring 480 megawatts of new capacity online, and management expects $4.4 billion in annualized revenue by end of 2026."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Data center revenue nearly doubled last quarter, new Vera CPU business on track for $20 billion revenue, visionary CEO Jensen Huang with proven track record of identifying new markets, expected 81% revenue growth this year to $391 billion, and attractive valuation at 22x earnings."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major customer signing long-term contracts with IREN for data center capacity, indicating strong AI infrastructure investment but not the primary focus of the article."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Referenced only as a comparison point for Nvidia's new Vera CPU business revenue, not analyzed as an investment recommendation."
       }
     ]
   }

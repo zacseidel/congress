@@ -1,5 +1,51 @@
 [
   {
+    "id": "3ee85de20ab66fbc1476c56497cb8ccc8cb1fd9e69665eeaa245c6a2452fab01",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Un secteur r\u00e9sidentiel en plein essor stimule la croissance de la construction en Saskatchewan jusqu\u2019en 2035, tandis que l\u2019activit\u00e9 des grands projets non r\u00e9sidentiels fluctue",
+    "author": "Construforce Canada",
+    "published_utc": "2026-07-20T14:00:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/20/3329825/0/fr/Un-secteur-r%C3%A9sidentiel-en-plein-essor-stimule-la-croissance-de-la-construction-en-Saskatchewan-jusqu-en-2035-tandis-que-l-activit%C3%A9-des-grands-projets-non-r%C3%A9sidentiels-fluctue.html",
+    "tickers": [
+      "BHP",
+      "BCE",
+      "DNN"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/6d2fb2c2-2aff-4a40-a4fb-2d5d4ddd226d",
+    "description": "Saskatchewan's construction sector is expected to grow through 2035, driven primarily by strong residential construction and renovations. Non-residential activity will fluctuate based on major resource and infrastructure projects. The sector faces a potential labor shortage of 3,600 workers despite anticipated recruitment efforts, requiring strategies to attract workers from underrepresented groups and immigrants.",
+    "keywords": [
+      "Saskatchewan construction",
+      "residential growth",
+      "labor shortage",
+      "non-residential projects",
+      "workforce development",
+      "mining projects",
+      "apprenticeships"
+    ],
+    "insights": [
+      {
+        "ticker": "BHP",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Jansen potash mine project is actively supporting construction activity in the short term, with Phase 2 expected to sustain high activity levels through 2031, providing significant employment opportunities."
+      },
+      {
+        "ticker": "BCE",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "AI data center project is mentioned as currently under study with potential for favorable investment decision, but remains speculative and not yet committed."
+      },
+      {
+        "ticker": "DNN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Wheeler River uranium project is anticipated to commence, contributing to near-term engineering and construction activity in Saskatchewan."
+      }
+    ]
+  },
+  {
     "id": "a4138996d856a42d7619c5f70ffd2beae124ea37b66a732e4b4a85ec9a05d1e7",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -190,46 +236,6 @@
         "ticker": "NGLOY",
         "sentiment": "neutral",
         "sentiment_reasoning": "Globally diversified with embedded EV supply chain operations; could benefit from Cuban resources but has alternative sources, limiting direct exposure to geopolitical outcomes."
-      }
-    ]
-  },
-  {
-    "id": "eb2ef7d8200b03dbe515165738a8e27a25b0435bb2ced11aacb0aa2c3ff886fe",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "2 Mining Stocks to Buy in May",
-    "author": "Courtney Carlsen",
-    "published_utc": "2026-05-09T19:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/05/09/2-mining-stocks-to-buy-in-may/?source=iedfolrf0000001",
-    "tickers": [
-      "BHP",
-      "AEM"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F868164%2Fa-gold-nugget-in-a-miners-hand-getty.jpg&w=1200&op=resize",
-    "description": "Mining stocks are positioned for growth due to increased demand for metals driven by data center expansion, renewable energy, and geopolitical uncertainty. BHP Group, the world's largest mining company, is capitalizing on copper demand trends with projections of growth from 33 million to 50 million tons by 2050. Agnico Eagle Mines, a gold producer with low operating costs and renewable energy advantages, is well-positioned to benefit from rising precious metal prices while remaining insulated from fuel cost pressures.",
-    "keywords": [
-      "mining stocks",
-      "copper demand",
-      "precious metals",
-      "data centers",
-      "renewable energy",
-      "electrification",
-      "decarbonization"
-    ],
-    "insights": [
-      {
-        "ticker": "BHP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "World's largest mining company with strategic focus on copper (45-50% of EBITDA), positioned to benefit from long-term megatrends in electrification and decarbonization. Expanding into potash production and paying dividends (3.14% yield). Article explicitly recommends it as 'a top choice today.'"
-      },
-      {
-        "ticker": "AEM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Low-cost gold producer with competitive AISC of $1,400-$1,550 per ounce, generating record quarterly operating margins. Operates in low-risk regions with renewable energy advantages, providing insulation from rising fuel costs. Article recommends it as 'a smart mining stock to add today.'"
       }
     ]
   }

@@ -1,5 +1,39 @@
 [
   {
+    "id": "e6913bf64a63ed05615f3a18bfcfacf86a1b9808bbfd0be9bbf2ef780a6e5472",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Eversource named to TIME\u2019s list of America\u2019s Best Companies for 2026",
+    "author": "Na",
+    "published_utc": "2026-07-21T17:00:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/07/21/3330816/0/en/Eversource-named-to-TIME-s-list-of-America-s-Best-Companies-for-2026.html",
+    "tickers": [
+      "ES"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/2eedca6f-33e3-4950-a473-28343f071ba8",
+    "description": "Eversource Energy has been recognized by TIME as one of America's Best Companies for 2026, based on employee satisfaction, financial performance, and sustainability transparency. The energy company, which serves over 4 million customers across Connecticut, Massachusetts, and New Hampshire, continues to receive national recognition for its commitment to operational excellence and corporate responsibility.",
+    "keywords": [
+      "Eversource Energy",
+      "America's Best Companies",
+      "employee satisfaction",
+      "sustainability",
+      "energy efficiency",
+      "corporate recognition",
+      "clean energy"
+    ],
+    "insights": [
+      {
+        "ticker": "ES",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The company received prestigious recognition from TIME for its commitment to employees, financial performance, and sustainability. The award reflects strong employee satisfaction, operational excellence, and corporate responsibility. Additionally, the company has received multiple national honors including recognition from Newsweek and USA Today, indicating consistent positive performance across multiple dimensions."
+      }
+    ]
+  },
+  {
     "id": "3e86d23fffcf4c3bd15afce18d40130bc86af84e9b49f067878797fee6da53a7",
     "publisher": {
       "name": "Investing.com",
@@ -245,43 +279,6 @@
         "ticker": "SNPD",
         "sentiment": "neutral",
         "sentiment_reasoning": "The article mentions this ETF as a way for investors to gain exposure to Eversource Energy, but does not provide any specific insights about the ETF itself."
-      }
-    ]
-  },
-  {
-    "id": "e8147c3998d9cc2f2b9884b34a65e1dde417ed75856bf777337cf20428217898",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "3 Top Dividend-Paying Utility Stocks to Buy in November",
-    "author": "Reuben Gregg Brewer",
-    "published_utc": "2024-11-03T23:23:00Z",
-    "article_url": "https://www.fool.com/investing/2024/11/03/3-top-dividend-paying-utility-stocks-to-buy-in-nov/?source=iedfolrf0000001",
-    "tickers": [
-      "BKH",
-      "ES"
-    ],
-    "image_url": "https://g.foolcdn.com/editorial/images/796208/23_11_15-three-people-in-a-row-in-various-stages-of-making-a-muscle-with-their-arms-_mf-dload-gettyimages-1257781491-1201x800-5b2df79.jpg",
-    "description": "The article discusses three utility companies - Black Hills, NextEra Energy, and Eversource Energy - each with a different investment appeal. Black Hills is a Dividend King with a high yield, NextEra Energy is a dividend growth machine, and Eversource Energy has a historically high yield but faces some challenges.",
-    "keywords": [
-      "utilities",
-      "dividends",
-      "dividend growth",
-      "dividend yield"
-    ],
-    "insights": [
-      {
-        "ticker": "BKH",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Black Hills is a Dividend King with a high dividend yield of 4.4%, which is above the industry average. It has a slow and steady pace of dividend growth, increasing the dividend for 54 consecutive years."
-      },
-      {
-        "ticker": "ES",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Eversource Energy has a historically high dividend yield of 4.3%, which suggests the stock may be undervalued. However, the company has faced some challenges with its investment in offshore wind farms, leading to one-time charges. The article suggests that Eversource Energy may be a good option for value-oriented investors."
       }
     ]
   }

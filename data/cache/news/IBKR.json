@@ -1,5 +1,103 @@
 [
   {
+    "id": "500252a533f1ecc362896a9a542eac55f62770cedc49eabaf517431b933c7302",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "1 Unstoppable Growth Stock That Could Soar if a Bear Market Is Coming",
+    "author": "Anthony Di Pizio",
+    "published_utc": "2026-07-29T10:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/29/1-unstoppable-growth-stock-soar-bear-market-coming/?source=iedfolrf0000001",
+    "tickers": [
+      "IBKR",
+      "CME"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880839%2Fa-smiling-person-writing-notes-while-looking-at-stock-charts-on-the-computer.jpg&w=1200&op=resize",
+    "description": "Interactive Brokers is positioned to benefit from market volatility, reporting strong Q2 2026 results with 34% growth in daily average revenue trades, 30% increase in client accounts to 5.19 million, and 67% year-over-year growth in margin loans totaling $108.5 billion. Total revenue climbed 28% to $1.9 billion with accelerating momentum. The stock trades at a forward P/E of 29.1 based on 2027 earnings estimates, offering potential upside even if the broader market enters bear territory.",
+    "keywords": [
+      "Interactive Brokers",
+      "market volatility",
+      "trading volume",
+      "margin loans",
+      "earnings growth",
+      "bear market",
+      "commission revenue",
+      "net interest revenue"
+    ],
+    "insights": [
+      {
+        "ticker": "IBKR",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company demonstrates accelerating growth across key metrics (34% increase in daily trades, 30% growth in client accounts, 28% revenue growth), strong earnings momentum (35% EPS growth), and attractive forward valuation at 29.1x P/E. Benefits from market volatility and elevated margin lending activity. Author projects continued outperformance even in bear market scenarios."
+      },
+      {
+        "ticker": "CME",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned only in context of FedWatch tool for interest rate predictions; no direct analysis of the company's performance or investment thesis provided."
+      }
+    ]
+  },
+  {
+    "id": "debf7bddf9d270efc7dda3f46114c1219855b8e000f380bada363d816f20247d",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Interactive Brokers Grew Its Customer Accounts 34% in a Year. Here's the Bull Case Before Q2 Earnings.",
+    "author": "Reuben Gregg Brewer",
+    "published_utc": "2026-07-19T14:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/19/interactive-brokers-grew-its-customer-accounts-34/?source=iedfolrf0000001",
+    "tickers": [
+      "IBKR",
+      "SCHW",
+      "SCHWpD",
+      "SCHWpJ",
+      "HOOD"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878007%2F26_07_15-flags-that-say-buy-and-sell-on-them-_gettyimages-2264644356-1200x800-5b2df79.jpg&w=1200&op=resize",
+    "description": "Interactive Brokers reported strong June 2026 metrics with 34% year-over-year growth in customer accounts to 5.185 million, 40% increase in client equity to $930.3 billion, and 53% surge in trading volume. The company also saw margin loan balances jump 67% to $108.5 billion. Q1 2026 revenues grew 17% to $1.67 billion with adjusted earnings up 28% to $0.60 per share. However, the stock trades at valuations roughly twice its five-year averages, suggesting high market expectations that could lead to disappointment if Q2 results don't exceed forecasts.",
+    "keywords": [
+      "discount brokerage",
+      "customer growth",
+      "trading volume",
+      "margin loans",
+      "earnings expectations",
+      "valuation concerns"
+    ],
+    "insights": [
+      {
+        "ticker": "IBKR",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong fundamental growth across all key metrics (34% account growth, 40% equity growth, 53% trading increase, 67% margin loan growth) and solid Q1 earnings performance (17% revenue growth, 28% earnings growth) indicate robust business momentum heading into Q2 earnings."
+      },
+      {
+        "ticker": "SCHW",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in the discount brokerage space but no specific performance data or analysis provided in the article."
+      },
+      {
+        "ticker": "SCHWpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in the discount brokerage space but no specific performance data or analysis provided in the article."
+      },
+      {
+        "ticker": "SCHWpJ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in the discount brokerage space but no specific performance data or analysis provided in the article."
+      },
+      {
+        "ticker": "HOOD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in the discount brokerage space but no specific performance data or analysis provided in the article."
+      }
+    ]
+  },
+  {
     "id": "21dc601781836dea1610d4b97395981f8de2a11e7ea237957afc3b0d75fa7bed",
     "publisher": {
       "name": "The Motley Fool",
@@ -201,189 +299,6 @@
         "ticker": "IBKR",
         "sentiment": "positive",
         "sentiment_reasoning": "Strong month-over-month and year-over-year growth across key metrics including 53% YoY increase in DARTs, 34% YoY growth in customer accounts, and 40% YoY increase in client equity. Stock price gained 7.16% on the news. Analyst explicitly recommends the stock as a buy, citing the company's competitive strength in attracting and retaining clients."
-      }
-    ]
-  },
-  {
-    "id": "4016304b2423b2fa9b4b6e876d32061aa0197acc16c1d560b72c09dc8b249136",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Robinhood Is Becoming a Full-Service Financial Platform. Is the Stock a Buy?",
-    "author": "Reuben Gregg Brewer",
-    "published_utc": "2026-06-20T20:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/20/robinhood-is-becoming-a-full-service-financial-pla/?source=iedfolrf0000001",
-    "tickers": [
-      "HOOD",
-      "SCHW",
-      "SCHWpD",
-      "SCHWpJ",
-      "IBKR"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F873269%2F25_11_04-a-person-jumping-into-a-pool-_mf-dload-gettyimages-471918259-1200x800-5b2df79.jpg&w=1200&op=resize",
-    "description": "Robinhood has impressively grown its platform assets from $102B to $307B since going public in 2021, expanding beyond stocks into cryptocurrencies and prediction markets. However, the stock carries a premium 45x P/E valuation and faces significant risk due to its inexperienced customer base and lack of stress-testing through a major market downturn. The article suggests only aggressive growth investors should consider buying, while value and risk-averse investors should wait.",
-    "keywords": [
-      "brokerage",
-      "full-service financial platform",
-      "valuation risk",
-      "market downturn",
-      "younger investors",
-      "prediction markets",
-      "cryptocurrency trading"
-    ],
-    "insights": [
-      {
-        "ticker": "HOOD",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Premium valuation (45x P/E) relative to peers, unproven resilience during market downturns, customer base concentrated in inexperienced investors who may panic sell during losses, and revenue volatility driven by speculative trading trends rather than stable fundamentals."
-      },
-      {
-        "ticker": "SCHW",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Used as a comparison point with lower P/E ratio (18x) and more established market presence, suggesting greater stability and lower risk profile compared to Robinhood."
-      },
-      {
-        "ticker": "SCHWpD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Used as a comparison point with lower P/E ratio (18x) and more established market presence, suggesting greater stability and lower risk profile compared to Robinhood."
-      },
-      {
-        "ticker": "SCHWpJ",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Used as a comparison point with lower P/E ratio (18x) and more established market presence, suggesting greater stability and lower risk profile compared to Robinhood."
-      },
-      {
-        "ticker": "IBKR",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Referenced as a peer comparison with moderate P/E ratio (39x), positioned between Robinhood and Charles Schwab in terms of valuation and risk profile."
-      }
-    ]
-  },
-  {
-    "id": "748eb35820cb1814491d8fc0f78e2d1a957e28e286d516999c27ca3b896e0dab",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "The IPO Market Is Heating Up Again. These Financial Stocks Stand to Win.",
-    "author": "Reuben Gregg Brewer",
-    "published_utc": "2026-06-07T13:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/06/07/the-ipo-market-is-heating-up-again-these-financial/?source=iedfolrf0000001",
-    "tickers": [
-      "GS",
-      "GSpA",
-      "GSpC",
-      "GSpD",
-      "MS",
-      "MSpA",
-      "MSpE",
-      "MSpF",
-      "MSpI",
-      "MSpK",
-      "MSpL",
-      "MSpO",
-      "MSpP",
-      "MSpQ",
-      "IBKR",
-      "HOOD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F871816%2F24_10_24-four-hands-holding-puzzle-pieces-together-_mf-dload-gettyimages-1077988806-1199x800-cfc1e94.jpg&w=1200&op=resize",
-    "description": "As major private companies like SpaceX, OpenAI, and Anthropic prepare for IPOs, financial services firms are positioned to benefit significantly. Investment banks like Goldman Sachs and Morgan Stanley earn underwriting fees and receive stock allocations, while discount brokers like Interactive Brokers and Robinhood profit from increased trading activity generated by investor excitement around newly public companies.",
-    "keywords": [
-      "IPO market",
-      "investment banking",
-      "underwriting fees",
-      "trading activity",
-      "SpaceX",
-      "OpenAI",
-      "Anthropic",
-      "financial stocks"
-    ],
-    "insights": [
-      {
-        "ticker": "GS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "As a major investment bank, Goldman Sachs benefits from IPO underwriting fees and stock allocations during periods of high IPO activity. The article positions them as 'the house' that wins regardless of IPO outcomes."
-      },
-      {
-        "ticker": "GSpA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "As a major investment bank, Goldman Sachs benefits from IPO underwriting fees and stock allocations during periods of high IPO activity. The article positions them as 'the house' that wins regardless of IPO outcomes."
-      },
-      {
-        "ticker": "GSpC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "As a major investment bank, Goldman Sachs benefits from IPO underwriting fees and stock allocations during periods of high IPO activity. The article positions them as 'the house' that wins regardless of IPO outcomes."
-      },
-      {
-        "ticker": "GSpD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "As a major investment bank, Goldman Sachs benefits from IPO underwriting fees and stock allocations during periods of high IPO activity. The article positions them as 'the house' that wins regardless of IPO outcomes."
-      },
-      {
-        "ticker": "MS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Similar to Goldman Sachs, Morgan Stanley earns significant profits from investment banking services, underwriting fees, and stock allocations during active IPO periods."
-      },
-      {
-        "ticker": "MSpA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Similar to Goldman Sachs, Morgan Stanley earns significant profits from investment banking services, underwriting fees, and stock allocations during active IPO periods."
-      },
-      {
-        "ticker": "MSpE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Similar to Goldman Sachs, Morgan Stanley earns significant profits from investment banking services, underwriting fees, and stock allocations during active IPO periods."
-      },
-      {
-        "ticker": "MSpF",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Similar to Goldman Sachs, Morgan Stanley earns significant profits from investment banking services, underwriting fees, and stock allocations during active IPO periods."
-      },
-      {
-        "ticker": "MSpI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Similar to Goldman Sachs, Morgan Stanley earns significant profits from investment banking services, underwriting fees, and stock allocations during active IPO periods."
-      },
-      {
-        "ticker": "MSpK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Similar to Goldman Sachs, Morgan Stanley earns significant profits from investment banking services, underwriting fees, and stock allocations during active IPO periods."
-      },
-      {
-        "ticker": "MSpL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Similar to Goldman Sachs, Morgan Stanley earns significant profits from investment banking services, underwriting fees, and stock allocations during active IPO periods."
-      },
-      {
-        "ticker": "MSpO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Similar to Goldman Sachs, Morgan Stanley earns significant profits from investment banking services, underwriting fees, and stock allocations during active IPO periods."
-      },
-      {
-        "ticker": "MSpP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Similar to Goldman Sachs, Morgan Stanley earns significant profits from investment banking services, underwriting fees, and stock allocations during active IPO periods."
-      },
-      {
-        "ticker": "MSpQ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Similar to Goldman Sachs, Morgan Stanley earns significant profits from investment banking services, underwriting fees, and stock allocations during active IPO periods."
-      },
-      {
-        "ticker": "IBKR",
-        "sentiment": "positive",
-        "sentiment_reasoning": "As a discount broker, Interactive Brokers benefits from elevated trading activity and investor demand generated by exciting IPOs, creating a 'feeding frenzy' that increases commission income."
-      },
-      {
-        "ticker": "HOOD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Robinhood attracts small retail investors to newly public companies and benefits from increased trading volume and activity during IPO periods."
       }
     ]
   }

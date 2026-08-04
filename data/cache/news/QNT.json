@@ -1,5 +1,132 @@
 [
   {
+    "id": "92ff05e9898be3cad5ced147c63cb8499ba13f69a1cf290215216a71a7180a05",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Where Will Quantinuum Stock Be in 1 Year?",
+    "author": "Manali Pradhan, Cfa",
+    "published_utc": "2026-07-27T10:03:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/27/where-will-quantinuum-stock-be-in-1-year/?source=iedfolrf0000001",
+    "tickers": [
+      "QNT",
+      "IONQ",
+      "IONQ.WS",
+      "HON"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879494%2Fprofessional_thinking_in_an_office.jpg&w=1200&op=resize",
+    "description": "Quantinuum, a quantum computing company, is trading at a steep valuation of 512x its 2026 revenue estimate despite generating only $30.9 million in 2025 revenue. Analysts project the stock could fall 67% to around $17 per share within one year under base case assumptions, with potential downside to $7 in bear case scenarios. The company's success depends on translating technical progress in logical qubits into commercial revenue growth.",
+    "keywords": [
+      "quantum computing",
+      "IPO",
+      "valuation",
+      "logical qubits",
+      "revenue growth",
+      "stock forecast"
+    ],
+    "insights": [
+      {
+        "ticker": "QNT",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Trading 13% below IPO price at $52.29 with a $14B market cap on minimal revenues ($30.9M in 2025). Analysts project 67% downside to $17 in base case and potential decline to $7 in bear case. Valuation is extremely stretched at 512x 2026 revenue estimates compared to competitor IonQ at 48x, with significant execution risk required to justify current price."
+      },
+      {
+        "ticker": "IONQ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Used as a valuation benchmark in the article. Trading at approximately 48x 2026 revenue estimate with $268.33 million in projected revenue, representing a more reasonable valuation multiple than Quantinuum, though no direct investment recommendation is made."
+      },
+      {
+        "ticker": "IONQ.WS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Used as a valuation benchmark in the article. Trading at approximately 48x 2026 revenue estimate with $268.33 million in projected revenue, representing a more reasonable valuation multiple than Quantinuum, though no direct investment recommendation is made."
+      },
+      {
+        "ticker": "HON",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as strategic backer of Quantinuum, providing some credibility to the company's technical progress. However, no specific analysis or recommendation regarding Honeywell stock itself is provided in the article."
+      }
+    ]
+  },
+  {
+    "id": "ea4e3274e63c0ac196477c4b77fee3a0923210f233e19e2d68b653be214a13e6",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "IonQ vs. Quantinuum vs. Infleqtion vs. Rigetti vs. D-Wave: Which Is the Best Quantum Computing Stock to Bet On?",
+    "author": "Geoffrey Seiler",
+    "published_utc": "2026-07-22T17:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/22/ionq-vs-quantinuum-vs-infleqtion-vs-rigetti-vs-d-w/?source=iedfolrf0000001",
+    "tickers": [
+      "IONQ",
+      "IONQ.WS",
+      "QNT",
+      "RGTI",
+      "RGTIW",
+      "INFQ",
+      "INFQ.WS",
+      "QBTS"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879844%2Fgettyimages-1648617109.jpg&w=1200&op=resize",
+    "description": "The article compares five quantum computing companies using different technological approaches. IonQ and Quantinuum lead in accuracy with trapped-ion technology (99.99% and 99.92% fidelity respectively). Rigetti uses faster superconducting qubits but lags in accuracy. Infleqtion pursues neutral-atom technology with moderate speed and accuracy. D-Wave focuses on quantum annealing for optimization problems and is developing superconducting qubits. The author recommends IonQ as the best single investment due to its accuracy lead and vertically integrated ecosystem approach.",
+    "keywords": [
+      "quantum computing",
+      "trapped-ion technology",
+      "superconducting qubits",
+      "neutral-atom technology",
+      "quantum annealing",
+      "qubit fidelity",
+      "fault-tolerant quantum computers"
+    ],
+    "insights": [
+      {
+        "ticker": "IONQ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Leads in accuracy with 99.99% 2-qubit gate fidelity, developing comprehensive quantum ecosystem through acquisitions, pursuing vertical integration with SkyWater Technology acquisition, and explicitly recommended as the best single investment choice by the author."
+      },
+      {
+        "ticker": "IONQ.WS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Leads in accuracy with 99.99% 2-qubit gate fidelity, developing comprehensive quantum ecosystem through acquisitions, pursuing vertical integration with SkyWater Technology acquisition, and explicitly recommended as the best single investment choice by the author."
+      },
+      {
+        "ticker": "QNT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Second-best accuracy at 99.92% using trapped-ion technology, known for comprehensive software stack, and positioned as a frontrunner in the accuracy race alongside IonQ."
+      },
+      {
+        "ticker": "RGTI",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Offers faster speeds with superconducting qubits but significantly lags in accuracy at 99.1%, which is described as 'way behind' competitors despite sounding close numerically."
+      },
+      {
+        "ticker": "RGTIW",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Offers faster speeds with superconducting qubits but significantly lags in accuracy at 99.1%, which is described as 'way behind' competitors despite sounding close numerically."
+      },
+      {
+        "ticker": "INFQ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Positioned between trapped-ion and superconductor approaches with neutral-atom technology, has solid revenue base from quantum sensing, but 99.73% fidelity meaningfully trails trapped-ion peers."
+      },
+      {
+        "ticker": "INFQ.WS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Positioned between trapped-ion and superconductor approaches with neutral-atom technology, has solid revenue base from quantum sensing, but 99.73% fidelity meaningfully trails trapped-ion peers."
+      },
+      {
+        "ticker": "QBTS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Established leader in quantum annealing with early commercialization success, but pursuing a speculative dual-technology approach combining quantum annealing with superconducting qubits whose success is uncertain."
+      }
+    ]
+  },
+  {
     "id": "b2f6199d61fd7acd2b98ff0822ac361126e42033a1601326243cb0268af8833c",
     "publisher": {
       "name": "The Motley Fool",
@@ -189,137 +316,6 @@
         "ticker": "QNT",
         "sentiment": "positive",
         "sentiment_reasoning": "Described as the world leader in full-stack quantum computing with the industry benchmark for quantum volume. Honeywell's 49.1% stake provides exposure to this high-growth technology, and the company's recent IPO (June 4) positions it as a strategic asset that could appreciate and lift Honeywell's equity value."
-      }
-    ]
-  },
-  {
-    "id": "8aaa6714487b519b83c4d0a9b111e2e33f34dd25e77ee55e16564dcb069a1468",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "Why AppLovin\u2019s CEO Is Selling While Quantum Insiders Are Buying",
-    "author": "Leo Miller",
-    "published_utc": "2026-06-30T16:35:00Z",
-    "article_url": "https://www.investing.com/analysis/why-applovins-ceo-is-selling-while-quantum-insiders-are-buying-200683064",
-    "tickers": [
-      "APP",
-      "QNT",
-      "TTAN"
-    ],
-    "amp_url": "https://m.investing.com/analysis/why-applovins-ceo-is-selling-while-quantum-insiders-are-buying-200683064?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "AppLovin's CEO Adam Foroughi is making substantial discretionary share sales ($51M in June), though he retains a $1B+ stake. Meanwhile, Quantinuum insiders are aggressively buying post-IPO at $60/share, signaling confidence. ServiceTitan also sees increased insider selling. Despite insider activity concerns, analysts project 30-55% upside across all three stocks.",
-    "keywords": [
-      "insider trading",
-      "CEO selling",
-      "quantum computing",
-      "IPO",
-      "software stocks",
-      "valuation",
-      "analyst price targets"
-    ],
-    "insights": [
-      {
-        "ticker": "APP",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "CEO discretionary sales of $51M are concerning, but mitigated by his continued $1B+ stake, historical selling patterns, and analyst consensus projecting 30%+ upside. Stock down 25% in 2026 from valuation compression (59x to 31x P/E)."
-      },
-      {
-        "ticker": "QNT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong insider buying signal with 10+ insiders purchasing ~$25M in shares post-IPO at $60 opening price. Unusual bullish behavior as insiders typically sell after IPOs. Analysts project 35%+ upside despite high valuation and cash burn concerns."
-      },
-      {
-        "ticker": "TTAN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Insider sales increased to $16M in Q2 (non-10b5-1), but remain far below Q3 2025 peak of $172M. Stock down 30% in 2026 due to software sector weakness. Company shows strong fundamentals with 20%+ revenue growth and improving margins (7.5% to 15.2%). Analysts project 55%+ upside."
-      }
-    ]
-  },
-  {
-    "id": "f64ee20280a4b42a9db42176a23abea1a7767734032d13472506040f706589f8",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "Quantum Computing Goes Mainstream: What 2 Executive Orders Mean for Investors",
-    "author": "Christopher Gannatti, Cfa",
-    "published_utc": "2026-06-25T20:20:00Z",
-    "article_url": "https://www.investing.com/analysis/quantum-computing-goes-mainstream-what-2-executive-orders-mean-for-investors-200682815",
-    "tickers": [
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "IBM",
-      "IONQ",
-      "IONQ.WS",
-      "QNT",
-      "MSFT"
-    ],
-    "amp_url": "https://m.investing.com/analysis/quantum-computing-goes-mainstream-what-2-executive-orders-mean-for-investors-200682815?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "President Trump signed two executive orders on quantum computing on June 22, 2026, signaling major government commitment to the sector. The first order (QC-ADDS) aims to build a powerful quantum computer for a Department of Energy lab by 2028, while the second addresses post-quantum cryptography security threats. Combined with $2 billion in CHIPS Act funding announced last month, these policies create procurement pipelines and reduce friction for quantum companies. Recent breakthroughs from Quantinuum and IonQ demonstrate the science is advancing rapidly, supporting the ambitious 2028 timeline.",
-    "keywords": [
-      "quantum computing",
-      "executive orders",
-      "QC-ADDS",
-      "post-quantum cryptography",
-      "CHIPS Act funding",
-      "national security",
-      "quantum hardware",
-      "government procurement"
-    ],
-    "insights": [
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google's president was present at the executive order signing ceremony, signaling strong government partnership and potential procurement opportunities for its quantum computing initiatives."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google's president was present at the executive order signing ceremony, signaling strong government partnership and potential procurement opportunities for its quantum computing initiatives."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google's president was present at the executive order signing ceremony, signaling strong government partnership and potential procurement opportunities for its quantum computing initiatives."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google's president was present at the executive order signing ceremony, signaling strong government partnership and potential procurement opportunities for its quantum computing initiatives."
-      },
-      {
-        "ticker": "IBM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "IBM's president attended the signing ceremony and the company is mentioned as advancing superconducting quantum systems. Government backing and procurement pipelines support future growth in quantum sector."
-      },
-      {
-        "ticker": "IONQ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "IonQ published breakthrough research in June 2026 on distributed quantum networks with Duke Quantum Center, demonstrating technical progress. The company received CHIPS Act funding and benefits from government's quantum computing mandate."
-      },
-      {
-        "ticker": "IONQ.WS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "IonQ published breakthrough research in June 2026 on distributed quantum networks with Duke Quantum Center, demonstrating technical progress. The company received CHIPS Act funding and benefits from government's quantum computing mandate."
-      },
-      {
-        "ticker": "QNT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Quantinuum published significant breakthrough in Nature journal with its Helios 98-qubit system achieving 99.92% two-qubit gate fidelities, demonstrating meaningful progress toward government's 2028 quantum computing goals."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Microsoft announced recent progress with topological qubit approach, positioning itself within the diverse quantum hardware ecosystem benefiting from government support and policy tailwinds."
       }
     ]
   }

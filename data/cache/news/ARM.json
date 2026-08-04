@@ -1,345 +1,363 @@
 [
   {
-    "id": "507cc27f6d4379b7e5129e1fb54a611e87acbbc3bbd0f73339ddf65109e528d3",
+    "id": "bb6e947ab2cc68cf15bbac9db9311a55e6e62378c07677cb3187c3567ffbebc7",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Nvidia: Jensen Huang's Company Is Still the King of AI, and the Stock Is a Buy",
+    "title": "Is Arm Holdings Stock a Buy on the Bullish CPU Outlook?",
     "author": "Geoffrey Seiler",
-    "published_utc": "2026-07-18T17:33:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/18/nvidia-jensen-huangs-company-is-still-the-king-of/?source=iedfolrf0000001",
+    "published_utc": "2026-08-02T19:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/02/is-arm-holdings-a-buy-on-the-bullish-cpu-outlook/?source=iedfolrf0000001",
     "tickers": [
+      "ARM",
       "NVDA",
-      "ARM"
+      "AMD",
+      "AMZN",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879054%2Fjensen-huang_nvidia_nvda_ceo_imagesource_nvidia-corporation.jpg&w=1200&op=resize",
-    "description": "Nvidia remains the dominant AI chipmaker under CEO Jensen Huang's visionary leadership. The company has strategically positioned itself across the entire AI infrastructure stack through key acquisitions (Mellanox, Groq assets) and product development, including GPUs, CPUs, and LPUs. Trading at 16x fiscal 2028 earnings estimates with strong growth, Nvidia is well-positioned for future AI markets including inference and agentic AI workloads.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F881270%2Farm.png&w=1200&op=resize",
+    "description": "Arm Holdings announced strong fiscal Q1 earnings with 22% revenue growth and increased confidence in achieving over $1 billion in server CPU revenue by fiscal 2028. However, the analyst recommends against buying the stock due to its high forward P/E ratio of over 100, risks from competing with its own customers in the data center CPU market, and headwinds in its core smartphone business from elevated memory costs.",
     "keywords": [
-      "AI infrastructure",
-      "GPU",
-      "CUDA platform",
+      "Arm Holdings",
+      "server CPU market",
       "data center",
-      "inference",
-      "agentic AI",
-      "Jensen Huang",
-      "strategic acquisitions",
-      "competitive moat"
+      "AI chips",
+      "valuation concerns",
+      "intellectual property",
+      "semiconductor"
     ],
     "insights": [
+      {
+        "ticker": "ARM",
+        "sentiment": "negative",
+        "sentiment_reasoning": "While the company shows strong operational momentum with solid Q1 earnings and growing server CPU backlog, the analyst rates it as not a buy due to excessive valuation (P/E over 100), strategic risks from competing with customers, and smartphone market headwinds. The transition to manufacturing physical chips may also lead to multiple compression."
+      },
       {
         "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Article highlights Nvidia's dominant market position, visionary leadership, strategic foresight in anticipating AI trends, diversified product portfolio across GPUs/CPUs/LPUs, attractive valuation at 16x forward earnings, and strong growth prospects in emerging AI markets like inference and agentic AI."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in the data center CPU market and as a customer of Arm's IP (Vera chips). No specific sentiment expressed about the company itself."
       },
       {
-        "ticker": "ARM",
+        "ticker": "AMD",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only in disclosure statement as a company The Motley Fool has positions in; no substantive analysis provided in the article content."
+        "sentiment_reasoning": "Mentioned as a competitor in the server CPU market alongside Arm. The analyst holds positions in AMD but no specific sentiment is expressed in the article."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a customer of Arm's IP through its Graviton chips. No specific sentiment expressed."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a customer of Arm's IP through its Axion chips. No specific sentiment expressed."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a customer of Arm's IP through its Axion chips. No specific sentiment expressed."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a customer of Arm's IP through its Axion chips. No specific sentiment expressed."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a customer of Arm's IP through its Axion chips. No specific sentiment expressed."
       }
     ]
   },
   {
-    "id": "f360a5bc0fe41d6bee2b0fca8b6c843f2e51b15e68c1979df1b4b747b261bbb3",
+    "id": "7c4f34a8eee8782c8cab0001dd28274ee809c346616f9a559c492a27b4db11fa",
     "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Nasdaq 100 Outlook Turns Fragile as Chip Stocks Retreat Despite Easing Inflation",
-    "author": "Fawad Razaqzada",
-    "published_utc": "2026-07-16T11:48:00Z",
-    "article_url": "https://www.investing.com/analysis/nasdaq-100-outlook-turns-fragile-as-chip-stocks-retreat-despite-easing-inflation-200684048",
+    "title": "Advanced Micro Devices vs. Arm: Which Tech Stock Is a Better Buy in 2026?",
+    "author": "Erin Kennedy",
+    "published_utc": "2026-08-02T12:30:01Z",
+    "article_url": "https://www.fool.com/coverage/better-buy/2026/08/02/advanced-micro-devices-vs-arm-which-tech-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
     "tickers": [
-      "TSM",
+      "AMD",
       "ARM",
-      "ASML",
-      "SMH",
-      "UNH",
-      "NFLX"
+      "INTC",
+      "NVDA",
+      "TSM",
+      "MSFT",
+      "AMZN",
+      "META"
     ],
-    "amp_url": "https://m.investing.com/analysis/nasdaq-100-outlook-turns-fragile-as-chip-stocks-retreat-despite-easing-inflation-200684048?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "US equity futures declined as semiconductor stocks weakened, with the Nasdaq 100 struggling near the 30K resistance level. Despite softer inflation data supporting growth assets, AI enthusiasm is cooling amid concerns about infrastructure investment returns and supply chain constraints. The Fed remains cautious despite improving inflation data, with focus shifting to retail sales and hawkish Fed speakers.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F8cd6be858db5e4ce4620efa120c8f078af15d22a-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "The article compares AMD and Arm as investment options in 2026. AMD is a chip manufacturer with strong data center revenue growth (34.3% YoY) but faces manufacturing risks and competition. Arm licenses IP architecture with a 99% smartphone market share, higher profit margins (18.4%), and a more resilient business model. Despite AMD's cheaper valuation (P/E 68.6 vs 108.6), the author recommends Arm due to its superior business model and lower operational risks.",
     "keywords": [
-      "Nasdaq 100",
-      "semiconductor sector",
-      "AI stocks",
-      "inflation",
-      "Fed policy",
-      "chip stocks",
-      "portfolio rotation",
-      "technical resistance"
+      "semiconductor stocks",
+      "chip manufacturing",
+      "IP licensing",
+      "data center AI",
+      "valuation comparison",
+      "business model analysis",
+      "supply chain risk"
     ],
     "insights": [
       {
-        "ticker": "TSM",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock came under heavy selling pressure as part of broader semiconductor sector weakness despite record earnings"
+        "ticker": "AMD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Strong revenue growth (34.3%) and data center presence are positive, but significant manufacturing risks via TSMC dependency, intense competition from Intel and Nvidia, and export regulation challenges create concerns. Cheaper valuation is attractive but doesn't offset operational risks."
       },
       {
         "ticker": "ARM",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Among the biggest laggards in the semiconductor sector, falling about 4%"
-      },
-      {
-        "ticker": "ASML",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Initially rallied on earnings but reversed course and ended the day down, showing mixed sentiment"
-      },
-      {
-        "ticker": "SMH",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Dropped roughly 2% as semiconductor sector faced broad selling pressure"
-      },
-      {
-        "ticker": "UNH",
         "sentiment": "positive",
-        "sentiment_reasoning": "Healthcare giant comfortably beat earnings forecasts and rallied strongly, supporting Dow futures"
+        "sentiment_reasoning": "Superior business model with 99% smartphone market monopoly, higher profit margins (18.4%), strong liquidity (current ratio 6.0), and record Q1 licensing revenue. IP-based model eliminates manufacturing and supply chain risks, making it more resilient despite higher valuation."
       },
       {
-        "ticker": "NFLX",
+        "ticker": "INTC",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Mentioned as an established rival competing with AMD in CPU and GPU markets, implying competitive pressure and market share challenges."
+      },
+      {
+        "ticker": "NVDA",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as upcoming earnings release but no sentiment data provided in article"
+        "sentiment_reasoning": "Mentioned as a major competitor to AMD in GPU markets and as a tech titan building on Arm architecture, indicating competitive dynamics without specific performance commentary."
+      },
+      {
+        "ticker": "TSM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Critical third-party manufacturing partner for AMD; potential supply chain bottlenecks at leading-edge nodes represent a risk factor for AMD's operations."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a strategic partner of AMD and as a tech titan building on Arm architecture; neutral mention without specific sentiment."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech titan building on Arm architecture; neutral mention supporting Arm's market dominance."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech titan building on Arm architecture; neutral mention supporting Arm's market dominance."
       }
     ]
   },
   {
-    "id": "1ccf6f2ed1142e99863063795edbca0bf3a1273bb0ebf02221087c006bdad92d",
+    "id": "43eca723182fa8fab6aeb2549dc62f0bd38518c4ddb36d850409379e2d2ec4c5",
     "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Data Center Chip Market Size to Hit $56.80 Billion by 2035 | SNS Insider",
-    "author": "Sns Insider",
-    "published_utc": "2026-07-14T06:30:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/14/3326582/0/en/Data-Center-Chip-Market-Size-to-Hit-56-80-Billion-by-2035-SNS-Insider.html",
+    "title": "1 Key Metric To Watch That Could Send Arm Stock Soaring",
+    "author": "Jeremy Bowman",
+    "published_utc": "2026-07-31T12:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/31/1-metric-arm-investors-need-to-watch/?source=iedfolrf0000001",
     "tickers": [
+      "ARM",
       "NVDA",
       "INTC",
       "AMD",
-      "AVGO",
-      "QCOM",
+      "MSFT",
       "GOOG",
       "GOOGL",
       "GOOGM",
       "GOOGN",
-      "AMZN",
-      "MSFT",
-      "META",
-      "IFNNY",
-      "ARM"
+      "AMZN"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
-    "description": "The global data center chip market, valued at $22.50 billion in 2025, is expected to reach $56.80 billion by 2035, growing at a CAGR of 9.70%. Growth is driven by generative AI workload demand, hyperscaler capital expenditure commitments of $300 billion in 2025, and enterprise AI adoption. GPUs are expected to register the highest growth rate, while large hyperscale data centers dominate with 68.04% market share. North America leads globally with 35.73% market share, while Europe and Asia-Pacific show strong growth trajectories.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F881357%2Fai-chip.jpg&w=1200&op=resize",
+    "description": "Arm Holdings beat earnings expectations with 22% revenue growth to $1.29B and strong data center performance. The company's upcoming AGI CPU chip, already oversubscribed with demand more than double expectations, is positioned to drive future growth. Investors should monitor the CPU addressable market (TAM) forecasts, which have risen to $220B according to AMD's recent estimates, significantly higher than Arm's conservative $100B projection for fiscal 2031.",
     "keywords": [
-      "data center chips",
-      "generative AI",
-      "GPU",
-      "AI accelerators",
-      "hyperscale data centers",
-      "enterprise AI inference",
-      "semiconductor market",
-      "AI infrastructure investment"
+      "Arm Holdings",
+      "AGI CPU",
+      "data center",
+      "earnings beat",
+      "addressable market",
+      "semiconductor",
+      "AI chips"
     ],
     "insights": [
       {
-        "ticker": "NVDA",
+        "ticker": "ARM",
         "sentiment": "positive",
-        "sentiment_reasoning": "NVIDIA is highlighted as a key player with significant design capability and dominance in GPU market for AI training. The article emphasizes GPU segment as highest growth CAGR driver, directly benefiting NVIDIA's core business."
+        "sentiment_reasoning": "Beat earnings expectations on both revenue and EPS, demonstrated strong data center growth with royalties more than doubling YoY, and the AGI CPU chip shows exceptional early demand (2x oversubscribed). Future revenue projections are substantial with potential upside if market TAM estimates continue to rise."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a major customer licensing Arm's CPU technology, but no specific news or performance metrics provided in the article."
       },
       {
         "ticker": "INTC",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a key player in North America's semiconductor design capability, but no specific growth drivers or recent developments mentioned. CPU segment holds largest market share but GPU segment shows higher growth potential."
+        "sentiment_reasoning": "Identified as a competitor in the CPU market, but article notes Arm-based chips have surpassed x86 platform. No specific company news provided."
       },
       {
         "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Identified as a major player in North America's data center chip design capability with significant market presence alongside NVIDIA and Intel."
-      },
-      {
-        "ticker": "AVGO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Listed among the world's largest concentration of data center semiconductor design capability in North America, benefiting from hyperscaler infrastructure expansion."
-      },
-      {
-        "ticker": "QCOM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Highlighted as a key player and specifically mentioned for launching AI200 and AI250 AI accelerators in 2025 for large-scale data center inference workloads."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Identified as a hyperscaler cloud service provider with significant chip procurement and custom TPU/Cloud AI development, benefiting from sustained AI infrastructure investment."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Identified as a hyperscaler cloud service provider with significant chip procurement and custom TPU/Cloud AI development, benefiting from sustained AI infrastructure investment."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Identified as a hyperscaler cloud service provider with significant chip procurement and custom TPU/Cloud AI development, benefiting from sustained AI infrastructure investment."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Identified as a hyperscaler cloud service provider with significant chip procurement and custom TPU/Cloud AI development, benefiting from sustained AI infrastructure investment."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major hyperscaler cloud provider developing custom chips (Trainium/Inferentia) for AI workloads, driving sustained data center chip demand."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor and cited for providing updated $220B server CPU market estimate, which benefits Arm's growth potential. No negative or positive company-specific news."
       },
       {
         "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Hyperscaler cloud provider developing custom Azure AI Maia chips, part of the $300 billion collective 2025 capital expenditure commitment for AI infrastructure."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a major hyperscaler customer of Arm's technology, but no specific performance metrics or news provided."
       },
       {
-        "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Hyperscaler developing custom MTIA chips and part of the collective hyperscaler investment driving sustained AI infrastructure expansion."
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a major hyperscaler customer of Arm's technology, but no specific performance metrics or news provided."
       },
       {
-        "ticker": "IFNNY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Specifically mentioned for data center power electronics innovation and 2025 collaboration with NVIDIA on 800V HVDC power delivery architecture for GPU-dense AI servers."
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a major hyperscaler customer of Arm's technology, but no specific performance metrics or news provided."
       },
       {
-        "ticker": "ARM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Highlighted for joining Open Compute Project board and introducing vendor-neutral chiplet standard in 2025, enabling open modular AI data center architectures."
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a major hyperscaler customer of Arm's technology, but no specific performance metrics or news provided."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a major hyperscaler customer of Arm's technology, but no specific performance metrics or news provided."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a major hyperscaler customer of Arm's technology, but no specific performance metrics or news provided."
       }
     ]
   },
   {
-    "id": "b71096868b78ec668de7ad6ca6d91191f682ee959ac1c25baf1cca5e1da7c834",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Edge AI Semiconductor Market Size to Hit USD 151.30 Billion by 2035 | Research by SNS Insider",
-    "author": "Sns Insider",
-    "published_utc": "2026-07-10T07:30:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/10/3325326/0/en/Edge-AI-Semiconductor-Market-Size-to-Hit-USD-151-30-Billion-by-2035-Research-by-SNS-Insider.html",
-    "tickers": [
-      "INTC",
-      "QCOM",
-      "AMD",
-      "AAPL",
-      "AVGO",
-      "NXPI",
-      "ARM"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
-    "description": "The global Edge AI Semiconductor Market was valued at $25.36 billion in 2025 and is projected to reach $151.30 billion by 2035, growing at a CAGR of 19.57%. Growth is driven by rising adoption of edge AI computing across consumer electronics, automotive, industrial IoT, and healthcare sectors. North America leads with 39% market share, while Asia Pacific is expected to experience the highest growth rate.",
-    "keywords": [
-      "Edge AI semiconductors",
-      "AI processors",
-      "NPU (Neural Processing Unit)",
-      "AI ASICs",
-      "autonomous vehicles",
-      "edge computing",
-      "real-time AI inference",
-      "intelligent connected devices"
-    ],
-    "insights": [
-      {
-        "ticker": "INTC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Intel is identified as a leading market player in the edge AI semiconductor market, which is experiencing robust growth at 19.57% CAGR through 2035."
-      },
-      {
-        "ticker": "QCOM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Qualcomm is listed as a leading player and recently introduced next-generation AI-enabled Snapdragon platforms with enhanced NPUs, positioning itself well in the rapidly growing edge AI market."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "AMD is identified as a leading market player in the edge AI semiconductor market with significant growth opportunities ahead."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Apple is listed as a leading market player and benefits from the consumer electronics segment, which commands 34% market share and is a primary driver of edge AI semiconductor adoption."
-      },
-      {
-        "ticker": "AVGO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Broadcom is identified as a leading market player in the edge AI semiconductor sector experiencing strong market growth."
-      },
-      {
-        "ticker": "NXPI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "NXP is listed as a leading market player with exposure to automotive and industrial IoT segments, which are among the fastest-growing application areas for edge AI semiconductors."
-      },
-      {
-        "ticker": "ARM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Arm is identified as a leading market player whose processor architectures are fundamental to edge AI semiconductor development across multiple device types."
-      }
-    ]
-  },
-  {
-    "id": "76f0029bd3f09f8683f4fe276aac6383e70a0a1b88007074597bc887da5bc539",
+    "id": "3b9eb7c579b1e7d849842b5b566a6ab9820cac4cc640e9a22dc339f7e16872c5",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Why Arm Holdings Stock Soared 224.4% Through The First Half Of 2026",
-    "author": "Brett Schafer",
-    "published_utc": "2026-07-10T01:12:33Z",
-    "article_url": "https://www.fool.com/investing/2026/07/09/why-arm-holdings-stock-soared-2244-through-the-fir/?source=iedfolrf0000001",
+    "title": "Why Arm Stock Is Surging Today",
+    "author": "Keith Noonan",
+    "published_utc": "2026-07-30T15:16:05Z",
+    "article_url": "https://www.fool.com/investing/2026/07/30/why-arm-stock-is-surging-today/?source=iedfolrf0000001",
     "tickers": [
-      "ARM",
-      "AAPL",
-      "META",
-      "AMZN"
+      "ARM"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878360%2Fsuper-computer.jpg&w=1200&op=resize",
-    "description": "Arm Holdings stock surged 224.4% in the first half of 2026, driven by investor anticipation of its expansion into AI infrastructure and its new AGI CPU chip. The company projects revenue could grow 5x from $4.92 billion in 2026 to $25 billion by 2031. However, analysts caution the stock appears overvalued at current prices, with a projected P/E ratio of 36 in 2031 based on management guidance.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879206%2Fgettyimages-1248262649-copy.jpg&w=1200&op=resize",
+    "description": "Arm Holdings stock surged on July 30, 2026, gaining 6.7% by mid-session after the semiconductor company reported better-than-expected fiscal Q1 2027 results with record sales of $1.29 billion and adjusted EPS of $0.45, both beating Wall Street forecasts. The stock also benefited from a broader chip sector rebound following the previous day's market sell-off. Forward guidance for Q2 also exceeded analyst expectations.",
     "keywords": [
       "Arm Holdings",
-      "AI boom",
-      "CPU architecture",
-      "chip design",
-      "data centers",
-      "stock valuation",
-      "revenue growth"
+      "semiconductor",
+      "earnings beat",
+      "AI demand",
+      "chip stocks",
+      "market rebound",
+      "fiscal Q1 2027"
     ],
     "insights": [
       {
         "ticker": "ARM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company delivered record fiscal Q1 results beating both sales and earnings expectations, with strong forward guidance for Q2 that also exceeds analyst forecasts. Stock surged 6.7% on the news, driven by strong AI-related demand and positive market sentiment toward chip stocks."
+      }
+    ]
+  },
+  {
+    "id": "d157e9f5855b45a0cf9f068229e2739b72794d676766512c91398b1b23bc46b5",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Nvidia's Quiet Bet on AI Sandboxes Could Decide Who Wins the AI Agent Era",
+    "author": "Beegee Alop",
+    "published_utc": "2026-07-28T17:34:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/28/nvidias-quiet-bet-on-ai-sandboxes-could-decide-who/?source=iedfolrf0000001",
+    "tickers": [
+      "NVDA",
+      "AMD",
+      "INTC",
+      "ARM",
+      "AMZN",
+      "MSFT",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880840%2Fai-sandbox.png&w=1200&op=resize",
+    "description": "As AI agents begin executing code rather than just generating text, enterprises will need isolated sandbox environments to safely run generated code. This creates a new infrastructure market where Nvidia bets on faster cores, AMD on more cores per rack, Intel on existing x86 compatibility, and hyperscalers on custom silicon. The winner will be determined by which approach most efficiently completes agent tasks at scale.",
+    "keywords": [
+      "AI agents",
+      "code execution",
+      "sandboxes",
+      "CPU architecture",
+      "enterprise infrastructure",
+      "processor competition",
+      "cloud computing"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Nvidia is positioning its Vera CPU with 88 custom cores and 10-wide decode engines to handle agent execution workloads. The company is betting on faster, wider cores to complete blocking tasks quickly and plans to sell stand-alone Vera racks, creating a new revenue path beyond GPU systems."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "AMD's Venice architecture supports up to 256 cores per socket and can scale beyond 36,000 cores per liquid-cooled rack. The company emphasizes compatibility with existing x86 tools and software, positioning itself as a practical choice for enterprises migrating agent workloads while maintaining architectural familiarity."
+      },
+      {
+        "ticker": "INTC",
         "sentiment": "neutral",
-        "sentiment_reasoning": "While the company shows strong growth potential with 5x revenue projection and strategic positioning in AI, the article explicitly warns that shares appear overvalued at current prices with a projected P/E of 36 by 2031, recommending investors avoid buying at this stock price."
+        "sentiment_reasoning": "Intel's strategy relies on existing Xeon infrastructure familiarity and adding more cores through Xeon 6+ processors. However, the article suggests Intel faces challenges proving its existing workforce can compete on cost and performance, making its position more defensive than proactive in the emerging agent execution market."
       },
       {
-        "ticker": "AAPL",
+        "ticker": "ARM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Apple uses Arm's energy-efficient CPU architecture for all its internal chips, benefiting from Arm's technological leadership and expansion into AI markets."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Meta is mentioned as an AI infrastructure player using Arm to design internal CPUs for data centers, positioning it to benefit from Arm's growth."
+        "sentiment_reasoning": "Arm benefits from multiple competing Arm-based processors (Nvidia Vera, AWS Graviton, Microsoft Cobalt, Google Axion) gaining market share. As the instruction set blueprint supplier, Arm can monetize the market regardless of which specific processor dominates, creating a win-win scenario."
       },
       {
         "ticker": "AMZN",
         "sentiment": "positive",
-        "sentiment_reasoning": "Amazon is identified as an AI infrastructure player leveraging Arm's CPU designs for data center applications."
+        "sentiment_reasoning": "Amazon is preparing agent infrastructure through AWS Lambda MicroVMs and custom Graviton processors. As a hyperscaler controlling the entire workplace (hardware, software, services), Amazon can optimize total cost efficiency and potentially capture more value than merchant chip vendors."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Microsoft is adding isolated agent-execution environments to Azure and developing custom Cobalt processors. The company can integrate these with GitHub and enterprise software, giving it advantages in optimizing the complete workplace for agent execution."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
       }
     ]
   }

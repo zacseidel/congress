@@ -1,5 +1,44 @@
 [
   {
+    "id": "2e785f9ade0f471581ed585eef3725363bcba4b70e2f550c99c36cd59cb5a17e",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Why Teradyne Stock Is Gaining Today",
+    "author": "Keith Noonan",
+    "published_utc": "2026-07-29T17:02:38Z",
+    "article_url": "https://www.fool.com/investing/2026/07/29/why-teradyne-stock-is-gaining-today/?source=iedfolrf0000001",
+    "tickers": [
+      "TER",
+      "ONEQ"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879210%2Fgettyimages-1292531161-1.jpg&w=1200&op=resize",
+    "description": "Teradyne stock rose 4.27% despite broader market declines, driven by strong Q2 earnings that beat expectations and robust forward guidance. The company reported Q2 adjusted EPS of $2.47 on $1.33B revenue, significantly exceeding analyst estimates. Q3 guidance also substantially surpassed expectations with projected revenue of $1.2-1.3B versus $1.03B consensus and adjusted EPS of $1.85-2.15 versus $1.44 forecast. The stock had gained as much as 16.1% intraday before profit-taking and broader market weakness trimmed gains.",
+    "keywords": [
+      "earnings beat",
+      "forward guidance",
+      "semiconductor",
+      "memory chip solutions",
+      "Q2 results",
+      "profit-taking"
+    ],
+    "insights": [
+      {
+        "ticker": "TER",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company delivered strong Q2 earnings that significantly beat analyst expectations (EPS beat by $0.42, revenue beat by ~$110M) with 104% YoY revenue growth. Q3 guidance substantially exceeded consensus estimates on both revenue and earnings metrics, indicating strong momentum in memory chip solutions demand."
+      },
+      {
+        "ticker": "ONEQ",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Index declined 0.9% on the day, contributing to bearish momentum that caused Teradyne to retreat from its 16.1% intraday gain despite strong company-specific results."
+      }
+    ]
+  },
+  {
     "id": "8a901faffa5ebe8cb0205ae444fc88db0289d9c6e1df1b6cd30107329d860549",
     "publisher": {
       "name": "The Motley Fool",
@@ -296,117 +335,6 @@
         "ticker": "AGI",
         "sentiment": "negative",
         "sentiment_reasoning": "Stock fell 11.63% after Q1 results; precious metals pressured by higher interest rate expectations and geopolitical tensions"
-      }
-    ]
-  },
-  {
-    "id": "ffe6227f3f720b45de04af3887ccb63fd87cec3d1babd325feb5c50ace50b4b4",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Here's Why This AI-Related Company's Stock Soared Today",
-    "author": "Lee Samaha",
-    "published_utc": "2026-04-30T18:12:58Z",
-    "article_url": "https://www.fool.com/investing/2026/04/30/heres-why-this-ai-related-companys-stock-soared-to/?source=iedfolrf0000001",
-    "tickers": [
-      "TER",
-      "GS",
-      "GSpA",
-      "GSpC",
-      "GSpD",
-      "AMJB",
-      "JPM",
-      "JPMpC",
-      "JPMpD",
-      "JPMpJ",
-      "JPMpK",
-      "JPMpL",
-      "JPMpM",
-      "VYLD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F867978%2Fai-stocks.jpg&w=1200&op=resize",
-    "description": "Teradyne's stock surged over 15% as investors viewed a recent dip as a buying opportunity. The company reported that AI now drives 70% of its revenue (up from 60%), with 87% year-over-year revenue growth. However, second-quarter guidance disappointed with a sequential revenue decline expected, though analysts from Goldman Sachs and JPMorgan maintained positive outlooks, citing natural order timing lumpiness rather than fundamental weakness.",
-    "keywords": [
-      "AI chips",
-      "automated test equipment",
-      "revenue growth",
-      "guidance",
-      "analyst upgrades",
-      "semiconductor testing"
-    ],
-    "insights": [
-      {
-        "ticker": "TER",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock surged 13.6% on positive analyst sentiment despite disappointing Q2 guidance. Strong AI revenue growth (70% of total, 87% YoY), with Goldman Sachs raising price target to $350 and JPMorgan upgrading to overweight. Market treated the dip as a buying opportunity."
-      },
-      {
-        "ticker": "GS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst providing positive coverage on Teradyne with price target raise to $350 and buy rating. No direct impact on Goldman Sachs itself reported."
-      },
-      {
-        "ticker": "GSpA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst providing positive coverage on Teradyne with price target raise to $350 and buy rating. No direct impact on Goldman Sachs itself reported."
-      },
-      {
-        "ticker": "GSpC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst providing positive coverage on Teradyne with price target raise to $350 and buy rating. No direct impact on Goldman Sachs itself reported."
-      },
-      {
-        "ticker": "GSpD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst providing positive coverage on Teradyne with price target raise to $350 and buy rating. No direct impact on Goldman Sachs itself reported."
-      },
-      {
-        "ticker": "AMJB",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst upgrading Teradyne to overweight with $400 price target. No direct impact on JPMorgan itself reported."
-      },
-      {
-        "ticker": "JPM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst upgrading Teradyne to overweight with $400 price target. No direct impact on JPMorgan itself reported."
-      },
-      {
-        "ticker": "JPMpC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst upgrading Teradyne to overweight with $400 price target. No direct impact on JPMorgan itself reported."
-      },
-      {
-        "ticker": "JPMpD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst upgrading Teradyne to overweight with $400 price target. No direct impact on JPMorgan itself reported."
-      },
-      {
-        "ticker": "JPMpJ",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst upgrading Teradyne to overweight with $400 price target. No direct impact on JPMorgan itself reported."
-      },
-      {
-        "ticker": "JPMpK",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst upgrading Teradyne to overweight with $400 price target. No direct impact on JPMorgan itself reported."
-      },
-      {
-        "ticker": "JPMpL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst upgrading Teradyne to overweight with $400 price target. No direct impact on JPMorgan itself reported."
-      },
-      {
-        "ticker": "JPMpM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst upgrading Teradyne to overweight with $400 price target. No direct impact on JPMorgan itself reported."
-      },
-      {
-        "ticker": "VYLD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as analyst upgrading Teradyne to overweight with $400 price target. No direct impact on JPMorgan itself reported."
       }
     ]
   }

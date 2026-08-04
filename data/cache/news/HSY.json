@@ -1,5 +1,63 @@
 [
   {
+    "id": "cba6663e74e83baef4281f1a01f497acf50ac27ebcc6555164b0ec4b77b335fc",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Bill Gates' Foundation Was Snubbed by Warren Buffett for the First Time in 20 Years. Buffett Is Now on Track to Offload His Entire $140 Billion Berkshire Stake by 2034.",
+    "author": "Reuben Gregg Brewer",
+    "published_utc": "2026-07-19T15:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/19/bill-gates-foundation-was-snubbed-by-warren-buffet/?source=iedfolrf0000001",
+    "tickers": [
+      "MSFT",
+      "HSY",
+      "HRL",
+      "BRK.A",
+      "BRK.B"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878855%2F22_03_21-a-person-jumping-between-cliffs-one-with-past-written-on-it-and-the-other-with-future-_gettyimages-1295289697.jpg&w=1200&op=resize",
+    "description": "Warren Buffett has redirected his charitable giving away from the Bill Gates Foundation for the first time in 20 years, instead donating his $140 billion Berkshire Hathaway stake to foundations run by his children by 2034. This shift could have significant implications for Berkshire's future operations, potentially leading to dividend payments to support the foundations' philanthropic goals, which may differ from Buffett's traditional reinvestment strategy.",
+    "keywords": [
+      "Warren Buffett",
+      "charitable giving",
+      "Berkshire Hathaway",
+      "dividend policy",
+      "succession planning",
+      "Greg Abel",
+      "Bill Gates Foundation"
+    ],
+    "insights": [
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Microsoft is mentioned only in context of Bill Gates' association with the company and the Epstein scandal connection. No direct business impact is discussed."
+      },
+      {
+        "ticker": "HSY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Used as a comparative example of how founder-established foundations can influence corporate strategy, but no direct sentiment regarding Hershey's business is expressed."
+      },
+      {
+        "ticker": "HRL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Used as a comparative example of how foundations use dividends to support philanthropic goals, but no direct sentiment regarding Hormel's business is expressed."
+      },
+      {
+        "ticker": "BRK.A",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "The article presents a structural change in ownership and potential future dividend policy, but doesn't indicate immediate negative or positive impact. The shift could lead to operational changes under new leadership, but the long-term implications remain uncertain."
+      },
+      {
+        "ticker": "BRK.B",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "The article presents a structural change in ownership and potential future dividend policy, but doesn't indicate immediate negative or positive impact. The shift could lead to operational changes under new leadership, but the long-term implications remain uncertain."
+      }
+    ]
+  },
+  {
     "id": "5659ae4129a9a14cb6c70461b7c1f6bfb30354c74cb572ecaafcfc34e0601046",
     "publisher": {
       "name": "The Motley Fool",
@@ -172,53 +230,6 @@
         "ticker": "KVUE",
         "sentiment": "neutral",
         "sentiment_reasoning": "Being acquired by Kimberly-Clark in deal valued at $48.7 billion, approved January 2026, closing expected second half 2026. Neutral sentiment as it's transitioning to subsidiary status rather than independent company."
-      }
-    ]
-  },
-  {
-    "id": "1d6b0f36676dac1c2aa7ee6e07958908bb0973af3a96d2f2abcec7de27cebdb3",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "3 Candy Stocks Getting a Spring Sugar Rush",
-    "author": "Chris Markoch",
-    "published_utc": "2026-04-03T12:25:00Z",
-    "article_url": "https://www.investing.com/analysis/3-candy-stocks-getting-a-spring-sugar-rush-200677840",
-    "tickers": [
-      "HSY",
-      "MDLZ",
-      "TR"
-    ],
-    "amp_url": "https://m.investing.com/analysis/3-candy-stocks-getting-a-spring-sugar-rush-200677840?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "Candy stocks are experiencing positive momentum in 2026 driven by seasonal demand around Easter and Mother's Day. Despite elevated cocoa prices and tariffs, three major players\u2014Hershey, Mondelez, and Tootsie Roll\u2014are posting gains. However, all three stocks trade at premium valuations well above market averages, raising questions about whether upside potential remains.",
-    "keywords": [
-      "candy stocks",
-      "cocoa prices",
-      "tariffs",
-      "Easter demand",
-      "valuation",
-      "dividend stocks",
-      "consumer staples"
-    ],
-    "insights": [
-      {
-        "ticker": "HSY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Beat Q4 2025 EPS expectations by over 20%, strategic pivot to salty snacks showing strong growth, though stock trades at rich 46x earnings. Analysts have mixed outlook with 10% upside to consensus price target."
-      },
-      {
-        "ticker": "MDLZ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Institutional investors accumulating stock, solid technical base above January lows, trading at reasonable 18x forward earnings despite 30x current earnings. Described as 'slow-but-steady' story with modest but consistent performance."
-      },
-      {
-        "ticker": "TR",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock recovering from post-earnings selloff with year-over-year revenue and earnings gains. Management noted tariff rescissions on cocoa should reduce costs in 2026, presenting potential for exceptional value despite 32x earnings premium."
       }
     ]
   }

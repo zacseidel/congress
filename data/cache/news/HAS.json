@@ -1,5 +1,45 @@
 [
   {
+    "id": "f2020840f474b3dde9460c1bfa6802a3ec3b1ae7e13e09ef65fe0990e6e8cd20",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "2 High-Yield Dividend Stocks to Buy Now",
+    "author": "John Ballard",
+    "published_utc": "2026-07-28T10:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/07/28/2-high-yield-dividend-stocks-to-buy-now/?source=iedfolrf0000001",
+    "tickers": [
+      "PEP",
+      "HAS"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880512%2Fis-pepsico-stock-a-buy.png&w=1200&op=resize",
+    "description": "PepsiCo and Hasbro are highlighted as attractive high-yield dividend stocks. PepsiCo offers a 4.3% dividend yield with 54 consecutive years of dividend growth and posted 7% year-over-year revenue increase. Hasbro provides a 3.2% yield with strong earnings growth and resilient brands like Magic: The Gathering showing 32% revenue growth.",
+    "keywords": [
+      "dividend stocks",
+      "high-yield dividends",
+      "consumer goods",
+      "PepsiCo",
+      "Hasbro",
+      "dividend growth",
+      "earnings growth"
+    ],
+    "insights": [
+      {
+        "ticker": "PEP",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong 4.3% dividend yield with 54-year consecutive dividend growth streak, 7% YoY revenue growth, solid payout ratio of 75%, and successful execution of cost-saving initiatives despite macroeconomic headwinds."
+      },
+      {
+        "ticker": "HAS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Attractive 3.2% dividend yield, stock up 38% over three years, adjusted EPS improved significantly from $2.51 (2023) to $5.94 (trailing-12-month), strong brand performance with Magic: The Gathering up 32% YoY, and potential for dividend growth resumption."
+      }
+    ]
+  },
+  {
     "id": "7127da02f0e1a57902c9c13ffe368d550a9363774851d6669f7f87a6170ebc3a",
     "publisher": {
       "name": "GlobeNewswire Inc.",
@@ -305,60 +345,6 @@
         "ticker": "TJX",
         "sentiment": "neutral",
         "sentiment_reasoning": "Listed among earnings reporters without specific sentiment indicators or analysis in the article."
-      }
-    ]
-  },
-  {
-    "id": "85f9914524a3563a82688f4d5624a906d3c7490a5a4bb5b8109208ee142021e6",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Evan Shapiro\u2019s Media Universe Summit Returns to Questex\u2019s StreamTV Show 2026 with Expanded Agenda and New Industry Case Studies",
-    "author": "Not Specified",
-    "published_utc": "2026-05-05T17:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/05/05/3288099/0/en/Evan-Shapiro-s-Media-Universe-Summit-Returns-to-Questex-s-StreamTV-Show-2026-with-Expanded-Agenda-and-New-Industry-Case-Studies.html",
-    "tickers": [
-      "GOOG",
-      "GOOGL",
-      "AMZN",
-      "HAS"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/8cf9fd8b-3ce6-4c32-8db4-ee3fb14b37f3",
-    "description": "Evan Shapiro's Media Universe Summit returns to StreamTV Show 2026 in Denver (June 16-19) with an expanded agenda focused on the 'Affinity Economy' and what's working in media. The summit will feature keynotes, case studies, and panel discussions on modern media models, animation's future, new KPIs, and media M&A trends, bringing together executives, creators, and analysts to navigate industry disruption.",
-    "keywords": [
-      "Media Universe Summit",
-      "streaming industry",
-      "Affinity Economy",
-      "media consolidation",
-      "content creation",
-      "distribution models",
-      "fandom engagement",
-      "animation IP",
-      "M&A trends"
-    ],
-    "insights": [
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "YouTube representatives moderating and providing data on animation and content trends; active participation in shaping industry conversation suggests strong market position."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "YouTube representatives moderating and providing data on animation and content trends; active participation in shaping industry conversation suggests strong market position."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Amazon Ads representative featured as panelist on KPI metrics; participation indicates strategic focus on streaming and advertising innovation."
-      },
-      {
-        "ticker": "HAS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Featured in live case study showcasing new landmark kids content joint venture with Animaj; demonstrates active innovation in content strategy."
       }
     ]
   }
