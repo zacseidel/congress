@@ -1,314 +1,422 @@
 [
   {
-    "id": "0414956235086b25e2dc5433f658889b61fb163c7b412cfe5edd134dbd2ab9c8",
+    "id": "0d1864213b6f4f8fbbb62dc760163edeea2e0ab4fadb3ff07dfa113cacecc097",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "NuScale Power Is Down 38% This Year: Here's What the Next 5 Years Could Look Like",
-    "author": "Brett Schafer",
-    "published_utc": "2026-07-25T21:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/25/nuscale-power-is-down-x-this-year-heres-what-the-n/?source=iedfolrf0000001",
+    "title": "Google, Amazon, and Meta All Just Raised Capex Guidance Again. This Boring Industrial Wins No Matter Whose AI Infrastructure Is Best.",
+    "author": "James Brumley",
+    "published_utc": "2026-08-17T10:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/17/google-amazon-and-meta-all-just-raised-capex-guida/?source=iedfolrf0000001",
     "tickers": [
-      "SMR",
-      "CEG"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880234%2Fnuclear.jpg&w=1200&op=resize",
-    "description": "NuScale Power's stock has declined 38% in 2026 despite having the only NRC-approved small modular reactor design. While the company has secured partnerships and contracts (including 6 gigawatts from Tennessee Valley Authority), its projects won't generate revenue until 2030, missing the current AI data center boom. With negative free cash flow of $750 million and negligible revenue, the stock faces significant headwinds.",
-    "keywords": [
-      "nuclear energy",
-      "small modular reactors",
-      "AI data centers",
-      "NRC approval",
-      "cash burn",
-      "stock volatility"
-    ],
-    "insights": [
-      {
-        "ticker": "SMR",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Despite having regulatory approval and major contracts, the company faces severe near-term challenges: negative free cash flow of $750 million, negligible revenue, delayed project timelines (no revenue until 2030), and inability to capitalize on the current AI data center boom. The stock has declined 38% year-to-date and is expected to face further downside pressure."
-      },
-      {
-        "ticker": "CEG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned only in a comparative headline without substantive analysis in the main article content."
-      }
-    ]
-  },
-  {
-    "id": "d16dd67e4be892a61a9a0468b250addd6ecfa4897a8e9022791f3bb640d29255",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Nuclear Energy Is Winning Repeated Government Backing and Investors Should Take Notice",
-    "author": "Reuben Gregg Brewer",
-    "published_utc": "2026-07-25T20:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/25/nuclear-energy-is-winning-repeated-government-back/?source=iedfolrf0000001",
-    "tickers": [
-      "CCJ",
-      "BEP",
-      "BEPH",
-      "BEPI",
-      "BEPJ",
-      "BEPpA",
-      "CEG",
-      "SMR"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879080%2F23_10_04-a-person-drawing-checks-in-boxes-on-a-checklist-_mf-dload.jpg&w=1200&op=resize",
-    "description": "The U.S. government is providing substantial support for nuclear energy expansion, with Trump's May 2025 executive order aiming to increase nuclear capacity from 100 gigawatts to 400 gigawatts by 2050. This creates investment opportunities across multiple nuclear-related companies, from uranium producers to reactor manufacturers and emerging small modular reactor technologies.",
-    "keywords": [
-      "nuclear energy",
-      "government support",
-      "clean energy",
-      "small modular reactors",
-      "uranium",
-      "power generation",
-      "executive order"
-    ],
-    "insights": [
-      {
-        "ticker": "CCJ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Uranium producer positioned to benefit from increased nuclear industry growth driven by government support and rising power demand."
-      },
-      {
-        "ticker": "BEP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Shares ownership of Westinghouse, a major nuclear service provider. Offers conservative dividend yield (4.8%) with exposure to nuclear expansion and diversified clean energy operations."
-      },
-      {
-        "ticker": "BEPH",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Shares ownership of Westinghouse, a major nuclear service provider. Offers conservative dividend yield (4.8%) with exposure to nuclear expansion and diversified clean energy operations."
-      },
-      {
-        "ticker": "BEPI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Shares ownership of Westinghouse, a major nuclear service provider. Offers conservative dividend yield (4.8%) with exposure to nuclear expansion and diversified clean energy operations."
-      },
-      {
-        "ticker": "BEPJ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Shares ownership of Westinghouse, a major nuclear service provider. Offers conservative dividend yield (4.8%) with exposure to nuclear expansion and diversified clean energy operations."
-      },
-      {
-        "ticker": "BEPpA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Shares ownership of Westinghouse, a major nuclear service provider. Offers conservative dividend yield (4.8%) with exposure to nuclear expansion and diversified clean energy operations."
-      },
-      {
-        "ticker": "CEG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Direct beneficiary of regulatory support with existing deals from major corporations (Walmart, Meta) and $1 billion government loan for nuclear ambitions. Positioned for growth while maintaining existing business."
-      },
-      {
-        "ticker": "SMR",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Emerging small modular reactor technology company with recent regulatory approvals and partnerships (Romania, Tennessee Valley Authority). Highest growth potential but carries startup risk and current losses."
-      }
-    ]
-  },
-  {
-    "id": "ef3b28b39ae7a1e06885369ec8abc195edde69fb52eccb7ed993188b8bfe7d10",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Why Constellation Energy Stock Blasted Higher on Wednesday",
-    "author": "Eric Volkman",
-    "published_utc": "2026-07-22T22:14:17Z",
-    "article_url": "https://www.fool.com/investing/2026/07/22/why-constellation-energy-stock-blasted-higher-on-w/?source=iedfolrf0000001",
-    "tickers": [
-      "CEG",
-      "MSFT",
-      "NVDA",
-      "OKLO",
-      "XE"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880272%2Fa-nuclear-power-plant-photographed-in-the-daytime.jpg&w=1200&op=resize",
-    "description": "Constellation Energy stock surged nearly 5% on Wednesday following the Trump administration's announcement of a 30-year nuclear cooperation deal with Saudi Arabia and reports of a new $200 million domestic program to support power plant construction for AI data centers. As the largest operator of U.S. nuclear plants, Constellation is positioned to benefit from these government initiatives promoting nuclear energy.",
-    "keywords": [
-      "nuclear energy",
-      "Constellation Energy",
-      "Saudi Arabia nuclear deal",
-      "AI data centers",
-      "power generation",
-      "small modular reactors",
-      "clean energy"
-    ],
-    "insights": [
-      {
-        "ticker": "CEG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose 4.84% on news of government support for nuclear industry through Saudi Arabia deal and domestic power plant construction program. As the largest U.S. nuclear operator, the company is well-positioned to benefit from increased demand for nuclear power."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Named as a tech sector partner in the new $200 million power plant construction program aimed at supporting AI data center power needs, indicating potential business opportunities."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Named as a tech sector partner in the new $200 million power plant construction program aimed at supporting AI data center power needs, indicating potential business opportunities."
-      },
-      {
-        "ticker": "OKLO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as a small modular reactor specialist participating in the new $200 million government program to support power plant construction."
-      },
-      {
-        "ticker": "XE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as a small modular reactor specialist participating in the new $200 million government program to support power plant construction."
-      }
-    ]
-  },
-  {
-    "id": "622625021051417741030558375dc30f88e6431422f914060c307dcee9e70304",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Is NuScale Power a Better Nuclear Energy Stock Than Constellation Energy?",
-    "author": "Courtney Carlsen",
-    "published_utc": "2026-07-22T19:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/22/is-nuscale-better-nuclear-stock-than-constellation/?source=iedfolrf0000001",
-    "tickers": [
-      "SMR",
-      "CEG",
       "GOOG",
       "GOOGL",
       "GOOGM",
       "GOOGN",
       "AMZN",
       "META",
-      "MSFT"
+      "NVDA",
+      "CCJ",
+      "VRT",
+      "GEV",
+      "CEG",
+      "VST"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879527%2Fceg-plus-smr-image-src-tmf.png&w=1200&op=resize",
-    "description": "Nuclear energy demand is surging due to AI data center power requirements. NuScale Power holds a first-mover advantage with NRC-approved small modular reactors but faces years before commercialization and execution risks. Constellation Energy, with 22 GW of operating nuclear capacity and major hyperscaler contracts (Microsoft, Meta), is better positioned to capitalize on near-term nuclear energy demand growth.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F882011%2Fnuclear-power-cooling-towers.jpg&w=1200&op=resize",
+    "description": "Major tech companies (Google, Amazon, Meta) are significantly increasing AI infrastructure spending, which benefits not just chip makers like Nvidia, but also less obvious beneficiaries in power generation and uranium supply. Cameco, a uranium provider for nuclear power plants, is positioned to win long-term as AI data centers increasingly rely on nuclear power, though benefits may take years to materialize as new nuclear facilities are built.",
     "keywords": [
-      "nuclear energy",
-      "AI data centers",
-      "small modular reactors",
-      "power demand",
-      "hyperscalers",
-      "energy infrastructure"
+      "AI infrastructure spending",
+      "capital expenditure",
+      "nuclear power",
+      "uranium supply",
+      "data center power",
+      "energy demand"
     ],
     "insights": [
       {
-        "ticker": "SMR",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Company has first-mover advantage with NRC-approved SMR technology and secured Romanian project, but faces significant execution risks, long timelines (operations starting 2033), and competitive threats from DOE's Reactor Pilot Program accelerating competitor technologies."
-      },
-      {
-        "ticker": "CEG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Established utility with largest U.S. nuclear fleet (22 GW capacity), secured major long-term power purchase agreements with Microsoft and Meta, positioned to benefit from near-term AI data center energy demand, and actively investing in nuclear innovation through venture capital arm."
-      },
-      {
         "ticker": "GOOG",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hyperscaler investing in nuclear energy to meet AI data center power demands, but article does not provide specific sentiment regarding the company itself."
+        "sentiment_reasoning": "Increased capex guidance ($195-205B for 2026) shows strong AI investment commitment, but this is expected market behavior rather than surprising news."
       },
       {
         "ticker": "GOOGL",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hyperscaler investing in nuclear energy to meet AI data center power demands, but article does not provide specific sentiment regarding the company itself."
+        "sentiment_reasoning": "Increased capex guidance ($195-205B for 2026) shows strong AI investment commitment, but this is expected market behavior rather than surprising news."
       },
       {
         "ticker": "GOOGM",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hyperscaler investing in nuclear energy to meet AI data center power demands, but article does not provide specific sentiment regarding the company itself."
+        "sentiment_reasoning": "Increased capex guidance ($195-205B for 2026) shows strong AI investment commitment, but this is expected market behavior rather than surprising news."
       },
       {
         "ticker": "GOOGN",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hyperscaler investing in nuclear energy to meet AI data center power demands, but article does not provide specific sentiment regarding the company itself."
+        "sentiment_reasoning": "Increased capex guidance ($195-205B for 2026) shows strong AI investment commitment, but this is expected market behavior rather than surprising news."
       },
       {
         "ticker": "AMZN",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hyperscaler investing in nuclear energy to meet AI data center power demands, but article does not provide specific sentiment regarding the company itself."
+        "sentiment_reasoning": "Raised capex from $200B to $220B, demonstrating continued AI infrastructure investment, but this is consistent with industry trends."
       },
       {
         "ticker": "META",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hyperscaler with secured 20-year nuclear power agreement with Constellation Energy, but article does not provide specific sentiment regarding the company itself."
+        "sentiment_reasoning": "Increasing AI spending through debt issuance shows commitment, but similar to peers' actions with no differentiation."
       },
       {
-        "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a hyperscaler with secured 20-year nuclear power agreement with Constellation Energy, but article does not provide specific sentiment regarding the company itself."
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Direct beneficiary of increased capex as the dominant supplier of AI data center processors."
+      },
+      {
+        "ticker": "CCJ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Positioned as long-term winner providing uranium for nuclear power plants powering AI data centers; analyst average target of $125.25 suggests 30% upside despite recent stock weakness."
+      },
+      {
+        "ticker": "VRT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Indirect beneficiary providing power-distribution and chip-cooling solutions for AI data centers."
+      },
+      {
+        "ticker": "GEV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Benefits from immediate AI data center power needs through natural gas turbines, though positioned as shorter-term solution."
+      },
+      {
+        "ticker": "CEG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Partnering with Microsoft to restart nuclear reactors for AI data center power, demonstrating direct engagement in AI infrastructure."
+      },
+      {
+        "ticker": "VST",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Working directly with Amazon and Meta to provide nuclear power to AI data centers, establishing long-term partnerships."
       }
     ]
   },
   {
-    "id": "e91f6988a45a642886b9ecf0deef3039eb2b1e7d81c33567ef0a888b7435dd2a",
+    "id": "2b3dba9b0866d011b8094fe92d8567b9e7bfb43eadebc3a22046c649e16471b0",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Which Is the Better Energy ETF for the AI Era: State Street's XLE or VanEck's Nuclear NLR?",
-    "author": "Sara Appino",
-    "published_utc": "2026-07-21T17:18:35Z",
-    "article_url": "https://www.fool.com/coverage/etfs/2026/07/21/which-is-the-better-energy-etf-for-the-ai-era-state-street-s-xle-or-vaneck-s-nuclear-nlr/?source=iedfolrf0000001",
+    "title": "2 Best Nuclear Power Stocks Right Now",
+    "author": "James Halley",
+    "published_utc": "2026-08-17T02:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/16/2-best-nuclear-power-stocks-right-now/?source=iedfolrf0000001",
     "tickers": [
-      "XLE",
-      "NLR",
-      "CVX",
       "CEG",
-      "CCJ"
+      "CCJ",
+      "MSFT",
+      "WMT",
+      "META",
+      "AMZN",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "BEP",
+      "BEPH",
+      "BEPI",
+      "BEPJ",
+      "BEPpA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F4db1f9dc6b521047b90577456a50b49560e87c49-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "State Street's XLE energy ETF delivered 39% returns over one year with a 0.08% expense ratio, significantly outperforming VanEck's NLR nuclear-focused ETF which posted an 8.1% loss. While XLE offers lower costs and higher liquidity through exposure to oil and gas giants, NLR provides a longer-term bet on nuclear power's role in powering AI data centers, despite near-term headwinds from uranium price pullbacks.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883351%2Fnuclear-power-two.jpg&w=1200&op=resize",
+    "description": "Nuclear power is experiencing a global renaissance driven by AI data center demand and rising energy needs. Constellation Energy and Cameco Corporation are highlighted as top plays in the nuclear sector\u2014Constellation as a major nuclear power provider with long-term corporate agreements, and Cameco as a leading uranium supplier with integrated nuclear services through Westinghouse ownership.",
     "keywords": [
-      "energy ETF",
       "nuclear power",
-      "uranium mining",
       "AI data centers",
-      "fossil fuels",
-      "expense ratio",
-      "dividend yield",
-      "commodity prices"
+      "uranium",
+      "energy stocks",
+      "power purchase agreements",
+      "baseload power"
     ],
     "insights": [
       {
-        "ticker": "XLE",
+        "ticker": "CEG",
         "sentiment": "positive",
-        "sentiment_reasoning": "Delivered exceptional 39% one-year returns, offers lowest expense ratio at 0.08%, massive liquidity with $38.3B AUM, and benefits from current oil price strength driven by Middle East conflict. Positioned as the obvious choice for near-term energy exposure."
+        "sentiment_reasoning": "Strong Q2 revenue growth of 22.9% YoY, EPS up 33.5% YoY, landmark 20-year PPA with Microsoft, 920 MW of new long-term contracts signed, fuel license approval received, and benefits from Nuclear Production Tax Credit providing revenue floor protection."
       },
+      {
+        "ticker": "CCJ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Uranium segment revenue up 15% YoY with adjusted EBITDA up 48% YoY, strong 2026 guidance with expected uranium prices of $91-$96/lb (up from $85-$89), increased fuel services revenue forecast, 49% ownership of Westinghouse providing recurring high-margin revenue, and positioned as safe Western-aligned supplier amid Russian uranium phase-out."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a major tech hyperscaler signing a landmark 20-year PPA with Constellation for nuclear power to support AI data centers, but article focuses on nuclear stocks rather than Microsoft's fundamentals."
+      },
+      {
+        "ticker": "WMT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a corporate buyer with long-term nuclear PPAs with Constellation, but article does not provide analysis of Walmart's business or sentiment."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech hyperscaler building AI data centers requiring stable nuclear power, but no specific analysis provided."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech hyperscaler with zero-emissions targets requiring nuclear power for AI data centers, but no specific analysis provided."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech hyperscaler needing stable nuclear power for AI data centers, but no specific analysis provided."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech hyperscaler needing stable nuclear power for AI data centers, but no specific analysis provided."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech hyperscaler needing stable nuclear power for AI data centers, but no specific analysis provided."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech hyperscaler needing stable nuclear power for AI data centers, but no specific analysis provided."
+      },
+      {
+        "ticker": "BEP",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
+      },
+      {
+        "ticker": "BEPH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
+      },
+      {
+        "ticker": "BEPI",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
+      },
+      {
+        "ticker": "BEPJ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
+      },
+      {
+        "ticker": "BEPpA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
+      }
+    ]
+  },
+  {
+    "id": "2eb03d3e5f8d6e3f3a5001d7152b64c1e57b53af6edbfaa239d4409d43af6cb8",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Which Is the Better Energy Sector ETF, VanEck's Nuclear-Focused NLR or First Trust's EMLP Targeting Energy Infrastructure?",
+    "author": "Robert Izquierdo",
+    "published_utc": "2026-08-12T21:09:30Z",
+    "article_url": "https://www.fool.com/coverage/etfs/2026/08/12/which-is-the-better-energy-sector-etf-vaneck-s-nuclear-focused-nlr-or-first-trust-s-emlp-targeting-energy-infrastructure/?source=iedfolrf0000001",
+    "tickers": [
+      "NLR",
+      "EMLP",
+      "CEG",
+      "CCJ",
+      "EPD"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F7669db1dbfa6e097df450be5b22faf5d854bd54d-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "VanEck's NLR nuclear-focused ETF and First Trust's EMLP energy infrastructure fund offer different approaches to energy sector investing. NLR delivers higher 5-year returns (148% growth on $1,000) with lower fees (0.52%), but experiences greater volatility. EMLP provides more stable returns with half the volatility and MLP tax advantages, though with higher expense ratio (0.95%) and lower growth. The choice depends on investor risk tolerance and whether they prefer nuclear energy exposure or traditional pipeline/utility infrastructure.",
+    "keywords": [
+      "energy ETF",
+      "nuclear power",
+      "energy infrastructure",
+      "uranium miners",
+      "dividend yield",
+      "volatility",
+      "expense ratio",
+      "master limited partnerships"
+    ],
+    "insights": [
       {
         "ticker": "NLR",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Posted 8.1% loss over one year despite strong long-term nuclear narrative for AI power demands. Higher expense ratio (0.52%) and recent underperformance, but positioned as a patient, longer-term bet on nuclear's structural growth phase with slightly higher dividend yield (2.90%)."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Demonstrates strong 5-year performance with $2,480 growth on $1,000 investment, lower expense ratio (0.52%), and exposure to high-growth nuclear sector driven by AI electricity demand. However, higher volatility (37.5% max drawdown) tempers enthusiasm."
       },
       {
-        "ticker": "CVX",
+        "ticker": "EMLP",
         "sentiment": "positive",
-        "sentiment_reasoning": "Second-largest holding in XLE at 15.01%, benefits from current commodity strength and oil price elevation."
+        "sentiment_reasoning": "Offers stability with lower volatility (14.6% max drawdown), tax advantages through MLP structure, and active management. Suitable for conservative investors, though lower 5-year returns ($2,097 on $1,000) and higher expense ratio (0.95%) are drawbacks."
       },
       {
         "ticker": "CEG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Top holding in NLR at 9.08%, positioned to benefit from nuclear power's essential role in powering AI data centers."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as top holding (8.67%) in NLR fund; mentioned factually without specific performance commentary."
       },
       {
         "ticker": "CCJ",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Second-largest holding in NLR at 7.85%, uranium mining company exposed to nuclear growth narrative but currently pressured by uranium price pullbacks."
+        "sentiment_reasoning": "Listed as top holding (7.95%) in NLR fund; mentioned factually without specific performance commentary."
+      },
+      {
+        "ticker": "EPD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as top holding (8.82%) in EMLP fund; mentioned factually without specific performance commentary."
+      }
+    ]
+  },
+  {
+    "id": "b2a97ae375e176b7593410ce6fba29690bcc32bc8286a1274679ce8627470178",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Constellation Signed 920 Megawatts of New Power Deals, Including a Walmart PPA. Here's What It Means for CEG Stock.",
+    "author": "Neha Chamaria",
+    "published_utc": "2026-08-07T16:25:58Z",
+    "article_url": "https://www.fool.com/investing/2026/08/07/constellation-signed-920-megawatts-of-new-power-deals-including-a-walmart-ppa-heres-what-it-means-for-ceg-stock/?source=iedfolrf0000001",
+    "tickers": [
+      "CEG",
+      "WMT",
+      "MSFT"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F4544e6d43b361eaa78d89ba39539abd9311a7e10-5464x3640.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Constellation Energy secured 920 megawatts of long-term power purchase agreements in Q2, including a major 176 MW contract with Walmart spanning two 15-year terms. The company also made significant progress on its Microsoft deal with NRC approval for the Crane Clean Energy Center. Constellation projects 20% annualized earnings growth through 2029, with additional upside from future contracts.",
+    "keywords": [
+      "nuclear energy",
+      "power purchase agreements",
+      "clean energy",
+      "data centers",
+      "earnings growth",
+      "baseload power",
+      "AI infrastructure"
+    ],
+    "insights": [
+      {
+        "ticker": "CEG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company signed 920 MW of new long-term contracts with major clients (Walmart, Microsoft), reported strong Q2 earnings growth (34% YoY), cleared regulatory hurdles for nuclear expansion, and projects 20% annualized earnings growth through 2029 with additional upside from future contracts."
+      },
+      {
+        "ticker": "WMT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Secured a 176 MW nuclear power contract with Constellation over 30 years, demonstrating commitment to stable, clean energy for operations and supporting its sustainability goals amid growing energy demands."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Made significant progress on its 20-year power purchase agreement with Constellation as the Crane Clean Energy Center received critical regulatory approvals, securing reliable clean baseload power for data center operations."
+      }
+    ]
+  },
+  {
+    "id": "d8f9ce00075fb2e7b2f88827ca377d8f231d55142f7831424bf40edf93be07c2",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "The Hidden Winners of the AI Power Crunch: 3 Utilities to Watch",
+    "author": "Courtney Carlsen",
+    "published_utc": "2026-08-07T10:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/07/the-hidden-winners-of-the-ai-power-crunch-3-utilit/?source=iedfolrf0000001",
+    "tickers": [
+      "CEG",
+      "VST",
+      "NEE",
+      "NEEpN",
+      "NEEpS",
+      "NEEpT",
+      "NEEpU",
+      "NEEpV",
+      "NEEpW",
+      "MSFT",
+      "META",
+      "AMZN"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880870%2Ftwo-engineers-walk-down-a-dirt-path-alongside-solar-panels-getty.jpg&w=1200&op=resize",
+    "description": "AI infrastructure is creating unprecedented electricity demand, with data centers requiring 20-100 kW per rack compared to traditional 5-10 kW. Utility companies with nuclear and renewable assets in key regions are positioned as hidden winners. Three stocks to watch are Constellation Energy (nuclear-focused with Microsoft and Meta deals), Vistra (diverse power portfolio with major hyperscaler partnerships), and NextEra Energy (regulated utility with large renewable pipeline and battery storage capabilities).",
+    "keywords": [
+      "AI power demand",
+      "data center electricity",
+      "nuclear energy",
+      "renewable energy",
+      "utility stocks",
+      "power purchase agreements",
+      "grid infrastructure"
+    ],
+    "insights": [
+      {
+        "ticker": "CEG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Largest U.S. nuclear operator with 22 GW capacity, strategic 20-year PPAs with Microsoft and Meta, restarting Three Mile Island for AI workloads, and recent $26.6B Calpine acquisition diversifying portfolio. Trading at 20x forward earnings with 22% projected EPS growth, though down 35% from 52-week high presents value opportunity."
+      },
+      {
+        "ticker": "VST",
+        "sentiment": "positive",
+        "sentiment_reasoning": "44 GW total capacity with second-largest nuclear fleet, diverse energy portfolio, 20-year Meta PPA for 2,600 MW, partnerships with Amazon and Microsoft for solar facilities, and preferred provider status for Helix Investments ($10B AI infrastructure fund). Positioned for robust growth despite regulatory risks."
+      },
+      {
+        "ticker": "NEE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
+      },
+      {
+        "ticker": "NEEpN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
+      },
+      {
+        "ticker": "NEEpS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
+      },
+      {
+        "ticker": "NEEpT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
+      },
+      {
+        "ticker": "NEEpU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
+      },
+      {
+        "ticker": "NEEpV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
+      },
+      {
+        "ticker": "NEEpW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Securing long-term power agreements with Constellation Energy and Vistra to support AI infrastructure expansion and zero-emissions goals."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Entering multiple 20-year power purchase agreements with Constellation Energy and Vistra to secure reliable electricity for AI data center operations."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Partnering with Vistra for 200 MW Oak Hill solar facility in Texas to support AI infrastructure power needs."
       }
     ]
   }

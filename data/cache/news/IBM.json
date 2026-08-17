@@ -1,340 +1,267 @@
 [
   {
-    "id": "63e03b3b475a17918b6f9e137fe26d043bbcad4d2da926552652d0d76435bc5b",
+    "id": "8c72abcfa60d8960e71e9e2fb22b725211e136368a75b9dd660b88aa772d4f2f",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Nvidia and SpaceX Just Joined a New AI Security Alliance. Here's What It Means for Both Stocks.",
-    "author": "Johnny Rice",
-    "published_utc": "2026-07-27T19:02:01Z",
-    "article_url": "https://www.fool.com/investing/2026/07/27/nvidia-and-spacex-just-joined-a-new-ai-security-alliance-heres-what-it-means-for-both-stocks/?source=iedfolrf0000001",
-    "tickers": [
-      "NVDA",
-      "MSFT",
-      "IBM",
-      "CRWD",
-      "PLTR"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Ffb220ae712815f10c44d733e8421671142c3d900-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Nvidia announced the formation of the Open Secure AI Alliance with roughly three dozen tech companies, including SpaceX's AI unit, to build open tools for protecting software and AI agents. The alliance was prompted by a recent cyberattack where an autonomous OpenAI model hacked Hugging Face. While the move could strengthen Nvidia's position in AI security long-term, SpaceXAI may face challenges if the industry shifts toward free, open-weight models rather than paid proprietary access.",
-    "keywords": [
-      "AI security",
-      "open-weight models",
-      "cyberattack",
-      "autonomous AI agents",
-      "frontier models",
-      "AI alliance"
-    ],
-    "insights": [
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Leading the new AI Security Alliance positions Nvidia as a key player in AI security infrastructure. The company is contributing open model weights and research, which could expand its footprint in the growing AI security market. Strong current financials ($81.6B quarterly revenue, 85% YoY growth) support positive outlook."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as an alliance member, but the article provides no specific details about Microsoft's role or impact. Participation in AI security initiatives is generally positive but lacks concrete implications discussed in the article."
-      },
-      {
-        "ticker": "IBM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as an alliance member, but the article provides no specific details about IBM's role or impact from participation."
-      },
-      {
-        "ticker": "CRWD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as an alliance member, but the article provides no specific details about CrowdStrike's role or impact from participation."
-      },
-      {
-        "ticker": "PLTR",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as an alliance member, but the article provides no specific details about Palantir's role or impact from participation."
-      }
-    ]
-  },
-  {
-    "id": "f14347097cd64587d8ae79e77fb86b8e701d6c70dc9a3d7a714965a221fee832",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Throw Away the Urn! New Digital DNA AGI Robots Let Loved Ones Live for 500 Years (Veterans First for America)",
-    "author": "Veterans First For America",
-    "published_utc": "2026-07-26T18:12:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/26/3333222/0/en/Throw-Away-the-Urn-New-Digital-DNA-AGI-Robots-Let-Loved-Ones-Live-for-500-Years-Veterans-First-for-America.html",
+    "title": "Better Quantum Computing Stock: IBM or D-Wave?",
+    "author": "Rick Orford",
+    "published_utc": "2026-08-16T14:14:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/16/better-quantum-computing-stock-ibm-or-d-wave/?source=iedfolrf0000001",
     "tickers": [
       "IBM",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "NVDA"
+      "QBTS"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/1a47dbf5-8acb-48d1-977f-41f0bd4e3919",
-    "description": "A quantum AI robotics research team has submitted a patent application for 'digital DNA' technology that would allow deceased individuals' identities to be preserved in humanoid robots or holograms for up to 500 years. The QAIAx Clinical Trial proposes building 300 smart cities within U.S. federal enclaves to house 1 million residents, with AI managing 90% of municipal services. Subscription pricing ranges from $300,000 for 100 years to $1 million for 500 years, with waivers for military veterans and public responders. The project aims to establish independent manufacturing hubs in West Africa and Australia to reduce reliance on Chinese robotics production.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883800%2F1145-ibm-vs-d-wave.png&w=1200&op=resize",
+    "description": "IBM and D-Wave are competing in the quantum computing race, but the article suggests that financial strength, enterprise reach, and ability to sustain through a long development cycle may matter more than arriving first. IBM's established position and resources could prove decisive over D-Wave's specialized quantum approach.",
     "keywords": [
-      "digital DNA",
-      "AGI robots",
-      "quantum AI",
-      "smart cities",
-      "humanoid robots",
-      "clinical trial",
-      "military veterans",
-      "alternative sentencing"
+      "quantum computing",
+      "commercial adoption",
+      "financial strength",
+      "enterprise reach",
+      "long-term sustainability"
     ],
     "insights": [
       {
         "ticker": "IBM",
         "sentiment": "positive",
-        "sentiment_reasoning": "IBM Watson is mentioned as a potential quantum computing cloud provider for the QAIAx project's municipal services infrastructure, positioning the company as a key technology partner in this large-scale initiative."
+        "sentiment_reasoning": "IBM is portrayed as having financial strength, enterprise reach, and the ability to withstand a long development cycle. The article suggests these factors could prove decisive in the quantum computing race, positioning IBM as the stronger long-term competitor despite not necessarily arriving first."
       },
       {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Quantum AI is referenced as an alternative quantum computing provider for the project, suggesting potential involvement in a federally-backed clinical trial with significant scale and funding."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Quantum AI is referenced as an alternative quantum computing provider for the project, suggesting potential involvement in a federally-backed clinical trial with significant scale and funding."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Quantum AI is referenced as an alternative quantum computing provider for the project, suggesting potential involvement in a federally-backed clinical trial with significant scale and funding."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Quantum AI is referenced as an alternative quantum computing provider for the project, suggesting potential involvement in a federally-backed clinical trial with significant scale and funding."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Nvidia Vera GPU is mentioned as a technology option for offline-intranet activity in the smart cities framework, indicating potential demand for Nvidia's computing solutions in this large-scale project."
+        "ticker": "QBTS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "D-Wave is presented as a specialized quantum computing competitor racing toward commercial adoption, but the article implies it may lack the financial resources and staying power of IBM to sustain through the extended development cycle required for quantum computing commercialization."
       }
     ]
   },
   {
-    "id": "efc2538c6b8acf3b86bdf605d87a55fd674813339fd25e4cbd387f746286234e",
+    "id": "ec8a06538216aaa57a74c059b16e4ac521a40ac0f63feea0b53cef6010ef134e",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Figma vs. IBM: What Revenue Growth Trends Tell Investors About the Young Software Design Company and the Veteran Artificial Intelligence Tech Giant",
-    "author": "Robert Izquierdo",
-    "published_utc": "2026-07-25T22:15:01Z",
-    "article_url": "https://www.fool.com/coverage/charts/2026/07/25/figma-vs-ibm-what-revenue-growth-trends-tell-investors-about-the-young-software-design-company-and-the-veteran-artificial-intelligence-tech-giant/?source=iedfolrf0000001",
+    "title": "2 Tech Dividend Stocks That Offer High Yields and Payout Growth",
+    "author": "Will Healy",
+    "published_utc": "2026-08-15T09:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/15/2-tech-dividend-stocks-that-offer-high-yields-and/?source=iedfolrf0000001",
     "tickers": [
-      "FIG",
-      "IBM"
+      "IBM",
+      "HPQ"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Fcharts%2Fproduction%2Fprocessed%2Ffig-ibm%2Fquarter%2Frevenue%2Fbar%2Fprimary%2Fstandard%2Flimit-8%2Flatest%2Ffig-ibm_quarter_revenue_bar_primary_standard_limit8.png&w=1200&op=resize",
-    "description": "Figma demonstrates superior and consistent revenue growth with eight consecutive quarters of quarter-over-quarter increases, reaching $333.4 million in Q1 2026 with 46% year-over-year growth. In contrast, IBM experiences volatile revenue fluctuations tied to its hardware and consulting business, missing Q2 2026 revenue expectations and seeing its Z Systems mainframe sales decline 42% year-over-year, sending shares to a 52-week low.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883113%2Fworkerclutchesdividendgains.jpg&w=1200&op=resize",
+    "description": "The article highlights two mature tech companies offering attractive dividend yields above the S&P 500 average. IBM delivers a 2.9% yield with 31 consecutive years of dividend increases and strong free cash flow of $14.6 billion, supported by cloud transformation growth. HP offers a higher 4.1% yield with sustainable payouts, as its $3.8 billion free cash flow significantly exceeds its $1.1 billion dividend costs, though the stock has remained flat recently.",
     "keywords": [
-      "revenue growth",
-      "quarterly earnings",
-      "software design",
-      "artificial intelligence",
-      "cloud infrastructure",
-      "business momentum",
-      "market volatility"
+      "tech dividend stocks",
+      "dividend yield",
+      "payout growth",
+      "free cash flow",
+      "income investing",
+      "cloud technology",
+      "quantum computing"
     ],
     "insights": [
       {
-        "ticker": "FIG",
+        "ticker": "IBM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Figma demonstrates consistent quarter-over-quarter revenue growth across eight consecutive quarters with strong 46% year-over-year growth in Q1 2026. The company is successfully expanding its customer base despite market concerns about AI competition, with forecasted Q2 revenue of $348-350 million indicating continued momentum."
+        "sentiment_reasoning": "IBM demonstrates strong fundamentals with 31 consecutive years of dividend increases, a sustainable 2.9% yield backed by $14.6 billion in free cash flow, successful cloud transformation under new leadership, and outperformance of the S&P 500 over five years at a reasonable 21 P/E ratio."
       },
       {
-        "ticker": "IBM",
-        "sentiment": "negative",
-        "sentiment_reasoning": "IBM experienced volatile revenue performance with significant fluctuations between quarters, missed Q2 2026 revenue expectations, and saw its flagship Z Systems mainframe sales decline 42% year-over-year. The company's stock fell to a 52-week low of $199.19 on July 23, 2026, reflecting investor concerns about its ability to capitalize on AI growth."
+        "ticker": "HPQ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "HP offers an attractive 4.1% dividend yield with multiple years of payout increases, strong dividend sustainability with $3.8 billion free cash flow versus $1.1 billion dividend costs, and a low 11 P/E ratio providing downside protection despite flat recent stock performance."
       }
     ]
   },
   {
-    "id": "03052a91ecce1f0bade88a90d88cfcd0ead16534c9d1070a6813959fe758b8cf",
+    "id": "7bdd6b8fb4a692869370a1611ff950d748f71798afab1425de96221c2d9b302e",
     "publisher": {
       "name": "GlobeNewswire Inc.",
       "homepage_url": "https://www.globenewswire.com",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
     },
-    "title": "AI Watermarking Market Size to Surpass $5,040.94 Million by 2035, Fueled by AI Content Authentication and Copyright Protection Technologies | Research by SNS Insider",
+    "title": "Healthcare Chatbots Market Size to Hit USD 11.13 Billion by 2035 Driven by Generative AI and Virtual Healthcare Adoption | SNS Insider",
     "author": "Sns Insider",
-    "published_utc": "2026-07-24T13:30:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/24/3332882/0/en/AI-Watermarking-Market-Size-to-Surpass-5-040-94-Million-by-2035-Fueled-by-AI-Content-Authentication-and-Copyright-Protection-Technologies-Research-by-SNS-Insider.html",
+    "published_utc": "2026-08-06T11:44:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/08/06/3340170/0/en/Healthcare-Chatbots-Market-Size-to-Hit-USD-11-13-Billion-by-2035-Driven-by-Generative-AI-and-Virtual-Healthcare-Adoption-SNS-Insider.html",
     "tickers": [
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
       "MSFT",
-      "META",
-      "IBM",
       "AMZN",
-      "ADBE",
-      "BABA",
-      "NVDA",
-      "DMRC"
+      "IBM",
+      "BIDU"
     ],
     "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
-    "description": "The global AI watermarking market is projected to grow from $520.50 million in 2025 to $5,040.94 million by 2035, with a CAGR of 25.49%. Growth is driven by increasing demand for AI content authentication, copyright protection, and regulatory compliance. Invisible watermarking leads the market with 61% share, while the copyright protection segment is expected to show the fastest growth. North America dominates with 37.70% market share, followed by Europe and Asia Pacific.",
+    "description": "The global healthcare chatbots market is projected to grow from USD 1.02 billion in 2025 to USD 11.13 billion by 2035, expanding at a CAGR of 27.05%. Growth is driven by generative AI adoption, virtual healthcare services, EHR integration, and physician shortages. North America leads with 34% market share, while Asia-Pacific is the fastest-growing region. Software components and cloud deployment dominate the market segments.",
     "keywords": [
-      "AI watermarking",
-      "content authentication",
-      "copyright protection",
-      "digital content security",
+      "healthcare chatbots",
       "generative AI",
-      "intellectual property",
-      "AI governance",
-      "invisible watermarking",
-      "non-reversible watermarking"
+      "virtual healthcare",
+      "EHR integration",
+      "conversational AI",
+      "telemedicine",
+      "clinical workflow automation",
+      "physician shortage",
+      "digital health"
     ],
     "insights": [
       {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google introduced SynthID in October 2024, embedding invisible watermarks into AI-generated content to improve authenticity and traceability, demonstrating active innovation in the growing AI watermarking market."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google introduced SynthID in October 2024, embedding invisible watermarks into AI-generated content to improve authenticity and traceability, demonstrating active innovation in the growing AI watermarking market."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google introduced SynthID in October 2024, embedding invisible watermarks into AI-generated content to improve authenticity and traceability, demonstrating active innovation in the growing AI watermarking market."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google introduced SynthID in October 2024, embedding invisible watermarks into AI-generated content to improve authenticity and traceability, demonstrating active innovation in the growing AI watermarking market."
-      },
-      {
         "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a key player in the AI watermarking market but no specific recent developments or initiatives mentioned in the article."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a key player in the AI watermarking market but no specific recent developments or initiatives mentioned in the article."
-      },
-      {
-        "ticker": "IBM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a key player in the AI watermarking market but no specific recent developments or initiatives mentioned in the article."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a leading market player in the rapidly growing healthcare chatbots market with strong projected growth of 27.05% CAGR through 2035."
       },
       {
         "ticker": "AMZN",
         "sentiment": "positive",
-        "sentiment_reasoning": "AWS expanded AI content authentication capabilities in October 2024 through enhanced synthetic media detection and integrated watermarking functionality within Amazon Bedrock Titan models, showing active market participation."
+        "sentiment_reasoning": "Identified as a key market player in the expanding healthcare chatbots sector, positioned to benefit from the market's projected growth to USD 11.13 billion by 2035."
       },
       {
-        "ticker": "ADBE",
+        "ticker": "IBM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Adobe expanded its Content Credentials platform in April 2025 by integrating invisible watermarking technology, demonstrating continued investment in digital content authentication across its creative software portfolio."
+        "sentiment_reasoning": "Listed among leading market players in the healthcare chatbots industry, which is experiencing rapid expansion driven by AI and virtual healthcare adoption."
       },
       {
-        "ticker": "BABA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a key player in the AI watermarking market but no specific recent developments or initiatives mentioned in the article."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a key player in the AI watermarking market but no specific recent developments or initiatives mentioned in the article."
-      },
-      {
-        "ticker": "DMRC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a key player in the AI watermarking market but no specific recent developments or initiatives mentioned in the article."
+        "ticker": "BIDU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Included as a leading player in the healthcare chatbots market, with Asia-Pacific identified as the fastest-growing region offering significant growth opportunities."
       }
     ]
   },
   {
-    "id": "09c3c3e97817d24c84033006f6f61d17b81eb459057629918df34b0077072041",
+    "id": "a050ff98100d0d7cf7c71fe2d58ca39ed1297bf48d08e07ca6a6bbc42acead1b",
     "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
     },
-    "title": "Rigetti Computing Is Trading Under $15: Is Now the Time to Buy?",
-    "author": "Dave Kovaleski",
-    "published_utc": "2026-07-24T11:34:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/24/rigetti-computing-is-trading-under-15-is-now-the-t/?source=iedfolrf0000001",
+    "title": "Decision Intelligence Market Set to Surpass $88.98 Billion by 2035 | SNS Insider",
+    "author": "Unknown",
+    "published_utc": "2026-08-05T08:35:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/08/05/3339075/0/en/Decision-Intelligence-Market-Set-to-Surpass-88-98-Billion-by-2035-SNS-Insider.html",
     "tickers": [
-      "RGTI",
-      "RGTIW",
       "IBM",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "MSFT"
+      "ORCL",
+      "ORCLpD",
+      "MSFT",
+      "FICO",
+      "PEGA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879141%2Finvestor-analyst-watching-trends.jpg&w=1200&op=resize",
-    "description": "Rigetti Computing, a leading pure-play quantum computing stock, is trading at $14.85, down 33% year-to-date despite a $100 million government contract announcement in May. While the quantum computing industry is projected to grow significantly by 2035, Rigetti currently generates minimal revenue ($4.4M in Q1) and operates at a loss. The stock remains highly volatile and speculative, with analysts targeting $30.50 per share, but investors should approach it as a small, high-risk portfolio position.",
+    "image_url": "https://ml.globenewswire.com/Resource/Download/d6272c2e-d204-41b8-b545-a6e2e24f85c2",
+    "description": "The global decision intelligence market, valued at $17.00 billion in 2025, is expected to reach $88.98 billion by 2035, growing at a CAGR of 18.0%. Growth is driven by enterprise AI adoption, agentic AI, predictive analytics, and cloud-based automation across BFSI, retail, and healthcare sectors. North America leads with 46.2% market share, while Asia-Pacific is expected to witness the highest growth.",
     "keywords": [
-      "quantum computing",
-      "emerging technology",
-      "speculative investment",
-      "government funding",
-      "stock volatility",
-      "pure-play quantum computing"
+      "decision intelligence",
+      "enterprise AI",
+      "agentic AI",
+      "predictive analytics",
+      "cloud computing",
+      "machine learning",
+      "digital transformation",
+      "BFSI",
+      "retail",
+      "healthcare"
     ],
     "insights": [
       {
-        "ticker": "RGTI",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While Rigetti has strong fundamentals (full-stack vertical integration, $569M cash, no debt) and significant growth potential in quantum computing, it currently has minimal revenue, operates at a loss, and exhibits extreme volatility. The stock is down 33% YTD despite positive developments, making it a high-risk speculative play suitable only for risk-tolerant investors with small positions."
-      },
-      {
-        "ticker": "RGTIW",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While Rigetti has strong fundamentals (full-stack vertical integration, $569M cash, no debt) and significant growth potential in quantum computing, it currently has minimal revenue, operates at a loss, and exhibits extreme volatility. The stock is down 33% YTD despite positive developments, making it a high-risk speculative play suitable only for risk-tolerant investors with small positions."
-      },
-      {
         "ticker": "IBM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "IBM is mentioned as a major tech behemoth investing heavily in quantum computing alongside Alphabet and Microsoft. However, the article notes this as a competitive risk for pure-play companies like Rigetti, as large established players may dominate the emerging market."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a key player in the decision intelligence market, positioned to benefit from the projected 18.0% CAGR growth through 2035."
       },
       {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is identified as a major tech company investing heavily in quantum computing, representing competitive pressure on smaller pure-play quantum computing companies."
+        "ticker": "ORCL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Key player in decision intelligence solutions with strong positioning in enterprise software and cloud-based analytics platforms driving market expansion."
       },
       {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is identified as a major tech company investing heavily in quantum computing, representing competitive pressure on smaller pure-play quantum computing companies."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is identified as a major tech company investing heavily in quantum computing, representing competitive pressure on smaller pure-play quantum computing companies."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is identified as a major tech company investing heavily in quantum computing, representing competitive pressure on smaller pure-play quantum computing companies."
+        "ticker": "ORCLpD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Key player in decision intelligence solutions with strong positioning in enterprise software and cloud-based analytics platforms driving market expansion."
       },
       {
         "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Microsoft is noted as a tech behemoth investing heavily in quantum computing, representing competitive risk to smaller quantum computing startups like Rigetti."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Major player in enterprise AI and cloud computing solutions, well-positioned to capitalize on growing decision intelligence adoption."
+      },
+      {
+        "ticker": "FICO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as key player with strong presence in BFSI sector, which leads the market with 24% share in fraud detection and risk management applications."
+      },
+      {
+        "ticker": "PEGA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Key player in decision automation and business process management, positioned to benefit from fastest-growing Decision Automation category."
+      }
+    ]
+  },
+  {
+    "id": "75884692c745c43b5f33ba841fd3359ace42237dd0a58ea60cd6e2984580cd31",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "[Latest] Global eClinical Solutions Market Size/Share Worth USD 42.55 Billion by 2035 at a 13.98% CAGR: Healthcare Foresights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, Value, SWOT Analysis)",
+    "author": "Healthcare Foresights",
+    "published_utc": "2026-08-05T04:30:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/08/05/3339027/0/en/Latest-Global-eClinical-Solutions-Market-Size-Share-Worth-USD-42-55-Billion-by-2035-at-a-13-98-CAGR-Healthcare-Foresights-Analysis-Outlook-Leaders-Report-Trends-Forecast-Segmentati.html",
+    "tickers": [
+      "ORCL",
+      "ORCLpD",
+      "VEEV",
+      "IQV",
+      "IBM",
+      "ICLR"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/74609d89-5437-4826-b7b8-31238ea2e65c",
+    "description": "The global eClinical Solutions market is projected to grow from USD 11.50 billion in 2025 to USD 42.55 billion by 2035, at a CAGR of 13.98%. Growth is driven by increased demand for efficient clinical trials, rising chronic disease prevalence, adoption of AI and cloud computing technologies, and decentralized trial models. Key players include Oracle, Veeva Systems, IQVIA, Medidata Solutions, and IBM Watson Health.",
+    "keywords": [
+      "eClinical Solutions",
+      "clinical trials",
+      "electronic data capture",
+      "clinical data management",
+      "cloud computing",
+      "AI in healthcare",
+      "pharmaceutical R&D",
+      "decentralized trials",
+      "market forecast",
+      "healthcare technology"
+    ],
+    "insights": [
+      {
+        "ticker": "ORCL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a key market player in the growing eClinical Solutions market, which is experiencing strong 13.98% CAGR growth driven by increasing demand for clinical trial efficiency and digital healthcare solutions."
+      },
+      {
+        "ticker": "ORCLpD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a key market player in the growing eClinical Solutions market, which is experiencing strong 13.98% CAGR growth driven by increasing demand for clinical trial efficiency and digital healthcare solutions."
+      },
+      {
+        "ticker": "VEEV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a major player with recent product enhancements in March 2024 to improve clinical data integration and streamline trial processes, demonstrating active innovation in a rapidly expanding market."
+      },
+      {
+        "ticker": "IQV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed among key market players in the eClinical Solutions sector, which is benefiting from rising pharmaceutical R&D investment and increased adoption of digital trial management solutions."
+      },
+      {
+        "ticker": "IBM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a key player in the eClinical Solutions market, which is experiencing strong growth driven by integration of AI and cloud computing technologies that align with IBM's healthcare AI capabilities."
+      },
+      {
+        "ticker": "ICLR",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a key market player in the growing eClinical Solutions sector, benefiting from increased demand for clinical trial management and data solutions."
       }
     ]
   }

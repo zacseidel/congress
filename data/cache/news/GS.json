@@ -1,399 +1,495 @@
 [
   {
-    "id": "3815597ce57bd2c35994ca88d86d3fa6466b1f690cb341fe163cb2d94a1277f1",
+    "id": "83e109dd370fa5f904fcd9341f77f1ac21cd0fc9c9550553b64db57164593966",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "\"Hope Is Not an Investment Strategy,\" Says the Lone Wall Street Analyst Who Hasn't Been Wrong About SpaceX",
-    "author": "Sean Williams",
-    "published_utc": "2026-07-29T09:06:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/29/hope-not-investment-strategy-wall-st-analyst-spcx/?source=iedfolrf0000001",
+    "title": "Elon Musk Just Uttered 3 Massively Bullish Words for Micron, Sandisk, and SK Hynix",
+    "author": "Billy Duberstein",
+    "published_utc": "2026-08-17T10:06:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/17/elon-musk-just-uttered-3-massively-bullish-words-f/?source=iedfolrf0000001",
     "tickers": [
-      "SPCX",
-      "TSLA",
+      "MU",
+      "SKHY",
+      "SNDK",
       "GS",
       "GSpA",
       "GSpC",
       "GSpD"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880618%2Finvestor-pressing-sell-button-getty.jpg&w=1200&op=resize",
-    "description": "SpaceX stock has fallen 15% below its IPO price and 50% from its all-time high, with 37 of 38 Wall Street analysts rating it a buy or hold. However, CFRA analyst Keith Snyder's sell rating and $115 price target have proven prescient. Snyder argues that SpaceX's $28.5 trillion addressable market claim is questionable, the company lacks recurring profits despite positive adjusted EBITDA, and Elon Musk's history of unfulfilled promises (Tesla's Level 5 autonomy, robotaxis) suggests investors shouldn't rely on hope when valuing the stock.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883772%2Felon-musk_tesla_tsla_ceo_imagesource_the-white-house_2.jpeg&w=1200&op=resize",
+    "description": "Elon Musk highlighted that memory, not compute, is the rate limiter for agentic AI systems. As AI agents require vast amounts of specialized memory and storage for planning, task execution, and data retrieval, demand for DRAM and NAND flash is exploding. Goldman Sachs estimates agentic AI will consume 120 quadrillion tokens monthly by 2030\u201424 times current usage\u2014suggesting the memory up-cycle could last longer than expected despite recent stock pullbacks.",
     "keywords": [
-      "SpaceX IPO",
-      "stock valuation",
-      "analyst ratings",
-      "Elon Musk",
-      "investment strategy",
-      "addressable market",
-      "capital-intensive business"
+      "agentic AI",
+      "memory constraint",
+      "DRAM",
+      "NAND flash",
+      "semiconductor demand",
+      "KV-cache",
+      "token consumption",
+      "high-bandwidth memory"
     ],
     "insights": [
       {
-        "ticker": "SPCX",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock trading 15% below IPO price and 50% off all-time high. Only analyst with sell rating has been correct. Company lacks recurring profits, is capital-intensive, prone to delays, and CEO has history of unfulfilled promises. Valuation not justified by fundamentals."
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Directly benefits from increased memory demand for agentic AI. Produces both DRAM and NAND flash. Elon Musk's endorsement of memory as the critical constraint validates Micron's market opportunity. Recent pullback presents buying opportunity despite strong long-term demand outlook."
       },
       {
-        "ticker": "TSLA",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Used as example of Elon Musk's pattern of broken promises, including Level 5 full self-driving promised annually for over a decade without materialization and unfulfilled robotaxi commitments by 2020."
+        "ticker": "SKHY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Major memory and storage producer positioned to benefit from agentic AI's exponential memory requirements. Produces both DRAM and NAND flash. Musk's comments validate the strategic importance of their core products in the AI era."
+      },
+      {
+        "ticker": "SNDK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Pure-play NAND flash manufacturer well-positioned for growing demand from long-context agents requiring massive KV-cache storage on SSDs. Benefits from the shift toward storage-intensive agentic AI workloads."
       },
       {
         "ticker": "GS",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as lead underwriter of SpaceX IPO. No direct criticism or praise; role is factual and standard for IPO underwriting."
+        "sentiment_reasoning": "Mentioned as source of research projecting 24x increase in AI token usage by 2030. No direct business impact discussed; included for analytical credibility only."
       },
       {
         "ticker": "GSpA",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as lead underwriter of SpaceX IPO. No direct criticism or praise; role is factual and standard for IPO underwriting."
+        "sentiment_reasoning": "Mentioned as source of research projecting 24x increase in AI token usage by 2030. No direct business impact discussed; included for analytical credibility only."
       },
       {
         "ticker": "GSpC",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as lead underwriter of SpaceX IPO. No direct criticism or praise; role is factual and standard for IPO underwriting."
+        "sentiment_reasoning": "Mentioned as source of research projecting 24x increase in AI token usage by 2030. No direct business impact discussed; included for analytical credibility only."
       },
       {
         "ticker": "GSpD",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as lead underwriter of SpaceX IPO. No direct criticism or praise; role is factual and standard for IPO underwriting."
+        "sentiment_reasoning": "Mentioned as source of research projecting 24x increase in AI token usage by 2030. No direct business impact discussed; included for analytical credibility only."
       }
     ]
   },
   {
-    "id": "2a760419282f7e0b72cfe697746f5d4a85077b316d3ed5fcd4e1065dcc327c51",
+    "id": "e01c25770a6b5d80a64582cd4f899f6a30cd498dbe42075d5185b55100beb7ac",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "OPEC+ Is About to Pause Oil Output Hikes. Here's What It Means for Oil Stocks.",
-    "author": "Matt Dilallo",
-    "published_utc": "2026-07-28T17:10:01Z",
-    "article_url": "https://www.fool.com/investing/2026/07/28/opec-is-about-to-pause-oil-output-hikes-heres-what-it-means-for-oil-stocks/?source=iedfolrf0000001",
+    "title": "Jensen Huang Explained $500 Billion of Wall Street Money in Five Words",
+    "author": "Daniel Sparks",
+    "published_utc": "2026-08-15T09:14:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/15/jensen-huang-explained-500-billion-of-wall-street/?source=iedfolrf0000001",
     "tickers": [
-      "CVX",
-      "COP",
-      "BP",
-      "GS",
-      "GSpA",
-      "GSpC",
-      "GSpD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F8ced745332021d954852a6503118ca398876cb30-1200x801.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "OPEC+ is expected to pause production increases after September, maintaining current output levels through year-end. This pause could keep crude prices elevated as global markets rebuild stockpiles disrupted by Strait of Hormuz tensions. The decision may also prompt Iraq to leave OPEC, potentially benefiting U.S. oil companies with operations there like Chevron and ConocoPhillips.",
-    "keywords": [
-      "OPEC+",
-      "oil production",
-      "crude prices",
-      "Iraq",
-      "Strait of Hormuz",
-      "supply disruption",
-      "oil stocks"
-    ],
-    "insights": [
-      {
-        "ticker": "CVX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Chevron has signed memorandums of understanding with Iraq covering two oil fields, including potential operational control of West Qurna 2. If Iraq leaves OPEC due to production quota constraints, Chevron could accelerate production growth and expand operations in the country."
-      },
-      {
-        "ticker": "COP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ConocoPhillips recently agreed to acquire a 42% interest in BP Energy Company of Kirkuk with access to four large-scale oil fields holding 3 billion barrels. If Iraq leaves OPEC and increases production, ConocoPhillips could invest more and accelerate production growth."
-      },
-      {
-        "ticker": "BP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "BP is partnering with ConocoPhillips in Iraq's Kirkuk operations. If Iraq leaves OPEC and increases production quotas, BP could benefit from expanded development and optimization of the four oil fields."
-      },
-      {
-        "ticker": "GS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Goldman Sachs is mentioned only for its price forecast ($120/barrel near-term, $100 average next year), providing market analysis rather than being directly impacted by OPEC's decision."
-      },
-      {
-        "ticker": "GSpA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Goldman Sachs is mentioned only for its price forecast ($120/barrel near-term, $100 average next year), providing market analysis rather than being directly impacted by OPEC's decision."
-      },
-      {
-        "ticker": "GSpC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Goldman Sachs is mentioned only for its price forecast ($120/barrel near-term, $100 average next year), providing market analysis rather than being directly impacted by OPEC's decision."
-      },
-      {
-        "ticker": "GSpD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Goldman Sachs is mentioned only for its price forecast ($120/barrel near-term, $100 average next year), providing market analysis rather than being directly impacted by OPEC's decision."
-      }
-    ]
-  },
-  {
-    "id": "164601b1ce3c1345b3e294cad631e6c4ada9caac04a841bb7f63ad0cd13b7687",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "This Industrial Stock Is Up 533% in 2 Years. I Predict It Will Join the Dow if Caterpillar Issues a Stock Split.",
-    "author": "Daniel Foelber",
-    "published_utc": "2026-07-25T00:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/24/this-industrial-stock-is-up-533-in-2-years-i-pred/?source=iedfolrf0000001",
-    "tickers": [
-      "GEV",
-      "CAT",
+      "NVDA",
       "GS",
       "GSpA",
       "GSpC",
       "GSpD",
-      "NKE",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN"
+      "BLK",
+      "DIVB",
+      "KKR",
+      "KKRS",
+      "KKRT",
+      "KKRpD"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878923%2Fengineers-working-with-specialized-industrial-machinery.jpg&w=1200&op=resize",
-    "description": "GE Vernova has surged 533% in two years and could potentially join the Dow Jones Industrial Average if Caterpillar issues a stock split to rebalance the index's industrial sector weighting. The company supplies heavy-duty gas turbines for AI data centers and trades at a reasonable 30.8 P/E ratio, though earnings growth is expected to decelerate after 2026, making it suitable only for risk-tolerant investors.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883163%2Fjensen-huang_nvidia_nvda_ceo_imagesource_nvidia-corporation.jpg&w=1200&op=resize",
+    "description": "Nvidia CEO Jensen Huang announced a $500 billion financing initiative with Goldman Sachs, BlackRock, KKR and others to mobilize capital for AI infrastructure. The five-word thesis 'In AI, compute is revenue' frames Nvidia chips as collateral for loans, similar to aircraft or rail cars. However, the arrangement's viability depends on sustained AI demand and the resale value of chips, with risks remaining untested.",
     "keywords": [
-      "GE Vernova",
-      "Dow Jones Industrial Average",
-      "stock split",
-      "AI infrastructure",
-      "industrial sector",
-      "data centers",
-      "Caterpillar"
+      "AI infrastructure financing",
+      "compute as collateral",
+      "Nvidia chips",
+      "CUDA software",
+      "chip depreciation risk",
+      "AI demand sustainability"
     ],
     "insights": [
       {
-        "ticker": "GEV",
+        "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strong 533% two-year performance and industry-leading position in AI data center equipment supply. However, sentiment is tempered by expected earnings deceleration after 2026 and cyclical risk exposure."
-      },
-      {
-        "ticker": "CAT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a heavily weighted Dow component (10.3%) that would need to issue a stock split to accommodate GE Vernova. No specific positive or negative outlook provided."
+        "sentiment_reasoning": "The financing platform validates Nvidia's compute as bankable collateral, expanding addressable market for AI infrastructure without requiring customers to tap balance sheets. Strong revenue growth (71% trailing 12 months) and CUDA's software stickiness support the thesis."
       },
       {
         "ticker": "GS",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Noted as the top-weighted Dow component (12.4%) with strong recent performance, but mentioned primarily for index weighting context rather than investment recommendation."
+        "sentiment_reasoning": "As a financing platform participant, Goldman Sachs gains access to a new lending market, but the article notes credit loss responsibility is unassigned and collateral risk is untested, creating uncertainty about profitability."
       },
       {
         "ticker": "GSpA",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Noted as the top-weighted Dow component (12.4%) with strong recent performance, but mentioned primarily for index weighting context rather than investment recommendation."
+        "sentiment_reasoning": "As a financing platform participant, Goldman Sachs gains access to a new lending market, but the article notes credit loss responsibility is unassigned and collateral risk is untested, creating uncertainty about profitability."
       },
       {
         "ticker": "GSpC",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Noted as the top-weighted Dow component (12.4%) with strong recent performance, but mentioned primarily for index weighting context rather than investment recommendation."
+        "sentiment_reasoning": "As a financing platform participant, Goldman Sachs gains access to a new lending market, but the article notes credit loss responsibility is unassigned and collateral risk is untested, creating uncertainty about profitability."
       },
       {
         "ticker": "GSpD",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Noted as the top-weighted Dow component (12.4%) with strong recent performance, but mentioned primarily for index weighting context rather than investment recommendation."
+        "sentiment_reasoning": "As a financing platform participant, Goldman Sachs gains access to a new lending market, but the article notes credit loss responsibility is unassigned and collateral risk is untested, creating uncertainty about profitability."
       },
       {
-        "ticker": "NKE",
+        "ticker": "BLK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Similar to Goldman Sachs, BlackRock participates in the financing platform but faces unquantified credit risk if AI demand cools or chip values depreciate faster than expected."
+      },
+      {
+        "ticker": "DIVB",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Similar to Goldman Sachs, BlackRock participates in the financing platform but faces unquantified credit risk if AI demand cools or chip values depreciate faster than expected."
+      },
+      {
+        "ticker": "KKR",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "As a financing platform partner, KKR gains exposure to AI infrastructure lending but inherits the same untested collateral risks as other participants."
+      },
+      {
+        "ticker": "KKRS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "As a financing platform partner, KKR gains exposure to AI infrastructure lending but inherits the same untested collateral risks as other participants."
+      },
+      {
+        "ticker": "KKRT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "As a financing platform partner, KKR gains exposure to AI infrastructure lending but inherits the same untested collateral risks as other participants."
+      },
+      {
+        "ticker": "KKRpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "As a financing platform partner, KKR gains exposure to AI infrastructure lending but inherits the same untested collateral risks as other participants."
+      }
+    ]
+  },
+  {
+    "id": "42a25b167dff1f94654d63e28ed0c4fe81f42b45e4e1d5941f195c4d3c32d376",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "I Think You Missed CoreWeave's Zero-Cost-Basis Engine",
+    "author": "Beegee Alop",
+    "published_utc": "2026-08-14T15:24:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/14/i-think-you-missed-coreweaves-zero-cost-basis-engi/?source=iedfolrf0000001",
+    "tickers": [
+      "CRWV",
+      "NVDA",
+      "BLK",
+      "DIVB",
+      "BX",
+      "BN",
+      "BNH",
+      "BNJ",
+      "GS",
+      "GSpA",
+      "GSpC",
+      "GSpD",
+      "KKR",
+      "KKRS",
+      "KKRT",
+      "KKRpD",
+      "APO",
+      "APOS"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883189%2Fgemini_generated_image_uvnx1guvnx1guvnx.png&w=1200&op=resize",
+    "description": "CoreWeave's business model challenges the bear case that older GPUs become obsolete quickly. The company secured a multi-year renewal on 2020-era Nvidia A100 chips extending through 2029, demonstrating that older hardware can generate profitable revenue in subsequent contracts after initial debt is paid down. Debt markets are increasingly pricing in this residual value, with CoreWeave's new $2.6 billion facility having a longer maturity than underlying customer contracts, signaling lender confidence in GPU longevity.",
+    "keywords": [
+      "GPU infrastructure",
+      "residual value",
+      "debt financing",
+      "AI compute",
+      "workload cascading",
+      "hardware depreciation",
+      "contract renewals"
+    ],
+    "insights": [
+      {
+        "ticker": "CRWV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The article highlights CoreWeave's competitive advantage in extracting long-term value from GPU assets through contract renewals and residual value monetization, challenging the obsolescence thesis and demonstrating sustainable economics."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Nvidia's partnership with major asset managers to mobilize $500 billion for AI compute infrastructure and potential residual-value support strengthens the ecosystem around its chips, extending their economic utility and market demand."
+      },
+      {
+        "ticker": "BLK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as part of Nvidia's consortium to formalize AI compute as an investable asset class, but no specific impact analysis provided."
+      },
+      {
+        "ticker": "DIVB",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as part of Nvidia's consortium to formalize AI compute as an investable asset class, but no specific impact analysis provided."
+      },
+      {
+        "ticker": "BX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "BN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "BNH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "BNJ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "GS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "GSpA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "GSpC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "GSpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "KKR",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "KKRS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "KKRT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "KKRpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "APO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "APOS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      }
+    ]
+  },
+  {
+    "id": "9657120da589641dfeebe81113302760b39f6bcd9bd15991b1cc6b57abcc8d0c",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Nvidia Just Recruited Wall Street to Help Fund $500 Billion in AI Infrastructure. Here\u2019s the Catch.",
+    "author": "Johnny Rice",
+    "published_utc": "2026-08-11T22:22:01Z",
+    "article_url": "https://www.fool.com/investing/2026/08/11/nvidia-just-recruited-wall-street-to-help-fund-usd500-billion-in-ai-infrastructure-here-s-the-catch/?source=iedfolrf0000001",
+    "tickers": [
+      "NVDA",
+      "BLK",
+      "DIVB",
+      "BX",
+      "GS",
+      "GSpA",
+      "GSpC",
+      "GSpD",
+      "KKR",
+      "KKRS",
+      "KKRT",
+      "KKRpD",
+      "BN",
+      "BNH",
+      "BNJ",
+      "APO",
+      "APOS"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F77b36599c7bafe4ce2b1695b739afbcc147c1eba-2048x1365.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Nvidia partnered with major Wall Street firms (Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR) to create compute financing platforms targeting $500 billion in AI data center funding. While the deal aims to accelerate AI infrastructure buildout, the author expresses skepticism about its sustainability, noting that hyperscalers are increasingly relying on debt markets and questioning whether GPUs' shorter lifespan makes them viable collateral compared to traditional assets like power plants.",
+    "keywords": [
+      "AI infrastructure financing",
+      "GPU financing",
+      "data center funding",
+      "hyperscaler spending",
+      "AI sustainability concerns",
+      "compute financing platforms"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While the $500B financing deal appears positive on the surface, the author suggests it may actually signal weakness in AI demand sustainability rather than strength. The announcement comes amid concerns about hyperscalers turning to debt markets, and questions about GPU collateral viability due to their shorter useful life compared to traditional assets."
+      },
+      {
+        "ticker": "BLK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a partner in the financing initiative. No specific sentiment expressed about the firm itself; participation is presented as part of a broader financing arrangement with uncertain long-term viability."
+      },
+      {
+        "ticker": "DIVB",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a partner in the financing initiative. No specific sentiment expressed about the firm itself; participation is presented as part of a broader financing arrangement with uncertain long-term viability."
+      },
+      {
+        "ticker": "BX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a partner in the compute financing platforms. No distinct sentiment provided; involvement is presented neutrally as part of the Wall Street consortium."
+      },
+      {
+        "ticker": "GS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Included as one of the six major Wall Street partners. No specific commentary on the firm; participation is presented as part of the broader financing arrangement."
+      },
+      {
+        "ticker": "GSpA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Included as one of the six major Wall Street partners. No specific commentary on the firm; participation is presented as part of the broader financing arrangement."
+      },
+      {
+        "ticker": "GSpC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Included as one of the six major Wall Street partners. No specific commentary on the firm; participation is presented as part of the broader financing arrangement."
+      },
+      {
+        "ticker": "GSpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Included as one of the six major Wall Street partners. No specific commentary on the firm; participation is presented as part of the broader financing arrangement."
+      },
+      {
+        "ticker": "KKR",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Named as a partner in the initiative. No distinct sentiment expressed; involvement is presented as part of the consortium without specific analysis."
+      },
+      {
+        "ticker": "KKRS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Named as a partner in the initiative. No distinct sentiment expressed; involvement is presented as part of the consortium without specific analysis."
+      },
+      {
+        "ticker": "KKRT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Named as a partner in the initiative. No distinct sentiment expressed; involvement is presented as part of the consortium without specific analysis."
+      },
+      {
+        "ticker": "KKRpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Named as a partner in the initiative. No distinct sentiment expressed; involvement is presented as part of the consortium without specific analysis."
+      },
+      {
+        "ticker": "BN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed among the six Wall Street partners. No specific sentiment provided; participation is presented neutrally within the broader financing context."
+      },
+      {
+        "ticker": "BNH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed among the six Wall Street partners. No specific sentiment provided; participation is presented neutrally within the broader financing context."
+      },
+      {
+        "ticker": "BNJ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed among the six Wall Street partners. No specific sentiment provided; participation is presented neutrally within the broader financing context."
+      },
+      {
+        "ticker": "APO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as one of the six major asset managers and investment banks in the partnership. No distinct sentiment expressed; involvement is presented as part of the consortium."
+      },
+      {
+        "ticker": "APOS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as one of the six major asset managers and investment banks in the partnership. No distinct sentiment expressed; involvement is presented as part of the consortium."
+      }
+    ]
+  },
+  {
+    "id": "7cd45bfee9b6f5d9b1d2307988e768eb31dd6eb373fa59334408399d9ef56ab6",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Elon Musk's Tesla and SpaceX Have Shed $1.19 Trillion in Value Since June. Is This a Buying Opportunity?",
+    "author": "Patrick Sanders",
+    "published_utc": "2026-08-05T14:20:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/05/elon-musks-tesla-and-spacex-have-shed-119-trillio/?source=iedfolrf0000001",
+    "tickers": [
+      "TSLA",
+      "SPCX",
+      "GS",
+      "GSpA",
+      "GSpC",
+      "GSpD"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F881296%2F56d29df5158c61e221950ae2ff9dd90ec91e06d0-1.png&w=1200&op=resize",
+    "description": "Tesla and SpaceX have lost a combined $1.19 trillion in market value since June, with Tesla down 20% and SpaceX down 40%. Both companies are heavily investing in ambitious AI projects\u2014Tesla in Optimus robots and full self-driving, SpaceX in orbital data centers\u2014requiring billions in spending and debt. SpaceX faces additional pressure as lockup period restrictions begin expiring, potentially flooding the market with shares. The article suggests these declines may present buying opportunities for long-term investors willing to tolerate near-term volatility.",
+    "keywords": [
+      "market decline",
+      "artificial intelligence investment",
+      "capital expenditure",
+      "IPO lockup period",
+      "contrarian investing",
+      "Optimus robot",
+      "full self-driving",
+      "orbital data centers"
+    ],
+    "insights": [
+      {
+        "ticker": "TSLA",
         "sentiment": "negative",
-        "sentiment_reasoning": "Described as hovering near a 12-year low with a turnaround taking longer than expected. Suggested as a candidate for removal from the Dow to make room for GE Vernova."
+        "sentiment_reasoning": "Stock fell 18% following Q2 earnings announcement due to doubled capex and $30 billion borrowing plans. Company faces uncertainty around Optimus robot commercialization and regulatory approval for full self-driving technology."
       },
       {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a precedent example for stock split (20-for-1 in 2022) before Dow inclusion, used for comparative context only."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a precedent example for stock split (20-for-1 in 2022) before Dow inclusion, used for comparative context only."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a precedent example for stock split (20-for-1 in 2022) before Dow inclusion, used for comparative context only."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a precedent example for stock split (20-for-1 in 2022) before Dow inclusion, used for comparative context only."
-      }
-    ]
-  },
-  {
-    "id": "6aebbc34143cd5a262fb37d6e6553fe6d34b3aacc5c51d8354866473d69b3892",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Brent Crude Tops $100 After Reports of Tanker Attacks Near Saudi Arabia. Should Investors Buy Oil Stocks Now?",
-    "author": "Matt Dilallo",
-    "published_utc": "2026-07-23T18:20:02Z",
-    "article_url": "https://www.fool.com/investing/2026/07/23/brent-crude-tops-100-after-reports-of-tanker-attacks-near-saudi-arabia-should-investors-buy-oil-stocks-now/?source=iedfolrf0000001",
-    "tickers": [
-      "CVX",
-      "GS",
-      "GSpA",
-      "GSpC",
-      "GSpD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Ff677d16073e9ef46ef84d7318a2b5073c1700f5b-2121x1414.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Brent crude surged 7% to over $100 a barrel following reports of Houthi attacks on Saudi Arabian oil tankers in the Red Sea. With ongoing disruptions to oil supply routes via the Strait of Hormuz and the Red Sea, Goldman Sachs warns crude could reach $120 a barrel. Despite oil's 65% surge this year, major oil stocks have only gained modestly, presenting potential upside for investors.",
-    "keywords": [
-      "Brent crude",
-      "oil prices",
-      "Houthi attacks",
-      "Red Sea",
-      "Strait of Hormuz",
-      "supply disruption",
-      "oil stocks",
-      "Iran"
-    ],
-    "insights": [
-      {
-        "ticker": "CVX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Oil price surge to $100+ barrel benefits Chevron significantly. The company has delivered structural cost reductions and is positioned to generate higher earnings and cash flow at elevated crude prices. Stock has only gained 30% YTD despite 65% oil surge, suggesting upside potential."
+        "ticker": "SPCX",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock down 40% since June. Goldman Sachs projects negative free cash flow of $105 billion in 2029. Imminent lockup period expiration could flood market with up to 912 million shares, potentially pressuring stock price further."
       },
       {
         "ticker": "GS",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Goldman Sachs is mentioned as a research source providing price forecasts ($120 potential, $100 average in 2027) rather than as an investment recommendation. The mention is informational regarding market analysis."
+        "sentiment_reasoning": "Mentioned as lead underwriter for SpaceX IPO and provider of financial projections; no direct impact on company performance discussed."
       },
       {
         "ticker": "GSpA",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Goldman Sachs is mentioned as a research source providing price forecasts ($120 potential, $100 average in 2027) rather than as an investment recommendation. The mention is informational regarding market analysis."
+        "sentiment_reasoning": "Mentioned as lead underwriter for SpaceX IPO and provider of financial projections; no direct impact on company performance discussed."
       },
       {
         "ticker": "GSpC",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Goldman Sachs is mentioned as a research source providing price forecasts ($120 potential, $100 average in 2027) rather than as an investment recommendation. The mention is informational regarding market analysis."
+        "sentiment_reasoning": "Mentioned as lead underwriter for SpaceX IPO and provider of financial projections; no direct impact on company performance discussed."
       },
       {
         "ticker": "GSpD",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Goldman Sachs is mentioned as a research source providing price forecasts ($120 potential, $100 average in 2027) rather than as an investment recommendation. The mention is informational regarding market analysis."
-      }
-    ]
-  },
-  {
-    "id": "aebb458138d3c8c268a785ebd5d62366aa6f1246233665eda3e867787d6765c4",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "SoFi Investors Just Got Great News From JPMorgan Chase and Goldman Sachs",
-    "author": "Jennifer Saibil",
-    "published_utc": "2026-07-22T18:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/22/sofi-investors-just-got-great-news-from-jpmorgan/?source=iedfolrf0000001",
-    "tickers": [
-      "SOFI",
-      "AMJB",
-      "JPM",
-      "JPMpC",
-      "JPMpD",
-      "JPMpJ",
-      "JPMpK",
-      "JPMpL",
-      "JPMpM",
-      "VYLD",
-      "GS",
-      "GSpA",
-      "GSpC",
-      "GSpD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879215%2Fsofi-office-shot-with-sofi-branding-poster-in-background.jpg&w=1200&op=resize",
-    "description": "Strong earnings from major banks JPMorgan Chase and Goldman Sachs, driven by robust investment banking and lending activity, signal a healthy economy that should benefit smaller banks like SoFi. With lending up significantly and the SpaceX IPO boosting retail investment platforms, SoFi is well-positioned ahead of its Q2 earnings report on July 29.",
-    "keywords": [
-      "investment banking",
-      "lending growth",
-      "IPO activity",
-      "economic health",
-      "retail investing",
-      "earnings report"
-    ],
-    "insights": [
-      {
-        "ticker": "SOFI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong lending growth (55% YoY), increased loan originations (68% YoY), and benefits from SpaceX IPO retail access position SoFi well. Broader economic strength from big banks should trickle down to smaller banks."
-      },
-      {
-        "ticker": "AMJB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q2 earnings with 45% investment banking growth and 10% YoY increase in average loans demonstrate robust financial sector health and economic strength."
-      },
-      {
-        "ticker": "JPM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q2 earnings with 45% investment banking growth and 10% YoY increase in average loans demonstrate robust financial sector health and economic strength."
-      },
-      {
-        "ticker": "JPMpC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q2 earnings with 45% investment banking growth and 10% YoY increase in average loans demonstrate robust financial sector health and economic strength."
-      },
-      {
-        "ticker": "JPMpD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q2 earnings with 45% investment banking growth and 10% YoY increase in average loans demonstrate robust financial sector health and economic strength."
-      },
-      {
-        "ticker": "JPMpJ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q2 earnings with 45% investment banking growth and 10% YoY increase in average loans demonstrate robust financial sector health and economic strength."
-      },
-      {
-        "ticker": "JPMpK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q2 earnings with 45% investment banking growth and 10% YoY increase in average loans demonstrate robust financial sector health and economic strength."
-      },
-      {
-        "ticker": "JPMpL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q2 earnings with 45% investment banking growth and 10% YoY increase in average loans demonstrate robust financial sector health and economic strength."
-      },
-      {
-        "ticker": "JPMpM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q2 earnings with 45% investment banking growth and 10% YoY increase in average loans demonstrate robust financial sector health and economic strength."
-      },
-      {
-        "ticker": "VYLD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q2 earnings with 45% investment banking growth and 10% YoY increase in average loans demonstrate robust financial sector health and economic strength."
-      },
-      {
-        "ticker": "GS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Excellent Q2 performance with 55% investment banking growth and 90% YoY increase in M&A activity, plus AI-driven growth across segments indicate strong market conditions."
-      },
-      {
-        "ticker": "GSpA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Excellent Q2 performance with 55% investment banking growth and 90% YoY increase in M&A activity, plus AI-driven growth across segments indicate strong market conditions."
-      },
-      {
-        "ticker": "GSpC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Excellent Q2 performance with 55% investment banking growth and 90% YoY increase in M&A activity, plus AI-driven growth across segments indicate strong market conditions."
-      },
-      {
-        "ticker": "GSpD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Excellent Q2 performance with 55% investment banking growth and 90% YoY increase in M&A activity, plus AI-driven growth across segments indicate strong market conditions."
+        "sentiment_reasoning": "Mentioned as lead underwriter for SpaceX IPO and provider of financial projections; no direct impact on company performance discussed."
       }
     ]
   }

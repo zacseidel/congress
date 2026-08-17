@@ -1,334 +1,247 @@
 [
   {
-    "id": "fda1c330edde014dca6652b0a8b164eec500a0e95409fec72f63d7b602030ac7",
+    "id": "74c62a10f078f8a6eb1c998629c60dbe0ffa7ab10baa2829ef59f7923696a856",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Ford Just Delivered Bad News for Tesla Investors",
-    "author": "Marc Guberti",
-    "published_utc": "2026-07-29T15:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/29/ford-just-delivered-bad-news-for-tesla-investors/?source=iedfolrf0000001",
+    "title": "3 Critical Things Investors Overlooked in Rivian's Strong Q2",
+    "author": "Daniel Miller",
+    "published_utc": "2026-08-17T06:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/17/3-critical-things-investors-overlooked-in-rivians/?source=iedfolrf0000001",
     "tickers": [
-      "TSLA",
-      "F",
-      "FpB",
-      "FpC",
-      "FpD",
-      "AAPL",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
+      "RIVN",
+      "VWAGY",
       "UBER",
-      "NVDA"
+      "TSLA",
+      "LCID"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880677%2Fgettyimages-1441650317-1200x844-3b42050.jpg&w=1200&op=resize",
-    "description": "Ford announced it will achieve point-to-point autonomy by 2028 with Apple executives working on the technology, positioning itself to enter the robotaxi market. This threatens Tesla's dominance in robotaxis, one of the key growth drivers justifying Tesla's extremely high P/E ratio of ~300. As traditional automakers like Ford, Toyota, and Volkswagen enter the robotaxi space, competition will intensify and pressure Tesla's future margins and growth rates in this sector.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883681%2Frivian_r2_4.jpg&w=1200&op=resize",
+    "description": "Rivian delivered strong Q2 results beating Wall Street estimates with record gross profit of $180 million at 11% margin. Despite the positive performance, the stock rose only 1%. The article highlights three overlooked aspects: (1) Rivian's robust liquidity position of $14 billion when including future funding from Volkswagen, Uber, and DOE loans; (2) growing demand generation through expanded Rivian Spaces (up 39%) and demo drives (up 104%); and (3) progress on autonomous driving technology with plans for a Level 4 robotaxi by 2028.",
     "keywords": [
-      "robotaxis",
-      "autonomous vehicles",
+      "Q2 earnings",
       "electric vehicles",
-      "market competition",
-      "valuation risk",
-      "self-driving technology"
-    ],
-    "insights": [
-      {
-        "ticker": "TSLA",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Tesla faces increasing competition in robotaxis from Ford and other automakers. With a P/E ratio of ~300, Tesla has no margin for error and relies heavily on robotaxi and humanoid robot success. Rising competition threatens growth rates and profit margins in this critical segment."
-      },
-      {
-        "ticker": "F",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ford is making strategic progress in autonomous vehicle technology with Apple executives involved, positioning itself to enter the high-margin robotaxi market by 2028. This represents a significant growth opportunity for the company."
-      },
-      {
-        "ticker": "FpB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ford is making strategic progress in autonomous vehicle technology with Apple executives involved, positioning itself to enter the high-margin robotaxi market by 2028. This represents a significant growth opportunity for the company."
-      },
-      {
-        "ticker": "FpC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ford is making strategic progress in autonomous vehicle technology with Apple executives involved, positioning itself to enter the high-margin robotaxi market by 2028. This represents a significant growth opportunity for the company."
-      },
-      {
-        "ticker": "FpD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ford is making strategic progress in autonomous vehicle technology with Apple executives involved, positioning itself to enter the high-margin robotaxi market by 2028. This represents a significant growth opportunity for the company."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Apple is mentioned as having executives working on Ford's autonomous technology, but the article provides no specific details about Apple's involvement, benefits, or strategic implications for Apple itself."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Waymo is noted as already operating in more cities than Tesla's robotaxis, indicating competitive progress, but the article does not provide forward-looking analysis or sentiment about Alphabet's robotaxi prospects."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Waymo is noted as already operating in more cities than Tesla's robotaxis, indicating competitive progress, but the article does not provide forward-looking analysis or sentiment about Alphabet's robotaxi prospects."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Waymo is noted as already operating in more cities than Tesla's robotaxis, indicating competitive progress, but the article does not provide forward-looking analysis or sentiment about Alphabet's robotaxi prospects."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Waymo is noted as already operating in more cities than Tesla's robotaxis, indicating competitive progress, but the article does not provide forward-looking analysis or sentiment about Alphabet's robotaxi prospects."
-      },
-      {
-        "ticker": "UBER",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Uber's recent partnership with Nvidia to launch robotaxis across 28 cities is mentioned as competition to Tesla, but the article provides no specific analysis of Uber's prospects or implications."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Nvidia is mentioned as partnering with Uber on robotaxi deployment, but the article does not analyze the impact or implications for Nvidia's business."
-      }
-    ]
-  },
-  {
-    "id": "358057610349146682c3f46b73d36a2028c0a2522b954b78cfd753ebdf1f2b8a",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Rivian Automotive's Next Earnings Report on July 30 Could Send the Stock Soaring. Here's Why.",
-    "author": "Ryan Vanzo",
-    "published_utc": "2026-07-27T20:20:01Z",
-    "article_url": "https://www.fool.com/investing/2026/07/27/rivian-automotives-next-earnings-report-on-july-30-could-send-the-stock-soaring-heres-why/?source=iedfolrf0000001",
-    "tickers": [
-      "RIVN",
-      "UBER"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fd6835bc976b163ac455cfcc34980f0c81820d9bf-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Rivian's July 30 earnings report could drive significant stock gains as investors focus on R2 SUV production and sales scaling. The company raised 2026 delivery forecasts to 65,000-70,000 vehicles and delivered 12,194 vehicles in Q2, exceeding guidance. Analyst Alexander Potter upgraded the stock to 'overweight' citing strong R2 ramp, avoided launch issues, and capital raise funding growth. The affordable R2 model targets mass market buyers and robotaxi operators, with Uber's $1.25 billion order for up to 50,000 units signaling strong demand.",
-    "keywords": [
-      "earnings report",
-      "R2 SUV",
-      "production scaling",
-      "delivery guidance",
-      "robotaxi market",
-      "EV market",
-      "analyst upgrade",
-      "capital raise"
+      "liquidity",
+      "autonomous driving",
+      "R2 launch",
+      "demand generation",
+      "robotaxi"
     ],
     "insights": [
       {
         "ticker": "RIVN",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q2 delivery beat (12,194 vs 9,000-11,000 guidance), raised 2026 delivery forecast, successful R2 launch without major issues, analyst upgrade to 'overweight' with price target increase from $18 to $20, and major Uber order of 50,000 R2s demonstrate positive momentum and growth catalysts."
+        "sentiment_reasoning": "Company exceeded Wall Street estimates, achieved record gross profit with improving margins, secured substantial liquidity ($14B including future commitments), demonstrated strong demand generation metrics, and is advancing autonomous driving capabilities toward a 2028 L4 robotaxi launch."
       },
       {
-        "ticker": "UBER",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a customer placing a $1.25 billion order for up to 50,000 Rivian R2s for robotaxi operations, indicating strategic investment in autonomous vehicle capabilities, but the article does not provide direct sentiment about Uber's business or stock performance."
-      }
-    ]
-  },
-  {
-    "id": "5a9ec225954f3db7a1c27a55790b523e5d8b393dbd172a73757265cbdd5b709d",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Does PayPal Have a Buyer?",
-    "author": "Motley Fool Staff",
-    "published_utc": "2026-07-25T01:16:55Z",
-    "article_url": "https://www.fool.com/investing/2026/07/24/does-paypal-have-a-buyer/?source=iedfolrf0000001",
-    "tickers": [
-      "PYPL",
-      "JNJ",
-      "UBER"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fab7d7eca8634b0e50c42ea0389e3d94afc0d18ef-1280x720.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Stripe and private equity firm Advent International have submitted a joint proposal to acquire PayPal for $60.50 per share, valuing the company at over $53 billion\u2014a 28% premium. The deal would be structured as a 50/50 partnership to keep PayPal intact rather than break it up. While the offer highlights PayPal's fall from its $360 billion pandemic-era peak, analysts debate whether the price is sufficient and whether the partnership structure can work given inherent tensions between Stripe's growth ambitions and Advent's cash flow optimization goals.",
-    "keywords": [
-      "PayPal acquisition",
-      "Stripe",
-      "Advent International",
-      "fintech",
-      "private equity",
-      "payment infrastructure",
-      "Johnson & Johnson earnings",
-      "Uber autonomous vehicles",
-      "regulatory capture"
-    ],
-    "insights": [
-      {
-        "ticker": "PYPL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While the acquisition offer represents a 28% premium and potential exit for shareholders, analysts question whether $60.50/share is sufficient given the company's $6 billion free cash flow and institutional ownership expectations. The deal structure also presents execution risks."
-      },
-      {
-        "ticker": "JNJ",
+        "ticker": "VWAGY",
         "sentiment": "positive",
-        "sentiment_reasoning": "Company beat earnings expectations on both top and bottom lines, raised full-year guidance, and is on track to cross $100 billion in revenue for the first time. Long-term fundamentals remain strong despite short-term patent concerns."
+        "sentiment_reasoning": "Strategic partnership with Rivian includes $1 billion non-recourse loan and $460 million investment over coming years, positioning Volkswagen as a key financial and strategic partner in Rivian's growth."
       },
       {
         "ticker": "UBER",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Uber is shifting from disruptor to defensive incumbent, lobbying against standalone autonomous vehicle regulations in Washington D.C. The company's scattered investments in autonomous vehicle partners (Lucid, Nuro) are not scaling, while competitor Waymo dominates with 500,000+ weekly commercial trips."
-      }
-    ]
-  },
-  {
-    "id": "d752880c56b9c207926553962052ae47a9af96fc45fdb49669bbca68c296349a",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "David Tepper Has 5% of His Portfolio in This Little-Known Energy Stock. Here's Why.",
-    "author": "Stefon Walters",
-    "published_utc": "2026-07-24T06:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/24/david-tepper-has-5-of-his-portfolio-in-this-little/?source=iedfolrf0000001",
-    "tickers": [
-      "VST",
-      "META",
-      "AMZN",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "MU",
-      "TSM",
-      "UBER",
-      "BABA"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879265%2Fdavid-tepper_appaloosa-management_founder_imagesource_getty-images.jpeg&w=1200&op=resize",
-    "description": "Billionaire investor David Tepper's hedge fund Appaloosa Management holds a significant 5.12% stake in Vistra, an energy company positioned to benefit from AI data center power demands. Vistra supplies electricity to millions of customers and has secured major long-term power purchase agreements with tech companies like Meta. The company showed dramatic improvement with Q1 2026 net income of $1.03 billion compared to a $268 million loss in Q1 2025, though its stock has underperformed other AI-adjacent stocks.",
-    "keywords": [
-      "AI data centers",
-      "power generation",
-      "energy stocks",
-      "power purchase agreements",
-      "hedge fund holdings",
-      "electricity demand"
-    ],
-    "insights": [
-      {
-        "ticker": "VST",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strong positioning in AI power supply market with major long-term contracts (Meta 20-year agreement), significant profitability turnaround (Q1 2026: $1.03B net income vs Q1 2025: -$268M loss), and backing from prominent investor David Tepper. However, stock has underperformed recently, suggesting potential upside."
+        "sentiment_reasoning": "Committed $250 million milestone-based investment in Rivian plus additional $700 million funding, and has ordered 50,000 R2 vehicles, indicating strong confidence in Rivian's technology and business model."
       },
-      {
-        "ticker": "META",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major customer securing long-term power agreements with Vistra, indicating significant AI infrastructure investment, but no direct investment recommendation or performance analysis provided."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as Appaloosa's largest holding and AI stock, but article focuses on Vistra rather than Amazon's fundamentals or outlook."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as one of Appaloosa's top AI holdings, but no specific analysis or recommendation provided."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as one of Appaloosa's top AI holdings, but no specific analysis or recommendation provided."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as one of Appaloosa's top AI holdings, but no specific analysis or recommendation provided."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as one of Appaloosa's top AI holdings, but no specific analysis or recommendation provided."
-      },
-      {
-        "ticker": "MU",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed among Appaloosa's top holdings as an AI-related stock, but not analyzed in the article."
-      },
-      {
-        "ticker": "TSM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Included in Appaloosa's top holdings as an AI hardware company, but receives no specific commentary."
-      },
-      {
-        "ticker": "UBER",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as one of Appaloosa's top holdings, but noted as an exception to the AI stock theme without further analysis."
-      },
-      {
-        "ticker": "BABA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed among Appaloosa's holdings but receives no specific analysis or commentary in the article."
-      }
-    ]
-  },
-  {
-    "id": "933357bb17fb4e615dbc2fbf3e8bd6238d46a32d96adcdbd28094ad20df56be3",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Is Tesla\u2019s Earnings Miss and Negative Free Cash Flow a Red Flag for Rivian and Lucid Investors?",
-    "author": "Ryan Vanzo",
-    "published_utc": "2026-07-23T23:20:01Z",
-    "article_url": "https://www.fool.com/investing/2026/07/23/is-teslas-earnings-miss-and-negative-free-cash-flow-a-red-flag-for-rivian-and-lucid-investors/?source=iedfolrf0000001",
-    "tickers": [
-      "TSLA",
-      "RIVN",
-      "LCID",
-      "UBER"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F0e0ab899e473d30f3bb6723d72b82e5df0e1c150-2000x1200.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Tesla's stock fell 15% after reporting earnings that missed expectations, with weak margins and negative free cash flow of $1.09 billion due to surging capital expenditures. The primary concern is Tesla's robotaxi division struggling to scale, with fleet numbers stuck in the dozens rather than hundreds as previously guided. This slowdown may signal broader challenges for the robotaxi industry, potentially impacting Rivian and Lucid, which have lucrative supply deals with Uber for robotaxi vehicles but may face delayed growth timelines.",
-    "keywords": [
-      "Tesla earnings miss",
-      "robotaxi",
-      "free cash flow",
-      "capital expenditures",
-      "EV stocks",
-      "Uber partnership",
-      "scaling challenges"
-    ],
-    "insights": [
       {
         "ticker": "TSLA",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock fell 14.38% following earnings miss with EPS of $0.33 vs. consensus of $0.50, declining gross margins (16.3% vs. 19.2%), negative free cash flow of $1.09 billion, and most critically, robotaxi division failing to scale as promised with fleet stuck in dozens rather than hundreds."
-      },
-      {
-        "ticker": "RIVN",
-        "sentiment": "negative",
-        "sentiment_reasoning": "While Rivian has a $1.25 billion deal with Uber for 50,000 R2 SUVs, Tesla's robotaxi scaling struggles suggest the broader robotaxi industry may face challenges, potentially delaying growth catalysts and revenue realization for Rivian's robotaxi vehicle supply business."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in autonomous driving capabilities (Full-Self Driving comparison) but no direct performance or strategic information provided in the article."
       },
       {
         "ticker": "LCID",
         "sentiment": "negative",
-        "sentiment_reasoning": "Similar to Rivian, Lucid has a $500 million deal with Uber for 35,000 vehicles, but Tesla's inability to scale its robotaxi fleet indicates the robotaxi market may experience slower-than-expected growth, potentially dampening near-term revenue prospects from this lucrative end market."
+        "sentiment_reasoning": "Article explicitly states Rivian is separating itself from rival EV maker Lucid Group, implying Lucid is falling behind in competitive positioning."
+      }
+    ]
+  },
+  {
+    "id": "00edc436ff82a57dd1768d4bd57d049ba8d5a73ce8f1c00826f8e4405e97c027",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Shopify vs. Uber Technologies: What Their Revenue Trends Reveal to Investors.",
+    "author": "Robert Izquierdo",
+    "published_utc": "2026-08-14T01:00:59Z",
+    "article_url": "https://www.fool.com/coverage/charts/2026/08/13/shopify-vs-uber-technologies-what-their-revenue-trends-reveal-to-investors/?source=iedfolrf0000001",
+    "tickers": [
+      "SHOP",
+      "UBER"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Fcharts%2Fproduction%2Fprocessed%2Fshop-uber%2Fquarter%2Frevenue%2Fbar%2Fprimary%2Fstandard%2Flimit-12%2Flatest%2Fshop-uber_quarter_revenue_bar_primary_standard_limit12.png&w=1200&op=resize",
+    "description": "Shopify and Uber both show consistent year-over-year revenue growth, but Shopify significantly outpaces Uber with a 34% Q2 revenue increase compared to Uber's 12%. While Uber generates roughly four times Shopify's quarterly revenue ($14.2B vs $3.6B in Q2 2026), Shopify's faster growth rate of over 30% expected in Q3 demonstrates superior scaling momentum, driven partly by AI-driven traffic tripling on its merchant websites.",
+    "keywords": [
+      "revenue growth",
+      "e-commerce",
+      "ride-hailing",
+      "artificial intelligence",
+      "year-over-year growth",
+      "quarterly earnings",
+      "gross bookings"
+    ],
+    "insights": [
+      {
+        "ticker": "SHOP",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Shopify demonstrates exceptional revenue growth of 34% in Q2 2026 with expectations of over 30% growth in Q3. The company benefits from AI-driven traffic tripling on merchant websites, increased net income margins (42%), and a $3 billion share repurchase authorization, indicating strong business momentum and investor confidence."
+      },
+      {
+        "ticker": "UBER",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Uber shows solid year-over-year revenue growth of 12% in Q2 2026 (adjusted for UK tax reclassification), with gross bookings increasing 24% to $58B. The company maintains consistent revenue expansion, advances autonomous driving strategy, and reports a healthy 17% net income margin, though growth trails Shopify's pace."
+      }
+    ]
+  },
+  {
+    "id": "a776315afe6f691ab04f2483a4b4ce77cf2713657ea27ca390630b12b39bdf20",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Uber Is Due for a Rally as Fundamentals Improve",
+    "author": "Marc Guberti",
+    "published_utc": "2026-08-13T07:10:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/13/uber-is-due-for-a-rally-as-fundamentals-improve/?source=iedfolrf0000001",
+    "tickers": [
+      "UBER",
+      "DASH"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F882916%2Fuber-passenger-getting-into-car-ridesharing-source-uber-1200x800-5b2df79.jpg&w=1200&op=resize",
+    "description": "Uber's fundamentals are strengthening with improved profit margins, growing user base, and strong delivery segment growth, yet the stock remains down 8% year-to-date. Trading at a P/E ratio of 17 compared to competitor DoorDash's 110, Uber appears undervalued and poised for a potential rally as the market recognizes its improving financial performance.",
+    "keywords": [
+      "ride-hailing",
+      "food delivery",
+      "profit margins",
+      "user growth",
+      "valuation",
+      "autonomous vehicles"
+    ],
+    "insights": [
+      {
+        "ticker": "UBER",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company demonstrates improving fundamentals including 16% YoY growth in monthly active users, 18% increase in trips, 28% YoY delivery revenue growth, and profitability with 11.6% net profit margin. Stock valuation at P/E of 17 is attractive relative to peers, suggesting upside potential despite recent underperformance."
+      },
+      {
+        "ticker": "DASH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While DoorDash is growing faster than Uber, it trades at a significantly higher P/E ratio of 110 with lower profit margins, suggesting potential overvaluation relative to its fundamentals and competitive positioning."
+      }
+    ]
+  },
+  {
+    "id": "f5d03a570019cf441540c0d556034390418d06a38950c01d49d087c24094cf67",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Grab CEO Anthony Tan Sells 400,000 Shares for $1.4 Million. Here's What Investors Need to Know.",
+    "author": "Robert Izquierdo",
+    "published_utc": "2026-08-12T22:26:50Z",
+    "article_url": "https://www.fool.com/coverage/filings/2026/08/12/grab-ceo-anthony-tan-sells-400-000-shares-for-usd1-4-million-here-s-what-investors-need-to-know/?source=iedfolrf0000001",
+    "tickers": [
+      "GRAB",
+      "GRABW",
+      "UBER"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fd227e0f40b399dc519a5bed98ee8a4568fc6efb8-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Grab CEO Anthony Tan sold approximately 400,000 Class A shares for $1.4 million on August 10, 2026, reducing his direct holdings by nearly 48%. The sale was executed under a pre-established Rule 10b5-1 trading plan adopted in November 2025. While the percentage reduction appears significant, Tan retains over 75 million Class B shares convertible to Class A, maintaining substantial alignment with shareholders. The company's business fundamentals remain strong with Q2 2026 revenue rising 22% year-over-year to $997 million.",
+    "keywords": [
+      "insider trading",
+      "stock sale",
+      "Rule 10b5-1 plan",
+      "CEO holdings",
+      "super-application platform",
+      "Southeast Asia",
+      "shareholder alignment"
+    ],
+    "insights": [
+      {
+        "ticker": "GRAB",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While the CEO's sale of 48% of direct holdings could signal concern, the article emphasizes this represents only a small portion of his total holdings (75M+ Class B shares remain), and the company's fundamentals are strong with 22% YoY revenue growth and raised 2026 guidance. The stock is down 25% over one year, but the sale was pre-scheduled and non-discretionary, limiting negative inference."
+      },
+      {
+        "ticker": "GRABW",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While the CEO's sale of 48% of direct holdings could signal concern, the article emphasizes this represents only a small portion of his total holdings (75M+ Class B shares remain), and the company's fundamentals are strong with 22% YoY revenue growth and raised 2026 guidance. The stock is down 25% over one year, but the sale was pre-scheduled and non-discretionary, limiting negative inference."
       },
       {
         "ticker": "UBER",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Uber is investing aggressively in robotaxi fleet scaling and has secured supply agreements with both Rivian and Lucid, but Tesla's struggles suggest the overall robotaxi market may face headwinds, which could impact Uber's expansion timeline without directly affecting its core ridesharing business."
+        "sentiment_reasoning": "Mentioned as the company where Dara Khosrowshahi (Grab board member and Uber CEO) stepped down in July 2026. This is presented as potentially concerning for Grab's mentorship, but has no direct impact on Uber's operations or fundamentals."
+      }
+    ]
+  },
+  {
+    "id": "412a0045fc9efd997245d1dbf2a11d98e9b9f14d71a7c7416becdfa8954f65d1",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "3 Reasons to Buy Joby Aviation Stock Like There's No Tomorrow",
+    "author": "Lee Samaha",
+    "published_utc": "2026-08-12T13:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/12/3-reasons-to-buy-joby-aviation-like-theres-no/?source=iedfolrf0000001",
+    "tickers": [
+      "JOBY",
+      "TM",
+      "UBER",
+      "DAL",
+      "ACHR",
+      "ACHR.WS"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F881491%2Fjoby_manufacturing_integration_202021.jpg&w=1200&op=resize",
+    "description": "Joby Aviation is positioned as a compelling investment opportunity in the eVTOL market due to its vertically integrated business model, strong partnerships with Toyota and Uber, successful Blade acquisition integration, and leading progress in FAA certification. However, the company remains unprofitable with profitability not expected until 2032, making it a high-risk/high-reward speculative investment.",
+    "keywords": [
+      "eVTOL",
+      "electric vertical take-off and landing",
+      "transportation-as-a-service",
+      "FAA certification",
+      "air taxi",
+      "urban air mobility"
+    ],
+    "insights": [
+      {
+        "ticker": "JOBY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company is leading in FAA certification, has strong strategic partnerships (Toyota, Uber, Delta), successfully integrating Blade acquisition with 50% increase in seats sold, and developing proprietary technology while maintaining operational control."
+      },
+      {
+        "ticker": "TM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Investing $250 million in Joby and forming a joint venture for high-volume commercial production, positioning itself as a key manufacturing partner in the emerging eVTOL industry."
+      },
+      {
+        "ticker": "UBER",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strategic investor and partner in Joby's TaaS model, positioned to integrate eVTOL services into its transportation network."
+      },
+      {
+        "ticker": "DAL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Investor in Joby and appears fully committed to integrating eVTOL services into customer experiences, contrasting positively with United Airlines' skepticism."
+      },
+      {
+        "ticker": "ACHR",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Mentioned as a peer facing headwinds due to United Airlines CEO's disparaging remarks about eVTOL taxi growth to airports, creating uncertainty for this partnership."
+      },
+      {
+        "ticker": "ACHR.WS",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Mentioned as a peer facing headwinds due to United Airlines CEO's disparaging remarks about eVTOL taxi growth to airports, creating uncertainty for this partnership."
       }
     ]
   }

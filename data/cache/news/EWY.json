@@ -1,0 +1,309 @@
+[
+  {
+    "id": "d9d564056918a07f24620517d5eb24aee9d18213cbbebc643bc8305b84df11dc",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Asian Stocks Are Down 10% From June Highs. That Could Be Bad News for This Semiconductor Index.",
+    "author": "Ben Gran",
+    "published_utc": "2026-08-03T13:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/03/asian-stocks-are-down-10-from-june-highs-could-be/?source=iedfolrf0000001",
+    "tickers": [
+      "SOXX",
+      "TSM",
+      "ASML",
+      "NVDA",
+      "EWY"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880963%2Fgettyimages-1466958957-1201x633-65d4be6.jpg&w=1200&op=resize",
+    "description": "Asian stocks have declined 10% since June 22, with semiconductor stocks particularly hard hit as investors worry AI hyperscalers may scale back spending on data centers. The iShares Semiconductor ETF has fallen 22.9% since June, raising questions about whether the recent sell-off is temporary or signals a longer-term repricing of chip stocks amid concerns about AI investment sustainability.",
+    "keywords": [
+      "semiconductor stocks",
+      "AI hyperscalers",
+      "Asian markets",
+      "market correction",
+      "chip demand",
+      "capital expenditure"
+    ],
+    "insights": [
+      {
+        "ticker": "SOXX",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Down 22.9% since June 22; article questions whether supercharged returns can continue and suggests investors worried about AI overvaluation might want to avoid concentrated position in volatile sector"
+      },
+      {
+        "ticker": "TSM",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Shares down 13.8% since June 22; major holding in affected semiconductor index amid concerns about AI capex scaling back"
+      },
+      {
+        "ticker": "ASML",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Declined 14.4% since June 22 as semiconductor sector faces headwinds from potential AI investment slowdown"
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Down 6.4% since June 22; less severe decline than peers but still affected by semiconductor sector sell-off and AI capex concerns"
+      },
+      {
+        "ticker": "EWY",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Down 26.4% since June 22; significant decline reflects exposure to major chip stocks from South Korea affected by sector downturn"
+      }
+    ]
+  },
+  {
+    "id": "ecc5f07ec15a8533cb0850ba601452398364383121d1c294025224e64ee2aeae",
+    "publisher": {
+      "name": "Benzinga",
+      "homepage_url": "https://www.benzinga.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+    },
+    "title": "This Asian Country Is 1% The Size Of The US \u2014 And It Just Delivered 11x The S&P 500's Returns",
+    "author": "Piero Cingari",
+    "published_utc": "2026-06-17T12:52:43Z",
+    "article_url": "https://www.benzinga.com/markets/tech/26/06/53247325/south-korea-etf-ewy-112-percent-ai-memory-boom-2026?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+    "tickers": [
+      "EWY",
+      "MU",
+      "WDC",
+      "SNDK",
+      "SPY",
+      "EWT"
+    ],
+    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/06/17/South-Korean-stock-market.jpeg",
+    "description": "South Korea's iShares MSCI South Korea ETF (EWY) has surged 112% year-to-date, delivering 11 times the return of the S&P 500. The rally is driven by SK Hynix and Samsung's dominance in high-bandwidth memory (HBM) manufacturing for AI accelerators, with both companies commanding nearly 46% of the ETF. Despite doubling in value, both stocks trade at low valuations with massive growth pipelines ahead.",
+    "keywords": [
+      "South Korea",
+      "AI infrastructure",
+      "high-bandwidth memory",
+      "HBM",
+      "semiconductor supply chain",
+      "memory super-cycle",
+      "ETF performance"
+    ],
+    "insights": [
+      {
+        "ticker": "EWY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Rallied 112% year-to-date, delivering 11x the S&P 500 return. Best-performing single-country ETF tracked, driven by concentrated exposure to memory chip manufacturers benefiting from AI buildout."
+      },
+      {
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Up 260% year-to-date as the only U.S.-based HBM producer, serving as a direct American proxy for the AI memory trade."
+      },
+      {
+        "ticker": "WDC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Soared 290% year-to-date, ranking as second best-performing stock in S&P 500, benefiting from tightening NAND storage conditions driven by AI data center demand."
+      },
+      {
+        "ticker": "SNDK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Surged 760% year-to-date, ranking as best-performing stock in S&P 500, benefiting from AI data center storage capacity demand."
+      },
+      {
+        "ticker": "SPY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Up only 10.03% year-to-date, significantly underperforming EWY due to memory stocks being rounding errors in a 500-stock index despite strong individual performance."
+      },
+      {
+        "ticker": "EWT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Up 63.37% year-to-date, benefiting from semiconductor industry exposure but underperforming South Korea's EWY."
+      }
+    ]
+  },
+  {
+    "id": "912b100eb5f80321cdb982d4807db830500d27415d72a279c09f832ed6d6441f",
+    "publisher": {
+      "name": "Benzinga",
+      "homepage_url": "https://www.benzinga.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+    },
+    "title": "Micron And The Memory Trade Look Bulletproof: This Analyst Says A 5% Yield Cracks Them",
+    "author": "Piero Cingari",
+    "published_utc": "2026-06-08T19:47:30Z",
+    "article_url": "https://www.benzinga.com/markets/tech/26/06/53072444/2-year-treasury-yield-5-percent-target-ai-chips-stocks-memory-micron-sandisk?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+    "tickers": [
+      "MU",
+      "MRVL",
+      "DELL",
+      "NVDA",
+      "RXT",
+      "SOXX",
+      "EWY"
+    ],
+    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/06/08/Los-Angeles--California---24-January-202.jpeg",
+    "description": "Technical analyst John Roque warns that rising 2-year Treasury yields heading toward 5% pose a significant threat to momentum-driven tech and semiconductor stocks. After extreme valuations and parabolic advances in May-June, chip stocks like Micron, Marvell, and Dell face correction risks. The analyst also cautions on gold, silver, and Bitcoin, citing rising rates as a headwind for these assets.",
+    "keywords": [
+      "Treasury yields",
+      "semiconductor stocks",
+      "AI chip rally",
+      "parabolic advances",
+      "momentum trades",
+      "technical analysis",
+      "interest rates"
+    ],
+    "insights": [
+      {
+        "ticker": "MU",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Trading over 200% above its 200-day moving average with extreme valuations; vulnerable to correction as 2-year Treasury yields rise toward 5%"
+      },
+      {
+        "ticker": "MRVL",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Trading more than 220% above its 200-day moving average; part of the semiconductor sector facing pressure from rising rates and parabolic peak correction"
+      },
+      {
+        "ticker": "DELL",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Trading roughly 195% above its 200-day moving average; exposed to semiconductor sector weakness and rising rate headwinds"
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Part of the AI chip rally that has reached historically extreme valuations; vulnerable to correction as Treasury yields rise"
+      },
+      {
+        "ticker": "RXT",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Surged almost 450% above its 200-day average in mid-May, representing an extreme example of parabolic excess likely to correct"
+      },
+      {
+        "ticker": "SOXX",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Sunk over 10% on Friday; Philadelphia Semiconductor Index stood 76% above 200-day moving average, more than three standard deviations above normal"
+      },
+      {
+        "ticker": "EWY",
+        "sentiment": "negative",
+        "sentiment_reasoning": "South Korea's KOSPI index trading 83% above long-term trend, exceeding five standard deviations; extremely stretched valuation vulnerable to correction"
+      }
+    ]
+  },
+  {
+    "id": "9414186e7af7c226f2c1a482cb6c3590836bb47adebd635b19d327359e156860",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "Nasdaq Falls 4%: The Long-Warned Collision Course Is No Longer Theoretical",
+    "author": "Stephen Innes",
+    "published_utc": "2026-06-05T21:18:00Z",
+    "article_url": "https://www.investing.com/analysis/nasdaq-falls-4-the-longwarned-collision-course-is-no-longer-theoretical-200681637",
+    "tickers": [
+      "NVDA",
+      "TSLA",
+      "META",
+      "AMZN",
+      "EWY"
+    ],
+    "amp_url": "https://m.investing.com/analysis/nasdaq-falls-4-the-longwarned-collision-course-is-no-longer-theoretical-200681637?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "The Nasdaq fell 4% following a stronger-than-expected May jobs report (172,000 jobs added), shifting market expectations from hoping for rate holds to contemplating potential Fed rate hikes. The market's fragile structure\u2014characterized by crowded AI positioning, stretched semiconductor valuations, elevated leverage in Korean equities, and rising Treasury yields\u2014finally collapsed. While this represents a positioning and valuation reset rather than an economic recession, the correction reveals how dependent the AI rally had become on momentum and leverage. The author argues this correction into a healthy economy is preferable to one driven by economic deterioration.",
+    "keywords": [
+      "Nasdaq decline",
+      "payroll report",
+      "AI positioning",
+      "semiconductor valuations",
+      "Fed rate hikes",
+      "market correction",
+      "Korean equities",
+      "Treasury yields",
+      "leverage unwinding",
+      "liquidity concerns"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Semiconductor sector experienced significant selloff with Nvidia down 6.20%. The article highlights stretched semiconductor valuations and crowded positioning as key vulnerabilities that triggered the correction."
+      },
+      {
+        "ticker": "TSLA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Technology shares sold off aggressively following the payroll report. Tesla declined 6.56% as part of the broader tech sector weakness driven by rising yields and repositioning."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Technology sector decline impacted Meta, which fell 5.51%. The article notes technology shares experienced aggressive selloffs due to higher yields reducing present value of future earnings."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Technology sector weakness affected Amazon, down 3.06%. Rising yields and valuation reset pressured long-duration growth assets like Amazon."
+      },
+      {
+        "ticker": "EWY",
+        "sentiment": "negative",
+        "sentiment_reasoning": "EWY fell roughly 13% from recent highs with momentum indicators approaching oversold levels. The article identifies Korea as a pure expression of AI sentiment that became dependent on leverage, now unwinding rapidly."
+      }
+    ]
+  },
+  {
+    "id": "55fc0bc59b5ff852b0092abee2d4fa2e487cd61c18b98d9d1fa3d5f147613340",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "The Weekender: Memorial Day Melt-Up?",
+    "author": "Stephen Innes",
+    "published_utc": "2026-05-22T15:22:00Z",
+    "article_url": "https://www.investing.com/analysis/the-weekender-memorial-day-meltup-200680807",
+    "tickers": [
+      "EWY",
+      "EWT",
+      "ASEA",
+      "IMVP"
+    ],
+    "amp_url": "https://m.investing.com/analysis/the-weekender-memorial-day-meltup-200680807?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "Markets are treating geopolitical risks as background noise while riding an AI-driven capital spending supercycle. The S&P 500 approaches its longest weekly winning streak since 2023, with Treasury yields acting as the critical pressure valve. North Asian markets, particularly South Korea, Taiwan, and Japan, are emerging as AI infrastructure winners, while Southeast Asia lags due to energy vulnerability and currency weakness.",
+    "keywords": [
+      "AI capital supercycle",
+      "geopolitical risk",
+      "semiconductor demand",
+      "Treasury yields",
+      "North Asia markets",
+      "memory chip scarcity",
+      "liquidity-driven rally",
+      "energy inflation"
+    ],
+    "insights": [
+      {
+        "ticker": "EWY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Memory chip cycle morphing into structural scarcity regime with 300% earnings growth projections. Supply cannot scale fast enough to meet AI compute demand, with pricing power elevated and operating leverage turning revenue growth into earnings expansion. Still trades at single-digit forward multiples despite structural durability."
+      },
+      {
+        "ticker": "EWT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Direct beneficiary of global AI hardware arms race. Technology accounts for 80%+ of benchmark index weighting, making it a pure expression of AI capex boom. Positioned as a listed proxy for global compute demand with continuously ratcheting earnings expectations."
+      },
+      {
+        "ticker": "ASEA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Trapped on wrong side of regional divide with exposure to imported energy inflation and currency pressure without direct AI hardware leverage. Higher oil prices function as a tax rather than growth catalyst, with margin pressure and lagging performance versus North Asia."
+      },
+      {
+        "ticker": "IMVP",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Strong long-term structural growth intact but threatened by higher energy prices and currency weakness. Corporate profitability assumptions appear overly optimistic relative to current macro headwinds."
+      }
+    ]
+  }
+]

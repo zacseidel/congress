@@ -1,216 +1,327 @@
 [
   {
-    "id": "d5d82a5ed4b414e31c99ffcaa7acdc97ea7f2d0391ef3ab8680142524d6e37ef",
+    "id": "fedf9c9a8c9c632874b4af51bc3d4b4849dc8533072558bf9afb64ca876626bf",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Amazon's Warehouse Robot Army Keeps Growing. Is Symbotic Still the Best Way to Play It?",
-    "author": "Jack Delaney",
-    "published_utc": "2026-07-29T15:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/29/amazons-warehouse-robot-army-keeps-growing-is-symb/?source=iedfolrf0000001",
+    "title": "Why Target Is Betting a Chief AI Officer Will Boost Growth",
+    "author": "Catie Hogan",
+    "published_utc": "2026-08-17T14:18:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/17/why-target-is-betting-a-chief-ai-officer-will-boos/?source=iedfolrf0000001",
     "tickers": [
-      "AMZN",
-      "SYM",
+      "TGT",
       "WMT"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880710%2Fgettyimages-1463261378-1200x675-128554e.jpg&w=1200&op=resize",
-    "description": "Amazon has deployed over 1 million warehouse robots since 2012, and the global warehouse automation market is expected to grow to $59.5 billion by 2030. Symbotic, a smaller robotics company trading around $40, surged 150% in 2025 but has dropped over 30% in 2026 after missing earnings expectations. Despite high customer concentration risk with Walmart (85% of revenue), the long-term outlook for warehouse automation remains promising.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883209%2Ftarget-shopper-getty-images.jpg&w=1200&op=resize",
+    "description": "Target has hired its first Chief AI Officer, Chandhu Nair, to develop a cohesive AI strategy aimed at improving the shopping experience and inventory management. The move is part of Target's broader turnaround effort, which includes up to $5 billion in modernization investments. Target's stock has surged over 55% in 2026, and the company reported a 6.7% increase in net sales in Q1, exceeding expectations.",
     "keywords": [
-      "warehouse automation",
-      "robotics",
-      "fulfillment centers",
-      "customer concentration risk",
-      "earnings miss",
-      "market growth"
+      "Chief AI Officer",
+      "artificial intelligence",
+      "retail strategy",
+      "inventory management",
+      "generative AI",
+      "turnaround strategy",
+      "modernization investments"
+    ],
+    "insights": [
+      {
+        "ticker": "TGT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Target is actively investing in AI infrastructure with a new Chief AI Officer role, has already launched AI tools like Target Trend Brain and an AI chat assistant, reported strong Q1 earnings growth of 6.7%, and stock has rebounded 55% in 2026 as part of a successful turnaround strategy."
+      },
+      {
+        "ticker": "WMT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Walmart is mentioned as a competitor also investing in AI, but no specific details about their AI strategy or performance are provided in the article, warranting a neutral sentiment."
+      }
+    ]
+  },
+  {
+    "id": "2b3dba9b0866d011b8094fe92d8567b9e7bfb43eadebc3a22046c649e16471b0",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "2 Best Nuclear Power Stocks Right Now",
+    "author": "James Halley",
+    "published_utc": "2026-08-17T02:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/16/2-best-nuclear-power-stocks-right-now/?source=iedfolrf0000001",
+    "tickers": [
+      "CEG",
+      "CCJ",
+      "MSFT",
+      "WMT",
+      "META",
+      "AMZN",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "BEP",
+      "BEPH",
+      "BEPI",
+      "BEPJ",
+      "BEPpA"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883351%2Fnuclear-power-two.jpg&w=1200&op=resize",
+    "description": "Nuclear power is experiencing a global renaissance driven by AI data center demand and rising energy needs. Constellation Energy and Cameco Corporation are highlighted as top plays in the nuclear sector\u2014Constellation as a major nuclear power provider with long-term corporate agreements, and Cameco as a leading uranium supplier with integrated nuclear services through Westinghouse ownership.",
+    "keywords": [
+      "nuclear power",
+      "AI data centers",
+      "uranium",
+      "energy stocks",
+      "power purchase agreements",
+      "baseload power"
+    ],
+    "insights": [
+      {
+        "ticker": "CEG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong Q2 revenue growth of 22.9% YoY, EPS up 33.5% YoY, landmark 20-year PPA with Microsoft, 920 MW of new long-term contracts signed, fuel license approval received, and benefits from Nuclear Production Tax Credit providing revenue floor protection."
+      },
+      {
+        "ticker": "CCJ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Uranium segment revenue up 15% YoY with adjusted EBITDA up 48% YoY, strong 2026 guidance with expected uranium prices of $91-$96/lb (up from $85-$89), increased fuel services revenue forecast, 49% ownership of Westinghouse providing recurring high-margin revenue, and positioned as safe Western-aligned supplier amid Russian uranium phase-out."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a major tech hyperscaler signing a landmark 20-year PPA with Constellation for nuclear power to support AI data centers, but article focuses on nuclear stocks rather than Microsoft's fundamentals."
+      },
+      {
+        "ticker": "WMT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a corporate buyer with long-term nuclear PPAs with Constellation, but article does not provide analysis of Walmart's business or sentiment."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech hyperscaler building AI data centers requiring stable nuclear power, but no specific analysis provided."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech hyperscaler with zero-emissions targets requiring nuclear power for AI data centers, but no specific analysis provided."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech hyperscaler needing stable nuclear power for AI data centers, but no specific analysis provided."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech hyperscaler needing stable nuclear power for AI data centers, but no specific analysis provided."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech hyperscaler needing stable nuclear power for AI data centers, but no specific analysis provided."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a tech hyperscaler needing stable nuclear power for AI data centers, but no specific analysis provided."
+      },
+      {
+        "ticker": "BEP",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
+      },
+      {
+        "ticker": "BEPH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
+      },
+      {
+        "ticker": "BEPI",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
+      },
+      {
+        "ticker": "BEPJ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
+      },
+      {
+        "ticker": "BEPpA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
+      }
+    ]
+  },
+  {
+    "id": "9800d6806eacfb16401b1377a8c0b6d3f4b3c9916159b0f34028560c54f1314a",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Amazon.com vs. Comcast: Which Stock Is a Better Buy in 2026?",
+    "author": "Sara Appino",
+    "published_utc": "2026-08-14T19:12:58Z",
+    "article_url": "https://www.fool.com/coverage/better-buy/2026/08/14/amazon-com-vs-comcast-which-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
+    "tickers": [
+      "AMZN",
+      "CCZ",
+      "CMCSA",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "WMT"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F3caa0e2607e9485862b0d89e5f6f6be899ae6c41-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "The article compares Amazon and Comcast as investment options for 2026. Amazon demonstrates stronger growth with accelerating AWS, advertising, and retail divisions, while Comcast generates substantial free cash flow but faces structural headwinds from declining broadband subscribers and increased competition. The author recommends Amazon for long-term investors seeking growth, though Comcast appeals to those prioritizing steady cash flows and dividends.",
+    "keywords": [
+      "stock comparison",
+      "cloud computing",
+      "e-commerce",
+      "broadband",
+      "valuation",
+      "growth vs value",
+      "free cash flow",
+      "AI infrastructure"
     ],
     "insights": [
       {
         "ticker": "AMZN",
         "sentiment": "positive",
-        "sentiment_reasoning": "Amazon is positioned as an early adopter and leader in warehouse automation with over 1 million robots deployed, demonstrating operational efficiency gains and competitive advantage in the growing automation market."
+        "sentiment_reasoning": "Strong revenue growth (12.4% YoY), accelerating AWS for fifth consecutive quarter, surging advertising business, operating income growing at double the rate of revenue, aggressive AI infrastructure investments, and dominant market position across multiple high-margin divisions."
       },
       {
-        "ticker": "SYM",
+        "ticker": "CCZ",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mixed outlook: positive long-term fundamentals with 23% revenue growth and swing to profitability, but negative near-term performance with 30% stock decline in 2026, earnings per share miss, and high customer concentration risk (85% Walmart revenue). Described as suitable only for risk-tolerant investors as a speculative position."
+        "sentiment_reasoning": "Generates substantial free cash flow ($21.9B) and maintains reliable dividend (4.96% yield), with Peacock turning profitable and recent earnings beat. However, faces structural headwinds including declining broadband subscribers, increased competition from fiber and fixed wireless providers, and complexity from planned NBCUniversal spinoff."
+      },
+      {
+        "ticker": "CMCSA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Generates substantial free cash flow ($21.9B) and maintains reliable dividend (4.96% yield), with Peacock turning profitable and recent earnings beat. However, faces structural headwinds including declining broadband subscribers, increased competition from fiber and fixed wireless providers, and complexity from planned NBCUniversal spinoff."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a well-funded competitor to Amazon in the competitive landscape, but no specific analysis provided in the article."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a well-funded competitor to Amazon in the competitive landscape, but no specific analysis provided in the article."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a well-funded competitor to Amazon in the competitive landscape, but no specific analysis provided in the article."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a well-funded competitor to Amazon in the competitive landscape, but no specific analysis provided in the article."
       },
       {
         "ticker": "WMT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Walmart's 11.7% stake in Symbotic and $720 million in payments to Symbotic for automation systems demonstrate significant investment in warehouse automation technology, positioning it to benefit from operational efficiency improvements."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a well-funded competitor to Amazon in e-commerce, but no specific analysis provided in the article."
       }
     ]
   },
   {
-    "id": "d51680fb8c47ccf34bcd27cee8bc0b1fd80266765a314eeebeec9a98ad6d528f",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Walmart Canada, ses associ\u00e9s et ses clients recueillent 7,2\u00a0millions de dollars pour soutenir les h\u00f4pitaux pour enfants partout au Canada",
-    "author": "Not Specified",
-    "published_utc": "2026-07-29T14:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/29/3335376/0/fr/Walmart-Canada-ses-associ%C3%A9s-et-ses-clients-recueillent-7-2-millions-de-dollars-pour-soutenir-les-h%C3%B4pitaux-pour-enfants-partout-au-Canada.html",
-    "tickers": [
-      "WMT"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/2098ebf6-0983-46f2-8989-a71b94ccd66a",
-    "description": "Walmart Canada, its associates, and customers raised $7.2 million during their spring 2026 campaign to support children's hospital foundations across Canada. The funds will support medical equipment, research, specialized training, and programs. This brings the total raised since 1994 to over $250 million. The campaign ran from May 7-31 and was anchored by a $1 million Walmart Canada donation.",
-    "keywords": [
-      "fundraising",
-      "children's hospitals",
-      "charitable giving",
-      "Children's Miracle Network",
-      "healthcare",
-      "community support",
-      "pediatric care"
-    ],
-    "insights": [
-      {
-        "ticker": "WMT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Walmart Canada demonstrated strong corporate social responsibility by leading a successful $7.2 million fundraising campaign for pediatric hospitals, contributing $1 million of its own funds, and mobilizing employees and customers. The company has maintained a 32-year partnership with Children's Miracle Network, raising over $250 million cumulatively, reflecting consistent commitment to community health and charitable causes."
-      }
-    ]
-  },
-  {
-    "id": "5980c7a04a317c124b3000d20f2e12776311dc6de001ad3f4b6ad1e05e79afa8",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Walmart Canada, Associates and Customers Raise $7.2 Million to Support Children\u2019s Hospitals Across Canada",
-    "author": "Not Specified",
-    "published_utc": "2026-07-29T14:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/29/3335376/0/en/Walmart-Canada-Associates-and-Customers-Raise-7-2-Million-to-Support-Children-s-Hospitals-Across-Canada.html",
-    "tickers": [
-      "WMT"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/2098ebf6-0983-46f2-8989-a71b94ccd66a",
-    "description": "Walmart Canada, its associates, and customers raised $7.2 million in May 2026 to support children's hospital foundations across Canada through the Children's Miracle Network campaign. The funds will support medical equipment, research, training, and programs at 13 Canadian children's hospitals. This marks over 32 years of partnership, with cumulative donations exceeding $250 million since 1994.",
-    "keywords": [
-      "charitable fundraising",
-      "children's hospitals",
-      "community support",
-      "corporate philanthropy",
-      "Children's Miracle Network",
-      "healthcare funding"
-    ],
-    "insights": [
-      {
-        "ticker": "WMT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Walmart Canada demonstrated strong corporate social responsibility by leading a successful $7.2 million fundraising campaign, with a $1 million initial donation from the company. The long-term commitment (32+ years) and substantial cumulative donations ($250 million+) reflect positively on the company's brand reputation and community engagement."
-      }
-    ]
-  },
-  {
-    "id": "bb997deda077f849205d03cf4720e90bbfdcc74265d790afb9a84ebafd96ae59",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Scouts Turn Service Into Action: Scouting America Donates Hygiene Kits and Food to West Virginians Recovering from Recent Storms",
-    "author": "Scouting America",
-    "published_utc": "2026-07-28T19:40:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/28/3334670/0/en/Scouts-Turn-Service-Into-Action-Scouting-America-Donates-Hygiene-Kits-and-Food-to-West-Virginians-Recovering-from-Recent-Storms.html",
-    "tickers": [
-      "WMT"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/126445d8-f354-4be9-8e32-33e73a2f7af9",
-    "description": "Scouting America announced the donation of hygiene kits and shelf-stable food to West Virginians affected by recent severe storms and flooding. Thousands of Scouts assembled the hygiene kits as a service project during the 2026 National Jamboree at Summit Bechtel Reserve in Glen Jean, West Virginia. The initiative demonstrates Scouting's commitment to community service and disaster relief.",
-    "keywords": [
-      "Scouting America",
-      "National Jamboree",
-      "disaster relief",
-      "community service",
-      "hygiene kits",
-      "West Virginia",
-      "youth volunteer"
-    ],
-    "insights": [
-      {
-        "ticker": "WMT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Walmart Business is recognized as a partner supporting the service initiative, demonstrating corporate social responsibility and commitment to community disaster recovery efforts."
-      }
-    ]
-  },
-  {
-    "id": "67b3b6974cf98adfc12a3b11167c97336d92ea9345ba26d547fa1107cfd1eb5b",
+    "id": "0027a681d254d1a24bc45a3d62811f8d4bcf5d13162564a9b60993c0c02e89ae",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "VDC vs. FTXG: Which Defensive ETF Is the Better Buy?",
-    "author": "Andy Gould",
-    "published_utc": "2026-07-28T10:28:52Z",
-    "article_url": "https://www.fool.com/coverage/etfs/2026/07/28/vdc-vs-ftxg-which-defensive-etf-is-the-better-buy/?source=iedfolrf0000001",
+    "title": "Should You Own Walmart for Its Dividend King Status or Costco for Its Special Dividend? Here's the Answer.",
+    "author": "Jack Delaney",
+    "published_utc": "2026-08-11T10:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/11/should-you-own-walmart-for-its-dividend-king-statu/?source=iedfolrf0000001",
     "tickers": [
-      "VDC",
-      "FTXG",
       "WMT",
-      "COST",
-      "PG",
-      "KO",
-      "KHC"
+      "COST"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F7669db1dbfa6e097df450be5b22faf5d854bd54d-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Vanguard's VDC and First Trust's FTXG are both defensive ETFs investing in consumer staples, but with different approaches. VDC offers broader diversification across 103 stocks with a lower 0.09% expense ratio and stronger 5-year returns, while FTXG concentrates on 30 food and beverage companies with a higher 2.59% dividend yield but higher 0.60% expense ratio. For most long-term investors, VDC is the more straightforward choice due to lower costs and better diversification.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F882733%2Fcostwmt.png&w=1200&op=resize",
+    "description": "Walmart and Costco are both recession-resistant businesses that reward shareholders with dividends. Walmart is a Dividend King with 53 consecutive years of dividend increases and a 0.8% yield, offering greater consistency. Costco pays a 0.6% quarterly dividend plus special dividends every few years, but these special payouts are unpredictable. For income-focused investors seeking reliability, Walmart is the better choice.",
     "keywords": [
-      "defensive ETF",
-      "consumer staples",
-      "expense ratio",
+      "dividend stocks",
+      "Dividend King",
+      "special dividend",
       "dividend yield",
-      "diversification",
-      "food and beverage"
+      "recession-resistant",
+      "income investing",
+      "consumer staples"
     ],
     "insights": [
       {
-        "ticker": "VDC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "VDC is recommended as the better choice for most investors due to significantly lower expense ratio (0.09% vs 0.60%), broader diversification with 103 holdings, stronger 1-year (5.73% vs 3.23%) and 5-year returns, and lower volatility (beta 0.54 vs 0.48)."
-      },
-      {
-        "ticker": "FTXG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "FTXG offers a higher dividend yield (2.59% vs 2.13%) and provides concentrated exposure to food and beverage trends, but underperforms VDC in returns, carries higher expenses, and has greater concentration risk with only 30 holdings. Suitable only for investors with specific views on the food and beverage sector."
-      },
-      {
         "ticker": "WMT",
         "sentiment": "positive",
-        "sentiment_reasoning": "Identified as a major holding in VDC (14.0%) and described as a familiar retail name benefiting from steady foot traffic and everyday spending."
+        "sentiment_reasoning": "Walmart is highlighted as the superior choice for dividend investors due to its Dividend King status with 53 consecutive years of dividend increases, offering consistency and reliability. The company demonstrates strong fundamentals as a recession-resistant business with a solid 0.8% dividend yield."
       },
       {
         "ticker": "COST",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Second-largest holding in VDC (11.4%) and noted as a retail giant benefiting from steady foot traffic and everyday spending patterns."
-      },
-      {
-        "ticker": "PG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Third-largest holding in VDC (8.7%), representing a major consumer staples company in the diversified portfolio."
-      },
-      {
-        "ticker": "KO",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Major holding in FTXG (8.5%), but subject to food and beverage industry headwinds including shifting consumer tastes toward healthier options."
+        "sentiment_reasoning": "While Costco is acknowledged as a quality recession-resistant business with an attractive special dividend feature ($15 per share in 2024), the unpredictability of special dividend timing makes it less reliable for income investors. The article suggests special dividends shouldn't be the sole investment reason."
+      }
+    ]
+  },
+  {
+    "id": "0feb17b44c715150ddc1e56f360ab5e9dbadd15c7c95af412d2af8a0004b3430",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "3 Reasons to Buy and Hold This Dividend King (and 1 Reason Not To)",
+    "author": "James Brumley",
+    "published_utc": "2026-08-09T11:25:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/09/3-reasons-to-buy-and-hold-this-dividend-king-and-o/?source=iedfolrf0000001",
+    "tickers": [
+      "WMT",
+      "AMZN",
+      "TGT",
+      "KR"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F881410%2Fwoman-shopping-in-a-grocery-store.jpg&w=1200&op=resize",
+    "description": "Walmart is presented as a compelling buy-and-hold investment due to its 53-year dividend increase streak, dominant market position with 5,215 U.S. stores, and strong e-commerce growth (26% YoY). However, the stock offers a low dividend yield of 0.86%, making it less attractive for income-focused investors. Despite recent 16% decline from May's peak due to consumer pressure concerns and capital spending, analysts remain bullish with a consensus price target of $139.84.",
+    "keywords": [
+      "Dividend King",
+      "dividend growth",
+      "brick-and-mortar retail",
+      "e-commerce growth",
+      "market valuation",
+      "consumer staples",
+      "stock buybacks"
+    ],
+    "insights": [
+      {
+        "ticker": "WMT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong fundamentals with 53 consecutive years of dividend increases, dominant market position with 5,215 U.S. stores, impressive e-commerce growth of 26% YoY, and 37% growth in high-margin advertising revenue. Stock is trading 16% below May peak, presenting a buying opportunity. Analyst consensus remains bullish with $139.84 price target."
       },
       {
-        "ticker": "KHC",
+        "ticker": "AMZN",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Significant FTXG holding (8.2%), but exposed to packaged food industry challenges including input costs and shifting consumer preferences toward healthier snacking."
+        "sentiment_reasoning": "Mentioned as an online retail competitor. Walmart's e-commerce growth of 26% exceeded Amazon's performance in the same period, but no specific sentiment is expressed about Amazon itself."
+      },
+      {
+        "ticker": "TGT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a direct competitor with approximately 2,000 stores, significantly fewer than Walmart's 5,215, but no specific sentiment or analysis provided."
+      },
+      {
+        "ticker": "KR",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor with nearly 2,800 stores, but no specific sentiment or analysis provided."
       }
     ]
   }

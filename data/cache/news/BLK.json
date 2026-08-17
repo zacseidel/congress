@@ -1,365 +1,446 @@
 [
   {
-    "id": "079267830903dd7de0eaa17306366eb9300fa01b93b908cee64f480043c1beee",
+    "id": "e01c25770a6b5d80a64582cd4f899f6a30cd498dbe42075d5185b55100beb7ac",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Coinbase Just Joined a 140-Company Stablecoin Alliance. Here's What It Means for the Stock.",
-    "author": "Leo Sun",
-    "published_utc": "2026-07-16T12:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/16/coinbase-just-joined-a-140-company-stablecoin-alli/?source=iedfolrf0000001",
+    "title": "Jensen Huang Explained $500 Billion of Wall Street Money in Five Words",
+    "author": "Daniel Sparks",
+    "published_utc": "2026-08-15T09:14:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/15/jensen-huang-explained-500-billion-of-wall-street/?source=iedfolrf0000001",
     "tickers": [
-      "COIN",
-      "CRCL",
-      "V",
-      "MA",
-      "GOOG",
-      "GOOGM",
-      "GOOGN",
-      "SHOP",
+      "NVDA",
+      "GS",
+      "GSpA",
+      "GSpC",
+      "GSpD",
       "BLK",
-      "DIVB"
+      "DIVB",
+      "KKR",
+      "KKRS",
+      "KKRT",
+      "KKRpD"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F877631%2Fgettyimages-1477137177.jpg&w=1200&op=resize",
-    "description": "Coinbase joined a coalition of 140+ companies to back the new Open USD (OUSD) stablecoin, signaling a shift away from its exclusive partnership with Circle's USDC. This move is bullish for Coinbase as it diversifies stablecoin exposure and positions the company to benefit from growing stablecoin adoption, which now represents 19% of its revenue. However, it threatens Circle's business model as the new coalition will jointly manage OUSD and split reserve income.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883163%2Fjensen-huang_nvidia_nvda_ceo_imagesource_nvidia-corporation.jpg&w=1200&op=resize",
+    "description": "Nvidia CEO Jensen Huang announced a $500 billion financing initiative with Goldman Sachs, BlackRock, KKR and others to mobilize capital for AI infrastructure. The five-word thesis 'In AI, compute is revenue' frames Nvidia chips as collateral for loans, similar to aircraft or rail cars. However, the arrangement's viability depends on sustained AI demand and the resale value of chips, with risks remaining untested.",
     "keywords": [
-      "stablecoin",
-      "OUSD",
-      "USDC",
-      "cryptocurrency exchange",
-      "reserve income",
-      "CLARITY Act",
-      "crypto adoption"
+      "AI infrastructure financing",
+      "compute as collateral",
+      "Nvidia chips",
+      "CUDA software",
+      "chip depreciation risk",
+      "AI demand sustainability"
     ],
     "insights": [
       {
-        "ticker": "COIN",
+        "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Joining the OUSD alliance diversifies Coinbase's stablecoin exposure beyond USDC, reduces dependence on volatile crypto cycles, and positions it to benefit from growing stablecoin adoption which already accounts for 19% of revenue and grew 48% YoY."
+        "sentiment_reasoning": "The financing platform validates Nvidia's compute as bankable collateral, expanding addressable market for AI infrastructure without requiring customers to tap balance sheets. Strong revenue growth (71% trailing 12 months) and CUDA's software stickiness support the thesis."
       },
       {
-        "ticker": "CRCL",
-        "sentiment": "negative",
-        "sentiment_reasoning": "The OUSD coalition directly threatens Circle's monopoly on USDC minting and management. The decentralized revenue-sharing model of OUSD undermines Circle's primary revenue source from reserve income, and Coinbase's partnership expiration on Aug. 18 signals reduced reliance on USDC."
-      },
-      {
-        "ticker": "V",
+        "ticker": "GS",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Visa's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Visa's business or stock outlook."
+        "sentiment_reasoning": "As a financing platform participant, Goldman Sachs gains access to a new lending market, but the article notes credit loss responsibility is unassigned and collateral risk is untested, creating uncertainty about profitability."
       },
       {
-        "ticker": "MA",
+        "ticker": "GSpA",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mastercard's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Mastercard's business or stock outlook."
+        "sentiment_reasoning": "As a financing platform participant, Goldman Sachs gains access to a new lending market, but the article notes credit loss responsibility is unassigned and collateral risk is untested, creating uncertainty about profitability."
       },
       {
-        "ticker": "GOOG",
+        "ticker": "GSpC",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Google's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Google's business or stock outlook."
+        "sentiment_reasoning": "As a financing platform participant, Goldman Sachs gains access to a new lending market, but the article notes credit loss responsibility is unassigned and collateral risk is untested, creating uncertainty about profitability."
       },
       {
-        "ticker": "GOOGL",
+        "ticker": "GSpD",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Google's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Google's business or stock outlook."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Google's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Google's business or stock outlook."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Google's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Google's business or stock outlook."
-      },
-      {
-        "ticker": "SHOP",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Shopify's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts Shopify's business or stock outlook."
+        "sentiment_reasoning": "As a financing platform participant, Goldman Sachs gains access to a new lending market, but the article notes credit loss responsibility is unassigned and collateral risk is untested, creating uncertainty about profitability."
       },
       {
         "ticker": "BLK",
         "sentiment": "neutral",
-        "sentiment_reasoning": "BlackRock's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts BlackRock's business or stock outlook."
+        "sentiment_reasoning": "Similar to Goldman Sachs, BlackRock participates in the financing platform but faces unquantified credit risk if AI demand cools or chip values depreciate faster than expected."
       },
       {
         "ticker": "DIVB",
         "sentiment": "neutral",
-        "sentiment_reasoning": "BlackRock's participation in the OUSD coalition is mentioned as a coalition member, but the article provides no specific analysis of how this impacts BlackRock's business or stock outlook."
-      }
-    ]
-  },
-  {
-    "id": "01a8fe1dc2f13cd1cae32e73ae20c56b1e6721f4714f5a36d0b7114ce43216fc",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "Nasdaq Forecast: NDX Extends Gains After Cooler PPI",
-    "author": "Fiona Cincotta",
-    "published_utc": "2026-07-15T13:35:00Z",
-    "article_url": "https://www.investing.com/analysis/nasdaq-forecast-ndx-extends-gains-after-cooler-ppi-200683982",
-    "tickers": [
-      "ASML",
-      "IBM",
-      "MS",
-      "MSpA",
-      "MSpE",
-      "MSpF",
-      "MSpI",
-      "MSpK",
-      "MSpL",
-      "MSpO",
-      "MSpP",
-      "MSpQ",
-      "JNJ",
-      "BLK",
-      "DIVB"
-    ],
-    "amp_url": "https://m.investing.com/analysis/nasdaq-forecast-ndx-extends-gains-after-cooler-ppi-200683982?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "U.S. stocks extended gains following cooler-than-expected producer price inflation data, with PPI falling 0.3% monthly and 5.5% year-over-year. The Nasdaq futures rose 0.68% as markets scaled back Fed rate hike expectations. However, rising oil prices due to U.S.-Iran tensions pose inflation risks. Key movers included ASML gaining 3% on strong earnings, IBM tumbling 25% on profit warnings, Morgan Stanley up 1.5% on record results, and BlackRock rising 4% on better-than-expected earnings.",
-    "keywords": [
-      "producer price inflation",
-      "PPI",
-      "Nasdaq",
-      "Federal Reserve",
-      "oil prices",
-      "U.S.-Iran tensions",
-      "earnings",
-      "inflation cooling"
-    ],
-    "insights": [
-      {
-        "ticker": "ASML",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose 3% after posting quarterly results that beat expectations and raising full-year guidance, supported by continued strength in AI-related demand."
+        "sentiment_reasoning": "Similar to Goldman Sachs, BlackRock participates in the financing platform but faces unquantified credit risk if AI demand cools or chip values depreciate faster than expected."
       },
       {
-        "ticker": "IBM",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock tumbled 25% in one of its worst sessions on record following a profit warning, as customers redirected spending away from software towards AI infrastructure and memory hardware."
-      },
-      {
-        "ticker": "MS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
-      },
-      {
-        "ticker": "MSpA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
-      },
-      {
-        "ticker": "MSpE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
-      },
-      {
-        "ticker": "MSpF",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
-      },
-      {
-        "ticker": "MSpI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
-      },
-      {
-        "ticker": "MSpK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
-      },
-      {
-        "ticker": "MSpL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
-      },
-      {
-        "ticker": "MSpO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
-      },
-      {
-        "ticker": "MSpP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
-      },
-      {
-        "ticker": "MSpQ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 1.5% after reporting record quarterly revenue and profit with EPS of $3.46, comfortably ahead of expectations for $2.94."
-      },
-      {
-        "ticker": "JNJ",
+        "ticker": "KKR",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Stock slipped 1% despite beating forecasts with EPS of $2.90 ahead of $2.85 consensus and revenue exceeding expectations, indicating mixed market reaction."
+        "sentiment_reasoning": "As a financing platform partner, KKR gains exposure to AI infrastructure lending but inherits the same untested collateral risks as other participants."
       },
       {
-        "ticker": "BLK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose more than 4% after reporting stronger-than-expected earnings with EPS of $13.91 well above the $12.59 forecast and revenue exceeding forecasts."
+        "ticker": "KKRS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "As a financing platform partner, KKR gains exposure to AI infrastructure lending but inherits the same untested collateral risks as other participants."
       },
       {
-        "ticker": "DIVB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose more than 4% after reporting stronger-than-expected earnings with EPS of $13.91 well above the $12.59 forecast and revenue exceeding forecasts."
+        "ticker": "KKRT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "As a financing platform partner, KKR gains exposure to AI infrastructure lending but inherits the same untested collateral risks as other participants."
+      },
+      {
+        "ticker": "KKRpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "As a financing platform partner, KKR gains exposure to AI infrastructure lending but inherits the same untested collateral risks as other participants."
       }
     ]
   },
   {
-    "id": "1528e97022f7c2ae3f60c8420033c7f0e866627d798a505db783a523b428d86f",
+    "id": "42a25b167dff1f94654d63e28ed0c4fe81f42b45e4e1d5941f195c4d3c32d376",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Global REITs or U.S. Only: Which iShares ETF Is the Better Buy, REET or ICF?",
-    "author": "Sara Appino",
-    "published_utc": "2026-07-14T23:32:45Z",
-    "article_url": "https://www.fool.com/coverage/etfs/2026/07/14/global-reits-or-u-s-only-which-ishares-etf-is-the-better-buy-reet-or-icf/?source=iedfolrf0000001",
+    "title": "I Think You Missed CoreWeave's Zero-Cost-Basis Engine",
+    "author": "Beegee Alop",
+    "published_utc": "2026-08-14T15:24:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/14/i-think-you-missed-coreweaves-zero-cost-basis-engi/?source=iedfolrf0000001",
     "tickers": [
-      "REET",
-      "ICF",
+      "CRWV",
+      "NVDA",
+      "BLK",
+      "DIVB",
+      "BX",
+      "BN",
+      "BNH",
+      "BNJ",
+      "GS",
+      "GSpA",
+      "GSpC",
+      "GSpD",
+      "KKR",
+      "KKRS",
+      "KKRT",
+      "KKRpD",
+      "APO",
+      "APOS"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883189%2Fgemini_generated_image_uvnx1guvnx1guvnx.png&w=1200&op=resize",
+    "description": "CoreWeave's business model challenges the bear case that older GPUs become obsolete quickly. The company secured a multi-year renewal on 2020-era Nvidia A100 chips extending through 2029, demonstrating that older hardware can generate profitable revenue in subsequent contracts after initial debt is paid down. Debt markets are increasingly pricing in this residual value, with CoreWeave's new $2.6 billion facility having a longer maturity than underlying customer contracts, signaling lender confidence in GPU longevity.",
+    "keywords": [
+      "GPU infrastructure",
+      "residual value",
+      "debt financing",
+      "AI compute",
+      "workload cascading",
+      "hardware depreciation",
+      "contract renewals"
+    ],
+    "insights": [
+      {
+        "ticker": "CRWV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The article highlights CoreWeave's competitive advantage in extracting long-term value from GPU assets through contract renewals and residual value monetization, challenging the obsolescence thesis and demonstrating sustainable economics."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Nvidia's partnership with major asset managers to mobilize $500 billion for AI compute infrastructure and potential residual-value support strengthens the ecosystem around its chips, extending their economic utility and market demand."
+      },
+      {
+        "ticker": "BLK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as part of Nvidia's consortium to formalize AI compute as an investable asset class, but no specific impact analysis provided."
+      },
+      {
+        "ticker": "DIVB",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as part of Nvidia's consortium to formalize AI compute as an investable asset class, but no specific impact analysis provided."
+      },
+      {
+        "ticker": "BX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "BN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "BNH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "BNJ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "GS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "GSpA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "GSpC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "GSpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "KKR",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "KKRS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "KKRT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "KKRpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "APO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      },
+      {
+        "ticker": "APOS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Consortium member for AI infrastructure investment mobilization, but limited direct impact discussed."
+      }
+    ]
+  },
+  {
+    "id": "9a95ed90ad07941ca8776f05f360b2c8cabade85848050d843c3b3fde62178e7",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Larry Fink's BlackRock Just Crossed $15.3 Trillion in Assets. Here's What That Scale Actually Earns.",
+    "author": "Courtney Carlsen",
+    "published_utc": "2026-08-14T09:32:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/14/larry-finks-blackrock-just-crossed-153-trillion-in/?source=iedfolrf0000001",
+    "tickers": [
       "BLK",
       "DIVB"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F4db1f9dc6b521047b90577456a50b49560e87c49-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "The article compares two iShares REIT ETFs: REET, which offers global diversification across 350+ holdings with a lower 0.14% expense ratio and 3.3% yield, versus ICF, which concentrates on 34 large U.S. REITs with a 0.32% expense ratio and 2.4% yield. REET is recommended for most long-term investors due to its lower costs, higher yield, and broader diversification, while ICF suits those seeking concentrated domestic REIT exposure.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880155%2Fa-grid-of-digital-stock-charts-showing-fluctuating-market-prices-over-time-getty.jpg&w=1200&op=resize",
+    "description": "BlackRock has reached $15.3 trillion in assets under management and is demonstrating strong operational leverage. In Q2, the company grew AUM by 22% while revenue increased 31% and operating margins expanded to 45.9%, their highest in nearly five years. The company is strategically shifting toward higher-margin products including alternative investments and active strategies, which generate disproportionately higher fees relative to their AUM contribution.",
     "keywords": [
-      "REIT ETF comparison",
-      "global real estate",
-      "U.S. real estate",
+      "asset management",
+      "assets under management",
+      "operating margins",
+      "alternative investments",
+      "active investment strategies",
+      "ETFs",
+      "passive investing",
+      "technology revenue",
+      "shareholder returns"
+    ],
+    "insights": [
+      {
+        "ticker": "BLK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "BlackRock demonstrates exceptional financial performance with 22% AUM growth, 31% revenue growth, and 42% operating income growth in Q2. Operating margins reached 45.9%, the highest in nearly five years. The company is successfully monetizing its scale through high-margin products, diversified revenue streams including technology subscriptions (up 13% YoY), and strong institutional inflows in active strategies. Management is returning capital to shareholders through $2 billion in buybacks and a 2% dividend, indicating confidence in the business."
+      },
+      {
+        "ticker": "DIVB",
+        "sentiment": "positive",
+        "sentiment_reasoning": "BlackRock demonstrates exceptional financial performance with 22% AUM growth, 31% revenue growth, and 42% operating income growth in Q2. Operating margins reached 45.9%, the highest in nearly five years. The company is successfully monetizing its scale through high-margin products, diversified revenue streams including technology subscriptions (up 13% YoY), and strong institutional inflows in active strategies. Management is returning capital to shareholders through $2 billion in buybacks and a 2% dividend, indicating confidence in the business."
+      }
+    ]
+  },
+  {
+    "id": "9657120da589641dfeebe81113302760b39f6bcd9bd15991b1cc6b57abcc8d0c",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Nvidia Just Recruited Wall Street to Help Fund $500 Billion in AI Infrastructure. Here\u2019s the Catch.",
+    "author": "Johnny Rice",
+    "published_utc": "2026-08-11T22:22:01Z",
+    "article_url": "https://www.fool.com/investing/2026/08/11/nvidia-just-recruited-wall-street-to-help-fund-usd500-billion-in-ai-infrastructure-here-s-the-catch/?source=iedfolrf0000001",
+    "tickers": [
+      "NVDA",
+      "BLK",
+      "DIVB",
+      "BX",
+      "GS",
+      "GSpA",
+      "GSpC",
+      "GSpD",
+      "KKR",
+      "KKRS",
+      "KKRT",
+      "KKRpD",
+      "BN",
+      "BNH",
+      "BNJ",
+      "APO",
+      "APOS"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F77b36599c7bafe4ce2b1695b739afbcc147c1eba-2048x1365.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Nvidia partnered with major Wall Street firms (Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR) to create compute financing platforms targeting $500 billion in AI data center funding. While the deal aims to accelerate AI infrastructure buildout, the author expresses skepticism about its sustainability, noting that hyperscalers are increasingly relying on debt markets and questioning whether GPUs' shorter lifespan makes them viable collateral compared to traditional assets like power plants.",
+    "keywords": [
+      "AI infrastructure financing",
+      "GPU financing",
+      "data center funding",
+      "hyperscaler spending",
+      "AI sustainability concerns",
+      "compute financing platforms"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While the $500B financing deal appears positive on the surface, the author suggests it may actually signal weakness in AI demand sustainability rather than strength. The announcement comes amid concerns about hyperscalers turning to debt markets, and questions about GPU collateral viability due to their shorter useful life compared to traditional assets."
+      },
+      {
+        "ticker": "BLK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a partner in the financing initiative. No specific sentiment expressed about the firm itself; participation is presented as part of a broader financing arrangement with uncertain long-term viability."
+      },
+      {
+        "ticker": "DIVB",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a partner in the financing initiative. No specific sentiment expressed about the firm itself; participation is presented as part of a broader financing arrangement with uncertain long-term viability."
+      },
+      {
+        "ticker": "BX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a partner in the compute financing platforms. No distinct sentiment provided; involvement is presented neutrally as part of the Wall Street consortium."
+      },
+      {
+        "ticker": "GS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Included as one of the six major Wall Street partners. No specific commentary on the firm; participation is presented as part of the broader financing arrangement."
+      },
+      {
+        "ticker": "GSpA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Included as one of the six major Wall Street partners. No specific commentary on the firm; participation is presented as part of the broader financing arrangement."
+      },
+      {
+        "ticker": "GSpC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Included as one of the six major Wall Street partners. No specific commentary on the firm; participation is presented as part of the broader financing arrangement."
+      },
+      {
+        "ticker": "GSpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Included as one of the six major Wall Street partners. No specific commentary on the firm; participation is presented as part of the broader financing arrangement."
+      },
+      {
+        "ticker": "KKR",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Named as a partner in the initiative. No distinct sentiment expressed; involvement is presented as part of the consortium without specific analysis."
+      },
+      {
+        "ticker": "KKRS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Named as a partner in the initiative. No distinct sentiment expressed; involvement is presented as part of the consortium without specific analysis."
+      },
+      {
+        "ticker": "KKRT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Named as a partner in the initiative. No distinct sentiment expressed; involvement is presented as part of the consortium without specific analysis."
+      },
+      {
+        "ticker": "KKRpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Named as a partner in the initiative. No distinct sentiment expressed; involvement is presented as part of the consortium without specific analysis."
+      },
+      {
+        "ticker": "BN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed among the six Wall Street partners. No specific sentiment provided; participation is presented neutrally within the broader financing context."
+      },
+      {
+        "ticker": "BNH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed among the six Wall Street partners. No specific sentiment provided; participation is presented neutrally within the broader financing context."
+      },
+      {
+        "ticker": "BNJ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed among the six Wall Street partners. No specific sentiment provided; participation is presented neutrally within the broader financing context."
+      },
+      {
+        "ticker": "APO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as one of the six major asset managers and investment banks in the partnership. No distinct sentiment expressed; involvement is presented as part of the consortium."
+      },
+      {
+        "ticker": "APOS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as one of the six major asset managers and investment banks in the partnership. No distinct sentiment expressed; involvement is presented as part of the consortium."
+      }
+    ]
+  },
+  {
+    "id": "c7d419232031abec3667ba8702d9ac209f21424e586318d42b353673e666302d",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Better Buy: iShares Bitcoin ETF vs. Morgan Stanley Bitcoin ETF",
+    "author": "Todd Shriber",
+    "published_utc": "2026-08-05T10:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/05/better-buy-crypto-etf-vs-crypto-etf/?source=iedfolrf0000001",
+    "tickers": [
+      "IBIT",
+      "BLK",
+      "DIVB"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F881614%2Fgettyimages-1146697288-1.jpg&w=1200&op=resize",
+    "description": "The article compares two spot Bitcoin ETFs: iShares Bitcoin Trust ETF (IBIT), the category leader with $46.5 billion in assets, and Morgan Stanley Bitcoin Trust ETF (MSBT), a newer entrant with $392.3 million in assets. While iShares benefits from brand recognition and tight bid/ask spreads, Morgan Stanley differentiates itself with the lowest expense ratio at 0.14% versus iShares' 0.25%, making it the better choice for long-term investors.",
+    "keywords": [
+      "Bitcoin ETF",
+      "spot Bitcoin",
       "expense ratio",
-      "dividend yield",
-      "portfolio diversification",
-      "iShares"
+      "assets under management",
+      "ETF comparison",
+      "cryptocurrency"
     ],
     "insights": [
       {
-        "ticker": "REET",
+        "ticker": "IBIT",
         "sentiment": "positive",
-        "sentiment_reasoning": "REET is presented as the stronger choice for most investors, offering significantly lower expense ratio (0.14%), higher dividend yield (3.3%), broader diversification across 350+ global holdings, and larger AUM ($4.9B). The article explicitly recommends it as 'the stronger starting point' for long-term investors."
-      },
-      {
-        "ticker": "ICF",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "ICF is presented as a viable but less optimal choice. While it delivered stronger 5-year returns and offers concentrated domestic exposure, it has higher costs (0.32% expense ratio), lower yield (2.4%), and smaller AUM ($2.1B). It's recommended only for investors specifically seeking concentrated U.S. REIT exposure."
+        "sentiment_reasoning": "Largest Bitcoin ETF with $46.5 billion in AUM, strong institutional adoption, and excellent liquidity with 0.03% bid/ask spread, though not the cost leader in the category."
       },
       {
         "ticker": "BLK",
         "sentiment": "neutral",
-        "sentiment_reasoning": "BlackRock is mentioned only as the issuer of both ETFs being compared. No performance evaluation or sentiment is expressed regarding the company itself."
+        "sentiment_reasoning": "Mentioned as parent company of iShares and as one of the largest ETF issuers, but no specific performance or strategic information provided in the article."
       },
       {
         "ticker": "DIVB",
         "sentiment": "neutral",
-        "sentiment_reasoning": "BlackRock is mentioned only as the issuer of both ETFs being compared. No performance evaluation or sentiment is expressed regarding the company itself."
-      }
-    ]
-  },
-  {
-    "id": "25808ccc32e6d706cd56e28ea69b3c01f8798c381efb9615a76c972eb428e240",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Is The Oil Crisis Over? Or Is It Just Beginning?",
-    "author": "Motley Fool Staff",
-    "published_utc": "2026-07-13T04:06:18Z",
-    "article_url": "https://www.fool.com/investing/2026/07/13/is-the-oil-crisis-over-or-is-it-just-beginning/?source=iedfolrf0000001",
-    "tickers": [
-      "NKE",
-      "V",
-      "MA",
-      "BLK",
-      "DIVB"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F5b580dbccc2f82b9f71a18cda16f833aad4291af-1280x720.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Oil prices have dropped to ~$70/barrel despite predictions of $200 oil following the Strait of Hormuz closure. Strategic petroleum reserve releases, reduced Chinese demand, and potential pipeline circumvention projects have mitigated the crisis. However, sustainability beyond six months remains uncertain. Additionally, the new OpenUSD stablecoin backed by major institutions may entrench existing payment processors rather than disrupt them. Nike reported mixed earnings with tariff-driven gains masking underlying sales declines, particularly in China, raising questions about its turnaround prospects.",
-    "keywords": [
-      "oil prices",
-      "Strait of Hormuz",
-      "strategic petroleum reserves",
-      "stablecoins",
-      "OpenUSD",
-      "payment processing",
-      "Nike earnings",
-      "China market decline"
-    ],
-    "insights": [
-      {
-        "ticker": "NKE",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Despite beating expectations and stock being up 2%, underlying fundamentals are weak. Revenue flat, direct-to-consumer sales down 7%, China sales down 17% quarter-over-quarter and 30% over five years. Earnings heavily dependent on tariff recovery (52 of 72 cents per share). Lost Steph Curry endorsement to Chinese competitor Li-Ning. Stock down 35% for the year with uncertain turnaround prospects."
-      },
-      {
-        "ticker": "V",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "OpenUSD stablecoin adoption by major institutions could improve payment efficiency and lower fees, but Visa is implementing the technology itself rather than being disrupted by it. Incumbents likely to strengthen position and maintain margins despite potential fee reductions. No existential threat identified."
-      },
-      {
-        "ticker": "MA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Similar to Visa, Mastercard is adopting OpenUSD technology rather than being disrupted by it. As an incumbent player, likely to maintain competitive position and margins. Technology may improve efficiency but not fundamentally threaten the business model."
-      },
-      {
-        "ticker": "BLK",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Supporting OpenUSD stablecoin consortium as a major institutional backer. Involvement suggests confidence in the technology but no specific business impact discussed. Neutral positioning as part of broader institutional adoption."
-      },
-      {
-        "ticker": "DIVB",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Supporting OpenUSD stablecoin consortium as a major institutional backer. Involvement suggests confidence in the technology but no specific business impact discussed. Neutral positioning as part of broader institutional adoption."
-      }
-    ]
-  },
-  {
-    "id": "eb3866f91f86dba1e8ff578259fd2eada32f91f33ea0e5dccaa08e7266860b88",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Is the \"Solana Summer\" Finally Here?",
-    "author": "Alex Carchidi",
-    "published_utc": "2026-07-12T22:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/12/is-the-solana-summer-finally-here/?source=iedfolrf0000001",
-    "tickers": [
-      "BLK",
-      "DIVB"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878330%2Finvestor-looks-out-window-while-pondering-and-holding-phone.jpg&w=1200&op=resize",
-    "description": "Solana is experiencing a surge in network activity with over 1 billion weekly transactions and active wallet addresses jumping to 29.7 million. The launch of Open USD (OUSD) stablecoin backed by 140+ financial institutions including BlackRock on Solana could bring billions in capital inflows. However, Solana's inflationary tokenomics with minimal coin burning limit upside for holders despite strong on-chain activity.",
-    "keywords": [
-      "Solana Summer",
-      "tokenized assets",
-      "stablecoin",
-      "network activity",
-      "tokenomics",
-      "Open USD",
-      "on-chain metrics"
-    ],
-    "insights": [
-      {
-        "ticker": "BLK",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as one of 140+ financial institutions backing the Open USD stablecoin launching on Solana. Participation indicates institutional confidence but no direct impact on BlackRock's business highlighted."
-      },
-      {
-        "ticker": "DIVB",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as one of 140+ financial institutions backing the Open USD stablecoin launching on Solana. Participation indicates institutional confidence but no direct impact on BlackRock's business highlighted."
+        "sentiment_reasoning": "Mentioned as parent company of iShares and as one of the largest ETF issuers, but no specific performance or strategic information provided in the article."
       }
     ]
   }

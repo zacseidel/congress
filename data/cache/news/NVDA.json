@@ -1,264 +1,332 @@
 [
   {
-    "id": "36d75d53ed560fd1b9317985b28aa8686b035e08108f0e44b73983bb8c6a5941",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "HTX's First TradFi \"Trade to Earn\" Campaign Unleashes New Trading Momentum: Rewards Exceed $23,000, Fee Savings Reach 1.8 Billion $HTX",
-    "author": "Na",
-    "published_utc": "2026-07-29T07:17:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/29/3334989/0/en/HTX-s-First-TradFi-Trade-to-Earn-Campaign-Unleashes-New-Trading-Momentum-Rewards-Exceed-23-000-Fee-Savings-Reach-1-8-Billion-HTX.html",
-    "tickers": [
-      "NVDA",
-      "MSFT"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/cf597ba8-a998-40fa-8403-9ff0fe2fb0a6",
-    "description": "HTX completed its inaugural TradFi 'Trade to Earn' campaign, generating 63.37 million USDT in trading volume with up to 110% fee rebates. The campaign distributed 23,477 USDT in rewards while saving users 22,238 USDT in fees. Trading fees were allocated to buy back and burn $HTX tokens, linking platform growth to token value creation. HTX plans to launch a second phase with expanded TradFi asset access.",
-    "keywords": [
-      "TradFi trading",
-      "trade to earn",
-      "fee rebates",
-      "perpetual futures",
-      "token burn",
-      "cryptocurrency exchange",
-      "negative fee rates",
-      "traditional finance assets"
-    ],
-    "insights": [
-      {
-        "ticker": "NVDA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "NVIDIA is mentioned only as one of several TradFi trading assets available on HTX's platform. No specific performance data or company-related news is provided; it serves merely as an example of tradeable assets."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Microsoft is mentioned only as one of several TradFi trading assets available on HTX's platform. No specific performance data or company-related news is provided; it serves merely as an example of tradeable assets."
-      }
-    ]
-  },
-  {
-    "id": "d4b4fa281ffbf036e65782ff9d8d5651c27f5c0b91021eed78dd49706066eee6",
+    "id": "bde7f08ea4fade47048c8f0bdfeb6387f1881939b203e6a1ac3fcf231c6e4b58",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Nvidia Stock Is Trading at a Shocking Valuation. Now Is the Perfect Time to Buy",
-    "author": "Keithen Drury",
-    "published_utc": "2026-07-28T21:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/28/nvidia-stock-is-trading-at-a-shocking-valuation-no/?source=iedfolrf0000001",
+    "title": "History Says a $10,000 Investment in the QQQ Will Be Worth $66,000 in 10 Years",
+    "author": "Neil Patel",
+    "published_utc": "2026-08-17T12:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/17/history-says-investment-qqq-worth-66000-10-years/?source=iedfolrf0000001",
     "tickers": [
+      "QQQ",
       "NVDA",
-      "AAPL",
-      "AMZN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880322%2Fnvidia-headquarters-with-grey-nvidia-sign-in-front-with-nvidia-logo.png&w=1200&op=resize",
-    "description": "Nvidia is trading at an attractive valuation with a trailing P/E ratio of 31.7 (lowest since 2023) and forward P/E of 23x, comparable to the S&P 500 despite growing at 85% year-over-year. With AI hyperscalers expected to increase spending in 2027 and forecasts of $1 trillion+ in data center capital expenditures, the article argues that none of this future growth is priced into the stock, making it a compelling buying opportunity.",
-    "keywords": [
-      "Nvidia valuation",
-      "AI growth",
-      "data center spending",
-      "P/E ratio",
-      "hyperscalers",
-      "semiconductor stocks"
-    ],
-    "insights": [
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The article presents Nvidia as undervalued relative to its growth prospects. Despite 85% YoY growth, it trades at only 23x forward earnings (market average), with expectations of substantial 2027 growth from AI hyperscalers not yet reflected in the stock price, positioning it as a strong buy."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Apple is mentioned only as a valuation comparison point, trading at 40.3x trailing earnings. No investment recommendation or analysis is provided regarding Apple itself."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Amazon is mentioned only as a valuation comparison point, trading at 27.8x trailing earnings. No investment recommendation or analysis is provided regarding Amazon itself."
-      }
-    ]
-  },
-  {
-    "id": "7dd23c0d378e4031a4d3f6c386a4d7929a234cd9ae29c5d149d4f129a6834bf4",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "University of Wyoming, NSF ASCEND Engine and NVIDIA Bring AI Summit to the Mountain West",
-    "author": "Not Specified",
-    "published_utc": "2026-07-28T19:55:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/28/3334674/0/en/University-of-Wyoming-NSF-ASCEND-Engine-and-NVIDIA-Bring-AI-Summit-to-the-Mountain-West.html",
-    "tickers": [
-      "NVDA"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/66c09aef-fd2c-4c68-bc97-efce7516467e",
-    "description": "The University of Wyoming, NVIDIA, and the National Science Foundation ASCEND Engine are hosting the Mountain West AI & HPC Summit in Laramie from August 31-September 2, 2026. The three-day conference will feature keynote presentations, hands-on training, and technical sessions focused on AI, high-performance computing, and applications in weather prediction and wildfire monitoring for the Mountain West region.",
-    "keywords": [
-      "AI and HPC",
-      "Mountain West",
-      "University of Wyoming",
-      "NVIDIA",
-      "NSF ASCEND Engine",
-      "wildfire monitoring",
-      "edge computing",
-      "deep learning",
-      "quantum computing",
-      "natural hazard preparedness"
-    ],
-    "insights": [
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "NVIDIA is prominently featured as a co-host and will provide hands-on training and expert demonstrations at the summit, positioning the company as a key player in advancing AI and HPC solutions in the region."
-      }
-    ]
-  },
-  {
-    "id": "d157e9f5855b45a0cf9f068229e2739b72794d676766512c91398b1b23bc46b5",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Nvidia's Quiet Bet on AI Sandboxes Could Decide Who Wins the AI Agent Era",
-    "author": "Beegee Alop",
-    "published_utc": "2026-07-28T17:34:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/28/nvidias-quiet-bet-on-ai-sandboxes-could-decide-who/?source=iedfolrf0000001",
-    "tickers": [
-      "NVDA",
-      "AMD",
-      "INTC",
-      "ARM",
-      "AMZN",
       "MSFT",
       "GOOG",
       "GOOGL",
       "GOOGM",
-      "GOOGN"
+      "GOOGN",
+      "AMZN",
+      "META"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880840%2Fai-sandbox.png&w=1200&op=resize",
-    "description": "As AI agents begin executing code rather than just generating text, enterprises will need isolated sandbox environments to safely run generated code. This creates a new infrastructure market where Nvidia bets on faster cores, AMD on more cores per rack, Intel on existing x86 compatibility, and hyperscalers on custom silicon. The winner will be determined by which approach most efficiently completes agent tasks at scale.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883381%2Fai-robots-holding-chart-going-up-and-right.jpg&w=1200&op=resize",
+    "description": "The Invesco QQQ Trust ETF generated a 563% total return over the past decade, translating to a 20.8% annualized return. If this performance repeats, a $10,000 investment could grow to $66,000 in 10 years. The bull case depends on AI delivering on its promise and generating adequate returns on massive capital expenditures, while the bear case warns of decelerating growth and uncertain AI economic benefits.",
     "keywords": [
-      "AI agents",
-      "code execution",
-      "sandboxes",
-      "CPU architecture",
-      "enterprise infrastructure",
-      "processor competition",
-      "cloud computing"
+      "QQQ ETF",
+      "AI stocks",
+      "tech sector",
+      "investment returns",
+      "capital expenditure",
+      "growth stocks"
     ],
     "insights": [
       {
+        "ticker": "QQQ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong historical performance with 563% return over 10 years and 20.8% annualized returns, outperforming S&P 500. Positioned to benefit from AI revolution through leading tech companies."
+      },
+      {
         "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Nvidia is positioning its Vera CPU with 88 custom cores and 10-wide decode engines to handle agent execution workloads. The company is betting on faster, wider cores to complete blocking tasks quickly and plans to sell stand-alone Vera racks, creating a new revenue path beyond GPU systems."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "AMD's Venice architecture supports up to 256 cores per socket and can scale beyond 36,000 cores per liquid-cooled rack. The company emphasizes compatibility with existing x86 tools and software, positioning itself as a practical choice for enterprises migrating agent workloads while maintaining architectural familiarity."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Intel's strategy relies on existing Xeon infrastructure familiarity and adding more cores through Xeon 6+ processors. However, the article suggests Intel faces challenges proving its existing workforce can compete on cost and performance, making its position more defensive than proactive in the emerging agent execution market."
-      },
-      {
-        "ticker": "ARM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Arm benefits from multiple competing Arm-based processors (Nvidia Vera, AWS Graviton, Microsoft Cobalt, Google Axion) gaining market share. As the instruction set blueprint supplier, Arm can monetize the market regardless of which specific processor dominates, creating a win-win scenario."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Amazon is preparing agent infrastructure through AWS Lambda MicroVMs and custom Graviton processors. As a hyperscaler controlling the entire workplace (hardware, software, services), Amazon can optimize total cost efficiency and potentially capture more value than merchant chip vendors."
+        "sentiment_reasoning": "Highlighted as the top contributor to QQQ's performance with a 14,200% return over 10 years, driven by insatiable demand for AI chips."
       },
       {
         "ticker": "MSFT",
         "sentiment": "positive",
-        "sentiment_reasoning": "Microsoft is adding isolated agent-execution environments to Azure and developing custom Cobalt processors. The company can integrate these with GitHub and enterprise software, giving it advantages in optimizing the complete workplace for agent execution."
+        "sentiment_reasoning": "Listed as a top QQQ holding (5.75%) and hyperscaler investing heavily in AI infrastructure with projected capital expenditures."
       },
       {
         "ticker": "GOOG",
         "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
+        "sentiment_reasoning": "Top QQQ holding and hyperscaler with significant AI presence in cloud computing and hardware/software development."
       },
       {
         "ticker": "GOOGL",
         "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
+        "sentiment_reasoning": "Top QQQ holding and hyperscaler with significant AI presence in cloud computing and hardware/software development."
       },
       {
         "ticker": "GOOGM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
+        "sentiment_reasoning": "Top QQQ holding and hyperscaler with significant AI presence in cloud computing and hardware/software development."
       },
       {
         "ticker": "GOOGN",
         "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
+        "sentiment_reasoning": "Top QQQ holding and hyperscaler with significant AI presence in cloud computing and hardware/software development."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Hyperscaler with major capital expenditure commitments for AI infrastructure and cloud computing services."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Hyperscaler investing heavily in AI with projected capital expenditures approaching $800 billion combined with other tech giants."
       }
     ]
   },
   {
-    "id": "fb2486c949189e30099c934aefdf8efcdcfbbd32a357228aa433a5312514f6b5",
+    "id": "0d1864213b6f4f8fbbb62dc760163edeea2e0ab4fadb3ff07dfa113cacecc097",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Prediction: Nvidia-SK Hynix Partnership Will Make Both Stocks Big Winners",
-    "author": "Geoffrey Seiler",
-    "published_utc": "2026-07-28T17:27:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/28/predict-nvidia-sk-hynix-partnership-makes-winner/?source=iedfolrf0000001",
+    "title": "Google, Amazon, and Meta All Just Raised Capex Guidance Again. This Boring Industrial Wins No Matter Whose AI Infrastructure Is Best.",
+    "author": "James Brumley",
+    "published_utc": "2026-08-17T10:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/17/google-amazon-and-meta-all-just-raised-capex-guida/?source=iedfolrf0000001",
     "tickers": [
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "AMZN",
+      "META",
       "NVDA",
-      "SKHY",
-      "ASML",
-      "AVGO"
+      "CCJ",
+      "VRT",
+      "GEV",
+      "CEG",
+      "VST"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880687%2Fnvdaskhy.png&w=1200&op=resize",
-    "description": "Nvidia and SK Hynix announced a major partnership involving HBM supply and AI data center development. The deal positions Nvidia to secure its dominance in AI infrastructure with guaranteed high-bandwidth memory supply, while SK Hynix gains long-term revenue visibility and potential stock multiple expansion. Both companies are expected to benefit significantly from this strategic alliance.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F882011%2Fnuclear-power-cooling-towers.jpg&w=1200&op=resize",
+    "description": "Major tech companies (Google, Amazon, Meta) are significantly increasing AI infrastructure spending, which benefits not just chip makers like Nvidia, but also less obvious beneficiaries in power generation and uranium supply. Cameco, a uranium provider for nuclear power plants, is positioned to win long-term as AI data centers increasingly rely on nuclear power, though benefits may take years to materialize as new nuclear facilities are built.",
     "keywords": [
-      "HBM supply",
-      "AI infrastructure",
-      "memory bottleneck",
-      "SK Telecom data center",
-      "inference market",
-      "supply chain advantage",
-      "long-term contracts"
+      "AI infrastructure spending",
+      "capital expenditure",
+      "nuclear power",
+      "uranium supply",
+      "data center power",
+      "energy demand"
     ],
     "insights": [
       {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Increased capex guidance ($195-205B for 2026) shows strong AI investment commitment, but this is expected market behavior rather than surprising news."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Increased capex guidance ($195-205B for 2026) shows strong AI investment commitment, but this is expected market behavior rather than surprising news."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Increased capex guidance ($195-205B for 2026) shows strong AI investment commitment, but this is expected market behavior rather than surprising news."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Increased capex guidance ($195-205B for 2026) shows strong AI investment commitment, but this is expected market behavior rather than surprising news."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Raised capex from $200B to $220B, demonstrating continued AI infrastructure investment, but this is consistent with industry trends."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Increasing AI spending through debt issuance shows commitment, but similar to peers' actions with no differentiation."
+      },
+      {
         "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Securing massive HBM supply strengthens its AI infrastructure dominance, provides competitive moat in inference market, and trading at attractive forward P/E of 15x for fiscal 2028. Partnership de-risks supply chain and positions company for continued growth."
+        "sentiment_reasoning": "Direct beneficiary of increased capex as the dominant supplier of AI data center processors."
       },
       {
-        "ticker": "SKHY",
+        "ticker": "CCJ",
         "sentiment": "positive",
-        "sentiment_reasoning": "Major partnership provides significant revenue growth driver, increases business visibility through long-term contracts, and de-risks capital expenditure expansion. Stock trading at low forward P/E under 6 with potential for multiple expansion."
+        "sentiment_reasoning": "Positioned as long-term winner providing uranium for nuclear power plants powering AI data centers; analyst average target of $125.25 suggests 30% upside despite recent stock weakness."
       },
       {
-        "ticker": "ASML",
+        "ticker": "VRT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Indirect beneficiary providing power-distribution and chip-cooling solutions for AI data centers."
+      },
+      {
+        "ticker": "GEV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Benefits from immediate AI data center power needs through natural gas turbines, though positioned as shorter-term solution."
+      },
+      {
+        "ticker": "CEG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Partnering with Microsoft to restart nuclear reactors for AI data center power, demonstrating direct engagement in AI infrastructure."
+      },
+      {
+        "ticker": "VST",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Working directly with Amazon and Meta to provide nuclear power to AI data centers, establishing long-term partnerships."
+      }
+    ]
+  },
+  {
+    "id": "d91bee47fabb863815baa2f022b9c6927c48631e81d2f5459f5c51fb8decf667",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "One of the Biggest Chip ETFs Has Averaged 14% a Year Since 2001 and Just Made 118% in Twelve Months",
+    "author": "Daniel Sparks",
+    "published_utc": "2026-08-17T08:11:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/17/one-of-the-biggest-chip-etfs-has-averaged-14-a-yea/?source=iedfolrf0000001",
+    "tickers": [
+      "SOXX",
+      "NVDA",
+      "AMD",
+      "AVGO"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883814%2Faerial-data-center-halls-under-construction-in-farmland-getty.jpg&w=1200&op=resize",
+    "description": "The iShares Semiconductor ETF (SOXX) returned 118% over the past 12 months, compressing about six years of normal returns into one year, driven by AI infrastructure spending. However, the article cautions that at 67x earnings and with concentrated positions in Nvidia, AMD, and Broadcom, the fund's valuation assumes sustained demand growth. Historical precedent shows that years following such dramatic runs typically underperform the fund's 14.2% long-term average.",
+    "keywords": [
+      "semiconductor ETF",
+      "AI infrastructure spending",
+      "GPU demand",
+      "valuation concerns",
+      "concentrated portfolio",
+      "historical performance analysis"
+    ],
+    "insights": [
+      {
+        "ticker": "SOXX",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as the sole supplier of EUV lithography machines critical to HBM and GPU manufacturing, but no direct impact analysis provided in the article."
+        "sentiment_reasoning": "While the 118% return is impressive, the article presents a cautionary view. The fund is praised as a fine vehicle with low expenses, but the author expresses concern about elevated valuations (67x earnings) and concentration risk, noting that historically similar runs have been followed by underperformance. The sentiment is balanced rather than bullish."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "As the largest holding (8.93%) in SOXX, Nvidia benefits from AI spending tailwinds. However, the article implies the stock's valuation already prices in sustained growth, and the concentrated bet on AI infrastructure creates risk if demand doesn't materialize as expected."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "AMD is a major holding (8.2%) riding the AI spending cycle. Like Nvidia, it benefits from current demand but faces valuation risk if the AI cycle doesn't sustain at current growth rates."
       },
       {
         "ticker": "AVGO",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as securing HBM supply with Samsung in response to competitive pressures, but no detailed sentiment analysis provided."
+        "sentiment_reasoning": "Broadcom is equally weighted with AMD (8.2%) as a top holding in the semiconductor ETF, benefiting from AI infrastructure spending. However, it shares the same valuation and demand sustainability concerns as other major holdings."
+      }
+    ]
+  },
+  {
+    "id": "321cd6b31d0733e114af391d9cba483e467fb811e9942fc0261d47381831493b",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Nvidia vs. Meta: Is Custom Silicon a Critical Threat to Nvidia's AI Moat?",
+    "author": "Rick Orford",
+    "published_utc": "2026-08-16T19:27:57Z",
+    "article_url": "https://www.fool.com/investing/2026/08/16/nvidia-vs-meta-is-custom-silicon-a-critical-threat/?source=iedfolrf0000001",
+    "tickers": [
+      "NVDA",
+      "META"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883804%2Fmeta-vs-nvidia.png&w=1200&op=resize",
+    "description": "Nvidia and Meta are competing in the AI market from different angles. Nvidia controls the chips and software powering the AI boom, while Meta is developing custom hardware and open models to reduce Nvidia's dominance. Despite their rivalry, both companies could potentially win by dominating different layers of the market.",
+    "keywords": [
+      "artificial intelligence",
+      "custom silicon",
+      "competitive moat",
+      "AI chips",
+      "open models",
+      "market competition"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Nvidia maintains a strong position controlling AI chips and software, but faces emerging competitive threats from Meta's custom hardware development. The article presents both its current dominance and potential vulnerabilities."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Meta is actively challenging Nvidia's market control through custom hardware development and open-source AI models. The article suggests Meta could win by dominating a different layer of the market, indicating growth potential in the AI space."
+      }
+    ]
+  },
+  {
+    "id": "4423442bdb278e58900f9e9987e0a7ea2dbd837e374f5518e7ab75689a024f60",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "The Vanguard S&P 500 ETF (VOO) Beat the Vanguard Morningstar Total Stock Market ETF (VTI) for 4 Straight Years. Here's Why That's About to Change.",
+    "author": "Daniel Foelber",
+    "published_utc": "2026-08-16T12:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/16/vanguard-sp-500-etf-voo-beat-vanguard-vti/?source=iedfolrf0000001",
+    "tickers": [
+      "VOO",
+      "VTI",
+      "NVDA",
+      "AAPL",
+      "MSFT"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883383%2Fabstract-image-featuring-multi-colored-financial-stock-market-bar-charts.jpg&w=1200&op=resize",
+    "description": "After outperforming for four years due to mega-cap growth stock concentration, the Vanguard S&P 500 ETF (VOO) is losing ground to the Vanguard Total Stock Market ETF (VTI) in 2026. VTI's exposure to cheaper small and mid-cap stocks, combined with its flexibility to quickly add new IPOs like SpaceX, makes it a better choice for broad market exposure despite both ETFs' identical 0.03% expense ratios.",
+    "keywords": [
+      "ETF comparison",
+      "S&P 500",
+      "total stock market",
+      "mega-cap stocks",
+      "small-cap stocks",
+      "mid-cap stocks",
+      "valuation",
+      "IPO exposure",
+      "passive investing",
+      "market concentration"
+    ],
+    "insights": [
+      {
+        "ticker": "VOO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While VOO outperformed for 4 years due to mega-cap concentration, the article suggests this advantage is reversing. It remains a solid option but is no longer the preferred choice, making it neutral rather than positive."
+      },
+      {
+        "ticker": "VTI",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The article explicitly recommends VTI as 'the better buy' due to its exposure to undervalued small/mid-cap stocks, flexibility to add new IPOs quickly, and better capture of the entire market. The author favors this ETF going forward."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a mega-cap growth stock that has driven S&P 500 outperformance, but the article suggests this trend is reversing as valuations become stretched and smaller stocks offer better value."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding in both ETFs with strong fundamentals, but treated as part of the mega-cap concentration that has already outperformed."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Included among mega-cap leaders with quality characteristics, but no specific positive or negative outlook provided."
       }
     ]
   }
