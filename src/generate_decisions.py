@@ -42,7 +42,6 @@ sys.path.insert(0, str(Path(__file__).parent))
 from utils import (AGGS_CACHE, ROOT, PolygonClient, load_config, load_json_gz,
                    most_recent_trading_day, parse_date, setup_logging)
 from generate_report import money, usd, pct, cls          # shared display helpers
-from fetch_charts import _price_on                          # close on/after a date
 from compute_performance import _safe_pct                   # window return %
 
 log = setup_logging("generate_decisions")
@@ -124,6 +123,12 @@ def _load_bars(poly, ticker: str, start_iso: str, today_iso: str) -> dict:
 
 def _latest(bars_by_date: dict):
     return bars_by_date[max(bars_by_date)] if bars_by_date else None
+
+
+def _price_on(bars_by_date: dict, day: date):
+    """Return the first available close on or after ``day``."""
+    trading_day = next((d for d in sorted(bars_by_date) if d >= day), None)
+    return bars_by_date[trading_day] if trading_day is not None else None
 
 
 def _delta(a, b):

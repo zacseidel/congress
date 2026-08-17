@@ -9,26 +9,43 @@ quarterly filing calendar, so across ALL funds there are only a few dozen distin
 dates. One Polygon grouped-daily call prices *every* US ticker for one day, so we
 price the whole universe in a few dozen calls — versus one call per ticker.
 
-We keep an UNPRUNED grouped snapshot per needed date in data/cache/hedge_grouped/
-(the shared congress GROUPED_CACHE is pruned to congress tickers, so it can't serve
-hedge-only names — hence a separate cache here). Weekends/holidays step back to the
-prior trading day, and the result is stored under the requested date key so a
-filing-date lookup always lands on a real close.
+We keep a hedge-specific, held-ticker-pruned grouped snapshot per needed date in
+data/cache/hedge_grouped/. Weekends/holidays step back to the prior trading day.
+If a CUSIP is resolved after a snapshot was pruned, one per-ticker aggregate-history
+request fills all of that ticker's missing dates without re-fetching hundreds of
+grouped market days.
 """
 
 import sys
-from datetime import date, timedelta
+from bisect import bisect_right
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Optional
 
 sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import (CACHE_DIR, TICKER_ALIASES_REV, PolygonClient, Progress, load_config,
-                   load_json_gz, parse_date, save_json_gz, setup_logging)
+from utils import (AGGS_CACHE, CACHE_DIR, CUSIP_CACHE, DATA_DIR, TICKER_ALIASES_REV,
+                   PolygonClient, Progress, load_config, load_json, load_json_gz,
+                   parse_date, save_json_gz, setup_logging)
 
 log = setup_logging("price_hedge")
 
 HEDGE_GROUPED = CACHE_DIR / "hedge_grouped"   # {ticker: close} per date, pruned to held tickers
+PENDING_PRICE_TICKERS_PATH = CUSIP_CACHE / "pending_price_tickers.json.gz"
+CUSIP_OVERRIDES_PATH = DATA_DIR / "hedge" / "cusip_overrides.json"
+
+
+def _pending_price_tickers() -> set[str]:
+    pending = set()
+    if PENDING_PRICE_TICKERS_PATH.exists():
+        data = load_json_gz(PENDING_PRICE_TICKERS_PATH)
+        pending |= set(data.get("tickers", []))
+    if CUSIP_OVERRIDES_PATH.exists():
+        for value in load_json(CUSIP_OVERRIDES_PATH).values():
+            ticker = value if isinstance(value, str) else value.get("ticker")
+            if ticker:
+                pending.add(ticker.upper())
+    return pending
 
 
 def _grouped_snapshot(poly: PolygonClient, day: date, keep: Optional[set] = None) -> dict:
@@ -36,8 +53,8 @@ def _grouped_snapshot(poly: PolygonClient, day: date, keep: Optional[set] = None
     cached; an empty file marks a known non-trading day. When `keep` is given, the
     saved snapshot is pruned to those tickers — the union of tickers our funds hold
     over the whole window + benchmark — dropping the ~4k never-held market names.
-    Safe because a ticker only needs a price on dates it's held, and those dates are
-    always fetched with a keep-set that includes it."""
+    Newly resolved tickers missing from old pruned snapshots are filled from their
+    aggregate history by ``build_price_map``."""
     for delta in range(5):
         target = day - timedelta(days=delta)
         cp = HEDGE_GROUPED / f"{target.isoformat()}.json.gz"
@@ -68,8 +85,46 @@ def _grouped_snapshot(poly: PolygonClient, day: date, keep: Optional[set] = None
     return {}
 
 
+def _backfill_pending_prices(pm: dict, dates: list[str], keep: Optional[set],
+                             keep_by_date: Optional[dict[str, set]],
+                             poly: PolygonClient) -> None:
+    """Fill newly resolved tickers with one aggregate-history request per ticker."""
+    pending = _pending_price_tickers()
+    for ticker in sorted(pending):
+        missing_dates = [
+            iso for iso in dates
+            if ticker in (keep_by_date.get(iso, set()) if keep_by_date is not None else (keep or set()))
+            and ticker not in pm.get(iso, {})
+        ]
+        if not missing_dates:
+            continue
+        first = date.fromisoformat(min(missing_dates)) - timedelta(days=4)
+        last = date.fromisoformat(max(missing_dates))
+        path = AGGS_CACHE / f"{ticker}.json.gz"
+        bars = load_json_gz(path) if path.exists() else []
+        valid = [bar for bar in bars if bar.get("t") is not None and bar.get("c") is not None]
+        valid.sort(key=lambda bar: bar["t"])
+        if not valid or datetime.utcfromtimestamp(valid[0]["t"] / 1000).date() > first:
+            valid = poly.aggregates(
+                ticker, first.isoformat(), last.isoformat(), use_cache=False) or []
+            valid = [bar for bar in valid if bar.get("t") is not None and bar.get("c") is not None]
+        valid.sort(key=lambda bar: bar["t"])
+        bar_days = [datetime.utcfromtimestamp(bar["t"] / 1000).date() for bar in valid]
+        closes = [bar["c"] for bar in valid]
+        filled = 0
+        for iso in missing_dates:
+            target = date.fromisoformat(iso)
+            index = bisect_right(bar_days, target) - 1
+            if index >= 0 and (target - bar_days[index]).days <= 4:
+                pm[iso][ticker] = closes[index]
+                filled += 1
+        log.info("Aggregate backfill %s: priced %d/%d needed dates",
+                 ticker, filled, len(missing_dates))
+
+
 def build_price_map(date_isos, poly: Optional[PolygonClient] = None,
-                    keep: Optional[set] = None) -> dict:
+                    keep: Optional[set] = None,
+                    keep_by_date: Optional[dict[str, set]] = None) -> dict:
     """{date_iso: {ticker: close}} for each requested filing date. `keep` prunes newly
     fetched snapshots to the held-ticker set (see _grouped_snapshot)."""
     if poly is None:
@@ -82,9 +137,11 @@ def build_price_map(date_isos, poly: Optional[PolygonClient] = None,
     prog = Progress(len(dates), "priced dates", log, every=5)
     for iso in dates:
         d = parse_date(iso)
-        pm[iso] = _grouped_snapshot(poly, d, keep) if d else {}
+        date_keep = keep_by_date.get(iso, set()) if keep_by_date is not None else keep
+        pm[iso] = _grouped_snapshot(poly, d, date_keep) if d else {}
         prog.step(iso)
     prog.done()
+    _backfill_pending_prices(pm, dates, keep, keep_by_date, poly)
     return pm
 
 

@@ -14,8 +14,8 @@ Resolution chain (first hit wins). At scale the bulk resolver goes first:
      as a fallback for the few CUSIPs OpenFIGI can't map
 
 A definitive miss is cached as {"ticker": null} so we don't re-burn budget on the
-long tail of private placements / foreign / fully-delisted names. Pass
---refresh-misses to retry those.
+long tail of private placements / foreign / fully-delisted names. Curated manual
+overrides take precedence over that cache, and --refresh-misses retries null records.
 
 Usage:
   python src/hedge/resolve_cusip.py --cusip 037833100
@@ -33,7 +33,7 @@ import requests
 
 sys.path.insert(0, str(Path(__file__).parent))            # src/hedge (sibling modules)
 sys.path.insert(0, str(Path(__file__).parent.parent))     # src (utils)
-from utils import (CUSIP_CACHE, PolygonClient, Progress, RateLimiter, load_config,
+from utils import (CUSIP_CACHE, DATA_DIR, PolygonClient, Progress, RateLimiter, load_config,
                    load_json, load_json_gz, save_json_gz, setup_logging)
 
 log = setup_logging("resolve_cusip")
@@ -45,7 +45,29 @@ OPENFIGI_URL = "https://api.openfigi.com/v3/mapping"
 # once into memory; cached() then does O(1) dict lookups. Legacy per-file caches are
 # migrated in on first load, then removed.
 CUSIP_MAP_PATH = CUSIP_CACHE / "cusip_map.json.gz"
+PENDING_PRICE_TICKERS_PATH = CUSIP_CACHE / "pending_price_tickers.json.gz"
+OVERRIDES_PATH = DATA_DIR / "hedge" / "cusip_overrides.json"
 _MAP: Optional[dict] = None
+_OVERRIDES: Optional[dict] = None
+
+
+def _load_overrides() -> dict:
+    global _OVERRIDES
+    if _OVERRIDES is not None:
+        return _OVERRIDES
+    raw = load_json(OVERRIDES_PATH) if OVERRIDES_PATH.exists() else {}
+    _OVERRIDES = {}
+    for cusip, value in raw.items():
+        ticker = value if isinstance(value, str) else value.get("ticker")
+        if not ticker:
+            continue
+        _OVERRIDES[cusip.strip().upper()] = {
+            "cusip": cusip.strip().upper(),
+            "ticker": ticker.strip().upper(),
+            "source": "manual",
+            "name": None if isinstance(value, str) else value.get("name"),
+        }
+    return _OVERRIDES
 
 
 def _load_map() -> dict:
@@ -78,8 +100,18 @@ def _save_map() -> None:
     save_json_gz(CUSIP_MAP_PATH, _load_map())
 
 
+def _mark_pending_price_tickers(tickers: set[str]) -> None:
+    """Remember new mappings whose historical grouped-price caches may need refresh."""
+    if not tickers:
+        return
+    current = set(load_json_gz(PENDING_PRICE_TICKERS_PATH).get("tickers", [])) \
+        if PENDING_PRICE_TICKERS_PATH.exists() else set()
+    save_json_gz(PENDING_PRICE_TICKERS_PATH, {"tickers": sorted(current | tickers)})
+
+
 def cached(cusip: str) -> Optional[dict]:
-    return _load_map().get((cusip or "").strip().upper())
+    normalized = (cusip or "").strip().upper()
+    return _load_overrides().get(normalized) or _load_map().get(normalized)
 
 
 def _openfigi_headers() -> dict:
@@ -136,6 +168,7 @@ def resolve(cusip: str, poly: PolygonClient, limiter: RateLimiter,
                "source": "polygon", "name": pres.get("name")}
         _load_map()[cusip] = rec
         _save_map()
+        _mark_pending_price_tickers({rec["ticker"]})
         return rec
 
     # 2) OpenFIGI fallback
@@ -144,6 +177,8 @@ def resolve(cusip: str, poly: PolygonClient, limiter: RateLimiter,
            "source": "openfigi" if fig else None, "name": None}
     _load_map()[cusip] = rec
     _save_map()
+    if rec["ticker"]:
+        _mark_pending_price_tickers({rec["ticker"]})
     return rec
 
 
@@ -174,11 +209,16 @@ def resolve_many(cusips: list, refresh_misses: bool = False,
 
     uniq = sorted({(c or "").strip().upper() for c in cusips if c})
     cmap = _load_map()
+    overrides = _load_overrides()
     results: dict = {}
     uncached: list = []
+    newly_resolved: set[str] = set()
 
-    # Pass 1: serve from the persistent cache.
+    # Pass 1: manual overrides win, then serve from the persistent cache.
     for c in uniq:
+        if c in overrides:
+            results[c] = overrides[c]
+            continue
         hit = cmap.get(c)
         if hit is not None and not (refresh_misses and not hit.get("ticker")):
             results[c] = hit
@@ -200,6 +240,7 @@ def resolve_many(cusips: list, refresh_misses: bool = False,
                     rec = {"cusip": c, "ticker": t.upper(), "source": "openfigi", "name": None}
                     cmap[c] = rec
                     results[c] = rec
+                    newly_resolved.add(rec["ticker"])
                 else:
                     figi_misses.append(c)
                 prog.step()
@@ -221,6 +262,8 @@ def resolve_many(cusips: list, refresh_misses: bool = False,
                    "name": pres.get("name") if pres else None}
             cmap[c] = rec
             results[c] = rec
+            if rec["ticker"]:
+                newly_resolved.add(rec["ticker"])
             prog.step()
         prog.done()
         _save_map()
@@ -230,23 +273,26 @@ def resolve_many(cusips: list, refresh_misses: bool = False,
         log.info("Skipping Polygon fallback for %d OpenFIGI misses (poly_fallback=off)",
                  len(figi_misses))
 
+    _mark_pending_price_tickers(newly_resolved)
     resolved = sum(1 for r in results.values() if r.get("ticker"))
     log.info("Resolved %d/%d CUSIPs (%.1f%%)", resolved, len(uniq),
              100 * resolved / len(uniq) if uniq else 0)
     return results
 
 
-def run(refresh_misses: bool = False, poly_fallback: bool = False) -> None:
+def run(refresh_misses: bool = False, poly_fallback: bool = False,
+        ciks: Optional[set[int]] = None) -> None:
     """Resolve every CUSIP present in the holdings ledger. Bulk default is
-    OpenFIGI-only (poly_fallback=False) to avoid the slow 5/min Polygon tail."""
-    from utils import DATA_DIR
+    OpenFIGI-only (poly_fallback=False) to avoid the slow 5/min Polygon tail.
+    ``ciks`` limits retries to selected managers, which keeps specialist refreshes fast."""
     holdings_path = DATA_DIR / "hedge" / "holdings.json.gz"
     if not holdings_path.exists():
         log.error("No holdings ledger at %s; run fetch_13f.py first", holdings_path)
         return
     from holdings_io import load_holdings
     holdings = load_holdings(holdings_path)
-    cusips = {h["cusip"] for h in holdings.values() if h.get("cusip")}
+    cusips = {h["cusip"] for h in holdings.values()
+              if h.get("cusip") and (not ciks or h["cik"] in ciks)}
     resolve_many(list(cusips), refresh_misses=refresh_misses, poly_fallback=poly_fallback)
 
 

@@ -50,8 +50,25 @@ hedge:
   leaderboard_size: 500         # funds shown on the alpha leaderboard
   stock_pages_drivers: 120      # render per-stock pages for the top-N alpha contributors...
   stock_pages_buys: 120         # ...and the top-N skill-weighted new buys (so linked tickers have pages)
+  specialist_overlap_size: 30  # shared latest holdings shown below the pinned-specialist table
   watchlist_size: 40            # top funds promoted to deep per-fund pages
   watchlist_pins: []            # CIKs always kept on the watchlist regardless of rank
+  specialist_funds:             # curated funds stay visible even when data-quality gates exclude them
+    - cik: 1224962
+      label: "Perceptive Advisors"
+      category: "Healthcare"
+    - cik: 1595855
+      label: "Opaleye"
+      category: "Healthcare"
+    - cik: 1727492
+      label: "Caligan Partners"
+      category: "Healthcare"
+    - cik: 1907884
+      label: "Kynam"
+      category: "Healthcare"
+    - cik: 1802630
+      label: "Soleus Capital"
+      category: "Healthcare"
   passive_blocklist:            # mega passive managers excluded from the pool (by name substring)
     - "VANGUARD"
     - "BLACKROCK"

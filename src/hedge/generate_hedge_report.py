@@ -63,7 +63,13 @@ PAGE = """<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 </div></header>
 <div class="wrap">
 <p class="small muted"><a href="../index.html">&larr; Leaderboard</a> · CIK {{ p.cik }} · latest filing {{ ch.latest_filing or '—' }}</p>
-<h2>{{ p.name }}</h2>
+<h2>{{ p.name }}</h2>{% if specialist %}
+<div style="background:#fff8c5;border:1px solid #d4a72c;border-radius:8px;padding:10px 14px;font-size:13px;color:#54470f;margin:14px 0">📌
+  <span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:10px;background:#ddf4ff;color:#0a3069">{{ specialist.category }} specialist</span>
+  This fund is pinned for direct tracking.
+  {% if specialist.status != 'ranked' %}<b>Its modeled performance is excluded from leaderboard ranking:</b>
+  {{ specialist.reason }}.{% else %}It currently passes the leaderboard&rsquo;s ranking gates.{% endif %}
+</div>{% endif %}
 <div class="stat-row">
   <div class="stat"><div class="n {{ 'pos' if p.alpha>=0 else 'neg' }}">{{ '%+.1f'|format(100*p.alpha) }}%</div><div class="l">Alpha vs SPY</div></div>
   <div class="stat"><div class="n">{{ '%+.1f'|format(100*p.cumulative_return) }}%</div><div class="l">Follow return</div></div>
@@ -131,6 +137,13 @@ def _ticker(cusip: str):
     return rec.get("ticker") if rec else None
 
 
+def _page_targets(rankings: dict, perf: dict, board_size: int) -> list[str]:
+    ranked = [str(r["cik"]) for r in rankings.get("leaderboard", [])][:board_size]
+    watchlist = [str(c) for c in rankings.get("watchlist_ciks", [])]
+    specialists = [str(r["cik"]) for r in rankings.get("specialists", [])]
+    return list(dict.fromkeys(c for c in ranked + watchlist + specialists if c in perf))
+
+
 def run() -> None:
     from jinja2 import Template
     perf_path = HEDGE_DIR / "fund_performance.json.gz"
@@ -141,7 +154,7 @@ def run() -> None:
     changes = load_json_gz(HEDGE_DIR / "changes.json.gz").get("funds", {}) if (HEDGE_DIR / "changes.json.gz").exists() else {}
     holdings = load_holdings(HEDGE_DIR / "holdings.json.gz")
     rankings = load_json(HEDGE_DIR / "rankings.json") if (HEDGE_DIR / "rankings.json").exists() else {"watchlist_ciks": []}
-    watchlist = set(rankings.get("watchlist_ciks", []))
+    specialists = {str(r["cik"]): r for r in rankings.get("specialists", [])}
 
     # Latest-filing holdings per fund, for the "largest holdings" table.
     latest_by_fund: dict = defaultdict(list)
@@ -173,12 +186,11 @@ def run() -> None:
     for old in funds_dir.glob("*.html"):
         old.unlink()
 
-    # Render a page for each fund DISPLAYED on the leaderboard (top leaderboard_size),
-    # so every displayed/linked row resolves. The full ranked set stays in the data.
+    # Render each displayed leaderboard fund plus explicitly pinned watchlist/specialist
+    # funds. Pins get pages without bypassing the performance-quality ranking gates.
     from utils import load_config
     board_size = load_config().get("hedge", {}).get("leaderboard_size", 500)
-    ranked_ciks = [str(r["cik"]) for r in rankings.get("leaderboard", [])][:board_size]
-    targets = [c for c in ranked_ciks if c in perf] or list(perf)
+    targets = _page_targets(rankings, perf, board_size)
     target_ciks = {int(c) for c in targets}
 
     # Per-ticker position value by filing date, for the "position timeline" (buys by
@@ -236,7 +248,8 @@ def run() -> None:
                                "new": [], "exited": [], "increased": [], "decreased": []})
         tl_cols, tl_rows = build_timeline(int(cik))
         html = tmpl.render(p=p, ch=ch, top_holdings=top, style=STYLE,
-                           timeline=tl_rows, timeline_cols=tl_cols)
+                           timeline=tl_rows, timeline_cols=tl_cols,
+                           specialist=specialists.get(cik))
         (funds_dir / f"{cik}.html").write_text(html)
         n += 1
     log.info("Rendered %d fund pages -> %s", n, funds_dir)

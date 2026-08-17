@@ -38,6 +38,7 @@ from utils import (DATA_DIR, Progress, load_config, load_json_gz, most_recent_tr
 from resolve_cusip import cached as cusip_cached
 from price_hedge import build_price_map
 from holdings_io import load_holdings
+from specialist_funds import configured_specialists
 
 log = setup_logging("backtest_13f")
 
@@ -45,6 +46,40 @@ HEDGE_DIR = DATA_DIR / "hedge"
 HOLDINGS_PATH = HEDGE_DIR / "holdings.json.gz"
 PERFORMANCE_PATH = HEDGE_DIR / "fund_performance.json.gz"
 ATTRIBUTION_PATH = HEDGE_DIR / "alpha_attribution.json"
+
+
+def _aggregate_alpha_attribution(ciks: list[int], results: dict,
+                                 contribs: dict) -> dict:
+    """Sum per-stock alpha contributions across the requested funds."""
+    agg: dict = {}
+    total_alpha = 0.0
+    n = 0
+    for cik in ciks:
+        rec = results.get(str(cik))
+        if not rec:
+            continue
+        n += 1
+        total_alpha += rec["alpha"]
+        for ticker, (contribution, issuer) in contribs.get(cik, {}).items():
+            stock = agg.setdefault(ticker, {
+                "issuer": issuer, "contribution": 0.0, "n_funds": 0, "top": None})
+            stock["contribution"] += contribution
+            stock["n_funds"] += 1
+            stock["issuer"] = issuer or stock["issuer"]
+            if stock["top"] is None or contribution > stock["top"][2]:
+                stock["top"] = (rec["cik"], rec["name"], contribution)
+
+    stocks = [{
+        "ticker": ticker,
+        "issuer": stock["issuer"],
+        "contribution": round(stock["contribution"], 4),
+        "share": round(stock["contribution"] / total_alpha, 4) if total_alpha else 0,
+        "n_funds": stock["n_funds"],
+        "top_fund_cik": stock["top"][0],
+        "top_fund_name": stock["top"][1],
+    } for ticker, stock in agg.items()]
+    stocks.sort(key=lambda row: row["contribution"], reverse=True)
+    return {"total_alpha": round(total_alpha, 4), "n_funds": n, "stocks": stocks}
 
 
 def _write_alpha_attribution(cfg: dict, results: dict, contribs: dict) -> None:
@@ -62,35 +97,27 @@ def _write_alpha_attribution(cfg: dict, results: dict, contribs: dict) -> None:
         return (r["n_periods"] >= min_f - 1 and r["coverage"] >= min_cov
                 and r.get("hit_rate") is not None and r["hit_rate"] > min_hit)
 
-    agg: dict = {}
-    total_alpha = 0.0
-    n = 0
-    for cik, rec in results.items():
-        if not ranked(rec):
-            continue
-        n += 1
-        total_alpha += rec["alpha"]
-        for t, (c, issuer) in contribs.get(int(cik), {}).items():
-            a = agg.get(t)
-            if a is None:
-                a = agg[t] = {"issuer": issuer, "contribution": 0.0, "n_funds": 0, "top": None}
-            a["contribution"] += c
-            a["n_funds"] += 1
-            a["issuer"] = issuer or a["issuer"]
-            if a["top"] is None or c > a["top"][2]:
-                a["top"] = (rec["cik"], rec["name"], c)
-
-    stocks = [{"ticker": t, "issuer": d["issuer"], "contribution": round(d["contribution"], 4),
-               "share": round(d["contribution"] / total_alpha, 4) if total_alpha else 0,
-               "n_funds": d["n_funds"], "top_fund_cik": d["top"][0], "top_fund_name": d["top"][1]}
-              for t, d in agg.items()]
-    stocks.sort(key=lambda x: x["contribution"], reverse=True)
+    ranked_ciks = [int(cik) for cik, rec in results.items() if ranked(rec)]
+    attribution = _aggregate_alpha_attribution(ranked_ciks, results, contribs)
+    specialist_ciks = [
+        record["cik"] for record in configured_specialists(h)
+        if str(record["cik"]) in results
+    ]
+    specialist_attribution = _aggregate_alpha_attribution(
+        specialist_ciks, results, contribs)
     from datetime import datetime, timezone
-    save_json(ATTRIBUTION_PATH, {"generated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-                                 "total_alpha": round(total_alpha, 4), "n_funds": n, "stocks": stocks})
+    save_json(ATTRIBUTION_PATH, {
+        "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        **attribution,
+        "specialists": specialist_attribution,
+    })
     log.info("Alpha attribution: %d ranked funds, total alpha %.1f (sum of fund alphas); top stock %s = %.0f%% of it",
-             n, total_alpha, stocks[0]["ticker"] if stocks else "-",
-             100 * stocks[0]["share"] if stocks else 0)
+             attribution["n_funds"], attribution["total_alpha"],
+             attribution["stocks"][0]["ticker"] if attribution["stocks"] else "-",
+             100 * attribution["stocks"][0]["share"] if attribution["stocks"] else 0)
+    log.info("Specialist alpha attribution: %d pinned funds, total alpha %.1f",
+             specialist_attribution["n_funds"],
+             specialist_attribution["total_alpha"])
 
 
 def _ticker_for(cusip: str):
@@ -234,15 +261,26 @@ def run(ciks=None, today: date = None) -> None:
             continue
         by_fund[h["cik"]][h["filing_date"]].append(h)
 
-    # Price every filing date (+ today) once, across all funds. Prune snapshots to the
-    # union of tickers actually held over the window + benchmark, so the price cache
-    # never stores the ~4k market names no fund holds.
-    needed_dates = {fd for f in by_fund.values() for fd in f} | {today_iso}
-    keep = {t for h in holdings.values() if not h.get("put_call")
-            for t in [_ticker_for(h["cusip"])] if t} | {benchmark}
+    # Price every filing date (+ today) once. Track the tickers actually needed on
+    # each date so a newly resolved specialist holding refreshes only its own entry/
+    # exit snapshots rather than invalidating every historical grouped-day cache.
+    needed_by_date: dict[str, set[str]] = defaultdict(set)
+    for filings in by_fund.values():
+        filing_dates = sorted(filings)
+        for i, filing_date in enumerate(filing_dates):
+            exit_date = filing_dates[i + 1] if i + 1 < len(filing_dates) else today_iso
+            tickers = {_ticker_for(h["cusip"]) for h in filings[filing_date]
+                       if not h.get("put_call")}
+            tickers.discard(None)
+            needed_by_date[filing_date].update(tickers)
+            needed_by_date[exit_date].update(tickers)
+    needed_dates = set(needed_by_date) | {today_iso}
+    for day in needed_dates:
+        needed_by_date[day].add(benchmark)
+    keep = set().union(*needed_by_date.values()) if needed_by_date else {benchmark}
     log.info("Pricing %d filing dates (+today) for %d funds | keep-set %d tickers",
              len(needed_dates), len(by_fund), len(keep))
-    price_map = build_price_map(needed_dates, keep=keep)
+    price_map = build_price_map(needed_dates, keep=keep, keep_by_date=needed_by_date)
     if benchmark not in price_map.get(today_iso, {}):
         log.warning("Benchmark %s not found on %s — SPY returns may be incomplete",
                     benchmark, today_iso)

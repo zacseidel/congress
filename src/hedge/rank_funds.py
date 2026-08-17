@@ -25,6 +25,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import DATA_DIR, load_config, load_json, load_json_gz, save_json, setup_logging
+from specialist_funds import configured_specialists
 
 log = setup_logging("rank_funds")
 
@@ -35,6 +36,7 @@ REPORT_INDEX = HEDGE_DIR / "report_index.json"
 ATTRIBUTION_PATH = HEDGE_DIR / "alpha_attribution.json"
 CHANGES_PATH = HEDGE_DIR / "changes.json.gz"
 STOCK_PAGES_PATH = HEDGE_DIR / "stock_pages.json"
+SPECIALIST_HOLDINGS_PATH = HEDGE_DIR / "specialist_holdings.json"
 DOCS_DIR = Path(__file__).parent.parent.parent / "docs" / "hedge"
 
 TEMPLATE = """<!DOCTYPE html>
@@ -56,6 +58,7 @@ TEMPLATE = """<!DOCTYPE html>
  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;} tr:last-child td{border-bottom:none;}
  tbody tr:hover{background:#f6f8fa;} .pos{color:var(--green);} .neg{color:var(--red);}
  .pill{display:inline-block;font-size:11px;padding:1px 7px;border-radius:10px;background:#dafbe1;color:var(--green);}
+ .pill.warn{background:#fff8c5;color:#7d4e00;}
  .ctrack{display:inline-block;width:56px;height:9px;background:#eaeef2;border-radius:2px;vertical-align:middle;overflow:hidden;margin-right:7px;}
  .cbar{display:block;height:100%;background:var(--green);border-radius:2px;}
  .wave{background:#ddf4ff;border:1px solid #54aeff;color:#0a3069;border-radius:8px;padding:10px 14px;font-size:14px;margin:14px 0 4px;}
@@ -73,10 +76,47 @@ TEMPLATE = """<!DOCTYPE html>
   &ldquo;Mirror the disclosed book, buy at each 13F&rsquo;s public filing date, rebalance at the next filing.&rdquo;
   Alpha = cumulative fund return &minus; SPY over the same windows.</p>
 <div class="disclaimer">Coverage = share of book value we could price. Funds that beat SPY in &le;50% of their
-  quarters, or with too few filings / low coverage, are gated out (kept in the data, not shown).
+  quarters, or with too few filings / low coverage, are gated out of leaderboard ranking.
+  Curated specialists may still be shown separately with an unranked label.
   Educational use only — not investment advice.</div>
 {% if snapshot %}<div class="disclaimer" style="background:#ddf4ff;border-color:#54aeff;color:#0a3069">
   📌 Archived snapshot of the <b>{{ as_of }}</b> 13F filing wave. <a href="index.html">View the live leaderboard →</a></div>{% endif %}
+
+{% if specialists %}
+<h2 id="specialists">📌 Pinned specialists <span class="muted small">curated funds remain visible even when performance data is not rankable</span></h2>
+<table><thead><tr><th>Specialty</th><th>Fund</th><th class="num">Alpha*</th>
+  <th class="num">Beat SPY</th><th class="num">Book</th><th class="num">Cov</th><th>Status</th></tr></thead><tbody>
+{% for s in specialists %}<tr><td>{{ s.category }}</td>
+  <td><a href="funds/{{ s.cik }}.html">{{ s.label }}</a>
+    {% if s.label != s.name %}<span class="small muted">· {{ s.name }}</span>{% endif %}</td>
+  <td class="num {{ 'pos' if s.alpha>=0 else 'neg' }}">{{ '%+.1f'|format(100*s.alpha) }}%</td>
+  <td class="num">{{ ('%.0f%%'|format(100*s.hit_rate)) if s.hit_rate is not none else '—' }}</td>
+  <td class="num">${{ '%.1f'|format(s.latest_book/1e9) }}B</td>
+  <td class="num">{{ '%.0f'|format(100*s.coverage) }}%</td>
+  <td>{% if s.status == 'ranked' %}<span class="pill">ranked</span>
+    {% else %}<span class="pill warn">unranked</span> <span class="small muted">{{ s.reason }}</span>{% endif %}</td>
+</tr>{% endfor %}
+</tbody></table>
+<p class="small muted">*Modeled results for unranked specialists are provisional and do not affect the leaderboard.</p>
+{% endif %}
+
+{% if specialist_overlap %}
+<h2>🧬 Shared holdings among pinned specialists
+  <span class="muted small">latest disclosed long positions; showing {{ specialist_overlap|length }} of {{ n_specialist_overlap }}, ordered by fund count then combined conviction</span></h2>
+<table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Funds</th><th>Held by</th>
+  <th class="num">Combined value</th><th class="num">Avg wt</th><th class="num">Alpha contrib.</th></tr></thead><tbody>
+{% for h in specialist_overlap %}<tr>
+  <td>{{ tlink(h.ticker) }}</td><td class="small">{{ h.issuer[:30] }}</td>
+  <td class="num">{{ h.n_funds }}/{{ n_specialists }}</td>
+  <td class="small">{% for f in h.funds %}{{ flink(f.cik, f.label) }}{% if not loop.last %}, {% endif %}{% endfor %}</td>
+  <td class="num">${{ '%.0f'|format(h.combined_value/1e6) }}M</td>
+  <td class="num" title="Average position weight among pinned funds that hold it">{{ '%.1f'|format(100*h.avg_weight) }}%</td>
+  <td class="num {{ 'pos' if h.alpha_contribution is not none and h.alpha_contribution >= 0 else 'neg' }}"
+      title="Sum of this stock's modeled contribution to alpha across pinned specialists">{{ '%+.1fpp'|format(100*h.alpha_contribution) if h.alpha_contribution is not none else '—' }}</td>
+</tr>{% endfor %}
+</tbody></table>
+<p class="small muted">Alpha contribution uses the same modeled weight &times; excess-return methodology as the fund pages, summed across the pinned specialists&rsquo; full backtest history. It describes historical contribution, while the overlap columns describe current disclosed holdings. Combined value sums reported 13F values; unresolved CUSIPs are omitted.</p>
+{% endif %}
 
 <h2>📊 Stocks that drove out-performance <span class="muted small">share of the {{ n_ranked }} ranked funds&rsquo; total alpha</span></h2>
 <table><thead><tr><th>Ticker</th><th>Issuer</th><th class="num">Alpha share</th><th class="num">Funds</th><th>Top contributing fund</th></tr></thead><tbody>
@@ -112,7 +152,7 @@ TEMPLATE = """<!DOCTYPE html>
 </tr>{% endfor %}
 </tbody></table>
 {% if gated %}<details style="margin-top:24px"><summary style="cursor:pointer"><b>Gated out ({{ n_gated }})</b>
-  <span class="muted small">&mdash; beat-rate &le; 50%, too few filings, or coverage &lt; {{ min_cov }}%; kept in the data, not clickable. Showing first {{ gated|length }}.</span></summary>
+  <span class="muted small">&mdash; beat-rate &le; 50%, too few filings, or coverage &lt; {{ min_cov }}%; kept in the data. Showing first {{ gated|length }}.</span></summary>
 <table style="margin-top:10px"><thead><tr><th>Fund</th><th class="num">Alpha*</th><th class="num">Cov</th><th class="num">Qtrs</th><th>Reason</th></tr></thead><tbody>
 {% for r in gated %}<tr><td>{{ r.name }}</td>
   <td class="num">{{ '%+.1f'|format(100*r.alpha) }}%</td>
@@ -132,6 +172,18 @@ TEMPLATE = """<!DOCTYPE html>
 """
 
 
+def _gate_reason(record: dict, min_filings: int, min_cov: float, min_hit: float) -> str:
+    reasons = []
+    if record["n_periods"] < min_filings - 1:   # N filings -> N-1 completed periods
+        reasons.append(f"only {record['n_periods']} periods")
+    if record["coverage"] < min_cov:
+        reasons.append(f"coverage {100*record['coverage']:.0f}%")
+    hit_rate = record.get("hit_rate")
+    if hit_rate is None or hit_rate <= min_hit:
+        reasons.append(f"beat-rate {100*(hit_rate or 0):.0f}%")
+    return "; ".join(reasons)
+
+
 def run() -> None:
     from jinja2 import Template
     cfg = load_config().get("hedge", {})
@@ -141,28 +193,47 @@ def run() -> None:
     watchlist_size = cfg.get("watchlist_size", 40)
     leaderboard_size = cfg.get("leaderboard_size", 500)
     pins = set(str(c) for c in cfg.get("watchlist_pins", []))
+    specialist_specs = configured_specialists(cfg)
 
     if not PERFORMANCE_PATH.exists():
         log.error("No fund_performance.json; run backtest_13f.py first")
         return
     perf = load_json_gz(PERFORMANCE_PATH)
 
-    ranked, gated = [], []
+    ranked, gated, records_by_cik = [], [], {}
     for cik, r in perf.items():
-        reasons = []
-        if r["n_periods"] < min_filings - 1:   # N filings -> N-1 completed periods
-            reasons.append(f"only {r['n_periods']} periods")
-        if r["coverage"] < min_cov:
-            reasons.append(f"coverage {100*r['coverage']:.0f}%")
-        hitr = r.get("hit_rate")
-        if hitr is None or hitr <= min_hit:    # must beat SPY in MORE than half its quarters
-            reasons.append(f"beat-rate {100*(hitr or 0):.0f}%")
-        (gated if reasons else ranked).append({**r, "reason": "; ".join(reasons)})
+        reason = _gate_reason(r, min_filings, min_cov, min_hit)
+        record = {**r, "reason": reason}
+        records_by_cik[int(cik)] = record
+        (gated if reason else ranked).append(record)
 
     ranked.sort(key=lambda r: r["alpha"], reverse=True)
     gated.sort(key=lambda r: r["alpha"], reverse=True)
     watchlist = {r["cik"] for r in ranked[:watchlist_size]} | {int(c) for c in pins if c.isdigit()}
     board = ranked[:leaderboard_size]        # only funds with pages are displayed/linked
+    specialists = []
+    for spec in specialist_specs:
+        record = records_by_cik.get(spec["cik"])
+        if not record:
+            log.warning("Pinned specialist CIK %s is absent from performance data", spec["cik"])
+            continue
+        specialists.append({
+            **spec,
+            "name": record["name"],
+            "alpha": record["alpha"],
+            "cumulative_return": record["cumulative_return"],
+            "spy_return": record["spy_return"],
+            "coverage": record["coverage"],
+            "latest_book": record["latest_book"],
+            "n_periods": record["n_periods"],
+            "hit_rate": record.get("hit_rate"),
+            "status": "unranked" if record["reason"] else "ranked",
+            "reason": record["reason"],
+        })
+    specialist_data = load_json(SPECIALIST_HOLDINGS_PATH) \
+        if SPECIALIST_HOLDINGS_PATH.exists() else {"overlap": []}
+    all_specialist_overlap = specialist_data.get("overlap", [])
+    specialist_overlap = all_specialist_overlap[:cfg.get("specialist_overlap_size", 30)]
 
     # leaderboard DATA keeps the full ranked set; the page only shows `board` (clickable).
     rankings = {
@@ -173,6 +244,9 @@ def run() -> None:
                          "coverage": r["coverage"], "latest_book": r["latest_book"],
                          "n_periods": r["n_periods"], "hit_rate": r.get("hit_rate")} for r in ranked],
         "watchlist_ciks": sorted(watchlist),
+        "specialists": specialists,
+        "specialist_overlap": specialist_overlap,
+        "n_specialist_overlap": len(all_specialist_overlap),
     }
     save_json(RANKINGS_PATH, rankings)
 
@@ -258,7 +332,10 @@ def run() -> None:
     def render(snapshot: bool, archive) -> str:
         return tmpl.render(
             generated=rankings["generated"], leaderboard=board, gated=gated[:60], n_gated=len(gated),
-            watchlist=watchlist, n_ranked=len(ranked), n_total=len(perf),
+            watchlist=watchlist, specialists=specialists,
+            specialist_overlap=specialist_overlap, n_specialists=len(specialists),
+            n_specialist_overlap=len(all_specialist_overlap),
+            n_ranked=len(ranked), n_total=len(perf),
             drivers=drivers, buying_now=buying_now, min_cov=int(100 * min_cov),
             snapshot=snapshot, as_of=as_of, archive=archive)
 

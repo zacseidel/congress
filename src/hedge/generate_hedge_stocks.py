@@ -32,12 +32,14 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import DATA_DIR, load_config, load_json, load_json_gz, save_json, save_json_gz, setup_logging
 from resolve_cusip import cached as cusip_cached
 from holdings_io import load_holdings
+from specialist_funds import configured_specialists
 
 log = setup_logging("generate_hedge_stocks")
 
 HEDGE_DIR = DATA_DIR / "hedge"
 STOCK_HOLDERS_PATH = HEDGE_DIR / "stock_holders.json.gz"   # per-ticker hedge data (all held tickers)
 STOCK_PAGES_PATH = HEDGE_DIR / "stock_pages.json"          # featured tickers to render even if congress-untraded
+SPECIALIST_HOLDINGS_PATH = HEDGE_DIR / "specialist_holdings.json"
 TOP_HOLDERS = 15
 TOP_BUYERS = 15
 
@@ -45,6 +47,68 @@ TOP_BUYERS = 15
 def _ticker(cusip):
     rec = cusip_cached(cusip)
     return rec.get("ticker") if rec else None
+
+
+def _build_specialist_overlap(holdings: dict, specialists: list[dict],
+                              perf: dict, attribution: dict = None) -> list[dict]:
+    """Latest long positions shared by at least two configured specialists."""
+    alpha_by_ticker = {
+        row["ticker"]: row["contribution"]
+        for row in (attribution or {}).get("stocks", [])
+    }
+    specs = {record["cik"]: record for record in specialists}
+    if len(specs) < 2:
+        return []
+    latest_date: dict[int, str] = {}
+    for holding in holdings.values():
+        cik = holding["cik"]
+        if cik in specs:
+            latest_date[cik] = max(latest_date.get(cik, ""), holding["filing_date"])
+
+    positions: dict = defaultdict(float)
+    issuers: dict[str, str] = {}
+    for holding in holdings.values():
+        cik = holding["cik"]
+        if (cik not in specs or holding.get("put_call")
+                or holding["filing_date"] != latest_date.get(cik)):
+            continue
+        ticker = _ticker(holding["cusip"])
+        if not ticker:
+            continue
+        positions[(ticker, cik)] += holding["value"]
+        issuers.setdefault(ticker, holding.get("issuer", ""))
+
+    by_ticker: dict = defaultdict(list)
+    for (ticker, cik), value in positions.items():
+        performance = perf.get(str(cik), {})
+        book = performance.get("latest_book") or 0
+        spec = specs[cik]
+        by_ticker[ticker].append({
+            "cik": cik,
+            "label": spec["label"],
+            "name": performance.get("name") or spec["label"],
+            "value": round(value, 0),
+            "weight": round(value / book, 5) if book else 0,
+        })
+
+    overlap = []
+    for ticker, funds in by_ticker.items():
+        if len(funds) < 2:
+            continue
+        funds.sort(key=lambda fund: fund["weight"], reverse=True)
+        overlap.append({
+            "ticker": ticker,
+            "issuer": issuers.get(ticker, ""),
+            "n_funds": len(funds),
+            "combined_value": round(sum(fund["value"] for fund in funds), 0),
+            "combined_weight": round(sum(fund["weight"] for fund in funds), 5),
+            "avg_weight": round(sum(fund["weight"] for fund in funds) / len(funds), 5),
+            "alpha_contribution": alpha_by_ticker.get(ticker),
+            "funds": funds,
+        })
+    overlap.sort(key=lambda row: (
+        -row["n_funds"], -row["combined_weight"], -row["combined_value"], row["ticker"]))
+    return overlap
 
 
 def run() -> None:
@@ -121,6 +185,18 @@ def run() -> None:
                   "holders": hs, "buyers": bs}
     save_json_gz(STOCK_HOLDERS_PATH, out)
 
+    # Editorially pinned specialists stay separate from ranking eligibility. Their
+    # overlap is based on each manager's latest disclosed long book.
+    specialists = configured_specialists(hcfg)
+    overlap = _build_specialist_overlap(
+        holdings, specialists, perf, attr.get("specialists"))
+    save_json(SPECIALIST_HOLDINGS_PATH, {
+        "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        "n_specialists": len(specialists),
+        "specialists": specialists,
+        "overlap": overlap,
+    })
+
     # featured: top-N alpha contributors + top-N skill-weighted new buys (standalone pages
     # even if Congress never traded them).
     featured = {s["ticker"] for s in attr.get("stocks", [])[:n_drivers]}
@@ -130,6 +206,8 @@ def run() -> None:
                                  "tickers": sorted(featured)})
     log.info("Hedge stock data: %d tickers held/bought by ranked funds; %d featured -> %s",
              len(out), len(featured), STOCK_HOLDERS_PATH.name)
+    log.info("Pinned specialist overlap: %d stocks held by 2+ of %d funds -> %s",
+             len(overlap), len(specialists), SPECIALIST_HOLDINGS_PATH.name)
 
 
 if __name__ == "__main__":

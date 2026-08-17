@@ -41,6 +41,7 @@ import rank_funds
 import diff_holdings
 import generate_hedge_stocks
 import generate_hedge_report
+from specialist_funds import configured_specialist_ciks
 
 log = setup_logging("backfill_hedge")
 
@@ -59,19 +60,24 @@ def run(top_n: int = None, do_discover: bool = False, seed: bool = False,
         discover_quarters: int = 3, reprice: bool = False) -> None:
     cfg = load_config().get("hedge", {})
     top_n = top_n or cfg.get("candidate_pool_size", 1000)
+    specialist_ciks = configured_specialist_ciks(cfg)
 
     # Weekly reprice: holdings are unchanged since the last quarterly fetch, so skip the
     # EDGAR stages and just re-mark to current prices + re-render. changes.json (Q/Q new
     # buys/exits) is likewise unchanged, so diff_holdings is skipped and its output reused.
     if reprice:
         log.info("[reprice] Re-marking existing holdings to current prices (no EDGAR fetch)")
-        log.info("[1/4] Backtesting mirror portfolios")
+        if specialist_ciks:
+            log.info("[1/5] Retrying unresolved CUSIPs for %d pinned specialists",
+                     len(specialist_ciks))
+            resolve_cusip.run(refresh_misses=True, ciks=specialist_ciks)
+        log.info("[2/5] Backtesting mirror portfolios")
         backtest_13f.run()
-        log.info("[2/4] Rendering per-stock pages")
+        log.info("[3/5] Rendering per-stock pages")
         generate_hedge_stocks.run()
-        log.info("[3/4] Ranking + rendering leaderboard")
+        log.info("[4/5] Ranking + rendering leaderboard")
         rank_funds.run()
-        log.info("[4/4] Rendering per-fund pages")
+        log.info("[5/5] Rendering per-fund pages")
         generate_hedge_report.run()
         log.info("Hedge reprice complete.")
         return
@@ -95,6 +101,10 @@ def run(top_n: int = None, do_discover: bool = False, seed: bool = False,
 
     log.info("[3/5] Resolving CUSIPs")
     resolve_cusip.run()
+    if specialist_ciks:
+        log.info("Retrying unresolved CUSIPs for %d pinned specialists",
+                 len(specialist_ciks))
+        resolve_cusip.run(refresh_misses=True, ciks=specialist_ciks)
 
     log.info("[4/8] Backtesting mirror portfolios")
     backtest_13f.run()
