@@ -1,5 +1,89 @@
 [
   {
+    "id": "fecf594d53e28c8b50f56ff9b79d4951ff4b637e4a0c93849b980288b8d6ea93",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Why Navitas Semiconductor Stock Sank This Week",
+    "author": "Keith Noonan",
+    "published_utc": "2026-08-22T11:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/22/why-navitas-semiconductor-stock-sank-this-week/?source=iedfolrf0000001",
+    "tickers": [
+      "NVTS",
+      "FN"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F884586%2Fgettyimages-83077315-copy.jpg&w=1200&op=resize",
+    "description": "Navitas Semiconductor stock fell 10.3% this week as investors reacted negatively to Fabrinet's quarterly earnings report, despite no direct negative news for Navitas. The market's increased sensitivity to high capital expenditures in the AI hardware space and concerns about long-term returns on investments caused a broader selloff affecting specialized AI hardware players.",
+    "keywords": [
+      "AI hardware",
+      "capital expenditures",
+      "valuation trends",
+      "gross margin decline",
+      "semiconductor stocks"
+    ],
+    "insights": [
+      {
+        "ticker": "NVTS",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock declined 10.3% this week and is down 59% from its 2026 high. While the company had no direct negative business news, it was caught in a broader selloff triggered by investor concerns about capital expenditures and valuation pressures in the AI hardware sector."
+      },
+      {
+        "ticker": "FN",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Despite beating earnings estimates and issuing strong guidance, the stock tumbled due to investor focus on declining gross margins and high capital expenditures, triggering a broader selloff in the AI hardware industry."
+      }
+    ]
+  },
+  {
+    "id": "3671e713b3fd3f99a83ce8284cbaa50fb1c379b34dc2497443d475aba2a0ce68",
+    "publisher": {
+      "name": "Investing.com",
+      "homepage_url": "https://www.investing.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+    },
+    "title": "3 Quiet AI Revenue Accelerators With Sales Growth Outpacing Peers",
+    "author": "Nathan Reiff",
+    "published_utc": "2026-07-08T16:26:00Z",
+    "article_url": "https://www.investing.com/analysis/3-quiet-ai-revenue-accelerators-with-sales-growth-outpacing-peers-200683563",
+    "tickers": [
+      "FN",
+      "MTSI",
+      "CRDO"
+    ],
+    "amp_url": "https://m.investing.com/analysis/3-quiet-ai-revenue-accelerators-with-sales-growth-outpacing-peers-200683563?ampMode=1",
+    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+    "description": "Three semiconductor and optical connectivity companies\u2014Fabrinet, MACOM Technology Solutions, and Credo Technology Group\u2014are identified as overlooked AI revenue accelerators with strong sales growth momentum. Fabrinet reported record $1.2B quarterly revenue (39% YOY growth) and trades at an attractive 5x P/S ratio. MACOM achieved 22.5% YOY sales growth with data center revenue expected to exceed 60% growth. Credo experienced 157% YOY quarterly revenue growth to $437M, driven by optical connectivity solutions. All three companies have strong analyst support with predominantly Buy ratings.",
+    "keywords": [
+      "AI revenue accelerators",
+      "semiconductor companies",
+      "optical connectivity",
+      "data center growth",
+      "sales growth",
+      "analyst ratings"
+    ],
+    "insights": [
+      {
+        "ticker": "FN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Record quarterly revenue of $1.2B with 39% YOY growth, strong analyst support (6 Buy, 4 Hold ratings), attractive P/S valuation of 5x, and 32% upside potential forecast. Company is positioned at a critical bottleneck in the AI supply chain with aggressive capacity expansion plans."
+      },
+      {
+        "ticker": "MTSI",
+        "sentiment": "positive",
+        "sentiment_reasoning": "22.5% YOY sales growth beating expectations, record book-to-bill ratio of 1.5, management raised data center growth guidance to over 60%, margin expansion with adjusted gross margin of 59%-60%, and strong analyst consensus with 11 Buy ratings versus 3 Holds. Diversified growth drivers beyond AI including industrial and defense."
+      },
+      {
+        "ticker": "CRDO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Exceptional 157% YOY quarterly revenue growth to record $437M, non-GAAP net income of $227M, shares up 85% year-to-date, competitive PEG ratio of 1.1, and strong analyst support with 17 Buy ratings versus 2 Holds. Optical revenue expected to exceed $600M in current fiscal year."
+      }
+    ]
+  },
+  {
     "id": "ea96be3f6185683cd89fdb1a0e571bea7e47c75a4eec041e1b46f09bc424392e",
     "publisher": {
       "name": "Investing.com",
@@ -236,109 +320,6 @@
         "ticker": "XTL",
         "sentiment": "neutral",
         "sentiment_reasoning": "Mentioned as the ETF containing the three outperforming stocks, but not analyzed for investment merit in the article."
-      }
-    ]
-  },
-  {
-    "id": "4a9b72ca83f31614b2c19c548690d45712c85e608ede60980add41448ff268b1",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "Fabrinet Stock Tumbles Despite Q3 Earnings, Revenue Beats",
-    "author": "Erica Kollmann",
-    "published_utc": "2026-05-04T21:09:55Z",
-    "article_url": "https://www.benzinga.com/markets/earnings/26/05/52268730/fabrinet-stock-tumbles-despite-q3-earnings-revenue-beats?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "FN"
-    ],
-    "image_url": "https://cdn.benzinga.com/files/images/story/2026/05/04/Fabrinet_0.jpeg?width=1200&height=800&fit=crop",
-    "description": "Fabrinet reported strong Q3 results with earnings per share of $3.72 (beating consensus of $3.56 by 4.49%) and revenue of $1.21 billion (exceeding the $1.18 billion estimate). Despite the earnings beat and record financial results, the stock fell 10.84% to $640 in after-hours trading. The company provided Q4 guidance with adjusted EPS of $3.72-$3.87 and revenue of $1.25-$1.29 billion.",
-    "keywords": [
-      "earnings beat",
-      "revenue beat",
-      "stock decline",
-      "Q3 results",
-      "guidance",
-      "after-hours trading"
-    ],
-    "insights": [
-      {
-        "ticker": "FN",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Despite beating earnings and revenue estimates with record financial results, the stock declined 10.84% in after-hours trading. The negative price action contradicts the positive earnings results, suggesting investor disappointment with either the guidance outlook or other market factors."
-      }
-    ]
-  },
-  {
-    "id": "120120c5c1aad2f6534cf3bf29a1b7f810f97f095a33307bde75977213491cf9",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Meet the Unstoppable Vanguard ETF Beating the S&P 500, the Nasdaq-100, and the Dow Jones in 2026",
-    "author": "Anthony Di Pizio",
-    "published_utc": "2026-04-30T12:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/04/30/vanguard-etf-beat-sp-500-nasdaq-dow-vtwo/?source=iedfolrf0000001",
-    "tickers": [
-      "VTWO",
-      "BE",
-      "CDE",
-      "HL",
-      "HLpB",
-      "FN",
-      "NVDA"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F867474%2Fan-investor-looking-at-their-smartphone-with-computer-screens-in-the-background-showing-stock-prices.jpg&w=1200&op=resize",
-    "description": "The Vanguard Russell 2000 ETF is outperforming major U.S. indexes in 2026 with an 11.1% return year-to-date. Small-cap companies in the Russell 2000 are more insulated from geopolitical risks as they conduct most business domestically, while large-cap tech-heavy indexes face headwinds from global instability. The Russell's diversified sector composition and exposure to beneficiaries of U.S. government policies position it to continue outperforming in 2026.",
-    "keywords": [
-      "Russell 2000",
-      "small-cap stocks",
-      "geopolitical risks",
-      "domestic companies",
-      "ETF performance",
-      "AI infrastructure",
-      "precious metals"
-    ],
-    "insights": [
-      {
-        "ticker": "VTWO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The ETF is outperforming major indexes with 11.1% YTD returns in 2026. Its diversified portfolio, domestic focus, and insulation from geopolitical risks position it favorably for continued outperformance."
-      },
-      {
-        "ticker": "BE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock has surged 1,100% over the past year, benefiting from explosive demand for clean energy solutions from AI data center operators and U.S. manufacturing advantages."
-      },
-      {
-        "ticker": "CDE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock has tripled over 12 months, benefiting from surging gold and silver prices and North American mining operations insulated from geopolitical risks."
-      },
-      {
-        "ticker": "HL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock has tripled over 12 months, benefiting from precious metals price increases and North American operations providing geopolitical insulation."
-      },
-      {
-        "ticker": "HLpB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock has tripled over 12 months, benefiting from precious metals price increases and North American operations providing geopolitical insulation."
-      },
-      {
-        "ticker": "FN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock has tripled over 12 months amid soaring demand for high-speed networking components for AI data centers from major tech customers like Nvidia and Amazon."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While a tech leader in revenue and earnings growth, significant overseas business exposure creates headwinds from geopolitical uncertainty, limiting its relative performance in 2026."
       }
     ]
   }

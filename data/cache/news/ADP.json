@@ -1,5 +1,44 @@
 [
   {
+    "id": "86836421768eaac0e9ead16ab8f3e0d4dcda1b6986a4dad080b3a593446e4481",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Microsoft vs. Automatic Data Processing: Scale vs. Seasonality in Revenue",
+    "author": "John Ballard",
+    "published_utc": "2026-08-06T20:11:01Z",
+    "article_url": "https://www.fool.com/coverage/charts/2026/08/06/microsoft-vs-automatic-data-processing-scale-vs-seasonality-in-revenue/?source=iedfolrf0000001",
+    "tickers": [
+      "MSFT",
+      "ADP"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Fcharts%2Fproduction%2Fprocessed%2Fmsft-adp%2Fquarter%2Frevenue%2Fbar%2Fprimary%2Fstandard%2Flimit-8%2Flatest%2Fmsft-adp_quarter_revenue_bar_primary_standard_limit8.png&w=1200&op=resize",
+    "description": "Microsoft demonstrates superior revenue growth and consistency compared to Automatic Data Processing, with Microsoft growing at mid-teens rates while ADP grows at mid-single-digit rates. Microsoft's $388 billion annual revenue, driven by 43% Azure cloud growth and 30 million Copilot paid seats, positions it as the leader in AI monetization. ADP's AI platform The Zone shows adoption but hasn't meaningfully lifted revenue growth yet, suggesting the gap between the companies may continue to widen.",
+    "keywords": [
+      "revenue growth",
+      "cloud computing",
+      "AI adoption",
+      "enterprise software",
+      "business comparison",
+      "market positioning"
+    ],
+    "insights": [
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Microsoft shows strong and consistent revenue growth (18% YoY), significant Azure cloud expansion (43% growth), successful AI monetization with 30 million Copilot paid seats, and is positioned as the leader in enterprise AI infrastructure and services."
+      },
+      {
+        "ticker": "ADP",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "ADP demonstrates stable but modest revenue growth (6.7% YoY) with seasonal fluctuations, high client retention (92%), and AI platform adoption through The Zone. However, AI offerings have not yet meaningfully accelerated revenue growth, and the company faces a widening competitive gap with Microsoft."
+      }
+    ]
+  },
+  {
     "id": "a12c4fded641a9f3e7f303bc2320998bc4ceee2c60ae12cab1b0d057473f276f",
     "publisher": {
       "name": "The Motley Fool",
@@ -158,40 +197,6 @@
         "ticker": "ADP",
         "sentiment": "positive",
         "sentiment_reasoning": "Despite a 36% stock decline, the article presents a bullish case arguing the selloff is excessive. ADP's diversified HR services, strategic AI integration, strong financial position, and 51-year dividend growth streak (Dividend King status) support the recommendation as a 'buy and hold forever' opportunity at depressed valuations with an above-average 3.2% dividend yield."
-      }
-    ]
-  },
-  {
-    "id": "e13f2061f492ae1c17f9563ff373283d53d11c8634d73bd1a6d85c0338970b5c",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "1 Magnificent Dividend Stock Down 35% to Buy and Hold Forever",
-    "author": "Thomas Niel",
-    "published_utc": "2026-02-27T02:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/02/26/1-magnificent-dividend-stock-down-x-to-buy-and-hol/?source=iedfolrf0000001",
-    "tickers": [
-      "ADP"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F857203%2Fgetty-dividend-income.jpg&w=1200&op=resize",
-    "description": "Automatic Data Processing (ADP) has declined 35% from its 52-week high due to concerns about a sluggish labor market and potential disruption from artificial intelligence. However, the article argues this may represent an overreaction, as ADP continues to show steady revenue and earnings growth, maintains Dividend King status with 51 consecutive years of dividend increases, and trades at attractive valuations below its historical average multiples.",
-    "keywords": [
-      "dividend stock",
-      "payroll processing",
-      "artificial intelligence",
-      "labor market",
-      "dividend growth",
-      "valuation",
-      "earnings growth"
-    ],
-    "insights": [
-      {
-        "ticker": "ADP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Despite recent 35% decline, ADP demonstrates resilience with steady 6% revenue growth forecasts, 8-10% earnings growth expectations, 51-year dividend growth streak, and attractive valuation trading below historical multiples. The article suggests current market concerns about AI and labor market are overblown, presenting a buying opportunity for long-term investors."
       }
     ]
   }

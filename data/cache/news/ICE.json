@@ -1,5 +1,107 @@
 [
   {
+    "id": "6bce88ce92fe06f0001daf2466e7efdbe59a36fc37f0050381ae0ddaa349c0b9",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Bill Ackman\u2019s Pershing Square Just Bought Netflix and 5 Other Stocks. Here\u2019s What Investors Need to Know.",
+    "author": "Bram Berkowitz",
+    "published_utc": "2026-08-13T16:12:01Z",
+    "article_url": "https://www.fool.com/investing/2026/08/13/bill-ackmans-pershing-square-just-bought-netflix-and-5-other-stocks-heres-what-investors-need-to-know/?source=iedfolrf0000001",
+    "tickers": [
+      "NFLX",
+      "V",
+      "MA",
+      "SPGI",
+      "ICE",
+      "ALC"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F4da1086146c66d386e6db444a89afd6bcf7daa31-1280x853.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Bill Ackman's Pershing Square deployed 85% of its $5 billion capital raise by purchasing Netflix, Visa, Mastercard, S&P Global, Intercontinental Exchange, and Alcon. The fund targeted stocks that have sold off due to AI disruption concerns, believing these companies have competitive advantages that will allow them to thrive despite AI-related headwinds.",
+    "keywords": [
+      "Pershing Square",
+      "Bill Ackman",
+      "capital deployment",
+      "AI disruption",
+      "streaming wars",
+      "payment networks",
+      "financial data analytics"
+    ],
+    "insights": [
+      {
+        "ticker": "NFLX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Ackman purchased after 50% decline, viewing Netflix as the streaming wars winner with competitive moat. Believes AI concerns are overstated and Netflix can leverage AI for content recommendations and ad targeting while amortizing costs across largest user base."
+      },
+      {
+        "ticker": "V",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Bought despite AI and stablecoin disruption fears. Ackman believes the massive global network would take herculean effort to replicate and companies have failed to disrupt it for decades."
+      },
+      {
+        "ticker": "MA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Purchased amid AI and regulatory concerns about credit card interest rates. Similar thesis to Visa regarding competitive moat and difficulty in replicating global payment networks."
+      },
+      {
+        "ticker": "SPGI",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Acquired despite AI concerns about replicating its offerings. Ackman views benchmark franchises as high-margin IP licensing businesses with formidable competitive moat in oligopolistic market."
+      },
+      {
+        "ticker": "ICE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "New position established as operator of global exchanges and clearing houses, representing infrastructure with significant competitive advantages."
+      },
+      {
+        "ticker": "ALC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Purchased as global leader in ophthalmology, representing a specialized healthcare sector less vulnerable to AI disruption concerns."
+      }
+    ]
+  },
+  {
+    "id": "88c9973226a01fecd267b3ded791e57f3059d869972f66eb72e3f351a1fcd35d",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "MKTX Alert: Monsey Firm of Wohl & Fruchter Investigating Fairness of the Proposed Sale of MarketAxess to Intercontinental Exchange",
+    "author": "Wohl & Fruchter Llp",
+    "published_utc": "2026-08-06T13:40:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/08/06/3340411/0/en/MKTX-Alert-Monsey-Firm-of-Wohl-Fruchter-Investigating-Fairness-of-the-Proposed-Sale-of-MarketAxess-to-Intercontinental-Exchange.html",
+    "tickers": [
+      "MKTX",
+      "ICE"
+    ],
+    "image_url": "https://www.globenewswire.com/news-release/2026/08/06/3340411/0/en/MKTX-Alert-Monsey-Firm-of-Wohl-Fruchter-Investigating-Fairness-of-the-Proposed-Sale-of-MarketAxess-to-Intercontinental-Exchange.html",
+    "description": "Law firm Wohl & Fruchter is investigating whether the proposed sale of MarketAxess to Intercontinental Exchange at $167.00 per share is fair to shareholders, given the stock's 52-week high of $200.90 and a recent UBS price target of $200.00. Shareholders have expressed concerns that the deal undervalues the company.",
+    "keywords": [
+      "merger investigation",
+      "fairness opinion",
+      "shareholder concerns",
+      "acquisition",
+      "valuation dispute"
+    ],
+    "insights": [
+      {
+        "ticker": "MKTX",
+        "sentiment": "negative",
+        "sentiment_reasoning": "The proposed acquisition price of $167.00 per share is significantly below the 52-week high of $200.90 and below analyst price targets, with shareholders expressing concerns about undervaluation and potential mismanagement of the sale process."
+      },
+      {
+        "ticker": "ICE",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "ICE is the acquirer in the transaction; the article suggests the deal may be opportunistic but does not directly criticize ICE's conduct or business fundamentals."
+      }
+    ]
+  },
+  {
     "id": "13b1a0b5bba57d6a05c15cf196c261863e0070cc877459bed2e8e31ec17154e5",
     "publisher": {
       "name": "The Motley Fool",
@@ -134,93 +236,6 @@
         "ticker": "ICE",
         "sentiment": "positive",
         "sentiment_reasoning": "NYSE parent company disclosed plans for $2 billion investment in Polymarket at $8 billion valuation, signaling institutional confidence in prediction market growth and positioning the company to benefit from market expansion."
-      }
-    ]
-  },
-  {
-    "id": "bbb05ee160ea8f3340eb9580031d2c484f834c864d79012bac155c86f9946245",
-    "publisher": {
-      "name": "Investing.com",
-      "homepage_url": "https://www.investing.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
-    },
-    "title": "Tokenized Stocks Advance With First On-Chain Vote for Galaxy Digital Shareholders",
-    "author": "Tim Baker",
-    "published_utc": "2026-04-08T20:11:00Z",
-    "article_url": "https://www.investing.com/analysis/tokenized-stocks-advance-with-first-onchain-vote-for-galaxy-digital-shareholders-200678085",
-    "tickers": [
-      "GLXY",
-      "BR",
-      "NDAQ",
-      "ICE"
-    ],
-    "amp_url": "https://m.investing.com/analysis/tokenized-stocks-advance-with-first-onchain-vote-for-galaxy-digital-shareholders-200678085?ampMode=1",
-    "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
-    "description": "Galaxy Digital is set to become the first US public company to conduct a shareholder vote on-chain in May 2026, facilitated by Broadridge Financial Solutions on an Avalanche Layer 1 network. This milestone represents a significant advancement in tokenized equities, moving them from passive holdings to fully functional governance vehicles with complete shareholder rights. Broadridge's platform already processes $8 trillion in tokenized assets monthly, while major exchanges including Nasdaq and NYSE have accelerated their own on-chain equity frameworks.",
-    "keywords": [
-      "tokenized stocks",
-      "on-chain voting",
-      "blockchain governance",
-      "shareholder rights",
-      "digital transfer agent",
-      "proxy voting",
-      "institutional adoption"
-    ],
-    "insights": [
-      {
-        "ticker": "GLXY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Galaxy Digital is pioneering the first on-chain shareholder vote for a US public company, positioning it as a leader in tokenized equity adoption and demonstrating commitment to modernizing corporate governance infrastructure."
-      },
-      {
-        "ticker": "BR",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Broadridge is providing the critical infrastructure for tokenized governance at scale, processing $8 trillion in tokenized assets monthly and positioning itself as essential plumbing for institutional-scale tokenization adoption."
-      },
-      {
-        "ticker": "NDAQ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Nasdaq received formal SEC approval to trade tokenized securities in a pilot program, demonstrating regulatory progress and the exchange's proactive role in advancing on-chain equity frameworks."
-      },
-      {
-        "ticker": "ICE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "NYSE's partnership with Securitize and designation of the first digital transfer agent eligible to mint blockchain-native securities demonstrates the exchange's commitment to digital trading infrastructure."
-      }
-    ]
-  },
-  {
-    "id": "163d041a88d652229d348f66d27e3bacf1f20f357cc04920bbf0d4c97e42ba43",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Lone Wolf Boost Comes to ICE Paragon Connect, Giving Agents Instant Access to Automated Digital Advertising",
-    "author": "Not Specified",
-    "published_utc": "2026-03-30T14:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/03/30/3264729/0/en/Lone-Wolf-Boost-Comes-to-ICE-Paragon-Connect-Giving-Agents-Instant-Access-to-Automated-Digital-Advertising.html",
-    "tickers": [
-      "ICE"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/ee02de0b-c560-4dab-ad24-93f6e6267f0f",
-    "description": "Lone Wolf Technologies has integrated Lone Wolf Boost directly into ICE Paragon Connect, enabling real estate agents to launch automated digital advertising campaigns for listings and open houses without leaving their MLS platform. The integration streamlines ad management across multiple websites and social media, eliminating manual setup and workflow interruptions.",
-    "keywords": [
-      "real estate software",
-      "digital advertising",
-      "MLS platform",
-      "automated campaigns",
-      "Lone Wolf Boost",
-      "ICE Paragon Connect",
-      "marketing automation"
-    ],
-    "insights": [
-      {
-        "ticker": "ICE",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "ICE's Paragon Connect platform is being enhanced through a third-party integration, which adds value to their MLS solutions. However, the article includes a disclaimer that ICE does not endorse specific participants, and the sentiment is neutral as this is a partnership announcement rather than direct ICE business news."
       }
     ]
   }

@@ -1,287 +1,344 @@
 [
   {
-    "id": "b9c090bcf87b9a7ecc3d7f68d268c3fad6d3f2e39c06e94ee27a0f42737b9dd7",
+    "id": "033a5c171eb209ccb1561b312ab0d9b24d84e10c98c0b2f0562a5826195221df",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Prediction: AMD Stock Could Double by 2028. Here's Why",
-    "author": "Adam Spatacco",
-    "published_utc": "2026-07-29T10:28:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/29/prediction-amd-stock-could-double-by-2028-heres-wh/?source=iedfolrf0000001",
+    "title": "Is Broadcom in Trouble Now That Alphabet Is Getting Chips From Marvell Too?",
+    "author": "Marc Guberti",
+    "published_utc": "2026-08-25T11:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/25/is-broadcom-in-trouble-now-that-alphabet-is-gettin/?source=iedfolrf0000001",
     "tickers": [
+      "AVGO",
+      "MRVL",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "NVDA",
       "AMD",
-      "MSFT",
-      "META",
-      "NVDA"
+      "META"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880688%2Famd-logo.png&w=1200&op=resize",
-    "description": "AMD is positioned to capture significant market share in AI accelerators with major contracts from Microsoft, Meta, OpenAI, and Anthropic providing multi-year revenue visibility. Wall Street projects AMD's revenue to grow from $50B in 2026 to over $100B by 2028, with EPS rising from $7.50 to $20. Even with P/E compression from current levels of 64 to 48-52, the stock could appreciate up to 101% by 2028.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F884513%2Fgettyimages-2183527075-1200x675-128554e.jpg&w=1200&op=resize",
+    "description": "Broadcom's stock dropped over 10% after Alphabet announced an expanded partnership with Marvell Technologies for custom AI chips. However, the article argues this shouldn't concern investors, as Broadcom remains the dominant leader in custom AI chip design (ASICs) with strong fundamentals. Alphabet's diversification with Marvell mirrors how Meta works with multiple GPU suppliers, and doesn't necessarily mean reduced Broadcom orders. Broadcom's AI segment showed 143% year-over-year revenue growth and management expects it to more than triple in the next quarter.",
     "keywords": [
-      "AMD",
-      "AI accelerators",
-      "GPU",
-      "data center",
-      "hyperscalers",
-      "semiconductor",
-      "stock valuation",
-      "revenue growth"
+      "AI chips",
+      "custom chip design",
+      "ASICs",
+      "semiconductor partnerships",
+      "supply chain diversification",
+      "data center demand"
     ],
     "insights": [
       {
-        "ticker": "AMD",
+        "ticker": "AVGO",
         "sentiment": "positive",
-        "sentiment_reasoning": "AMD has secured major multi-year contracts with leading tech companies (Microsoft, Meta, OpenAI, Anthropic), demonstrating competitive viability against Nvidia. Wall Street projects exceptional growth with revenue and EPS more than doubling by 2028 (50%+ CAGR). Even accounting for P/E multiple compression, analyst projections suggest up to 101% upside potential."
+        "sentiment_reasoning": "Despite recent stock decline, the article highlights Broadcom's dominant market position in custom AI chips (ASICs), exceptional 143% YoY revenue growth in AI segment, and strong forward guidance expecting revenue to more than triple. The sell-off is characterized as a buying opportunity given strengthening fundamentals."
       },
       {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Microsoft is integrating AMD's Helios suite across Azure for AI workloads, indicating strategic commitment to AMD's technology and expanding AI infrastructure capabilities."
+        "ticker": "MRVL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While Marvell secured an expanded partnership with Alphabet, the article positions it as a distant second to Broadcom in the custom chip space, similar to how AMD trails Nvidia in GPUs. The partnership is viewed as diversification rather than a threat to Broadcom's dominance."
       },
       {
-        "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Meta committed to a multi-year deployment of up to 6 gigawatts of AMD Instinct GPUs, demonstrating confidence in AMD's AI accelerator technology for scaling operations."
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet's expanded Marvell partnership is presented as a strategic diversification move to mitigate supply chain risks and experiment with multiple suppliers, rather than a shift away from Broadcom. The company will likely continue purchasing from both suppliers given growing AI infrastructure demands."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet's expanded Marvell partnership is presented as a strategic diversification move to mitigate supply chain risks and experiment with multiple suppliers, rather than a shift away from Broadcom. The company will likely continue purchasing from both suppliers given growing AI infrastructure demands."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet's expanded Marvell partnership is presented as a strategic diversification move to mitigate supply chain risks and experiment with multiple suppliers, rather than a shift away from Broadcom. The company will likely continue purchasing from both suppliers given growing AI infrastructure demands."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Alphabet's expanded Marvell partnership is presented as a strategic diversification move to mitigate supply chain risks and experiment with multiple suppliers, rather than a shift away from Broadcom. The company will likely continue purchasing from both suppliers given growing AI infrastructure demands."
       },
       {
         "ticker": "NVDA",
         "sentiment": "neutral",
-        "sentiment_reasoning": "While Nvidia maintains first-mover advantage in AI accelerators, AMD is increasingly capturing market share with high-profile wins, positioning itself as a credible alternative competitor."
+        "sentiment_reasoning": "Mentioned as the dominant GPU chipmaker with a massive lead over AMD. Used as a comparison point to illustrate Broadcom's similar dominance in ASICs, but not directly impacted by the Alphabet-Marvell news."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Referenced as a distant second to Nvidia in GPUs. Used as an analogy for Marvell's position relative to Broadcom, but not directly involved in the Alphabet partnership announcement."
+      },
+      {
+        "ticker": "META",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Cited as an example of a company that maintains relationships with multiple chip suppliers (Nvidia and AMD for GPUs), supporting the article's thesis that Alphabet's Marvell partnership doesn't necessarily reduce Broadcom orders."
       }
     ]
   },
   {
-    "id": "d157e9f5855b45a0cf9f068229e2739b72794d676766512c91398b1b23bc46b5",
+    "id": "c31d6f0e6c86a6a2bccbbb3191ad7746b662befb26cbacf2258f640eef61e79b",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Nvidia's Quiet Bet on AI Sandboxes Could Decide Who Wins the AI Agent Era",
-    "author": "Beegee Alop",
-    "published_utc": "2026-07-28T17:34:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/28/nvidias-quiet-bet-on-ai-sandboxes-could-decide-who/?source=iedfolrf0000001",
+    "title": "Prediction: TSMC Stock Will Soar After Aug. 26 Thanks to Nvidia\u2019s Historic Quarter",
+    "author": "Harsh Chauhan",
+    "published_utc": "2026-08-25T07:23:01Z",
+    "article_url": "https://www.fool.com/investing/2026/08/25/prediction-tsmc-stock-will-soar-after-aug-26-thanks-to-nvidia-s-historic-quarter/?source=iedfolrf0000001",
+    "tickers": [
+      "TSM",
+      "NVDA",
+      "QCOM",
+      "AAPL",
+      "AMD"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F686dba8efcbfe57c251cc40bc234ae39c9ad99a2-2000x1200.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "TSMC is expected to benefit from Nvidia's strong earnings report on Aug. 26. As Nvidia's largest customer (accounting for over 20% of TSMC's revenue), Nvidia's robust order book, new chip generation launches, and potential 15% price hikes should drive TSMC's growth. Analysts project TSMC's EPS could reach $47.75 by 2030, potentially pushing the stock to $1,150 (182% upside from current levels).",
+    "keywords": [
+      "semiconductor",
+      "AI chips",
+      "foundry services",
+      "earnings report",
+      "price hikes",
+      "revenue growth",
+      "customer concentration"
+    ],
+    "insights": [
+      {
+        "ticker": "TSM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "TSMC is positioned to benefit from Nvidia's strong earnings and anticipated price increases for foundry services. Analysts are raising revenue and EPS expectations, with long-term growth projections of 35% annually. The article projects significant upside potential of 182% by 2030."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Nvidia is expected to deliver a blockbuster quarter with record revenue of $91 billion and 95% YoY growth. The company has a massive $1 trillion order book, is launching new Vera Rubin chips, and planning 15% price hikes, indicating strong momentum and market dominance."
+      },
+      {
+        "ticker": "QCOM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Qualcomm is mentioned as one of TSMC's customers but receives no specific analysis or commentary regarding its prospects or performance."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Apple is mentioned as one of TSMC's customers but receives no specific analysis or commentary regarding its prospects or performance."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "AMD is mentioned as one of TSMC's customers but receives no specific analysis or commentary regarding its prospects or performance."
+      }
+    ]
+  },
+  {
+    "id": "b91f4d206cc6f208cb7b9b6d44460647eb11b03deeea49cd9effd8c0ef6ffc1c",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Where Will Nvidia Stock Be in 5 Years?",
+    "author": "Harsh Chauhan",
+    "published_utc": "2026-08-24T17:23:01Z",
+    "article_url": "https://www.fool.com/investing/2026/08/24/where-will-nvidia-stock-be-in-5-years/?source=iedfolrf0000001",
     "tickers": [
       "NVDA",
+      "MRVL",
       "AMD",
-      "INTC",
-      "ARM",
-      "AMZN",
-      "MSFT",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN"
+      "INTC"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880840%2Fai-sandbox.png&w=1200&op=resize",
-    "description": "As AI agents begin executing code rather than just generating text, enterprises will need isolated sandbox environments to safely run generated code. This creates a new infrastructure market where Nvidia bets on faster cores, AMD on more cores per rack, Intel on existing x86 compatibility, and hyperscalers on custom silicon. The winner will be determined by which approach most efficiently completes agent tasks at scale.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Ffb220ae712815f10c44d733e8421671142c3d900-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Nvidia, currently the world's largest company with a $5.2 trillion market cap, is positioned for continued growth through expansion into custom AI processors, optical networking, and server CPUs. Analysts project the company could reach an $11 trillion market cap by 2030 if it sustains 15% revenue growth and maintains a 12x price-to-sales ratio, potentially doubling current valuations.",
     "keywords": [
-      "AI agents",
-      "code execution",
-      "sandboxes",
-      "CPU architecture",
-      "enterprise infrastructure",
-      "processor competition",
-      "cloud computing"
+      "Nvidia",
+      "AI chips",
+      "data center",
+      "custom processors",
+      "optical networking",
+      "server CPU",
+      "market growth",
+      "revenue projections"
     ],
     "insights": [
       {
         "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Nvidia is positioning its Vera CPU with 88 custom cores and 10-wide decode engines to handle agent execution workloads. The company is betting on faster, wider cores to complete blocking tasks quickly and plans to sell stand-alone Vera racks, creating a new revenue path beyond GPU systems."
+        "sentiment_reasoning": "Strong growth catalysts identified including expansion into custom AI processors ($118B market by 2033), optical networking ($154B market potential), and server CPUs ($200B addressable market). Revenue projected to reach $918B by 2030 with potential market cap doubling to $11 trillion."
+      },
+      {
+        "ticker": "MRVL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strategic $2 billion partnership with Nvidia to provide custom AI processors, positioning Marvell as a key player in the fast-growing custom AI chip market estimated at $118 billion by 2033."
       },
       {
         "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "AMD's Venice architecture supports up to 256 cores per socket and can scale beyond 36,000 cores per liquid-cooled rack. The company emphasizes compatibility with existing x86 tools and software, positioning itself as a practical choice for enterprises migrating agent workloads while maintaining architectural familiarity."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a competitor in the server CPU market alongside Intel, but no specific analysis provided regarding competitive positioning or impact from Nvidia's expansion."
       },
       {
         "ticker": "INTC",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Intel's strategy relies on existing Xeon infrastructure familiarity and adding more cores through Xeon 6+ processors. However, the article suggests Intel faces challenges proving its existing workforce can compete on cost and performance, making its position more defensive than proactive in the emerging agent execution market."
+        "sentiment_reasoning": "Mentioned as a dominant player in server CPUs that Nvidia is now competing against, but no detailed analysis of competitive threat or market impact provided."
+      }
+    ]
+  },
+  {
+    "id": "efc7ed1497232d622696814de0c0c2f947c333e39c8a6a1108c5089df6055b8f",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Why Direxion Daily Semiconductor Bull 3X ETF Dropped Today",
+    "author": "Rich Smith",
+    "published_utc": "2026-08-24T16:34:55Z",
+    "article_url": "https://www.fool.com/investing/2026/08/24/why-direxion-daily-semiconductor-bull-3x-etf-dropp/?source=iedfolrf0000001",
+    "tickers": [
+      "SOXL",
+      "MU",
+      "AMD",
+      "NVDA",
+      "SNDK",
+      "AAPL"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F884665%2Fred-map-of-china-with-a-rising-green-stock-arrow-superimposed.jpg&w=1200&op=resize",
+    "description": "The Direxion Daily Semiconductor Bull 3X ETF (SOXL) dropped 8% after the Trump Administration permitted Apple to purchase memory chips from Chinese suppliers ChangXin Memory Technologies and Yangtze Memory Technologies. This decision threatens U.S. memory chip manufacturers like Micron and SanDisk, which are major SOXL holdings. The leveraged ETF amplifies semiconductor sector losses, causing significant declines across holdings including Micron, AMD, and Nvidia.",
+    "keywords": [
+      "semiconductor ETF",
+      "leveraged ETF",
+      "China trade policy",
+      "memory chips",
+      "Micron",
+      "competitive threat"
+    ],
+    "insights": [
+      {
+        "ticker": "SOXL",
+        "sentiment": "negative",
+        "sentiment_reasoning": "ETF dropped 8% due to negative semiconductor sector news. The 3x leverage amplifies losses when semiconductor stocks decline, making it particularly vulnerable to sector downturns."
       },
       {
-        "ticker": "ARM",
+        "ticker": "MU",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Down ~5% today as the largest SOXL holding. Faces direct competitive threat from Chinese memory chip manufacturers (CXMT and YMTC) that have received new funding and regulatory approval to supply Apple."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Trading in the red as the second-largest SOXL holding, affected by broader semiconductor sector weakness driven by China competition concerns."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Down 2% as the third-largest SOXL holding, impacted by semiconductor sector decline triggered by Chinese competitive threats to U.S. memory chip manufacturers."
+      },
+      {
+        "ticker": "SNDK",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Down ~6% as a NAND flash memory manufacturer facing direct competition from Chinese supplier YMTC, which has received regulatory approval to supply Apple."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Gains regulatory approval to source memory chips from Chinese suppliers, potentially reducing costs, but not directly mentioned as declining in the article."
+      }
+    ]
+  },
+  {
+    "id": "fcbe55ee52268d1037b78f014ebc9da8209bfa8fbe66ebe5497a2eb8ba0edaf4",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Beyond Nvidia, AMD, and Broadcom: Why This Chip Stock Will Emerge as the Biggest Winner of the AI Semiconductor Boom",
+    "author": "Adam Levy",
+    "published_utc": "2026-08-24T09:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/24/beyond-nvidia-amd-and-broadcom-why-this-chip-stock/?source=iedfolrf0000001",
+    "tickers": [
+      "TSM",
+      "NVDA",
+      "AMD",
+      "AVGO",
+      "AMZN",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "MRVL"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F884501%2Fgettyimages-ai-artificial-intelligence-chip-semiconductor-circuit.jpeg&w=1200&op=resize",
+    "description": "While Nvidia, AMD, and Broadcom have benefited from AI demand, Taiwan Semiconductor Manufacturing (TSMC) is positioned as the ultimate winner due to its dominant manufacturing capacity, technological lead, and scale. As hyperscalers increasingly adopt custom silicon chips, all designs ultimately rely on TSMC for production. The company controls 73% of third-party chip manufacturing spending and is investing $60-64 billion in capital expenditures to meet surging demand, while trading at a reasonable 24.5x forward earnings with projected 30% EPS growth.",
+    "keywords": [
+      "AI semiconductors",
+      "chip manufacturing",
+      "custom silicon",
+      "foundry services",
+      "capital expenditure",
+      "GPU demand",
+      "hyperscale data centers"
+    ],
+    "insights": [
+      {
+        "ticker": "TSM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Arm benefits from multiple competing Arm-based processors (Nvidia Vera, AWS Graviton, Microsoft Cobalt, Google Axion) gaining market share. As the instruction set blueprint supplier, Arm can monetize the market regardless of which specific processor dominates, creating a win-win scenario."
+        "sentiment_reasoning": "Positioned as the primary beneficiary of AI boom due to dominant 73% market share in third-party chip manufacturing, technological superiority, massive scale advantages, and virtuous cycle of profitability. Stock valued at reasonable 24.5x forward earnings with 30% projected EPS growth."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While benefiting from AI compute demand with strong GPU sales, faces future headwinds from hyperscalers' shift toward custom silicon chips and capital constraints limiting data center build-outs."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Experiencing strong demand for competing GPUs but subject to same structural challenges as Nvidia regarding custom silicon adoption and capital constraints in hyperscale environments."
+      },
+      {
+        "ticker": "AVGO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Key partner for hyperscalers designing custom chips (e.g., Google's TPUs), but design partnerships are described as 'fickle' with companies switching to alternative partners, reducing long-term competitive moat."
       },
       {
         "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Amazon is preparing agent infrastructure through AWS Lambda MicroVMs and custom Graviton processors. As a hyperscaler controlling the entire workplace (hardware, software, services), Amazon can optimize total cost efficiency and potentially capture more value than merchant chip vendors."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Microsoft is adding isolated agent-execution environments to Azure and developing custom Cobalt processors. The company can integrate these with GitHub and enterprise software, giving it advantages in optimizing the complete workplace for agent execution."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as adopting custom Trainium chips to reduce capital expenditures, representing broader industry trend toward custom silicon rather than off-the-shelf GPUs."
       },
       {
         "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Increasing use of custom TPU chips and beginning to sell TPUs to third parties, exemplifying hyperscaler shift toward proprietary silicon designs."
       },
       {
         "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Increasing use of custom TPU chips and beginning to sell TPUs to third parties, exemplifying hyperscaler shift toward proprietary silicon designs."
       },
       {
         "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Increasing use of custom TPU chips and beginning to sell TPUs to third parties, exemplifying hyperscaler shift toward proprietary silicon designs."
       },
       {
         "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
-      }
-    ]
-  },
-  {
-    "id": "3615bff5a4075bdde9c00f169a0e8ce4a0a0cff9200dd7549d57f371fdc54a19",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Could AMD Dethrone Nvidia?",
-    "author": "Catie Hogan",
-    "published_utc": "2026-07-27T16:25:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/27/could-amd-dethrone-nvidia/?source=iedfolrf0000001",
-    "tickers": [
-      "AMD",
-      "NVDA",
-      "MSFT",
-      "META"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880334%2Famd-and-nvidia-logos.png&w=1200&op=resize",
-    "description": "AMD is gaining ground in the AI chip market with major partnerships including deals with Anthropic, Microsoft Azure, OpenAI, and Meta, plus securing workloads from Turing. However, Nvidia still dominates with 80% market share and $75B in quarterly data center revenue compared to AMD's 5-7% market share. The article suggests both companies can grow substantially in the estimated $200B AI accelerator market by 2026, with AMD stock up 158% YTD versus Nvidia's 12% gain.",
-    "keywords": [
-      "AI chips",
-      "market share",
-      "accelerators",
-      "data center",
-      "competition",
-      "partnerships",
-      "AI computing"
-    ],
-    "insights": [
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "AMD is securing major partnerships (Anthropic, Microsoft, OpenAI, Meta), developing competitive accelerators, gaining customer workloads from competitors, and showing strong stock performance (158% YTD). The company is successfully closing the gap in the AI accelerator market."
-      },
-      {
-        "ticker": "NVDA",
         "sentiment": "neutral",
-        "sentiment_reasoning": "While Nvidia maintains dominant market position (80% share) and strong data center revenue ($75B quarterly), the article notes increased competitive pressure from AMD, stock underperformance (12% YTD), and potential for AMD to exceed performance in certain workloads. Position remains strong but facing headwinds."
+        "sentiment_reasoning": "Increasing use of custom TPU chips and beginning to sell TPUs to third parties, exemplifying hyperscaler shift toward proprietary silicon designs."
       },
       {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Microsoft's Azure platform commitment to AMD's Helios rack-scale platform indicates diversification of AI chip suppliers and strengthened partnership, reducing dependency on single vendor."
-      },
-      {
-        "ticker": "META",
+        "ticker": "MRVL",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Meta has existing partnership with AMD for AI accelerators, indicating vendor diversification strategy but no specific new developments mentioned in the article."
-      }
-    ]
-  },
-  {
-    "id": "c5afd34a7f4f07926652647eb01bb3813ed02628c8629ff4e5e9972623fb9740",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "How Lisa Su Has Positioned AMD to Be a Big AI Winner and Why the Stock Is a Buy",
-    "author": "Geoffrey Seiler",
-    "published_utc": "2026-07-27T06:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/27/how-lisa-su-has-positioned-amd-to-be-a-big-ai-winn/?source=iedfolrf0000001",
-    "tickers": [
-      "AMD",
-      "NVDA",
-      "META",
-      "MSFT"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880538%2Flisa-su_amd_amd_ceo_imagesource_advanced-micro-devices-inc.jpg&w=1200&op=resize",
-    "description": "AMD CEO Lisa Su has strategically positioned the company as a major AI winner through major deals with OpenAI, Meta, Anthropic, and Microsoft for GPU deployments, innovative chiplet designs for inference workloads, and expansion into server CPUs. With agentic AI expected to shift GPU-to-CPU ratios and AMD targeting a $220 billion server CPU market with 50% market share, the company is positioned for significant growth.",
-    "keywords": [
-      "artificial intelligence",
-      "GPU",
-      "inference",
-      "chiplet design",
-      "server CPU",
-      "agentic AI",
-      "ROCm software",
-      "data centers"
-    ],
-    "insights": [
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "CEO Lisa Su has secured major partnerships with leading AI companies (OpenAI, Meta, Anthropic, Microsoft), positioned AMD's GPUs for the growing inference market, and expanded into high-margin server CPUs for agentic AI with ambitious market share targets."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as the dominant competitor in AI chips; article frames AMD as emerging as a competitive alternative but does not provide specific negative or positive developments about Nvidia."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Signed a similar GPU partnership deal with AMD following OpenAI's commitment, validating AMD's AI infrastructure strategy."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Partnered with AMD to deploy Helios rack-scale solutions in data centers for inference, expanding AMD's presence in a major cloud provider's infrastructure."
-      }
-    ]
-  },
-  {
-    "id": "8267d99958f1fcb524eb5db6727a324b4e58c90d9fd113fdbe3f9d1cf97e3fd1",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Nvidia's Jensen Huang Confirmed Vera Rubin Chips Are Already in Production",
-    "author": "Lyle Daly",
-    "published_utc": "2026-07-26T12:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/26/nvidias-jensen-huang-confirmed-vera-rubin-chips-ar/?source=iedfolrf0000001",
-    "tickers": [
-      "NVDA",
-      "AMD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879324%2Fjensen-huang_nvidia_nvda_ceo_imagesource_nvidia-corporation.jpg&w=1200&op=resize",
-    "description": "Nvidia CEO Jensen Huang dismissed reports of delays to the Vera Rubin AI chip platform, confirming that the chips are already in production with 'giant amounts of production incoming.' While SemiAnalysis had reported a 12+ month delay to the Kyber NVL144 rack-scale solution, Huang stated the reports are 'not true.' The confirmation is important given Vera Rubin's crucial role in Nvidia's forward earnings projections and the company's $1 trillion combined sales forecast for Blackwell and Vera Rubin through 2027.",
-    "keywords": [
-      "Vera Rubin",
-      "AI chips",
-      "production timeline",
-      "Kyber NVL144",
-      "earnings projections",
-      "GPU market",
-      "semiconductor"
-    ],
-    "insights": [
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "CEO's confirmation that Vera Rubin is in production with significant production volumes incoming addresses delay concerns and supports the company's critical earnings projections. The dismissal of delay reports and maintenance of product roadmap is bullish for investors, despite the stock being down 1.01% on the day."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a potential competitor that could gain market share if Nvidia experiences delays. However, with Huang's confirmation of no delays, AMD's competitive opportunity appears limited in the near term."
+        "sentiment_reasoning": "Mentioned as potential design partner for Google's next-generation TPUs, but design partnerships are noted as unstable with companies switching vendors."
       }
     ]
   }

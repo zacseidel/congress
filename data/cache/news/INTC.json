@@ -1,327 +1,278 @@
 [
   {
-    "id": "28202b7339f79419ecf0d2aa28e9ab54fd707fb2646a40cd38a1fc967ac1608b",
+    "id": "b91f4d206cc6f208cb7b9b6d44460647eb11b03deeea49cd9effd8c0ef6ffc1c",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Sandisk Trades at 43 Times Earnings and 7 Times Next Year's Earnings Estimates. What Has to Go Right for the Cheap Number to Win?",
-    "author": "Daniel Sparks",
-    "published_utc": "2026-07-29T00:12:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/28/sandisk-trades-at-43-times-earnings-and-7-times-ne/?source=iedfolrf0000001",
+    "title": "Where Will Nvidia Stock Be in 5 Years?",
+    "author": "Harsh Chauhan",
+    "published_utc": "2026-08-24T17:23:01Z",
+    "article_url": "https://www.fool.com/investing/2026/08/24/where-will-nvidia-stock-be-in-5-years/?source=iedfolrf0000001",
     "tickers": [
-      "SNDK",
-      "MU",
+      "NVDA",
+      "MRVL",
+      "AMD",
       "INTC"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880834%2Fsndk.png&w=1200&op=resize",
-    "description": "Sandisk stock fell sharply (22.8% over two days) amid broader memory chip sector selloff. The stock presents a valuation puzzle: trading at 43x trailing earnings but only 7x forward earnings. This disconnect reflects the company's dramatic recovery from losses a year ago to $23 per share earnings as AI-driven NAND flash demand surged. The cheap forward multiple assumes earnings will continue climbing well beyond management's guidance, requiring sustained NAND price increases into 2027. While the company has secured multi-year supply agreements and maintains zero debt, the valuation carries significant cycle risk.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Ffb220ae712815f10c44d733e8421671142c3d900-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Nvidia, currently the world's largest company with a $5.2 trillion market cap, is positioned for continued growth through expansion into custom AI processors, optical networking, and server CPUs. Analysts project the company could reach an $11 trillion market cap by 2030 if it sustains 15% revenue growth and maintains a 12x price-to-sales ratio, potentially doubling current valuations.",
     "keywords": [
-      "NAND flash memory",
-      "AI infrastructure",
-      "valuation multiple",
-      "earnings recovery",
-      "memory chip pricing",
-      "data center demand",
-      "cycle risk"
-    ],
-    "insights": [
-      {
-        "ticker": "SNDK",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "The article presents a balanced view of Sandisk's investment case. While the company shows strong operational recovery with gross margins reaching 78.4% and data center revenue surging 651% year-over-year, the stock faces significant valuation risk. The 46% decline from its peak and the disconnect between trailing (43x) and forward (7x) multiples suggest the market is pricing in substantial cycle risk. The neutral sentiment reflects both the bullish fundamentals (multi-year contracts, zero debt) and bearish concerns (memory pricing cyclicality, earnings sustainability)."
-      },
-      {
-        "ticker": "MU",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Micron is mentioned only in passing as part of the 2026 memory chip sector outperformance narrative and in a comparison article reference. No specific analysis or sentiment drivers are provided in the main article content."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Intel is mentioned only in a reference to a comparison article about 2026 memory chip manufacturer performance. No substantive analysis or sentiment drivers are provided in the main article."
-      }
-    ]
-  },
-  {
-    "id": "d157e9f5855b45a0cf9f068229e2739b72794d676766512c91398b1b23bc46b5",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Nvidia's Quiet Bet on AI Sandboxes Could Decide Who Wins the AI Agent Era",
-    "author": "Beegee Alop",
-    "published_utc": "2026-07-28T17:34:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/28/nvidias-quiet-bet-on-ai-sandboxes-could-decide-who/?source=iedfolrf0000001",
-    "tickers": [
-      "NVDA",
-      "AMD",
-      "INTC",
-      "ARM",
-      "AMZN",
-      "MSFT",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880840%2Fai-sandbox.png&w=1200&op=resize",
-    "description": "As AI agents begin executing code rather than just generating text, enterprises will need isolated sandbox environments to safely run generated code. This creates a new infrastructure market where Nvidia bets on faster cores, AMD on more cores per rack, Intel on existing x86 compatibility, and hyperscalers on custom silicon. The winner will be determined by which approach most efficiently completes agent tasks at scale.",
-    "keywords": [
-      "AI agents",
-      "code execution",
-      "sandboxes",
-      "CPU architecture",
-      "enterprise infrastructure",
-      "processor competition",
-      "cloud computing"
+      "Nvidia",
+      "AI chips",
+      "data center",
+      "custom processors",
+      "optical networking",
+      "server CPU",
+      "market growth",
+      "revenue projections"
     ],
     "insights": [
       {
         "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Nvidia is positioning its Vera CPU with 88 custom cores and 10-wide decode engines to handle agent execution workloads. The company is betting on faster, wider cores to complete blocking tasks quickly and plans to sell stand-alone Vera racks, creating a new revenue path beyond GPU systems."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "AMD's Venice architecture supports up to 256 cores per socket and can scale beyond 36,000 cores per liquid-cooled rack. The company emphasizes compatibility with existing x86 tools and software, positioning itself as a practical choice for enterprises migrating agent workloads while maintaining architectural familiarity."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Intel's strategy relies on existing Xeon infrastructure familiarity and adding more cores through Xeon 6+ processors. However, the article suggests Intel faces challenges proving its existing workforce can compete on cost and performance, making its position more defensive than proactive in the emerging agent execution market."
-      },
-      {
-        "ticker": "ARM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Arm benefits from multiple competing Arm-based processors (Nvidia Vera, AWS Graviton, Microsoft Cobalt, Google Axion) gaining market share. As the instruction set blueprint supplier, Arm can monetize the market regardless of which specific processor dominates, creating a win-win scenario."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Amazon is preparing agent infrastructure through AWS Lambda MicroVMs and custom Graviton processors. As a hyperscaler controlling the entire workplace (hardware, software, services), Amazon can optimize total cost efficiency and potentially capture more value than merchant chip vendors."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Microsoft is adding isolated agent-execution environments to Azure and developing custom Cobalt processors. The company can integrate these with GitHub and enterprise software, giving it advantages in optimizing the complete workplace for agent execution."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet is preparing agent infrastructure through Google Cloud and developing custom Axion processors. Like other hyperscalers, Google can optimize the entire environment around agent execution, potentially lowering infrastructure costs and improving cloud margins."
-      }
-    ]
-  },
-  {
-    "id": "b27306efd8ab11ff9c2aeec0ee4569e88f6e27036bdde8dcd6048d881ad4f358",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "MEXC Users Put Nearly a Third of First-Month RealStocks Volume Into SpaceX",
-    "author": "Mexc",
-    "published_utc": "2026-07-28T10:44:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/28/3334086/0/en/MEXC-Users-Put-Nearly-a-Third-of-First-Month-RealStocks-Volume-Into-SpaceX.html",
-    "tickers": [
-      "SPCX",
-      "NVDA",
-      "MU",
-      "MRVL",
-      "SNDK",
-      "AVGO",
-      "TSLA",
-      "AAPL",
-      "MSFT",
-      "INTC",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/598b8f7c-1246-463e-80c4-93c05cf7fee1",
-    "description": "MEXC's RealStocks platform, which launched June 1st offering access to 7,000+ US stocks and ETFs, reported strong first-month trading insights. SpaceX dominated with 29.70% of trading volume, while seven AI-related assets collectively captured 23.67% of volume. The platform attracted over 120,000 users in its first month, with more than 40% of volume distributed outside the top 10 holdings, indicating portfolio-building behavior rather than speculative trading.",
-    "keywords": [
-      "RealStocks",
-      "US stocks",
-      "ETFs",
-      "trading volume",
-      "AI stocks",
-      "portfolio building",
-      "digital asset trading"
-    ],
-    "insights": [
-      {
-        "ticker": "SPCX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Dominated RealStocks trading with 29.70% of volume and 29.06% of users in June, indicating strong consensus and broad investor interest across both retail and active traders."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ranked in top 10 by volume on both RealStocks and futures platforms; part of AI-related assets capturing 23.67% of total trading volume, reflecting strong market demand."
-      },
-      {
-        "ticker": "MU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ranked top 10 by volume on both RealStocks and futures; part of AI-related assets group, indicating sustained investor interest in memory/data center infrastructure."
+        "sentiment_reasoning": "Strong growth catalysts identified including expansion into custom AI processors ($118B market by 2033), optical networking ($154B market potential), and server CPUs ($200B addressable market). Revenue projected to reach $918B by 2030 with potential market cap doubling to $11 trillion."
       },
       {
         "ticker": "MRVL",
         "sentiment": "positive",
-        "sentiment_reasoning": "Ranked top 10 on both platforms with 3.15% of volume; part of AI-related assets capturing significant trading activity in data center networking."
+        "sentiment_reasoning": "Strategic $2 billion partnership with Nvidia to provide custom AI processors, positioning Marvell as a key player in the fast-growing custom AI chip market estimated at $118 billion by 2033."
       },
       {
-        "ticker": "SNDK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ranked top 10 by volume on both RealStocks and futures; part of AI-related assets group focused on storage and data center infrastructure."
-      },
-      {
-        "ticker": "AVGO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Ranked high on RealStocks despite lower futures ranking; part of AI-related assets capturing 23.67% of volume in optical communications and data center networking."
-      },
-      {
-        "ticker": "TSLA",
+        "ticker": "AMD",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Ranked in core hot assets with wide participation, but no specific trading metrics highlighted; appears as secondary interest compared to SpaceX and AI stocks."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a well-known large cap drawing broad participation, but without specific volume or user metrics; represents stable, diversified portfolio interest."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a well-known large cap drawing broad participation, but without specific volume or user metrics; represents stable, diversified portfolio interest."
+        "sentiment_reasoning": "Mentioned as a competitor in the server CPU market alongside Intel, but no specific analysis provided regarding competitive positioning or impact from Nvidia's expansion."
       },
       {
         "ticker": "INTC",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a well-known large cap drawing broad participation, but without specific volume or user metrics; notably absent from top 10 lists despite AI sector focus."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a well-known large cap drawing broad participation, but without specific volume or user metrics; represents stable, diversified portfolio interest."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a well-known large cap drawing broad participation, but without specific volume or user metrics; represents stable, diversified portfolio interest."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a well-known large cap drawing broad participation, but without specific volume or user metrics; represents stable, diversified portfolio interest."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a well-known large cap drawing broad participation, but without specific volume or user metrics; represents stable, diversified portfolio interest."
+        "sentiment_reasoning": "Mentioned as a dominant player in server CPUs that Nvidia is now competing against, but no detailed analysis of competitive threat or market impact provided."
       }
     ]
   },
   {
-    "id": "cd09d8cbd65a2ddb3a9c6ec69dad3c5bfb5eb822c18ba5da40e62fc135bf80ec",
+    "id": "70fe5a8282f0e5f7df27a101e70dc1bb7f0d54b54912f18cf96673f122c1787b",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Intel Just Secured a Huge Customer for Its Foundry Business",
-    "author": "David Jagielski, Cpa",
-    "published_utc": "2026-07-27T20:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/27/intel-just-secured-a-huge-customer-for-its-foundry/?source=iedfolrf0000001",
+    "title": "Prediction: This Artificial Intelligence (AI) Semiconductor Stock Will Outperform Nvidia Over the Next 3 Years",
+    "author": "Geoffrey Seiler",
+    "published_utc": "2026-08-22T12:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/22/prediction-this-artificial-intelligence-ai-semicon/?source=iedfolrf0000001",
     "tickers": [
+      "NVDA",
+      "AMD",
+      "ARM",
       "INTC",
-      "FTNT",
-      "TSM"
+      "CBRS"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880486%2Fpeople-reviewing-a-report-on-a-computer.jpg&w=1200&op=resize",
-    "description": "Intel announced Fortinet as its first named customer for its foundry business, a significant milestone for the division. While the foundry segment showed strong 31% revenue growth to $5.8 billion in Q2, it remains unprofitable with a $2.1 billion loss. However, analysts caution that Intel's 150% stock surge this year may have already priced in these gains, with the stock trading at a forward P/E multiple exceeding 100, presenting potential downside risk despite positive business momentum.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F881449%2Famdnvda.png&w=1200&op=resize",
+    "description": "While Nvidia remains the dominant AI chip leader with strong growth, AMD is positioned to outperform over the next three years due to its competitive advantages in the faster-growing inference market and agentic AI opportunities. AMD's smaller size provides more room for explosive growth as it gains market share with its improved ROCm software, strategic acquisitions, and partnerships.",
     "keywords": [
-      "foundry business",
-      "semiconductor manufacturing",
-      "customer acquisition",
-      "Q2 earnings",
-      "valuation concerns",
-      "cybersecurity chips"
+      "AI semiconductors",
+      "inference market",
+      "agentic AI",
+      "GPU",
+      "CPU",
+      "market share",
+      "software stack"
     ],
     "insights": [
       {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recognized as the gold standard in AI semiconductors with dominant market position in LLM training, strong revenue growth (85% YoY), and attractive valuation at 24.5x forward P/E. However, limited upside potential due to its massive size."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Positioned as a serious challenger in the faster-growing inference market (32% CAGR through 2032), strong in server CPUs, strategic acquisitions (MEXT, Taalas), and partnerships (Cerebras). As a smaller company, has significant room for explosive growth and outperformance potential."
+      },
+      {
+        "ticker": "ARM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned in context of Nvidia's custom Arm-based CPUs but not a primary focus of the analysis."
+      },
+      {
         "ticker": "INTC",
         "sentiment": "neutral",
-        "sentiment_reasoning": "While Intel secured a major customer (Fortinet) and showed strong foundry growth (31% YoY), the article emphasizes valuation concerns. The stock's 150% year-to-date surge and forward P/E multiple exceeding 100 suggest gains may already be priced in, creating significant downside risk despite positive business fundamentals and government investment support."
+        "sentiment_reasoning": "Mentioned only as a competitor losing server CPU market share to AMD; not a primary subject of the article."
       },
       {
-        "ticker": "FTNT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Fortinet is highlighted as a major cybersecurity leader with nearly $7 billion in annual revenue that has chosen Intel for advanced security chip development, validating Intel's foundry competitiveness and representing a significant partnership win."
-      },
-      {
-        "ticker": "TSM",
+        "ticker": "CBRS",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as the dominant low-cost market leader that Intel must compete against. While TSM's market dominance is acknowledged, the article presents Intel's customer wins as a competitive threat, neither explicitly positive nor negative for TSM."
+        "sentiment_reasoning": "Mentioned as a partnership partner with AMD for disaggregated inference systems but not a primary investment focus."
       }
     ]
   },
   {
-    "id": "29566633b5e5d3d5651635a8caa2d963d20cf2ef6699344a1b094a5157da498d",
+    "id": "bc77b2fca18c9be5e75c175bfdd6315415ae6584d52c9cf3f50f3d58b41c8cde",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Intel Stock Fell Despite Incredible Results. History Says a $1,000 Investment Will Be Worth This Much in 3 Years",
-    "author": "Harsh Chauhan",
-    "published_utc": "2026-07-27T17:23:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/27/intel-stock-fell-despite-incredible-results-histor/?source=iedfolrf0000001",
+    "title": "Intel Sold $20 Billion of Stock at $95 a Share. It Now Trades Below $93.",
+    "author": "Daniel Sparks",
+    "published_utc": "2026-08-22T00:12:01Z",
+    "article_url": "https://www.fool.com/investing/2026/08/21/intel-sold-usd20-billion-of-stock-at-usd95-a-share-it-now-trades-below-usd93/?source=iedfolrf0000001",
     "tickers": [
       "INTC"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880661%2Fintel-flag-in-front-of-intel-headquarters-waving_intel.jpg&w=1200&op=resize",
-    "description": "Intel stock fell 8% following strong Q2 earnings that beat Wall Street expectations, with revenue up 25% YoY and EPS improving significantly. The company's AI chip business is booming with custom AI processor revenue nearly tripling. Analysts project Intel could see its $1,000 investment grow to $1,750 within three years based on expected revenue growth to $82 billion by 2028 and potential multiple expansion, though larger gains are possible given strong AI demand and cost reduction initiatives.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F7cfbee1bddc75f610e25ff51c876035b6cd9a6ee-2000x1200.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Intel raised approximately $23 billion through a stock offering priced at $95 per share on August 10, 2026, with strong institutional demand causing the deal to grow from $15 billion to $20 billion. However, the stock has since declined to below $93, leaving investors from the offering underwater. The company cited strong AI demand as justification for the capital raise, but the market is now demanding proof through future earnings before returning the stock to the offering price.",
     "keywords": [
-      "Intel earnings",
-      "AI chips",
+      "stock offering",
+      "capital raise",
+      "AI demand",
       "semiconductor",
-      "stock valuation",
-      "data center",
-      "revenue growth",
-      "process node",
-      "cost reduction"
+      "institutional investment",
+      "stock price decline"
     ],
     "insights": [
       {
         "ticker": "INTC",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock has declined approximately 3% below the $95 offering price within 11 days, with shares trading at $92.13. The rapid decline suggests market skepticism about the company's AI growth narrative despite strong recent revenue growth (25% YoY). Investors who participated in the offering are now underwater, and the market is demanding additional proof of productive capital deployment before supporting higher valuations."
+      }
+    ]
+  },
+  {
+    "id": "4d1001b212a1d36801a16659923d00339a3d6acd4b66c24d9f6bad598957a5d6",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Bloom Energy Calls Its Fuel Cells \"Lego Blocks.\" Here's Why That Word Choice Is the Whole Investment Thesis.",
+    "author": "Courtney Carlsen",
+    "published_utc": "2026-08-21T11:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/21/bloom-energy-calls-its-fuel-cells-lego-blocks-here/?source=iedfolrf0000001",
+    "tickers": [
+      "BE",
+      "ORCL",
+      "ORCLpD",
+      "BAM",
+      "NVDA",
+      "INTC",
+      "CRWV",
+      "NBIS"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883070%2Fimage-shows-bloom-energy-servers.jpg&w=1200&op=resize",
+    "description": "Bloom Energy's modular, factory-manufactured solid-oxide fuel cells are experiencing historic demand from data center developers. The \"Lego block\" design enables rapid deployment, scalability, and flexibility, attracting major customers like Oracle and Brookfield Asset Management. The company reported record Q2 revenue of $1.065 billion (166% YoY growth) with expanding margins, driven by the urgent need for quickly deployable power solutions in the AI data center buildout.",
+    "keywords": [
+      "fuel cells",
+      "data centers",
+      "modular design",
+      "renewable energy",
+      "AI infrastructure",
+      "power deployment",
+      "solid-oxide fuel cells"
+    ],
+    "insights": [
+      {
+        "ticker": "BE",
         "sentiment": "positive",
-        "sentiment_reasoning": "Intel demonstrated strong Q2 results with 25% YoY revenue growth and significant EPS improvement. The company is gaining traction in the high-demand AI chip market with custom AI processor revenue nearly tripling. Management is executing well on cost reductions and yield improvements, with guidance suggesting sustainable growth. Analysts project 75% upside potential over three years, with possibility of larger gains from stronger revenue growth and multiple expansion."
+        "sentiment_reasoning": "Record revenue growth of 166% YoY, expanding gross margins, historic surge in demand, major contract wins from Oracle and Brookfield, and strong visibility on future deployments (25 GW). Stock has surged 2,078% since November 2024."
+      },
+      {
+        "ticker": "ORCL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Committed to Bloom Energy for 2.45 GW power block at Project Jupiter AI factory, demonstrating significant investment in AI infrastructure expansion."
+      },
+      {
+        "ticker": "ORCLpD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Committed to Bloom Energy for 2.45 GW power block at Project Jupiter AI factory, demonstrating significant investment in AI infrastructure expansion."
+      },
+      {
+        "ticker": "BAM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Expanded strategic financing framework with Bloom Energy fivefold from $5B to $25B, indicating major capital commitment to data center buildout powered by Bloom's fuel cells."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as driver of data center energy demands through cutting-edge chips, but no direct business relationship with Bloom Energy discussed."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a hyperscaler/technology company interested in Bloom's solutions, but no specific commitments or details provided."
+      },
+      {
+        "ticker": "CRWV",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a hyperscaler customer of Bloom Energy, but no specific details about commitments provided."
+      },
+      {
+        "ticker": "NBIS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Selected Bloom Energy to power AI infrastructure buildout with expanded funding of up to $1.7B from Industrial Development Funding."
+      }
+    ]
+  },
+  {
+    "id": "53851b02d846875a7400481cc57858ee99295de7dd5eab4463923258ab136865",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "A Famed Billionaire Tech Investor Just Sold Nvidia Shares to Buy These 2 AI Chip Stocks",
+    "author": "Geoffrey Seiler",
+    "published_utc": "2026-08-20T12:35:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/20/billionaire-investor-sold-nvidia-ai-chip-stock/?source=iedfolrf0000001",
+    "tickers": [
+      "NVDA",
+      "CBRS",
+      "INTC",
+      "AMD",
+      "ARM"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F884004%2Fgettyimages-2078917109.jpg&w=1200&op=resize",
+    "description": "Chase Coleman of Tiger Global Management reduced his Nvidia stake in Q2 while adding a new position in Cerebras Systems and increasing Intel holdings. The article analyzes these three semiconductor stocks, highlighting Nvidia's dominant AI infrastructure position at attractive valuations, Cerebras' innovative high-speed inference chips, and Intel's late entry into the AI market with CPU demand growth.",
+    "keywords": [
+      "AI chips",
+      "semiconductor stocks",
+      "GPU",
+      "inference",
+      "data center CPUs",
+      "Tiger Global Management"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Dominant AI infrastructure player with powerful CUDA moat, expanding beyond GPUs into networking and custom chips, explosive growth potential, and attractive forward P/E of 17x for fiscal 2028."
+      },
+      {
+        "ticker": "CBRS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Innovative wafer-sized chips with SRAM embedding enable inference speeds 6x faster than competitors, securing major deals with OpenAI and AWS, partnership with AMD to offer cost-effective solutions, positioned as high-end inference winner."
+      },
+      {
+        "ticker": "INTC",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Late AI winner benefiting from general market tide rather than competitive advantage, losing server CPU market share to AMD and Arm, trailing in technology, stock no longer cheap after recent gains, foundry business experiencing heavy losses."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as gaining server CPU market share from Intel and partnering with Cerebras on cost-effective inference solutions, but not a primary focus of the article."
+      },
+      {
+        "ticker": "ARM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Noted as new entrant adding competition to Intel's server CPU market but not a primary focus."
       }
     ]
   }

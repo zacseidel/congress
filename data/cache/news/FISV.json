@@ -1,5 +1,50 @@
 [
   {
+    "id": "caac49be13859771a2fe8eb1c3074982f314f593ac08e1e97328ed45a48902f2",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Why Fiserv Stock Just Popped",
+    "author": "Rich Smith",
+    "published_utc": "2026-07-15T15:18:53Z",
+    "article_url": "https://www.fool.com/investing/2026/07/15/why-fiserv-stock-just-popped/?source=iedfolrf0000001",
+    "tickers": [
+      "PYPL",
+      "FISV",
+      "XYZ"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878980%2Fletters-m-and-a-surrounded-by-notebooks-and-computers-and-people-working-on-a-merger.jpg&w=1200&op=resize",
+    "description": "Reports of Stripe and Advent offering to acquire PayPal for $53 billion at $60.50 per share sent PayPal stock soaring 16-17%. The article suggests Fiserv could be an even more attractive takeover target, as it trades at cheaper valuations (8.4x trailing earnings vs PayPal's 8.9x) with similar growth prospects, sparking speculation of potential acquisition interest.",
+    "keywords": [
+      "mergers and acquisitions",
+      "PayPal acquisition",
+      "Fiserv valuation",
+      "fintech",
+      "takeover target",
+      "earnings multiple"
+    ],
+    "insights": [
+      {
+        "ticker": "PYPL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock surged 16-17% on acquisition offer reports at $60.50 per share, representing a 28% premium to previous closing price, indicating strong investor enthusiasm for the potential deal."
+      },
+      {
+        "ticker": "FISV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock popped 2.54% as the article positions it as an even more attractive acquisition target than PayPal due to cheaper valuation metrics (8.4x trailing earnings, 6.2x forward earnings) and similar growth rates, suggesting potential bidder interest."
+      },
+      {
+        "ticker": "XYZ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Stock rose 4.25-4.35% as one of the reported potential bidders for PayPal, but the article focuses primarily on PayPal and Fiserv valuations rather than Block's strategic implications."
+      }
+    ]
+  },
+  {
     "id": "4a9e2e475aa550559002c96a4c7070f15f54f95abd76ac4ddf5702f99068cdba",
     "publisher": {
       "name": "Investing.com",
@@ -319,64 +364,6 @@
         "ticker": "XLE",
         "sentiment": "negative",
         "sentiment_reasoning": "Slid 3.2% as standout laggard due to crude oil collapse from Iran deal and Strait reopening"
-      }
-    ]
-  },
-  {
-    "id": "7afed04e1788c8c1123ce88f0ce02d1eec179b40b9238b8765db98d274165dc0",
-    "publisher": {
-      "name": "Benzinga",
-      "homepage_url": "https://www.benzinga.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
-    },
-    "title": "Fiserv CEO Abruptly Exits For Truist, Stock Tanks",
-    "author": "Lekha Gupta",
-    "published_utc": "2026-06-15T15:22:42Z",
-    "article_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53200416/fiserv-ceo-abruptly-exits-for-truist-stock-tanks?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
-    "tickers": [
-      "FISV",
-      "TFC",
-      "TFCpI",
-      "TFCpO",
-      "TFCpR"
-    ],
-    "image_url": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/06/15/Fiserv--Inc.jpeg",
-    "description": "Fiserv announced a leadership transition with Takis Georgakopoulos appointed as new CEO, replacing Mike Lyons who is departing to lead Truist Financial. Despite reaffirming its 2026 financial guidance (1-3% organic revenue growth, $8.00-$8.30 adjusted EPS), Fiserv shares fell 7.57% as investors reacted to the executive uncertainty.",
-    "keywords": [
-      "leadership transition",
-      "CEO change",
-      "Fiserv",
-      "Truist",
-      "stock decline",
-      "financial guidance",
-      "payments technology"
-    ],
-    "insights": [
-      {
-        "ticker": "FISV",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Stock declined 7.57% following the abrupt CEO departure announcement. While the company reaffirmed its 2026 outlook, investor uncertainty about the leadership transition and the sudden nature of the change drove the sharp sell-off."
-      },
-      {
-        "ticker": "TFC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Truist gained a new CEO with strong payments and technology background from J.P. Morgan, which could be viewed positively. However, the article provides limited information about Truist's reaction, and the stock showed only a modest 3.47% decline, suggesting neutral to slightly positive market reception."
-      },
-      {
-        "ticker": "TFCpI",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Truist gained a new CEO with strong payments and technology background from J.P. Morgan, which could be viewed positively. However, the article provides limited information about Truist's reaction, and the stock showed only a modest 3.47% decline, suggesting neutral to slightly positive market reception."
-      },
-      {
-        "ticker": "TFCpO",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Truist gained a new CEO with strong payments and technology background from J.P. Morgan, which could be viewed positively. However, the article provides limited information about Truist's reaction, and the stock showed only a modest 3.47% decline, suggesting neutral to slightly positive market reception."
-      },
-      {
-        "ticker": "TFCpR",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Truist gained a new CEO with strong payments and technology background from J.P. Morgan, which could be viewed positively. However, the article provides limited information about Truist's reaction, and the stock showed only a modest 3.47% decline, suggesting neutral to slightly positive market reception."
       }
     ]
   }

@@ -1,5 +1,50 @@
 [
   {
+    "id": "666d5a980544111f0eddf223668cf5b95c96109fe2af113289127ce0820af7fb",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Data Centers Don't Just Need Power -- They Need Cooling. Trane and Carrier Sell It.",
+    "author": "Reuben Gregg Brewer",
+    "published_utc": "2026-08-22T18:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/22/data-centers-dont-just-need-power-they-need-coolin/?source=iedfolrf0000001",
+    "tickers": [
+      "TT",
+      "CARR",
+      "SPCX"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883872%2F25_10_15-a-light-bulb-with-the-letters-ai-inside-of-it-and-graphics-around-it-_gettyimages-2221494319-1201x800-5b2df79.jpg&w=1200&op=resize",
+    "description": "AI data centers require massive cooling systems to manage heat from high-power chips. Trane Technologies and Carrier Global are capitalizing on this trend with record backlogs driven by surging demand for cooling equipment. Both companies show strong order growth, though valuations are already elevated above five-year averages.",
+    "keywords": [
+      "AI data centers",
+      "cooling systems",
+      "infrastructure",
+      "backlogs",
+      "electricity demand",
+      "industrial equipment"
+    ],
+    "insights": [
+      {
+        "ticker": "TT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Record $12.1 billion backlog (up 70% YoY), organic revenue growth of 9%, adjusted earnings up 11%, and book-to-bill ratio of 135% indicating strong future sales pipeline driven by AI data center cooling demand."
+      },
+      {
+        "ticker": "CARR",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Record $8 billion backlog (up 40% YoY), commercial orders jumped 65%, and data center orders surged 300%, demonstrating massive demand for cooling solutions. However, current quarter earnings were less impressive (3% revenue growth, 7% earnings decline)."
+      },
+      {
+        "ticker": "SPCX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as building its own power plant for data centers, highlighting the scale of power requirements, but not the primary focus of the article and no specific performance metrics provided."
+      }
+    ]
+  },
+  {
     "id": "661bcc4a512254f6c9c51f40dbe6a0fb83311e23ff4fed66c4aa179828e999f7",
     "publisher": {
       "name": "Benzinga",
@@ -202,53 +247,6 @@
         "ticker": "CARR",
         "sentiment": "neutral",
         "sentiment_reasoning": "Mentioned as a partnership partner with AirJoule Technologies, but no specific updates or implications regarding Carrier's operations or performance are provided in the article."
-      }
-    ]
-  },
-  {
-    "id": "49cae73fa9af6f932c26e7bc2df66468ea3028f86ed3211208b4d98dffa947a2",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "HVAC Market Opportunity Report 2026: Surge in Urban Development, Energy Efficiency, and Smart Technologies Drive Expansion - Growth Analysis and Forecasts 2025-2035",
-    "author": "Researchandmarkets.Com",
-    "published_utc": "2026-05-25T08:42:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/05/25/3300526/28124/en/HVAC-Market-Opportunity-Report-2026-Surge-in-Urban-Development-Energy-Efficiency-and-Smart-Technologies-Drive-Expansion-Growth-Analysis-and-Forecasts-2025-2035.html",
-    "tickers": [
-      "CARR",
-      "JCI",
-      "TT"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/cbdf3173-cee4-49ad-9518-a3ad284dcd34",
-    "description": "The global HVAC market is projected to grow from USD 524.9 billion in 2025 to USD 1.2 trillion by 2035, driven by rapid urbanization, energy efficiency demands, and smart technology adoption. The air conditioning equipment segment leads with USD 215.8 billion in 2025, while the indirect distribution channel dominates with 74% market share. The U.S. market alone is valued at USD 156.9 billion and expected to grow at 10.2% CAGR.",
-    "keywords": [
-      "HVAC market growth",
-      "urban development",
-      "energy efficiency",
-      "smart technologies",
-      "air conditioning",
-      "indoor air quality",
-      "sustainable building practices",
-      "market forecast 2035"
-    ],
-    "insights": [
-      {
-        "ticker": "CARR",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major HVAC manufacturer benefiting from increased demand for energy-efficient cooling solutions and smart HVAC technologies in expanding markets."
-      },
-      {
-        "ticker": "JCI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major HVAC manufacturer well-positioned in a market expected to reach USD 1.2 trillion by 2035 with strong growth in energy-efficient systems."
-      },
-      {
-        "ticker": "TT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major HVAC manufacturer positioned to benefit from strong market growth at 8.1% CAGR and increasing demand for advanced environmental control systems."
       }
     ]
   }
