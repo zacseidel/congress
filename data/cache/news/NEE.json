@@ -1,19 +1,17 @@
 [
   {
-    "id": "d8f9ce00075fb2e7b2f88827ca377d8f231d55142f7831424bf40edf93be07c2",
+    "id": "cde25b6f509e3de02193790d1f4fffd8341afc6a16acf31bf013c6b675ecb711",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "The Hidden Winners of the AI Power Crunch: 3 Utilities to Watch",
-    "author": "Courtney Carlsen",
-    "published_utc": "2026-08-07T10:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/07/the-hidden-winners-of-the-ai-power-crunch-3-utilit/?source=iedfolrf0000001",
+    "title": "Better Energy Play: NextEra vs. Constellation Energy",
+    "author": "Catie Hogan",
+    "published_utc": "2026-09-03T16:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/09/03/better-energy-play-nextera-vs-constellation-energy/?source=iedfolrf0000001",
     "tickers": [
-      "CEG",
-      "VST",
       "NEE",
       "NEEpN",
       "NEEpS",
@@ -21,404 +19,562 @@
       "NEEpU",
       "NEEpV",
       "NEEpW",
-      "MSFT",
-      "META",
-      "AMZN"
+      "CEG",
+      "D"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880870%2Ftwo-engineers-walk-down-a-dirt-path-alongside-solar-panels-getty.jpg&w=1200&op=resize",
-    "description": "AI infrastructure is creating unprecedented electricity demand, with data centers requiring 20-100 kW per rack compared to traditional 5-10 kW. Utility companies with nuclear and renewable assets in key regions are positioned as hidden winners. Three stocks to watch are Constellation Energy (nuclear-focused with Microsoft and Meta deals), Vistra (diverse power portfolio with major hyperscaler partnerships), and NextEra Energy (regulated utility with large renewable pipeline and battery storage capabilities).",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F885650%2Fconstellation-and-nextera-logos-the-motley-fool.png&w=1200&op=resize",
+    "description": "NextEra Energy and Constellation Energy are both positioned to benefit from surging electricity demand driven by AI data center growth, but take different approaches. NextEra operates as a traditional regulated utility with renewable energy focus and offers higher dividend yield (3%), while Constellation is an independent nuclear power producer with greater growth potential but higher volatility. Constellation's stock has fallen 20% in 2026, creating a potential entry point, whereas NextEra is pursuing a major acquisition of Dominion Energy facing regulatory scrutiny.",
     "keywords": [
-      "AI power demand",
-      "data center electricity",
-      "nuclear energy",
+      "energy utilities",
+      "AI data centers",
       "renewable energy",
-      "utility stocks",
-      "power purchase agreements",
-      "grid infrastructure"
+      "nuclear power",
+      "dividend stocks",
+      "utility acquisition",
+      "electricity demand"
     ],
     "insights": [
+      {
+        "ticker": "NEE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong business fundamentals with stable 3%+ dividend yield, aggressive $94B investment plan through 2030, and positioned to become world's largest utility. Growth potential through renewables expansion, though Dominion acquisition faces regulatory scrutiny."
+      },
+      {
+        "ticker": "NEEpN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong business fundamentals with stable 3%+ dividend yield, aggressive $94B investment plan through 2030, and positioned to become world's largest utility. Growth potential through renewables expansion, though Dominion acquisition faces regulatory scrutiny."
+      },
+      {
+        "ticker": "NEEpS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong business fundamentals with stable 3%+ dividend yield, aggressive $94B investment plan through 2030, and positioned to become world's largest utility. Growth potential through renewables expansion, though Dominion acquisition faces regulatory scrutiny."
+      },
+      {
+        "ticker": "NEEpT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong business fundamentals with stable 3%+ dividend yield, aggressive $94B investment plan through 2030, and positioned to become world's largest utility. Growth potential through renewables expansion, though Dominion acquisition faces regulatory scrutiny."
+      },
+      {
+        "ticker": "NEEpU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong business fundamentals with stable 3%+ dividend yield, aggressive $94B investment plan through 2030, and positioned to become world's largest utility. Growth potential through renewables expansion, though Dominion acquisition faces regulatory scrutiny."
+      },
+      {
+        "ticker": "NEEpV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong business fundamentals with stable 3%+ dividend yield, aggressive $94B investment plan through 2030, and positioned to become world's largest utility. Growth potential through renewables expansion, though Dominion acquisition faces regulatory scrutiny."
+      },
+      {
+        "ticker": "NEEpW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong business fundamentals with stable 3%+ dividend yield, aggressive $94B investment plan through 2030, and positioned to become world's largest utility. Growth potential through renewables expansion, though Dominion acquisition faces regulatory scrutiny."
+      },
       {
         "ticker": "CEG",
         "sentiment": "positive",
-        "sentiment_reasoning": "Largest U.S. nuclear operator with 22 GW capacity, strategic 20-year PPAs with Microsoft and Meta, restarting Three Mile Island for AI workloads, and recent $26.6B Calpine acquisition diversifying portfolio. Trading at 20x forward earnings with 22% projected EPS growth, though down 35% from 52-week high presents value opportunity."
-      },
-      {
-        "ticker": "VST",
-        "sentiment": "positive",
-        "sentiment_reasoning": "44 GW total capacity with second-largest nuclear fleet, diverse energy portfolio, 20-year Meta PPA for 2,600 MW, partnerships with Amazon and Microsoft for solar facilities, and preferred provider status for Helix Investments ($10B AI infrastructure fund). Positioned for robust growth despite regulatory risks."
-      },
-      {
-        "ticker": "NEE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
-      },
-      {
-        "ticker": "NEEpN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
-      },
-      {
-        "ticker": "NEEpS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
-      },
-      {
-        "ticker": "NEEpT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
-      },
-      {
-        "ticker": "NEEpU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
-      },
-      {
-        "ticker": "NEEpV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
-      },
-      {
-        "ticker": "NEEpW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "World's largest wind and solar producer with 35.1 GW renewable pipeline, deploying utility-scale battery storage for hyperscalers, $100B AI data center campus partnership in Kentucky, and 32-year dividend growth track record. Offers lower-volatility regulated utility stability compared to merchant power producers."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Securing long-term power agreements with Constellation Energy and Vistra to support AI infrastructure expansion and zero-emissions goals."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Entering multiple 20-year power purchase agreements with Constellation Energy and Vistra to secure reliable electricity for AI data center operations."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Partnering with Vistra for 200 MW Oak Hill solar facility in Texas to support AI infrastructure power needs."
-      }
-    ]
-  },
-  {
-    "id": "ea82f30b8e43e02331f5a88663d3607940c66456ced95b07a2435ea2ee7bc0d5",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Should You Ignore the Nuclear Hype and Buy This Instead?",
-    "author": "Jeff Siegel",
-    "published_utc": "2026-08-06T14:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/06/should-you-ignore-the-nuclear-hype-and-buy-this/?source=iedfolrf0000001",
-    "tickers": [
-      "NEE",
-      "NEEpN",
-      "NEEpS",
-      "NEEpT",
-      "NEEpU",
-      "NEEpV",
-      "NEEpW"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F881459%2Fgettyimages-1847804173.jpg&w=1200&op=resize",
-    "description": "While nuclear power is experiencing renewed interest due to AI-driven electricity demand, the article argues that investors shouldn't focus solely on nuclear stocks. Instead, NextEra Energy offers broader exposure to the entire electricity demand trend through its diversified portfolio of nuclear, renewable, natural gas, and grid infrastructure assets. NextEra's regulated utility FPL is forecasting 8 gigawatts of large-load demand by 2032, potentially requiring $16 billion in infrastructure investment that could generate over $1 billion in annual pretax earnings.",
-    "keywords": [
-      "nuclear power",
-      "electricity demand",
-      "AI data centers",
-      "utilities",
-      "renewable energy",
-      "grid infrastructure",
-      "regulated assets"
-    ],
-    "insights": [
-      {
-        "ticker": "NEE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The article positions NextEra as the superior investment choice, highlighting its diversified energy portfolio, significant infrastructure investment opportunities ($16B), potential for $1B+ in annual pretax earnings, and exposure to growing electricity demand across multiple sources (nuclear, renewables, natural gas). The company is presented as a safer, easier way to profit from the energy trend compared to concentrated nuclear plays."
-      },
-      {
-        "ticker": "NEEpN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The article positions NextEra as the superior investment choice, highlighting its diversified energy portfolio, significant infrastructure investment opportunities ($16B), potential for $1B+ in annual pretax earnings, and exposure to growing electricity demand across multiple sources (nuclear, renewables, natural gas). The company is presented as a safer, easier way to profit from the energy trend compared to concentrated nuclear plays."
-      },
-      {
-        "ticker": "NEEpS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The article positions NextEra as the superior investment choice, highlighting its diversified energy portfolio, significant infrastructure investment opportunities ($16B), potential for $1B+ in annual pretax earnings, and exposure to growing electricity demand across multiple sources (nuclear, renewables, natural gas). The company is presented as a safer, easier way to profit from the energy trend compared to concentrated nuclear plays."
-      },
-      {
-        "ticker": "NEEpT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The article positions NextEra as the superior investment choice, highlighting its diversified energy portfolio, significant infrastructure investment opportunities ($16B), potential for $1B+ in annual pretax earnings, and exposure to growing electricity demand across multiple sources (nuclear, renewables, natural gas). The company is presented as a safer, easier way to profit from the energy trend compared to concentrated nuclear plays."
-      },
-      {
-        "ticker": "NEEpU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The article positions NextEra as the superior investment choice, highlighting its diversified energy portfolio, significant infrastructure investment opportunities ($16B), potential for $1B+ in annual pretax earnings, and exposure to growing electricity demand across multiple sources (nuclear, renewables, natural gas). The company is presented as a safer, easier way to profit from the energy trend compared to concentrated nuclear plays."
-      },
-      {
-        "ticker": "NEEpV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The article positions NextEra as the superior investment choice, highlighting its diversified energy portfolio, significant infrastructure investment opportunities ($16B), potential for $1B+ in annual pretax earnings, and exposure to growing electricity demand across multiple sources (nuclear, renewables, natural gas). The company is presented as a safer, easier way to profit from the energy trend compared to concentrated nuclear plays."
-      },
-      {
-        "ticker": "NEEpW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The article positions NextEra as the superior investment choice, highlighting its diversified energy portfolio, significant infrastructure investment opportunities ($16B), potential for $1B+ in annual pretax earnings, and exposure to growing electricity demand across multiple sources (nuclear, renewables, natural gas). The company is presented as a safer, easier way to profit from the energy trend compared to concentrated nuclear plays."
-      }
-    ]
-  },
-  {
-    "id": "e3d1fe937a3ff72c21ae4986e2f2f7acf3a3032b416ef9e0bb99f086dbffdb0d",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "NextEra Just Raised Its Large-Load Forecast to 8 Gigawatts. Here's Why That Matters.",
-    "author": "Jeff Siegel",
-    "published_utc": "2026-07-31T17:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/31/nextera-just-raised-its-large-load-forecast-to-8-g/?source=iedfolrf0000001",
-    "tickers": [
-      "NEE",
-      "NEEpN",
-      "NEEpS",
-      "NEEpT",
-      "NEEpU",
-      "NEEpV",
-      "NEEpW"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880876%2Fnee.png&w=1200&op=resize",
-    "description": "NextEra Energy raised its large-load electricity demand forecast for Florida Power & Light from 6 to 8 gigawatts by 2032, driven primarily by hyperscale data centers supporting AI infrastructure. The company expects approximately $16 billion in new infrastructure investment and over $1 billion in annual pretax earnings once fully operational, with the first major agreements expected by year-end.",
-    "keywords": [
-      "AI data centers",
-      "electricity demand",
-      "regulated utilities",
-      "infrastructure investment",
-      "hyperscale facilities",
-      "renewable energy",
-      "capital expenditure"
-    ],
-    "insights": [
-      {
-        "ticker": "NEE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "NextEra significantly raised its growth forecast driven by AI data center demand, positioning itself to capture $16 billion in infrastructure investments with guaranteed regulated returns of 10.95% on equity. The company has 21 gigawatts of large-load interest with 12 gigawatts in advanced discussions, indicating strong future earnings potential and strategic positioning in the high-growth AI power sector."
-      },
-      {
-        "ticker": "NEEpN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "NextEra significantly raised its growth forecast driven by AI data center demand, positioning itself to capture $16 billion in infrastructure investments with guaranteed regulated returns of 10.95% on equity. The company has 21 gigawatts of large-load interest with 12 gigawatts in advanced discussions, indicating strong future earnings potential and strategic positioning in the high-growth AI power sector."
-      },
-      {
-        "ticker": "NEEpS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "NextEra significantly raised its growth forecast driven by AI data center demand, positioning itself to capture $16 billion in infrastructure investments with guaranteed regulated returns of 10.95% on equity. The company has 21 gigawatts of large-load interest with 12 gigawatts in advanced discussions, indicating strong future earnings potential and strategic positioning in the high-growth AI power sector."
-      },
-      {
-        "ticker": "NEEpT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "NextEra significantly raised its growth forecast driven by AI data center demand, positioning itself to capture $16 billion in infrastructure investments with guaranteed regulated returns of 10.95% on equity. The company has 21 gigawatts of large-load interest with 12 gigawatts in advanced discussions, indicating strong future earnings potential and strategic positioning in the high-growth AI power sector."
-      },
-      {
-        "ticker": "NEEpU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "NextEra significantly raised its growth forecast driven by AI data center demand, positioning itself to capture $16 billion in infrastructure investments with guaranteed regulated returns of 10.95% on equity. The company has 21 gigawatts of large-load interest with 12 gigawatts in advanced discussions, indicating strong future earnings potential and strategic positioning in the high-growth AI power sector."
-      },
-      {
-        "ticker": "NEEpV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "NextEra significantly raised its growth forecast driven by AI data center demand, positioning itself to capture $16 billion in infrastructure investments with guaranteed regulated returns of 10.95% on equity. The company has 21 gigawatts of large-load interest with 12 gigawatts in advanced discussions, indicating strong future earnings potential and strategic positioning in the high-growth AI power sector."
-      },
-      {
-        "ticker": "NEEpW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "NextEra significantly raised its growth forecast driven by AI data center demand, positioning itself to capture $16 billion in infrastructure investments with guaranteed regulated returns of 10.95% on equity. The company has 21 gigawatts of large-load interest with 12 gigawatts in advanced discussions, indicating strong future earnings potential and strategic positioning in the high-growth AI power sector."
-      }
-    ]
-  },
-  {
-    "id": "2fca455d707cd1b1ae3059b5bf9e922574830e15511ded2b2c115aeec92e1ad3",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Why NuScale Power Stock Is Soaring Today",
-    "author": "Scott Levine",
-    "published_utc": "2026-07-30T18:05:39Z",
-    "article_url": "https://www.fool.com/investing/2026/07/30/why-nuscale-power-stock-is-soaring-today/?source=iedfolrf0000001",
-    "tickers": [
-      "SMR",
-      "NEE",
-      "NEEpN",
-      "NEEpS",
-      "NEEpT",
-      "NEEpU",
-      "NEEpV",
-      "NEEpW",
-      "BAM"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F881259%2Fdigital-image-of-atomic-nucleus-and-electron.jpg&w=1200&op=resize",
-    "description": "NuScale Power stock surged 12% today, recovering from an 11% decline, driven by investor optimism following the Department of Energy's announcement of a $100 billion data center campus in Kentucky. Although the project will use natural gas power, investors view it as a signal of Trump Administration support for data center development on federal lands, which could benefit NuScale's small modular reactors (SMRs) as a solution for AI computing power demands.",
-    "keywords": [
-      "NuScale Power",
-      "small modular reactors",
-      "data centers",
-      "artificial intelligence",
-      "Kentucky project",
-      "nuclear energy",
-      "federal lands"
-    ],
-    "insights": [
-      {
-        "ticker": "SMR",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock surged 12% on optimistic investor sentiment regarding data center development and potential demand for SMR technology to power AI computing facilities. However, the article notes substantial investment risk remains."
-      },
-      {
-        "ticker": "NEE",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a partner in the Kentucky data center project developing natural gas-fired power, but no specific impact on the company is discussed in the article."
-      },
-      {
-        "ticker": "NEEpN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a partner in the Kentucky data center project developing natural gas-fired power, but no specific impact on the company is discussed in the article."
-      },
-      {
-        "ticker": "NEEpS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a partner in the Kentucky data center project developing natural gas-fired power, but no specific impact on the company is discussed in the article."
-      },
-      {
-        "ticker": "NEEpT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a partner in the Kentucky data center project developing natural gas-fired power, but no specific impact on the company is discussed in the article."
-      },
-      {
-        "ticker": "NEEpU",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a partner in the Kentucky data center project developing natural gas-fired power, but no specific impact on the company is discussed in the article."
-      },
-      {
-        "ticker": "NEEpV",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a partner in the Kentucky data center project developing natural gas-fired power, but no specific impact on the company is discussed in the article."
-      },
-      {
-        "ticker": "NEEpW",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a partner in the Kentucky data center project developing natural gas-fired power, but no specific impact on the company is discussed in the article."
-      },
-      {
-        "ticker": "BAM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a partner in the Kentucky data center project, but no specific impact on the company is discussed in the article."
-      }
-    ]
-  },
-  {
-    "id": "8dc6d9bddbdd75fd7cb9fd5d029680018e4a3d4d6ae197da2be9fc097fb8fc68",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "NextEra Energy Is Becoming the Utility Sector's Biggest AI Power Bet -- Here Are the Numbers That Prove It",
-    "author": "Matt Dilallo",
-    "published_utc": "2026-07-28T09:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/28/nextera-energy-is-becoming-the-utility-sectors-big/?source=iedfolrf0000001",
-    "tickers": [
-      "NEE",
-      "NEEpN",
-      "NEEpS",
-      "NEEpT",
-      "NEEpU",
-      "NEEpV",
-      "NEEpW",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "D"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880685%2Fnee.png&w=1200&op=resize",
-    "description": "NextEra Energy is positioning itself as the leading utility for powering AI data centers, with 21 GW of interest from large-load customers and active discussions on 12 GW of capacity. The company is developing 30 potential data center hubs across the U.S. and partnering with Google and ExxonMobil. Its planned merger with Dominion Energy would create the world's largest regulated electric utility with over 130 GW in large-load opportunities, supporting 9%+ annual earnings growth through 2035.",
-    "keywords": [
-      "AI data centers",
-      "power purchase agreements",
-      "renewable energy",
-      "utility sector",
-      "data center hubs",
-      "nuclear power",
-      "battery storage",
-      "capital expenditure"
-    ],
-    "insights": [
-      {
-        "ticker": "NEE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company is positioned as the undisputed leader in AI power among utilities with significant competitive advantages, large pipeline of opportunities (21 GW interest, 12 GW in active discussions), strategic partnerships with major tech companies, and planned merger that would double its large-load opportunities and accelerate earnings growth."
-      },
-      {
-        "ticker": "NEEpN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company is positioned as the undisputed leader in AI power among utilities with significant competitive advantages, large pipeline of opportunities (21 GW interest, 12 GW in active discussions), strategic partnerships with major tech companies, and planned merger that would double its large-load opportunities and accelerate earnings growth."
-      },
-      {
-        "ticker": "NEEpS",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company is positioned as the undisputed leader in AI power among utilities with significant competitive advantages, large pipeline of opportunities (21 GW interest, 12 GW in active discussions), strategic partnerships with major tech companies, and planned merger that would double its large-load opportunities and accelerate earnings growth."
-      },
-      {
-        "ticker": "NEEpT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company is positioned as the undisputed leader in AI power among utilities with significant competitive advantages, large pipeline of opportunities (21 GW interest, 12 GW in active discussions), strategic partnerships with major tech companies, and planned merger that would double its large-load opportunities and accelerate earnings growth."
-      },
-      {
-        "ticker": "NEEpU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company is positioned as the undisputed leader in AI power among utilities with significant competitive advantages, large pipeline of opportunities (21 GW interest, 12 GW in active discussions), strategic partnerships with major tech companies, and planned merger that would double its large-load opportunities and accelerate earnings growth."
-      },
-      {
-        "ticker": "NEEpV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company is positioned as the undisputed leader in AI power among utilities with significant competitive advantages, large pipeline of opportunities (21 GW interest, 12 GW in active discussions), strategic partnerships with major tech companies, and planned merger that would double its large-load opportunities and accelerate earnings growth."
-      },
-      {
-        "ticker": "NEEpW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company is positioned as the undisputed leader in AI power among utilities with significant competitive advantages, large pipeline of opportunities (21 GW interest, 12 GW in active discussions), strategic partnerships with major tech companies, and planned merger that would double its large-load opportunities and accelerate earnings growth."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google is actively partnering with NextEra to develop multiple data center campuses across the country and securing power for its AI infrastructure expansion, demonstrating strong commitment to building out crucial AI computing infrastructure."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google is actively partnering with NextEra to develop multiple data center campuses across the country and securing power for its AI infrastructure expansion, demonstrating strong commitment to building out crucial AI computing infrastructure."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google is actively partnering with NextEra to develop multiple data center campuses across the country and securing power for its AI infrastructure expansion, demonstrating strong commitment to building out crucial AI computing infrastructure."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google is actively partnering with NextEra to develop multiple data center campuses across the country and securing power for its AI infrastructure expansion, demonstrating strong commitment to building out crucial AI computing infrastructure."
+        "sentiment_reasoning": "Largest U.S. nuclear operator with higher earnings growth projections and strong positioning in AI boom through hyperscaler partnerships (Meta, Microsoft). Recent 20% stock decline presents compelling entry point despite short-term headwinds from Calpine acquisition costs."
       },
       {
         "ticker": "D",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Subject of NextEra's all-stock acquisition agreement; mentioned as part of regulatory scrutiny context rather than as independent investment thesis."
+      }
+    ]
+  },
+  {
+    "id": "eeacb9d531222b3c5465c2be92d12d15eefd7f74cafed6fecd5be4a9c1826cbf",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "Tenet Healthcare and Archrock have been highlighted as Zacks Bull and Bear of the Day",
+    "author": "Zacks Equity Research",
+    "published_utc": "2026-09-02T12:04:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2983599/tenet-healthcare-and-archrock-have-been-highlighted-as-zacks-bull-and-bear-of-the-day?cid=CS-ZC-FT-press_releases-2983599",
+    "tickers": [
+      "THC",
+      "AROC",
+      "NEE",
+      "NEEpN",
+      "NEEpS",
+      "NEEpT",
+      "NEEpU",
+      "NEEpV",
+      "NEEpW",
+      "FE",
+      "PPL",
+      "PPLC"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/e6/52046.jpg",
+    "description": "Tenet Healthcare (THC) is highlighted as the Bull of the Day with a Zacks Rank #1 (Strong Buy) due to strong Q2 earnings that beat expectations by 50%, 26 consecutive quarters of earnings beats, and attractive valuation at 12.6X forward earnings. Archrock (AROC) is the Bear of the Day with a Zacks Rank #5 (Strong Sell) following back-to-back earnings misses, reduced guidance, and declining EPS estimates. The article also provides analysis on NextEra Energy (NEE), FirstEnergy (FE), and PPL Corp. (PPL) regarding AI-driven data center demand opportunities.",
+    "keywords": [
+      "healthcare stocks",
+      "earnings surprise",
+      "valuation",
+      "natural gas compression",
+      "earnings misses",
+      "data center demand",
+      "utility stocks",
+      "AI infrastructure"
+    ],
+    "insights": [
+      {
+        "ticker": "THC",
         "sentiment": "positive",
-        "sentiment_reasoning": "The planned merger with NextEra would create the world's largest regulated electric utility with enhanced scale, capabilities, and growth prospects in the high-demand AI data center power market."
+        "sentiment_reasoning": "Strong Q2 results with 50% EPS surprise, 26 consecutive quarters of earnings beats, raised full-year guidance, surging analyst EPS revisions (+17% over 60 days), attractive valuation at 12.6X forward earnings (below sector average), and strong price performance (36% YTD, 250% over 5 years). Zacks Rank #1 (Strong Buy)."
+      },
+      {
+        "ticker": "AROC",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Back-to-back earnings and revenue misses (Q2 EPS missed by 17%, Q1 also missed), reduced 2026 EBITDA guidance, declining EPS estimates (down 9% for FY26, 7% for FY27), deteriorating technical picture with stock falling below 50-day and 200-day moving averages. Zacks Rank #5 (Strong Sell)."
+      },
+      {
+        "ticker": "NEE",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Positioned to benefit from AI-driven data center demand with strong backlog growth (35.1 GW), but trading at premium valuation (19.4X vs. industry average 14.95X). Zacks Rank #3 (Hold) with modest earnings growth expectations (8.09% and 8.71% YoY for 2026-2027)."
+      },
+      {
+        "ticker": "NEEpN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Positioned to benefit from AI-driven data center demand with strong backlog growth (35.1 GW), but trading at premium valuation (19.4X vs. industry average 14.95X). Zacks Rank #3 (Hold) with modest earnings growth expectations (8.09% and 8.71% YoY for 2026-2027)."
+      },
+      {
+        "ticker": "NEEpS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Positioned to benefit from AI-driven data center demand with strong backlog growth (35.1 GW), but trading at premium valuation (19.4X vs. industry average 14.95X). Zacks Rank #3 (Hold) with modest earnings growth expectations (8.09% and 8.71% YoY for 2026-2027)."
+      },
+      {
+        "ticker": "NEEpT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Positioned to benefit from AI-driven data center demand with strong backlog growth (35.1 GW), but trading at premium valuation (19.4X vs. industry average 14.95X). Zacks Rank #3 (Hold) with modest earnings growth expectations (8.09% and 8.71% YoY for 2026-2027)."
+      },
+      {
+        "ticker": "NEEpU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Positioned to benefit from AI-driven data center demand with strong backlog growth (35.1 GW), but trading at premium valuation (19.4X vs. industry average 14.95X). Zacks Rank #3 (Hold) with modest earnings growth expectations (8.09% and 8.71% YoY for 2026-2027)."
+      },
+      {
+        "ticker": "NEEpV",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Positioned to benefit from AI-driven data center demand with strong backlog growth (35.1 GW), but trading at premium valuation (19.4X vs. industry average 14.95X). Zacks Rank #3 (Hold) with modest earnings growth expectations (8.09% and 8.71% YoY for 2026-2027)."
+      },
+      {
+        "ticker": "NEEpW",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Positioned to benefit from AI-driven data center demand with strong backlog growth (35.1 GW), but trading at premium valuation (19.4X vs. industry average 14.95X). Zacks Rank #3 (Hold) with modest earnings growth expectations (8.09% and 8.71% YoY for 2026-2027)."
+      },
+      {
+        "ticker": "FE",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Benefiting from rising AI-driven data center demand supporting electricity load and infrastructure investment through its $36-billion Energize365 program, but no specific rating or detailed analysis provided in the article."
+      },
+      {
+        "ticker": "PPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Benefiting from expanding Pennsylvania data-center pipeline with potential $10-$12 billion of additional generation opportunities through 2032, but no specific rating or detailed analysis provided in the article."
+      },
+      {
+        "ticker": "PPLC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Benefiting from expanding Pennsylvania data-center pipeline with potential $10-$12 billion of additional generation opportunities through 2032, but no specific rating or detailed analysis provided in the article."
+      }
+    ]
+  },
+  {
+    "id": "f9e41579cfd5b07c2beea0187706e199eebb2330d003fb6db57918a52ab439e9",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "Should You Invest in the State Street Utilities Select Sector SPDR ETF (XLU)?",
+    "author": "Zacks.Com",
+    "published_utc": "2026-09-02T10:20:02Z",
+    "article_url": "https://www.zacks.com/stock/news/2983507/should-you-invest-in-the-state-street-utilities-select-sector-spdr-etf-xlu?cid=CS-ZC-FT-sector_etf-2983507",
+    "tickers": [
+      "XLU",
+      "NEE",
+      "NEEpN",
+      "NEEpS",
+      "NEEpT",
+      "NEEpU",
+      "NEEpV",
+      "NEEpW",
+      "SO",
+      "SOJC",
+      "SOJD",
+      "SOJE",
+      "SOJF",
+      "SOMN",
+      "DUK",
+      "DUKB",
+      "DUKH",
+      "DUKU",
+      "DUKpA",
+      "FUTY",
+      "VPU"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/default_article_images/default23.jpg",
+    "description": "XLU, a passively managed utilities sector ETF launched in 1998, offers low-cost exposure to the utilities sector with a 0.08% expense ratio and $21.9 billion in assets. The fund has delivered 1.09% year-to-date returns and 3.78% over the past year, with a medium-risk profile (beta of 0.57). It holds a Zacks ETF Rank of 2 (Buy) and is recommended as an outstanding option for utilities sector exposure, though investors should consider alternatives like FUTY and VPU.",
+    "keywords": [
+      "utilities ETF",
+      "sector exposure",
+      "passive management",
+      "dividend yield",
+      "expense ratio",
+      "infrastructure investment"
+    ],
+    "insights": [
+      {
+        "ticker": "XLU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Receives a Zacks ETF Rank of 2 (Buy), has the lowest expense ratio at 0.08%, substantial assets of $21.9 billion, and is described as an 'outstanding option' for utilities sector exposure with reasonable returns and medium risk profile."
+      },
+      {
+        "ticker": "NEE",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as the largest holding in XLU at 13.1% of assets, but no specific performance or outlook commentary provided."
+      },
+      {
+        "ticker": "NEEpN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as the largest holding in XLU at 13.1% of assets, but no specific performance or outlook commentary provided."
+      },
+      {
+        "ticker": "NEEpS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as the largest holding in XLU at 13.1% of assets, but no specific performance or outlook commentary provided."
+      },
+      {
+        "ticker": "NEEpT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as the largest holding in XLU at 13.1% of assets, but no specific performance or outlook commentary provided."
+      },
+      {
+        "ticker": "NEEpU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as the largest holding in XLU at 13.1% of assets, but no specific performance or outlook commentary provided."
+      },
+      {
+        "ticker": "NEEpV",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as the largest holding in XLU at 13.1% of assets, but no specific performance or outlook commentary provided."
+      },
+      {
+        "ticker": "NEEpW",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as the largest holding in XLU at 13.1% of assets, but no specific performance or outlook commentary provided."
+      },
+      {
+        "ticker": "SO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding in XLU, but no specific analysis or sentiment indicators provided."
+      },
+      {
+        "ticker": "SOJC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding in XLU, but no specific analysis or sentiment indicators provided."
+      },
+      {
+        "ticker": "SOJD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding in XLU, but no specific analysis or sentiment indicators provided."
+      },
+      {
+        "ticker": "SOJE",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding in XLU, but no specific analysis or sentiment indicators provided."
+      },
+      {
+        "ticker": "SOJF",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding in XLU, but no specific analysis or sentiment indicators provided."
+      },
+      {
+        "ticker": "SOMN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding in XLU, but no specific analysis or sentiment indicators provided."
+      },
+      {
+        "ticker": "DUK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a top holding in XLU, but no specific performance commentary or outlook provided."
+      },
+      {
+        "ticker": "DUKB",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a top holding in XLU, but no specific performance commentary or outlook provided."
+      },
+      {
+        "ticker": "DUKH",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a top holding in XLU, but no specific performance commentary or outlook provided."
+      },
+      {
+        "ticker": "DUKU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a top holding in XLU, but no specific performance commentary or outlook provided."
+      },
+      {
+        "ticker": "DUKpA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Identified as a top holding in XLU, but no specific performance commentary or outlook provided."
+      },
+      {
+        "ticker": "FUTY",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Presented as an alternative option with comparable 0.08% expense ratio and $2.26 billion in assets, but no preference indicated over XLU."
+      },
+      {
+        "ticker": "VPU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as an alternative with slightly higher 0.09% expense ratio and $8.23 billion in assets, but no comparative advantage or disadvantage highlighted."
+      }
+    ]
+  },
+  {
+    "id": "8938bb50dee1632c18c9d91b393b12c59e30598035894cc2d20d599cef841301",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "Can AI Driven Data Center Growth Continue to Strengthen NEE's Backlog?",
+    "author": "Zacks.Com",
+    "published_utc": "2026-09-01T16:15:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2983320/can-ai-driven-data-center-growth-continue-to-strengthen-nee-s-backlog?cid=CS-ZC-FT-analyst_blog|quick_take-2983320",
+    "tickers": [
+      "NEE",
+      "NEEpN",
+      "NEEpS",
+      "NEEpT",
+      "NEEpU",
+      "NEEpV",
+      "NEEpW",
+      "FE",
+      "PPL",
+      "PPLC"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/4a/337.jpg",
+    "description": "NextEra Energy's backlog reached 35.1 GW after adding 3.6 GW in Q2 2026, driven by AI data center demand. The company is in talks with 30 potential data center hubs and targets 15 GW of new generation by 2035, with upside potential exceeding 30 GW. However, NEE trades at a premium valuation of 19.4X forward P/E versus the industry average of 14.95X and carries a Zacks Rank #3 (Hold).",
+    "keywords": [
+      "AI data centers",
+      "renewable energy",
+      "backlog growth",
+      "electricity demand",
+      "utility infrastructure",
+      "battery storage",
+      "hyperscalers"
+    ],
+    "insights": [
+      {
+        "ticker": "NEE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong backlog growth of 35.1 GW with significant contributions from AI data center demand (30% of Q1 additions). Expanding pipeline with 30 data center hub discussions and ambitious 15-30 GW targets by 2035 demonstrate substantial growth opportunities. However, positive sentiment is tempered by premium valuation and Hold rating."
+      },
+      {
+        "ticker": "NEEpN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong backlog growth of 35.1 GW with significant contributions from AI data center demand (30% of Q1 additions). Expanding pipeline with 30 data center hub discussions and ambitious 15-30 GW targets by 2035 demonstrate substantial growth opportunities. However, positive sentiment is tempered by premium valuation and Hold rating."
+      },
+      {
+        "ticker": "NEEpS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong backlog growth of 35.1 GW with significant contributions from AI data center demand (30% of Q1 additions). Expanding pipeline with 30 data center hub discussions and ambitious 15-30 GW targets by 2035 demonstrate substantial growth opportunities. However, positive sentiment is tempered by premium valuation and Hold rating."
+      },
+      {
+        "ticker": "NEEpT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong backlog growth of 35.1 GW with significant contributions from AI data center demand (30% of Q1 additions). Expanding pipeline with 30 data center hub discussions and ambitious 15-30 GW targets by 2035 demonstrate substantial growth opportunities. However, positive sentiment is tempered by premium valuation and Hold rating."
+      },
+      {
+        "ticker": "NEEpU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong backlog growth of 35.1 GW with significant contributions from AI data center demand (30% of Q1 additions). Expanding pipeline with 30 data center hub discussions and ambitious 15-30 GW targets by 2035 demonstrate substantial growth opportunities. However, positive sentiment is tempered by premium valuation and Hold rating."
+      },
+      {
+        "ticker": "NEEpV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong backlog growth of 35.1 GW with significant contributions from AI data center demand (30% of Q1 additions). Expanding pipeline with 30 data center hub discussions and ambitious 15-30 GW targets by 2035 demonstrate substantial growth opportunities. However, positive sentiment is tempered by premium valuation and Hold rating."
+      },
+      {
+        "ticker": "NEEpW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong backlog growth of 35.1 GW with significant contributions from AI data center demand (30% of Q1 additions). Expanding pipeline with 30 data center hub discussions and ambitious 15-30 GW targets by 2035 demonstrate substantial growth opportunities. However, positive sentiment is tempered by premium valuation and Hold rating."
+      },
+      {
+        "ticker": "FE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Benefiting from rising AI-driven data center demand with a $36 billion Energize365 program supporting long-term earnings growth and infrastructure investment expansion."
+      },
+      {
+        "ticker": "PPL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Expanding Pennsylvania data center pipeline creating $10-12 billion of additional generation opportunities through 2032, strengthening long-term growth prospects from AI infrastructure demand."
+      },
+      {
+        "ticker": "PPLC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Expanding Pennsylvania data center pipeline creating $10-12 billion of additional generation opportunities through 2032, strengthening long-term growth prospects from AI infrastructure demand."
+      }
+    ]
+  },
+  {
+    "id": "38d0af2f39381661d0a88e1186c48da1ff9957e51ec32869d7ea94f0f09747d6",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "If a Stock Market Correction Is Coming, History Says This ETF Has Always Protected Long-Term Investors",
+    "author": "Leo Sun",
+    "published_utc": "2026-08-31T17:40:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/31/if-a-stock-market-correction-is-coming-history-say/?source=iedfolrf0000001",
+    "tickers": [
+      "VPU",
+      "VOO",
+      "NEE",
+      "NEEpN",
+      "NEEpS",
+      "NEEpT",
+      "NEEpU",
+      "NEEpV",
+      "NEEpW",
+      "SO",
+      "SOJC",
+      "SOJD",
+      "SOJE",
+      "SOJF",
+      "SOMN",
+      "DUK",
+      "DUKB",
+      "DUKH",
+      "DUKU",
+      "DUKpA",
+      "CEG"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F885269%2Finvesting-woman-wall-street-suit-stocks-finance.jpg&w=1200&op=resize",
+    "description": "Vanguard's Utilities ETF (VPU) is recommended as a defensive investment option during potential market corrections. Unlike the S&P 500, utilities stocks typically outperform during bear markets due to their stable, income-generating nature. VPU holds 68 utility companies and delivered a 1% return during the 2022 market downturn when the S&P 500 fell 25%, offering investors a safer alternative with a 2.71% SEC yield.",
+    "keywords": [
+      "market correction",
+      "utilities ETF",
+      "defensive investing",
+      "bear market",
+      "dividend yield",
+      "S&P 500",
+      "VPU",
+      "VOO"
+    ],
+    "insights": [
+      {
+        "ticker": "VPU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Highlighted as a protective investment during market downturns with historical outperformance in bear markets, low expense ratio (0.09%), and attractive dividend yield (2.71%). Demonstrated resilience in 2022 with 1% return versus S&P 500's 25% decline."
+      },
+      {
+        "ticker": "VOO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Presented as a reliable long-term investment with ~10% average annual returns, but noted as vulnerable to steep double-digit declines during recessions, making it less suitable for investors concerned about near-term corrections."
+      },
+      {
+        "ticker": "NEE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as the largest holding in VPU (11.78% of portfolio), representing a major utility company benefiting from cloud infrastructure and AI market expansion."
+      },
+      {
+        "ticker": "NEEpN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as the largest holding in VPU (11.78% of portfolio), representing a major utility company benefiting from cloud infrastructure and AI market expansion."
+      },
+      {
+        "ticker": "NEEpS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as the largest holding in VPU (11.78% of portfolio), representing a major utility company benefiting from cloud infrastructure and AI market expansion."
+      },
+      {
+        "ticker": "NEEpT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as the largest holding in VPU (11.78% of portfolio), representing a major utility company benefiting from cloud infrastructure and AI market expansion."
+      },
+      {
+        "ticker": "NEEpU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as the largest holding in VPU (11.78% of portfolio), representing a major utility company benefiting from cloud infrastructure and AI market expansion."
+      },
+      {
+        "ticker": "NEEpV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as the largest holding in VPU (11.78% of portfolio), representing a major utility company benefiting from cloud infrastructure and AI market expansion."
+      },
+      {
+        "ticker": "NEEpW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as the largest holding in VPU (11.78% of portfolio), representing a major utility company benefiting from cloud infrastructure and AI market expansion."
+      },
+      {
+        "ticker": "SO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Second-largest holding in VPU (6.92% of portfolio), representing a stable multi-utility company included in the defensive basket."
+      },
+      {
+        "ticker": "SOJC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Second-largest holding in VPU (6.92% of portfolio), representing a stable multi-utility company included in the defensive basket."
+      },
+      {
+        "ticker": "SOJD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Second-largest holding in VPU (6.92% of portfolio), representing a stable multi-utility company included in the defensive basket."
+      },
+      {
+        "ticker": "SOJE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Second-largest holding in VPU (6.92% of portfolio), representing a stable multi-utility company included in the defensive basket."
+      },
+      {
+        "ticker": "SOJF",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Second-largest holding in VPU (6.92% of portfolio), representing a stable multi-utility company included in the defensive basket."
+      },
+      {
+        "ticker": "SOMN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Second-largest holding in VPU (6.92% of portfolio), representing a stable multi-utility company included in the defensive basket."
+      },
+      {
+        "ticker": "DUK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Third-largest holding in VPU (6.34% of portfolio), representing a major electric utility company in the defensive portfolio."
+      },
+      {
+        "ticker": "DUKB",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Third-largest holding in VPU (6.34% of portfolio), representing a major electric utility company in the defensive portfolio."
+      },
+      {
+        "ticker": "DUKH",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Third-largest holding in VPU (6.34% of portfolio), representing a major electric utility company in the defensive portfolio."
+      },
+      {
+        "ticker": "DUKU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Third-largest holding in VPU (6.34% of portfolio), representing a major electric utility company in the defensive portfolio."
+      },
+      {
+        "ticker": "DUKpA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Third-largest holding in VPU (6.34% of portfolio), representing a major electric utility company in the defensive portfolio."
+      },
+      {
+        "ticker": "CEG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Fourth-largest holding in VPU (5.26% of portfolio), representing an independent power provider included in the diversified utility basket."
       }
     ]
   }

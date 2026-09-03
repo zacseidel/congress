@@ -1,331 +1,336 @@
 [
   {
-    "id": "d91bee47fabb863815baa2f022b9c6927c48631e81d2f5459f5c51fb8decf667",
+    "id": "a2a18d9b52e063dc5376b790fb6e1436559593176aaaf540ee727a7e28d4c2ad",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "One of the Biggest Chip ETFs Has Averaged 14% a Year Since 2001 and Just Made 118% in Twelve Months",
-    "author": "Daniel Sparks",
-    "published_utc": "2026-08-17T08:11:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/17/one-of-the-biggest-chip-etfs-has-averaged-14-a-yea/?source=iedfolrf0000001",
+    "title": "Stock Market Midday, Sept. 3: Stocks Rally as Treasury Yields Fall, Broadcom Falls Despite Earnings Beat",
+    "author": "Emma Newbery",
+    "published_utc": "2026-09-03T16:34:03Z",
+    "article_url": "https://www.fool.com/coverage/stock-market-today/2026/09/03/stock-market-midday-sept-3-stocks-rally-as-treasury-yields-fall-broadcom-falls-despite-earnings-beat/?source=iedfolrf0000001",
     "tickers": [
-      "SOXX",
+      "AVGO",
+      "SNOW",
       "NVDA",
-      "AMD",
-      "AVGO"
+      "HOOD"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883814%2Faerial-data-center-halls-under-construction-in-farmland-getty.jpg&w=1200&op=resize",
-    "description": "The iShares Semiconductor ETF (SOXX) returned 118% over the past 12 months, compressing about six years of normal returns into one year, driven by AI infrastructure spending. However, the article cautions that at 67x earnings and with concentrated positions in Nvidia, AMD, and Broadcom, the fund's valuation assumes sustained demand growth. Historical precedent shows that years following such dramatic runs typically underperform the fund's 14.2% long-term average.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F77da40e1441423dea3c02d00c83ecbebd96a733e-1401x1250.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "U.S. stock markets rallied on September 3, 2026, as Treasury yields fell and the probability of a September rate hike decreased. Federal Reserve Governor Christopher Waller signaled a preference for holding rates steady unless inflation surprises emerge. The S&P 500, Dow Jones, and Nasdaq all gained over 1%, with industrials and financial services leading. Notable movers included Snowflake surging 20% on strong earnings, while Broadcom declined despite beating expectations. Nvidia gained on news of acquiring AI platform Hugging Face.",
     "keywords": [
-      "semiconductor ETF",
-      "AI infrastructure spending",
-      "GPU demand",
-      "valuation concerns",
-      "concentrated portfolio",
-      "historical performance analysis"
+      "stock market rally",
+      "Treasury yields",
+      "Federal Reserve",
+      "interest rates",
+      "earnings",
+      "tech stocks",
+      "AI acquisition"
     ],
     "insights": [
+      {
+        "ticker": "AVGO",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock dropped 3.29% despite beating analyst earnings expectations, indicating market disappointment or profit-taking despite positive results."
+      },
+      {
+        "ticker": "SNOW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock soared over 20% following a blowout Q2 earnings report, demonstrating strong market enthusiasm for the company's performance."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock gained on announcement of acquiring AI platform Hugging Face, signaling positive market sentiment toward the company's AI expansion strategy."
+      },
+      {
+        "ticker": "HOOD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock gained following analyst upgrades, indicating improved market outlook from research analysts."
+      }
+    ]
+  },
+  {
+    "id": "f30821afd6fca3d036f74a96072f808f6ab609e7c3f5ede7d72db362dc01deae",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "Data Center Solutions Market Surges to $1,336.55 billion at a CAGR 20.1% by 2031 | Report by MarketsandMarkets\u2122",
+    "author": "Marketsandmarkets\u2122",
+    "published_utc": "2026-09-03T14:00:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/09/03/3356047/0/en/data-center-solutions-market-surges-to-1-336-55-billion-at-a-cagr-20-1-by-2031-report-by-marketsandmarkets.html",
+    "tickers": [
+      "DELL",
+      "HPE",
+      "HPEpC",
+      "AVGO",
+      "NVDA",
+      "SMCI",
+      "SMCIP",
+      "IBM",
+      "LNVGY",
+      "SBGSY",
+      "CSCO"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/afcc5182-4ae0-43a8-a965-4351d590b7ed",
+    "description": "The global Data Center Solutions Market is projected to grow from USD 535.45 billion in 2026 to USD 1,336.55 billion by 2031, with a CAGR of 20.1%. Growth is driven by increasing demand for AI infrastructure, high-density computing, intelligent power systems, advanced cooling, and software-defined infrastructure. The software segment is the fastest-growing component at 24.7% CAGR, while Asia Pacific is the fastest-growing region.",
+    "keywords": [
+      "data center solutions",
+      "AI infrastructure",
+      "GPU-accelerated servers",
+      "software-defined infrastructure",
+      "cloud computing",
+      "high-performance computing",
+      "liquid cooling",
+      "DCIM",
+      "hyperscale data centers",
+      "edge computing"
+    ],
+    "insights": [
+      {
+        "ticker": "DELL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a key market player in the rapidly growing data center solutions market with strong demand for IT infrastructure and AI-ready systems."
+      },
+      {
+        "ticker": "HPE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a leading player positioned to benefit from accelerating investments in high-performance servers and scalable data center infrastructure."
+      },
+      {
+        "ticker": "HPEpC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a leading player positioned to benefit from accelerating investments in high-performance servers and scalable data center infrastructure."
+      },
+      {
+        "ticker": "AVGO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Key player in the market benefiting from growing demand for high-speed networking and advanced infrastructure technologies."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Major beneficiary of rising deployment of GPU-accelerated servers and AI training/inference infrastructure across data centers."
+      },
+      {
+        "ticker": "SMCI",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a key player well-positioned to capitalize on demand for high-density computing and AI infrastructure solutions."
+      },
+      {
+        "ticker": "SMCIP",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Listed as a key player well-positioned to capitalize on demand for high-density computing and AI infrastructure solutions."
+      },
+      {
+        "ticker": "IBM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Key market player positioned to benefit from enterprise data center modernization and AI infrastructure investments."
+      },
+      {
+        "ticker": "LNVGY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Identified as a leading player in the growing data center solutions market with strong demand for IT infrastructure."
+      },
+      {
+        "ticker": "SBGSY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Key player benefiting from increased investment in intelligent power systems and energy-efficient data center operations."
+      },
+      {
+        "ticker": "CSCO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Major player positioned to benefit from growing demand for advanced networking technologies and software-defined infrastructure."
+      }
+    ]
+  },
+  {
+    "id": "f64f7d8c67f3dc74e2008d4b1b4794af814bd3f8699d3d367a35c694971cffce",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "ETFs to Buy as Broadcom Slides Despite Better-Than-Expected Q3 Earnings",
+    "author": "Zacks.Com",
+    "published_utc": "2026-09-03T12:22:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2984211/etfs-to-buy-as-broadcom-slides-despite-better-than-expected-q3-earnings?cid=CS-ZC-FT-etf_news_and_commentary-2984211",
+    "tickers": [
+      "AVGO",
+      "SOXQ",
+      "SMH",
+      "SOXX",
+      "FTXL"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/0f/1324.jpg",
+    "description": "Broadcom reported strong Q3 fiscal 2026 results with 86% revenue growth and 96% EPS growth, driven by AI semiconductor revenues surging 221% to $16.7 billion. However, the stock slid nearly 1% due to Q4 guidance coming in slightly below analyst expectations at $34.8 billion versus $35.03 billion. The article recommends semiconductor ETFs with significant Broadcom exposure as a diversified alternative to single-stock investing, mitigating concentration and geopolitical risks.",
+    "keywords": [
+      "Broadcom",
+      "AI semiconductors",
+      "Q3 earnings",
+      "semiconductor ETFs",
+      "guidance miss",
+      "custom AI chips",
+      "hyperscalers"
+    ],
+    "insights": [
+      {
+        "ticker": "AVGO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Strong earnings beat (86% revenue growth, 96% EPS growth) and exceptional AI business growth (221% YoY), but offset by Q4 guidance miss and stock decline. Structural risks from customer concentration and margin pressures on memory-intensive products temper the positive outlook."
+      },
+      {
+        "ticker": "SOXQ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Zacks Rank #1 Strong Buy with 60.1% YTD performance, low 19 bps fees, and significant Broadcom exposure (9.48%) providing diversified semiconductor exposure while mitigating single-stock risk."
+      },
+      {
+        "ticker": "SMH",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Zacks Rank #1 Strong Buy with 52.9% YTD performance, large asset base ($66.62B), and Broadcom as third-largest holding (6.21%), offering broad semiconductor sector exposure with strong trading volume."
+      },
       {
         "ticker": "SOXX",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "While the 118% return is impressive, the article presents a cautionary view. The fund is praised as a fine vehicle with low expenses, but the author expresses concern about elevated valuations (67x earnings) and concentration risk, noting that historically similar runs have been followed by underperformance. The sentiment is balanced rather than bullish."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Zacks Rank #1 Strong Buy with strongest YTD performance (68.5%), largest asset base ($41.03B), and Broadcom as fourth-largest holding (7.62%), providing diversified exposure to 30 semiconductor companies."
       },
       {
-        "ticker": "NVDA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "As the largest holding (8.93%) in SOXX, Nvidia benefits from AI spending tailwinds. However, the article implies the stock's valuation already prices in sustained growth, and the concentrated bet on AI infrastructure creates risk if demand doesn't materialize as expected."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "AMD is a major holding (8.2%) riding the AI spending cycle. Like Nvidia, it benefits from current demand but faces valuation risk if the AI cycle doesn't sustain at current growth rates."
-      },
-      {
-        "ticker": "AVGO",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Broadcom is equally weighted with AMD (8.2%) as a top holding in the semiconductor ETF, benefiting from AI infrastructure spending. However, it shares the same valuation and demand sustainability concerns as other major holdings."
+        "ticker": "FTXL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Zacks Rank #1 Strong Buy with 69.3% YTD performance and Broadcom as sixth-largest holding (6.58%), offering exposure to 34 semiconductor companies, though with lower trading volume and higher 60 bps fees."
       }
     ]
   },
   {
-    "id": "7bf9a7075bc10bf97f095de41fec937c442961188e1b2c10418b83243a3fadeb",
+    "id": "68d000234124ceeff93850d569ddb6b796bf62ab818090c7bc34c4cb7670bc42",
     "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
     },
-    "title": "These 5 AI Stocks Have Returned 300%-Plus Over the Past 3 Years -- and 1 Still Looks Dirt Cheap",
-    "author": "Chris Neiger",
-    "published_utc": "2026-08-16T08:13:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/16/these-5-ai-stocks-have-returned-300-plus-over-the/?source=iedfolrf0000001",
+    "title": "3 Alger Mutual Funds Offering Exposure to Growth Stocks",
+    "author": "Na",
+    "published_utc": "2026-09-03T12:15:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2984206/3-alger-mutual-funds-offering-exposure-to-growth-stocks?cid=CS-ZC-FT-mutual_fund_commentary-2984206",
     "tickers": [
       "NVDA",
-      "MU",
-      "TSM",
-      "AVGO",
-      "AMD"
+      "MSFT",
+      "AMZN",
+      "AAPL",
+      "AVGO"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883184%2Fgettyimages-1347340865-1201x800-5b2df79.jpg&w=1200&op=resize",
-    "description": "Five semiconductor companies have delivered 300%+ returns over three years by capitalizing on AI data center infrastructure spending. Nvidia leads with 86% market share in AI chips, while Micron stands out with a 1,300% gain and a relatively cheap valuation despite concerns about memory demand sustainability. TSMC, Broadcom, and AMD also benefit from strong AI-driven demand, though investors worry about whether heavy capex spending will deliver adequate returns.",
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/79/7332.jpg",
+    "description": "Zacks highlights three Alger mutual funds with strong ratings and positive long-term returns. Alger Focus Equity (ALGRX) holds concentrated positions in tech leaders with 35.6% 3-year returns, Alger Growth & Income (ALBAX) targets dividend-paying large-cap stocks with 20.2% 3-year returns, and Alger Responsible Investing (AGIFX) focuses on ESG-rated companies with growth potential. All three funds maintain low expense ratios and minimum investments under $5,000, positioning them to benefit from AI, business investment, and structural growth trends.",
     "keywords": [
-      "AI semiconductors",
-      "data center spending",
-      "GPU processors",
-      "memory chips",
-      "chip manufacturing",
-      "valuation",
-      "capital expenditure"
+      "mutual funds",
+      "growth investing",
+      "artificial intelligence",
+      "ESG investing",
+      "dividend stocks",
+      "technology stocks",
+      "active management"
     ],
     "insights": [
       {
         "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Dominant 86% market share in AI data center chips with strong revenue growth (91%) and earnings growth (140%), though some investor concerns exist about ROI on AI spending"
+        "sentiment_reasoning": "Featured as top holding in two of three recommended funds (ALGRX at 12.9% and AGIFX at 11.4%), indicating strong positioning in AI and technological innovation themes"
       },
       {
-        "ticker": "MU",
+        "ticker": "MSFT",
         "sentiment": "positive",
-        "sentiment_reasoning": "Exceptional 1,300% three-year return with 345% revenue growth and 1,200% EPS growth. Trading at P/E of 19 versus tech sector average of 35, making it undervalued despite risks from potential memory demand decline"
+        "sentiment_reasoning": "Appears as top-3 holding across all three funds (6.8% in ALGRX, 6.4% in ALBAX, 7.6% in AGIFX), demonstrating consistent exposure to growth and innovation"
       },
       {
-        "ticker": "TSM",
+        "ticker": "AMZN",
         "sentiment": "positive",
-        "sentiment_reasoning": "Steady 36% revenue growth with 90% market share in advanced processors and 70% in third-party foundries, providing reliable manufacturing capacity for AI chips"
+        "sentiment_reasoning": "Significant holding in two funds (7.5% in ALGRX and 6.4% in AGIFX), reflecting exposure to technological innovation and structural growth"
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Top-3 holding in ALBAX at 6.6%, indicating inclusion in dividend-paying growth strategy"
       },
       {
         "ticker": "AVGO",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strong 48% sales growth and 54% earnings growth driven by custom AI chip design contracts with major tech companies like Alphabet and OpenAI through 2031"
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Solid 246% EPS growth and 50% revenue growth in AI semiconductors, but recent stock decline due to investor concerns about 142% year-over-year capex increase and uncertain ROI"
+        "sentiment_reasoning": "Top holding in ALBAX at 7.4%, representing exposure to semiconductor and technology infrastructure growth"
       }
     ]
   },
   {
-    "id": "bf4476f986412188f40de2a9360f5d3da0cb68a4594812814e630d0c979850b7",
+    "id": "99b6bad0c086ea03d7d240f8e51d3de6d959d74a4242520e2566803660ca0f0d",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Not Nvidia. Not AMD. This Chip Stock Will Be the Biggest Winner of the Historic AI Semiconductor Boom",
-    "author": "Harsh Chauhan",
-    "published_utc": "2026-08-15T13:23:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/15/not-nvidia-not-amd-this-chip-stock-will-be-the-big/?source=iedfolrf0000001",
+    "title": "Broadcom Earnings: AI Chip Sales Tripled. Here\u2019s the $34.8 Billion Number Investors Need to Watch.",
+    "author": "Johnny Rice",
+    "published_utc": "2026-09-02T23:01:01Z",
+    "article_url": "https://www.fool.com/investing/2026/09/02/broadcom-earnings-ai-chip-sales-tripled-here-s-the-usd34-8-billion-number-investors-need-to-watch/?source=iedfolrf0000001",
     "tickers": [
-      "TSM",
-      "AMD",
-      "NVDA",
-      "AAPL",
-      "MSFT",
+      "AVGO",
       "GOOG",
       "GOOGL",
       "GOOGM",
       "GOOGN",
-      "AMZN",
-      "QCOM",
-      "AVGO",
-      "SOXX"
+      "MRVL",
+      "NVDA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883737%2Fperson-specs-integrated-circuit.jpg&w=1200&op=resize",
-    "description": "While Nvidia and AMD are benefiting from the AI semiconductor boom, Taiwan Semiconductor Manufacturing (TSMC) is positioned as a better investment due to its foundry business model serving multiple major clients. TSMC's diversified customer base, strong pricing power, and dominant 73% foundry market share make it well-positioned for sustained growth, with the stock trading at an attractive 25x forward earnings compared to peers.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fcf1508b8bebae3e2cb84e3db6f440d03fd7812fb-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Broadcom reported Q3 2026 revenue of $29.6 billion and adjusted EPS of $3.32, both beating Wall Street expectations, with AI chip sales more than tripling to $16.7 billion (up 221% YoY). However, the company's Q4 guidance of $34.8 billion fell slightly short of the $35.03 billion analyst consensus, causing investor concern despite the exceptional growth. The stock trades at a steep valuation with little room for error if AI-driven growth decelerates.",
     "keywords": [
-      "AI semiconductors",
-      "foundry business",
-      "chip manufacturing",
-      "TSMC",
-      "pricing power",
-      "market share",
-      "valuation"
-    ],
-    "insights": [
-      {
-        "ticker": "TSM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "TSMC is highlighted as the superior investment choice with 73% foundry market dominance, 37% YoY revenue growth, planned 25% price increases for AI chips, attractive 25x forward earnings valuation, and strong positioning to capitalize on the AI chip boom across multiple customer segments."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "AMD shows strong fundamentals with 50% YoY revenue growth, 246% YoY earnings growth, and 107% YoY data center revenue increase. However, sentiment is less positive than TSMC as the article positions it as a less comprehensive play on the AI boom compared to the foundry model."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Nvidia demonstrates exceptional growth with expected 95% YoY revenue increase and dominant position in AI chip ecosystem. However, the article explicitly argues TSMC is a better investment choice, limiting the positive sentiment relative to TSMC."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Apple is mentioned as one of TSMC's diverse clientele benefiting from the foundry's services, but no specific analysis or sentiment is provided about the company itself."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Microsoft is mentioned as a TSMC customer but receives no specific analysis or sentiment commentary in the article."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is listed as a TSMC customer but no specific analysis or sentiment is provided about the company."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is listed as a TSMC customer but no specific analysis or sentiment is provided about the company."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is listed as a TSMC customer but no specific analysis or sentiment is provided about the company."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is listed as a TSMC customer but no specific analysis or sentiment is provided about the company."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Amazon is mentioned as a TSMC customer but receives no specific analysis or sentiment commentary."
-      },
-      {
-        "ticker": "QCOM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Qualcomm is mentioned as a TSMC customer but no specific analysis or sentiment is provided."
-      },
-      {
-        "ticker": "AVGO",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Broadcom is listed as a TSMC customer but receives no specific analysis or sentiment commentary in the article."
-      },
-      {
-        "ticker": "SOXX",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "The ETF is mentioned for valuation comparison purposes (67x forward P/E) but no specific investment recommendation or sentiment is provided."
-      }
-    ]
-  },
-  {
-    "id": "f39c13c8c0a162b68a7123011812c7abbd1a31fb47718060143e122b46f3ca37",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Prediction: 2 Unstoppable Artificial Intelligence (AI) Hardware Leaders That Will Join Alphabet in the $4 Trillion Club by 2028",
-    "author": "Keithen Drury",
-    "published_utc": "2026-08-14T08:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/14/prediction-2-unstoppable-artificial-intelligence-a/?source=iedfolrf0000001",
-    "tickers": [
-      "TSM",
-      "AVGO",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F882689%2Finspector-looking-at-a-microchip.jpg&w=1200&op=resize",
-    "description": "Taiwan Semiconductor Manufacturing (TSMC) and Broadcom are positioned to join Alphabet in the exclusive $4 trillion market cap club by 2028-2029. Both companies are major beneficiaries of surging AI spending, with TSMC dominating logic chip fabrication and Broadcom capitalizing on custom AI chip partnerships with hyperscalers. Analysts project TSMC could reach $733 per share (71% upside) and Broadcom $638 per share (52% upside) by 2028 at a 30x P/E ratio, though the author believes Wall Street is underestimating their growth potential.",
-    "keywords": [
-      "AI hardware",
+      "AI chip sales",
+      "earnings beat",
+      "guidance miss",
       "semiconductor",
-      "market cap",
-      "chip fabrication",
-      "custom AI chips",
-      "AI spending",
-      "valuation"
+      "AI accelerators",
+      "data center",
+      "valuation risk"
     ],
     "insights": [
       {
-        "ticker": "TSM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "TSMC is positioned as the easiest winner with dominant logic chip fabrication processes serving the entire AI industry. CEO confirmed strong chip demand through 2029-2030, and the company is investing $100 billion in Arizona facilities. Projected to reach $3.74 trillion market cap by 2028 with 71% upside potential."
-      },
-      {
         "ticker": "AVGO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Broadcom's custom AI chip business is poised for significant growth through partnerships with major hyperscalers like Alphabet. CEO projects AI semiconductor business will generate over $100 billion by 2027. Stock has 52% upside potential to reach $638 by 2028, with author believing Wall Street underestimates the impact of AI hyperscaler adoption."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While Q3 results were exceptional with 86% revenue growth and AI chip sales tripling, the stock fell on a sub-1% guidance miss ($34.8B vs $35.03B expected). The company's high P/E ratio (>60) and market expectations for perfection create vulnerability if growth decelerates, offsetting the strong operational performance."
       },
       {
         "ticker": "GOOG",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is mentioned as an existing $4 trillion club member and as a partner to Broadcom for custom AI chips. The article uses it as a benchmark for comparison rather than making a forward-looking investment case."
+        "sentiment_reasoning": "Google has a long-term custom AI processor supply agreement with Broadcom through 2031, but recently signed a competing deal with Marvell Technology, indicating customers are diversifying suppliers and potentially developing in-house solutions."
       },
       {
         "ticker": "GOOGL",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is mentioned as an existing $4 trillion club member and as a partner to Broadcom for custom AI chips. The article uses it as a benchmark for comparison rather than making a forward-looking investment case."
+        "sentiment_reasoning": "Google has a long-term custom AI processor supply agreement with Broadcom through 2031, but recently signed a competing deal with Marvell Technology, indicating customers are diversifying suppliers and potentially developing in-house solutions."
       },
       {
         "ticker": "GOOGM",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is mentioned as an existing $4 trillion club member and as a partner to Broadcom for custom AI chips. The article uses it as a benchmark for comparison rather than making a forward-looking investment case."
+        "sentiment_reasoning": "Google has a long-term custom AI processor supply agreement with Broadcom through 2031, but recently signed a competing deal with Marvell Technology, indicating customers are diversifying suppliers and potentially developing in-house solutions."
       },
       {
         "ticker": "GOOGN",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is mentioned as an existing $4 trillion club member and as a partner to Broadcom for custom AI chips. The article uses it as a benchmark for comparison rather than making a forward-looking investment case."
-      }
-    ]
-  },
-  {
-    "id": "a505b1e5536c606a58c49a63b690fec93e0efe53d7d38540c3d1b167268d7dce",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "The Biggest Chip Stocks All Yield Under 1%. Here's Where the Cash Actually Goes.",
-    "author": "Daniel Sparks",
-    "published_utc": "2026-08-13T13:12:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/13/the-biggest-chip-stocks-all-yield-under-1-heres-wh/?source=iedfolrf0000001",
-    "tickers": [
-      "NVDA",
-      "AVGO",
-      "TSM",
-      "AMAT"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883001%2Ftaiwan-semiconductor-tsmc-office-with-tsmc-logo-on-side_tsmc.jpg&w=1200&op=resize",
-    "description": "Major chip stocks (Nvidia, Broadcom, Taiwan Semiconductor, and Applied Materials) all offer dividend yields below 1% despite strong profitability. Instead of dividends, these companies return cash to shareholders through stock buybacks and capital investments in manufacturing capacity and equipment, with each company prioritizing different uses for their cash flows.",
-    "keywords": [
-      "chip stocks",
-      "dividend yield",
-      "stock buybacks",
-      "capital expenditure",
-      "shareholder returns",
-      "semiconductor manufacturing"
-    ],
-    "insights": [
+        "sentiment_reasoning": "Google has a long-term custom AI processor supply agreement with Broadcom through 2031, but recently signed a competing deal with Marvell Technology, indicating customers are diversifying suppliers and potentially developing in-house solutions."
+      },
+      {
+        "ticker": "MRVL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Marvell recently secured a custom-chip deal with Google, demonstrating it is gaining market share in the competitive AI chip space and benefiting from large customers' desire to diversify suppliers beyond Broadcom."
+      },
       {
         "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Recently increased dividend 25-fold and returned $20 billion to shareholders in latest quarter through buybacks, with $80 billion additional repurchase authorization approved. Strong shareholder return commitment despite low yield."
-      },
-      {
-        "ticker": "AVGO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Paid largest actual dividend checks ($3.1 billion) among the group with minimal capital expenditure ($231 million), demonstrating efficient capital allocation and strong cash generation relative to investment needs."
-      },
-      {
-        "ticker": "TSM",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Prioritizes capital investment in manufacturing capacity (raised 2026 budget to $60-64 billion) over dividends, which is necessary for maintaining competitive edge but limits current shareholder income. Dividend growth is secondary to fab expansion."
-      },
-      {
-        "ticker": "AMAT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Distributed nearly all operating cash ($845 million) through combination of buybacks and dividends, with 15% dividend increase marking ninth consecutive annual increase, demonstrating consistent shareholder-friendly capital allocation."
+        "sentiment_reasoning": "Mentioned as another major beneficiary of the AI data-center boom alongside Broadcom, but no specific news or sentiment drivers are discussed in the article."
       }
     ]
   }

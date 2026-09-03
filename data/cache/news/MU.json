@@ -1,269 +1,238 @@
 [
   {
-    "id": "870e491850afec527dab5934f2ad1625f5dbd2246416bf3c9735089e78b80794",
+    "id": "cc7d5654be73d08fe5ce37883763ec316d39e5aec0a0f8227a1d26d0ba054934",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Why SK Hynix Stock Popped Today",
-    "author": "Rich Smith",
-    "published_utc": "2026-08-17T14:21:32Z",
-    "article_url": "https://www.fool.com/investing/2026/08/17/why-sk-hynix-stock-popped-today/?source=iedfolrf0000001",
-    "tickers": [
-      "SKHY",
-      "AAPL",
-      "MU",
-      "SNDK"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883842%2Fmap-of-korea-under-a-magnifying-glass.jpg&w=1200&op=resize",
-    "description": "SK Hynix stock jumped 4% after the Trump Administration signaled opposition to Apple sourcing memory chips from China, preferring domestic U.S. manufacturers or allied countries like South Korea. The policy shift could benefit SK Hynix alongside American competitors Micron and Sandisk, with SK Hynix trading at a lower valuation multiple while maintaining strong projected earnings growth.",
-    "keywords": [
-      "memory chips",
-      "semiconductor manufacturing",
-      "Trump Administration",
-      "supply chain",
-      "geopolitical trade policy",
-      "DRAM",
-      "flash memory"
-    ],
-    "insights": [
-      {
-        "ticker": "SKHY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock popped 4-5% due to Trump Administration's preference for sourcing chips from allied countries like South Korea over China. Company benefits from reshoring policy while trading at attractive 8.1x trailing earnings with 86% projected earnings growth."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Company faces restrictions on sourcing memory chips from China, forcing it to source from more expensive domestic or allied suppliers, which could increase costs but aligns with administration policy."
-      },
-      {
-        "ticker": "MU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Direct beneficiary of Trump Administration's reshoring semiconductor manufacturing priority. Stock up 5% with strong projected 173% annual earnings growth over next five years."
-      },
-      {
-        "ticker": "SNDK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Flash memory expert positioned to benefit from U.S. reshoring policy. Stock up 8.85% with expected 40% annual earnings growth, though trading at higher valuation (21.4x earnings) than SK Hynix."
-      }
-    ]
-  },
-  {
-    "id": "83e109dd370fa5f904fcd9341f77f1ac21cd0fc9c9550553b64db57164593966",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Elon Musk Just Uttered 3 Massively Bullish Words for Micron, Sandisk, and SK Hynix",
-    "author": "Billy Duberstein",
-    "published_utc": "2026-08-17T10:06:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/17/elon-musk-just-uttered-3-massively-bullish-words-f/?source=iedfolrf0000001",
-    "tickers": [
-      "MU",
-      "SKHY",
-      "SNDK",
-      "GS",
-      "GSpA",
-      "GSpC",
-      "GSpD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883772%2Felon-musk_tesla_tsla_ceo_imagesource_the-white-house_2.jpeg&w=1200&op=resize",
-    "description": "Elon Musk highlighted that memory, not compute, is the rate limiter for agentic AI systems. As AI agents require vast amounts of specialized memory and storage for planning, task execution, and data retrieval, demand for DRAM and NAND flash is exploding. Goldman Sachs estimates agentic AI will consume 120 quadrillion tokens monthly by 2030\u201424 times current usage\u2014suggesting the memory up-cycle could last longer than expected despite recent stock pullbacks.",
-    "keywords": [
-      "agentic AI",
-      "memory constraint",
-      "DRAM",
-      "NAND flash",
-      "semiconductor demand",
-      "KV-cache",
-      "token consumption",
-      "high-bandwidth memory"
-    ],
-    "insights": [
-      {
-        "ticker": "MU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Directly benefits from increased memory demand for agentic AI. Produces both DRAM and NAND flash. Elon Musk's endorsement of memory as the critical constraint validates Micron's market opportunity. Recent pullback presents buying opportunity despite strong long-term demand outlook."
-      },
-      {
-        "ticker": "SKHY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major memory and storage producer positioned to benefit from agentic AI's exponential memory requirements. Produces both DRAM and NAND flash. Musk's comments validate the strategic importance of their core products in the AI era."
-      },
-      {
-        "ticker": "SNDK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Pure-play NAND flash manufacturer well-positioned for growing demand from long-context agents requiring massive KV-cache storage on SSDs. Benefits from the shift toward storage-intensive agentic AI workloads."
-      },
-      {
-        "ticker": "GS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as source of research projecting 24x increase in AI token usage by 2030. No direct business impact discussed; included for analytical credibility only."
-      },
-      {
-        "ticker": "GSpA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as source of research projecting 24x increase in AI token usage by 2030. No direct business impact discussed; included for analytical credibility only."
-      },
-      {
-        "ticker": "GSpC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as source of research projecting 24x increase in AI token usage by 2030. No direct business impact discussed; included for analytical credibility only."
-      },
-      {
-        "ticker": "GSpD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as source of research projecting 24x increase in AI token usage by 2030. No direct business impact discussed; included for analytical credibility only."
-      }
-    ]
-  },
-  {
-    "id": "3d3cb74a0bf511f381be49d47b411282c1d92c8630c581c85b48eecb233e74a1",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Billionaire Stanley Druckenmiller Dumped Micron and Intel, and More Than 11X'd Duquesne Family Office's Stake in an AI Pioneer",
-    "author": "Sean Williams",
-    "published_utc": "2026-08-17T09:06:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/17/billionaire-stanley-druckenmiller-mu-intc-buy-amzn/?source=iedfolrf0000001",
-    "tickers": [
-      "MU",
-      "INTC",
-      "AMZN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883734%2Fstanley-druckenmiller_duquesne-family-office_chairman_imagesource_getty-images.jpeg&w=1200&op=resize",
-    "description": "Billionaire Stanley Druckenmiller's Duquesne Family Office sold significant positions in semiconductor stocks Micron and Intel during Q2 2026, likely taking profits after strong stock rallies. Meanwhile, Druckenmiller massively increased Amazon holdings by 1,083%, making it a top-10 position. The moves reflect confidence in Amazon's AI-driven cloud services (AWS) growth while reducing exposure to semiconductor stocks that may be overvalued despite strong AI fundamentals.",
-    "keywords": [
-      "Form 13F",
-      "Stanley Druckenmiller",
-      "Duquesne Family Office",
-      "AI stocks",
-      "semiconductor stocks",
-      "profit-taking",
-      "AWS",
-      "cloud computing"
-    ],
-    "insights": [
-      {
-        "ticker": "MU",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Druckenmiller sold 23,400 shares in Q2. Despite strong fundamentals in AI-driven high-bandwidth memory demand, the stock tripled in Q2, prompting profit-taking. The article suggests semiconductor valuations may be overheated relative to actual AI optimization timelines."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Druckenmiller sold 411,400 shares in Q2. While Intel's CPUs are essential for AI data centers, the stock surged from mid-$40s to $141, triggering profit-taking. The article implies AI infrastructure stocks may be overvalued in the near term despite long-term potential."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Druckenmiller increased stake by 1,083% (495,800 shares), making it a top-10 position. AWS is accelerating revenue growth with AI integration, generating $169 billion in annual run-rate revenue. Wall Street estimates cash flow per share will more than double by 2028, suggesting undervaluation despite recent gains."
-      }
-    ]
-  },
-  {
-    "id": "7bf9a7075bc10bf97f095de41fec937c442961188e1b2c10418b83243a3fadeb",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "These 5 AI Stocks Have Returned 300%-Plus Over the Past 3 Years -- and 1 Still Looks Dirt Cheap",
-    "author": "Chris Neiger",
-    "published_utc": "2026-08-16T08:13:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/16/these-5-ai-stocks-have-returned-300-plus-over-the/?source=iedfolrf0000001",
+    "title": "Here Are My Top 5 Stocks for September",
+    "author": "Keithen Drury",
+    "published_utc": "2026-09-03T15:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/09/03/here-are-my-top-5-stocks-for-september/?source=iedfolrf0000001",
     "tickers": [
       "NVDA",
-      "MU",
       "TSM",
-      "AVGO",
-      "AMD"
+      "MU",
+      "AMZN",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883184%2Fgettyimages-1347340865-1201x800-5b2df79.jpg&w=1200&op=resize",
-    "description": "Five semiconductor companies have delivered 300%+ returns over three years by capitalizing on AI data center infrastructure spending. Nvidia leads with 86% market share in AI chips, while Micron stands out with a 1,300% gain and a relatively cheap valuation despite concerns about memory demand sustainability. TSMC, Broadcom, and AMD also benefit from strong AI-driven demand, though investors worry about whether heavy capex spending will deliver adequate returns.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F885737%2Fperson-sitting-in-a-cafe-on-their-laptop.jpg&w=1200&op=resize",
+    "description": "As investors prepare for 2027, artificial intelligence remains the dominant market theme. The article recommends five stocks positioned to benefit from AI growth: semiconductor hardware suppliers (Nvidia, Taiwan Semiconductor Manufacturing, and Micron Technology) are expected to see strong demand, while cloud computing providers (Amazon and Alphabet) are capitalizing on massive data center investments to monetize AI infrastructure.",
     "keywords": [
-      "AI semiconductors",
-      "data center spending",
-      "GPU processors",
-      "memory chips",
-      "chip manufacturing",
-      "valuation",
-      "capital expenditure"
+      "artificial intelligence",
+      "semiconductors",
+      "cloud computing",
+      "data centers",
+      "hardware suppliers",
+      "computing capacity"
     ],
     "insights": [
       {
         "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Dominant 86% market share in AI data center chips with strong revenue growth (91%) and earnings growth (140%), though some investor concerns exist about ROI on AI spending"
-      },
-      {
-        "ticker": "MU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Exceptional 1,300% three-year return with 345% revenue growth and 1,200% EPS growth. Trading at P/E of 19 versus tech sector average of 35, making it undervalued despite risks from potential memory demand decline"
+        "sentiment_reasoning": "Expected to grow at 70% pace in 2027, closing in on $100 billion quarterly revenue from GPU computing units. Described as a 'no-brainer stock to buy.'"
       },
       {
         "ticker": "TSM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Steady 36% revenue growth with 90% market share in advanced processors and 70% in third-party foundries, providing reliable manufacturing capacity for AI chips"
+        "sentiment_reasoning": "Wall Street analysts expect 34% sales growth in 2027 driven by massive AI hyperscaler demand. Positioned as a great buy for September and 2027."
       },
       {
-        "ticker": "AVGO",
+        "ticker": "MU",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strong 48% sales growth and 54% earnings growth driven by custom AI chip design contracts with major tech companies like Alphabet and OpenAI through 2031"
+        "sentiment_reasoning": "Expected to achieve 85% revenue growth in fiscal 2027 due to increased demand for AI computing equipment. Described as a great investment with strong returns potential."
       },
       {
-        "ticker": "AMD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Solid 246% EPS growth and 50% revenue growth in AI semiconductors, but recent stock decline due to investor concerns about 142% year-over-year capex increase and uncertain ROI"
+        "ticker": "AMZN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "AWS growth accelerated to 37% year-over-year in Q2 with $200 billion data center capital expenditures. Expected to see further growth as more computing capacity comes online."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Google Cloud showed extreme growth acceleration from 63% in Q1 to 82% in Q2. Spending $200 billion on data center infrastructure with more growth expected in 2027."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Google Cloud showed extreme growth acceleration from 63% in Q1 to 82% in Q2. Spending $200 billion on data center infrastructure with more growth expected in 2027."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Google Cloud showed extreme growth acceleration from 63% in Q1 to 82% in Q2. Spending $200 billion on data center infrastructure with more growth expected in 2027."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Google Cloud showed extreme growth acceleration from 63% in Q1 to 82% in Q2. Spending $200 billion on data center infrastructure with more growth expected in 2027."
       }
     ]
   },
   {
-    "id": "c198cd1d6f404e667860bbac64107e6c090a6cb871e17a06dec1001e2fdff136",
+    "id": "c9edb026c12a1998be203634a5b409108c836e2c28c22526378e4ec59d742ff7",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "These 2 Potential Stock Splits Look Like Screaming Deals Right Now",
-    "author": "Keithen Drury",
-    "published_utc": "2026-08-16T06:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/16/these-2-potential-stock-splits-look-like-screaming/?source=iedfolrf0000001",
+    "title": "The Fed's September Decision Could Hit Micron Harder Than Its Own Earnings",
+    "author": "Manali Pradhan, Cfa",
+    "published_utc": "2026-09-03T15:15:00Z",
+    "article_url": "https://www.fool.com/investing/2026/09/03/the-feds-september-decision-could-hit-micron-harde/?source=iedfolrf0000001",
     "tickers": [
       "MU",
-      "SNDK"
+      "NVDA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F882978%2Fstock-trader-shouting-celebrating-success.jpg&w=1200&op=resize",
-    "description": "Micron Technology and Sandisk are positioned as attractive investment opportunities due to strong demand in the memory chip sector driven by data center spending. Both stocks have risen significantly this year and are trading near levels where stock splits could occur. With supply constraints expected to persist until 2027-2028, the author believes both companies have sustainable growth potential and could reach new all-time highs before year-end.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F885155%2Fprofessionals_smiling_in_a_conference_room.jpg&w=1200&op=resize",
+    "description": "Micron Technology is expected to report strong Q4 earnings on September 30, but the Federal Reserve's interest rate decision on September 16 could have a greater impact on the stock. While Micron's financial results are exceptional with projected Q4 revenue of $49-51 billion and EPS of $30-32, a hawkish Fed decision could pressure the stock by reducing investor confidence in the sustainability of current memory pricing power, even if earnings estimates rise. The company's low valuation multiple suggests investors remain skeptical about whether extraordinary memory profits will persist.",
     "keywords": [
-      "stock splits",
+      "Federal Reserve interest rate decision",
+      "memory chip pricing",
+      "DRAM and NAND supply shortage",
+      "AI data center demand",
+      "earnings valuation multiple",
+      "customer contracts",
+      "monetary policy impact"
+    ],
+    "insights": [
+      {
+        "ticker": "MU",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While Micron's fundamentals are strong with exceptional Q3 results and robust Q4 guidance, the article emphasizes downside risk from Fed policy rather than company performance. The low 6.2x earnings multiple reflects investor skepticism about profit sustainability. A hawkish Fed decision could pressure the stock despite strong earnings, making the near-term outlook uncertain despite solid operational metrics."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Nvidia is mentioned as expecting roughly 70% revenue growth in fiscal 2028, indicating strong AI spending momentum. The article references Nvidia's growth expectations as evidence that an interest rate hike is unlikely to stop AI spending immediately, supporting continued demand for memory chips that benefit Micron."
+      }
+    ]
+  },
+  {
+    "id": "467502690654126d6edc1cd09d922fc3de11c88bc148a8f9e6202687b3589c95",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "Upbeat AI Data Centers Demand Propels SK Hynix: More Growth Ahead?",
+    "author": "Na",
+    "published_utc": "2026-09-03T14:16:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2984434/upbeat-ai-data-centers-demand-propels-sk-hynix-more-growth-ahead?cid=CS-ZC-FT-analyst_blog|quick_take-2984434",
+    "tickers": [
+      "SKHY",
+      "NVDA",
+      "MU"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/d3/848.jpg",
+    "description": "SK Hynix, South Korea's second-largest company, is benefiting from surging demand for high-bandwidth memory (HBM) and advanced storage chips used in AI infrastructure. The company has secured a long-term partnership with NVIDIA and is building its first U.S. AI memory production facility in Indiana, expected to supply next-generation HBM starting in late 2029. Wall Street analysts project approximately 54% upside potential for the stock.",
+    "keywords": [
+      "SK Hynix",
+      "HBM",
+      "AI infrastructure",
+      "semiconductor",
+      "NVIDIA partnership",
       "memory chips",
-      "data center demand",
-      "NAND memory",
-      "DRAM memory",
-      "supply constraints",
-      "semiconductor industry"
+      "data centers",
+      "Indiana fab"
+    ],
+    "insights": [
+      {
+        "ticker": "SKHY",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong positioning in growing HBM market with NVIDIA partnership, expanding U.S. manufacturing capacity, early leadership advantage in AI memory, and Wall Street consensus showing 54% upside potential. Company benefits from exploding AI data center demand and global memory chip shortage."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Secured long-term AI memory partnership with SK Hynix ensuring stable supply of next-generation AI memory chips, supporting NVIDIA's AI infrastructure expansion and data center growth."
+      },
+      {
+        "ticker": "MU",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Major HBM market player benefiting from rapid AI growth. Strong demand for HBM products with 2026 production sold out and significant 2027 capacity reserved through long-term agreements. Latest HBM solutions well-suited for AI accelerators."
+      }
+    ]
+  },
+  {
+    "id": "1fdc0d6c73eb30dd7b35bd88959e22e65be76bd5dccc4887241aa41f7ebfc705",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "If You Invested $1000 in Micron 10 Years Ago, This Is How Much You'd Have Now",
+    "author": "Zacks.Com",
+    "published_utc": "2026-09-03T12:30:04Z",
+    "article_url": "https://www.zacks.com/stock/news/2984222/if-you-invested-1000-in-micron-10-years-ago-this-is-how-much-you-d-have-now?cid=CS-ZC-FT-fundamental_analysis|investing_$1000-2984222",
+    "tickers": [
+      "MU"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/default_article_images/default215.jpg",
+    "description": "A $1,000 investment in Micron Technology made in September 2016 would be worth $57,250.30 as of September 3, 2026, representing a 5,625% gain. This significantly outperformed the S&P 500 (251.68% gain) and gold (221.48% gain) over the same period. Micron is benefiting from AI-driven demand for memory and storage, with strong fiscal 2026 results and positive analyst forecasts, though risks include rising operating expenses and competition.",
+    "keywords": [
+      "Micron Technology",
+      "semiconductor memory",
+      "DRAM",
+      "NAND flash",
+      "AI data centers",
+      "stock performance",
+      "10-year returns",
+      "memory and storage"
     ],
     "insights": [
       {
         "ticker": "MU",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strong fundamentals driven by high demand for NAND and DRAM memory from data centers, supply constraints expected to persist until 2028, stock down 20% from all-time high presenting buying opportunity, potential stock split catalyst, and analyst price targets suggesting upside potential."
+        "sentiment_reasoning": "Exceptional 10-year investment returns (5,625% gain), strong AI-driven demand for memory products, record Q3 fiscal 2026 results, improved analyst estimates with no downward revisions in two months, and positive outlook supported by strategic customer agreements and expanding opportunities in data centers, automotive, and edge AI."
+      }
+    ]
+  },
+  {
+    "id": "2d988c35d767031bbcfea75b5630832825b0454f254e8e94102f301ca088440b",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Is Silicon Motion Technology Stock a Buy Now?",
+    "author": "Marc Guberti",
+    "published_utc": "2026-09-03T11:26:00Z",
+    "article_url": "https://www.fool.com/investing/2026/09/03/is-silicon-motion-technology-stock-a-buy-now/?source=iedfolrf0000001",
+    "tickers": [
+      "SIMO",
+      "MU"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F885435%2Fgettyimages-1417216728-1200x716-caa0466.jpg&w=1200&op=resize",
+    "description": "Silicon Motion Technology, a NAND flash controller manufacturer for solid-state drives, is positioned as an attractive investment opportunity. The company has delivered 127% year-over-year revenue growth with improving profit margins, while trading at a P/E ratio similar to the S&P 500 despite significantly higher growth. With major memory chip customers signing multiyear deals and long-term contracts locking in capacity through 2031, Silicon Motion is well-positioned to benefit from sustained AI infrastructure demand.",
+    "keywords": [
+      "NAND flash controllers",
+      "memory chips",
+      "AI infrastructure",
+      "solid-state drives",
+      "revenue growth",
+      "multiyear contracts",
+      "valuation"
+    ],
+    "insights": [
+      {
+        "ticker": "SIMO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong fundamentals with 127% YoY revenue growth, 30.2% net profit margins, and reasonable P/E valuation relative to growth rate. CEO guidance indicates continued momentum, and long-term customer contracts through 2031 provide visibility into sustained demand from AI infrastructure buildout."
       },
       {
-        "ticker": "SNDK",
+        "ticker": "MU",
         "sentiment": "positive",
-        "sentiment_reasoning": "Benefiting from exceptional demand for NAND memory with two-thirds of recent growth from price increases, stock down 30% from all-time high despite strong performance, supply relief not expected until late 2027-2028, positioned for continued gains, and potential stock split candidate."
+        "sentiment_reasoning": "Mentioned as a key customer of Silicon Motion that has been beating guidance and signing multiyear deals. Recent earnings showed significant revenue beats ($41.46B vs $33.5B guidance), indicating strong demand for memory chips."
       }
     ]
   }

@@ -1,5 +1,53 @@
 [
   {
+    "id": "a8e5be6cf810f99844f55c1df9733631eb4b7377d5015a7a7cdf381cebaa6c09",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "Lowe's Cuts 2026 Outlook as DIY Pressure Tests Its Growth Engines",
+    "author": "Na",
+    "published_utc": "2026-09-01T14:15:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2983159/lowe-s-cuts-2026-outlook-as-diy-pressure-tests-its-growth-engines?cid=CS-ZC-FT-analyst_blog_plus|zer_report_insights-2983159",
+    "tickers": [
+      "LOW",
+      "HD",
+      "BLDR"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/58/467.jpg",
+    "description": "Lowe's beat Q2 earnings expectations with $4.40 EPS but missed revenue forecasts and significantly lowered fiscal 2026 guidance to flat comparable sales and $12.25 EPS. While Pro, Online, and Home Services segments showed strength with 15.7% online sales growth, weak DIY demand, housing pressures, and margin headwinds from fuel, transportation, and competitive pricing drove the cautious outlook reset.",
+    "keywords": [
+      "earnings beat",
+      "guidance cut",
+      "comparable sales",
+      "DIY weakness",
+      "margin pressure",
+      "online sales growth",
+      "housing market",
+      "Pro segment",
+      "acquisitions"
+    ],
+    "insights": [
+      {
+        "ticker": "LOW",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Despite beating Q2 earnings, Lowe's significantly lowered full-year guidance to flat comparable sales and bottom-of-range EPS of $12.25. Weak DIY demand, declining transactions (-2.1%), margin compression (80 bps), and expected Q3 EPS decline of ~7% YoY indicate deteriorating near-term business conditions. Zacks Rank #4 (Sell) rating reflects unfavorable earnings-estimate trends."
+      },
+      {
+        "ticker": "HD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Home Depot reported modest 1.7% comparable-sales growth and reaffirmed guidance, indicating stability but not strength. Management commentary about customers engaging in smaller projects suggests cautious consumer spending across the home improvement sector, similar to Lowe's challenges."
+      },
+      {
+        "ticker": "BLDR",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Reported 8.8% Q2 sales decline primarily due to lower housing starts and related headwinds. This reflects broader residential construction weakness that directly impacts Lowe's acquired FBM division (45% exposed to construction) and ADG, creating near-term earnings drag."
+      }
+    ]
+  },
+  {
     "id": "7c9f098a424e61fb9d0cb733fe90e321ef6dfad796086c9ed551171527af386f",
     "publisher": {
       "name": "The Motley Fool",
@@ -178,53 +226,6 @@
         "ticker": "TSCO",
         "sentiment": "positive",
         "sentiment_reasoning": "Despite tepid growth and below-forecast results, company sustains system-wide growth and cash flow through store expansion and comp sales, enabling dividend and buybacks. Stock offers deep-value opportunity with 40% upside potential and 3.17% yield, with fresh pet food rollout as a catalyst."
-      }
-    ]
-  },
-  {
-    "id": "1812a61eb0abbc3f49a0b34127f2c9e34bcf5a607d922ab24d8e66537ec2c3e0",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Home Depot vs. Lowe's: Which Big Box Home Improvement Giant Is the Better Buy in 2026?",
-    "author": "Brendan Coffey",
-    "published_utc": "2026-07-06T17:29:52Z",
-    "article_url": "https://www.fool.com/coverage/better-buy/2026/07/06/home-depot-vs-lowe-s-which-big-box-home-improvement-giant-is-the-better-buy-in-2026/?source=iedfolrf0000001",
-    "tickers": [
-      "HD",
-      "LOW",
-      "AMZN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F3caa0e2607e9485862b0d89e5f6f6be899ae6c41-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Home Depot and Lowe's dominate the home improvement retail market with different growth strategies. Home Depot leads in the professional contractor segment with a $357B market cap, higher margins, and strong free cash flow, but trades at a premium valuation (P/E 25.41). Lowe's, with a $128B market cap, appears cheaper (P/E 19.24) and is aggressively expanding into the professional market while maintaining its DIY homeowner base. Analysts project Lowe's will grow faster in 2026 with 8% sales growth versus Home Depot's 4%, making Lowe's the potentially better value despite Home Depot's market dominance.",
-    "keywords": [
-      "home improvement retail",
-      "professional contractors",
-      "DIY homeowners",
-      "valuation comparison",
-      "market growth",
-      "acquisitions",
-      "free cash flow",
-      "earnings multiples"
-    ],
-    "insights": [
-      {
-        "ticker": "HD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Dominates the professional contractor market, strong financial metrics with $14.8B net income, $12.7B free cash flow, higher gross margins (31.14%), and strategic acquisitions (SRS, GMS, Mingledorff's) to expand HVAC and pro segments. However, higher valuation and slower projected growth temper enthusiasm."
-      },
-      {
-        "ticker": "LOW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Positioned as the better buy in 2026 due to lower valuation multiples (P/E 19.24 vs 25.41), stronger projected growth (8% sales vs 4% for Home Depot), successful acquisitions expanding professional reach, and strong free cash flow of $7.7B. AI-assisted tools for contractors and improved customer experience initiatives show momentum."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitive threat to Home Depot in the home improvement space as a digital-first platform, but not analyzed in detail as a primary investment option in this comparison."
       }
     ]
   }

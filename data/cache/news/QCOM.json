@@ -1,390 +1,267 @@
 [
   {
-    "id": "bf4476f986412188f40de2a9360f5d3da0cb68a4594812814e630d0c979850b7",
+    "id": "769b79c1d8835b80b5f9e1990acf7f8e2a600b7152c9bd221c2c42366c648c51",
     "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
     },
-    "title": "Not Nvidia. Not AMD. This Chip Stock Will Be the Biggest Winner of the Historic AI Semiconductor Boom",
-    "author": "Harsh Chauhan",
-    "published_utc": "2026-08-15T13:23:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/15/not-nvidia-not-amd-this-chip-stock-will-be-the-big/?source=iedfolrf0000001",
+    "title": "Why Is Ichor Holdings (ICHR) Down 27.4% Since Last Earnings Report?",
+    "author": "Na",
+    "published_utc": "2026-09-02T15:30:06Z",
+    "article_url": "https://www.zacks.com/stock/news/2983882/why-is-ichor-holdings-ichr-down-27-4-since-last-earnings-report?cid=CS-ZC-FT-realtime_blog-2983882",
     "tickers": [
-      "TSM",
-      "AMD",
-      "NVDA",
-      "AAPL",
-      "MSFT",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "AMZN",
-      "QCOM",
-      "AVGO",
-      "SOXX"
+      "ICHR",
+      "QCOM"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883737%2Fperson-specs-integrated-circuit.jpg&w=1200&op=resize",
-    "description": "While Nvidia and AMD are benefiting from the AI semiconductor boom, Taiwan Semiconductor Manufacturing (TSMC) is positioned as a better investment due to its foundry business model serving multiple major clients. TSMC's diversified customer base, strong pricing power, and dominant 73% foundry market share make it well-positioned for sustained growth, with the stock trading at an attractive 25x forward earnings compared to peers.",
+    "image_url": "https://staticx-tuner.zacks.com/images/default_article_images/default304.jpg",
+    "description": "Ichor Holdings (ICHR) reported Q2 2026 earnings of 34 cents per share, beating estimates by 9.7%, with revenues rising 22.7% year-over-year to $294.8 million. The company achieved significant margin expansion of 230 basis points and issued strong Q3 guidance with expected revenues of $315-345 million. Despite the positive earnings results, the stock has declined 27.4% over the past month, underperforming the S&P 500. Analyst estimates have trended upward 17.61% since the earnings report, and the stock received a Zacks Rank #1 (Strong Buy) rating.",
     "keywords": [
-      "AI semiconductors",
-      "foundry business",
-      "chip manufacturing",
-      "TSMC",
-      "pricing power",
-      "market share",
-      "valuation"
+      "earnings beat",
+      "margin expansion",
+      "revenue growth",
+      "semiconductor equipment",
+      "manufacturing strategy",
+      "guidance",
+      "stock decline"
     ],
     "insights": [
       {
-        "ticker": "TSM",
+        "ticker": "ICHR",
         "sentiment": "positive",
-        "sentiment_reasoning": "TSMC is highlighted as the superior investment choice with 73% foundry market dominance, 37% YoY revenue growth, planned 25% price increases for AI chips, attractive 25x forward earnings valuation, and strong positioning to capitalize on the AI chip boom across multiple customer segments."
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "AMD shows strong fundamentals with 50% YoY revenue growth, 246% YoY earnings growth, and 107% YoY data center revenue increase. However, sentiment is less positive than TSMC as the article positions it as a less comprehensive play on the AI boom compared to the foundry model."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Nvidia demonstrates exceptional growth with expected 95% YoY revenue increase and dominant position in AI chip ecosystem. However, the article explicitly argues TSMC is a better investment choice, limiting the positive sentiment relative to TSMC."
-      },
-      {
-        "ticker": "AAPL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Apple is mentioned as one of TSMC's diverse clientele benefiting from the foundry's services, but no specific analysis or sentiment is provided about the company itself."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Microsoft is mentioned as a TSMC customer but receives no specific analysis or sentiment commentary in the article."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is listed as a TSMC customer but no specific analysis or sentiment is provided about the company."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is listed as a TSMC customer but no specific analysis or sentiment is provided about the company."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is listed as a TSMC customer but no specific analysis or sentiment is provided about the company."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Alphabet is listed as a TSMC customer but no specific analysis or sentiment is provided about the company."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Amazon is mentioned as a TSMC customer but receives no specific analysis or sentiment commentary."
+        "sentiment_reasoning": "Company beat earnings estimates by 9.7%, achieved 230 basis points of gross margin expansion, increased revenues 22.7% year-over-year, issued strong Q3 guidance, and received a Zacks Rank #1 (Strong Buy) rating with upward estimate revisions of 17.61%. Strong operational performance and positive analyst outlook support positive sentiment despite recent stock price decline."
       },
       {
         "ticker": "QCOM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Qualcomm is mentioned as a TSMC customer but no specific analysis or sentiment is provided."
-      },
-      {
-        "ticker": "AVGO",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Broadcom is listed as a TSMC customer but receives no specific analysis or sentiment commentary in the article."
-      },
-      {
-        "ticker": "SOXX",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "The ETF is mentioned for valuation comparison purposes (67x forward P/E) but no specific investment recommendation or sentiment is provided."
+        "sentiment": "negative",
+        "sentiment_reasoning": "Qualcomm reported year-over-year revenue decline of 4% and EPS decline from $2.77 to $2.21. Expected earnings for the current quarter show a year-over-year decline of 27.3%. The stock received a Zacks Rank #3 (Hold) rating and has gained only 2.4% over the past month, indicating weak performance relative to industry peer Ichor Holdings."
       }
     ]
   },
   {
-    "id": "1ee6ea0ee8286ca6a94d8c72894b597c9db09a366d4b5def987506895a406440",
+    "id": "e893a7129e178c7cd307dc3acb423fb4f41bd65e0d379e5946acabe1efa977c1",
     "publisher": {
       "name": "GlobeNewswire Inc.",
       "homepage_url": "https://www.globenewswire.com",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
     },
-    "title": "Software-Defined Vehicle Market to Reach $1.70 Trillion by 2035, Driven by Centralized Computing, AI and OTA Updates - Insights by SDV Type, E/E Architecture, Vehicle Type, Offering, Application, and Region",
-    "author": "Researchandmarkets.Com",
-    "published_utc": "2026-08-07T09:52:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/08/07/3340973/28124/en/software-defined-vehicle-market-to-reach-1-70-trillion-by-2035-driven-by-centralized-computing-ai-and-ota-updates-insights-by-sdv-type-e-e-architecture-vehicle-type-offering-applic.html",
+    "title": "NG eCall Vehicle Shipments Surge as EU Network Upgrades Turn Post-Crash Safety into a Connected Vehicle Imperative",
+    "author": "Abi Research",
+    "published_utc": "2026-09-02T12:00:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/09/02/3355051/0/en/ng-ecall-vehicle-shipments-surge-as-eu-network-upgrades-turn-post-crash-safety-into-a-connected-vehicle-imperative.html",
     "tickers": [
-      "TSLA",
-      "RIVN",
-      "MBGYY",
-      "F",
-      "FpB",
-      "FpC",
-      "FpD",
-      "GM",
+      "MBLY",
       "QCOM",
-      "NIO",
-      "XPEV",
-      "LI",
-      "STLA",
-      "HMC",
-      "XIACF",
-      "VWAGY"
+      "ERIC"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/0a8c0d42-f4b0-47ee-bd8a-b0346327dfc8",
-    "description": "The global software-defined vehicle (SDV) market is projected to grow from $447.55 billion in 2026 to $1.70 trillion by 2035, with a 16% CAGR. Growth is driven by centralized computing architectures, over-the-air updates, AI-enabled functions, and feature-on-demand subscription services. Hardware remains the largest offering segment, while North America leads adoption through OEM software investments.",
+    "image_url": "https://ml.globenewswire.com/Resource/Download/b2504449-ef14-41b7-b036-7b19dea47a19",
+    "description": "EU regulation 2024/1180 and the retirement of 2G/3G networks are driving rapid adoption of Next-Generation eCall in European vehicles from 2026-2031. Automakers are integrating connected post-crash safety as a core capability, with competitive differentiation extending beyond emergency calling to include sensor fusion, edge AI, and software-defined updates. Western Europe leads deployment while Eastern Europe transitions gradually.",
     "keywords": [
-      "software-defined vehicles",
-      "centralized computing",
-      "over-the-air updates",
-      "AI-enabled functions",
-      "feature-on-demand services",
-      "ADAS",
-      "electric vehicles",
-      "automotive semiconductors",
-      "zonal architecture",
-      "subscription-based services"
+      "NG eCall",
+      "EU Regulation 2024/1180",
+      "connected vehicle safety",
+      "2G/3G network shutdown",
+      "post-crash response",
+      "IMS-based emergency calling",
+      "sensor fusion",
+      "edge AI"
     ],
     "insights": [
       {
-        "ticker": "TSLA",
+        "ticker": "MBLY",
         "sentiment": "positive",
-        "sentiment_reasoning": "Highlighted as a leading SDV innovator investing in centralized architectures and feature-on-demand services; recognized as a major global participant in the rapidly growing market."
-      },
-      {
-        "ticker": "RIVN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as a key SDV investor and collaborator with Volkswagen Group on next-generation vehicle architectures; positioned as a significant market participant."
-      },
-      {
-        "ticker": "MBGYY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Expanding feature-on-demand portfolios and investing in software-defined vehicle capabilities."
-      },
-      {
-        "ticker": "F",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Announced Universal EV platform with OTA updates and hands-free driving capabilities; demonstrating strategic shift to software-driven architectures."
-      },
-      {
-        "ticker": "FpB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Announced Universal EV platform with OTA updates and hands-free driving capabilities; demonstrating strategic shift to software-driven architectures."
-      },
-      {
-        "ticker": "FpC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Announced Universal EV platform with OTA updates and hands-free driving capabilities; demonstrating strategic shift to software-driven architectures."
-      },
-      {
-        "ticker": "FpD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Announced Universal EV platform with OTA updates and hands-free driving capabilities; demonstrating strategic shift to software-driven architectures."
-      },
-      {
-        "ticker": "GM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Advancing next-generation software platform strategy to improve vehicle update capabilities and enable broader software-based services."
+        "sentiment_reasoning": "Explicitly mentioned as a company converging sensing, compute, and connectivity capabilities to support connected post-crash safety, positioning it to benefit from NG eCall adoption."
       },
       {
         "ticker": "QCOM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strategic partnership with Wayve to accelerate AI-enabled vehicle platform development; positioned as key technology enabler in SDV market."
+        "sentiment_reasoning": "Named as a key player in compute and connectivity solutions for NG eCall infrastructure, well-positioned to capture demand from the accelerating transition."
       },
       {
-        "ticker": "NIO",
+        "ticker": "ERIC",
         "sentiment": "positive",
-        "sentiment_reasoning": "Recognized as a major global SDV participant and leader in feature-on-demand service expansion."
-      },
-      {
-        "ticker": "XPEV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Identified as a major global SDV innovator and active participant in feature-on-demand service expansion."
-      },
-      {
-        "ticker": "LI",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Recognized as a major global SDV participant in the competitive landscape."
-      },
-      {
-        "ticker": "STLA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as a key company influencing SDV development and investing in software-defined vehicle architectures."
-      },
-      {
-        "ticker": "HMC",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Unveiled Honda 0 Series platform with centralized computing architecture designed for future SDVs."
-      },
-      {
-        "ticker": "XIACF",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Investing in SDV architectures and recognized as a key company influencing SDV development."
-      },
-      {
-        "ticker": "VWAGY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Actively expanding feature-on-demand portfolios and validating next-generation centralized vehicle architectures; demonstrating strong commitment to SDV development."
+        "sentiment_reasoning": "Highlighted as a contributor to connectivity and interoperability testing for NG eCall systems, benefiting from IMS network modernization requirements."
       }
     ]
   },
   {
-    "id": "56f76249b63d47821e6572dd347d375165648f393e5b663b47daf0b1cc3794a4",
+    "id": "1cd613ee54835f934ad454dfcdee480f5dfc5a083bd54d5feaed2dcafd39fe88",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "1 Incredible Reason to Buy Qualcomm Stock Right Now",
-    "author": "John Ballard",
-    "published_utc": "2026-08-02T08:05:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/02/1-incredible-reason-buy-qualcomm-stock-right-now/?source=iedfolrf0000001",
+    "title": "Stock Market Today, Sept. 1: Intel Falls on Chip Stock Pressure",
+    "author": "Emma Newbery",
+    "published_utc": "2026-09-01T21:23:56Z",
+    "article_url": "https://www.fool.com/coverage/stock-market-today/2026/09/01/stock-market-today-sept-1-intel-falls-on-chip-stock-pressure/?source=iedfolrf0000001",
     "tickers": [
-      "QCOM",
-      "NVDA",
-      "INTC"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F881401%2Fis-qualcomm-stock-a-buy.png&w=1200&op=resize",
-    "description": "Qualcomm stock has declined 14% year-to-date, offering a 2.5% forward dividend yield with significant upside potential. The company is targeting $40 billion in non-handset revenue by 2029, including $15 billion from data center operations, while shifting its business model toward AI infrastructure. The dividend is well-covered with only 36% of free cash flow allocated to payouts, leaving substantial resources for growth initiatives.",
-    "keywords": [
-      "Qualcomm",
-      "dividend yield",
-      "data center",
-      "AI infrastructure",
-      "non-handset revenue",
-      "tech stock",
-      "stock valuation"
-    ],
-    "insights": [
-      {
-        "ticker": "QCOM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "The article highlights Qualcomm's attractive 2.5% dividend yield, strong free cash flow coverage, and ambitious growth targets in high-margin data center and AI markets. Management expects non-handset revenue to reach $40 billion by 2029, with data center revenue growing to $15 billion. The stock's recent decline is presented as a buying opportunity, and the author suggests Wall Street is undervaluing the company's growth prospects."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Nvidia is mentioned only in a comparative context in the 'Read Next' section, noting that Qualcomm is 'overlooked vs. Nvidia.' No substantive analysis or sentiment is provided about Nvidia itself in the main article content."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Intel is mentioned only in a comparative context in the 'Read Next' section, noting that Qualcomm is 'overlooked vs. Intel.' No substantive analysis or sentiment is provided about Intel itself in the main article content."
-      }
-    ]
-  },
-  {
-    "id": "acb64ef0d9f85efde767e71606deef79d287665e6d71b69e6195459cb1a61eb6",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Here's Why Qualcomm Is Still Overlooked vs. Nvidia and Intel",
-    "author": "John Ballard",
-    "published_utc": "2026-07-26T17:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/26/why-qualcomm-overlooked-nvidia-intel/?source=iedfolrf0000001",
-    "tickers": [
-      "QCOM",
-      "NVDA",
       "INTC",
-      "META"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880145%2Fis-qualcomm-stock-a-buy.png&w=1200&op=resize",
-    "description": "Qualcomm is overlooked by Wall Street despite a strategic transition from mobile chips to a diversified edge-to-cloud infrastructure leader. While handset business weakness pressures near-term results, the company expects non-handset revenue to reach $40 billion by fiscal 2029, with data center revenue alone projected to hit $15 billion. Recent deals with Meta and decades of low-power computing expertise position Qualcomm competitively, yet the stock trades at modest valuations compared to peers.",
-    "keywords": [
-      "semiconductor",
-      "data center chips",
-      "AI infrastructure",
-      "automotive revenue",
-      "Dragonfly platform",
-      "edge AI",
-      "handset business",
-      "valuation"
-    ],
-    "insights": [
-      {
-        "ticker": "QCOM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company is undervalued relative to growth prospects, with strong non-handset segment growth (20% YoY), significant automotive revenue growth (38% YoY), validated data center opportunity through Meta deal, and attractive forward P/E multiple of 16x with fiscal 2029 earnings target of $18 EPS."
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as dominant competitor in data center GPUs with widespread deployment, but article suggests Qualcomm's Dragonfly platform offers differentiation through memory bottleneck solutions and multi-processor design approach."
-      },
-      {
-        "ticker": "INTC",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Referenced as competitor that has tripled in value year-to-date, but article focuses on Qualcomm's superior positioning in emerging markets like automotive and edge AI rather than direct comparison."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as validation of Qualcomm's data center opportunity through long-term agreement for Dragonfly C1000 CPUs entering production in 2028, but sentiment is neutral as this is a customer relationship rather than investment thesis."
-      }
-    ]
-  },
-  {
-    "id": "083282e30241d355f40e7070590c4d47a365ef43f8074862c148a5e74a8aa094",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "The Overlooked Infrastructure Play Quietly Winning the AI Boom",
-    "author": "Harsh Chauhan",
-    "published_utc": "2026-07-23T13:23:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/23/the-overlooked-infrastructure-play-quietly-winning/?source=iedfolrf0000001",
-    "tickers": [
-      "TSM",
-      "NVDA",
       "AMD",
       "QCOM",
-      "AVGO"
+      "NVDA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879106%2Ftaiwan-semiconductor-tsmc-building-with-tsmc-logo-in-front_tsmc.jpg&w=1200&op=resize",
-    "description": "Taiwan Semiconductor Manufacturing (TSMC) is positioned as a major beneficiary of the AI infrastructure boom, with Q2 2026 revenue up 34% YoY and raised full-year guidance to over 40% growth. Despite underperforming the semiconductor sector this year (33% vs 68%), TSMC's strong earnings growth and reasonable 25x forward earnings valuation suggest potential 67% upside to $700 by 2028 as AI infrastructure spending accelerates.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fe3bcbb36c955ac33b4d67641805fcca8e9fca941-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Intel closed down 0.60% at $88.97 on September 1, 2026, as higher Treasury yields and inflation concerns pressured semiconductor stocks broadly. The decline was driven by macro factors rather than company-specific issues, with peers like AMD and Qualcomm also falling. Intel's recent $20 billion equity offering and progress in reducing foundry business losses provide some optimism, though near-term volatility is expected as investors assess whether Intel can maintain its position in the AI market.",
     "keywords": [
-      "AI infrastructure",
-      "semiconductor manufacturing",
-      "chip demand",
-      "earnings growth",
-      "valuation",
-      "data centers"
+      "semiconductor stocks",
+      "Treasury yields",
+      "inflation concerns",
+      "foundry business",
+      "AI demand",
+      "equity offering",
+      "risk-off sentiment"
     ],
     "insights": [
       {
-        "ticker": "TSM",
+        "ticker": "INTC",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock fell 0.60% due to macro headwinds from higher bond yields and inflation fears. However, the decline was less severe than peers, and the company is showing progress in foundry operations with a $20 billion capital raise to strengthen capacity."
+      },
+      {
+        "ticker": "AMD",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Closed down 2.36%, underscoring broad weakness across chipmakers driven by higher Treasury yields and risk-off market sentiment."
+      },
+      {
+        "ticker": "QCOM",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Closed down 2.27%, reflecting sector-wide pressure on semiconductor stocks from macro factors including elevated bond yields and rate hike expectations."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned in context of AI market positioning and as a company The Motley Fool has positions in, but no specific price action or sentiment commentary provided in the article."
+      }
+    ]
+  },
+  {
+    "id": "52a52fb01805728d9ca771c5c534340436cc0d71c65c27f15305a9cf427813f0",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "Can Qualcomm's Tie-Up With HUMAIN for AI PC Lift Its Shares?",
+    "author": "Na",
+    "published_utc": "2026-09-01T15:45:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2983337/can-qualcomm-s-tie-up-with-humain-for-ai-pc-lift-its-shares?cid=CS-ZC-FT-analyst_blog|quick_take-2983337",
+    "tickers": [
+      "QCOM",
+      "NVDA",
+      "AMD"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/0d/701.jpg",
+    "description": "Qualcomm has partnered with HUMAIN to launch the Horizon Ultra AI PC, powered by the Snapdragon X2 Elite platform featuring an 18-core Oryon CPU, Adreno GPU, and Hexagon NPU. The device enables AI workloads to run locally on enterprise PCs while maintaining cloud computing access. Qualcomm competes with NVIDIA and AMD in the growing AI PC market, though its stock has underperformed the industry over the past year.",
+    "keywords": [
+      "AI PC market",
+      "Snapdragon X2 Elite",
+      "on-device AI",
+      "enterprise computing",
+      "local AI processing",
+      "privacy-focused computing"
+    ],
+    "insights": [
+      {
+        "ticker": "QCOM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q2 earnings beat (34% revenue growth, 77% EPS growth), raised full-year guidance to 40%+ growth, positioned as critical supplier to major AI chip designers, reasonable valuation at 25x forward earnings with significant long-term growth potential from expanding AI infrastructure spending."
+        "sentiment_reasoning": "Qualcomm is expanding its AI PC capabilities through strategic partnerships and advancing its Snapdragon platform with dedicated AI processing units. The company is positioning itself in the high-growth AI PC market with enterprise-focused solutions emphasizing privacy and local processing."
       },
       {
         "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Mentioned as a major customer of TSMC and industry bellwether; cited for projections of AI infrastructure spending growth from $1T (2027) to $3-4T (2030), indicating strong demand for its chips."
+        "sentiment_reasoning": "NVIDIA is actively advancing in the AI PC market with its RTX Spark platform and collaborations with Microsoft and MediaTek to develop AI-focused consumer and enterprise PCs."
       },
       {
         "ticker": "AMD",
         "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a leading AI chip designer that relies on TSMC for manufacturing, benefiting from the surge in AI infrastructure demand."
+        "sentiment_reasoning": "AMD is strengthening its AI PC position with Ryzen AI Halo platform and Ryzen AI Max PRO 400 Series processors, working with major PC manufacturers to expand AI-powered PC availability across markets."
+      }
+    ]
+  },
+  {
+    "id": "ba2e07ff23c7a80c1e285fc7e8f273ea4f3c23cd847d2ff8a482ae3d70465760",
+    "publisher": {
+      "name": "GlobeNewswire Inc.",
+      "homepage_url": "https://www.globenewswire.com",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
+    },
+    "title": "New Anaqua Report Reveals Surge in AI Semiconductor Patent Filings",
+    "author": "Anaqua",
+    "published_utc": "2026-09-01T13:00:00Z",
+    "article_url": "https://www.globenewswire.com/news-release/2026/09/01/3354190/0/en/new-anaqua-report-reveals-surge-in-ai-semiconductor-patent-filings.html",
+    "tickers": [
+      "NVDA",
+      "IBM",
+      "QCOM",
+      "INTC",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
+      "MSFT"
+    ],
+    "image_url": "https://ml.globenewswire.com/Resource/Download/93bf2cd3-dfb8-4753-8719-3d389eed2845",
+    "description": "A new Anaqua report analyzing 713,755 semiconductor patents reveals AI-related semiconductor patents grew 114% over five years, nearly double the 78% growth of overall semiconductor patents. The analysis shows AI is now the primary driver of semiconductor innovation across chip architecture, GPUs, and inference processors, with major players like Samsung, IBM, Intel, and Chinese entities leading in different AI-chip categories, while hyperscalers like Google and Microsoft increasingly design custom chips.",
+    "keywords": [
+      "AI patents",
+      "semiconductor innovation",
+      "patent filings",
+      "GPU",
+      "inference processors",
+      "chip design",
+      "R&D investment"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While NVIDIA dominates the AI chip market, the report notes its competitive advantage lies in software (CUDA) rather than hardware patents, with only 49 GPU-titled patents ranking #7. This suggests its market dominance is not primarily driven by patent leadership."
+      },
+      {
+        "ticker": "IBM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "IBM leads in AI-semiconductor crossover filings (794) and analog AI (389), with strong positions in frontier technologies like quantum computing, neuromorphic chips, and phase-change memory, demonstrating leadership in cutting-edge semiconductor innovation."
       },
       {
         "ticker": "QCOM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Identified as a major AI chip designer utilizing TSMC's manufacturing capabilities to meet growing AI infrastructure demand."
+        "sentiment_reasoning": "Qualcomm shows steep growth with 186% increase in AI architecture patents and is rapidly pivoting from mobile to data center inference, ranking #9 in inference with 655 filings and #4 in GPU position."
       },
       {
-        "ticker": "AVGO",
+        "ticker": "INTC",
         "sentiment": "positive",
-        "sentiment_reasoning": "Named as a leading AI chip designer dependent on TSMC for production, positioned to benefit from expanding AI infrastructure spending."
+        "sentiment_reasoning": "Intel leads in GPU semiconductor filings (188) and ranks second in AI-in-IC architecture (967 filings), positioning itself strategically across multiple AI-semiconductor categories."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Google's TPU patenting appears across nearly every AI-and-semiconductor intersection, reflecting its strategic shift toward custom silicon design and vertical integration for AI workloads."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Google's TPU patenting appears across nearly every AI-and-semiconductor intersection, reflecting its strategic shift toward custom silicon design and vertical integration for AI workloads."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Google's TPU patenting appears across nearly every AI-and-semiconductor intersection, reflecting its strategic shift toward custom silicon design and vertical integration for AI workloads."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Google's TPU patenting appears across nearly every AI-and-semiconductor intersection, reflecting its strategic shift toward custom silicon design and vertical integration for AI workloads."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Microsoft's Maia accelerator-related patenting spans multiple AI-semiconductor categories, demonstrating its commitment to custom chip design and reducing dependence on third-party hardware."
       }
     ]
   }

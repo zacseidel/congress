@@ -1,369 +1,311 @@
 [
   {
-    "id": "bde7f08ea4fade47048c8f0bdfeb6387f1881939b203e6a1ac3fcf231c6e4b58",
+    "id": "68d000234124ceeff93850d569ddb6b796bf62ab818090c7bc34c4cb7670bc42",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "3 Alger Mutual Funds Offering Exposure to Growth Stocks",
+    "author": "Na",
+    "published_utc": "2026-09-03T12:15:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2984206/3-alger-mutual-funds-offering-exposure-to-growth-stocks?cid=CS-ZC-FT-mutual_fund_commentary-2984206",
+    "tickers": [
+      "NVDA",
+      "MSFT",
+      "AMZN",
+      "AAPL",
+      "AVGO"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/79/7332.jpg",
+    "description": "Zacks highlights three Alger mutual funds with strong ratings and positive long-term returns. Alger Focus Equity (ALGRX) holds concentrated positions in tech leaders with 35.6% 3-year returns, Alger Growth & Income (ALBAX) targets dividend-paying large-cap stocks with 20.2% 3-year returns, and Alger Responsible Investing (AGIFX) focuses on ESG-rated companies with growth potential. All three funds maintain low expense ratios and minimum investments under $5,000, positioning them to benefit from AI, business investment, and structural growth trends.",
+    "keywords": [
+      "mutual funds",
+      "growth investing",
+      "artificial intelligence",
+      "ESG investing",
+      "dividend stocks",
+      "technology stocks",
+      "active management"
+    ],
+    "insights": [
+      {
+        "ticker": "NVDA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Featured as top holding in two of three recommended funds (ALGRX at 12.9% and AGIFX at 11.4%), indicating strong positioning in AI and technological innovation themes"
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Appears as top-3 holding across all three funds (6.8% in ALGRX, 6.4% in ALBAX, 7.6% in AGIFX), demonstrating consistent exposure to growth and innovation"
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Significant holding in two funds (7.5% in ALGRX and 6.4% in AGIFX), reflecting exposure to technological innovation and structural growth"
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Top-3 holding in ALBAX at 6.6%, indicating inclusion in dividend-paying growth strategy"
+      },
+      {
+        "ticker": "AVGO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Top holding in ALBAX at 7.4%, representing exposure to semiconductor and technology infrastructure growth"
+      }
+    ]
+  },
+  {
+    "id": "b8365854e52ebe0eb274c6f26d577520a5038bc9772781ca99d0dbbc8e71a824",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "Should Vanguard Russell 1000 Value Index Fund ETF Shares (VONV) Be on Your Investing Radar?",
+    "author": "Zacks.Com",
+    "published_utc": "2026-09-03T10:20:02Z",
+    "article_url": "https://www.zacks.com/stock/news/2984149/should-vanguard-russell-1000-value-index-fund-etf-shares-vonv-be-on-your-investing-radar?cid=CS-ZC-FT-style_box_etf-2984149",
+    "tickers": [
+      "VONV",
+      "SCHD",
+      "VTV",
+      "AMZN",
+      "AAPL",
+      "MSFT"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/default_article_images/default283.jpg",
+    "description": "VONV, a passively managed ETF tracking large-cap value stocks, has amassed $21.92 billion in assets with a low expense ratio of 0.06% and strong year-to-date performance of 23.04%. The fund holds approximately 875 stocks with heavy exposure to Information Technology (19.2%), Financials, and Healthcare sectors. With a Zacks ETF Rank of 1 (Strong Buy), it offers diversified exposure to the large-cap value segment, though alternatives like VTV and SCHD are also available.",
+    "keywords": [
+      "ETF",
+      "large-cap value",
+      "passive management",
+      "low expense ratio",
+      "diversification",
+      "Russell 1000 Value Index"
+    ],
+    "insights": [
+      {
+        "ticker": "VONV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong Buy rating from Zacks, low expense ratio of 0.06%, substantial assets under management ($21.92 billion), solid year-to-date performance (23.04%), and effective diversification with 875 holdings make it an attractive option for value-focused investors."
+      },
+      {
+        "ticker": "SCHD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Presented as a comparable alternative with similar expense ratio (0.06%) and substantial assets ($112.87 billion), but no specific performance metrics or ratings provided to differentiate it positively or negatively."
+      },
+      {
+        "ticker": "VTV",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as an alternative option with the lowest expense ratio (0.03%) and largest assets ($192.68 billion) among alternatives, but presented neutrally without performance endorsement or rating comparison."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding (6.51% of portfolio) but mentioned factually without sentiment; serves as a component of the ETF rather than being independently evaluated."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding but mentioned factually without sentiment; serves as a component of the ETF rather than being independently evaluated."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding but mentioned factually without sentiment; serves as a component of the ETF rather than being independently evaluated."
+      }
+    ]
+  },
+  {
+    "id": "10fc83ef2d505e72910b7300b80b76624f4856f453f5d8ca5bc4001d98b6e3a5",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "Should You Invest in the Fidelity MSCI Information Technology Index ETF (FTEC)?",
+    "author": "Zacks.Com",
+    "published_utc": "2026-09-03T10:20:02Z",
+    "article_url": "https://www.zacks.com/stock/news/2984151/should-you-invest-in-the-fidelity-msci-information-technology-index-etf-ftec?cid=CS-ZC-FT-sector_etf-2984151",
+    "tickers": [
+      "FTEC",
+      "NVDA",
+      "AAPL",
+      "MSFT",
+      "XLK",
+      "VGT"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/default_article_images/default129.jpg",
+    "description": "The Fidelity MSCI Information Technology Index ETF (FTEC) is recommended as a passively managed ETF for broad technology sector exposure. With $20.9 billion in assets, a low 0.08% expense ratio, and a Zacks ETF Rank of 1 (Strong Buy), FTEC has gained 26.74% year-to-date and 39.02% over the past year. The fund holds 284 companies with top positions in Nvidia, Apple, and Microsoft, though its beta of 1.35 indicates medium-to-higher volatility.",
+    "keywords": [
+      "technology ETF",
+      "passive investing",
+      "low expense ratio",
+      "sector exposure",
+      "diversification"
+    ],
+    "insights": [
+      {
+        "ticker": "FTEC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Receives Zacks ETF Rank of 1 (Strong Buy), has low expense ratio of 0.08%, substantial assets of $20.9 billion, strong year-to-date and one-year performance gains, and provides diversified exposure across 284 holdings."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as the largest holding in FTEC at 17.86% of assets; no independent sentiment expressed, only noted as a major portfolio component."
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as second-largest holding in FTEC; no independent sentiment expressed, only noted as a major portfolio component."
+      },
+      {
+        "ticker": "MSFT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as third-largest holding in FTEC; no independent sentiment expressed, only noted as a major portfolio component."
+      },
+      {
+        "ticker": "XLK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Presented as an alternative ETF option with comparable expense ratio of 0.08% and larger assets of $119.49 billion; no comparative advantage or disadvantage stated."
+      },
+      {
+        "ticker": "VGT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Presented as an alternative ETF option with slightly higher expense ratio of 0.09% and larger assets of $146.05 billion; no comparative advantage or disadvantage stated."
+      }
+    ]
+  },
+  {
+    "id": "20c0017328810747cde8425748c86caa34e447c544fd7d400cb5d8ee6f8ed0af",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "History Says a $10,000 Investment in the QQQ Will Be Worth $66,000 in 10 Years",
-    "author": "Neil Patel",
-    "published_utc": "2026-08-17T12:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/17/history-says-investment-qqq-worth-66000-10-years/?source=iedfolrf0000001",
+    "title": "Sandisk Stock: Buy, Sell, or Hold?",
+    "author": "Marc Guberti",
+    "published_utc": "2026-09-02T18:12:00Z",
+    "article_url": "https://www.fool.com/investing/2026/09/02/sandisk-stock-buy-sell-or-hold/?source=iedfolrf0000001",
     "tickers": [
-      "QQQ",
+      "SNDK",
       "NVDA",
       "MSFT",
       "GOOG",
       "GOOGL",
       "GOOGM",
-      "GOOGN",
-      "AMZN",
-      "META"
+      "GOOGN"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883381%2Fai-robots-holding-chart-going-up-and-right.jpg&w=1200&op=resize",
-    "description": "The Invesco QQQ Trust ETF generated a 563% total return over the past decade, translating to a 20.8% annualized return. If this performance repeats, a $10,000 investment could grow to $66,000 in 10 years. The bull case depends on AI delivering on its promise and generating adequate returns on massive capital expenditures, while the bear case warns of decelerating growth and uncertain AI economic benefits.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F885436%2Fgettyimages-2264644356-1200x800-5b2df79.jpg&w=1200&op=resize",
+    "description": "Sandisk stock has quintupled year-to-date and appears poised for further gains as Samsung's announcement of multiyear memory chip deals with Nvidia, Microsoft, and Alphabet through 2031 intensifies the memory shortage. Sandisk is growing faster than Samsung (372% vs 130% YoY revenue growth) and securing similar long-term contracts, providing revenue visibility and pricing power. With a 77% net profit margin and only a 20 P/E ratio, the company is well-positioned to capitalize on sustained AI-driven demand for memory chips.",
     "keywords": [
-      "QQQ ETF",
-      "AI stocks",
-      "tech sector",
-      "investment returns",
-      "capital expenditure",
-      "growth stocks"
+      "memory chips",
+      "NAND flash",
+      "multiyear deals",
+      "AI demand",
+      "revenue visibility",
+      "memory shortage",
+      "net profit margin"
     ],
     "insights": [
       {
-        "ticker": "QQQ",
+        "ticker": "SNDK",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strong historical performance with 563% return over 10 years and 20.8% annualized returns, outperforming S&P 500. Positioned to benefit from AI revolution through leading tech companies."
+        "sentiment_reasoning": "Strong fundamentals with 372% YoY revenue growth, 77% net profit margin, multiyear customer contracts providing revenue visibility, and favorable positioning in the AI-driven memory chip market. Trading at only 20 P/E despite significant gains."
       },
       {
         "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Highlighted as the top contributor to QQQ's performance with a 14,200% return over 10 years, driven by insatiable demand for AI chips."
+        "sentiment_reasoning": "Signed long-term memory chip supply deal with Samsung through 2031, securing critical components for AI infrastructure and platforms."
       },
       {
         "ticker": "MSFT",
         "sentiment": "positive",
-        "sentiment_reasoning": "Listed as a top QQQ holding (5.75%) and hyperscaler investing heavily in AI infrastructure with projected capital expenditures."
+        "sentiment_reasoning": "Secured multiyear memory chip supply agreement with Samsung through 2031, ensuring supply stability for AI and cloud computing initiatives."
       },
       {
         "ticker": "GOOG",
         "sentiment": "positive",
-        "sentiment_reasoning": "Top QQQ holding and hyperscaler with significant AI presence in cloud computing and hardware/software development."
+        "sentiment_reasoning": "Locked in long-term memory chip supply through Samsung deal extending to 2031, supporting AI infrastructure investments."
       },
       {
         "ticker": "GOOGL",
         "sentiment": "positive",
-        "sentiment_reasoning": "Top QQQ holding and hyperscaler with significant AI presence in cloud computing and hardware/software development."
+        "sentiment_reasoning": "Locked in long-term memory chip supply through Samsung deal extending to 2031, supporting AI infrastructure investments."
       },
       {
         "ticker": "GOOGM",
         "sentiment": "positive",
-        "sentiment_reasoning": "Top QQQ holding and hyperscaler with significant AI presence in cloud computing and hardware/software development."
+        "sentiment_reasoning": "Locked in long-term memory chip supply through Samsung deal extending to 2031, supporting AI infrastructure investments."
       },
       {
         "ticker": "GOOGN",
         "sentiment": "positive",
-        "sentiment_reasoning": "Top QQQ holding and hyperscaler with significant AI presence in cloud computing and hardware/software development."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Hyperscaler with major capital expenditure commitments for AI infrastructure and cloud computing services."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Hyperscaler investing heavily in AI with projected capital expenditures approaching $800 billion combined with other tech giants."
+        "sentiment_reasoning": "Locked in long-term memory chip supply through Samsung deal extending to 2031, supporting AI infrastructure investments."
       }
     ]
   },
   {
-    "id": "2b3dba9b0866d011b8094fe92d8567b9e7bfb43eadebc3a22046c649e16471b0",
+    "id": "24f877f1094433f2d8af6a9c5e1460d2e9d6572e36e38ba7740a63ed0924406c",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "2 Best Nuclear Power Stocks Right Now",
-    "author": "James Halley",
-    "published_utc": "2026-08-17T02:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/16/2-best-nuclear-power-stocks-right-now/?source=iedfolrf0000001",
+    "title": "Growth ETF Showdown: Vanguard Morningstar Growth ETF vs. iShares Small-Cap 600 Growth ETF",
+    "author": "Sarah Sidlow",
+    "published_utc": "2026-09-02T17:37:01Z",
+    "article_url": "https://www.fool.com/coverage/etfs/2026/09/02/vanguard-morningstar-growth-etf-vs-ishares-small-cap-600-growth-etf/?source=iedfolrf0000001",
     "tickers": [
-      "CEG",
-      "CCJ",
-      "MSFT",
-      "WMT",
-      "META",
-      "AMZN",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "BEP",
-      "BEPH",
-      "BEPI",
-      "BEPJ",
-      "BEPpA"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883351%2Fnuclear-power-two.jpg&w=1200&op=resize",
-    "description": "Nuclear power is experiencing a global renaissance driven by AI data center demand and rising energy needs. Constellation Energy and Cameco Corporation are highlighted as top plays in the nuclear sector\u2014Constellation as a major nuclear power provider with long-term corporate agreements, and Cameco as a leading uranium supplier with integrated nuclear services through Westinghouse ownership.",
-    "keywords": [
-      "nuclear power",
-      "AI data centers",
-      "uranium",
-      "energy stocks",
-      "power purchase agreements",
-      "baseload power"
-    ],
-    "insights": [
-      {
-        "ticker": "CEG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q2 revenue growth of 22.9% YoY, EPS up 33.5% YoY, landmark 20-year PPA with Microsoft, 920 MW of new long-term contracts signed, fuel license approval received, and benefits from Nuclear Production Tax Credit providing revenue floor protection."
-      },
-      {
-        "ticker": "CCJ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Uranium segment revenue up 15% YoY with adjusted EBITDA up 48% YoY, strong 2026 guidance with expected uranium prices of $91-$96/lb (up from $85-$89), increased fuel services revenue forecast, 49% ownership of Westinghouse providing recurring high-margin revenue, and positioned as safe Western-aligned supplier amid Russian uranium phase-out."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major tech hyperscaler signing a landmark 20-year PPA with Constellation for nuclear power to support AI data centers, but article focuses on nuclear stocks rather than Microsoft's fundamentals."
-      },
-      {
-        "ticker": "WMT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a corporate buyer with long-term nuclear PPAs with Constellation, but article does not provide analysis of Walmart's business or sentiment."
-      },
-      {
-        "ticker": "META",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a tech hyperscaler building AI data centers requiring stable nuclear power, but no specific analysis provided."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a tech hyperscaler with zero-emissions targets requiring nuclear power for AI data centers, but no specific analysis provided."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a tech hyperscaler needing stable nuclear power for AI data centers, but no specific analysis provided."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a tech hyperscaler needing stable nuclear power for AI data centers, but no specific analysis provided."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a tech hyperscaler needing stable nuclear power for AI data centers, but no specific analysis provided."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a tech hyperscaler needing stable nuclear power for AI data centers, but no specific analysis provided."
-      },
-      {
-        "ticker": "BEP",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
-      },
-      {
-        "ticker": "BEPH",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
-      },
-      {
-        "ticker": "BEPI",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
-      },
-      {
-        "ticker": "BEPJ",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
-      },
-      {
-        "ticker": "BEPpA",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as co-owner of Westinghouse Electric Company alongside Cameco, but no specific analysis or sentiment provided in the article."
-      }
-    ]
-  },
-  {
-    "id": "52b2a624974e09cc3fa823584b60fc0b5d6f7993655f28d808067555ea268113",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Amazon, Alphabet, and Microsoft Are Dropping Nearly $600 Billion on Capital Expenditures: 1 Clear Winner Emerges",
-    "author": "Keithen Drury",
-    "published_utc": "2026-08-16T22:07:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/16/amazon-alphabet-and-microsoft-are-dropping-nearly/?source=iedfolrf0000001",
-    "tickers": [
-      "AMZN",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "MSFT",
-      "TSM"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883373%2Fperson-in-a-mask-looking-at-a-semiconductor-microchip-for-artificial-intelligence-ai.jpg&w=1200&op=resize",
-    "description": "Amazon, Alphabet, and Microsoft are collectively investing nearly $600 billion in capital expenditures for data center infrastructure to meet surging AI-driven cloud computing demand. The article identifies Taiwan Semiconductor Manufacturing (TSMC) as the primary beneficiary, as it is the only company with sufficient capacity to manufacture the logic chips required for AI computing infrastructure.",
-    "keywords": [
-      "capital expenditures",
-      "cloud computing",
-      "data centers",
-      "AI infrastructure",
-      "semiconductor manufacturing",
-      "logic chips",
-      "capacity constraints"
-    ],
-    "insights": [
-      {
-        "ticker": "AMZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Leading cloud provider with strong AWS revenue growth (37%) and massive $220 billion capex investment demonstrating confidence in sustained AI demand and market expansion."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Cloud showing exceptional growth (82%) with $200 billion capex commitment, indicating strong competitive positioning and capacity to capitalize on AI cloud computing trends."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Cloud showing exceptional growth (82%) with $200 billion capex commitment, indicating strong competitive positioning and capacity to capitalize on AI cloud computing trends."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Cloud showing exceptional growth (82%) with $200 billion capex commitment, indicating strong competitive positioning and capacity to capitalize on AI cloud computing trends."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Google Cloud showing exceptional growth (82%) with $200 billion capex commitment, indicating strong competitive positioning and capacity to capitalize on AI cloud computing trends."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Azure growing at 43% with $175 billion capex investment, demonstrating solid growth trajectory and commitment to meeting enterprise AI computing demands."
-      },
-      {
-        "ticker": "TSM",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Identified as the clear winner with monopolistic position in logic chip manufacturing for AI applications. Benefits from all three major cloud providers' capex spending with no viable competitors and growth runway through the decade."
-      }
-    ]
-  },
-  {
-    "id": "5434a3c230e7dd886d421f853fbc8dabb614eecdbe48dd665d26aba32c2edbba",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Satya Nadella's Microsoft Stock Jumped 18% in a Week After Azure's Annual Revenue Topped $100 Billion for the First Time. Is It Still a Buy?",
-    "author": "Justin Pope",
-    "published_utc": "2026-08-16T17:17:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/16/satya-nadella-microsoft-stock-azure-revenue/?source=iedfolrf0000001",
-    "tickers": [
+      "VUG",
+      "IJT",
+      "NVDA",
+      "AAPL",
       "MSFT"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883239%2Fsatya-nadella_microsoft_msft_ceo_imagesource_microsoft-corporation.jpeg&w=1200&op=resize",
-    "description": "Microsoft's stock surged 18% following strong Q4 fiscal 2026 earnings, driven by Azure's milestone achievement of $100 billion in annual revenue and 43% growth. The company reported 18% revenue growth to $90 billion and 31% net income growth, with Microsoft 365 Copilot surpassing 30 million paid seats. Despite trading at a higher forward P/E of 25x (up from 19x pre-earnings), analysts expect 15-16% annual earnings growth over the next three to five years, making the stock still attractive for long-term investors.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F4db1f9dc6b521047b90577456a50b49560e87c49-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "The article compares two growth-focused ETFs with divergent strategies: Vanguard Morningstar Growth ETF (VUG) concentrates on megacap tech leaders with an ultra-low 0.03% expense ratio and $372B in assets, while iShares S&P Small-Cap 600 Growth ETF (IJT) offers broader diversification across 377 small-cap stocks with a 0.18% expense ratio. IJT delivered stronger 1-year returns of 23% versus VUG's 16.2%, but VUG outperformed over 5 years with $1,802 growth on $1,000 invested compared to IJT's $1,343. The choice depends on investor risk tolerance and portfolio goals.",
     "keywords": [
-      "Azure revenue milestone",
-      "AI growth",
-      "Q4 earnings",
-      "Microsoft 365 Copilot",
-      "in-house silicon",
-      "cost-effective AI provider",
-      "enterprise stickiness"
+      "growth ETF",
+      "megacap technology",
+      "small-cap stocks",
+      "expense ratio",
+      "diversification",
+      "investment strategy"
     ],
     "insights": [
       {
-        "ticker": "MSFT",
+        "ticker": "VUG",
         "sentiment": "positive",
-        "sentiment_reasoning": "Strong Q4 earnings with 18% revenue growth and 31% net income growth. Azure achieved $100 billion annual revenue milestone with 43% growth. Microsoft 365 Copilot exceeded 30 million paid seats. Stock valuation remains reasonable at 25x forward P/E with expected 15-16% annual earnings growth. Company successfully repositioning as cost-effective AI provider with in-house chips and models."
-      }
-    ]
-  },
-  {
-    "id": "79b73a7f8b65ae7a7937980c8810bc411aa860ebc583d5f83f0669f31d1493f0",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Sundar Pichai Raised Alphabet's Capex Guidance to $205 Billion the Same Quarter Google Cloud's Backlog Hit $514 Billion. Here's Which Number Actually Matters More.",
-    "author": "Adam Spatacco",
-    "published_utc": "2026-08-16T15:23:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/16/sundar-pichai-raised-alphabets-capex-guidance-to-2/?source=iedfolrf0000001",
-    "tickers": [
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN",
-      "AMZN",
-      "MSFT"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883345%2Fsundar-pichai_alphabet_googl_ceo_imagesource_alphabet-inc.jpg&w=1200&op=resize",
-    "description": "Alphabet increased its 2026 capital expenditure guidance to $205 billion for AI infrastructure while Google Cloud's backlog reached $514 billion in multiyear enterprise commitments. The article argues that the backlog is more important as it validates the spending, with roughly 90% of Fortune 100 companies using Gemini Enterprise and customer acquisition doubling year-over-year. Google Cloud revenue accelerated 82% YoY with expanding margins, demonstrating that prior AI infrastructure investments are generating returns.",
-    "keywords": [
-      "capital expenditure",
-      "AI infrastructure",
-      "Google Cloud",
-      "backlog",
-      "data centers",
-      "TPU",
-      "free cash flow",
-      "enterprise commitments",
-      "Gemini Enterprise"
-    ],
-    "insights": [
-      {
-        "ticker": "GOOG",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet demonstrates strong AI market validation through a $514 billion Google Cloud backlog with 90% Fortune 100 adoption, 82% YoY revenue acceleration, and expanding operating margins. While the $205 billion capex raises concerns about negative free cash flow, the pre-sold capacity and strong cash position ($240+ billion) support the investment thesis as a virtuous cycle of infrastructure spending translating into measurable cloud adoption."
+        "sentiment_reasoning": "Highlighted for ultra-low 0.03% expense ratio, strong 5-year performance ($1,802 return on $1,000), and exposure to dominant tech leaders (Nvidia, Apple, Microsoft). Positioned as a safer, more mature investment option."
       },
       {
-        "ticker": "GOOGL",
+        "ticker": "IJT",
         "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet demonstrates strong AI market validation through a $514 billion Google Cloud backlog with 90% Fortune 100 adoption, 82% YoY revenue acceleration, and expanding operating margins. While the $205 billion capex raises concerns about negative free cash flow, the pre-sold capacity and strong cash position ($240+ billion) support the investment thesis as a virtuous cycle of infrastructure spending translating into measurable cloud adoption."
+        "sentiment_reasoning": "Praised for superior 1-year returns (23%), higher dividend yield (0.7%), and diversified exposure across 377 holdings with potential for ground-floor opportunities in emerging growth companies. Offers broader risk distribution."
       },
       {
-        "ticker": "GOOGM",
+        "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet demonstrates strong AI market validation through a $514 billion Google Cloud backlog with 90% Fortune 100 adoption, 82% YoY revenue acceleration, and expanding operating margins. While the $205 billion capex raises concerns about negative free cash flow, the pre-sold capacity and strong cash position ($240+ billion) support the investment thesis as a virtuous cycle of infrastructure spending translating into measurable cloud adoption."
+        "sentiment_reasoning": "Mentioned as a major holding (12.81%) in VUG and cited as an example of successful growth stock that investors might find in small-cap funds."
       },
       {
-        "ticker": "GOOGN",
+        "ticker": "AAPL",
         "sentiment": "positive",
-        "sentiment_reasoning": "Alphabet demonstrates strong AI market validation through a $514 billion Google Cloud backlog with 90% Fortune 100 adoption, 82% YoY revenue acceleration, and expanding operating margins. While the $205 billion capex raises concerns about negative free cash flow, the pre-sold capacity and strong cash position ($240+ billion) support the investment thesis as a virtuous cycle of infrastructure spending translating into measurable cloud adoption."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Amazon (AWS) is mentioned as a competitive rival in the AI cloud infrastructure space but receives no specific performance data or analysis in the article."
+        "sentiment_reasoning": "Listed as significant holding (12.60%) in VUG and referenced as an established megacap growth leader."
       },
       {
         "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Microsoft Azure is mentioned as a competitive rival in the AI cloud infrastructure space but receives no specific performance data or analysis in the article."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Included as major VUG holding (9.59%) and cited as example of dominant growth-oriented enterprise."
       }
     ]
   }

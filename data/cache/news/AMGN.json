@@ -1,362 +1,322 @@
 [
   {
-    "id": "3f835110e6fff6d8a5b4ace77764573a965bbfbeb3e218d8a65bcc0a3d6a77d1",
+    "id": "42176c442ec13b50713f3e6a649bce5b49ee2f36a45c36a108428f311df4b8f0",
     "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
     },
-    "title": "Vanguard Health Care ETF Outperforms VanEck Biotech on Returns, Yield, and Fees",
-    "author": "Jake Lerch",
-    "published_utc": "2026-07-28T12:20:01Z",
-    "article_url": "https://www.fool.com/coverage/etfs/2026/07/28/vanguard-health-care-etf-outperforms-vaneck-biotech-on-returns-yield-and-fees/?source=iedfolrf0000001",
+    "title": "Should You Invest in the Invesco Pharmaceuticals ETF (PJP)?",
+    "author": "Na",
+    "published_utc": "2026-09-03T10:20:02Z",
+    "article_url": "https://www.zacks.com/stock/news/2984153/should-you-invest-in-the-invesco-pharmaceuticals-etf-pjp?cid=CS-ZC-FT-sector_etf-2984153",
     "tickers": [
-      "VHT",
-      "BBH",
-      "LLY",
-      "JNJ",
-      "ABBV",
+      "PJP",
+      "ABT",
       "AMGN",
-      "GILD",
-      "VRTX"
+      "ABBV"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F4db1f9dc6b521047b90577456a50b49560e87c49-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "Vanguard Health Care ETF (VHT) outperforms VanEck Biotech ETF (BBH) with lower fees (0.09% vs 0.35%), higher dividend yield (1.6% vs 0.5%), and superior 5-year returns ($1,278 vs $1,004 on $1,000 invested). VHT offers broad diversification across 411 healthcare holdings, while BBH provides concentrated biotech exposure with 25 stocks and higher volatility.",
+    "image_url": "https://staticx-tuner.zacks.com/images/default_article_images/default59.jpg",
+    "description": "The Invesco Pharmaceuticals ETF (PJP) is a passively managed fund tracking the Dynamic Pharmaceutical Intellidex Index with $541.13 million in assets. It offers broad exposure to U.S. pharmaceutical companies with a 0.57% expense ratio and 0.82% dividend yield. The ETF has gained 24.96% year-to-date and 41.74% over the past year but carries higher risk with a beta of 0.45 and 16.02% standard deviation. It holds 32 stocks with top positions in Abbott Laboratories, Amgen, and Abbvie, and carries a Zacks ETF Rank of 3 (Hold).",
     "keywords": [
-      "healthcare ETF",
-      "biotech ETF",
+      "pharmaceutical ETF",
+      "passively managed",
+      "healthcare sector",
       "expense ratio",
       "dividend yield",
-      "diversification",
-      "volatility",
-      "performance comparison"
+      "stock performance",
+      "risk assessment"
     ],
     "insights": [
       {
-        "ticker": "VHT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "VHT is presented as the superior choice with lower expense ratio (0.09%), higher dividend yield (1.6%), better 5-year returns ($1,278 vs $1,004), lower maximum drawdown (17.7% vs 39.9%), and broader diversification across 411 holdings. Recommended for traditional investors seeking steady performance."
-      },
-      {
-        "ticker": "BBH",
-        "sentiment": "negative",
-        "sentiment_reasoning": "BBH underperforms VHT across multiple metrics: higher expense ratio (0.35%), lower dividend yield (0.5%), weaker 5-year returns, higher volatility (beta 0.68), and significantly larger maximum drawdown (39.9%). Suitable only for aggressive investors willing to accept higher risk and fees."
-      },
-      {
-        "ticker": "LLY",
+        "ticker": "PJP",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major holding in VHT (14.19% of portfolio). No independent sentiment expressed; included as context for fund composition."
+        "sentiment_reasoning": "The ETF shows solid performance gains (24.96% YTD, 41.74% 1-year) and reasonable expense ratio (0.57%), but carries higher risk with concentrated holdings (32 stocks, top 10 = 49.52% of assets) and elevated volatility (16.02% standard deviation). Zacks ETF Rank of 3 (Hold) indicates it's a viable option but not a strong buy."
       },
       {
-        "ticker": "JNJ",
+        "ticker": "ABT",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major holding in VHT (8.89% of portfolio). No independent sentiment expressed; included as context for fund composition."
-      },
-      {
-        "ticker": "ABBV",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major holding in VHT (6.56% of portfolio). No independent sentiment expressed; included as context for fund composition."
+        "sentiment_reasoning": "Largest holding in PJP at 5.8% of assets, indicating significant exposure but no specific performance commentary provided in the article."
       },
       {
         "ticker": "AMGN",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major holding in BBH (15.58% of portfolio). No independent sentiment expressed; included as context for fund composition."
+        "sentiment_reasoning": "Second-largest holding in PJP with no specific performance analysis provided."
       },
       {
-        "ticker": "GILD",
+        "ticker": "ABBV",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major holding in BBH (13.19% of portfolio). No independent sentiment expressed; included as context for fund composition."
-      },
-      {
-        "ticker": "VRTX",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major holding in BBH (8.64% of portfolio). No independent sentiment expressed; included as context for fund composition."
+        "sentiment_reasoning": "Third-largest holding in PJP with no specific performance analysis provided."
       }
     ]
   },
   {
-    "id": "2ba66e0146c834bc6efcac9599805a60d010e6518ae1a2a0f00f92b17e66f3e1",
+    "id": "0a4a870cbf903f13d9a7e8eb49966bcf52543f1fbec43e33be0cee2f7bc214ab",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "iShares Global Healthcare ETF vs VanEck Biotech ETF: Which ETF Is Better for Profiting With Healthcare in 2026?",
-    "author": "Brendan Coffey",
-    "published_utc": "2026-07-23T19:30:01Z",
-    "article_url": "https://www.fool.com/coverage/etfs/2026/07/23/ishares-global-healthcare-etf-vs-vaneck-biotech-etf-which-etf-is-better-for-profiting-with-healthcare-in-2026/?source=iedfolrf0000001",
+    "title": "If the AI Boom Slows Down, History Says This Is the Smartest Way to Protect Your Long-Term Portfolio",
+    "author": "Leo Sun",
+    "published_utc": "2026-09-02T18:05:00Z",
+    "article_url": "https://www.fool.com/investing/2026/09/02/if-the-ai-boom-slows-down-history-says-this-is-the/?source=iedfolrf0000001",
     "tickers": [
-      "IXJ",
-      "BBH",
-      "LLY",
-      "JNJ",
-      "ABBV",
-      "AMGN",
-      "GILD",
-      "VRTX"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F4db1f9dc6b521047b90577456a50b49560e87c49-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "The article compares two healthcare-focused ETFs: iShares Global Healthcare ETF (IXJ) with 110 holdings offering global diversification and lower volatility, versus VanEck Biotech ETF (BBH) with 25 concentrated biotech positions delivering higher short-term returns but greater drawdown risk. IXJ is recommended for its superior long-term performance, geographic diversity, and stability despite BBH's impressive 30.8% one-year return.",
-    "keywords": [
-      "healthcare ETF",
-      "biotech ETF",
-      "portfolio diversification",
-      "dividend yield",
-      "volatility",
-      "long-term returns",
-      "ETF comparison"
-    ],
-    "insights": [
-      {
-        "ticker": "IXJ",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Recommended as the better choice due to broader diversification (110 holdings), lower maximum drawdown (18.1%), superior 5-year and 10-year returns (4.9% and 8.5% annualized), higher dividend yield (1.5%), and more stable global exposure across developed and emerging markets."
-      },
-      {
-        "ticker": "BBH",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Offers strong short-term performance (30.8% 1-year return) and better 3-year returns (9.8%), but carries significant drawbacks including high volatility (39.9% maximum drawdown), concentrated portfolio (25 holdings), U.S.-only exposure, and weaker long-term 5-year performance (0.6% annualized)."
-      },
-      {
-        "ticker": "LLY",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major holding (10.9%) in IXJ; no specific performance commentary provided in the article."
-      },
-      {
-        "ticker": "JNJ",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a significant holding (7%) in IXJ; no specific performance commentary provided in the article."
-      },
-      {
-        "ticker": "ABBV",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a holding (5.1%) in IXJ; no specific performance commentary provided in the article."
-      },
-      {
-        "ticker": "AMGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as the largest holding (15.1%) in BBH; no specific performance commentary provided in the article."
-      },
-      {
-        "ticker": "GILD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a major holding (12.8%) in BBH; no specific performance commentary provided in the article."
-      },
-      {
-        "ticker": "VRTX",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a holding (9.1%) in BBH; no specific performance commentary provided in the article."
-      }
-    ]
-  },
-  {
-    "id": "d0cfb2767b81ddce9d1beaade4fa9eee684fe688a59344304b407b282e3a5c87",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "Molecular Glues Clinical Trial Landscape: 80+ Emerging Competitors, Pipeline Dynamics, and Future Opportunities | DelveInsight",
-    "author": "Delveinsight",
-    "published_utc": "2026-07-23T17:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/23/3332462/0/en/Molecular-Glues-Clinical-Trial-Landscape-80-Emerging-Competitors-Pipeline-Dynamics-and-Future-Opportunities-DelveInsight.html",
-    "tickers": [
-      "RVMD",
-      "RVMDW",
-      "GLUE",
-      "NRIX",
-      "BMY",
-      "CELGr",
-      "AMGN"
-    ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/dbcddd65-71dd-4559-8875-ae89ac4f96db",
-    "description": "The molecular glues market is experiencing significant growth with over 80 active players developing 90+ pipeline candidates. Key companies including Revolution Medicines, Gluetacs Therapeutics, Captor Therapeutics, and others are advancing promising molecular glue degraders across oncology, immunology, and neurodegenerative diseases. Recent developments include FDA Breakthrough Therapy Designation for Daraxonrasib and multiple clinical trial initiations, positioning molecular glues as a promising therapeutic strategy for previously undruggable proteins.",
-    "keywords": [
-      "molecular glues",
-      "protein degradation",
-      "clinical trials",
-      "targeted protein degradation",
-      "E3 ubiquitin ligase",
-      "oncology",
-      "immunology",
-      "drug pipeline",
-      "PROTAC",
-      "biotech"
-    ],
-    "insights": [
-      {
-        "ticker": "RVMD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company received FDA Breakthrough Therapy Designation for Daraxonrasib and secured $2 billion financing agreement with Royalty Pharma, demonstrating strong clinical progress and investor confidence in their RAS(ON) inhibitor portfolio."
-      },
-      {
-        "ticker": "RVMDW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company received FDA Breakthrough Therapy Designation for Daraxonrasib and secured $2 billion financing agreement with Royalty Pharma, demonstrating strong clinical progress and investor confidence in their RAS(ON) inhibitor portfolio."
-      },
-      {
-        "ticker": "GLUE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Presented preclinical data for MRT-55811 targeting CCNE1-amplified solid tumors at AACR 2026, showing progress in first-in-class molecular glue development."
-      },
-      {
-        "ticker": "NRIX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Zelebrudomide is in Phase I development as a dual degrader targeting BTK and cereblon neosubstrates, representing active pipeline advancement in molecular glues space."
-      },
-      {
-        "ticker": "BMY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company has approved molecular glues POMALYST and REVLIMID with established market presence and multiple indications across hematologic malignancies."
-      },
-      {
-        "ticker": "CELGr",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Company has approved molecular glues POMALYST and REVLIMID with established market presence and multiple indications across hematologic malignancies."
-      },
-      {
-        "ticker": "AMGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as key player in molecular glues space with AMG-193 in development, but limited specific clinical progress details provided in the article."
-      }
-    ]
-  },
-  {
-    "id": "b4f001f1408abf6058cfb79aee0f5dbecb4dee72086324e19160b8a1237befe6",
-    "publisher": {
-      "name": "GlobeNewswire Inc.",
-      "homepage_url": "https://www.globenewswire.com",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/globenewswire.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/globenewswire.ico"
-    },
-    "title": "PD-1 and PD-L1 Inhibitors Clinical Trial Pipeline Analysis Demonstrates 180+ Key Companies on the Horizon Expected to Transform the Oncology Space | DelveInsight",
-    "author": "Delveinsight",
-    "published_utc": "2026-07-21T17:00:00Z",
-    "article_url": "https://www.globenewswire.com/news-release/2026/07/21/3330815/0/en/PD-1-and-PD-L1-Inhibitors-Clinical-Trial-Pipeline-Analysis-Demonstrates-180-Key-Companies-on-the-Horizon-Expected-to-Transform-the-Oncology-Space-DelveInsight.html",
-    "tickers": [
+      "SCHD",
+      "NVDA",
+      "AVGO",
+      "AMZN",
       "MRK",
-      "RHHBY",
-      "GSK",
-      "AZN",
-      "PFE",
-      "IVBIY",
-      "LLY",
-      "GMAB",
-      "AMGN"
+      "AMGN",
+      "ABT",
+      "KO",
+      "CVX"
     ],
-    "image_url": "https://ml.globenewswire.com/Resource/Download/dbcddd65-71dd-4559-8875-ae89ac4f96db",
-    "description": "A comprehensive analysis reveals over 180 companies developing 200+ PD-1 and PD-L1 inhibitor drugs across various clinical stages. The report highlights major pharmaceutical players advancing pipeline therapies for multiple cancer indications, with approximately 15+ drugs in late-stage development and 30+ in mid and early stages. Recent developments include FDA breakthrough designations and positive clinical trial results for combination therapies.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F885265%2Fandroid-head-shattering.jpg&w=1200&op=resize",
+    "description": "As concerns grow about a potential AI market slowdown due to inflation, rate hikes, and geopolitical tensions, investors should consider diversifying into dividend-focused ETFs like SCHD. The Schwab U.S. Dividend Equity ETF offers exposure to 100 stable, dividend-paying stocks across multiple sectors, providing a defensive hedge against AI stock volatility while delivering steady income and historical returns of 243% over the past decade.",
     "keywords": [
-      "PD-1 inhibitors",
-      "PD-L1 inhibitors",
-      "immunotherapy",
-      "oncology",
-      "clinical trials",
-      "cancer treatment",
-      "checkpoint inhibitors",
-      "NSCLC",
-      "breakthrough therapy designation"
+      "AI slowdown",
+      "dividend ETF",
+      "portfolio protection",
+      "diversification",
+      "SCHD",
+      "market volatility"
     ],
     "insights": [
+      {
+        "ticker": "SCHD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recommended as a smart defensive investment with low expense ratio (0.06%), strong historical returns (243% over 10 years), diversified holdings across 100 stocks and multiple sectors, and reliable dividend yield (2.99-3.1%), making it resilient against AI market slowdowns."
+      },
+      {
+        "ticker": "NVDA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a top AI stock that has driven S&P 500 gains but is vulnerable to slowdown risks from inflation, rate hikes, and geopolitical conflicts."
+      },
+      {
+        "ticker": "AVGO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top AI infrastructure stock that could be negatively impacted by potential AI spending slowdown."
+      },
+      {
+        "ticker": "AMZN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a top AI stock benefiting from the boom but exposed to slowdown risks; author has a position in the company."
+      },
       {
         "ticker": "MRK",
         "sentiment": "positive",
-        "sentiment_reasoning": "Merck's KEYTRUDA (pembrolizumab) is highlighted as an FDA-approved leading PD-1 inhibitor approved for multiple malignancies. Recent announcement of calderasib (MK-1084) in combination with KEYTRUDA receiving FDA Breakthrough Therapy designation for first-line NSCLC treatment demonstrates continued pipeline advancement and clinical success."
-      },
-      {
-        "ticker": "RHHBY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Roche is listed among key companies developing PD-1/PD-L1 inhibitors and is mentioned in relation to atezolizumab (Tecentriq), a PD-L1 inhibitor showing positive results in combination therapies for small cell lung cancer."
-      },
-      {
-        "ticker": "GSK",
-        "sentiment": "positive",
-        "sentiment_reasoning": "GSK's JEMPERLI (dostarlimab), a PD-1 inhibitor, is FDA-approved for advanced/recurrent endometrial cancer and dMMR solid tumors. The company is actively investigating the therapy across multiple cancer types, indicating strong pipeline development."
-      },
-      {
-        "ticker": "AZN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "AstraZeneca has multiple pipeline candidates including Rilvegostomig in Phase III trials and durvalumab (Infinzi) showing positive results in combination therapies. Recent approval of Datroway (with Daiichi Sankyo) for triple-negative breast cancer demonstrates clinical progress."
-      },
-      {
-        "ticker": "PFE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Pfizer's sasanlimab (PF-06801591) is in Phase III trials for bladder cancer. Recent announcement of positive topline results from the Phase III CREST trial meeting primary endpoints demonstrates clinical advancement."
-      },
-      {
-        "ticker": "IVBIY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Innovent's IBI363/TAK-928, a first-in-class PD-1/IL-2\u03b1-bias bispecific fusion protein, is in Phase III trials for NSCLC. Multiple Fast Track Designations from FDA and positive preliminary results from PoC studies indicate strong clinical progress."
-      },
-      {
-        "ticker": "LLY",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Eli Lilly is listed among key companies developing PD-1/PD-L1 inhibitors but no specific pipeline candidates or recent developments are highlighted in the article."
-      },
-      {
-        "ticker": "GMAB",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Genmab's rinatabart sesutecan (Rina-S; GEN1184), an antibody-drug conjugate, received FDA breakthrough therapy designation for recurrent/progressive endometrial cancer, demonstrating clinical validation and regulatory progress."
+        "sentiment_reasoning": "Top holding in SCHD (4.9%), representing a stable dividend-paying stock with strong fundamentals and long dividend history."
       },
       {
         "ticker": "AMGN",
         "sentiment": "positive",
-        "sentiment_reasoning": "Amgen's tarlatamab (Imdelltra), a bispecific T-cell engager, showed encouraging survival results when combined with PD-L1 inhibitors in Phase Ib study for extensive-stage small cell lung cancer, indicating promising combination therapy potential."
+        "sentiment_reasoning": "Second-largest holding in SCHD (4.8%), a reliable dividend stock with consistent dividend growth history."
+      },
+      {
+        "ticker": "ABT",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Third-largest holding in SCHD (4.7%), representing a stable healthcare dividend stock with strong dividend track record."
+      },
+      {
+        "ticker": "KO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Top 5 holding in SCHD (4.2%), a defensive consumer staples stock with reliable dividends; author has a position in the company."
+      },
+      {
+        "ticker": "CVX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Top 5 holding in SCHD (4.1%), representing energy sector diversification with stable dividend payments."
       }
     ]
   },
   {
-    "id": "56a67231ab907ec42260989429ea638a5a6693f9cfb030d3053e600deeb8e991",
+    "id": "5d1ef290f9427c08e383980d389bc51d25680f11601a463dd68053c34d195c8b",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Could Pfizer Ultimately Be the Biggest Winner in the $100 Billion Weight-Loss Market?",
-    "author": "Prosper Junior Bakiny",
-    "published_utc": "2026-07-20T07:15:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/20/could-pfizer-ultimately-be-the-biggest-winner-in-t/?source=iedfolrf0000001",
+    "title": "Healthcare ETF Comparison: Fidelity's FHLC vs. Invesco's Biotech-Focused IBBQ",
+    "author": "Robert Izquierdo",
+    "published_utc": "2026-09-02T16:12:14Z",
+    "article_url": "https://www.fool.com/coverage/etfs/2026/09/02/healthcare-etf-comparison-fidelity-s-fhlc-vs-invesco-s-biotech-focused-ibbq/?source=iedfolrf0000001",
     "tickers": [
-      "PFE",
+      "FHLC",
+      "IBBQ",
       "LLY",
-      "NVO",
-      "AMGN"
+      "JNJ",
+      "ABBV",
+      "AMGN",
+      "VRTX",
+      "GILD"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879598%2Fpfizer-logo.png&w=1200&op=resize",
-    "description": "Pfizer is positioning itself as a contender in the rapidly growing $100 billion weight-loss drug market through its acquisition of Metsera and development of promising GLP-1 candidates like MET-097i, which showed strong efficacy with potential monthly dosing. However, the company faces stiff competition from Eli Lilly and Novo Nordisk, who currently lead the market with more advanced triple agonist drugs. While Pfizer may not dominate the space, it is well-positioned to be a significant player, and the company has other growth drivers including oncology pipeline and a high dividend yield of 6.9%.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F7669db1dbfa6e097df450be5b22faf5d854bd54d-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Fidelity's FHLC and Invesco's IBBQ offer different healthcare investment strategies. FHLC provides broad exposure to 365 healthcare holdings with a lower 0.08% expense ratio and 1.2% dividend yield, while IBBQ focuses on biotech with higher volatility, delivering 56.4% 1-year returns but experiencing a 37.9% maximum drawdown. The choice depends on investor risk tolerance and diversification preferences.",
     "keywords": [
-      "weight-loss drugs",
-      "GLP-1 medicine",
-      "pharmaceutical pipeline",
-      "obesity market",
-      "patent cliff",
-      "clinical trials",
-      "dividend stocks"
+      "healthcare ETF",
+      "biotech",
+      "expense ratio",
+      "dividend yield",
+      "volatility",
+      "diversification",
+      "index fund"
     ],
     "insights": [
       {
-        "ticker": "PFE",
+        "ticker": "FHLC",
         "sentiment": "positive",
-        "sentiment_reasoning": "Pfizer has a promising weight-loss pipeline with MET-097i showing strong clinical results and potential monthly dosing advantage. The company also offers an attractive 6.9% dividend yield and has other growth drivers in oncology, making it a solid investment despite competitive pressures."
+        "sentiment_reasoning": "Lower expense ratio (0.08%), higher dividend yield (1.2%), broader diversification with 365 holdings, lower volatility (17.7% max drawdown), and larger AUM ($3.3B) make it suitable for risk-averse investors seeking stable healthcare exposure."
+      },
+      {
+        "ticker": "IBBQ",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Delivers exceptional 1-year returns of 56.4% and provides pure-play biotech exposure for growth-oriented investors, though higher volatility (37.9% max drawdown) and higher expense ratio (0.19%) present trade-offs."
       },
       {
         "ticker": "LLY",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Eli Lilly is identified as the current market leader with retatrutide, a next-generation triple agonist drug showing impressive phase 3 results rivaling bariatric surgery outcomes. The author explicitly states this would be their top pick in the weight-loss market."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as largest holding in FHLC (12.93%) but no independent analysis provided; sentiment reflects its role as a major healthcare component."
       },
       {
-        "ticker": "NVO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Novo Nordisk is a leading competitor with multiple triple agonists in its pipeline and recent encouraging mid-stage results. The company benefits from decades of dominance in the adjacent diabetes market."
+        "ticker": "JNJ",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Second-largest holding in FHLC (8.81%) but no independent analysis provided; sentiment reflects its role as a major healthcare component."
+      },
+      {
+        "ticker": "ABBV",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Third-largest holding in FHLC (6.30%) but no independent analysis provided; sentiment reflects its role as a major healthcare component."
       },
       {
         "ticker": "AMGN",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Amgen is making progress in the weight-loss market with MariTide, a long-acting therapy in phase 3 studies with potential monthly or less frequent dosing. However, it is presented as one of several competitors without particular advantage highlighted."
+        "sentiment_reasoning": "Top holding in IBBQ (8.59%) but no independent analysis provided; sentiment reflects its role as a major biotech component."
+      },
+      {
+        "ticker": "VRTX",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Second-largest holding in IBBQ (8.10%) but no independent analysis provided; sentiment reflects its role as a major biotech component."
+      },
+      {
+        "ticker": "GILD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Third-largest holding in IBBQ (7.33%) but no independent analysis provided; sentiment reflects its role as a major biotech component."
+      }
+    ]
+  },
+  {
+    "id": "843e9ad0cb80753299aaf2d63b648f1e00462579f17e2f1291c4d6f34cd13421",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "Aging Population Drives Healthcare Growth: Stocks to Watch",
+    "author": "Na",
+    "published_utc": "2026-08-31T15:29:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2982600/aging-population-drives-healthcare-growth-stocks-to-watch?cid=CS-ZC-FT-seniors_&_aging-2982600",
+    "tickers": [
+      "ABBV",
+      "TNDM",
+      "AMGN",
+      "SYK",
+      "BSX"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/c3/648.jpg",
+    "description": "The global aging population is reshaping healthcare investment opportunities, with the geriatric care services market projected to grow from $1.24 trillion in 2025 to $2.16 trillion by 2034. Healthcare companies are capitalizing on this demographic shift through innovations in diabetes care, cardiovascular treatments, robotic surgery, and digital health solutions. Key players like AbbVie, Tandem Diabetes Care, Amgen, Stryker, and Boston Scientific are advancing AI-enabled technologies and specialized treatments for age-related conditions.",
+    "keywords": [
+      "aging population",
+      "geriatric care",
+      "healthcare investment",
+      "chronic disease",
+      "digital health",
+      "AI-enabled medical devices",
+      "diabetes care",
+      "cardiovascular disease",
+      "robotic surgery"
+    ],
+    "insights": [
+      {
+        "ticker": "ABBV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Company is strengthening its position in aging-related healthcare through immunology and neuroscience, with recent regulatory submissions and acquisitions to deepen its immunology portfolio."
+      },
+      {
+        "ticker": "TNDM",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Advancing automated diabetes management with recent FDA clearance and CE Mark approvals for Control-IQ+ insulin delivery system, expanding international market presence."
+      },
+      {
+        "ticker": "AMGN",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Expanding in cardiovascular and metabolic care with Repatha showing 20% reduction in all-cause mortality, and MariTide obesity therapy in Phase 3 trials for multiple age-related conditions."
+      },
+      {
+        "ticker": "SYK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Advancing AI-enabled orthopedics through Mako SmartRobotics platform for joint replacement procedures, positioning itself in the growing elderly care market."
+      },
+      {
+        "ticker": "BSX",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Incorporating AI into cardiovascular portfolio with AI-powered imaging platforms and minimally invasive treatments for complex coronary lesions, addressing age-related cardiovascular disease."
+      }
+    ]
+  },
+  {
+    "id": "6337571a881ed390c8aabca14b5e8183fef702542975805b8ce80bf7f70b6d6a",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "If You'd Invested $1,000 in SCHD 10 Years Ago, Here's How Much You'd Have Today",
+    "author": "David Dierking",
+    "published_utc": "2026-08-31T13:30:00Z",
+    "article_url": "https://www.fool.com/investing/2026/08/31/if-invest-1000-schd-10-years-ago-how-much-you-have/?source=iedfolrf0000001",
+    "tickers": [
+      "SCHD",
+      "MRK",
+      "AMGN",
+      "ABBV"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F878525%2Fgettyimages-1293582790.jpg&w=1200&op=resize",
+    "description": "The Schwab U.S. Dividend Equity ETF (SCHD) has delivered approximately 13% annual returns over the past decade, turning a $1,000 investment into roughly $3,400 with reinvested dividends. The fund's stringent selection criteria focusing on balance sheet quality, yield, and dividend growth history have produced a durable, high-quality portfolio. The article emphasizes the importance of buy-and-hold investing through market downturns and consistent dividend reinvestment for long-term wealth creation.",
+    "keywords": [
+      "dividend ETF",
+      "long-term investing",
+      "SCHD",
+      "dividend reinvestment",
+      "buy-and-hold strategy",
+      "market downturns",
+      "passive income"
+    ],
+    "insights": [
+      {
+        "ticker": "SCHD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "The ETF demonstrated strong historical performance with ~13% annual returns over 10 years, high-quality portfolio construction with stringent selection criteria, low expense ratio (0.06%), and is recommended as a long-term holding suitable for wealth building through dividend reinvestment."
+      },
+      {
+        "ticker": "MRK",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding (4.83%) in SCHD but mentioned only as a portfolio component without specific performance commentary or analysis."
+      },
+      {
+        "ticker": "AMGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding (4.79%) in SCHD but mentioned only as a portfolio component without specific performance commentary or analysis."
+      },
+      {
+        "ticker": "ABBV",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Listed as a top holding (4.75%) in SCHD but mentioned only as a portfolio component without specific performance commentary or analysis."
       }
     ]
   }

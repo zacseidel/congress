@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25",
+  "generated": "2026-09-03",
   "n_total": 143,
   "n_matched": 141,
   "match_rate": 98.6,
@@ -523,7 +523,7 @@
         },
         {
           "id": "SSEV15",
-          "name": "Senate Committee on Environment and Public Works: Fisheries, Wildlife, and Water",
+          "name": "Senate Committee on Environment and Public Works: Fisheries, Water, and Wildlife",
           "type": "senate",
           "is_sub": true,
           "title": "Ex Officio"
@@ -2477,15 +2477,15 @@
           "title": null
         },
         {
-          "id": "HSJU13",
-          "name": "House Committee on the Judiciary: Oversight",
+          "id": "HSFA05",
+          "name": "House Committee on Foreign Affairs: East Asia and Pacific",
           "type": "house",
           "is_sub": true,
           "title": null
         },
         {
-          "id": "HSFA05",
-          "name": "House Committee on Foreign Affairs: East Asia and Pacific",
+          "id": "HSJU03",
+          "name": "House Committee on the Judiciary: Courts, Intellectual Property, Artificial Intelligence, and the Internet",
           "type": "house",
           "is_sub": true,
           "title": null
@@ -2505,7 +2505,11 @@
           "title": null
         }
       ],
-      "industries": []
+      "industries": [
+        "Semiconductors",
+        "Software & Services",
+        "Technology Hardware"
+      ]
     },
     "norton-eleanor-holmes": {
       "bioguide": "N000147",
@@ -2557,13 +2561,6 @@
         {
           "id": "HSGO24",
           "name": "House Committee on Oversight and Government Reform: Government Operations",
-          "type": "house",
-          "is_sub": true,
-          "title": null
-        },
-        {
-          "id": "HSGO16",
-          "name": "House Committee on Oversight and Government Reform: Delivering on Government Efficiency",
           "type": "house",
           "is_sub": true,
           "title": null
@@ -2740,6 +2737,13 @@
         {
           "id": "HSWM",
           "name": "House Committee on Ways and Means",
+          "type": "house",
+          "is_sub": false,
+          "title": null
+        },
+        {
+          "id": "HSZS",
+          "name": "House Select Committee on the Strategic Competition Between the United States and the Chinese Communist Party",
           "type": "house",
           "is_sub": false,
           "title": null
@@ -4006,6 +4010,20 @@
           "type": "house",
           "is_sub": false,
           "title": null
+        },
+        {
+          "id": "HSGO33",
+          "name": "House Committee on Oversight and Government Reform: Federal Law Enforcement",
+          "type": "house",
+          "is_sub": true,
+          "title": null
+        },
+        {
+          "id": "HSGO16",
+          "name": "House Committee on Oversight and Government Reform: Delivering on Government Efficiency",
+          "type": "house",
+          "is_sub": true,
+          "title": null
         }
       ],
       "industries": [
@@ -5212,7 +5230,7 @@
         },
         {
           "id": "SSEV15",
-          "name": "Senate Committee on Environment and Public Works: Fisheries, Wildlife, and Water",
+          "name": "Senate Committee on Environment and Public Works: Fisheries, Water, and Wildlife",
           "type": "senate",
           "is_sub": true,
           "title": "Ranking Member"
@@ -6755,7 +6773,7 @@
           "name": "Senate Committee on Appropriations: Financial Services and General Government",
           "type": "senate",
           "is_sub": true,
-          "title": null
+          "title": "Ex Officio"
         },
         {
           "id": "SSAP14",
@@ -6797,7 +6815,7 @@
           "name": "Senate Committee on Appropriations: State, Foreign Operations, and Related Programs",
           "type": "senate",
           "is_sub": true,
-          "title": "Ex Officio"
+          "title": "Chairman"
         },
         {
           "id": "SSAP24",
@@ -6958,7 +6976,7 @@
         },
         {
           "id": "SSEV15",
-          "name": "Senate Committee on Environment and Public Works: Fisheries, Wildlife, and Water",
+          "name": "Senate Committee on Environment and Public Works: Fisheries, Water, and Wildlife",
           "type": "senate",
           "is_sub": true,
           "title": "Ex Officio"
@@ -7250,7 +7268,7 @@
         },
         {
           "id": "SSEV15",
-          "name": "Senate Committee on Environment and Public Works: Fisheries, Wildlife, and Water",
+          "name": "Senate Committee on Environment and Public Works: Fisheries, Water, and Wildlife",
           "type": "senate",
           "is_sub": true,
           "title": null
@@ -10564,8 +10582,8 @@
     },
     "SSEV15": {
       "id": "SSEV15",
-      "name": "Senate Committee on Environment and Public Works: Fisheries, Wildlife, and Water",
-      "sub_name": "Fisheries, Wildlife, and Water",
+      "name": "Senate Committee on Environment and Public Works: Fisheries, Water, and Wildlife",
+      "sub_name": "Fisheries, Water, and Wildlife",
       "type": "senate",
       "is_sub": true,
       "parent": "SSEV"

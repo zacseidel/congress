@@ -1,330 +1,289 @@
 [
   {
-    "id": "2468bc44b7c46a3e7a720280304aca66fc95807975e4264a4509c0569e4c44b2",
+    "id": "85104164ffa06498da3407ee62777197143d16de0e69e74b1874766eecf8c716",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "The Zacks Analyst Blog Highlights Palo Alto Networks, CrowdStrike and Fortinet",
+    "author": "Zacks Investment Research",
+    "published_utc": "2026-09-03T12:46:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2984364/the-zacks-analyst-blog-highlights-palo-alto-networks-crowdstrike-and-fortinet?cid=CS-ZC-FT-press_releases-2984364",
+    "tickers": [
+      "PANW",
+      "CRWD",
+      "FTNT"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/3f/1138.jpg",
+    "description": "Palo Alto Networks delivered strong quarterly results with $9.1B in Next-Generation Security ARR, up 63% year-over-year, and added nearly $1B in net new ARR in Q4 FY2026. The company projects continued robust growth with NGS ARR expected to reach $11.075-$11.175B in FY2027 (22-23% YoY growth). With strong profitability, improving cash flow, and attractive valuation relative to peers, Palo Alto Networks receives a Zacks Rank #2 (Buy) rating.",
+    "keywords": [
+      "cybersecurity",
+      "AI security",
+      "ARR growth",
+      "next-generation security",
+      "profitability",
+      "valuation"
+    ],
+    "insights": [
+      {
+        "ticker": "PANW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong 63% YoY NGS ARR growth, $1B net new ARR in Q4, robust FY2027 guidance (22-23% growth), improving profitability with $1B non-GAAP operating income, healthy free cash flow of $1.3B, and attractive forward P/E ratio of 88 vs. industry average of 147.47. Assigned Zacks Rank #2 (Buy)."
+      },
+      {
+        "ticker": "CRWD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a peer competitor to Palo Alto Networks in the cybersecurity space, but no specific financial data or analysis provided in the article."
+      },
+      {
+        "ticker": "FTNT",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Mentioned as a peer competitor to Palo Alto Networks in the cybersecurity space, but no specific financial data or analysis provided in the article."
+      }
+    ]
+  },
+  {
+    "id": "b080d569c3ede2a7b23b2c657fa5d83de30aa44e9ce9de2defca010893a6f9cc",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "CrowdStrike Is One of My Largest Holdings and Trading Near Its All-Time High. Here's Why I'm Not Buying More Shares Right Now.",
-    "author": "Stefon Walters",
-    "published_utc": "2026-08-16T00:30:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/15/crowdstrike-is-one-of-my-largest-holdings-and-trad/?source=iedfolrf0000001",
+    "title": "Zscaler's Next Earnings Report on September 3 Could Send the Stock Soaring. Here's Why.",
+    "author": "Matt Frankel, Cfp\u00ae",
+    "published_utc": "2026-09-02T16:26:01Z",
+    "article_url": "https://www.fool.com/investing/2026/09/02/zscaler-s-next-earnings-report-on-september-3-could-send-the-stock-soaring-here-s-why/?source=iedfolrf0000001",
     "tickers": [
-      "CRWD",
-      "PANW",
       "ZS",
-      "S"
+      "CRWD",
+      "PANW"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F879885%2Fcrwd.png&w=1200&op=resize",
-    "description": "Despite CrowdStrike's strong business performance with record cash flows and 24% ARR growth, the author is avoiding buying more shares due to its expensive valuation of 44 times sales. While the company remains a long-term hold, the author believes better entry points will emerge and is deploying capital to more fairly valued stocks.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fc0329de7c3d51ae39d0e0b0faff8857d603c1cc9-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Zscaler reports fiscal Q4 earnings on September 3 with low expectations set by conservative management guidance. The key catalyst for stock movement will be forward guidance, particularly ARR growth rates. With peers CrowdStrike and Palo Alto Networks recently reporting strong results driven by AI-boosted cybersecurity demand, Zscaler could benefit from similar tailwinds if it demonstrates traction in agentic AI security.",
     "keywords": [
-      "valuation",
+      "earnings report",
       "cybersecurity",
-      "annual recurring revenue",
-      "cash flow",
-      "entry point",
-      "high-growth tech stocks"
+      "guidance",
+      "ARR growth",
+      "agentic AI",
+      "zero-trust architecture",
+      "RPO"
     ],
     "insights": [
       {
+        "ticker": "ZS",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Article suggests significant upside potential if the company raises forward guidance and demonstrates traction in agentic AI cybersecurity. Low expectations create a favorable setup for positive surprise, and the company has a history of beating its own guidance."
+      },
+      {
         "ticker": "CRWD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Strong operational performance and business fundamentals, but overvalued at 44x sales relative to peers. Author maintains long-term conviction but avoids new purchases until valuation becomes more attractive."
+        "sentiment": "positive",
+        "sentiment_reasoning": "Recently reported strong results with highest net new ARR growth rate ever and issued robust fiscal 2027 guidance, demonstrating AI-driven demand acceleration in cybersecurity sector."
       },
       {
         "ticker": "PANW",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitor in the cybersecurity space with more attractive valuation metrics compared to CrowdStrike, but no specific analysis provided."
+        "sentiment_reasoning": "Recently reported strong earnings results but stock fell despite beating estimates, indicating that forward guidance and management commentary matter more than top-line beats in this sector."
+      }
+    ]
+  },
+  {
+    "id": "978d0a8b56eb010091056bff049144b423ab3b8b3380e68e712017422bd5be05",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "The Zacks Analyst Blog Highlights Toyota, CrowdStrike, Welltower, Blue Ridge Bankshares and Franklin Financial Services",
+    "author": "Zacks Investment Research",
+    "published_utc": "2026-09-02T12:37:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2983631/the-zacks-analyst-blog-highlights-toyota-crowdstrike-welltower-blue-ridge-bankshares-and-franklin-financial-services?cid=CS-ZC-FT-press_releases-2983631",
+    "tickers": [
+      "TM",
+      "CRWD",
+      "WELL",
+      "BRBS",
+      "FRAF"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/42/1917.jpg",
+    "description": "Zacks equity research analysts featured five stocks in their analyst blog on September 2, 2026. Toyota benefits from hybrid adoption but faces headwinds from labor costs and China weakness. CrowdStrike shows strong cybersecurity demand with record ARR but faces competitive pricing pressures. Welltower's senior housing focus offers growth but carries transaction and concentration risks. Blue Ridge Bankshares and Franklin Financial Services, both microcaps, show improved fundamentals but carry execution and credit quality risks respectively.",
+    "keywords": [
+      "equity research",
+      "stock analysis",
+      "automotive",
+      "cybersecurity",
+      "REIT",
+      "banking",
+      "hybrid vehicles",
+      "senior housing"
+    ],
+    "insights": [
+      {
+        "ticker": "TM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Company benefits from rising hybrid adoption and expanding electrified vehicle sales, but investment case is tempered by expectations for lower fiscal 2027 operating income due to higher labor, depreciation and R&D costs, plus weakness in China and elevated leverage."
       },
       {
-        "ticker": "ZS",
+        "ticker": "CRWD",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a key competitor in cybersecurity with better valuation than CrowdStrike, but no detailed commentary provided."
+        "sentiment_reasoning": "Strong cybersecurity demand, record net new ARR, and expanding platform opportunities are offset by revenue growth below hypergrowth years, elevated operating costs, and competitive pricing pressures that could constrain margins."
+      },
+      {
+        "ticker": "WELL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Favorable senior housing demographics and occupancy gains support growth, but competition, partner concentration, elevated interest expense, and execution risks from acquisitions and dispositions create a balanced investment case."
+      },
+      {
+        "ticker": "BRBS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Microcap showing improved loan growth and cost rationalization, but earnings constrained by smaller asset base, rising nonperforming loans, and significant execution risk from proposed HomeTrust merger combination."
+      },
+      {
+        "ticker": "FRAF",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Microcap with strong commercial real estate franchise, growing core deposits, improving funding mix, and disciplined credit management. Improving margins and profitability supported by expense discipline and strong capital generation, though commercial real estate credit quality requires monitoring."
+      }
+    ]
+  },
+  {
+    "id": "35c8eeff21b4f8bc2f8a35af3ccd8001fc3b310a9e177962d9515951e726e981",
+    "publisher": {
+      "name": "The Motley Fool",
+      "homepage_url": "https://www.fool.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+    },
+    "title": "Stock Market Today, Sept. 1: Stocks Slide and Oil Surges Amid U.S.-Iran Tension",
+    "author": "Josh Kohn-Lindquist",
+    "published_utc": "2026-09-01T21:02:57Z",
+    "article_url": "https://www.fool.com/coverage/stock-market-today/2026/09/01/stock-market-today-sept-1-stocks-slide-and-oil-surges-amid-u-s-iran-tension/?source=iedfolrf0000001",
+    "tickers": [
+      "PANW",
+      "CRWD",
+      "AXON",
+      "MRNA",
+      "AAPL",
+      "GS",
+      "GSpA",
+      "GSpC",
+      "GSpD",
+      "SPLV",
+      "SPHB"
+    ],
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fe7dd8b70435a213a06dcc8bea55f01f7acf42b48-1401x1251.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "U.S. stock markets declined on September 1, 2026, as rising crude oil prices and Treasury yields pressured equities following escalating U.S.-Iran tensions. The S&P 500 fell 0.71%, the Dow dropped 0.79%, and the Nasdaq declined 1.03%, with technology stocks leading the selloff. Growth stocks underperformed value stocks, while oil surged 5%.",
+    "keywords": [
+      "stock market decline",
+      "U.S.-Iran tension",
+      "crude oil surge",
+      "Treasury yields",
+      "tech stocks",
+      "risk-off sentiment"
+    ],
+    "insights": [
+      {
+        "ticker": "PANW",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock fell 5.24% following recent financial results; cybersecurity sector weakness pressured by broader tech selloff"
+      },
+      {
+        "ticker": "CRWD",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Stock declined 6.90% after recent financial results; cybersecurity firms weighed on software sector"
+      },
+      {
+        "ticker": "AXON",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Largest S&P 500 loser, declining 8.52%; growth stock hit hard by rising yields and market volatility"
+      },
+      {
+        "ticker": "MRNA",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Stock surged 9.93% on analyst upgrades following historic cancer vaccine announcement; outperforming broader market"
+      },
+      {
+        "ticker": "AAPL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Stock rose 2.61% despite market decline; leadership transition from Tim Cook to John Ternus as CEO is neutral corporate event"
+      },
+      {
+        "ticker": "GS",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Stock fell 1.80%; mentioned for noting increased investor nervousness, not for company-specific negative news"
+      },
+      {
+        "ticker": "GSpA",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Stock fell 1.80%; mentioned for noting increased investor nervousness, not for company-specific negative news"
+      },
+      {
+        "ticker": "GSpC",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Stock fell 1.80%; mentioned for noting increased investor nervousness, not for company-specific negative news"
+      },
+      {
+        "ticker": "GSpD",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Stock fell 1.80%; mentioned for noting increased investor nervousness, not for company-specific negative news"
+      },
+      {
+        "ticker": "SPLV",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Declined only 0.20%, significantly outperforming high beta ETF; value stocks held up better during market selloff"
+      },
+      {
+        "ticker": "SPHB",
+        "sentiment": "negative",
+        "sentiment_reasoning": "Fell 2.12%, underperforming low volatility ETF; growth and high beta stocks hit hardest by rising yields"
+      }
+    ]
+  },
+  {
+    "id": "8c7441cd19886f4b3d790cb71c7e8efc4df86bd7b2c674a7070f6c4e5d559461",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "Is AIDR Emerging as CrowdStrike's Next Major Growth Engine?",
+    "author": "Na",
+    "published_utc": "2026-09-01T13:31:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2983031/is-aidr-emerging-as-crowdstrike-s-next-major-growth-engine?cid=CS-ZC-FT-analyst_blog|quick_take-2983031",
+    "tickers": [
+      "CRWD",
+      "PANW",
+      "S"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/1b/3458.jpg",
+    "description": "CrowdStrike's AI Detection and Response (AIDR) business nearly tripled its annual recurring revenue sequentially in Q2 fiscal 2027, driven by strong enterprise demand for AI security solutions. AIDR operates as a separate, incremental product using existing Falcon agents, with token-based pricing creating additional recurring and usage-based revenue opportunities. However, CrowdStrike trades at a premium valuation of 32.97x forward P/S versus the industry average of 18.51x, and carries a Zacks Rank #3 (Hold) rating.",
+    "keywords": [
+      "AI security",
+      "annual recurring revenue",
+      "endpoint detection and response",
+      "token-based pricing",
+      "cybersecurity platform expansion",
+      "enterprise AI adoption"
+    ],
+    "insights": [
+      {
+        "ticker": "CRWD",
+        "sentiment": "positive",
+        "sentiment_reasoning": "AIDR business showing exceptional sequential growth (nearly tripled ARR), strong enterprise adoption, incremental revenue opportunity, and innovative token-based pricing model. Stock up 95.9% YTD. However, positive sentiment is tempered by premium valuation and Hold rating."
+      },
+      {
+        "ticker": "PANW",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Competitor showing robust growth with Next-Gen Security ARR up 60% YoY in Q3 FY2026, driven by AI-driven XSIAM platform and platform expansion initiatives."
       },
       {
         "ticker": "S",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Listed as a cybersecurity competitor with more favorable valuation compared to CrowdStrike, but lacks specific analysis."
-      }
-    ]
-  },
-  {
-    "id": "5ecd787223f16fafbb590a0783ec3e1f5dabd7bb0499c0594ebf5525bf39a798",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Should You Buy CrowdStrike Stock Before the Huge Investor Update?",
-    "author": "Parkev Tatevosian, Cfa",
-    "published_utc": "2026-08-15T23:31:51Z",
-    "article_url": "https://www.fool.com/investing/2026/08/15/should-you-buy-crowdstrike-stock-before-the-huge-i/?source=iedfolrf0000001",
-    "tickers": [
-      "CRWD"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F883751%2Fmqdefault_custom_2.jpg&w=1200&op=resize",
-    "description": "CrowdStrike is scheduled to report quarterly financial results that could significantly impact the stock. The article suggests that increasing cybersecurity spending driven by the proliferation of agentic AI presents investment considerations for the company.",
-    "keywords": [
-      "CrowdStrike",
-      "quarterly earnings",
-      "cybersecurity",
-      "agentic AI",
-      "investor update",
-      "technology stocks"
-    ],
-    "insights": [
-      {
-        "ticker": "CRWD",
         "sentiment": "positive",
-        "sentiment_reasoning": "The article frames an upcoming investor update as a significant event and highlights growing cybersecurity spending driven by agentic AI proliferation as a tailwind for the company, suggesting positive growth prospects despite the stock being down 3.80% on the day of publication."
-      }
-    ]
-  },
-  {
-    "id": "4d2bf8c6b454a398c5105a2f0ced73c801b5a997b26bee6d47b2677356766f39",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "CrowdStrike vs. IonQ: Which Technology Stock Is a Better Buy in 2026?",
-    "author": "Sara Appino",
-    "published_utc": "2026-08-14T20:23:20Z",
-    "article_url": "https://www.fool.com/coverage/better-buy/2026/08/14/crowdstrike-vs-ionq-which-technology-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
-    "tickers": [
-      "CRWD",
-      "IONQ",
-      "IONQ.WS",
-      "MSFT",
-      "AMZN",
-      "GOOG",
-      "GOOGL",
-      "GOOGM",
-      "GOOGN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fdf62d03add0a26cc05ef3d45b8f39a15145fe783-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "The article compares CrowdStrike, a dominant cloud security leader with strong profitability and cash flow, against IonQ, a high-growth quantum computing pioneer still years from profitability. CrowdStrike is recommended for long-term investors seeking dependable returns, while IonQ is positioned as a speculative bet on emerging quantum technology with significant upside potential but considerable execution risk.",
-    "keywords": [
-      "cloud security",
-      "cybersecurity",
-      "quantum computing",
-      "enterprise software",
-      "technology stocks",
-      "profitability",
-      "valuation",
-      "growth stocks"
-    ],
-    "insights": [
-      {
-        "ticker": "CRWD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Established market leader with 88,000+ customers, strong revenue growth (21.7% YoY), record annual recurring revenue, free cash flow of $1.3B, improving profitability trajectory, and solid balance sheet metrics. Recent quarter beat expectations across major metrics with management raising full-year outlook."
-      },
-      {
-        "ticker": "IONQ",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "High-growth quantum computing company with exceptional revenue growth (201.9% YoY) and strong commercial traction ahead of competitors. However, faces significant challenges: massive net losses (-$392.6% margin), negative free cash flow (-$299.6M), years away from profitability, and wide valuation gap relative to current revenue. Positioned as a speculative early-stage bet with unproven commercial viability."
-      },
-      {
-        "ticker": "IONQ.WS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "High-growth quantum computing company with exceptional revenue growth (201.9% YoY) and strong commercial traction ahead of competitors. However, faces significant challenges: massive net losses (-$392.6% margin), negative free cash flow (-$299.6M), years away from profitability, and wide valuation gap relative to current revenue. Positioned as a speculative early-stage bet with unproven commercial viability."
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitive threat to CrowdStrike in the cybersecurity space and as a cloud infrastructure provider for IonQ. No specific sentiment implied beyond competitive positioning."
-      },
-      {
-        "ticker": "AMZN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a cloud infrastructure provider for IonQ and as a major cloud platform partner. No specific sentiment implied beyond infrastructure dependency."
-      },
-      {
-        "ticker": "GOOG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a cloud infrastructure provider for IonQ. No specific sentiment implied beyond infrastructure dependency."
-      },
-      {
-        "ticker": "GOOGL",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a cloud infrastructure provider for IonQ. No specific sentiment implied beyond infrastructure dependency."
-      },
-      {
-        "ticker": "GOOGM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a cloud infrastructure provider for IonQ. No specific sentiment implied beyond infrastructure dependency."
-      },
-      {
-        "ticker": "GOOGN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a cloud infrastructure provider for IonQ. No specific sentiment implied beyond infrastructure dependency."
-      }
-    ]
-  },
-  {
-    "id": "7efc7587560c73605582ba727bccf88d86a5e3c86962ed385b34a4adf1f297ba",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Wall Street's Latest Blockbuster Stock Split Has Arrived -- and This Industry Titan Has Rallied 337,000% Over the Last 32 Years",
-    "author": "Sean Williams",
-    "published_utc": "2026-08-11T09:06:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/11/wall-st-latest-stock-split-arrived-rallied-337000/?source=iedfolrf0000001",
-    "tickers": [
-      "MNST",
-      "KO",
-      "CRWD",
-      "BKNG",
-      "PCLN"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F882507%2Fstock-split-us-dollar-coin-certificate-forward-reverse-getty.jpg&w=1200&op=resize",
-    "description": "Monster Beverage completed its sixth forward 2-for-1 stock split on August 11, 2026. The energy drink company has delivered a remarkable 337,000% return since 1994, driven by its dominant market position and strategic partnership with Coca-Cola, which provides global distribution access and owns approximately 20% of the company.",
-    "keywords": [
-      "stock split",
-      "Monster Beverage",
-      "energy drinks",
-      "Coca-Cola partnership",
-      "market performance",
-      "forward split"
-    ],
-    "insights": [
-      {
-        "ticker": "MNST",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Exceptional long-term performance (337,000% return over 32 years), strong market position as a top energy drink player, strategic partnership with Coca-Cola providing global distribution, and sixth forward stock split indicating sustained growth and investor accessibility. However, current valuation at 37x forward P/E is noted as expensive relative to historical averages."
-      },
-      {
-        "ticker": "KO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strategic partnership with Monster Beverage has proven highly beneficial, gaining access to a dominant energy drink brand while maintaining 20% stake. The asset swap in 2014 positioned Coca-Cola well in the growing energy drink market."
-      },
-      {
-        "ticker": "CRWD",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as one of several companies completing stock splits in 2026, but no specific performance or sentiment analysis provided in the article."
-      },
-      {
-        "ticker": "BKNG",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as one of several companies completing stock splits in 2026, but no specific performance or sentiment analysis provided in the article."
-      },
-      {
-        "ticker": "PCLN",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as one of several companies completing stock splits in 2026, but no specific performance or sentiment analysis provided in the article."
-      }
-    ]
-  },
-  {
-    "id": "5e4550fdb3c02ccdcbc2d75880759e8cf96265eb8d2e176352137487af53aa25",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Meet the Spectacular ETF With Big Positions in Stocks Like Palantir, Microsoft, and Salesforce. It Could be a Brilliant Buy as the AI Trade Unwinds.",
-    "author": "Anthony Di Pizio",
-    "published_utc": "2026-07-30T17:23:00Z",
-    "article_url": "https://www.fool.com/investing/2026/07/30/meet-etf-stocks-palantir-microsoft-salesforce-ai/?source=iedfolrf0000001",
-    "tickers": [
-      "IGV",
-      "PLTR",
-      "MSFT",
-      "CRM",
-      "PANW",
-      "CRWD",
-      "NVDA",
-      "AMD",
-      "MU",
-      "INTU",
-      "TEAM",
-      "WDAY",
-      "HUBS"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F880949%2Fa-computer-programmer-working-at-a-desk-in-an-apartment.jpg&w=1200&op=resize",
-    "description": "The iShares Expanded Tech-Software ETF (IGV) has declined 11% this year amid AI disruption concerns, but recent momentum loss in the AI infrastructure boom could present a buying opportunity. Rising chip costs have forced companies to cut AI spending, and reports show businesses are hiring more humans and routing tasks to cheaper AI models, potentially easing pressure on legacy software vendors.",
-    "keywords": [
-      "AI trade unwinding",
-      "software ETF",
-      "chip costs",
-      "AI infrastructure spending",
-      "legacy software",
-      "SaaS business model"
-    ],
-    "insights": [
-      {
-        "ticker": "IGV",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ETF trading at a discount due to AI concerns, but positioned to benefit as AI infrastructure spending boom loses momentum and legacy software companies face reduced displacement risk"
-      },
-      {
-        "ticker": "PLTR",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Down 26% YTD due to unsustainable valuation despite strong demand for AI-powered software platforms; positioned to recover if valuations normalize"
-      },
-      {
-        "ticker": "MSFT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Major holding in IGV with strong enterprise presence; benefits from both AI adoption and legacy software stability"
-      },
-      {
-        "ticker": "CRM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Down 27% YTD due to AI displacement fears, but has entrenched position in 150,000+ enterprises with growing AI features reducing switching risk"
-      },
-      {
-        "ticker": "PANW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Up 50%+ YTD as enterprises invest in cybersecurity to address new AI-created attack surfaces"
-      },
-      {
-        "ticker": "CRWD",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Up 50%+ YTD as leading cybersecurity company benefiting from increased enterprise security spending driven by AI threats"
-      },
-      {
-        "ticker": "NVDA",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Down 16% from highs as soaring chip costs threaten sustainability of AI infrastructure spending boom"
-      },
-      {
-        "ticker": "AMD",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Down 21% as rising chip costs pressure AI data center infrastructure spending"
-      },
-      {
-        "ticker": "MU",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Down 33% as component cost inflation threatens AI infrastructure investment sustainability"
-      },
-      {
-        "ticker": "INTU",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Suffered AI-related beating but positioned to recover if AI infrastructure spending slowdown reduces displacement concerns"
-      },
-      {
-        "ticker": "TEAM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Suffered AI-related beating but could benefit from recovery if AI infrastructure spending slowdown eases pressure on legacy software"
-      },
-      {
-        "ticker": "WDAY",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Suffered AI-related beating but positioned to recover if AI infrastructure spending slowdown reduces displacement concerns"
-      },
-      {
-        "ticker": "HUBS",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Suffered AI-related beating but could fuel ETF recovery if AI infrastructure spending slowdown continues"
+        "sentiment_reasoning": "Competitor posting solid 22% YoY ARR growth in Q2 FY2027, fueled by adoption of AI-first Singularity platform and Purple AI offerings."
       }
     ]
   }

@@ -1,321 +1,295 @@
 [
   {
-    "id": "52dfd5c09b5ffcc1670344d6818337a112f4f5bea489ad3fe2f1d5e54952484e",
+    "id": "995a321e72bb3be41811122fd6276997c3f410d7710bfb7688286fb6da080ef6",
     "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
     },
-    "title": "The Next Big AI Market Bottleneck Is Here: 8 Stocks to Play the Boom in Optics",
-    "author": "Geoffrey Seiler",
-    "published_utc": "2026-08-13T08:20:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/13/the-next-big-ai-market-bottleneck-is-here-8-stocks/?source=iedfolrf0000001",
+    "title": "Bull of the Day: Semtech (SMTC)",
+    "author": "Na",
+    "published_utc": "2026-09-03T09:20:00Z",
+    "article_url": "https://www.zacks.com/commentary/2984091/bull-of-the-day-semtech-smtc?cid=CS-ZC-FT-bull_of_the_day-2984091",
     "tickers": [
-      "MRVL",
-      "AVGO",
-      "LITE",
+      "SMTC",
+      "NVDA",
       "COHR",
-      "AAOI",
-      "APH",
-      "GLW",
-      "CIEN"
+      "LITE",
+      "MRVL"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F882788%2Fgettyimages-1483780995.jpg&w=1200&op=resize",
-    "description": "As AI innovation accelerates, data centers are shifting from copper wiring to optical connections for faster, more energy-efficient connectivity. This shift is creating a bottleneck in AI infrastructure, presenting investment opportunities in eight optical technology companies across chip design, laser manufacturing, transceiver infrastructure, and data routing systems.",
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/6e/815.jpg",
+    "description": "Semtech (SMTC), a $12 billion semiconductor supplier, is positioned as a pivotal player in AI infrastructure and optical interconnects. Following a strong earnings beat in August with EPS estimates raised over 30% for the current year and 50% for next year, the company benefits from demand for high-speed optical transceivers and data center solutions. Operating through three segments\u2014Signal Integrity, Analog Mixed Signal, and IoT Systems\u2014Semtech serves hyperscalers and industrial markets, with Greater China representing 47% of sales.",
     "keywords": [
-      "artificial intelligence",
-      "optical infrastructure",
-      "data centers",
-      "optical DSPs",
-      "transceivers",
-      "lasers",
-      "connectivity bottleneck"
+      "semiconductor",
+      "AI infrastructure",
+      "optical interconnects",
+      "data center",
+      "earnings beat",
+      "LoRa technology",
+      "hyperscalers"
     ],
     "insights": [
       {
-        "ticker": "MRVL",
+        "ticker": "SMTC",
         "sentiment": "positive",
-        "sentiment_reasoning": "Market leader in optical DSPs with Nvidia's $2 billion investment and partnership integration into NVLink ecosystem, positioning it as critical to AI data center infrastructure."
+        "sentiment_reasoning": "Strong earnings beat with EPS estimates raised 30% for current year and 50% for next year; positioned as key supplier for AI cluster buildouts and optical interconnects; growing LoRa ecosystem; improved gross margins; strategic acquisitions to expand optical module content."
       },
       {
-        "ticker": "AVGO",
+        "ticker": "NVDA",
         "sentiment": "positive",
-        "sentiment_reasoning": "Major player in optical DSP space with growth driven by large custom chip business serving AI data centers."
-      },
-      {
-        "ticker": "LITE",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Virtual monopoly in high-power InP laser manufacturing with critical technology for preventing bandwidth bottlenecks; competitors rely on their lasers."
+        "sentiment_reasoning": "Invested $2 billion each into optical-connectivity peers, validating the importance of optical interconnect technology and creating tailwinds for companies like Semtech in the AI infrastructure space."
       },
       {
         "ticker": "COHR",
         "sentiment": "positive",
-        "sentiment_reasoning": "Vertically integrated powerhouse in optical materials, transceivers, and lasers; positioned as essential partner to cloud providers with advanced photonics technology."
+        "sentiment_reasoning": "Received $2 billion investment from NVIDIA; operates in optical-connectivity space benefiting from AI cluster buildouts; partners with Semtech in optical interconnect ecosystem."
       },
       {
-        "ticker": "AAOI",
+        "ticker": "LITE",
         "sentiment": "positive",
-        "sentiment_reasoning": "Vertically integrated transceiver manufacturer with in-house laser chip production and aggressive capacity expansion; key Microsoft supplier, though customer concentration presents risk."
-      },
-      {
-        "ticker": "APH",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Provides optical interconnect solutions reducing latency and power consumption; benefits from data center boom regardless of copper-to-optics transition pace."
-      },
-      {
-        "ticker": "GLW",
-        "sentiment": "positive",
-        "sentiment_reasoning": "High-density fiber cables and connection systems form the physical backbone of AI data centers; AI data centers require significantly more passive fiber strands than traditional centers."
-      },
-      {
-        "ticker": "CIEN",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Builds optical routing systems for long-distance data center traffic; positioned to benefit from multifacility AI clusters and high-bandwidth optical transport growth."
-      }
-    ]
-  },
-  {
-    "id": "0394515c0d8b9b7fa0e8b650c8174429f714cf5361555b37622174c8e388c2d2",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Nvidia Could Hit $7.5 Trillion in Value Thanks to This Overlooked Business Opportunity",
-    "author": "Manali Pradhan, Cfa",
-    "published_utc": "2026-08-13T06:31:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/13/nvidia-could-hit-75-trillion-in-value-thanks-to-th/?source=iedfolrf0000001",
-    "tickers": [
-      "NVDA",
-      "MRVL",
-      "ANET"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F882027%2Ftwo_businesspersons_discussing_with_each_other.jpg&w=1200&op=resize",
-    "description": "Nvidia's data center networking business is emerging as a significant growth driver alongside its GPU dominance. With networking revenue reaching $14.8 billion in Q1 FY2027 (up 199% YoY), the company is positioned to capture more AI infrastructure spending through technologies like NVLink and Spectrum-X. If earnings expectations are met, Nvidia's market cap could approach $7.5 trillion from its current $5.3 trillion.",
-    "keywords": [
-      "AI infrastructure",
-      "data center networking",
-      "GPU",
-      "NVLink",
-      "Spectrum-X",
-      "custom AI chips",
-      "market valuation"
-    ],
-    "insights": [
-      {
-        "ticker": "NVDA",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Strong networking revenue growth (199% YoY), market leadership in data center Ethernet switching (21.5% share), strategic positioning to benefit from AI infrastructure scaling, and potential path to $7.5 trillion valuation based on earnings growth expectations."
+        "sentiment_reasoning": "Received $2 billion investment from NVIDIA; optical-connectivity peer benefiting from AI infrastructure demand and data center expansion."
       },
       {
         "ticker": "MRVL",
         "sentiment": "positive",
-        "sentiment_reasoning": "Expanded partnership with Nvidia to provide custom accelerators and networking hardware, positioning it to benefit from growing AI infrastructure spending alongside Nvidia's technologies."
-      },
-      {
-        "ticker": "ANET",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Significant competitor in data center Ethernet switching with 20.7% market share, marginally below Nvidia's 21.5%, representing competitive pressure on Nvidia's networking business growth."
+        "sentiment_reasoning": "Received $2 billion investment from NVIDIA; operates in AI connectivity space alongside other optical-connectivity peers."
       }
     ]
   },
   {
-    "id": "46230cc4a5e7098419e982f861eba9a4b4087ce325e967a0f49362bd40da34d4",
+    "id": "99b6bad0c086ea03d7d240f8e51d3de6d959d74a4242520e2566803660ca0f0d",
     "publisher": {
       "name": "The Motley Fool",
       "homepage_url": "https://www.fool.com/",
       "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
       "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
     },
-    "title": "Broadcom vs. Marvell: Which Stock Has More AI Upside?",
-    "author": "Rick Orford",
-    "published_utc": "2026-08-11T13:18:00Z",
-    "article_url": "https://www.fool.com/investing/2026/08/11/broadcom-vs-marvell-which-stock-has-more-ai-upside/?source=iedfolrf0000001",
+    "title": "Broadcom Earnings: AI Chip Sales Tripled. Here\u2019s the $34.8 Billion Number Investors Need to Watch.",
+    "author": "Johnny Rice",
+    "published_utc": "2026-09-02T23:01:01Z",
+    "article_url": "https://www.fool.com/investing/2026/09/02/broadcom-earnings-ai-chip-sales-tripled-here-s-the-usd34-8-billion-number-investors-need-to-watch/?source=iedfolrf0000001",
     "tickers": [
       "AVGO",
+      "GOOG",
+      "GOOGL",
+      "GOOGM",
+      "GOOGN",
       "MRVL",
       "NVDA"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F882840%2Fbroadcom-vs-marvell.png&w=1200&op=resize",
-    "description": "Broadcom and Marvell are positioned to benefit as hyperscalers develop custom AI processors, creating opportunities in specialized infrastructure including custom silicon, networking, and optical connectivity. Rather than replacing Nvidia, this trend enables a more diversified semiconductor market.",
+    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fcf1508b8bebae3e2cb84e3db6f440d03fd7812fb-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+    "description": "Broadcom reported Q3 2026 revenue of $29.6 billion and adjusted EPS of $3.32, both beating Wall Street expectations, with AI chip sales more than tripling to $16.7 billion (up 221% YoY). However, the company's Q4 guidance of $34.8 billion fell slightly short of the $35.03 billion analyst consensus, causing investor concern despite the exceptional growth. The stock trades at a steep valuation with little room for error if AI-driven growth decelerates.",
     "keywords": [
-      "AI infrastructure",
-      "custom processors",
-      "hyperscalers",
+      "AI chip sales",
+      "earnings beat",
+      "guidance miss",
       "semiconductor",
-      "custom silicon",
-      "networking",
-      "optical connectivity"
+      "AI accelerators",
+      "data center",
+      "valuation risk"
     ],
     "insights": [
       {
         "ticker": "AVGO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Positioned as a key beneficiary of the shift toward custom AI processors and specialized infrastructure; CEO reaffirmed $100 billion AI forecast, indicating strong growth potential in this emerging market."
+        "sentiment": "neutral",
+        "sentiment_reasoning": "While Q3 results were exceptional with 86% revenue growth and AI chip sales tripling, the stock fell on a sub-1% guidance miss ($34.8B vs $35.03B expected). The company's high P/E ratio (>60) and market expectations for perfection create vulnerability if growth decelerates, offsetting the strong operational performance."
+      },
+      {
+        "ticker": "GOOG",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Google has a long-term custom AI processor supply agreement with Broadcom through 2031, but recently signed a competing deal with Marvell Technology, indicating customers are diversifying suppliers and potentially developing in-house solutions."
+      },
+      {
+        "ticker": "GOOGL",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Google has a long-term custom AI processor supply agreement with Broadcom through 2031, but recently signed a competing deal with Marvell Technology, indicating customers are diversifying suppliers and potentially developing in-house solutions."
+      },
+      {
+        "ticker": "GOOGM",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Google has a long-term custom AI processor supply agreement with Broadcom through 2031, but recently signed a competing deal with Marvell Technology, indicating customers are diversifying suppliers and potentially developing in-house solutions."
+      },
+      {
+        "ticker": "GOOGN",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Google has a long-term custom AI processor supply agreement with Broadcom through 2031, but recently signed a competing deal with Marvell Technology, indicating customers are diversifying suppliers and potentially developing in-house solutions."
       },
       {
         "ticker": "MRVL",
         "sentiment": "positive",
-        "sentiment_reasoning": "Expected to benefit from hyperscalers building custom processors and the broader trend toward specialized AI infrastructure, networking, and optical connectivity solutions."
+        "sentiment_reasoning": "Marvell recently secured a custom-chip deal with Google, demonstrating it is gaining market share in the competitive AI chip space and benefiting from large customers' desire to diversify suppliers beyond Broadcom."
       },
       {
         "ticker": "NVDA",
         "sentiment": "neutral",
-        "sentiment_reasoning": "While not being replaced, Nvidia faces a shift in market dynamics as custom silicon becomes more valuable; the article frames this as market diversification rather than direct competition or threat."
+        "sentiment_reasoning": "Mentioned as another major beneficiary of the AI data-center boom alongside Broadcom, but no specific news or sentiment drivers are discussed in the article."
       }
     ]
   },
   {
-    "id": "fd8c1e255804cc548cfdce3ca0252415e1318007b6f583d3232ecd6898e18037",
+    "id": "51e2419ee29453976c14ac0e8c0c12675a84460b5dc4031e0b04fc65c6ff813d",
     "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
     },
-    "title": "Palantir Soars 27% and Caterpillar Helps Lift the Dow 800 Points",
-    "author": "Anders Bylund",
-    "published_utc": "2026-08-04T17:13:43Z",
-    "article_url": "https://www.fool.com/investing/2026/08/04/palantir-soars-27-and-caterpillar-helps-lift-the-d/?source=iedfolrf0000001",
+    "title": "Credo's Optical Bet: Is a $600M+ Revenue Opportunity Taking Shape?",
+    "author": "Na",
+    "published_utc": "2026-09-02T12:40:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2983576/credo-s-optical-bet-is-a-600m-revenue-opportunity-taking-shape?cid=CS-ZC-FT-analyst_blog|quick_take-2983576",
     "tickers": [
-      "PLTR",
-      "CAT",
-      "AVGO",
+      "CRDO",
       "MRVL",
-      "MU",
-      "SPCX",
-      "SOXX",
-      "RSP"
+      "ALAB"
     ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F882104%2Fchalkboard-rocket-1297851329.jpg&w=1200&op=resize",
-    "description": "Major stock indexes rallied on Tuesday driven by strong earnings reports. Palantir Technologies surged 27% on faster-than-expected AI platform adoption by commercial customers, while Caterpillar jumped 6% after crushing Q2 estimates with 17% revenue growth. Semiconductor stocks broadly recovered from July's selloff, with the iShares Semiconductor ETF gaining 6.3%. The Dow rose 1.5% (800 points), Nasdaq gained 1.9%, and S&P 500 added 1.3%, with participation from 22 of 30 Dow components.",
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/ee/168846.webp",
+    "description": "Credo Technology reported $479 million in Q1 FY2027 revenue, up 114.7% year-over-year, driven by strong demand for optical connectivity solutions in AI infrastructure. The company expects optical revenue to exceed $600 million in FY2027 with three product lines each contributing over $100 million. Competitors Marvell Technology and Astera Labs are also benefiting from the shift toward higher-speed connectivity and near-package optics in AI networks.",
     "keywords": [
-      "earnings",
-      "AI adoption",
-      "semiconductor recovery",
-      "revenue growth",
-      "market rally",
-      "tech stocks"
+      "AI infrastructure",
+      "optical connectivity",
+      "silicon photonics",
+      "near-package optics",
+      "semiconductor",
+      "data center",
+      "high-speed interconnects"
     ],
     "insights": [
       {
-        "ticker": "PLTR",
+        "ticker": "CRDO",
         "sentiment": "positive",
-        "sentiment_reasoning": "Stock surged 27.1% on strong earnings report showing U.S. commercial customers adopting AI platform faster than expected, demonstrating robust business momentum."
-      },
-      {
-        "ticker": "CAT",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock jumped 6.8% after crushing analyst estimates with 17% overall revenue growth and 29% year-over-year growth in power and energy solutions division."
-      },
-      {
-        "ticker": "AVGO",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock gained 6% as part of broad semiconductor recovery with no company-specific catalysts, benefiting from sector-wide rebound and its $2 trillion market cap influence."
+        "sentiment_reasoning": "Strong revenue growth of 114.7% YoY with record optical DSP revenue and successful silicon photonics PIC integration. Expected inflection in H2 FY2027 with optical revenue exceeding $600 million and over 85% full-year growth. However, trading at premium valuation (14.24x forward P/S vs. industry 4.96x) and rated Hold."
       },
       {
         "ticker": "MRVL",
         "sentiment": "positive",
-        "sentiment_reasoning": "Stock rose 14.4% as part of semiconductor sector recovery from July's selloff, driven by broad industry momentum."
+        "sentiment_reasoning": "Strong demand across optical DSPs, broadband analog, and switching businesses with 1.6T ramping rapidly. Multiple business segments tracking toward $1 billion annualized revenue run rates, with significant scale-up opportunity ahead."
       },
-      {
-        "ticker": "MU",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock gained 8.4% as semiconductor sector rebounded strongly from July declines, benefiting from AI infrastructure demand."
-      },
-      {
-        "ticker": "SPCX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "Stock up 8.1% on anticipation of first quarterly earnings report as public company and bullish market sentiment."
-      },
-      {
-        "ticker": "SOXX",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ETF gained 6.3% as semiconductor stocks staged broad recovery from July's selloff, with wide range of double-digit and high single-digit gains across holdings."
-      },
-      {
-        "ticker": "RSP",
-        "sentiment": "positive",
-        "sentiment_reasoning": "ETF rose 0.9%, indicating broad market participation across all market cap sizes rather than narrow mega-cap driven gains."
-      }
-    ]
-  },
-  {
-    "id": "8743c1eb2a187f9227a24e02f9d4167e8c213a730d27a9d01c85b50fe2e56f4d",
-    "publisher": {
-      "name": "The Motley Fool",
-      "homepage_url": "https://www.fool.com/",
-      "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
-      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
-    },
-    "title": "Astera Labs vs. CoreWeave: Which Technology Stock Is a Better Buy in 2026?",
-    "author": "John Ballard",
-    "published_utc": "2026-07-30T21:30:01Z",
-    "article_url": "https://www.fool.com/coverage/better-buy/2026/07/30/astera-labs-vs-coreweave-which-technology-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
-    "tickers": [
-      "ALAB",
-      "CRWV",
-      "NVDA",
-      "AVGO",
-      "MRVL",
-      "META",
-      "MSFT",
-      "TSM"
-    ],
-    "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fd145a4652a11e031c72b1d53bb647498c289e935-1200x800.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
-    "description": "The article compares two AI infrastructure companies: Astera Labs, a profitable semiconductor connectivity provider with strong margins and a debt-free balance sheet but facing customer concentration risks, versus CoreWeave, a rapidly scaling cloud infrastructure platform with explosive revenue growth but significant losses and high debt. The author recommends Astera Labs despite its higher valuation due to its profitability and cash generation, while CoreWeave's aggressive expansion is consuming capital and generating substantial free cash flow losses.",
-    "keywords": [
-      "AI infrastructure",
-      "semiconductor",
-      "cloud computing",
-      "connectivity chips",
-      "data centers",
-      "profitability vs growth",
-      "balance sheet strength",
-      "customer concentration"
-    ],
-    "insights": [
       {
         "ticker": "ALAB",
         "sentiment": "positive",
-        "sentiment_reasoning": "Company demonstrates strong profitability with 26% net margins, debt-free balance sheet (0.0x debt-to-equity), and robust free cash flow generation ($343M from $1B revenue). Revenue doubled year-over-year. Author recommends this stock despite higher valuation due to financial stability and cash generation capability."
+        "sentiment_reasoning": "Benefiting from rising demand for high-speed connectivity in AI infrastructure with diverse product portfolio (Taurus, CXL, UALink, optical). Expected Q3 revenue of $540-$560 million implies ~40% sequential growth with strong product shipments."
+      }
+    ]
+  },
+  {
+    "id": "d35222946854f6384a37f719885e227e9502186e40488895f352d773d05e31f3",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "Should You Invest in the State Street SPDR NYSE Technology ETF (XNTK)?",
+    "author": "Zacks.Com",
+    "published_utc": "2026-09-02T10:20:02Z",
+    "article_url": "https://www.zacks.com/stock/news/2983508/should-you-invest-in-the-state-street-spdr-nyse-technology-etf-xntk?cid=CS-ZC-FT-sector_etf-2983508",
+    "tickers": [
+      "XNTK",
+      "MU",
+      "INTC",
+      "MRVL",
+      "XLK",
+      "VGT"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/default_article_images/default11.jpg",
+    "description": "The State Street SPDR NYSE Technology ETF (XNTK) is a passively managed fund tracking 35 U.S. technology companies with a low 0.35% expense ratio and $1.85 billion in assets. The ETF has gained 26.7% year-to-date and 45.7% over the past year, earning a Zacks ETF Rank of 1 (Strong Buy). However, it carries higher volatility with a beta of 1.45 and concentrated exposure with only 37 holdings.",
+    "keywords": [
+      "technology ETF",
+      "passive investing",
+      "low expense ratio",
+      "sector exposure",
+      "volatility",
+      "diversification"
+    ],
+    "insights": [
+      {
+        "ticker": "XNTK",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong Buy rating from Zacks, low expense ratio of 0.35%, significant year-to-date gains of 26.7%, and strong one-year performance of 45.7% support a positive outlook."
       },
       {
-        "ticker": "CRWV",
-        "sentiment": "negative",
-        "sentiment_reasoning": "Company reports significant losses (-22.7% net margin, -$1.2B net loss in 2025), high debt-to-equity ratio (6.8x), weak current ratio (0.5x), and negative free cash flow despite explosive revenue growth. Faces litigation, supply chain dependency on Nvidia, and potential competition from Meta. Author does not recommend this stock."
-      },
-      {
-        "ticker": "NVDA",
+        "ticker": "MU",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as critical GPU supplier to CoreWeave, representing both an opportunity and a concentration risk. No direct investment recommendation provided."
+        "sentiment_reasoning": "Largest holding in XNTK at 7.93% of assets, but mentioned only as a portfolio component without independent performance analysis or recommendation."
       },
       {
-        "ticker": "AVGO",
+        "ticker": "INTC",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitor to Astera Labs in the connectivity space. No direct investment recommendation provided."
+        "sentiment_reasoning": "Second-largest holding in XNTK, mentioned only as a portfolio component without independent performance analysis or recommendation."
       },
       {
         "ticker": "MRVL",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a competitor to Astera Labs in the connectivity space. No direct investment recommendation provided."
+        "sentiment_reasoning": "Third-largest holding in XNTK, mentioned only as a portfolio component without independent performance analysis or recommendation."
       },
       {
-        "ticker": "META",
+        "ticker": "XLK",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a potential future competitor to CoreWeave in cloud infrastructure. No direct investment recommendation provided."
+        "sentiment_reasoning": "Presented as an alternative option with lower expense ratio (0.08%) but significantly larger asset base ($119.66 billion), offering different risk/return profile."
       },
       {
-        "ticker": "MSFT",
+        "ticker": "VGT",
         "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as a long-term service agreement partner with CoreWeave. No direct investment recommendation provided."
+        "sentiment_reasoning": "Presented as an alternative option with comparable low expense ratio (0.09%) and larger asset base ($145.74 billion), offering different risk/return profile."
+      }
+    ]
+  },
+  {
+    "id": "cd6eda97bb9e17c0627efcd8355ec088f7dc0ab6311ca9672f0383d35aa91646",
+    "publisher": {
+      "name": "Zacks Investment Research",
+      "homepage_url": "https://www.zacks.com/",
+      "logo_url": "https://s3.polygon.io/public/assets/news/logos/zacks.png",
+      "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/zacks.ico"
+    },
+    "title": "Broadcom Set to Report Q3 Earnings: Buy, Sell or Hold the Stock?",
+    "author": "Na",
+    "published_utc": "2026-09-01T15:02:00Z",
+    "article_url": "https://www.zacks.com/stock/news/2983214/broadcom-set-to-report-q3-earnings-buy-sell-or-hold-the-stock?cid=CS-ZC-FT-analyst_blog|most_popular_stocks-2983214",
+    "tickers": [
+      "AVGO",
+      "CSCO",
+      "HPE",
+      "HPEpC",
+      "MRVL"
+    ],
+    "image_url": "https://staticx-tuner.zacks.com/images/articles/main/30/172914.webp",
+    "description": "Broadcom is expected to report Q3 fiscal 2026 results on September 2 with revenues of ~$29.4 billion (84% YoY growth) and AI semiconductor revenues accelerating to ~$16 billion (200%+ YoY growth). However, gross margin pressure from lower-margin AI semiconductors and stretched valuation present headwinds. The stock has underperformed peers despite strong AI momentum with major customers including Google, Anthropic, OpenAI, and Meta.",
+    "keywords": [
+      "AI semiconductors",
+      "Q3 earnings",
+      "gross margin pressure",
+      "TPU demand",
+      "valuation concerns",
+      "infrastructure software"
+    ],
+    "insights": [
+      {
+        "ticker": "AVGO",
+        "sentiment": "neutral",
+        "sentiment_reasoning": "Strong revenue growth and AI momentum are offset by gross margin pressure, stretched valuation (P/E of 10.75X vs sector 6.18X), and underperformance relative to peers. Zacks Rank #3 (Hold) suggests waiting for better entry point."
       },
       {
-        "ticker": "TSM",
-        "sentiment": "neutral",
-        "sentiment_reasoning": "Mentioned as sole-source manufacturer for Astera Labs, representing geopolitical risk exposure. No direct investment recommendation provided."
+        "ticker": "CSCO",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Mentioned as outperforming peer with 43.5% YTD gains, expanding AI infrastructure footprint with better valuation metrics (P/E 6.06X)."
+      },
+      {
+        "ticker": "HPE",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong YTD performance with 117.5% gains, expanding AI infrastructure presence with attractive valuation (P/E 1.39X)."
+      },
+      {
+        "ticker": "HPEpC",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Strong YTD performance with 117.5% gains, expanding AI infrastructure presence with attractive valuation (P/E 1.39X)."
+      },
+      {
+        "ticker": "MRVL",
+        "sentiment": "positive",
+        "sentiment_reasoning": "Best performing peer with 149.1% YTD gains, though trading at higher valuation (P/E 12.64X), indicating strong market confidence in AI positioning."
       }
     ]
   }
