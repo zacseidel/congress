@@ -41,6 +41,70 @@ class SpecialistConfigTests(unittest.TestCase):
         self.assertEqual(bio["contribution"], 0.05)
         self.assertEqual(bio["n_funds"], 2)
 
+    def test_watchlist_is_separate_from_specialists(self):
+        cfg = {
+            "specialist_funds": [
+                {"cik": 1224962, "label": "Perceptive Advisors", "category": "Healthcare"},
+            ],
+            "watchlist_funds": [
+                {"cik": 1562087, "label": "Thiel Macro"},
+                {"cik": "1562087", "label": "Duplicate"},
+            ],
+            "pool_pins": [1423053],
+        }
+        watch = specialist_funds.configured_watchlist(cfg)
+        self.assertEqual(watch, [{
+            "cik": 1562087, "label": "Thiel Macro", "category": "Watchlist",
+        }])
+        self.assertEqual(specialist_funds.configured_pin_ciks(cfg),
+                         {1224962, 1562087, 1423053})
+
+    def test_watchlist_drivers_roll_up_saved_contributions(self):
+        perf = {
+            "1": {"cik": 1, "name": "Fund A", "alpha": 0.20,
+                  "drivers": [{"ticker": "AAA", "issuer": "Aaa", "contribution": 0.15}],
+                  "detractors": [{"ticker": "BBB", "issuer": "Bbb", "contribution": -0.05}]},
+            "2": {"cik": 2, "name": "Fund B", "alpha": 0.10,
+                  "drivers": [{"ticker": "AAA", "issuer": "Aaa", "contribution": 0.08}]},
+        }
+        rows = rank_funds._drivers_from_saved([1, 2], perf, limit=10)
+        aaa = next(r for r in rows if r["ticker"] == "AAA")
+        self.assertAlmostEqual(aaa["contribution"], 0.23)
+        self.assertEqual(aaa["n_funds"], 2)
+        self.assertEqual(aaa["top_fund_cik"], 1)
+        self.assertAlmostEqual(aaa["share"], 0.23 / 0.30, places=4)
+
+    def test_highlight_includes_universe_and_convergence_names(self):
+        drivers = [{"ticker": "MU", "share": 0.1}]
+        buying_now = [{"ticker": "INTC"}]
+        attr = [{"ticker": "NVDA", "share": 0.05}, {"ticker": "ZZZ", "share": 0.0}]
+        congress = {"drivers": [{"ticker": "NVDA", "score": 12.0}],
+                    "recent_buys": [{"ticker": "INTC"}]}
+        marks = rank_funds._highlight_tickers(drivers, buying_now, attr, congress)
+        self.assertEqual(marks, {"MU", "INTC", "NVDA"})
+
+    def test_skill_weighted_buys_indexes_to_strongest(self):
+        records = [
+            {"cik": 10, "alpha": 1.0, "hit_rate": 1.0, "latest_book": 100, "name": "A"},
+            {"cik": 20, "alpha": 0.5, "hit_rate": 1.0, "latest_book": 100, "name": "B"},
+        ]
+        changes = {
+            "10": {"manager": "A", "new": [{"ticker": "AAA", "value": 50, "issuer": "Aaa"}]},
+            "20": {"manager": "B", "new": [{"ticker": "BBB", "value": 10, "issuer": "Bbb"}]},
+        }
+        rows = rank_funds._skill_weighted_buys(records, changes, limit=10)
+        self.assertEqual(rows[0]["ticker"], "AAA")
+        self.assertEqual(rows[0]["conviction"], 100)
+        self.assertGreater(rows[0]["conviction"], rows[1]["conviction"])
+
+    def test_pin_row_marks_absent_funds(self):
+        row = rank_funds._pin_row(
+            {"cik": 1, "label": "Missing", "category": "Watchlist"},
+            None, {}, {"max_holdings": 150, "min_holdings": 5, "min_aum": 1e8})
+        self.assertEqual(row["status"], "absent")
+        self.assertEqual(row["label"], "Missing")
+        self.assertIsNone(row["alpha"])
+
     def test_only_valid_unique_specialists_are_configured(self):
         records = specialist_funds.configured_specialists({
             "specialist_funds": [

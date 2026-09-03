@@ -10,10 +10,15 @@ It ranks stocks by their SHARE OF TOTAL ALPHA, not by how many people hold them:
   * Congress total alpha = sum of alpha across the out-performing members. A stock's
     share = sum of (position weight x position alpha) over out-performers / total.
 Both sides' per-stock shares ~sum to 100%, so this is a true "where did the edge come
-from" decomposition. Convergence = stocks that drove alpha on BOTH sides.
+from" decomposition. Alpha convergence = stocks that drove alpha on BOTH sides.
+
+A second convergence joins the two "buying now" feeds: new 13F positions from the
+top ranked hedge funds (not pinned specialists) and recent purchases by congressional
+out-performers. Windows/cuts live in config `dashboard`.
 
 Reads data/hedge/alpha_attribution.json (from backtest_13f) + data/performance.json +
-data/rankings.json (congress). Congress's own landing lives at congress.html.
+data/rankings.json (congress) + data/hedge/rankings.json + data/hedge/changes.json.gz.
+Congress's own landing lives at congress.html.
 
 Usage:
   python src/generate_dashboard.py
@@ -21,11 +26,11 @@ Usage:
 
 import sys
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from utils import DATA_DIR, load_json, setup_logging
+from utils import DATA_DIR, load_config, load_json, load_json_gz, parse_date, setup_logging
 
 log = setup_logging("generate_dashboard")
 
@@ -48,6 +53,7 @@ TEMPLATE = """<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
  th{background:#f0f3f6;font-size:12px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);}
  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;} tbody tr:hover{background:#f6f8fa;}
  .conv{border:2px solid #1a7f37;} .badge{display:inline-block;font-size:11px;font-weight:600;padding:1px 7px;border-radius:10px;background:#dafbe1;color:var(--green);}
+ .pos{color:var(--green);}
  .cols{display:flex;gap:20px;flex-wrap:wrap;} .cols>div{flex:1 1 340px;}
  .cards{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0;}
  .cardlink{flex:1 1 300px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;}
@@ -63,7 +69,7 @@ TEMPLATE = """<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 </div></header>
 <div class="wrap">
 
-<h2>🎯 Convergence <span class="muted small">stocks that drove alpha for BOTH Congress out-performers and top hedge funds</span></h2>
+<h2>🎯 Alpha convergence <span class="muted small">stocks that drove alpha for BOTH Congress out-performers and top hedge funds</span></h2>
 {% if convergence %}
 <div class="lead">These {{ convergence|length }} names produced a meaningful share of the excess return on
   <em>both</em> sides — the strongest signal in the dataset. Share = % of each side's total alpha.</div>
@@ -79,6 +85,27 @@ TEMPLATE = """<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 </tr>{% endfor %}
 </tbody></table>
 {% else %}<p class="muted small">No overlap yet — refresh both reports to populate.</p>{% endif %}
+
+<h2>🛒 Buying-now convergence <span class="muted small">new positions on BOTH sides — top {{ top_funds_n }} ranked hedge funds this 13F wave, Congress out-performers in the last {{ congress_window_days }} days</span></h2>
+{% if buying_now %}
+<div class="lead">These {{ buying_now|length }} names are being bought by out-performers on both sides —
+  where the smart money is <em>going</em>, to complement the backward-looking alpha view above.
+  Ranked the same way as alpha convergence: each name&rsquo;s share of that side&rsquo;s total
+  buying-now score, then added. Hedge score = skill-weighted new-buy conviction
+  (alpha × consistency × position/book) among the top ranked funds; Congress score = share of
+  out-performer portfolios flowing into the name. Pinned specialists are excluded.</div>
+<table class="conv"><thead><tr>
+  <th>Ticker</th><th class="num">Hedge buy-share</th><th class="num">Congress buy-share</th>
+  <th>Top fund</th><th>Top member</th></tr></thead><tbody>
+{% for r in buying_now %}<tr>
+  <td>{{ clink(r.ticker) }} <span class="badge">both</span></td>
+  <td class="num pos" title="{{ r.hedge_n }} ranked fund{{ '' if r.hedge_n == 1 else 's' }} newly buying">{{ '%.1f'|format(100*r.hedge_share) }}%</td>
+  <td class="num pos" title="{{ r.congress_n }} out-performer{{ '' if r.congress_n == 1 else 's' }} buying">{{ '%.1f'|format(100*r.congress_share) }}%</td>
+  <td class="small">{{ flink(r.top_fund_cik, r.top_fund_name) }}</td>
+  <td class="small">{{ mlink(r.top_member_id, r.top_member) }}</td>
+</tr>{% endfor %}
+</tbody></table>
+{% else %}<p class="muted small">No overlapping new buys this window — refresh both reports to populate.</p>{% endif %}
 
 <div class="cols">
 <div><h2>📈 Where hedge-fund alpha came from <span class="muted small">{{ n_hedge_funds }} ranked funds</span></h2>
@@ -108,10 +135,150 @@ TEMPLATE = """<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 </div>
 
 <footer>Alpha attribution: each stock's summed contribution to the total alpha of the ranked funds /
-  out-performing members. Congress: House &amp; Senate disclosures · Hedge: SEC EDGAR 13F · Prices: Polygon.io ·
-  benchmark SPY. Educational use only — not investment advice.</footer>
+  out-performing members. Buying now: new 13F positions of the top ranked funds that congressional
+  out-performers also bought recently. Congress: House &amp; Senate disclosures · Hedge: SEC EDGAR 13F ·
+  Prices: Polygon.io · benchmark SPY. Educational use only — not investment advice.</footer>
 </div></body></html>
 """
+
+
+def select_top_funds(leaderboard: list, top_n: int, min_alpha: float,
+                     exclude_ciks) -> list:
+    """Top ranked funds by alpha, dropping pinned specialists and funds below min_alpha."""
+    exclude = {int(c) for c in exclude_ciks}
+    selected = []
+    for record in leaderboard:
+        if int(record["cik"]) in exclude:
+            continue
+        if (record.get("alpha") or 0) < min_alpha:
+            continue
+        selected.append(record)
+        if len(selected) >= top_n:
+            break
+    return selected
+
+
+def hedge_buying_from_changes(funds: list, changes: dict) -> dict:
+    """Skill-weighted new 13F buys for `funds` (already filtered to the ranked top-N).
+
+    Score is the same quantity the hedge leaderboard ranks by: Σ over funds of
+    max(alpha,0) × hit-rate × (new position / book). Share-of-total happens later.
+    """
+    alpha_by = {str(record["cik"]): record["alpha"] for record in funds}
+    skill_by = {str(record["cik"]): max(record["alpha"], 0) * (record.get("hit_rate") or 0)
+                for record in funds}
+    book_by = {str(record["cik"]): (record.get("latest_book") or 0) for record in funds}
+    buys: dict = {}
+    for record in funds:
+        cik = str(record["cik"])
+        delta = changes.get(cik)
+        if not delta:
+            continue
+        skill, book = skill_by.get(cik, 0), book_by.get(cik, 0)
+        if skill <= 0 or book <= 0:
+            continue
+        for row in delta.get("new", []):
+            ticker = row.get("ticker")
+            if not ticker:
+                continue
+            conv = (row.get("value", 0) or 0) / book
+            vote = skill * conv
+            entry = buys.setdefault(ticker, {"score": 0.0, "n_funds": 0,
+                                             "top": None, "top_vote": -1.0})
+            entry["score"] += vote
+            entry["n_funds"] += 1
+            if vote > entry["top_vote"]:
+                entry["top_vote"] = vote
+                entry["top"] = (delta.get("manager"), record["cik"], alpha_by[cik], conv)
+    out = {}
+    for ticker, entry in buys.items():
+        name, cik, alpha, conv = entry["top"]
+        out[ticker] = {
+            "score": entry["score"],
+            "n_funds": entry["n_funds"],
+            "top_name": name,
+            "top_cik": cik,
+            "top_alpha": alpha,
+            "top_conv": conv,
+        }
+    return out
+
+
+def congress_buying_from_positions(positions: list, members: dict,
+                                   outperformer_ids: set, cutoff) -> dict:
+    """Out-performer purchases disclosed on/after `cutoff`, scored like View B.
+
+    score = Σ (position $ / member total $) across out-performers — the share of
+    proven portfolios flowing into the name. Share-of-total happens later.
+    """
+    acc: dict = defaultdict(lambda: {"score": 0.0, "buyers": {}})
+    for position in positions:
+        member_id = position.get("member_id")
+        if member_id not in outperformer_ids or (position.get("weight") or 0) <= 0:
+            continue
+        entry_date = parse_date(position.get("entry_date"))
+        if not entry_date or entry_date < cutoff:
+            continue
+        total = (members.get(member_id) or {}).get("total_dollars") or 0
+        if total <= 0:
+            continue
+        alloc = position["weight"] / total
+        row = acc[position["ticker"]]
+        row["score"] += alloc
+        buyer = row["buyers"].setdefault(member_id, {
+            "member": position.get("member") or member_id,
+            "member_id": member_id,
+            "alloc": 0.0,
+        })
+        buyer["alloc"] += alloc
+    out = {}
+    for ticker, row in acc.items():
+        buyers = sorted(row["buyers"].values(), key=lambda b: b["alloc"], reverse=True)
+        top = buyers[0]
+        out[ticker] = {
+            "score": row["score"],
+            "n_outperformers": len(buyers),
+            "top_member": top["member"],
+            "top_member_id": top["member_id"],
+        }
+    return out
+
+
+def buying_now_convergence(hedge_buys: dict, congress_buys: dict) -> list:
+    """Names newly bought on both sides, ranked like alpha convergence.
+
+    Each side's raw buying-now score (hedge: skill-weighted conviction; congress:
+    out-performer portfolio share) is turned into a share of that side's total,
+    then the two shares are added. Stocks not on both lists are dropped.
+    """
+    if not hedge_buys or not congress_buys:
+        return []
+    hedge_total = sum(row["score"] for row in hedge_buys.values())
+    congress_total = sum(row["score"] for row in congress_buys.values())
+    if hedge_total <= 0 or congress_total <= 0:
+        return []
+    rows = []
+    for ticker in set(hedge_buys) & set(congress_buys):
+        hedge = hedge_buys[ticker]
+        congress = congress_buys[ticker]
+        hedge_share = hedge["score"] / hedge_total
+        congress_share = congress["score"] / congress_total
+        if hedge_share <= 0 or congress_share <= 0:
+            continue
+        rows.append({
+            "ticker": ticker,
+            "hedge_share": hedge_share,
+            "congress_share": congress_share,
+            "hedge_n": hedge["n_funds"],
+            "top_fund_cik": hedge["top_cik"],
+            "top_fund_name": hedge["top_name"],
+            "congress_n": congress["n_outperformers"],
+            "top_member": congress["top_member"],
+            "top_member_id": congress["top_member_id"],
+            "combined": hedge_share + congress_share,
+        })
+    rows.sort(key=lambda row: row["combined"], reverse=True)
+    return rows
 
 
 def _hedge_alpha() -> tuple:
@@ -145,8 +312,36 @@ def _congress_alpha() -> tuple:
     return total, stocks
 
 
+def _load_buying_now(cfg: dict) -> tuple[list, int, int]:
+    """Join ranked-fund new 13F buys with congressional out-performer purchases."""
+    dcfg = cfg.get("dashboard", {})
+    top_n = int(dcfg.get("top_funds_n", 200))
+    min_alpha = float(dcfg.get("min_fund_alpha", 0.0))
+    window_days = int(dcfg.get("congress_window_days", 120))
+
+    hedge_rank = load_json(DATA_DIR / "hedge" / "rankings.json") \
+        if (DATA_DIR / "hedge" / "rankings.json").exists() else {}
+    changes = load_json_gz(DATA_DIR / "hedge" / "changes.json.gz").get("funds", {}) \
+        if (DATA_DIR / "hedge" / "changes.json.gz").exists() else {}
+    exclude = {s["cik"] for s in hedge_rank.get("specialists", [])}
+    funds = select_top_funds(hedge_rank.get("leaderboard", []), top_n, min_alpha, exclude)
+    hedge_buys = hedge_buying_from_changes(funds, changes)
+
+    rank = load_json(DATA_DIR / "rankings.json") if (DATA_DIR / "rankings.json").exists() else {}
+    perf = load_json(DATA_DIR / "performance.json") if (DATA_DIR / "performance.json").exists() else {}
+    generated = parse_date(perf.get("generated")) or datetime.now(timezone.utc).date()
+    cutoff = generated - timedelta(days=window_days)
+    congress_buys = congress_buying_from_positions(
+        perf.get("positions", []), perf.get("members", {}),
+        set(rank.get("outperformer_ids", [])), cutoff)
+
+    rows = buying_now_convergence(hedge_buys, congress_buys)
+    return rows, top_n, window_days
+
+
 def run() -> None:
     from jinja2 import Template
+    cfg = load_config()
     h_total, hedge, n_hedge_funds = _hedge_alpha()
     c_total, congress = _congress_alpha()
 
@@ -161,6 +356,8 @@ def run() -> None:
                             "top_fund_name": hedge[t].get("top_fund_name", ""),
                             "top_member": congress[t].get("top_member", "")})
     convergence.sort(key=lambda r: r["combined"], reverse=True)
+
+    buying_now, top_funds_n, congress_window_days = _load_buying_now(cfg)
 
     hedge_top = [s for s in sorted(hedge.values(), key=lambda s: s.get("share", 0), reverse=True)
                  if s.get("share", 0) > 0][:15]
@@ -191,22 +388,38 @@ def run() -> None:
             return f'<a href="hedge/funds/{cik}.html">{name}</a>'
         return name
 
+    def mlink(member_id, name: str) -> str:
+        name = name or ""
+        if member_id and (DOCS / "members" / f"{member_id}.html").exists():
+            return f'<a href="members/{member_id}.html">{name}</a>'
+        return name
+
     tmpl = Template(TEMPLATE)
     tmpl.globals["clink"] = clink
     tmpl.globals["flink"] = flink
+    tmpl.globals["mlink"] = mlink
     html = tmpl.render(generated=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-                       convergence=convergence[:30], hedge_top=hedge_top, congress_top=congress_top,
-                       n_hedge_funds=n_hedge_funds, hedge_wave=hedge_wave)
+                       convergence=convergence[:30], buying_now=buying_now[:30],
+                       hedge_top=hedge_top, congress_top=congress_top,
+                       n_hedge_funds=n_hedge_funds, hedge_wave=hedge_wave,
+                       top_funds_n=top_funds_n, congress_window_days=congress_window_days)
     DOCS.mkdir(parents=True, exist_ok=True)
     (DOCS / "index.html").write_text(html)
-    log.info("Dashboard: %d convergence (of %d hedge / %d congress alpha stocks) -> %s",
-             len(convergence), len(hedge), len(congress), DOCS / "index.html")
+    log.info("Dashboard: %d alpha-convergence (of %d hedge / %d congress) · "
+             "%d buying-now convergence -> %s",
+             len(convergence), len(hedge), len(congress), len(buying_now), DOCS / "index.html")
     if convergence[:8]:
-        log.info("--- top convergence (by combined alpha share) ---")
+        log.info("--- top alpha convergence (by combined alpha share) ---")
         for r in convergence[:8]:
             log.info("  %-6s hedge %.1f%% + congress %.1f%% | top fund %s",
                      r["ticker"], 100 * r["hedge_share"], 100 * r["congress_share"],
                      r["top_fund_name"][:28])
+    if buying_now[:8]:
+        log.info("--- top buying-now convergence ---")
+        for r in buying_now[:8]:
+            log.info("  %-6s hedge %.1f%% + congress %.1f%% | %s / %s",
+                     r["ticker"], 100 * r["hedge_share"], 100 * r["congress_share"],
+                     (r["top_fund_name"] or "")[:24], r["top_member"])
 
 
 if __name__ == "__main__":

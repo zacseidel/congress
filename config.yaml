@@ -46,13 +46,28 @@ hedge:
   min_holdings: 5               # exclude near-empty / single-name filers
   max_holdings: 150             # exclude closet-indexers / diversified funds (custodians already gone)
   candidate_pool_size: 6000     # hard safety cap on the band (by AUM) to bound a run
-  pool_pins: [1566887]          # CIKs ALWAYS included regardless of band (e.g. Ratan Capital Management)
+  pool_pins: [1566887]          # always in the fetch universe even outside the holdings band (Ratan)
   leaderboard_size: 500         # funds shown on the alpha leaderboard
   stock_pages_drivers: 120      # render per-stock pages for the top-N alpha contributors...
   stock_pages_buys: 120         # ...and the top-N skill-weighted new buys (so linked tickers have pages)
   specialist_overlap_size: 30  # shared latest holdings shown below the pinned-specialist table
   watchlist_size: 40            # top funds promoted to deep per-fund pages
-  watchlist_pins: []            # CIKs always kept on the watchlist regardless of rank
+  watchlist_pins: []            # extra CIKs always kept on the watchlist (labels live in watchlist_funds)
+  watchlist_funds:              # general high-conviction pins; NOT mixed into healthcare specialist overlap
+    - cik: 1562087
+      label: "Thiel Macro"
+    - cik: 2045724
+      label: "Situational Awareness"
+    - cik: 1536411
+      label: "Duquesne Family Office"
+    - cik: 1765681
+      label: "Thrive Capital"
+    - cik: 1777813
+      label: "Atreides Management"
+    - cik: 1649339
+      label: "Scion"
+    - cik: 1566887
+      label: "Ratan Capital"
   specialist_funds:             # curated funds stay visible even when data-quality gates exclude them
     - cik: 1224962
       label: "Perceptive Advisors"

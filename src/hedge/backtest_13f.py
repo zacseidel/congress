@@ -38,7 +38,7 @@ from utils import (DATA_DIR, Progress, load_config, load_json_gz, most_recent_tr
 from resolve_cusip import cached as cusip_cached
 from price_hedge import build_price_map
 from holdings_io import load_holdings
-from specialist_funds import configured_specialists
+from specialist_funds import configured_specialists, configured_watchlist
 
 log = setup_logging("backtest_13f")
 
@@ -105,11 +105,18 @@ def _write_alpha_attribution(cfg: dict, results: dict, contribs: dict) -> None:
     ]
     specialist_attribution = _aggregate_alpha_attribution(
         specialist_ciks, results, contribs)
+    watchlist_ciks = [
+        record["cik"] for record in configured_watchlist(h)
+        if str(record["cik"]) in results
+    ]
+    watchlist_attribution = _aggregate_alpha_attribution(
+        watchlist_ciks, results, contribs)
     from datetime import datetime, timezone
     save_json(ATTRIBUTION_PATH, {
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         **attribution,
         "specialists": specialist_attribution,
+        "watchlist": watchlist_attribution,
     })
     log.info("Alpha attribution: %d ranked funds, total alpha %.1f (sum of fund alphas); top stock %s = %.0f%% of it",
              attribution["n_funds"], attribution["total_alpha"],
@@ -118,6 +125,9 @@ def _write_alpha_attribution(cfg: dict, results: dict, contribs: dict) -> None:
     log.info("Specialist alpha attribution: %d pinned funds, total alpha %.1f",
              specialist_attribution["n_funds"],
              specialist_attribution["total_alpha"])
+    log.info("Watchlist alpha attribution: %d pinned funds, total alpha %.1f",
+             watchlist_attribution["n_funds"],
+             watchlist_attribution["total_alpha"])
 
 
 def _ticker_for(cusip: str):

@@ -15,6 +15,7 @@
  th{background:#f0f3f6;font-size:12px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);}
  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;} tbody tr:hover{background:#f6f8fa;}
  .conv{border:2px solid #1a7f37;} .badge{display:inline-block;font-size:11px;font-weight:600;padding:1px 7px;border-radius:10px;background:#dafbe1;color:var(--green);}
+ .pos{color:var(--green);}
  .cols{display:flex;gap:20px;flex-wrap:wrap;} .cols>div{flex:1 1 340px;}
  .cards{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0;}
  .cardlink{flex:1 1 300px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;}
@@ -25,12 +26,12 @@
 </style></head><body>
 <header class="site"><div class="wrap">
   <h1>💡 Smart Money Dashboard</h1>
-  <div class="sub">Ranked by share of <em>total alpha produced</em> — where Congress and top hedge funds actually made their edge. Updated 2026-09-03 19:53 UTC · latest 13F filing wave <b>2026Q3</b></div>
+  <div class="sub">Ranked by share of <em>total alpha produced</em> — where Congress and top hedge funds actually made their edge. Updated 2026-09-03 20:46 UTC · latest 13F filing wave <b>2026Q3</b></div>
   <nav class="top"><a class="here" href="index.html">💡 Dashboard</a><a href="congress.html">🏛️ Congress Trades</a><a href="hedge/index.html">📈 Hedge Fund 13Fs</a><a href="decisions.html">🎯 Decisions</a></nav>
 </div></header>
 <div class="wrap">
 
-<h2>🎯 Convergence <span class="muted small">stocks that drove alpha for BOTH Congress out-performers and top hedge funds</span></h2>
+<h2>🎯 Alpha convergence <span class="muted small">stocks that drove alpha for BOTH Congress out-performers and top hedge funds</span></h2>
 
 <div class="lead">These 30 names produced a meaningful share of the excess return on
   <em>both</em> sides — the strongest signal in the dataset. Share = % of each side's total alpha.</div>
@@ -221,6 +222,201 @@
 </tbody></table>
 
 
+<h2>🛒 Buying-now convergence <span class="muted small">new positions on BOTH sides — top 200 ranked hedge funds this 13F wave, Congress out-performers in the last 120 days</span></h2>
+
+<div class="lead">These 30 names are being bought by out-performers on both sides —
+  where the smart money is <em>going</em>, to complement the backward-looking alpha view above.
+  Ranked the same way as alpha convergence: each name&rsquo;s share of that side&rsquo;s total
+  buying-now score, then added. Hedge score = skill-weighted new-buy conviction
+  (alpha × consistency × position/book) among the top ranked funds; Congress score = share of
+  out-performer portfolios flowing into the name. Pinned specialists are excluded.</div>
+<table class="conv"><thead><tr>
+  <th>Ticker</th><th class="num">Hedge buy-share</th><th class="num">Congress buy-share</th>
+  <th>Top fund</th><th>Top member</th></tr></thead><tbody>
+<tr>
+  <td><a href="stocks/COHR.html">COHR</a> <span class="badge">both</span></td>
+  <td class="num pos" title="5 ranked funds newly buying">0.3%</td>
+  <td class="num pos" title="1 out-performer buying">13.0%</td>
+  <td class="small"><a href="hedge/funds/2041062.html">Talos Eurisko Asset Management</a></td>
+  <td class="small"><a href="members/whitehouse-sheldon.html">Sheldon Whitehouse</a></td>
+</tr><tr>
+  <td><a href="stocks/AAPL.html">AAPL</a> <span class="badge">both</span></td>
+  <td class="num pos" title="2 ranked funds newly buying">0.1%</td>
+  <td class="num pos" title="2 out-performers buying">10.4%</td>
+  <td class="small"><a href="hedge/funds/1789082.html">Crake Asset Management LLP</a></td>
+  <td class="small"><a href="members/case-ed.html">Ed Case</a></td>
+</tr><tr>
+  <td><a href="stocks/GOOG.html">GOOG</a> <span class="badge">both</span></td>
+  <td class="num pos" title="5 ranked funds newly buying">0.1%</td>
+  <td class="num pos" title="2 out-performers buying">10.4%</td>
+  <td class="small"><a href="hedge/funds/1869470.html">LONG WALK MANAGEMENT LP</a></td>
+  <td class="small"><a href="members/moran-jerry.html">Jerry Moran,</a></td>
+</tr><tr>
+  <td><a href="stocks/BE.html">BE</a> <span class="badge">both</span></td>
+  <td class="num pos" title="10 ranked funds newly buying">0.3%</td>
+  <td class="num pos" title="1 out-performer buying">10.0%</td>
+  <td class="small"><a href="hedge/funds/1745907.html">CloudAlpha Capital Management </a></td>
+  <td class="small"><a href="members/pelosi-nancy.html">Nancy Pelosi</a></td>
+</tr><tr>
+  <td><a href="stocks/MU.html">MU</a> <span class="badge">both</span></td>
+  <td class="num pos" title="15 ranked funds newly buying">1.3%</td>
+  <td class="num pos" title="2 out-performers buying">4.7%</td>
+  <td class="small"><a href="hedge/funds/2008306.html">Monolith Management Ltd</a></td>
+  <td class="small"><a href="members/whitehouse-sheldon.html">Sheldon Whitehouse</a></td>
+</tr><tr>
+  <td><a href="stocks/INTC.html">INTC</a> <span class="badge">both</span></td>
+  <td class="num pos" title="17 ranked funds newly buying">1.9%</td>
+  <td class="num pos" title="1 out-performer buying">2.0%</td>
+  <td class="small"><a href="hedge/funds/1835943.html">AIGH Capital Management LLC</a></td>
+  <td class="small"><a href="members/pelosi-nancy.html">Nancy Pelosi</a></td>
+</tr><tr>
+  <td><a href="stocks/HON.html">HON</a> <span class="badge">both</span></td>
+  <td class="num pos" title="10 ranked funds newly buying">0.1%</td>
+  <td class="num pos" title="2 out-performers buying">1.9%</td>
+  <td class="small"><a href="hedge/funds/1801547.html">Blue Whale Capital LLP</a></td>
+  <td class="small"><a href="members/newhouse-dan.html">Dan Newhouse</a></td>
+</tr><tr>
+  <td><a href="stocks/ANET.html">ANET</a> <span class="badge">both</span></td>
+  <td class="num pos" title="4 ranked funds newly buying">0.2%</td>
+  <td class="num pos" title="1 out-performer buying">1.5%</td>
+  <td class="small"><a href="hedge/funds/2053303.html">PEREGRINE INVESTMENT MANAGEMEN</a></td>
+  <td class="small"><a href="members/newhouse-dan.html">Dan Newhouse</a></td>
+</tr><tr>
+  <td><a href="stocks/UBER.html">UBER</a> <span class="badge">both</span></td>
+  <td class="num pos" title="5 ranked funds newly buying">0.1%</td>
+  <td class="num pos" title="1 out-performer buying">1.5%</td>
+  <td class="small"><a href="hedge/funds/1891904.html">Octahedron Capital Management </a></td>
+  <td class="small"><a href="members/newhouse-dan.html">Dan Newhouse</a></td>
+</tr><tr>
+  <td><a href="stocks/APH.html">APH</a> <span class="badge">both</span></td>
+  <td class="num pos" title="6 ranked funds newly buying">0.1%</td>
+  <td class="num pos" title="1 out-performer buying">1.5%</td>
+  <td class="small"><a href="hedge/funds/1777813.html">Atreides Management, LP</a></td>
+  <td class="small"><a href="members/newhouse-dan.html">Dan Newhouse</a></td>
+</tr><tr>
+  <td><a href="stocks/ACN.html">ACN</a> <span class="badge">both</span></td>
+  <td class="num pos" title="3 ranked funds newly buying">0.1%</td>
+  <td class="num pos" title="1 out-performer buying">1.5%</td>
+  <td class="small"><a href="hedge/funds/1317267.html">Kamunting Street Capital Manag</a></td>
+  <td class="small"><a href="members/newhouse-dan.html">Dan Newhouse</a></td>
+</tr><tr>
+  <td><a href="stocks/DUK.html">DUK</a> <span class="badge">both</span></td>
+  <td class="num pos" title="2 ranked funds newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">1.5%</td>
+  <td class="small"><a href="hedge/funds/2053757.html">Fiscal Wisdom Wealth Managemen</a></td>
+  <td class="small"><a href="members/newhouse-dan.html">Dan Newhouse</a></td>
+</tr><tr>
+  <td><a href="stocks/FIS.html">FIS</a> <span class="badge">both</span></td>
+  <td class="num pos" title="1 ranked fund newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">1.5%</td>
+  <td class="small"><a href="hedge/funds/1708759.html">Maytus Capital Management, LLC</a></td>
+  <td class="small"><a href="members/newhouse-dan.html">Dan Newhouse</a></td>
+</tr><tr>
+  <td><a href="stocks/MS.html">MS</a> <span class="badge">both</span></td>
+  <td class="num pos" title="3 ranked funds newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">1.5%</td>
+  <td class="small"><a href="hedge/funds/1970465.html">Polymer Capital Management (HK</a></td>
+  <td class="small"><a href="members/newhouse-dan.html">Dan Newhouse</a></td>
+</tr><tr>
+  <td><a href="stocks/COST.html">COST</a> <span class="badge">both</span></td>
+  <td class="num pos" title="2 ranked funds newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">1.5%</td>
+  <td class="small"><a href="hedge/funds/1825611.html">Cypress Point Wealth Managemen</a></td>
+  <td class="small"><a href="members/newhouse-dan.html">Dan Newhouse</a></td>
+</tr><tr>
+  <td><a href="stocks/T.html">T</a> <span class="badge">both</span></td>
+  <td class="num pos" title="1 ranked fund newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">1.2%</td>
+  <td class="small"><a href="hedge/funds/1549408.html">ALETHEA CAPITAL MANAGEMENT, LL</a></td>
+  <td class="small"><a href="members/moore-tim.html">Tim Moore</a></td>
+</tr><tr>
+  <td><a href="stocks/VRSN.html">VRSN</a> <span class="badge">both</span></td>
+  <td class="num pos" title="2 ranked funds newly buying">0.1%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1867731.html">SELDON CAPITAL LP</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/A.html">A</a> <span class="badge">both</span></td>
+  <td class="num pos" title="2 ranked funds newly buying">0.1%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1910323.html">Ritter Alpha, LP</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/BA.html">BA</a> <span class="badge">both</span></td>
+  <td class="num pos" title="2 ranked funds newly buying">0.1%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1803149.html">Mizuho Markets Cayman LP</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/CARR.html">CARR</a> <span class="badge">both</span></td>
+  <td class="num pos" title="1 ranked fund newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1547349.html">Broad Peak Investment Advisers</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/CI.html">CI</a> <span class="badge">both</span></td>
+  <td class="num pos" title="1 ranked fund newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1482416.html">Sio Capital Management, LLC</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/DE.html">DE</a> <span class="badge">both</span></td>
+  <td class="num pos" title="2 ranked funds newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1825611.html">Cypress Point Wealth Managemen</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/ADBE.html">ADBE</a> <span class="badge">both</span></td>
+  <td class="num pos" title="4 ranked funds newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1317267.html">Kamunting Street Capital Manag</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/EQIX.html">EQIX</a> <span class="badge">both</span></td>
+  <td class="num pos" title="2 ranked funds newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1536411.html">Duquesne Family Office LLC</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/IP.html">IP</a> <span class="badge">both</span></td>
+  <td class="num pos" title="1 ranked fund newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1658363.html">Maple Rock Capital Partners In</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/WY.html">WY</a> <span class="badge">both</span></td>
+  <td class="num pos" title="1 ranked fund newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1549408.html">ALETHEA CAPITAL MANAGEMENT, LL</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/MNST.html">MNST</a> <span class="badge">both</span></td>
+  <td class="num pos" title="1 ranked fund newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/2010854.html">BOCHK Asset Management Ltd</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/NOW.html">NOW</a> <span class="badge">both</span></td>
+  <td class="num pos" title="1 ranked fund newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1802493.html">DCF Advisers, LLC</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/FFIV.html">FFIV</a> <span class="badge">both</span></td>
+  <td class="num pos" title="1 ranked fund newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1536411.html">Duquesne Family Office LLC</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr><tr>
+  <td><a href="stocks/MKC.html">MKC</a> <span class="badge">both</span></td>
+  <td class="num pos" title="1 ranked fund newly buying">0.0%</td>
+  <td class="num pos" title="1 out-performer buying">0.4%</td>
+  <td class="small"><a href="hedge/funds/1508097.html">Sanders Capital, LLC</a></td>
+  <td class="small"><a href="members/johnson-julie.html">Julie Johnson</a></td>
+</tr>
+</tbody></table>
+
+
 <div class="cols">
 <div><h2>📈 Where hedge-fund alpha came from <span class="muted small">757 ranked funds</span></h2>
 <table><thead><tr><th>Ticker</th><th class="num">α-share</th><th>Top fund</th></tr></thead><tbody>
@@ -291,6 +487,7 @@
 </div>
 
 <footer>Alpha attribution: each stock's summed contribution to the total alpha of the ranked funds /
-  out-performing members. Congress: House &amp; Senate disclosures · Hedge: SEC EDGAR 13F · Prices: Polygon.io ·
-  benchmark SPY. Educational use only — not investment advice.</footer>
+  out-performing members. Buying now: new 13F positions of the top ranked funds that congressional
+  out-performers also bought recently. Congress: House &amp; Senate disclosures · Hedge: SEC EDGAR 13F ·
+  Prices: Polygon.io · benchmark SPY. Educational use only — not investment advice.</footer>
 </div></body></html>

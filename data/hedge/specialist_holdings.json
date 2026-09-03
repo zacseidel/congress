@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03 19:26 UTC",
+  "generated": "2026-09-03 21:26 UTC",
   "n_specialists": 5,
   "specialists": [
     {
@@ -1653,6 +1653,712 @@
           "name": "Opaleye Management Inc.",
           "value": 13353.0,
           "weight": 1e-05
+        }
+      ]
+    }
+  ],
+  "watchlist": [
+    {
+      "cik": 1562087,
+      "label": "Thiel Macro",
+      "category": "Watchlist"
+    },
+    {
+      "cik": 2045724,
+      "label": "Situational Awareness",
+      "category": "Watchlist"
+    },
+    {
+      "cik": 1536411,
+      "label": "Duquesne Family Office",
+      "category": "Watchlist"
+    },
+    {
+      "cik": 1765681,
+      "label": "Thrive Capital",
+      "category": "Watchlist"
+    },
+    {
+      "cik": 1777813,
+      "label": "Atreides Management",
+      "category": "Watchlist"
+    },
+    {
+      "cik": 1649339,
+      "label": "Scion",
+      "category": "Watchlist"
+    },
+    {
+      "cik": 1566887,
+      "label": "Ratan Capital",
+      "category": "Watchlist"
+    }
+  ],
+  "watchlist_overlap": [
+    {
+      "ticker": "AMZN",
+      "issuer": "AMAZON COM INC",
+      "n_funds": 5,
+      "combined_value": 716105695.0,
+      "combined_weight": 0.46127,
+      "avg_weight": 0.09225,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1562087,
+          "label": "Thiel Macro",
+          "name": "Thiel Macro LLC",
+          "value": 117978300.0,
+          "weight": 0.2818
+        },
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 22472602.0,
+          "weight": 0.07253
+        },
+        {
+          "cik": 1765681,
+          "label": "Thrive Capital",
+          "name": "Thrive Capital Management, LLC",
+          "value": 215468417.0,
+          "weight": 0.05656
+        },
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 129085000.0,
+          "weight": 0.02965
+        },
+        {
+          "cik": 1777813,
+          "label": "Atreides Management",
+          "name": "Atreides Management, LP",
+          "value": 231101376.0,
+          "weight": 0.02073
+        }
+      ]
+    },
+    {
+      "ticker": "MU",
+      "issuer": "MICRON TECHNOLOGY INC",
+      "n_funds": 3,
+      "combined_value": 6409945514.0,
+      "combined_weight": 0.39844,
+      "avg_weight": 0.13281,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 2045724,
+          "label": "Situational Awareness",
+          "name": "Situational Awareness LP",
+          "value": 5573819392.0,
+          "weight": 0.27636
+        },
+        {
+          "cik": 1777813,
+          "label": "Atreides Management",
+          "name": "Atreides Management, LP",
+          "value": 821120352.0,
+          "weight": 0.07365
+        },
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 15005770.0,
+          "weight": 0.04843
+        }
+      ]
+    },
+    {
+      "ticker": "SNDK",
+      "issuer": "SANDISK CORP",
+      "n_funds": 3,
+      "combined_value": 5757047803.0,
+      "combined_weight": 0.3123,
+      "avg_weight": 0.1041,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 2045724,
+          "label": "Situational Awareness",
+          "name": "Situational Awareness LP",
+          "value": 5673738513.0,
+          "weight": 0.28131
+        },
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 79353000.0,
+          "weight": 0.01822
+        },
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 3956290.0,
+          "weight": 0.01277
+        }
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "issuer": "ALPHABET INC",
+      "n_funds": 3,
+      "combined_value": 302082829.0,
+      "combined_weight": 0.06712,
+      "avg_weight": 0.02237,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 120184000.0,
+          "weight": 0.0276
+        },
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 7396487.0,
+          "weight": 0.02387
+        },
+        {
+          "cik": 1777813,
+          "label": "Atreides Management",
+          "name": "Atreides Management, LP",
+          "value": 174502342.0,
+          "weight": 0.01565
+        }
+      ]
+    },
+    {
+      "ticker": "SPCX",
+      "issuer": "Space Exploration Technologies Corporation",
+      "n_funds": 2,
+      "combined_value": 7901787707.0,
+      "combined_weight": 1.26714,
+      "avg_weight": 0.63357,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1765681,
+          "label": "Thrive Capital",
+          "name": "Thrive Capital Management, LLC",
+          "value": 3231681066.0,
+          "weight": 0.84823
+        },
+        {
+          "cik": 1777813,
+          "label": "Atreides Management",
+          "name": "Atreides Management, LP",
+          "value": 4670106641.0,
+          "weight": 0.41891
+        }
+      ]
+    },
+    {
+      "ticker": "VST",
+      "issuer": "VISTRA CORP",
+      "n_funds": 2,
+      "combined_value": 84924914.0,
+      "combined_weight": 0.22448,
+      "avg_weight": 0.11224,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1562087,
+          "label": "Thiel Macro",
+          "name": "Thiel Macro LLC",
+          "value": 59130126.0,
+          "weight": 0.14123
+        },
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 25794788.0,
+          "weight": 0.08325
+        }
+      ]
+    },
+    {
+      "ticker": "NTRA",
+      "issuer": "NATERA INC",
+      "n_funds": 2,
+      "combined_value": 893258308.0,
+      "combined_weight": 0.20118,
+      "avg_weight": 0.10059,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 864923000.0,
+          "weight": 0.19864
+        },
+        {
+          "cik": 1777813,
+          "label": "Atreides Management",
+          "name": "Atreides Management, LP",
+          "value": 28335308.0,
+          "weight": 0.00254
+        }
+      ]
+    },
+    {
+      "ticker": "VIST",
+      "issuer": "VISTA ENERGY S.A.B. DE C.V.",
+      "n_funds": 2,
+      "combined_value": 84502730.0,
+      "combined_weight": 0.18328,
+      "avg_weight": 0.09164,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1562087,
+          "label": "Thiel Macro",
+          "name": "Thiel Macro LLC",
+          "value": 75908730.0,
+          "weight": 0.18131
+        },
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 8594000.0,
+          "weight": 0.00197
+        }
+      ]
+    },
+    {
+      "ticker": "BE",
+      "issuer": "BLOOM ENERGY CORP",
+      "n_funds": 2,
+      "combined_value": 1914594754.0,
+      "combined_weight": 0.14519,
+      "avg_weight": 0.07259,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 2045724,
+          "label": "Situational Awareness",
+          "name": "Situational Awareness LP",
+          "value": 1898778982.0,
+          "weight": 0.09414
+        },
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 15815772.0,
+          "weight": 0.05105
+        }
+      ]
+    },
+    {
+      "ticker": "TSM",
+      "issuer": "TAIWAN SEMICONDUCTOR MFG LTD",
+      "n_funds": 2,
+      "combined_value": 1546712645.0,
+      "combined_weight": 0.1274,
+      "avg_weight": 0.0637,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 281613000.0,
+          "weight": 0.06468
+        },
+        {
+          "cik": 2045724,
+          "label": "Situational Awareness",
+          "name": "Situational Awareness LP",
+          "value": 1265099645.0,
+          "weight": 0.06272
+        }
+      ]
+    },
+    {
+      "ticker": "STM",
+      "issuer": "STMICROELECTRONICS N V",
+      "n_funds": 2,
+      "combined_value": 816719203.0,
+      "combined_weight": 0.08234,
+      "avg_weight": 0.04117,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 232375000.0,
+          "weight": 0.05337
+        },
+        {
+          "cik": 2045724,
+          "label": "Situational Awareness",
+          "name": "Situational Awareness LP",
+          "value": 584344203.0,
+          "weight": 0.02897
+        }
+      ]
+    },
+    {
+      "ticker": "CBRS",
+      "issuer": "CEREBRAS SYSTEMS INC",
+      "n_funds": 2,
+      "combined_value": 689539006.0,
+      "combined_weight": 0.06176,
+      "avg_weight": 0.03088,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1777813,
+          "label": "Atreides Management",
+          "name": "Atreides Management, LP",
+          "value": 687329006.0,
+          "weight": 0.06165
+        },
+        {
+          "cik": 2045724,
+          "label": "Situational Awareness",
+          "name": "Situational Awareness LP",
+          "value": 2210000.0,
+          "weight": 0.00011
+        }
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "issuer": "COREWEAVE INC",
+      "n_funds": 2,
+      "combined_value": 956022274.0,
+      "combined_weight": 0.05588,
+      "avg_weight": 0.02794,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 2045724,
+          "label": "Situational Awareness",
+          "name": "Situational Awareness LP",
+          "value": 744515203.0,
+          "weight": 0.03691
+        },
+        {
+          "cik": 1777813,
+          "label": "Atreides Management",
+          "name": "Atreides Management, LP",
+          "value": 211507071.0,
+          "weight": 0.01897
+        }
+      ]
+    },
+    {
+      "ticker": "AMD",
+      "issuer": "ADVANCED MICRO DEVICES INC",
+      "n_funds": 2,
+      "combined_value": 56059800.0,
+      "combined_weight": 0.05398,
+      "avg_weight": 0.02699,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 13711800.0,
+          "weight": 0.04425
+        },
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 42348000.0,
+          "weight": 0.00973
+        }
+      ]
+    },
+    {
+      "ticker": "ARM",
+      "issuer": "ARM HOLDINGS PLC",
+      "n_funds": 2,
+      "combined_value": 25389114.0,
+      "combined_weight": 0.05209,
+      "avg_weight": 0.02604,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 15429114.0,
+          "weight": 0.0498
+        },
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 9960000.0,
+          "weight": 0.00229
+        }
+      ]
+    },
+    {
+      "ticker": "STX",
+      "issuer": "SEAGATE TECHNOLOGY HLDNGS PL",
+      "n_funds": 2,
+      "combined_value": 121348750.0,
+      "combined_weight": 0.03872,
+      "avg_weight": 0.01936,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 117730000.0,
+          "weight": 0.02704
+        },
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 3618750.0,
+          "weight": 0.01168
+        }
+      ]
+    },
+    {
+      "ticker": "PANW",
+      "issuer": "PALO ALTO NETWORKS INC",
+      "n_funds": 2,
+      "combined_value": 338838853.0,
+      "combined_weight": 0.03597,
+      "avg_weight": 0.01799,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1777813,
+          "label": "Atreides Management",
+          "name": "Atreides Management, LP",
+          "value": 299058853.0,
+          "weight": 0.02683
+        },
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 39780000.0,
+          "weight": 0.00914
+        }
+      ]
+    },
+    {
+      "ticker": "U",
+      "issuer": "UNITY SOFTWARE INC",
+      "n_funds": 2,
+      "combined_value": 313939507.0,
+      "combined_weight": 0.03112,
+      "avg_weight": 0.01556,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1777813,
+          "label": "Atreides Management",
+          "name": "Atreides Management, LP",
+          "value": 292825507.0,
+          "weight": 0.02627
+        },
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 21114000.0,
+          "weight": 0.00485
+        }
+      ]
+    },
+    {
+      "ticker": "RIOT",
+      "issuer": "RIOT PLATFORMS INC",
+      "n_funds": 2,
+      "combined_value": 488864000.0,
+      "combined_weight": 0.02796,
+      "avg_weight": 0.01398,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 2045724,
+          "label": "Situational Awareness",
+          "name": "Situational Awareness LP",
+          "value": 468198000.0,
+          "weight": 0.02321
+        },
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 20666000.0,
+          "weight": 0.00475
+        }
+      ]
+    },
+    {
+      "ticker": "META",
+      "issuer": "META PLATFORMS INC",
+      "n_funds": 2,
+      "combined_value": 227439603.0,
+      "combined_weight": 0.02217,
+      "avg_weight": 0.01108,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1777813,
+          "label": "Atreides Management",
+          "name": "Atreides Management, LP",
+          "value": 226876313.0,
+          "weight": 0.02035
+        },
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 563290.0,
+          "weight": 0.00182
+        }
+      ]
+    },
+    {
+      "ticker": "PUMP",
+      "issuer": "PROPETRO HLDG CORP",
+      "n_funds": 2,
+      "combined_value": 32304736.0,
+      "combined_weight": 0.01492,
+      "avg_weight": 0.00746,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 4192858.0,
+          "weight": 0.01353
+        },
+        {
+          "cik": 2045724,
+          "label": "Situational Awareness",
+          "name": "Situational Awareness LP",
+          "value": 28111878.0,
+          "weight": 0.00139
+        }
+      ]
+    },
+    {
+      "ticker": "MA",
+      "issuer": "MASTERCARD INCORPORATED",
+      "n_funds": 2,
+      "combined_value": 49680014.0,
+      "combined_weight": 0.00945,
+      "avg_weight": 0.00473,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 1592160.0,
+          "weight": 0.00514
+        },
+        {
+          "cik": 1777813,
+          "label": "Atreides Management",
+          "name": "Atreides Management, LP",
+          "value": 48087854.0,
+          "weight": 0.00431
+        }
+      ]
+    },
+    {
+      "ticker": "TE",
+      "issuer": "FREYR BATTERY INC",
+      "n_funds": 2,
+      "combined_value": 48348000.0,
+      "combined_weight": 0.00842,
+      "avg_weight": 0.00421,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 1896000.0,
+          "weight": 0.00612
+        },
+        {
+          "cik": 2045724,
+          "label": "Situational Awareness",
+          "name": "Situational Awareness LP",
+          "value": 46452000.0,
+          "weight": 0.0023
+        }
+      ]
+    },
+    {
+      "ticker": "DHR",
+      "issuer": "DANAHER CORPORATION",
+      "n_funds": 2,
+      "combined_value": 10647688.0,
+      "combined_weight": 0.00564,
+      "avg_weight": 0.00282,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 1066688.0,
+          "weight": 0.00344
+        },
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 9581000.0,
+          "weight": 0.0022
+        }
+      ]
+    },
+    {
+      "ticker": "TMO",
+      "issuer": "THERMO FISHER SCIENTIFIC INC",
+      "n_funds": 2,
+      "combined_value": 10403108.0,
+      "combined_weight": 0.00472,
+      "avg_weight": 0.00236,
+      "alpha_contribution": null,
+      "funds": [
+        {
+          "cik": 1566887,
+          "label": "Ratan Capital",
+          "name": "Ratan Capital Management LP",
+          "value": 777108.0,
+          "weight": 0.00251
+        },
+        {
+          "cik": 1536411,
+          "label": "Duquesne Family Office",
+          "name": "Duquesne Family Office LLC",
+          "value": 9626000.0,
+          "weight": 0.00221
         }
       ]
     }

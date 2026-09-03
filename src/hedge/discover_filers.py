@@ -40,6 +40,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import (DATA_DIR, EDGAR_CACHE, Progress, http_session, load_config,
                    load_json, load_json_gz, save_json, save_json_gz, setup_logging)
+from specialist_funds import configured_pin_ciks
 
 log = setup_logging("discover_filers")
 
@@ -218,7 +219,7 @@ def rank_by_aum(managers: dict = None, limit: Optional[int] = None) -> list:
     min_aum = cfg.get("min_aum", 100_000_000)
     min_holdings = cfg.get("min_holdings", 5)
     max_holdings = cfg.get("max_holdings", 150)
-    pins = {int(c) for c in cfg.get("pool_pins", [])}
+    pins = configured_pin_ciks(cfg)
     if managers is None:
         if not FILERS_PATH.exists():
             log.error("No filers.json; run --discover first")

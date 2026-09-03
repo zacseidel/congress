@@ -41,7 +41,7 @@ import rank_funds
 import diff_holdings
 import generate_hedge_stocks
 import generate_hedge_report
-from specialist_funds import configured_specialist_ciks
+from specialist_funds import configured_pin_ciks
 
 log = setup_logging("backfill_hedge")
 
@@ -60,7 +60,7 @@ def run(top_n: int = None, do_discover: bool = False, seed: bool = False,
         discover_quarters: int = 3, reprice: bool = False) -> None:
     cfg = load_config().get("hedge", {})
     top_n = top_n or cfg.get("candidate_pool_size", 1000)
-    specialist_ciks = configured_specialist_ciks(cfg)
+    specialist_ciks = configured_pin_ciks(cfg)
 
     # Weekly reprice: holdings are unchanged since the last quarterly fetch, so skip the
     # EDGAR stages and just re-mark to current prices + re-render. changes.json (Q/Q new

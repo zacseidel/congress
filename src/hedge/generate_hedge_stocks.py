@@ -32,7 +32,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import DATA_DIR, load_config, load_json, load_json_gz, save_json, save_json_gz, setup_logging
 from resolve_cusip import cached as cusip_cached
 from holdings_io import load_holdings
-from specialist_funds import configured_specialists
+from specialist_funds import configured_specialists, configured_watchlist
 
 log = setup_logging("generate_hedge_stocks")
 
@@ -190,11 +190,16 @@ def run() -> None:
     specialists = configured_specialists(hcfg)
     overlap = _build_specialist_overlap(
         holdings, specialists, perf, attr.get("specialists"))
+    watchlist = configured_watchlist(hcfg)
+    watchlist_overlap = _build_specialist_overlap(
+        holdings, watchlist, perf, attr.get("watchlist"))
     save_json(SPECIALIST_HOLDINGS_PATH, {
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "n_specialists": len(specialists),
         "specialists": specialists,
         "overlap": overlap,
+        "watchlist": watchlist,
+        "watchlist_overlap": watchlist_overlap,
     })
 
     # featured: top-N alpha contributors + top-N skill-weighted new buys (standalone pages
@@ -208,6 +213,8 @@ def run() -> None:
              len(out), len(featured), STOCK_HOLDERS_PATH.name)
     log.info("Pinned specialist overlap: %d stocks held by 2+ of %d funds -> %s",
              len(overlap), len(specialists), SPECIALIST_HOLDINGS_PATH.name)
+    log.info("Watchlist overlap: %d stocks held by 2+ of %d funds",
+             len(watchlist_overlap), len(watchlist))
 
 
 if __name__ == "__main__":
