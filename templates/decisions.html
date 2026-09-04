@@ -1,96 +1,240 @@
 {% extends "base.html" %}
 {% block title %}Decisions — Personal Positions{% endblock %}
+
+{% macro analytics_card(card) %}
+{% if card %}
+<div class="analytics-card">
+  <div class="card-body">
+    <div class="card-metrics">
+      <div class="metric-group">
+        <div class="metric">
+          <span class="label">{{ card.return_label }}</span>
+          <span class="value {{ cls(card.ret12m) }}">{{ pct(card.ret12m) }}</span>
+          <span class="bmark {{ cls(card.spy12m) }}">{{ benchmark }} {{ pct(card.spy12m) }}</span>
+        </div>
+        <div class="metric">
+          <span class="label">Sharpe 12M</span>
+          <span class="value {{ sharpe_cls(card.sharpe12m) }}">{{ sharpe_fmt(card.sharpe12m) }}</span>
+          <span class="bmark">{{ benchmark }} {{ sharpe_fmt(card.spy_sharpe12m) }}</span>
+        </div>
+      </div>
+      <div class="metric-group">
+        <div class="metric">
+          <span class="label">3M Price</span>
+          <span class="value {{ cls(card.ret3m) }}">{{ pct(card.ret3m) }}</span>
+          <span class="bmark {{ cls(card.spy3m) }}">{{ benchmark }} {{ pct(card.spy3m) }}</span>
+        </div>
+        <div class="metric">
+          <span class="label">Sharpe 3M</span>
+          <span class="value {{ sharpe_cls(card.sharpe3m) }}">{{ sharpe_fmt(card.sharpe3m) }}</span>
+          <span class="bmark">{{ benchmark }} {{ sharpe_fmt(card.spy_sharpe3m) }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      {% if card.mode == "after_close" %}
+      <span>{{ card.n_closed }} name{% if card.n_closed != 1 %}s{% endif %} since close</span>
+      {% else %}
+      <span>{{ card.n_open }} open</span>
+      <span>{{ card.n_closed }} closed</span>
+      {% endif %}
+    </div>
+    {% if card.open_tickers %}
+    <div class="ticker-tags">
+      {% for t in card.open_tickers %}
+      <span class="ticker-tag">{{ t }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  <div class="kelly-panel" title="Half Kelly = 0.5 × max(0, win probability − loss probability ÷ payoff ratio)">
+    <div class="kelly-heading">
+      <span>Half-Kelly risk budget</span>
+      <strong>{{ kelly_fmt(card.trade_stats.half_kelly_pct) }}</strong>
+    </div>
+    <div class="kelly-stats">
+      <span>Winners {{ stat_pct(card.trade_stats.winner_pct) }}</span>
+      <span>Avg win {{ stat_pct(card.trade_stats.average_win_pct, true) }}</span>
+      <span>Losers {{ stat_pct(card.trade_stats.loser_pct) }}</span>
+      <span>Avg loss {{ stat_pct(card.trade_stats.average_loss_pct) }}</span>
+    </div>
+    <div class="kelly-note">{{ card.kelly_note }}</div>
+  </div>
+</div>
+{% endif %}
+{% endmacro %}
+
+{% macro open_table(rows) %}
+{% if rows %}
+<table class="sortable">
+  <thead><tr>
+    <th>Ticker</th><th>Opened</th><th>Held</th>
+    <th class="num">Entry</th><th class="num">Current</th>
+    <th class="num">Return</th><th class="num">{{ benchmark }}</th><th class="num">Alpha</th><th>Notes</th>
+  </tr></thead>
+  <tbody>
+  {% for r in rows %}
+    <tr>
+      <td>{{ r.ticker }}</td>
+      <td>{{ r.open_date }}</td>
+      <td class="small muted">{{ r.held }}</td>
+      <td class="num">{{ usd(r.entry) }}</td>
+      <td class="num">{{ usd(r.current) }}</td>
+      <td class="num {{ cls(r.ret) }}" data-v="{{ r.ret if r.ret is not none else -9999 }}">{{ pct(r.ret) }}</td>
+      <td class="num {{ cls(r.spy_ret) }}" data-v="{{ r.spy_ret if r.spy_ret is not none else -9999 }}">{{ pct(r.spy_ret) }}</td>
+      <td class="num {{ cls(r.alpha) }}" data-v="{{ r.alpha if r.alpha is not none else -9999 }}">{{ pct(r.alpha) }}</td>
+      <td class="small">{{ r.notes }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p class="muted">No open positions.</p>
+{% endif %}
+{% endmacro %}
+
+{% macro closed_table(rows) %}
+{% if rows %}
+<div class="scroll">
+<table class="sortable">
+  <thead><tr>
+    <th>Ticker</th><th>Opened</th><th>Closed</th><th>Held</th>
+    <th class="num">Entry</th><th class="num">Close</th>
+    <th class="num">Return</th><th class="num">{{ benchmark }}</th><th class="num">Alpha</th>
+    <th>Notes</th>
+  </tr></thead>
+  <tbody>
+  {% for r in rows %}
+    <tr>
+      <td>{{ r.ticker }}</td>
+      <td>{{ r.open_date }}</td>
+      <td>{{ r.close_date }}</td>
+      <td class="small muted">{{ r.held }}</td>
+      <td class="num">{{ usd(r.entry) }}</td>
+      <td class="num">{{ usd(r.close_px) }}</td>
+      <td class="num {{ cls(r.ret_held) }}" data-v="{{ r.ret_held if r.ret_held is not none else -9999 }}">{{ pct(r.ret_held) }}</td>
+      <td class="num {{ cls(r.spy_held) }}" data-v="{{ r.spy_held if r.spy_held is not none else -9999 }}">{{ pct(r.spy_held) }}</td>
+      <td class="num {{ cls(r.alpha_held) }}" data-v="{{ r.alpha_held if r.alpha_held is not none else -9999 }}">{{ pct(r.alpha_held) }}</td>
+      <td class="small">{{ r.notes }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% else %}
+<p class="muted">No closed positions.</p>
+{% endif %}
+{% endmacro %}
+
+{% macro after_close_table(rows) %}
+<div class="scroll">
+<table class="sortable">
+  <thead><tr>
+    <th>Ticker</th><th>Closed</th><th>Since</th>
+    <th class="num">Close</th><th class="num">Current</th>
+    <th class="num">Since close</th><th class="num">{{ benchmark }}</th><th class="num">Alpha since</th>
+    <th>Notes</th>
+  </tr></thead>
+  <tbody>
+  {% for r in rows %}
+    <tr>
+      <td>{{ r.ticker }}</td>
+      <td>{{ r.close_date }}</td>
+      <td class="small muted">{{ r.since_held }}</td>
+      <td class="num">{{ usd(r.close_px) }}</td>
+      <td class="num">{{ usd(r.current) }}</td>
+      <td class="num {{ cls(r.ret_since) }}" data-v="{{ r.ret_since if r.ret_since is not none else -9999 }}">{{ pct(r.ret_since) }}</td>
+      <td class="num {{ cls(r.spy_since) }}" data-v="{{ r.spy_since if r.spy_since is not none else -9999 }}">{{ pct(r.spy_since) }}</td>
+      <td class="num {{ cls(r.alpha_since) }}" data-v="{{ r.alpha_since if r.alpha_since is not none else -9999 }}">{{ pct(r.alpha_since) }}</td>
+      <td class="small">{{ r.notes }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endmacro %}
+
+{% macro category_block(cat, heading="h2") %}
+<section class="category-block" id="{{ cat.slug }}">
+  {% if heading == "h2" %}
+  <h2>{{ cat.name }}</h2>
+  {% elif heading == "h3" %}
+  <h3 class="archived-bucket">{{ cat.name }}</h3>
+  {% endif %}
+  {% if cat.card %}
+  <p class="muted small analytics-note">Equal-weight paper book of names in this bucket, rebalanced on open/close dates, marked at the close vs {{ benchmark }}. Row figures below are per-share (no sizing).</p>
+  {{ analytics_card(cat.card) }}
+  {% elif not cat.open_rows and not cat.closed_rows %}
+  <p class="muted">No positions yet.</p>
+  {% endif %}
+
+  <h3>Open positions <span class="muted small">({{ cat.open_rows|length }})</span></h3>
+  {{ open_table(cat.open_rows) }}
+
+  <h3>Closed positions <span class="muted small">({{ cat.closed_rows|length }})</span></h3>
+  {% if cat.closed_rows %}
+  <p class="muted small">Held-period return (open → close) vs {{ benchmark }}. What happened after the sale lives in the fold below.</p>
+  {% endif %}
+  {{ closed_table(cat.closed_rows) }}
+
+  {% if cat.closed_rows and cat.after_card %}
+  <details class="fold after-close">
+    <summary><h3>After they were closed <span class="muted small">({{ cat.closed_rows|length }})</span></h3></summary>
+    <p class="muted small">Equal-weight book of sold names from the day they left this bucket, marked to now — a category-level read on whether selling was early or late vs {{ benchmark }}.</p>
+    {{ analytics_card(cat.after_card) }}
+    {{ after_close_table(cat.closed_rows) }}
+  </details>
+  {% endif %}
+</section>
+{% endmacro %}
+
 {% block content %}
 <p class="small"><a href="{{ root }}index.html">← Dashboard</a></p>
 <h2>Position Decisions</h2>
-<p class="muted">My own open and closed positions with reasoning, priced against {{ benchmark }}.
-   Figures are per-share price performance (no position sizing); <strong>alpha</strong> = the
-   position's return minus {{ benchmark }} over the same window. Sectioned by the quarter each
-   position was <strong>opened</strong>. Generated {{ generated }}.</p>
+<p class="muted">Personal buckets of open and closed names, each scored as an equal-weight subportfolio
+  against {{ benchmark }} using the same card analytics as the
+  <a href="https://zacseidel.github.io/eval/">strategy evaluator</a>
+  (12M / 3M price return and Sharpe, open/closed counts, half-Kelly from closed trades).
+  Per-row figures are price only — no position sizing. Generated {{ generated }}.</p>
 
 <div class="stat-row card">
+  <div class="stat"><div class="n">{{ n_buckets }}</div><div class="l">Buckets</div></div>
   <div class="stat"><div class="n">{{ n_open }}</div><div class="l">Open positions</div></div>
   <div class="stat"><div class="n">{{ n_closed }}</div><div class="l">Closed positions</div></div>
-  <div class="stat"><div class="n {{ cls(stats.avg_alpha_open) }}">{{ pct(stats.avg_alpha_open) }}</div><div class="l">Avg alpha · open</div></div>
-  <div class="stat"><div class="n {{ cls(stats.avg_alpha_closed) }}">{{ pct(stats.avg_alpha_closed) }}</div><div class="l">Avg alpha · closed (held)</div></div>
+  <div class="stat"><div class="n">{{ n_archived }}</div><div class="l">Archived</div></div>
 </div>
 
-<h2>🟢 Open positions</h2>
-{% if open_quarters %}
-{% for q in open_quarters %}
-<details class="fold" open>
-  <summary><h2>{{ q.quarter }} <span class="muted small">({{ q.rows|length }} open)</span></h2></summary>
-  <table class="sortable">
-    <thead><tr>
-      <th>Ticker</th><th>Opened</th><th>Held</th>
-      <th class="num">Entry</th><th class="num">Current</th>
-      <th class="num">Return</th><th class="num">{{ benchmark }}</th><th class="num">Alpha</th><th>Notes</th>
-    </tr></thead>
-    <tbody>
-    {% for r in q.rows %}
-      <tr>
-        <td>{{ r.ticker }}</td>
-        <td>{{ r.open_date }}</td>
-        <td class="small muted">{{ r.held }}</td>
-        <td class="num">{{ usd(r.entry) }}</td>
-        <td class="num">{{ usd(r.current) }}</td>
-        <td class="num {{ cls(r.ret) }}" data-v="{{ r.ret if r.ret is not none else -9999 }}">{{ pct(r.ret) }}</td>
-        <td class="num {{ cls(r.spy_ret) }}" data-v="{{ r.spy_ret if r.spy_ret is not none else -9999 }}">{{ pct(r.spy_ret) }}</td>
-        <td class="num {{ cls(r.alpha) }}" data-v="{{ r.alpha if r.alpha is not none else -9999 }}">{{ pct(r.alpha) }}</td>
-        <td class="small">{{ r.notes }}</td>
-      </tr>
-    {% endfor %}
-    </tbody>
-  </table>
-</details>
+{% for cat in live %}
+{{ category_block(cat) }}
+{% else %}
+<p class="muted">No buckets yet. Add <code>## Watchlist</code> (or any name) to <code>positions.md</code>.</p>
 {% endfor %}
-{% else %}<p class="muted">No open positions.</p>{% endif %}
 
-<h2>🔴 Closed positions</h2>
-<p class="muted small">Two windows per position: <strong>held</strong> (open → close) and
-  <strong>since close</strong> (close → now) — each against {{ benchmark }}.</p>
-{% if closed_quarters %}
-{% for q in closed_quarters %}
-<details class="fold" open>
-  <summary><h2>{{ q.quarter }} <span class="muted small">({{ q.rows|length }} closed)</span></h2></summary>
-  <div class="scroll">
-  <table class="sortable">
-    <thead><tr>
-      <th>Ticker</th><th>Opened</th><th>Closed</th><th>Held</th>
-      <th class="num">Entry</th><th class="num">Close</th>
-      <th class="num">Return</th><th class="num">{{ benchmark }}</th><th class="num">Alpha</th>
-      <th class="num">Current</th><th class="num">Since close</th><th class="num">{{ benchmark }} since</th><th class="num">Alpha since</th>
-      <th>Notes</th>
-    </tr></thead>
-    <tbody>
-    {% for r in q.rows %}
-      <tr>
-        <td>{{ r.ticker }}</td>
-        <td>{{ r.open_date }}</td>
-        <td>{{ r.close_date }}</td>
-        <td class="small muted">{{ r.held }}</td>
-        <td class="num">{{ usd(r.entry) }}</td>
-        <td class="num">{{ usd(r.close_px) }}</td>
-        <td class="num {{ cls(r.ret_held) }}" data-v="{{ r.ret_held if r.ret_held is not none else -9999 }}">{{ pct(r.ret_held) }}</td>
-        <td class="num {{ cls(r.spy_held) }}" data-v="{{ r.spy_held if r.spy_held is not none else -9999 }}">{{ pct(r.spy_held) }}</td>
-        <td class="num {{ cls(r.alpha_held) }}" data-v="{{ r.alpha_held if r.alpha_held is not none else -9999 }}">{{ pct(r.alpha_held) }}</td>
-        <td class="num">{{ usd(r.current) }}</td>
-        <td class="num {{ cls(r.ret_since) }}" data-v="{{ r.ret_since if r.ret_since is not none else -9999 }}">{{ pct(r.ret_since) }}</td>
-        <td class="num {{ cls(r.spy_since) }}" data-v="{{ r.spy_since if r.spy_since is not none else -9999 }}">{{ pct(r.spy_since) }}</td>
-        <td class="num {{ cls(r.alpha_since) }}" data-v="{{ r.alpha_since if r.alpha_since is not none else -9999 }}">{{ pct(r.alpha_since) }}</td>
-        <td class="small">{{ r.notes }}</td>
-      </tr>
-    {% endfor %}
-    </tbody>
-  </table>
-  </div>
+<details class="fold archive-fold">
+  <summary><h2>Archive <span class="muted small">({{ n_archived }})</span></h2></summary>
+  <p class="muted small">Paste a bullet — or a whole <code>## Bucket</code> block — below <code>## Archive</code>
+    in <code>positions.md</code> to file it here. Collapsed on purpose.</p>
+  {% set ns = namespace(shown=false) %}
+  {% for cat in archived %}
+    {% if cat.name.lower() == "archive" and not cat.open_rows and not cat.closed_rows %}
+    {% elif cat.name.lower() == "archive" %}
+    {% set ns.shown = true %}
+    {{ category_block(cat, heading="none") }}
+    {% else %}
+    {% set ns.shown = true %}
+    {{ category_block(cat, heading="h3") }}
+    {% endif %}
+  {% endfor %}
+  {% if not ns.shown %}
+  <p class="muted">Nothing archived.</p>
+  {% endif %}
 </details>
-{% endfor %}
-{% else %}<p class="muted">No closed positions.</p>{% endif %}
 
 <p class="small disclaimer" style="margin-top:24px">
   Personal positions and reasoning, shown for tracking / education only — not investment advice.
   Returns use adjusted closing prices on/after each date and reflect price only (no position
-  sizing, taxes, or fees). "Current" is the latest available close and may lag by a day.
+  sizing, taxes, or fees). Category cards are equal-weight paper books rebalanced on open/close
+  dates. "Current" is the latest available close and may lag by a day. Half-Kelly is a
+  historical capital-at-risk heuristic from closed trades, not a recommendation.
 </p>
 {% endblock %}
